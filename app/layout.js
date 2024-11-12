@@ -22,10 +22,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased pt-32`}
       >
         <NavbarDemo />
-            <main className="max-h-screen max-w-screen overflow-hidden">{children}</main>
+            <main className="max-h-screen max-w-screen overflow-hidden ">{children}</main>
 
       </body>
     </html>
