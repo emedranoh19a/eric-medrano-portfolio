@@ -1,8 +1,6 @@
 "use client";
-import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
 
 const transition = {
   type: "spring",
@@ -13,36 +11,34 @@ const transition = {
   restSpeed: 0.001,
 };
 
-export const MenuItem = ({
-  setActive,
-  active,
-  item,
-  children
-}) => {
+export const MenuItem = ({ setActive, active, item, children }) => {
   return (
-    (<div onMouseEnter={() => setActive(item)} className="relative ">
+    <div onMouseEnter={() => setActive(item)} className="relative ">
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white">
+        className="cursor-pointer text-black hover:opacity-[0.9] "
+      >
         {item}
       </motion.p>
       {active !== null && (
         <motion.div
           initial={{ opacity: 0, scale: 0.85, y: 10 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={transition}>
+          transition={transition}
+        >
           {active === item && (
-            <div
-              className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
+            <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
               <motion.div
                 transition={transition}
                 // layoutId ensures smooth animation
                 layoutId="active"
-                className="bg-white dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl">
+                className="bg-white backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] shadow-xl"
+              >
                 <motion.div
                   // layout ensures smooth animation
                   layout
-                  className="w-max h-full p-4">
+                  className="w-max h-full p-4"
+                >
                   {children}
                 </motion.div>
               </motion.div>
@@ -50,34 +46,28 @@ export const MenuItem = ({
           )}
         </motion.div>
       )}
-    </div>)
+    </div>
   );
 };
 
-export  function Menu ({
-  setActive,
-  children
-}) {
+export function Menu({ setActive, children }) {
+  //TODO: get styles like glassmorphism
   return (
-    (<nav
+    <nav
       // resets the state
       onMouseLeave={() => setActive(null)}
-      className="relative rounded-full border border-transparent dark:bg-black dark:border-white/[0.2] bg-white shadow-input flex justify-center space-x-4 px-8 py-6 ">
+      className="relative rounded-full border border-transparent bg-white/10 shadow-input flex justify-center space-x-4 px-8 py-6 "
+    >
       {children}
-    </nav>)
+    </nav>
   );
-};
+}
 
-export const ProductItem = ({
-  title,
-  description,
-  href,
-  src
-}) => {
+export const ProductItem = ({ title, description, href, src }) => {
   return (
-    (<Link href={href} className="flex space-x-2">
-        {/* TODO: the following div was originally the image. */}
-        <div className="flex-shrink-o rounded-md shadow-2xl h-36 aspect-[4/3] bg-red-500"></div>
+    <Link href={href} className="flex space-x-2">
+      {/* TODO: the following div was originally the image. */}
+      <div className="flex-shrink-o rounded-md shadow-2xl h-36 aspect-[4/3] bg-red-500"></div>
       {/* <Image
         src={src}
         width={140}
@@ -85,26 +75,17 @@ export const ProductItem = ({
         alt={title}
         className="flex-shrink-0 rounded-md shadow-2xl" /> */}
       <div>
-        <h4 className="text-xl font-bold mb-1 text-black dark:text-white">
-          {title}
-        </h4>
-        <p className="text-neutral-700 text-sm max-w-[10rem] dark:text-neutral-300">
-          {description}
-        </p>
+        <h4 className="text-xl font-bold mb-1 text-black ">{title}</h4>
+        <p className="text-neutral-700 text-sm max-w-[10rem]">{description}</p>
       </div>
-    </Link>)
+    </Link>
   );
 };
 
-export const HoveredLink = ({
-  children,
-  ...rest
-}) => {
+export const HoveredLink = ({ children, ...rest }) => {
   return (
-    (<Link
-      {...rest}
-      className="text-neutral-700 dark:text-neutral-200 hover:text-black ">
+    <Link {...rest} className="text-neutral-700 hover:text-black ">
       {children}
-    </Link>)
+    </Link>
   );
 };

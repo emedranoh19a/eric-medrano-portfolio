@@ -1,12 +1,8 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
 import { useTheme } from "next-themes";
-import {
-  Cloud,
-  fetchSimpleIcons,
-  renderSimpleIcon,
-} from "react-icon-cloud";
+import { useEffect, useMemo, useState } from "react";
+import { Cloud, fetchSimpleIcons, renderSimpleIcon } from "react-icon-cloud";
 
 export const cloudProps = {
   containerProps: {
@@ -67,7 +63,7 @@ export function IconCloud({ iconSlugs }) {
     if (!data) return null;
 
     return Object.values(data.simpleIcons).map((icon) =>
-      renderCustomIcon(icon, theme || "light"),
+      renderCustomIcon(icon, theme || "light")
     );
   }, [data, theme]);
 
@@ -77,93 +73,98 @@ export function IconCloud({ iconSlugs }) {
     </Cloud>
   );
 }
-const slugs = [
-    // "typescript",
-    "javascript",
-    // "dart",
-    // "java",
-    "react",
-    // "flutter",
-    // "android",
-    "html5",
-    "css3",
-    "nodedotjs",
-    // "express",
-    "nextdotjs",
-    // "prisma",
-    // "amazonaws",
-    // "postgresql",
-    // "firebase",
-    // "nginx",
-    // "vercel",
-    "sass",
-    "reactquery",
-    "reacthookform",
-    "tailwindcss",
-    "python",
-    "c",
-    "netlify",
-    "styledcomponents",
-    "reactrouter",
-    "bootstrap",
-    "jquery",
-    "nextjs",
-    "mui",
-    "cssmodules",
-    "chakraui",
-    "npm",
-    "mongodb",
-    "jss",
-    //Adobe?
-    //Youtube? haha
-    //buzzfeed
-    //meta: swift.
-//metro de la ciudad de mexico!
-"metrodelaciudaddemexico",
-    // "testinglibrary",
-    // "jest",
-    // "cypress",
-    // "docker",
-    //"flutter quiero"
-    "git",
-    "framer",
-    // "jira",
-    // quiero pstgresql
-    //quierno nintendogamecube
-    //opencv
-    //pandas
-    //graphql
-    //storybook
-    //selenium
-    //raspberry pi
-    //arduino
-    //chartjs
-    //unity estaria chido
-    //egghead
-    "redux",
 
-    "reacttable",
-    //nintendo
-    //nintendoswitch
-    //TODO: Quiero aprender RIVE!!!!
-    //Three.js
-    //Blender
-    "udemy",
-    "slack",
-    "openai",
-    "nintendogamecube",
-    "github",
-    "gitlab",
-    "visualstudiocode",
-    // "androidstudio",
-    // "sonarqube",
-    // "figma",
-  ];
-   
-  export function SkillsGlobe() {
-    return (
-      <div className="relative flex size-full max-w-lg items-center justify-center overflow-hidden rounded-lg border bg-background px-20 pb-20 pt-8 ">
-        <IconCloud iconSlugs={slugs} />
-      </div>
-    );
-  }
+export function SkillsGlobe() {
+  return (
+    <div className="relative flex size-full max-w-lg items-center justify-center overflow-hidden rounded-lg  bg-background px-20 pb-20 pt-8 ">
+      <IconCloud iconSlugs={slugs} />
+    </div>
+  );
+}
+//TODO. review the general styles for the next theme. Do I really want a black background?
+//TODO: At least, I want some kind of degradation
+const slugs = [
+  //"typescript",
+  //"dart",
+  //"java",
+  //"android",
+  //"flutter",
+  //"express",
+  //"prisma",
+  //"amazonaws",
+  //"postgresql",
+  //"firebase",
+  //"nginx",
+  //"vercel",
+  //Adobe?
+  //Youtube? haha
+  //buzzfeed
+  //meta: swift.
+  //metro de la ciudad de mexico!
+  //"testinglibrary",
+  //"jest",
+  //"cypress",
+  //"docker",
+  //"flutter quiero"
+  //"jira",
+  //quiero pstgresql
+  //quierno nintendogamecube
+  //opencv
+  //pandas
+  //graphql
+  //storybook
+  //selenium
+  //raspberry pi
+  //arduino
+  //chartjs
+  //unity estaria chido
+  //egghead
+  //nintendo
+  //nintendoswitch
+  //RIVE!!!
+  //Three.js
+  //Blender
+  //"androidstudio",
+  //"sonarqube",
+  //"figma",
+  //"nintendogamecube",
+  "javascript",
+  "jira",
+  "react",
+  "html5",
+  "css3",
+  "nodedotjs",
+  "nextdotjs",
+  "sass",
+  "reactquery",
+  "reacthookform",
+  "tailwindcss",
+  "python",
+  "c",
+  "netlify",
+  "styledcomponents",
+  "reactrouter",
+  "bootstrap",
+  "jquery",
+  "nextjs",
+  "mui",
+  "cssmodules",
+
+  "chakraui",
+  "npm",
+  "mongodb",
+  "jss",
+  "metrodelaciudaddemexico",
+  "git",
+  "framer",
+  "redux",
+  "reacttable",
+  "udemy",
+  "slack",
+  "openai",
+  "framer",
+  "webflow",
+  "github",
+  "gitlab",
+  "visualstudiocode",
+];
