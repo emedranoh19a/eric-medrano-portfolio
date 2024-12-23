@@ -23,7 +23,11 @@ export default function FadeInDiv({ className, tabs, hovering }) {
           }}
           className={cn("w-full h-full absolute top-0 left-0", className)}
         >
-          {tab.content}
+          {/*TODO:  The following div should be another component */}
+          <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+            <p>Newbie Tab</p>
+            {/* <DummyContent /> */}
+          </div>
         </motion.div>
       ))}
     </div>

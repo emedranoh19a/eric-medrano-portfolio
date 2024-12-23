@@ -11,6 +11,7 @@ export const Tabs = ({
   tabClassName,
   contentClassName,
 }) => {
+  //State:
   const [active, setActive] = useState(propTabs[0]);
   const [tabs, setTabs] = useState(propTabs);
 
@@ -24,14 +25,19 @@ export const Tabs = ({
 
   const [hovering, setHovering] = useState(false);
 
+  //Style:
+  const containerStyles = cn(
+    "relative flex justify-start items-center",
+    "bg-neutral-900/10 max-w-full w-fit px-4 rounded-full py-2",
+    "[perspective:1000px]",
+    "overflow-auto sm:overflow-visible no-visible-scrollbar ",
+
+    containerClassName
+  );
+
   return (
     <>
-      <div
-        className={cn(
-          "flex flex-row items-center justify-start [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full",
-          containerClassName
-        )}
-      >
+      <div className={containerStyles}>
         {propTabs.map((tab, idx) => (
           <button
             key={tab.title}
@@ -50,13 +56,18 @@ export const Tabs = ({
                 layoutId="clickedbutton"
                 transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
                 className={cn(
-                  "absolute inset-0 bg-gray-200 dark:bg-zinc-800 rounded-full ",
+                  "absolute inset-0 bg-neutral-800 rounded-full",
                   activeTabClassName
                 )}
               />
             )}
 
-            <span className="relative block text-black dark:text-white">
+            <span
+              className={cn(
+                "relative block text-black",
+                active.value === tab.value && " text-white"
+              )}
+            >
               {tab.title}
             </span>
           </button>
