@@ -19,7 +19,6 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  //TODO: Move the "SidebarDemo" here, and erase the file.
 
 
 
@@ -28,25 +27,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
-        <main>
+        <main className="max-w-screen min-h-screen">
 
-          {/* <NavbarDemo /> */}
-          {/* <main className="min-h-screen max-w-screen overflow-hidden ">
-          <SidebarDemo />
-          {children}</main> */}
-          {/* <div className={containerStyles}> */}
-          <SidebarDemo />
-          {/* </div> */}
-          {/* Hello! I'm Eric. a programmer. */}
+          <SidebarDemo >
 
-
-          {/* Estructura de mi portafolio
-        Home: Un Hero.
-        Lo que puedo hacer con las computadoras. (Skills Globe.)
-        Mi trabajo:
-        Un contact form.
-        
-        */}
+            {children}
+          </SidebarDemo>
         </main>
       </body>
     </html>
@@ -59,4 +45,3 @@ export default function RootLayout({ children }) {
 //TODO:sidebarlink
 //TODO:sidebarlogo
 //TODO:sidebardemo
-//TODO: Sidebar debería ocupar toda la pantalla

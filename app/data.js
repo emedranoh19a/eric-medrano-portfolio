@@ -35,7 +35,73 @@ export const sidebarLinks = [
         icon: <MdOutlineLaptopMac />,
     },
 ]
+//TODO: create a component that replaces completely the content.
+export const tabs = [
+    {
+        title: "Newbie",
+        value: "newbie",
+        content: (
+            <div
+                className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+                <p>Newbie Tab</p>
+                {/* <DummyContent /> */}
+            </div>
+        ),
+    },
+    {
+        title: "Services",
+        value: "services",
+        content: (
+            <div
+                className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+                <p>Services tab</p>
+                {/* <DummyContent /> */}
+            </div>
+        ),
+    },
+    {
+        title: "Playground",
+        value: "playground",
+        content: (
+            <div
+                className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+                <p>Playground tab</p>
+                {/* <DummyContent /> */}
+            </div>
+        ),
+    },
+    {
+        title: "Content",
+        value: "content",
+        content: (
+            <div
+                className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+                <p>Content tab</p>
+                {/* <DummyContent /> */}
+            </div>
+        ),
+    },
+    {
+        title: "Random",
+        value: "random",
+        content: (
+            <div
+                className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
+                <p>Random tab</p>
+                {/* <DummyContent /> */}
+            </div>
+        ),
+    },
+]
 
 //TODO: Maybe some stats. TOEIC, languages. 
 
 //Agregar diplomas.
+
+// A single project DataTransfer.
+// {
+//     name: 'SparkleGrove.com',
+//     desc: 'A lifestyle blog featuring DIY crafts, home decor ideas, and inspiration for creating a cozy and stylish living space.',
+//     url: '/projects/image-1.jpg',
+//     tech: ['Figma', 'Photoshop', 'HTML'],
+// },

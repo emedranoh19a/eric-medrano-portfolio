@@ -1,0 +1,19 @@
+//TODO: Animated tooltip.
+//TODO: Bento Grid for all the projects... Maybe.
+//TODO: Card hover effect for the proyects. Maybe.
+//TODO: Cards. The thirds card as an alternative for the project.
+//TODO: Expandable Card. Maybe for making some notes.
+//TODO: Features sections. Just to get them to know me.
+//TODO: Floating Dock. Instead of the Magified Dock.
+//TODO: Contact form. with React-Hook-Form and basic stuff.
+//TODO: El gato negro de Rive.
+//TODO: Tabs. Juntar con el docker.
+//TODO: Tabs. Para hacer filtrables las tecnologías. Esto estaría fascinante.
+//TODO: Text generate Effect. Para títulos grandes.
+//TODO: Eric Medrano.  (Text Hover Effect), and maybe the fancy sparkles.
+//TODO: Timeline, for my life.
+//TODO: World Map. (Think global. Since I know English, Spanish and Japanese. Can I help you translatinf your business in the outside?)
+
+//TODO: Add the favicon. 
+//TODO: Add the metadata. 
+//TODO: Maybe trying to use another set of images, but optimized.

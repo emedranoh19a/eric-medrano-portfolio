@@ -1,8 +1,13 @@
+import Head from "next/head"
 import TextReveal from "./components/effects/TextReveal"
 
 export default function Home() {
   return (
     <div className="">
+      <Head>
+        <title>Eric Medrano</title>
+        {/* <link rel="icon" href="/favicon.ico" /> */}
+      </Head>
       {/* TODO: Hero section. with contact links. */}
       {/* TODO: About me section. */}
       {/* TODO: Skills section with Globe. */}

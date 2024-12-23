@@ -8,7 +8,7 @@ export default function DesktopSidebar({ className, children, ...props }) {
   //Style:
   const containerStyles = cn(
     "hidden",
-    "flex-shrink-0 md:flex md:flex-col",
+    "md:flex md:flex-col",
     "h-full w-[300px] p-4",
     "bg-neutral-100",
     className
@@ -16,8 +16,9 @@ export default function DesktopSidebar({ className, children, ...props }) {
   return (
     <motion.div
       className={containerStyles}
+      //the styles are stopped here.
       animate={{
-        width: animate ? (open ? "300px" : "60px") : "300px",
+        width: animate ? (open ? "200px" : "60px") : "200px",
       }}
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
