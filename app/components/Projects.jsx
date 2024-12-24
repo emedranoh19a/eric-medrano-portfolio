@@ -1,10 +1,6 @@
 //TODO:
 //Project component.
-export default function Project() {
+export default function Projects() {
   //Controll the state from here.
-  return (
-    <div>
-      <Tabs />
-    </div>
-  );
+  return <div>{/* <Tabs /> */}</div>;
 }

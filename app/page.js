@@ -1,5 +1,6 @@
 import Head from "next/head"
 import TextReveal from "./components/effects/TextReveal"
+import Header from "./components/Header"
 
 export default function Home() {
   return (
@@ -8,6 +9,8 @@ export default function Home() {
         <title>Eric Medrano</title>
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
+
+      <Header />
       {/* TODO: Hero section. with contact links. */}
       {/* TODO: About me section. */}
       {/* TODO: Skills section with Globe. */}
