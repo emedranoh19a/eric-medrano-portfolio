@@ -1,6 +1,7 @@
 import Head from "next/head"
 import TextReveal from "./components/effects/TextReveal"
 import Header from "./components/Header"
+import Projects from "./components/Projects"
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       </Head>
 
       <Header />
+      <Projects />
       {/* TODO: Hero section. with contact links. */}
       {/* TODO: About me section. */}
       {/* TODO: Skills section with Globe. */}
@@ -38,7 +40,6 @@ export default function Home() {
 
 function Hero() {
   return <section id="header" className="container">
-
     <div className="mx-auto w-fit">
       <div className="w-fit w-fit h-fit bg-red-500 flex flex-col items-center justify-center">
         <div className="w-full flex justify-center">
