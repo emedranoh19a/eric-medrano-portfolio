@@ -1,15 +1,7 @@
-//TODO:
-
-//Separate in smaler components.
-
 import Image from "next/image";
 import { cn } from "../utils/utils";
 import ProjectLink from "./ProjectLink";
 import TechIcons from "./TechIcons";
-
-//Get the Demo code.
-
-//Refactor. Think of the data structure of the data structure of our projects.
 
 export function BentoGrid({ className, children }) {
   //Style:

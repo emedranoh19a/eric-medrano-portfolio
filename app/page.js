@@ -13,11 +13,10 @@ export default function Home() {
 
       <Header />
       <Projects />
-      {/* TODO: Hero section. with contact links. */}
+      {/* TODO: Hero section. with contact links? */}
       {/* TODO: About me section. */}
       {/* TODO: Skills section with Globe. */}
       {/* TODO: Overall projects, filterable. */}
-      {/* TODO: Single Project. Should be expandible with layout motion. */}
       {/* TODO: Get in touch. */}
       {/* TODO: Make a functionality in order to swap languages. */}
       {/* TODO: Make a Loading animation but not that required.*/}
@@ -45,7 +44,7 @@ function Hero() {
         <div className="w-full flex justify-center">
           <p className="block text-center whitespace-nowrap">
 
-            Hi! I'm Eric
+            Hi! I&apos;m Eric
           </p>
 
         </div>

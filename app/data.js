@@ -36,32 +36,7 @@ export const sidebarLinks = [
     },
 ]
 //TODO: create a component that replaces completely the content.
-export const tabs = [
-    {
-        title: "Newbie",
-        value: "newbie",
 
-    },
-    {
-        title: "Beginner",
-        value: "beginner",
-
-    },
-    {
-        title: "Intermediate",
-        value: "intermediate",
-
-    },
-    {
-        title: "Advanced",
-        value: "advanced",
-
-    },
-    {
-        title: "Guru",
-        value: "guru",
-    },
-]
 export const projects = [
     {
         title: "Omnifood",
@@ -144,7 +119,14 @@ export const projects = [
     //   header: <Skeleton />,
     //   icon: "i",
     //   // icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
-
+    //TODO: Fix usePopcorn
+    //TODO: Fix worldwise
+    //TODO: Fix at all costs, the wild oasis admin page
+    //TODO: If it is actually fixed, then finish once and for all the nextJS course from schmedtmann
+    //TODO: Basic project of Angela Yu. HTML
+    //TODO: Basic project of Angela Yu. CSS
+    //TODO: Basic project of Angela Yu. jQuery
+    //TODO: Basic project of Angela Yu. jQuery
 ]
 
 //TODO: Maybe some stats. TOEIC, languages. 

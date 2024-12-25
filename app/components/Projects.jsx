@@ -1,5 +1,3 @@
-//TODO:
-
 import { projects } from "../data";
 import { BentoGrid, BentoGridItem } from "./BentoGrid";
 
@@ -14,6 +12,3 @@ export default function Projects() {
     </BentoGrid>
   );
 }
-
-//TODO: move this array to the centralized data.
-//Level: newbie, beginner, intermediate, advanced, guru
