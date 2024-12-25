@@ -16,7 +16,7 @@ import {
 import Link from "next/link";
 import { useRef, useState } from "react";
 
-export const FloatingDock = ({
+export const ProjectSeries = ({
   items = [],
   desktopClassName,
   mobileClassName,

@@ -1,7 +1,7 @@
 // "use client"
 import { cn } from "@/app/utils/utils";
 import { motion } from "framer-motion";
-import { FloatingDock } from "../../layout/FloatingDock/FloatingDock";
+import { ProjectSeries } from "../../layout/FloatingDock/FloatingDock";
 export default function FadeInDiv({ className, tabs, hovering, children }) {
   const isActive = (tab) => {
     return tab.value === tabs[0].value;
@@ -58,8 +58,9 @@ export default function FadeInDiv({ className, tabs, hovering, children }) {
       href: "#",
     },
   ];
+
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-fit h-fit bg-red-500">
       {tabs.map((tab, idx) => (
         <motion.div
           key={tab.value}
@@ -76,7 +77,7 @@ export default function FadeInDiv({ className, tabs, hovering, children }) {
           className={cn("w-fit h-fit absolute top-0 left-0 flex", className)}
         >
           {/* TODO: Insert the projects here. */}
-          <FloatingDock items={links} />
+          <ProjectSeries items={links} />
         </motion.div>
       ))}
     </div>

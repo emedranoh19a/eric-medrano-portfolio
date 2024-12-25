@@ -1,5 +1,6 @@
 "use client";
 import DesktopSidebar from "./DesktopSidebar";
+import MobileSidebar from "./MobileSidebar";
 // import { IconMenu2, IconX } from "@tabler/icons-react";
 import { SidebarProvider } from "./SidebarProvider";
 
@@ -16,7 +17,7 @@ export const SidebarBody = (props) => {
     <div>
       {/* TODO: Tackle the mobile navigation from here. */}
       <DesktopSidebar {...props} />
-      {/* <MobileSidebar {...props} /> */}
+      <MobileSidebar {...props} />
     </div>
   );
 };

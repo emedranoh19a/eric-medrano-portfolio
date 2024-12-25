@@ -8,7 +8,7 @@ export default function SidebarLogo() {
     >
       <Image
         src="/Logo.png"
-        className="w-full h-auto"
+        className="w-full h-auto max-w-40"
         width={200}
         height={200}
         alt="Eric Medrano Logo"
