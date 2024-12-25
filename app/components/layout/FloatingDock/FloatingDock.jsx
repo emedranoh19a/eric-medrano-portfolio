@@ -13,18 +13,34 @@ import {
   useSpring,
   useTransform,
 } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
+import { ImNewTab } from "react-icons/im";
 
-export const ProjectSeries = ({
+export const FloatingDock = ({
   items = [],
   desktopClassName,
   mobileClassName,
+  level,
 }) => {
+  //TODO. FILTRAR LOS PROYECTOS AQUI.
+  console.log(level);
+  const filteredProjects = items.filter(
+    (project) => project.level === level.value
+  );
   return (
     <>
-      <FloatingDockDesktop items={items} className={desktopClassName} />
-      <FloatingDockMobile items={items} className={mobileClassName} />
+      {/* TODO: The desktop version */}
+      <FloatingDockDesktop
+        items={filteredProjects}
+        className={desktopClassName}
+      />
+      {/* TODO: The mobile version */}
+      {/* <FloatingDockMobile
+        items={projfilteredProjectsects}
+        className={mobileClassName}
+      /> */}
     </>
   );
 };
@@ -79,30 +95,32 @@ const FloatingDockMobile = ({ items, className }) => {
   );
 };
 
-const FloatingDockDesktop = ({ items, className }) => {
+const FloatingDockDesktop = ({ items: projects, className }) => {
+  //Note: At this point we already have the filtered projects.
+  //Each item is a single project.
   let mouseX = useMotionValue(Infinity);
+
   return (
     <motion.div
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
-        "mx-auto hidden md:flex h-16 gap-4 items-end  rounded-2xl bg-gray-50 dark:bg-neutral-900 px-4 pb-3",
+        "mx-auto hidden md:flex h-16 gap-4 items-end  rounded-2xl bg-gray-50 px-4 pb-3 ",
         className
       )}
     >
-      {items.map((item) => (
-        <IconContainer mouseX={mouseX} key={item.title} {...item} />
+      {projects.map((project) => (
+        <IconContainer mouseX={mouseX} key={project.title} {...project} />
       ))}
     </motion.div>
   );
 };
 
-function IconContainer({ mouseX, title, icon, href }) {
+function IconContainer({ mouseX, title, image, url: href, isExternalProject }) {
   let ref = useRef(null);
 
   let distance = useTransform(mouseX, (val) => {
     let bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
-
     return val - bounds.x - bounds.width / 2;
   });
 
@@ -147,15 +165,16 @@ function IconContainer({ mouseX, title, icon, href }) {
         style={{ width, height }}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        className="aspect-square rounded-full bg-gray-200 dark:bg-neutral-800 flex items-center justify-center relative"
+        className="aspect-square rounded-full bg-gray-200 flex items-center justify-center relative"
       >
+        {/* //Pues, si es posible, hacer las imágenes redondas. */}
         <AnimatePresence>
           {hovered && (
             <motion.div
               initial={{ opacity: 0, y: 10, x: "-50%" }}
               animate={{ opacity: 1, y: 0, x: "-50%" }}
               exit={{ opacity: 0, y: 2, x: "-50%" }}
-              className="px-2 py-0.5 whitespace-pre rounded-md bg-gray-100 border dark:bg-neutral-800 dark:border-neutral-900 dark:text-white border-gray-200 text-neutral-700 absolute left-1/2 -translate-x-1/2 -top-8 w-fit text-xs"
+              className="px-2 py-0.5 whitespace-pre rounded-md bg-gray-100 border  border-gray-200 text-neutral-700 absolute left-1/2 -translate-x-1/2 -top-8 w-fit text-xs"
             >
               {title}
             </motion.div>
@@ -163,10 +182,19 @@ function IconContainer({ mouseX, title, icon, href }) {
         </AnimatePresence>
         <motion.div
           style={{ width: widthIcon, height: heightIcon }}
-          className="flex items-center justify-center"
+          className="rounded-full overflow-hidden"
         >
-          {icon}
+          <Image
+            src={image}
+            alt={title}
+            fill
+            objectFit="cover"
+            objectPosition="top"
+          />
         </motion.div>
+        {isExternalProject && (
+          <ImNewTab className="absolute w-full h-full fill-white/90 drop-shadow-lg scale-[.5] " />
+        )}
       </motion.div>
     </Link>
   );

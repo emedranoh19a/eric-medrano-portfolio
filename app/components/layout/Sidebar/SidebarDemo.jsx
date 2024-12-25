@@ -42,6 +42,7 @@ export function SidebarDemo({ children }) {
                 link={{
                   label: "Eric Medrano",
                   href: "#",
+                  // TODO Add image of me.
                   // icon: (
                   //   <Image
                   //     src="https://assets.aceternity.com/manu.png"

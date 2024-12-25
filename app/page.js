@@ -1,9 +1,15 @@
+"use client"
 import Head from "next/head"
 import TextReveal from "./components/effects/TextReveal"
-import Header from "./components/Header"
-import Projects from "./components/Projects"
+import About from "./components/sections/About"
+import Contact from "./components/sections/Contact"
+import Header from "./components/sections/Header"
+import Projects from "./components/sections/Projects"
+import Skills from "./components/sections/Skills"
+import Timeline from "./components/sections/Timeline"
 
 export default function Home() {
+
   return (
     <div className="">
       <Head>
@@ -12,12 +18,12 @@ export default function Home() {
       </Head>
 
       <Header />
+      <About />
+      <Skills />
       <Projects />
-      {/* TODO: Hero section. with contact links? */}
-      {/* TODO: About me section. */}
-      {/* TODO: Skills section with Globe. */}
-      {/* TODO: Overall projects, filterable. */}
-      {/* TODO: Get in touch. */}
+      <Timeline />
+      <Contact
+      />
       {/* TODO: Make a functionality in order to swap languages. */}
       {/* TODO: Make a Loading animation but not that required.*/}
       {/* <Hero /> */}

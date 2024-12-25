@@ -4,11 +4,11 @@ import { useState } from "react";
 import FadeInDiv from "../ui/Tabs/FadeInDiv";
 import Tabs from "../ui/Tabs/Tabs";
 const propTabs = [
-  { title: "Newbie", value: "newbie" },
-  { title: "Beginner", value: "beginner" },
-  { title: "Intermediate", value: "intermediate" },
-  { title: "Advanced", value: "advanced" },
-  { title: "Guru", value: "guru" },
+  // { title: "Newbie", value: 0 },
+  { title: "Beginner", value: 1 },
+  { title: "Intermediate", value: 2 },
+  { title: "Advanced", value: 3 },
+  // { title: "Guru", value: 4 },
 ];
 export default function ProyectNavigation({ contentClassName }) {
   //State:

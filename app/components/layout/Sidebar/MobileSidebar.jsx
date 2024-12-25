@@ -1,21 +1,18 @@
 import { cn } from "@/app/utils/utils";
 import clsx from "clsx";
 import { AnimatePresence, motion } from "framer-motion";
-import { useEffect } from "react";
 import { useSidebar } from "./SidebarProvider";
 
-//TODO: Make the responsive sidebar work
 export default function MobileSidebar({ className, children, ...props }) {
   //State:
   const { open, setOpen } = useSidebar();
 
   //Style:
-  //FIX
   const containerStyles = cn(
     "h-screen w-screen md:hidden",
     "fixed flex flex-row items-center justify-center align-center",
     "p-0",
-    "bg-transparent w-full z-10",
+    "bg-transparent w-full z-10 transition transition-all",
     !open && "-z-10"
   );
   return (
@@ -114,47 +111,6 @@ function NavigationButton({ setOpen, open }) {
         {/* </label> */}
       </button>
       <div className={backgroundStyles}>&nbsp;</div>
-    </>
-  );
-}
-
-function Navbar() {
-  const [open, setOpen] = useState(false);
-  //useEffect to close on router changes
-  const pathname = usePathname();
-
-  useEffect(() => setOpen(false), [pathname]);
-
-  const listContainerStyles = cn(
-    "min-h-screen fixed top-0 left-0 z-[1500]",
-    "transition duration-800 w-full",
-    !open && "-z-10"
-  );
-  const listStyles = cn(
-    "absolute group top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2",
-    "text-center w-screen h-screen py-24",
-    "flex flex-col gap-2 justify-center"
-  );
-  return (
-    <>
-      <NavigationButton setOpen={setOpen} open={open} />
-      <nav className={listContainerStyles}>
-        <ul className={listStyles}>
-          {open && (
-            <AnimatePresence>
-              {navRoutes.map((item, index) => (
-                <Fade isInView={open} key={index} index={index} to="left">
-                  <NavigationLink
-                    href={item.href}
-                    text={item.text}
-                    setOpen={setOpen}
-                  />
-                </Fade>
-              ))}
-            </AnimatePresence>
-          )}
-        </ul>
-      </nav>
     </>
   );
 }

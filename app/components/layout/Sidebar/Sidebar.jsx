@@ -15,7 +15,6 @@ export const Sidebar = ({ children, open, setOpen, animate }) => {
 export const SidebarBody = (props) => {
   return (
     <div>
-      {/* TODO: Tackle the mobile navigation from here. */}
       <DesktopSidebar {...props} />
       <MobileSidebar {...props} />
     </div>

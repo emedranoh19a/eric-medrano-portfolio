@@ -4,15 +4,15 @@ import { MdOutlineLaptopMac } from "react-icons/md"
 export const sidebarLinks = [
     {
         label: "Home",
-        href: "#",
+        href: "/",
         //   icon: (
         //     <IconBrandTabler className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
         //   ),
         icon: <FaHome />,
     },
     {
-        label: "Profile",
-        href: "#",
+        label: "About",
+        href: "/#about",
         //   icon: (
         //     <IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
         //   ),
@@ -20,7 +20,7 @@ export const sidebarLinks = [
     },
     {
         label: "Skills",
-        href: "#",
+        href: "/#skills",
         //   icon: (
         //     <IconSettings className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
         //   ),
@@ -28,14 +28,35 @@ export const sidebarLinks = [
     },
     {
         label: "Projects",
-        href: "#",
+        href: "/#projects",
+        //   icon: (
+        //     <IconArrowLeft className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+        //   ),
+        icon: <MdOutlineLaptopMac />,
+    },
+    {
+        label: "History",
+        href: "/#timeline",
+        //   icon: (
+        //     <IconArrowLeft className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
+        //   ),
+        icon: <MdOutlineLaptopMac />,
+    },
+    {
+        label: "Contact",
+        href: "/#contact",
         //   icon: (
         //     <IconArrowLeft className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
         //   ),
         icon: <MdOutlineLaptopMac />,
     },
 ]
-//TODO: create a component that replaces completely the content.
+
+//0. newbie
+//1. beginner
+//2. intermediate
+//3. advanced.
+//4. guru.
 
 export const projects = [
     {
@@ -43,7 +64,7 @@ export const projects = [
         description: "Not so advanced, but definitely not a beginner project. From the HTML & CSS course from Jonas Schmedtmann.",
         image: "/projects/other/omnifood_preview.png",
         url: "https://omnifood-for-eric-medrano.netlify.app/",
-        level: 2,
+        level: 1,
         techs: ["html", "css"],
         isImportant: true, //delete the 
         isComplete: true,
@@ -56,7 +77,7 @@ export const projects = [
         description: "A review of Flexbox by applying it through and through. From the Advanced CSS and Sass course from Jonas Schmedtmann.",
         image: "/projects/other/trillo_preview.png",
         url: "https://trillo-for-eric-medrano.netlify.app/",
-        level: 3,
+        level: 1,
         techs: ["html", "sass"],
         isImportant: true,
         isComplete: true,
@@ -68,7 +89,7 @@ export const projects = [
         description: "A review of CSS Grid by applying it through and through. From the Advanced CSS and Sass course from Jonas Schmedtmann.",
         image: "/projects/other/nexter_preview.png",
         url: "https://nexter-for-eric-medrano.netlify.app/",
-        level: 3,
+        level: 1,
         techs: ["html", "sass"],
         isImportant: true,
         isComplete: true,
@@ -80,7 +101,7 @@ export const projects = [
         description: "A project involving Redux. From the Ultimate React course from Jonas Schmedtmann.",
         image: "/projects/other/react-quiz_preview.png",
         url: "https://react-quiz-for-erichiki.netlify.app/",
-        level: 3,
+        level: 2,
         techs: ["react", "redux"],
         isImportant: false,
         isComplete: true,
@@ -92,7 +113,7 @@ export const projects = [
         description: "A project to explore the power of Sass and the 7-1 architecture. From the Advanced CSS and Sass course from Jonas Schmedtmann.",
         image: "/projects/other/natours_preview.png",
         url: "https://sass-natours-for-erichiki.netlify.app/",
-        level: 3,
+        level: 1,
         techs: ["html", "sass"],
         isImportant: true,
         isComplete: false,
@@ -104,21 +125,15 @@ export const projects = [
         description: "A real project for the amazing Yosakoi Soran Team REDA舞神楽. An initiative that made me realize an amazing way to juggle with TailwindCSS utility classes, while thinking of maintainable and reusable code.",
         image: "/projects/other/reda-website_preview.png",
         url: "https://our-little-secret.netlify.app/theme/2023",
-        level: 4,
+        level: 3,
         techs: ["nextjs", "tailwindcss", "framer-motion"],
         isImportant: true,
         isComplete: false,
         isPublic: true,
         isExternalProject: true,
     },
-    //TODO: Make the sidebar work. We must actually navigate... right?
-    //TODO: verify and fix the initial state of the sidebar. It shouldn't be open when hydration is happening.
-    // {
-    //   title: "The Spirit of Adventure",
-    //   description: "Embark on exciting journeys and thrilling discoveries.",
-    //   header: <Skeleton />,
-    //   icon: "i",
-    //   // icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+
+
     //TODO: Fix usePopcorn
     //TODO: Fix worldwise
     //TODO: Fix at all costs, the wild oasis admin page

@@ -17,6 +17,7 @@ export default function DesktopSidebar({ className, children, ...props }) {
     <motion.div
       className={containerStyles}
       //the styles are stopped here.
+      initial={{ width: "60px" }}
       animate={{
         width: animate ? (open ? "200px" : "60px") : "200px",
       }}
