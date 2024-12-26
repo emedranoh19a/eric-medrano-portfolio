@@ -24,7 +24,7 @@ export function SidebarDemo({ children }) {
     <div className={containerStyles}>
       <Sidebar open={open} setOpen={setOpen}>
         {/* Display related styles will conflict with "hidden" */}
-        <SidebarBody className="gap-10 relative self-stretch h-full ">
+        <SidebarBody className="gap-10 relative self-stretch h-full w-full">
           {/* TODO: Insert here a fancy corner */}
 
           <div className="top-0 left-20">
