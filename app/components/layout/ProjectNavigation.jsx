@@ -10,7 +10,7 @@ const propTabs = [
   { title: "Advanced", value: 3 },
   // { title: "Guru", value: 4 },
 ];
-export default function ProyectNavigation({ contentClassName }) {
+export default function ProjectNavigation({ contentClassName }) {
   //State:
   const [active, setActive] = useState(propTabs[0]);
   const [tabs, setTabs] = useState(propTabs);
