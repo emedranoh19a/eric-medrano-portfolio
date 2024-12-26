@@ -27,7 +27,7 @@ export function SidebarDemo({ children }) {
         <SidebarBody className="gap-10 relative self-stretch h-full ">
           {/* TODO: Insert here a fancy corner */}
 
-          <div className="sticky top-0 left-20">
+          <div className="top-0 left-20">
             <div className="flex flex-col overflow-x-hidden sticky h-fit">
               {open ? <SidebarLogo /> : <SidebarLogoIcon />}
               <div className="mt-8 flex flex-col gap-2">
@@ -59,7 +59,9 @@ export function SidebarDemo({ children }) {
           </div>
         </SidebarBody>
       </Sidebar>
-      <div className="h-fit overflow-y-scroll flex-1 mx-auto">{children}</div>
+      <div className="h-fit overflow-y-scroll flex-1 mx-auto p-2 w-full">
+        {children}
+      </div>
     </div>
   );
 }

@@ -14,8 +14,42 @@
 
 export default function Page() {
     return <div>
-        Hello
+        <PageContent />
+        <PageContent />
+        <PageContent />
+        <PageContent />
+        <PageContent />
+        <PageContent />
+        <PageContent />
+        <PageContent />
+        <PageContent />
+        <PageContent />
+        <PageContent />
+        <PageContent />
+        <PageContent />
+        <PageContent />
+        <PageContent />
+        <PageContent />
+        <PageContent />
+        <PageContent />
+        <PageContent />
+        <PageContent />
+        <PageContent />
+        <PageContent />
+        <PageContent />
+        <PageContent />
+        <PageContent />
+        <PageContent />
+        <PageContent />
     </div>
 }
 
 
+function PageContent() {
+    return <div className="py-4">
+        <p>
+            Hello, this is the page content
+        </p>
+    </div>
+
+}

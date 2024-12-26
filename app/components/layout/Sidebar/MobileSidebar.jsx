@@ -64,7 +64,7 @@ function NavigationButton({ setOpen, open }) {
   const buttonStyles = clsx(
     basePosition,
     "group scale-1.25",
-    "fixed z-[2000] bg-white/5 rounded-full",
+    "fixed z-[2000] bg-white/70 backdrop-blur-md rounded-full",
     "text-center cursor-pointer shadow-2xl "
   );
   const backgroundStyles = clsx(
