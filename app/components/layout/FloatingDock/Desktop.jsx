@@ -16,9 +16,6 @@ export default function FloatingDockDesktop({ items: projects, className }) {
     "rounded-2xl bg-gray-100/60 backdrop-blur-sm",
     className
   );
-  //TODO: Make the bar sticky
-  //TODO: The external projects should open a new window
-  //TODO: start moving the code from Front End Mentor.
   return (
     <motion.div
       onMouseMove={(e) => mouseX.set(e.pageX)}

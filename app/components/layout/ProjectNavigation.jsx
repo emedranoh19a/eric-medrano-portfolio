@@ -24,20 +24,36 @@ export default function ProjectNavigation({ contentClassName }) {
     setActive(newTabs[0]);
   };
   return (
-    <>
-      <Tabs
-        active={active}
-        tabs={propTabs}
-        setHovering={setHovering}
-        onTabClick={moveSelectedTabToTop}
-      />
+    <div className="fixed w-full   h-fit bottom-28 flex flex-col items-center">
       <FadeInDiv
         tabs={tabs}
         active={active}
         key={active.value}
         hovering={hovering}
-        className={cn("mt-32", contentClassName)}
+        className={cn("mb-0 w-full", contentClassName)}
       />
-    </>
+
+      <div className="h-fit w-fit mx-auto justify-center   translate-y-[130%]">
+        <Tabs
+          active={active}
+          tabs={propTabs}
+          setHovering={setHovering}
+          onTabClick={moveSelectedTabToTop}
+        />
+      </div>
+      {/* <FadeInDiv
+        tabs={tabs}
+        active={active}
+        key={active.value}
+        hovering={hovering}
+        className={cn("mb-0", contentClassName)}
+      />
+      <Tabs
+        active={active}
+        tabs={propTabs}
+        setHovering={setHovering}
+        onTabClick={moveSelectedTabToTop}
+      /> */}
+    </div>
   );
 }

@@ -8,64 +8,9 @@ export default function FadeInDiv({ className, tabs, hovering, children }) {
     return tab.value === tabs[0].value;
   };
   //TODO: with an effect, extract the difficulty of the tab from the url.
-  //TOODO: A tab contains many proojects.
-  // const links = [
-  //   {
-  //     title: "Home",
-  //     icon: "2",
 
-  //     href: "#",
-  //   },
-  //   {
-  //     title: "Home",
-  //     icon: "2",
-
-  //     href: "#",
-  //   },
-  //   {
-  //     title: "Home",
-  //     icon: "2",
-
-  //     href: "#",
-  //   },
-  //   {
-  //     title: "Home",
-  //     icon: "2",
-
-  //     href: "#",
-  //   },
-  //   {
-  //     title: "Home",
-  //     icon: "2",
-
-  //     href: "#",
-  //   },
-  //   {
-  //     title: "Home",
-  //     icon: "2",
-
-  //     href: "#",
-  //   },
-  //   {
-  //     title: "Home",
-  //     icon: "2",
-
-  //     href: "#",
-  //   },
-  //   {
-  //     title: "Home",
-  //     icon: "2",
-
-  //     href: "#",
-  //   },
-  // ];
-
-  // {title:"",
-  //   image:"",
-  //   ref:""
-  // }
   return (
-    <div className="relative w-full h-fit">
+    <div className="relative w-full h-full bg-red-500">
       {tabs.map((tab, idx) => (
         <motion.div
           key={tab.value}
@@ -73,18 +18,19 @@ export default function FadeInDiv({ className, tabs, hovering, children }) {
           style={{
             scale: 1 - idx * 0.1,
             top: hovering ? idx * -50 : 0,
-            zIndex: -idx,
+            zIndex: isActive(tab) ? 2 : -idx,
             // opacity: idx < 3 ? 1 - idx * 0.1 : 0,
           }}
           animate={{
             opacity: isActive(tab) ? 1 : 0.7,
             y: isActive(tab) ? [0, 40, 0] : 0,
           }}
-          className={cn("w-full h-fit absolute top-0 left-0 flex", className)}
+          className={cn("w-full h-full absolute  flex", className)}
         >
           <FloatingDock items={projects} level={tabs[idx]} />
         </motion.div>
       ))}
+      <div className="w-full h-16 block absolute bg-transparent "></div>
     </div>
   );
 }

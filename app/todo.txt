@@ -6,7 +6,6 @@
 //TODO: Features sections. Just to get them to know me.
 //TODO: Floating Dock. Instead of the Magified Dock.
 //TODO: Contact form. with React-Hook-Form and basic stuff.
-// El gato negro de Rive.
 //TODO: Tabs. Juntar con el dock.
 //TODO: Tabs. Para hacer filtrables las tecnologías. Esto estaría fascinante.
 //TODO: Text generate Effect. Para títulos grandes.
@@ -17,3 +16,6 @@
 //TODO: Add the favicon. 
 //TODO: Add the metadata. 
 //TODO: Maybe trying to use another set of images, but optimized.
+  //TODO: The external projects should open a new window
+  //TODO: start moving the code from Front End Mentor.
+ // El gato negro de Rive.
