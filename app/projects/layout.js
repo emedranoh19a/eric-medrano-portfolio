@@ -2,65 +2,9 @@
 
 import ProyectNavigation from "../components/layout/ProyectNavigation"
 
-// import { Tabs } from "../components/layout/Tabs/Tabs"
-
-// import ProjectNavigation from "../components/layout/ProjectNavigation"
 
 export default function ProyectsLayout({ children }) {
-    //This is not the navigation at home (filterable). This has instead, some tabs, etc.
-    // const links = [
-    //     {
-    //         title: "Home",
-    //         icon: "2",
 
-    //         href: "#",
-    //     },
-    //     {
-    //         title: "Home",
-    //         icon: "2",
-
-    //         href: "#",
-    //     },
-    //     {
-    //         title: "Home",
-    //         icon: "2",
-
-    //         href: "#",
-    //     },
-    //     {
-    //         title: "Home",
-    //         icon: "2",
-
-    //         href: "#",
-    //     },
-    //     {
-    //         title: "Home",
-    //         icon: "2",
-
-    //         href: "#",
-    //     },
-    //     {
-    //         title: "Home",
-    //         icon: "2",
-
-    //         href: "#",
-    //     },
-    //     {
-    //         title: "Home",
-    //         icon: "2",
-
-    //         href: "#",
-    //     },
-    //     {
-    //         title: "Home",
-    //         icon: "2",
-
-    //         href: "#",
-    //     },
-
-
-
-    // ]
 
 
     return <div>
