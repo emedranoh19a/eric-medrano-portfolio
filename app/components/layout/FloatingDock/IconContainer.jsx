@@ -1,10 +1,3 @@
-/**
- * Note: Use position fixed according to your needs
- * Desktop navbar is better positioned at the bottom
- * Mobile navbar is better positioned at bottom right.
- **/
-
-// import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import {
   AnimatePresence,
   motion,
@@ -15,36 +8,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
 import { ImNewTab } from "react-icons/im";
-import FloatingDockDesktop from "./Desktop";
 
-export const FloatingDock = ({
-  items = [],
-  desktopClassName,
-  mobileClassName,
-  level,
-}) => {
-  //TODO. FILTRAR LOS PROYECTOS AQUI.
-  console.log(level);
-  const filteredProjects = items.filter(
-    (project) => project.level === level.value
-  );
-  return (
-    <>
-      {/* TODO: The desktop version */}
-      <FloatingDockDesktop
-        items={filteredProjects}
-        className={desktopClassName}
-      />
-      {/* TODO: The mobile version */}
-      {/* <FloatingDockMobile
-        items={projfilteredProjectsects}
-        className={mobileClassName}
-      /> */}
-    </>
-  );
-};
-
-function IconContainer({ mouseX, title, image, url: href, isExternalProject }) {
+export default function IconContainer({
+  mouseX,
+  title,
+  image,
+  url: href,
+  isExternalProject,
+}) {
   let ref = useRef(null);
 
   let distance = useTransform(mouseX, (val) => {
