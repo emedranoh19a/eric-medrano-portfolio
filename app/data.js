@@ -5,49 +5,37 @@ export const sidebarLinks = [
     {
         label: "Home",
         href: "/",
-        //   icon: (
-        //     <IconBrandTabler className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-        //   ),
+
         icon: <FaHome />,
     },
     {
         label: "About",
         href: "/#about",
-        //   icon: (
-        //     <IconUserBolt className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-        //   ),
+
         icon: <FaUser />,
     },
     {
         label: "Skills",
         href: "/#skills",
-        //   icon: (
-        //     <IconSettings className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-        //   ),
+
         icon: <FaCode />,
     },
     {
         label: "Projects",
         href: "/#projects",
-        //   icon: (
-        //     <IconArrowLeft className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-        //   ),
+
         icon: <MdOutlineLaptopMac />,
     },
     {
         label: "History",
         href: "/#timeline",
-        //   icon: (
-        //     <IconArrowLeft className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-        //   ),
+
         icon: <MdOutlineLaptopMac />,
     },
     {
         label: "Contact",
         href: "/#contact",
-        //   icon: (
-        //     <IconArrowLeft className="text-neutral-700 dark:text-neutral-200 h-5 w-5 flex-shrink-0" />
-        //   ),
+
         icon: <MdOutlineLaptopMac />,
     },
 ]
@@ -59,6 +47,7 @@ export const sidebarLinks = [
 //4. guru.
 
 export const projects = [
+
     {
         title: "Omnifood",
         description: "Not so advanced, but definitely not a beginner project. From the HTML & CSS course from Jonas Schmedtmann.",

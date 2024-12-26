@@ -1,8 +1,4 @@
 //TODO: Animated tooltip.
-//TODO: Bento Grid for all the projects... Maybe.
-//TODO: Card hover effect for the proyects. Maybe.
-//TODO: Cards. The thirds card as an alternative for the project.
-//TODO: Expandable Card. Maybe for making some notes.
 //TODO: Features sections. Just to get them to know me.
 //TODO: Floating Dock. Instead of the Magified Dock.
 //TODO: Contact form. with React-Hook-Form and basic stuff.

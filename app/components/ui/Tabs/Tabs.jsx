@@ -20,6 +20,9 @@ export default function Tabs({
 
   return (
     <div className={containerStyles}>
+      <div className="bg-black/50 mr-4 text-white font-bold px-2 rounded-full h-full inline-block">
+        Level:{" "}
+      </div>
       {tabs.map((tab, idx) => (
         <button
           key={tab.title}
@@ -44,11 +47,19 @@ export default function Tabs({
 
           <span
             className={cn(
-              "relative block text-black",
+              "relative text-black hidden md:block",
               active.value === tab.value && " text-white"
             )}
           >
             {tab.title}
+          </span>
+          <span
+            className={cn(
+              "relative block text-black md:hidden",
+              active.value === tab.value && " text-white"
+            )}
+          >
+            {idx + 1}
           </span>
         </button>
       ))}

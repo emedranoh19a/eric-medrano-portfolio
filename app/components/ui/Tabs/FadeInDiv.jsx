@@ -25,7 +25,7 @@ export default function FadeInDiv({ className, tabs, hovering, children }) {
             opacity: isActive(tab) ? 1 : 0.7,
             y: isActive(tab) ? [0, 40, 0] : 0,
           }}
-          className={cn("w-full h-full absolute  flex", className)}
+          className={cn("w-full h-full absolute flex flex-wrap", className)}
         >
           <FloatingDock items={projects} level={tabs[idx]} />
         </motion.div>
@@ -34,3 +34,5 @@ export default function FadeInDiv({ className, tabs, hovering, children }) {
     </div>
   );
 }
+//import { FaDumbbell } from "react-icons/fa6";
+//import { FaFeatherPointed } from "react-icons/fa6";
