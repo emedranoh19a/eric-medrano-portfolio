@@ -8,7 +8,7 @@ export default function DesktopSidebar({ className, children, ...props }) {
   //Style:
   const containerStyles = cn(
     "hidden",
-    "md:flex md:flex-col fixed",
+    "md:flex md:flex-col",
     "h-full w-[300px] p-4",
     "bg-neutral-100",
     className
@@ -23,7 +23,6 @@ export default function DesktopSidebar({ className, children, ...props }) {
       }}
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
-      // whileHover={() => setOpen(true)}
       {...props}
     >
       {children}

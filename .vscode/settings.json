@@ -91,9 +91,29 @@
         },
     },
     // Extension: fabiospampinato.vscode-highlight
+    "highlight.regexFlags": "gi",
+    "highlight.regexes": {
+        // We flaged this for enforcing logical CSS properties
+        "(100vh|translate|margin:|padding:|margin-left|margin-right|rotate|text-align|border-top|border-right|border-bottom|border-left|float|background-position|transform|width|height|top|left|bottom|right|float|clear|(p|m)(l|r)-|border-(start|end)-(start|end)-radius)": [
+            {
+                // "rangeBehavior": 1,
+                "borderWidth": "1px",
+                "borderColor": "tomato",
+                "borderStyle": "solid"
+            }
+        ],
+        "(overflow-x:|overflow-y:)": [
+            {
+                // "rangeBehavior": 1,
+                "borderWidth": "1px",
+                "borderColor": "green",
+                "borderStyle": "solid"
+            }
+        ]
+    },
     "todohighlight.keywords": [
         {
-            "text": "//State:",
+            "text": "State:",
             "isWholeLine": false,
             "color": "#61DAFB",
             "backgroundColor": "transparent",
@@ -102,7 +122,7 @@
             "overviewRulerColor": "grey",
         },
         {
-            "text": "//Style:",
+            "text": "Style:",
             "isWholeLine": false,
             "color": "#e879f9",
             "backgroundColor": "#transparent",
@@ -111,7 +131,7 @@
             "overviewRulerColor": "grey",
         },
         {
-            "text": "//Dataflow:",
+            "text": "Dataflow:",
             "isWholeLine": false,
             "color": "#84cc16",
             "backgroundColor": "transparent",
@@ -120,7 +140,7 @@
             "overviewRulerColor": "grey",
         },
         {
-            "text": "//Handlers:",
+            "text": "Handlers:",
             "isWholeLine": false,
             "color": "#fbbf24",
             "backgroundColor": "transparent",
@@ -129,7 +149,7 @@
             "overviewRulerColor": "grey",
         },
         {
-            "text": "//Note:",
+            "text": "Note:",
             "isWholeLine": false,
             "color": "#2dd4bf",
             "backgroundColor": "transparent",
@@ -139,7 +159,7 @@
             "overviewRulerColor": "gray",
         },
         {
-            "text": "//Question:",
+            "text": "Question:",
             "isWholeLine": false,
             "color": "white",
             "backgroundColor": "#7c3aed",

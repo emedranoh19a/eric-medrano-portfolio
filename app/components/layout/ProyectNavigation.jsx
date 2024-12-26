@@ -1,4 +1,5 @@
 "use client";
+import { cn } from "@/app/utils/utils";
 import { useState } from "react";
 import FadeInDiv from "../ui/Tabs/FadeInDiv";
 import Tabs from "../ui/Tabs/Tabs";
@@ -9,12 +10,11 @@ const propTabs = [
   { title: "Advanced", value: 3 },
   // { title: "Guru", value: 4 },
 ];
-export default function ProjectNavigation({ contentClassName }) {
+export default function ProyectNavigation({ contentClassName }) {
   //State:
   const [active, setActive] = useState(propTabs[0]);
   const [tabs, setTabs] = useState(propTabs);
   const [hovering, setHovering] = useState(false);
-
   //Handlers:
   const moveSelectedTabToTop = (idx) => {
     const newTabs = [...propTabs];
@@ -24,7 +24,6 @@ export default function ProjectNavigation({ contentClassName }) {
     setActive(newTabs[0]);
   };
   return (
-    // TODP: This was a fragment
     <>
       <Tabs
         active={active}
@@ -37,8 +36,7 @@ export default function ProjectNavigation({ contentClassName }) {
         active={active}
         key={active.value}
         hovering={hovering}
-        //TODO: tackle this. get advantage of the props to layout it as a whole.
-        className={contentClassName}
+        className={cn("mt-32", contentClassName)}
       />
     </>
   );

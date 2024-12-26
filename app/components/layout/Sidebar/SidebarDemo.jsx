@@ -14,7 +14,7 @@ export function SidebarDemo({ children }) {
 
   //Style:
   const containerStyles = cn(
-    "relative flex flex-col md:flex-row",
+    "flex flex-col md:flex-row",
     "w-full max-w-screen min-h-screen h-fit",
     "mx-auto",
     "rounded-md"
@@ -24,10 +24,10 @@ export function SidebarDemo({ children }) {
     <div className={containerStyles}>
       <Sidebar open={open} setOpen={setOpen}>
         {/* Display related styles will conflict with "hidden" */}
-        <SidebarBody className="relative gap-10  self-stretch h-full ">
+        <SidebarBody className="gap-10 relative self-stretch h-full ">
           {/* TODO: Insert here a fancy corner */}
 
-          <div className="fixed left-0 w-[inherit] p-2.5">
+          <div className="sticky top-0 left-20">
             <div className="flex flex-col overflow-x-hidden sticky h-fit">
               {open ? <SidebarLogo /> : <SidebarLogoIcon />}
               <div className="mt-8 flex flex-col gap-2">
@@ -59,10 +59,7 @@ export function SidebarDemo({ children }) {
           </div>
         </SidebarBody>
       </Sidebar>
-      <div className="h-fit w-full overflow-y-scroll flex-1 mx-auto">
-        {/* Here, the children are the page content itself. It might be the project navigation. */}
-        {children}
-      </div>
+      <div className="h-fit overflow-y-scroll flex-1 mx-auto">{children}</div>
     </div>
   );
 }
