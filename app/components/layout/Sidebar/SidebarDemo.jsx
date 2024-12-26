@@ -59,7 +59,7 @@ export function SidebarDemo({ children }) {
           </div>
         </SidebarBody>
       </Sidebar>
-      <div className="h-fit overflow-y-scroll flex-1 mx-auto p-2 w-full">
+      <div className="h-fit overflow-y-scroll flex-1 mx-auto w-full">
         {children}
       </div>
     </div>

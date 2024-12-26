@@ -5,7 +5,7 @@ import { useSidebar } from "./SidebarProvider";
 
 export default function SidebarLink({ link, className, ...props }) {
   //State:
-  const { open, animate } = useSidebar();
+  const { open, animate, setOpen } = useSidebar();
   // useSmoothScroll();
 
   //Style:
@@ -23,7 +23,12 @@ export default function SidebarLink({ link, className, ...props }) {
   );
 
   return (
-    <Link href={link.href} className={linkStyles} {...props}>
+    <Link
+      href={link.href}
+      className={linkStyles}
+      onClick={() => setOpen((s) => !s)}
+      {...props}
+    >
       {link.icon}
       <motion.span
         initial={{ opacity: 0 }}
