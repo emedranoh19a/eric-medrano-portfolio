@@ -13,9 +13,54 @@
 // import { BentoGrid, BentoGridItem } from "../components/BentoGrid"
 
 export default function Page() {
-    return <div>
-        Hello
+    return <div className="bg-gray-100 p-2">
+        <Content />
+        <Content />
+        <Content />
+        <Content />
+        <Content />
+        <Content />
+        <Content />
+        <Content />
+        <Content />
     </div>
+}
+
+function Content() {
+    return <>
+        <div className="bg-gray-200 m-2">
+
+            This is the page content
+        </div>
+        <div className="bg-gray-200 m-2">
+
+            This is the page content
+        </div>
+        <div className="bg-gray-200 m-2">
+
+            This is the page content
+        </div>
+        <div className="bg-gray-200 m-2">
+
+            This is the page content
+        </div>
+        <div className="bg-gray-200 m-2">
+
+            This is the page content
+        </div>
+        <div className="bg-gray-200 m-2">
+
+            This is the page content
+        </div>
+        <div className="bg-gray-200 m-2">
+
+            This is the page content
+        </div>
+        <div className="bg-gray-200 m-2">
+
+            This is the page content
+        </div>
+    </>
 }
 
 

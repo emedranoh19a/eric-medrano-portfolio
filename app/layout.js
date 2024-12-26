@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
-        <main className="max-w-screen min-h-screen">
+        <main className="max-w-screen min-h-screen overflow-x-hidden">
 
           <SidebarDemo >
 

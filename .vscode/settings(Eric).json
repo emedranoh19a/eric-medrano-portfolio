@@ -90,25 +90,4 @@
             "isItalic": false,
         },
     },
-    // Extension: fabiospampinato.vscode-highlight
-    "highlight.regexFlags": "gi",
-    "highlight.regexes": {
-        // We flaged this for enforcing logical CSS properties
-        "(100vh|translate|margin:|padding:|margin-left|margin-right|rotate|text-align|border-top|border-right|border-bottom|border-left|float|background-position|transform|width|height|top|left|bottom|right|float|clear|(p|m)(l|r)-|border-(start|end)-(start|end)-radius)": [
-            {
-                // "rangeBehavior": 1,
-                "borderWidth": "1px",
-                "borderColor": "tomato",
-                "borderStyle": "solid"
-            }
-        ],
-        "(overflow-x:|overflow-y:)": [
-            {
-                // "rangeBehavior": 1,
-                "borderWidth": "1px",
-                "borderColor": "green",
-                "borderStyle": "solid"
-            }
-        ]
-    }
 }
