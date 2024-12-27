@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/image"
 
 function Page() {
   return (
@@ -6,7 +6,7 @@ function Page() {
       <div className="bg-white min-w-10 max-w-80 h-fit p-5 rounded-lg">
         <div className="relative w-full aspect-square rounded-lg overflow-hidden mb-4">
           <Image
-            src="/qr-code/images/image-qr-code.png"
+            src="/projects/newbie/qr-code-component/images/image-qr-code.png"
             fill
             objectFit="fit"
             alt=""
@@ -24,7 +24,7 @@ function Page() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Page;
+export default Page

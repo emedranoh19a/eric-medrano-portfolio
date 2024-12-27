@@ -1,12 +1,12 @@
-import clsx from "clsx";
-import Image from "next/image";
+import clsx from "clsx"
+import Image from "next/image"
 
 function Card() {
   return (
     <div className="bg-white w-80 h-fit overflow-hidden rounded-[20px] transition-all">
       <div className="relative h-40 w-full opacity-90">
         <Image
-          src="/order-summary/images/illustration-hero.svg"
+          src="/projects/newbie/order-summary-component/images/illustration-hero.svg"
           fill
           objectFit="cover"
           alt="Order summary hero image"
@@ -25,7 +25,7 @@ function Card() {
                 <circle cx="24" cy="24" r="24" fill="#DFE6FB" />
                 <path
                   fill="#717FA6"
-                  fill-rule="nonzero"
+                  fillRule="nonzero"
                   d="M32.574 15.198a.81.81 0 00-.646-.19L20.581 16.63a.81.81 0 00-.696.803V26.934a3.232 3.232 0 00-1.632-.44A3.257 3.257 0 0015 29.747 3.257 3.257 0 0018.253 33a3.257 3.257 0 003.253-3.253v-8.37l9.726-1.39v5.327a3.232 3.232 0 00-1.631-.441 3.257 3.257 0 00-3.254 3.253 3.257 3.257 0 003.254 3.253 3.257 3.257 0 003.253-3.253V15.81a.81.81 0 00-.28-.613z"
                 />
               </g>
@@ -52,9 +52,10 @@ function Card() {
         </button>
       </div>
     </div>
-  );
+  )
 }
-function page() {
+//TODO: FIX this page
+function Page() {
   // .container {
   //   position: relative;
   //   background: #2c3e50;
@@ -95,13 +96,13 @@ function page() {
     "before:absolute before:bg-indigo-50 before:w-full before:h-1/2 before:bottom-0 before:-z-40",
     // "after:absolute after:bg-indigo-100 after:w-1/2 after:aspect-square after:top-1/2 after:scale-y-50 after:right-40 after:-translate-y-1/2 after:left-0 after:rounded-b-full after:-z-40",
     ""
-  );
+  )
   const waveStyles = clsx(
     "",
     "",
     "before:absolute before:bg-indigo-100 before:w-1/2 before:aspect-square before:top-1/2 before:scale-y-50 before:right-40 before:-translate-y-1/2 before:left-0 before:rounded-b-full before:-z-40",
     "after:absolute after:bg-indigo-50 after:w-1/2 after:aspect-square after:bottom-1/2 after:translate-y-1/2 after:scale-y-50 after:right-0  after:right-0 after:rounded-t-full after:-z-30"
-  );
+  )
   return (
     <div className="h-screen w-screen overflow-hidden">
       <section className={backgroundBase}>
@@ -109,7 +110,7 @@ function page() {
         <Card />
       </section>
     </div>
-  );
+  )
 }
 
-export default page;
+export default Page

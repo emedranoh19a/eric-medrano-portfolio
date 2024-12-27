@@ -3,9 +3,9 @@
 import ProjectNavigation from "../components/layout/ProjectNavigation"
 
 export default function ProyectsLayout({ children }) {
-
+    //TODO: Tackle different layout z-index. Mobile navbar is missing...
     return <>
-        <div className="bg-orange-100 min-h-screen w-full">
+        <div className="min-h-screen w-full">
             {children}
         </div>
         <ProjectNavigation />

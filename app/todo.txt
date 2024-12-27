@@ -6,8 +6,8 @@
 //TODO: (Paid)Skilled e-learning landing page
 
 //Checkpoint
-//TODO: Interactive rating component
-//TODO: QR code componentNFT preview card component
+//TODO Results summary component
+
 //TODO: (Paid) Equalizer landing page
 //TODO: Order summary component
 //TODO: Stats preview card

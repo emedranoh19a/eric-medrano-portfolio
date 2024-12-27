@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/image"
 
 function IconEthereum() {
   return (
@@ -8,7 +8,7 @@ function IconEthereum() {
         fill="#00FFF8"
       />
     </svg>
-  );
+  )
 }
 function IconClock() {
   return (
@@ -18,7 +18,7 @@ function IconClock() {
         fill="#8BACD9"
       />
     </svg>
-  );
+  )
 }
 function Page() {
   return (
@@ -26,8 +26,8 @@ function Page() {
       <div className="group bg-slate-800 h-[450px] w-72 rounded-xl p-6">
         <div className="h-1/2 w-full relative rounded-xl overflow-hidden group-hover:brightness-200 group-hover:sepia-0">
           <Image
-            src="/nft-card/images/image-equilibrium.jpg"
-            alt=""
+            src="/projects/newbie/nft-preview-card-component/images/image-equilibrium.jpg"
+            alt="Card Image for Equilibrium #3429"
             fill
             objectFit="cover"
           />{" "}
@@ -55,9 +55,10 @@ function Page() {
           <div className="flex justify-start gap-3 items-center mt-4 ">
             <div className="w-10 h-10 rounded-full relative overflow-hidden border border-white ">
               <Image
-                src="/nft-card/images/image-avatar.png"
+                src="/projects/newbie/nft-preview-card-component/images/image-avatar.png"
                 fill
                 objectFit="cover"
+                alt="Avatar of Jules Wyvern"
               />
             </div>
             <p className="text-slate-500">
@@ -72,7 +73,7 @@ function Page() {
     </div>
     //
     //   0.041 ETH 3 days left. Creation of Jules Wyvern
-  );
+  )
 }
 
-export default Page;
+export default Page

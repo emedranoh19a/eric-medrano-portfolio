@@ -24,7 +24,7 @@ export default function ProjectNavigation({ contentClassName }) {
     setActive(newTabs[0]);
   };
   return (
-    <div className="fixed w-full   h-fit bottom-28 flex flex-col items-center">
+    <div className="fixed w-full z-40 h-fit bottom-28 flex flex-col items-center">
       <FadeInDiv
         tabs={tabs}
         active={active}
