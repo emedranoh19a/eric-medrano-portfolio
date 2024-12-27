@@ -1,5 +1,5 @@
-import clsx from "clsx";
-import Image from "next/image";
+import clsx from "clsx"
+import Image from "next/image"
 function IconStar() {
   return (
     <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
@@ -9,7 +9,7 @@ function IconStar() {
         fillRule="nonzero"
       />
     </svg>
-  );
+  )
 }
 function StarRating({ text, className }) {
   ///this should align itself, or center itself
@@ -27,7 +27,7 @@ function StarRating({ text, className }) {
       </div>
       <p className="text-purple-900 font-bold">Rated 5 Stars in {text}</p>
     </div>
-  );
+  )
 }
 function TestimonialHeader({ img, name }) {
   return (
@@ -40,7 +40,7 @@ function TestimonialHeader({ img, name }) {
         <span className="text-purple-400">Verified Buyer</span>
       </div>
     </div>
-  );
+  )
 }
 function Testimonial({ name, img, text, className }) {
   return (
@@ -53,28 +53,28 @@ function Testimonial({ name, img, text, className }) {
       <TestimonialHeader name={name} img={img} />
       <p className="text-purple-50 text-sm leading-6 tracking-normal">{text}</p>
     </div>
-  );
+  )
 }
 const testimonials = [
   {
     name: "Colton Smith",
-    img: "/social-proof/images/image-colton.jpg",
+    img: "/projects/newbie/social-proof-section/images/image-colton.jpg",
     text: `"We needed the same printed design as the one we had ordered a week prior. Not only did they find the origin order, but we also received it in time. Excellent!"`,
     className: "",
   },
   {
     name: "Irene Roberts",
-    img: "/social-proof/images/image-irene.jpg",
+    img: "/projects/newbie/social-proof-section/images/image-irene.jpg",
     text: `"Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."`,
     className: "lg:mt-4",
   },
   {
     name: "Anne Wallace",
-    img: "/social-proof/images/image-anne.jpg",
+    img: "/projects/newbie/social-proof-section/images/image-anne.jpg",
     text: `"Put on order with this company and can only praise them for the very high standard. Will definitely use them again and recommendd them to everyone!"`,
     className: "lg:mt-8",
   },
-];
+]
 
 function InformationBlock({ className }) {
   return (
@@ -87,7 +87,7 @@ function InformationBlock({ className }) {
         See what out satisfied customers are saying about our services.
       </p>
     </div>
-  );
+  )
 }
 function RatingBlock({ className }) {
   return (
@@ -96,7 +96,7 @@ function RatingBlock({ className }) {
       <StarRating text="Report Guru" className="lg:ml-8" />
       <StarRating text="BestTech" className="lg:ml-16" />
     </div>
-  );
+  )
 }
 function TestimonialsBlock({ className }) {
   return (
@@ -105,18 +105,19 @@ function TestimonialsBlock({ className }) {
         <Testimonial key={i} {...testimonial} />
       ))}
     </div>
-  );
+  )
 }
 export default function Page() {
   const gridStyles = clsx(
     "py-14 h-fit grid grid-cols-1 px-4 gap-7",
     "lg:grid-cols-2 lg:place-items-center",
     ""
-  );
+  )
+  //TODO: Try to fix the background.
   return (
     <div className="container mx-auto w-screen h-screen relative">
       <Image
-        src="/social-proof/images/bg-pattern-bottom-mobile.svg"
+        src="/projects/newbie/social-proof-section/images/bg-pattern-bottom-mobile.svg"
         fill
         objectFit="cover"
         className="absolute -z-10"
@@ -127,5 +128,5 @@ export default function Page() {
         <TestimonialsBlock className="lg:col-start-1 lg:col-span-2 lg:flex-row items-stretch" />
       </div>
     </div>
-  );
+  )
 }

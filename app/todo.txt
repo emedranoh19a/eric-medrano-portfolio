@@ -1,21 +1,16 @@
 //TODO: Hoy ultimo dia del año en el trabajo.
-//TODO: Agregar unos 3 proyectos de tailwind, y arreglar el w-screen h-screen.
-//TODO: Recipe page.
+//TODO: Not started.Recipe page.
 
 //TODO: (Paid) Workit landing pageResults summary component
 //TODO: (Paid)Skilled e-learning landing page
 
 //Checkpoint
-//TODO Results summary component
 
 //TODO: (Paid) Equalizer landing page
-//TODO: Order summary component
-//TODO: Stats preview card
 //TODO: (Paid) Meet landing page
-//TODO: 3-column preview card component
+//TODO: Not started. 3-column preview card component
 //TODO: (Paid) Pod request access landing page
-//TODO: Profile card component
-//TODO: Social proof sections
+
 //TODO: Article preview component
 //TODO: Four card feature section
 //TODO: Base Apparel coming soon page

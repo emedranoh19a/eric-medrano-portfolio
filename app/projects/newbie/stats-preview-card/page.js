@@ -1,5 +1,5 @@
-import clsx from "clsx";
-import Image from "next/image";
+import clsx from "clsx"
+import Image from "next/image"
 
 function Stat({ stat, description }) {
   return (
@@ -9,13 +9,14 @@ function Stat({ stat, description }) {
         {description}
       </span>
     </div>
-  );
+  )
 }
 const stats = [
   { stat: "10k+", description: "COMPANIES" },
   { stat: "314", description: "TEMPLATES" },
   { stat: "12M+", description: "QUERIES" },
-];
+]
+//TODO: Fix this page.
 function Page() {
   const cardContainerStyles = clsx(
     "absolute bg-purple-200/10  left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 flex flex-col justify-between",
@@ -23,13 +24,13 @@ function Page() {
 
     "lg:max-w-[1000px] lg:max-h-96 lg:flex-row-reverse",
     "rounded-xl overflow-hidden"
-  );
+  )
   return (
     <div className="relative bg-slate-900 h-screen w-screen">
       <div className={cardContainerStyles}>
         <div className="h-40 lg:h-80 lg:basis-1/2 relative bg-gradient-to-tr from-purple-300 to-purple-400">
           <Image
-            src="/stats-preview-card/images/image-header-desktop.jpg"
+            src="/projects/newbie/stats-preview-card/images/image-header-desktop.jpg"
             fill
             objectFit="cover"
             className="mix-blend-multiply opacity-80"
@@ -52,7 +53,7 @@ function Page() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Page;
+export default Page

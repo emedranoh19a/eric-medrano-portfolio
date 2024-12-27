@@ -71,7 +71,7 @@ export default function IconContainer({
         style={{ width, height }}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        className="aspect-square rounded-full bg-gray-200 flex items-center justify-center relative"
+        className="aspect-square flex items-center justify-center relative"
       >
         {/* //Pues, si es posible, hacer las imágenes redondas. */}
         <AnimatePresence>
@@ -96,6 +96,7 @@ export default function IconContainer({
             fill
             objectFit="cover"
             objectPosition="top"
+            className="rounded-full"
           />
         </motion.div>
         {isExternalProject && (

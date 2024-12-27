@@ -19,9 +19,8 @@ function Intro() {
 
 function Card({ className, accentClassName, title, content, visual, width }) {
     //Style: 
-
     // const containerStyles = twMerge(clsx("relative p-10 min-h-60 max-w-96 row-span-2 rounded-lg overflow-hidden shadow-xl", className))
-    const containerStyles = cn("relative p-10 min-h-60 max-w-96 row-span-2 rounded-lg overflow-hidden shadow-xl", className)
+    const containerStyles = cn("relative p-10 bg-white min-h-60 max-w-96 row-span-2 rounded-lg overflow-hidden shadow-xl", className)
     const accentStyles = cn("absolute w-full h-2  top-0 left-0", accentClassName)
 
     return <div className={containerStyles}>
@@ -33,10 +32,10 @@ function Card({ className, accentClassName, title, content, visual, width }) {
 }
 
 const cards = [
-    { title: "Supervisor", content: "Monitors activity to identify project roadblocks", visual: "/four-card-feature/images/icon-supervisor.svg", className: "lg:col-start-1 lg:row-start-2", accentClassName: "bg-cyan-500", width: 64 },
-    { title: "Team Builder", content: "Scans our talent network to create the optimal team for your project", visual: "/four-card-feature/images/icon-team-builder.svg", className: "", accentClassName: "bg-red-600", width: 64 },
-    { title: "Karma", content: "Regularly evaluates our talent to ensure quality", visual: "/four-card-feature/images/icon-karma.svg", className: "lg-row-start-3 lg:col-start-2", accentClassName: "bg-amber-400", width: 64 },
-    { title: "Calculator", content: "Uses data from past projects to provide better delivery estimates", visual: "/four-card-feature/images/icon-calculator.svg", className: "lg:col-start-3 lg:row-start-2", accentClassName: "bg-sky-600", width: 64 }
+    { title: "Supervisor", content: "Monitors activity to identify project roadblocks", visual: "/projects/newbie/four-card-feature-section/images/icon-supervisor.svg", className: "lg:col-start-1 lg:row-start-2", accentClassName: "bg-cyan-500", width: 64 },
+    { title: "Team Builder", content: "Scans our talent network to create the optimal team for your project", visual: "/projects/newbie/four-card-feature-section/images/icon-team-builder.svg", className: "", accentClassName: "bg-red-600", width: 64 },
+    { title: "Karma", content: "Regularly evaluates our talent to ensure quality", visual: "/projects/newbie/four-card-feature-section/images/icon-karma.svg", className: "lg-row-start-3 lg:col-start-2", accentClassName: "bg-amber-400", width: 64 },
+    { title: "Calculator", content: "Uses data from past projects to provide better delivery estimates", visual: "/projects/newbie/four-card-feature-section/images/icon-calculator.svg", className: "lg:col-start-3 lg:row-start-2", accentClassName: "bg-sky-600", width: 64 }
 ]
 export default function Page() {
 
