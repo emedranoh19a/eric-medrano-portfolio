@@ -14,33 +14,7 @@
 
 export default function Page() {
     return <div>
-        <PageContent />
-        <PageContent />
-        <PageContent />
-        <PageContent />
-        <PageContent />
-        <PageContent />
-        <PageContent />
-        <PageContent />
-        <PageContent />
-        <PageContent />
-        <PageContent />
-        <PageContent />
-        <PageContent />
-        <PageContent />
-        <PageContent />
-        <PageContent />
-        <PageContent />
-        <PageContent />
-        <PageContent />
-        <PageContent />
-        <PageContent />
-        <PageContent />
-        <PageContent />
-        <PageContent />
-        <PageContent />
-        <PageContent />
-        <PageContent />
+
     </div>
 }
 

@@ -47,7 +47,6 @@ export const sidebarLinks = [
 //4. guru.
 
 export const projects = [
-
     {
         title: "Omnifood",
         description: "Not so advanced, but definitely not a beginner project. From the HTML & CSS course from Jonas Schmedtmann.",
@@ -120,6 +119,30 @@ export const projects = [
         isComplete: false,
         isPublic: true,
         isExternalProject: true,
+    },
+    {
+        title: "Social Links Profile",
+        description: "Newbie challenge from Front End Mentor",
+        image: "/projects/newbie/social-links-profile/desktop-preview.jpg",
+        url: "/projects/newbie/social-links-profile",
+        level: 0,
+        techs: ["html", "tailwindcss"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
+    {
+        title: "Blog Preview Card",
+        description: "Newbie challenge from Front End Mentor",
+        image: "/projects/newbie/blog-preview-card/desktop-design.jpg",
+        url: "/projects/newbie/blog-preview-card",
+        level: 0,
+        techs: ["html", "tailwindcss"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
     },
 
 

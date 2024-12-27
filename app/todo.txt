@@ -1,8 +1,78 @@
+//TODO: Hoy ultimo dia del año en el trabajo.
+//TODO: Agregar unos 3 proyectos de tailwind, y arreglar el w-screen h-screen.
+//TODO: Recipe page.
+
+
+//TODO: FAQ accordion
+//TODO: Workit landing pageResults summary component
+//TODO: Product preview card componentskilled e-learning landing page
+//TODO: Interactive rating component
+//TODO: QR code componentNFT preview card component
+//TODO: Equalizer landing page
+//TODO: Order summary component
+//TODO: Stats preview card
+//TODO: Meet landing page
+//TODO: 3-column preview card component
+//TODO: Pod request access landing page
+//TODO: Profile card component
+//TODO: Social proof sections
+//TODO: Article preview component
+//TODO: Four card feature section
+//TODO: Base Apparel coming soon page
+//TODO: Intro componentn with sign-up form
+//TODO: Single price grid component
+//TODO: Ping single column coming soon page
+//TODO: Huddle landing page with a single introductory section
+//TODO: Conference ticket generator
+//TODO: Tech book club landing page
+//TODO: Bento grid
+Product list with cart
+
+Mortgage repayment calculator
+Contact form
+Newletter sign-up form with success message
+
+Body Mass Index calculator
+Age calculator app
+Single-page developer portfolio
+News homepage
+
+Notifications page
+Interactive card details form
+Single-oage design portfolioExpenses char component
+Intro section with dropdown navigation
+Advice generator app
+suite landing page
+Art gallerty website
+Time tracking dashboard
+
+GiotHub user search app
+Tip calculator app
+Agency landing page
+typemaster pre-launch landing page
+Blogr landing page
+Crowdfunding product page
+Interactive pricing component
+Maker pre-launch landing page
+Loop studios landing page
+Officelite coming soon stiffness
+Testimonials grid section
+Fylo data storage component
+Coding bootcamp testimonials slider
+Social media dashboard with theme switcher
+Insure landing page
+Pricing component with toggle
+
+Project tracking intro component
+
+
+
+
 //TODO: Animated tooltip.
 //TODO: Features sections. Just to get them to know me.
 //TODO: Floating Dock. Instead of the Magified Dock.
 //TODO: Contact form. with React-Hook-Form and basic stuff.
-//TODO: Tabs. Juntar con el dock.
+//TODO: Tabs. Juntar con el dock.ß
 //TODO: Tabs. Para hacer filtrables las tecnologías. Esto estaría fascinante.
 //TODO: Text generate Effect. Para títulos grandes.
 //TODO: Eric Medrano.  (Text Hover Effect), and maybe the fancy sparkles.

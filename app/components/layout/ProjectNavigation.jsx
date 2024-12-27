@@ -4,7 +4,7 @@ import { useState } from "react";
 import FadeInDiv from "../ui/Tabs/FadeInDiv";
 import Tabs from "../ui/Tabs/Tabs";
 const propTabs = [
-  // { title: "Newbie", value: 0 },
+  { title: "Newbie", value: 0 },
   { title: "Beginner", value: 1 },
   { title: "Intermediate", value: 2 },
   { title: "Advanced", value: 3 },

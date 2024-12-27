@@ -56,9 +56,16 @@ export default function IconContainer({
   });
 
   const [hovered, setHovered] = useState(false);
-
+  // href={href}
+  // passHref={externalProject}
+  // className={className}
+  // target={externalProject ? "_blank" : ""}
   return (
-    <Link href={href}>
+    <Link
+      href={href}
+      passHref={isExternalProject}
+      target={isExternalProject ? "_blank" : ""}
+    >
       <motion.div
         ref={ref}
         style={{ width, height }}
