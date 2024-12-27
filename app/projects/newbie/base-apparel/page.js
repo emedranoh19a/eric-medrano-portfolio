@@ -82,29 +82,30 @@ function Input() {
   )
 
   const handleFormSubmit = async (event) => {
-    event.preventDefault()
-    try {
-      setStatus("pending")
-      setError(null)
-      const myForm = event.target
-      const formData = new FormData(myForm)
-      const res = await fetch("/__forms.html", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
-      })
-      if (res.status === 200) {
-        setStatus("ok")
-      } else {
-        setStatus("error")
-        setError(`${res.status} ${res.statusText}`)
-        console.log("error")
-      }
-    } catch (e) {
-      setStatus("error")
-      setError(`${e}`)
-      console.log(e)
-    }
+    // event.preventDefault()
+    // try {
+    //   setStatus("pending")
+    //   setError(null)
+    //   const myForm = event.target
+    //   const formData = new FormData(myForm)
+    //   const res = await fetch("/__forms.html", {
+    //     method: "POST",
+    //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //     body: new URLSearchParams(formData).toString(),
+    //   })
+    //   if (res.status === 200) {
+    //     setStatus("ok")
+    //   } else {
+    //     setStatus("error")
+    //     setError(`${res.status} ${res.statusText}`)
+    //     console.log("error")
+    //   }
+    // } catch (e) {
+    //   setStatus("error")
+    //   setError(`${e}`)
+    //   console.log(e)
+    // }
+    console.log("form submitted")
   }
 
   //Review added email "id" and "name" props
@@ -114,9 +115,9 @@ function Input() {
       <form
         name="contact"
         onSubmit={handleFormSubmit}
-        action="/email-success"
-        method="POST"
-        data-netlify="true"
+      // action="/email-success"
+      // method="POST"
+      // data-netlify="true"
       >
         <input type="hidden" name="form-name" value="contact" />
 
