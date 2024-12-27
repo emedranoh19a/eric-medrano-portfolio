@@ -7,6 +7,7 @@
 import clsx from "clsx"
 import Image from "next/image"
 
+//TODO: Screen styles
 function Page() {
   const cardStyles = clsx(
     "bg-white relative flex flex-col gap-2 h-fit w-80 p-4",
@@ -39,7 +40,7 @@ function Page() {
           content, and presentation.
         </p>
         <div className="flex items-center justify-start gap-3">
-          <div class="relative w-10 h-10">
+          <div className="relative w-10 h-10">
             <Image
               src="/projects/newbie/blog-preview-card/images/image-avatar.webp"
               fill

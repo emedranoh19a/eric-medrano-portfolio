@@ -1,22 +1,23 @@
-import clsx from "clsx";
-import Image from "next/image";
+import clsx from "clsx"
+import Image from "next/image"
 
+//TODO: screen styles and z-index verification.
 function Card() {
   const cardStyles = clsx(
     "absolute bg-white inset-y-16 inset-x-6 rounded-xl",
     "md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:max-h-96 md:w-[700px]",
     "flex flex-col md:flex-row",
     "overflow-hidden border-xl shadow-xl shadow-orange-200/30"
-  );
+  )
   return (
     <div className={cardStyles}>
       <div className="min-h-2/5 h-full md:h-full w-full md:basis-1/2 relative">
         <Image
-          src="/product-preview-card/images/image-product-desktop.jpg"
+          src="/projects/newbie/product-preview-card/images/image-product-desktop.jpg"
           fill
           objectFit="cover"
-          className="bg-bottom"
-          alt=""
+          objectPosition="center"
+          alt="Image of Gabrielle Essence Eau De Parfum"
         />
       </div>
       <div className="md:w-1/2 p-4 h-full flex flex-col gap-3 justify-between">
@@ -39,7 +40,7 @@ function Card() {
         </button>
       </div>
     </div>
-  );
+  )
 }
 
 function Page() {
@@ -47,7 +48,7 @@ function Page() {
     <div className="w-screen h-screen relative bg-orange-50">
       <Card />
     </div>
-  );
+  )
 }
 
-export default Page;
+export default Page

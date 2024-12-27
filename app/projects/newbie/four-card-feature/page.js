@@ -1,7 +1,6 @@
-import clsx from 'clsx'
+import { cn } from '@/app/utils/utils'
 import { Poppins } from 'next/font/google'
 import Image from 'next/image'
-import { twMerge } from 'tw-merge'
 
 // If loading a variable font, you don't need to specify the font weight
 const poppins = Poppins({ weight: ['200', '400', '600'], subsets: ['latin'] })
@@ -20,8 +19,10 @@ function Intro() {
 
 function Card({ className, accentClassName, title, content, visual, width }) {
     //Style: 
-    const containerStyles = twMerge(clsx("relative p-10 min-h-60 max-w-96 row-span-2 rounded-lg overflow-hidden shadow-xl", className))
-    const accentStyles = twMerge(clsx("absolute w-full h-2  top-0 left-0", accentClassName))
+
+    // const containerStyles = twMerge(clsx("relative p-10 min-h-60 max-w-96 row-span-2 rounded-lg overflow-hidden shadow-xl", className))
+    const containerStyles = cn("relative p-10 min-h-60 max-w-96 row-span-2 rounded-lg overflow-hidden shadow-xl", className)
+    const accentStyles = cn("absolute w-full h-2  top-0 left-0", accentClassName)
 
     return <div className={containerStyles}>
         <div className={accentStyles} />

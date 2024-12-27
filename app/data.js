@@ -144,6 +144,44 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    {
+        title: "FAQ accordion",
+        description: "Newbie challenge from Front End Mentor",
+        image: "/projects/newbie/faq-accordion/desktop-design.jpg",
+        url: "/projects/newbie/faq-accordion",
+        level: 0,
+        //TODO: maybe just vanilla JS
+        techs: ["html", "tailwindcss"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
+    {
+        title: "Product Preview Card",
+        description: "Newbie challenge from Front End Mentor",
+        image: "/projects/newbie/product-preview-card/desktop-design.jpg",
+        url: "/projects/newbie/product-preview-card",
+        level: 0,
+        techs: ["html", "tailwindcss"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
+    {
+        title: "Interactive Rating Component",
+        description: "Newbie challenge from Front End Mentor",
+        image: "/projects/newbie/interactive-rating-component/desktop-design.jpg",
+        url: "/projects/newbie/interactive-rating-component",
+        level: 0,
+        //TODO: maybe just vanilla JS
+        techs: ["html", "tailwindcss", "react"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
 
 
     //TODO: Fix usePopcorn

@@ -1,13 +1,15 @@
-"use client";
-import clsx from "clsx";
-import Image from "next/image";
-import { useState } from "react";
-
+"use client"
+import clsx from "clsx"
+import Image from "next/image"
+import { useState } from "react"
+//TODO: Screen styles.
+//TODO: Verify the zIndex for the responsive menu.
+//TODO: Verify the zIndex for the Oject navigation, on mobile.
 function PlusIcon() {
-  return <>+</>;
+  return <>+</>
 }
 function MinusIcon() {
-  return <>-</>;
+  return <>-</>
 }
 function IconStar() {
   return (
@@ -25,18 +27,18 @@ function IconStar() {
         />
       </svg>
     </span>
-  );
+  )
 }
 function AccordionItem({ title, content }) {
   //State
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
   const buttonStyles = clsx(
     " mr-4 p-2 h-6 w-6 flex items-center justify-center",
     "text-white bg-purple-500 hover:bg-purple-600",
     "rounded-full",
     "transiiton-all",
     isOpen && "bg-black"
-  );
+  )
 
   // add a horizontal rule. but how?
   return (
@@ -55,21 +57,20 @@ function AccordionItem({ title, content }) {
       {/* Implement a transition. It might be good with framer motion. */}
       {isOpen && <div className="text-gray-400">{content}</div>}
     </li>
-  );
+  )
 }
 function BackgroundImage() {
   return (
     <div className="w-full top-0 absolute h-56 bg-red-50">
       <Image
-        src="/faq-accordion/images/background-pattern-desktop.svg"
+        src="/projects/newbie/faq-accordion/images/background-pattern-desktop.svg"
         fill
         objectFit="cover"
-        alt=""
+        alt="background image"
       />
     </div>
-  );
+  )
 }
-//TODO implement a collapsible zone in this page.
 const questions = [
   {
     title: "What is Frontend Mentor, and how will it help me? ",
@@ -91,7 +92,7 @@ const questions = [
     content:
       "Frontend Mentor offers realistic coding challenges to help debelopers improve their fronotend coding skills with projevys in HTML, CSS, and JavaScript. It's suitable fot all lebels and ideal for potfolio building",
   },
-];
+]
 function Page() {
   return (
     <div className="bg-purple-50  w-screen h-screen relative flex items-center justify-center">
@@ -103,12 +104,12 @@ function Page() {
         </div>
         <ul className="h-full">
           {questions.map((question, index) => {
-            return <AccordionItem {...question} key={index} />;
+            return <AccordionItem {...question} key={index} />
           })}
         </ul>
       </div>
     </div>
-  );
+  )
 }
 
-export default Page;
+export default Page
