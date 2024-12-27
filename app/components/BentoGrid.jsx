@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ImNewTab } from "react-icons/im";
 import { cn } from "../utils/utils";
 import ProjectLink from "./ProjectLink";
 import TechIcons from "./TechIcons";
@@ -26,7 +27,6 @@ export function BentoGridItem({
   isPublic = false,
   isExternalProject,
 }) {
-  //TODO: Make an indicator for external projects
   //Style:
   const containerStyles = cn(
     "group/bento flex flex-1 relative flex-col justify-start gap-2",
@@ -58,6 +58,9 @@ export function BentoGridItem({
           objectPosition="top"
           alt={`Preview image for the ${title} project`}
         />
+        {isExternalProject && (
+          <ImNewTab className="absolute top-2 right-2 text-2xl w-6 h-6 fill-white/60 backdrop-shadow-sm group-hover/bento:fill-white group-hover/bento:scale-[1.2] transition-colors" />
+        )}
       </div>
       <div className="group-hover/bento:translate-x-2 transition duration-200">
         <div className="flex flex-row justify-between">

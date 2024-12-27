@@ -1,4 +1,5 @@
 "use client"
+import { cn } from "@/app/utils/utils"
 import clsx from "clsx"
 import { Josefin_Sans } from "next/font/google"
 import Image from "next/image"
@@ -60,13 +61,16 @@ function Content() {
   )
 }
 function LadyHero() {
-  const styles = clsx(
+  const baseStyles = clsx(
     "relative h-60 sm:h-screen sm:w-full",
-    "bg-cover bg-top  ",
-    "bg-[url('/projects/newbie/base-apparel-coming-soon-page/images/hero-mobile.jpg')] sm:bg-[url('/projects/newbie/base-apparel/images/hero-desktop.jpg')]",
     "sm:col-start-2 sm:row-start-1 sm:row-end-3",
   )
-  return <div className={styles} />
+  const mobileStyles = cn(baseStyles, "sm:hidden")
+  const desktopStyles = cn(baseStyles, "hidden sm:block")
+  return <>
+    <Image alt="Stylish lady with makeup" fill objectFit="cover" src="/projects/newbie/base-apparel-coming-soon-page/images/hero-mobile.jpg" className={mobileStyles} />
+    <Image alt="Stylish lady with makeup" fill objectFit="contain" src="/projects/newbie/base-apparel-coming-soon-page/images/hero-desktop.jpg" className={desktopStyles} />
+  </>
 }
 
 function Input() {
@@ -161,9 +165,10 @@ function Page() {
         <Background />
         <div className="h-fit w-20 p-6 ml-4 relative">
           <Image
-            src="/base-apparel/images/logo.svg"
+            src="/projects/newbie/base-apparel-coming-soon-page/images/logo.svg"
             fill
             objectFit="contain"
+            objectPosition="right"
             alt="logo"
           />
         </div>

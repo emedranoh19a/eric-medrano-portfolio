@@ -47,43 +47,20 @@ export const sidebarLinks = [
 //4. guru.
 
 export const projects = [
-    {
-        title: "Omnifood",
-        description: "Not so advanced, but definitely not a beginner project. From the HTML & CSS course from Jonas Schmedtmann.",
-        image: "/projects/other/omnifood_preview.png",
-        url: "https://omnifood-for-eric-medrano.netlify.app/",
-        level: 1,
-        techs: ["html", "css"],
-        isImportant: true, //delete the 
-        isComplete: true,
-        isPublic: true,
-        isExternalProject: true,
 
-    },
     {
-        title: "Trillo",
-        description: "A review of Flexbox by applying it through and through. From the Advanced CSS and Sass course from Jonas Schmedtmann.",
-        image: "/projects/other/trillo_preview.png",
-        url: "https://trillo-for-eric-medrano.netlify.app/",
-        level: 1,
-        techs: ["html", "sass"],
+        title: "REDA舞神楽 website",
+        description: "A real project for the amazing Yosakoi Soran Team REDA舞神楽. An initiative that made me realize an amazing way to juggle with TailwindCSS utility classes, while thinking of maintainable and reusable code.",
+        image: "/projects/other/reda-website_preview.png",
+        url: "https://our-little-secret.netlify.app/theme/2023",
+        level: 3,
+        techs: ["nextjs", "tailwindcss", "framer-motion"],
         isImportant: true,
-        isComplete: true,
+        isComplete: false,
         isPublic: true,
         isExternalProject: true,
     },
-    {
-        title: "Nexter",
-        description: "A review of CSS Grid by applying it through and through. From the Advanced CSS and Sass course from Jonas Schmedtmann.",
-        image: "/projects/other/nexter_preview.png",
-        url: "https://nexter-for-eric-medrano.netlify.app/",
-        level: 1,
-        techs: ["html", "sass"],
-        isImportant: true,
-        isComplete: true,
-        isPublic: true,
-        isExternalProject: true,
-    },
+
     {
         title: "The React Quiz",
         description: "A project involving Redux. From the Ultimate React course from Jonas Schmedtmann.",
@@ -108,18 +85,7 @@ export const projects = [
         isPublic: true,
         isExternalProject: true,
     },
-    {
-        title: "REDA舞神楽 website",
-        description: "A real project for the amazing Yosakoi Soran Team REDA舞神楽. An initiative that made me realize an amazing way to juggle with TailwindCSS utility classes, while thinking of maintainable and reusable code.",
-        image: "/projects/other/reda-website_preview.png",
-        url: "https://our-little-secret.netlify.app/theme/2023",
-        level: 3,
-        techs: ["nextjs", "tailwindcss", "framer-motion"],
-        isImportant: true,
-        isComplete: false,
-        isPublic: true,
-        isExternalProject: true,
-    },
+
     {
         title: "Social Links Profile",
         description: "Newbie challenge from Front End Mentor",
@@ -131,6 +97,19 @@ export const projects = [
         isComplete: true,
         isPublic: true,
         isExternalProject: false,
+    },
+    {
+        title: "Omnifood",
+        description: "Not so advanced, but definitely not a beginner project. From the HTML & CSS course from Jonas Schmedtmann.",
+        image: "/projects/other/omnifood_preview.png",
+        url: "https://omnifood-for-eric-medrano.netlify.app/",
+        level: 1,
+        techs: ["html", "css"],
+        isImportant: true, //delete the 
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: true,
+
     },
     {
         title: "Blog Preview Card",
@@ -158,6 +137,7 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+
     {
         title: "Product Preview Card",
         description: "Newbie challenge from Front End Mentor",
@@ -184,6 +164,18 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        title: "Trillo",
+        description: "A review of Flexbox by applying it through and through. From the Advanced CSS and Sass course from Jonas Schmedtmann.",
+        image: "/projects/other/trillo_preview.png",
+        url: "https://trillo-for-eric-medrano.netlify.app/",
+        level: 1,
+        techs: ["html", "sass"],
+        isImportant: true,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: true,
+    },
+    {
         title: "QR Code Component",
         description: "Newbie challenge from Front End Mentor",
         image: "/projects/newbie/qr-code-component/desktop-design.jpg",
@@ -207,6 +199,19 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    {
+        title: "Base Apparel Coming Soon Page",
+        description: "Newbie challenge from Front End Mentor",
+        image: "/projects/newbie/base-apparel-coming-soon-page/desktop-design.jpg",
+        url: "/projects/newbie/base-apparel-coming-soon-page",
+        level: 0,
+        techs: ["html", "tailwindcss"],
+        isImportant: true,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
+
     {
         title: "Order Summary Component",
         description: "Newbie challenge from Front End Mentor",
@@ -268,6 +273,18 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        title: "Nexter",
+        description: "A review of CSS Grid by applying it through and through. From the Advanced CSS and Sass course from Jonas Schmedtmann.",
+        image: "/projects/other/nexter_preview.png",
+        url: "https://nexter-for-eric-medrano.netlify.app/",
+        level: 1,
+        techs: ["html", "sass"],
+        isImportant: true,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: true,
+    },
+    {
         title: "Four Card Feature Section",
         description: "Newbie challenge from Front End Mentor",
         image: "/projects/newbie/four-card-feature-section/desktop-design.jpg",
@@ -280,28 +297,114 @@ export const projects = [
         isExternalProject: false,
     },
     {
-        title: "Base Apparel Coming Soon Page",
-        description: "Newbie challenge from Front End Mentor",
-        image: "/projects/newbie/base-apparel-coming-soon-page/desktop-design.jpg",
-        url: "/projects/newbie/base-apparel-coming-soon-page",
+        title: "Keeper",
+        description: "",
+        image: "/projects/other/keeper_preview.png",
+        url: "https://cool-centaur-8a3c2e.netlify.app/",
         level: 0,
-        techs: ["html", "tailwindcss"],
+        techs: ["react"],
         isImportant: false,
         isComplete: true,
         isPublic: true,
-        isExternalProject: false,
+        isExternalProject: true,
     },
 
+    //Hero.
+    //About me.
+    //Skills.
+    //Contact.
 
     //TODO: Fix usePopcorn
     //TODO: Fix worldwise
     //TODO: Fix at all costs, the wild oasis admin page
     //TODO: If it is actually fixed, then finish once and for all the nextJS course from schmedtmann
-    //TODO: Basic project of Angela Yu. HTML
-    //TODO: Basic project of Angela Yu. CSS
-    //TODO: Basic project of Angela Yu. jQuery
-    //TODO: Basic project of Angela Yu. jQuery
+
 ]
 
 //TODO: Maybe some stats. TOEIC, languages. 
 
+export const slugs = [
+    //"typescript",
+    //"dart",
+    //"java",
+    //"android",
+    //"flutter",
+    //"express",
+    //"prisma",
+    //"amazonaws",
+    //"postgresql",
+    //"firebase",
+    //"nginx",
+    //"vercel",
+    //Adobe?
+    //Youtube? haha
+    //buzzfeed
+    //meta: swift.
+    //metro de la ciudad de mexico!
+    //"testinglibrary",
+    //"jest",
+    //"cypress",
+    //"docker",
+    //"flutter quiero"
+    //"jira",
+    //quiero pstgresql
+    //quierno nintendogamecube
+    //opencv
+    //pandas
+    //graphql
+    //storybook
+    //selenium
+    //raspberry pi
+    //arduino
+    //chartjs
+    //unity estaria chido
+    //egghead
+    //nintendo
+    //nintendoswitch
+    //RIVE!!!
+    //Three.js
+    //Blender
+    //"androidstudio",
+    //"sonarqube",
+    //"figma",
+    //"nintendogamecube",
+    "javascript",
+    "jira",
+    "react",
+    "html5",
+    "css3",
+    "nodedotjs",
+    "nextdotjs",
+    "sass",
+    "reactquery",
+    "reacthookform",
+    "tailwindcss",
+    "python",
+    "c",
+    "netlify",
+    "styledcomponents",
+    "reactrouter",
+    "bootstrap",
+    "jquery",
+    "nextjs",
+    "mui",
+    "cssmodules",
+
+    "chakraui",
+    "npm",
+    "mongodb",
+    "jss",
+    "metrodelaciudaddemexico",
+    "git",
+    "framer",
+    "redux",
+    "reacttable",
+    "udemy",
+    "slack",
+    "openai",
+    "framer",
+    "webflow",
+    "github",
+    "gitlab",
+    "visualstudiocode",
+]

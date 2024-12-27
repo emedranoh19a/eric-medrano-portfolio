@@ -1,5 +1,6 @@
 "use client";
-
+//TODO: Fix the following Skills Globe, and add some colors.
+import { slugs } from "@/app/data";
 import { useTheme } from "next-themes";
 import { useEffect, useMemo, useState } from "react";
 import { Cloud, fetchSimpleIcons, renderSimpleIcon } from "react-icon-cloud";
@@ -83,88 +84,3 @@ export function SkillsGlobe() {
 }
 //TODO. review the general styles for the next theme. Do I really want a black background?
 //TODO: At least, I want some kind of degradation
-const slugs = [
-  //"typescript",
-  //"dart",
-  //"java",
-  //"android",
-  //"flutter",
-  //"express",
-  //"prisma",
-  //"amazonaws",
-  //"postgresql",
-  //"firebase",
-  //"nginx",
-  //"vercel",
-  //Adobe?
-  //Youtube? haha
-  //buzzfeed
-  //meta: swift.
-  //metro de la ciudad de mexico!
-  //"testinglibrary",
-  //"jest",
-  //"cypress",
-  //"docker",
-  //"flutter quiero"
-  //"jira",
-  //quiero pstgresql
-  //quierno nintendogamecube
-  //opencv
-  //pandas
-  //graphql
-  //storybook
-  //selenium
-  //raspberry pi
-  //arduino
-  //chartjs
-  //unity estaria chido
-  //egghead
-  //nintendo
-  //nintendoswitch
-  //RIVE!!!
-  //Three.js
-  //Blender
-  //"androidstudio",
-  //"sonarqube",
-  //"figma",
-  //"nintendogamecube",
-  "javascript",
-  "jira",
-  "react",
-  "html5",
-  "css3",
-  "nodedotjs",
-  "nextdotjs",
-  "sass",
-  "reactquery",
-  "reacthookform",
-  "tailwindcss",
-  "python",
-  "c",
-  "netlify",
-  "styledcomponents",
-  "reactrouter",
-  "bootstrap",
-  "jquery",
-  "nextjs",
-  "mui",
-  "cssmodules",
-
-  "chakraui",
-  "npm",
-  "mongodb",
-  "jss",
-  "metrodelaciudaddemexico",
-  "git",
-  "framer",
-  "redux",
-  "reacttable",
-  "udemy",
-  "slack",
-  "openai",
-  "framer",
-  "webflow",
-  "github",
-  "gitlab",
-  "visualstudiocode",
-];

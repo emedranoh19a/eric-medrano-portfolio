@@ -6,21 +6,17 @@
 
 //Checkpoint
 
-//TODO: (Paid) Equalizer landing page
-//TODO: (Paid) Meet landing page
-//TODO: Not started. 3-column preview card component
-//TODO: (Paid) Pod request access landing page
-
-//TODO: Article preview component
-//TODO: Four card feature section
-//TODO: Base Apparel coming soon page
-//TODO: Intro componentn with sign-up form
-//TODO: Single price grid component
-//TODO: Ping single column coming soon page
-//TODO: Huddle landing page with a single introductory section
-//TODO: Conference ticket generator
-//TODO: (Paid) Tech book club landing page
-//TODO: Bento grid
+(Paid) Equalizer landing page
+(Paid) Meet landing page
+Not started. 3-column preview card component
+(Paid) Pod request access landing page
+Intro componentn with sign-up form
+Single price grid component
+Ping single column coming soon page
+Huddle landing page with a single introductory section
+Conference ticket generator
+(Paid) Tech book club landing page
+Bento grid
 Product list with cart
 
 Mortgage repayment calculator
@@ -77,6 +73,55 @@ Project tracking intro component
 //TODO: Add the favicon. 
 //TODO: Add the metadata. 
 //TODO: Maybe trying to use another set of images, but optimized.
-  //TODO: The external projects should open a new window
-  //TODO: start moving the code from Front End Mentor.
+//TODO: The external projects should open a new window
  // El gato negro de Rive.
+
+
+
+//TODO: add content:
+
+Hero Section
+Title:
+"Crafting Experiences, One Line of Code at a Time."
+
+Text:
+"Welcome to my world of creativity, where innovation meets passion. I’m here to transform ideas into reality, with a touch of imagination and a dash of skill."
+
+About Section
+Title:
+"More Than Just a Title."
+
+Text:
+"I’m a versatile individual with a curious mind, passionate about exploring and excelling in multiple fields. You might call me a Developer today, but tomorrow I could be a Musician, a Dancer, or even a Pianist. The possibilities are endless, and I’m constantly redefining myself—because why settle for one role when you can master many?"
+
+(Swappable words displayed dynamically: Developer, Musician, Dancer, Pianist, Writer, Designer, Explorer, Visionary, Artist, Engineer, Innovator, Creator, Dreamer, Thinker, Leader, Builder.)
+
+Skills Section
+Title:
+"Expanding Horizons, One Skill at a Time."
+
+Text:
+"My skill set isn’t just a list; it’s a growing ecosystem. Picture a globe filled with logos of everything I know and love—a globe that’s constantly spinning, expanding, and evolving. With every new challenge I take on, another skill finds its place, making this sphere of knowledge even richer. Explore it today, and let’s watch it grow together."
+
+Projects Section
+Title:
+"Turning Concepts into Creations."
+
+Text:
+"Here’s where imagination meets execution. Each project reflects a part of me—my curiosity, my dedication, and my constant drive to innovate. Dive in and discover the stories behind the code, the pixels, and the melodies."
+
+Contact Section
+Title:
+"Let’s Make Something Extraordinary."
+
+Text:
+"I’d love to hear from you! Whether you have an idea, a collaboration opportunity, or just want to say hi, drop me a message. Together, we can create something remarkable."
+
+Thank You Section
+Title:
+"Gratitude Beyond Words."
+
+Text:
+"Thank you for stopping by and taking the time to explore my work. Your support fuels my journey, and I can’t wait to share more with you as I continue to grow, learn, and create. Let’s stay connected and build something unforgettable."
+
+This structure gives your portfolio a personal, engaging tone while highlighting your ambition and versatility. Let me know if you’d like further refinements or additional sections!
