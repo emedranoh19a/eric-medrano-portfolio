@@ -323,94 +323,81 @@ export const projects = [
 
 //TODO: Maybe some stats. TOEIC, languages. 
 
+//"typescript",
+//"dart",
+//"java",
+//"android",
+//"flutter",
+//"express",
+//"prisma",
+//"amazonaws",
+//"postgresql",
+//"firebase",
+//"nginx",
+//"vercel",
+//Adobe?
+//meta: swift.
+//metro de la ciudad de mexico!
+//"testinglibrary",
+//"jest",
+//"cypress",
+//"docker",
+//"flutter quiero"
+//"jira",
+//quiero pstgresql
+//quierno nintendogamecube
+//opencv
+//pandas
+//graphql
+//storybook
+//selenium
+//raspberry pi
+//arduino
+//chartjs
+//unity estaria chido
+//egghead
+//nintendo
+//nintendoswitch
+//RIVE!!!
+//Three.js
+//Blender
+//"androidstudio",
+//"sonarqube",
+//"figma",
+//"nintendogamecube",
+// "jira",
+// "c",
 export const slugs = [
-    //"typescript",
-    //"dart",
-    //"java",
-    //"android",
-    //"flutter",
-    //"express",
-    //"prisma",
-    //"amazonaws",
-    //"postgresql",
-    //"firebase",
-    //"nginx",
-    //"vercel",
-    //Adobe?
-    //Youtube? haha
-    //buzzfeed
-    //meta: swift.
-    //metro de la ciudad de mexico!
-    //"testinglibrary",
-    //"jest",
-    //"cypress",
-    //"docker",
-    //"flutter quiero"
-    //"jira",
-    //quiero pstgresql
-    //quierno nintendogamecube
-    //opencv
-    //pandas
-    //graphql
-    //storybook
-    //selenium
-    //raspberry pi
-    //arduino
-    //chartjs
-    //unity estaria chido
-    //egghead
-    //nintendo
-    //nintendoswitch
-    //RIVE!!!
-    //Three.js
-    //Blender
-    //"androidstudio",
-    //"sonarqube",
-    //"figma",
-    //"nintendogamecube",
-    "javascript",
-    "jira",
-    "react",
-    "html5",
-    "css3",
-    "nodedotjs",
-    "nextdotjs",
-    "sass",
-    "reactquery",
-    "reacthookform",
-    "tailwindcss",
-    "python",
-    "c",
-    "netlify",
-    "styledcomponents",
-    "reactrouter",
-    "bootstrap",
-    "jquery",
-    "nextjs",
-    "mui",
     "cssmodules",
-
-    "chakraui",
-    "npm",
-    "mongodb",
-    "jss",
-    "metrodelaciudaddemexico",
-    "git",
-    "framer",
-    "redux",
-    "reacttable",
-    "udemy",
-    "slack",
     "openai",
-    "framer",
-    "webflow",
     "github",
-    "gitlab",
-    "visualstudiocode",
 ]
 
 export const skillImages = [
-    "/skills/sass.png",
     "/skills/html.png",
-    "/skills/react.png"
+    "/skills/css.png",
+    "/skills/tailwind-css.png",
+    "/skills/javascript.png",
+    "/skills/python.png",
+    "/skills/redux.png",
+    "/skills/node-js.png",
+    "/skills/sass.png",
+    "/skills/react.png",
+    "/skills/react-hook-form.png",
+    "/skills/tanstack-query.webp",
+    "/skills/tanstack-table.png",
+    "/skills/styled-components.png",
+    "/skills/next-js.png",
+    "/skills/git.png",
+    "/skills/bootstrap.png",
+    "/skills/mongo-db.png",
+    "/skills/npm.png",
+    "/skills/netlify.png",
+    "/skills/gitlab.png",
+    "/skills/vs-code.png",
+    "/skills/chakra-ui.png",
+    "/skills/mui.png",
+    "/skills/react-icon.png",
+    "/skills/react-router.png",
+    "/skills/motion.png"
 ]

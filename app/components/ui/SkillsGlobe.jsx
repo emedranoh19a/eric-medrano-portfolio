@@ -1,7 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { useTheme } from "next-themes";
+import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 import { Cloud, fetchSimpleIcons, renderSimpleIcon } from "react-icon-cloud";
 
@@ -76,8 +76,19 @@ const SkillsGlobe = ({ iconSlugs = [], imageArray }) => {
         {imageArray &&
           imageArray.length > 0 &&
           imageArray.map((image, index) => (
-            <a key={index} href="#" onClick={(e) => e.preventDefault()}>
-              <img height="42" width="42" alt="A globe" src={image} />
+            <a
+              className="relative w-1 h-1"
+              key={index}
+              href="#"
+              onClick={(e) => e.preventDefault()}
+            >
+              <Image
+                height="42"
+                width="42"
+                alt="A globe"
+                src={image}
+                priority
+              />
             </a>
           ))}
       </>

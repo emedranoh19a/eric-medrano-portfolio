@@ -1,5 +1,5 @@
 "use client";
-import { skillImages } from "@/app/data";
+import { skillImages, slugs } from "@/app/data";
 import Heading from "../ui/Heading";
 import SkillsGlobe from "../ui/SkillsGlobe";
 import Text from "../ui/Text";
@@ -26,7 +26,8 @@ export default function Skills() {
           </Text>
         </div>
         <div className="h-full w-full grid place-items-center">
-          <SkillsGlobe imageArray={skillImages} />
+          <SkillsGlobe iconSlugs={slugs} imageArray={skillImages} />
+          {/* <SkillsGlobe imageArray={skillImages} /> */}
         </div>
       </div>
     </section>
