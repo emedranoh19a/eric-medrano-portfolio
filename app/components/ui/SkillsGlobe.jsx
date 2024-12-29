@@ -1,11 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
-//TODO: Fix the following Skills Globe, and add some colors.
-import { slugs } from "@/app/data";
+
 import { useTheme } from "next-themes";
 import { useEffect, useMemo, useState } from "react";
 import { Cloud, fetchSimpleIcons, renderSimpleIcon } from "react-icon-cloud";
 
-export const cloudProps = {
+const cloudProps = {
   containerProps: {
     style: {
       display: "flex",
@@ -28,11 +28,10 @@ export const cloudProps = {
     outlineColour: "#0000",
     maxSpeed: 0.04,
     minSpeed: 0.02,
-    // dragControl: false,
   },
 };
 
-export const renderCustomIcon = (icon, theme) => {
+const renderCustomIcon = (icon, theme, imageArray) => {
   const bgHex = theme === "light" ? "#f3f2ef" : "#080510";
   const fallbackHex = theme === "light" ? "#6e6e73" : "#ffffff";
   const minContrastRatio = theme === "dark" ? 2 : 1.2;
@@ -52,12 +51,14 @@ export const renderCustomIcon = (icon, theme) => {
   });
 };
 
-export function IconCloud({ iconSlugs }) {
+const SkillsGlobe = ({ iconSlugs = [], imageArray }) => {
   const [data, setData] = useState(null);
   const { theme } = useTheme();
 
   useEffect(() => {
-    fetchSimpleIcons({ slugs: iconSlugs }).then(setData);
+    if (iconSlugs.length > 0) {
+      fetchSimpleIcons({ slugs: iconSlugs }).then(setData);
+    }
   }, [iconSlugs]);
 
   const renderedIcons = useMemo(() => {
@@ -70,17 +71,18 @@ export function IconCloud({ iconSlugs }) {
 
   return (
     <Cloud {...cloudProps}>
-      <>{renderedIcons}</>
+      <>
+        {renderedIcons}
+        {imageArray &&
+          imageArray.length > 0 &&
+          imageArray.map((image, index) => (
+            <a key={index} href="#" onClick={(e) => e.preventDefault()}>
+              <img height="42" width="42" alt="A globe" src={image} />
+            </a>
+          ))}
+      </>
     </Cloud>
   );
-}
+};
 
-export function SkillsGlobe() {
-  return (
-    <div className="relative flex size-full max-w-lg items-center justify-center overflow-hidden rounded-lg  bg-background px-20 pb-20 pt-8 ">
-      <IconCloud iconSlugs={slugs} />
-    </div>
-  );
-}
-//TODO. review the general styles for the next theme. Do I really want a black background?
-//TODO: At least, I want some kind of degradation
+export default SkillsGlobe;

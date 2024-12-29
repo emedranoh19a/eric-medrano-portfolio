@@ -408,3 +408,9 @@ export const slugs = [
     "gitlab",
     "visualstudiocode",
 ]
+
+export const skillImages = [
+    "/skills/sass.png",
+    "/skills/html.png",
+    "/skills/react.png"
+]
