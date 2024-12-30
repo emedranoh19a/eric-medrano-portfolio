@@ -62,8 +62,6 @@ Project tracking intro component
 //TODO: Features sections. Just to get them to know me.
 //TODO: Floating Dock. Instead of the Magified Dock.
 //TODO: Contact form. with React-Hook-Form and basic stuff.
-//TODO: Tabs. Juntar con el dock.ß
-//TODO: Tabs. Para hacer filtrables las tecnologías. Esto estaría fascinante.
 //TODO: Text generate Effect. Para títulos grandes.
 //TODO: Eric Medrano.  (Text Hover Effect), and maybe the fancy sparkles.
 //TODO: Timeline, for my life.
@@ -71,10 +69,9 @@ Project tracking intro component
 
 //TODO: Add the favicon. 
 //TODO: Add the metadata. 
-//TODO: Maybe trying to use another set of images, but optimized.
-//TODO: The external projects should open a new window
  // El gato negro de Rive.
-
+    {/* TODO: Make a functionality in order to swap languages. */}
+      {/* TODO: Make a Loading animation but not that required.*/}
 
 
 //TODO: add content:

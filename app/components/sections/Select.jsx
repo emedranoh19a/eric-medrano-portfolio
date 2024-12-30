@@ -3,6 +3,7 @@ import { cn } from "@/app/utils/utils";
 import clsx from "clsx";
 import { motion } from "framer-motion";
 import { useRef } from "react";
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 export default function Select({
   options,
@@ -24,7 +25,7 @@ export default function Select({
     "ring-1 ring-black/5 focus:outline-none"
   );
   const buttonStyles = clsx(
-    "grid grid-cols-1",
+    "flex items-center justify-between",
     "text-left text-gray-900 sm:text-sm/6",
     "w-full min-w-40 w-fit bg-white rounded-md py-1.5 pl-3 pr-2",
     "outline outline-1 -outline-offset-1 outline-gray-300",
@@ -46,6 +47,13 @@ export default function Select({
             {activeOption.icon}
             <span class="block truncate"> {activeOption.label}</span>
           </span>
+          <motion.div
+            initial={{ rotate: 0 }}
+            animate={{ rotate: isOpen ? 180 : 0 }}
+            className="h-full aspect-square"
+          >
+            <RiArrowDropDownLine className="fill-gray-600 text-4xl" />
+          </motion.div>
           {/* TODO: Add an icon. move it with framer motion */}
         </button>
 
@@ -57,6 +65,7 @@ export default function Select({
                 {...option}
                 handleClick={handleClick}
                 isActive={option.value === activeOption.value}
+                index={i}
               />
             ))}
           </motion.ul>
@@ -66,7 +75,7 @@ export default function Select({
   );
 }
 
-function Option({ isActive = false, icon, label, handleClick, value }) {
+function Option({ isActive = false, index, icon, label, handleClick, value }) {
   //Style:
   const optionStyles = cn(
     "relative cursor-pointer select-none py-2 pl-3 pr-9 text-neutral-900 transition-colors duration-100",
@@ -75,11 +84,17 @@ function Option({ isActive = false, icon, label, handleClick, value }) {
   );
   const iconStyles = cn("grid place-items-center h-full right-0 top-0");
   return (
-    <li className={optionStyles} onClick={() => handleClick(value)}>
+    <motion.li
+      initial={{ opacity: 0, x: 20 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ delay: 0.1 * index }}
+      className={optionStyles}
+      onClick={() => handleClick(value)}
+    >
       <div className="flex items-center">
         <div className={iconStyles}>{icon}</div>
         <span className="ml-3 block truncate">{label}</span>
       </div>
-    </li>
+    </motion.li>
   );
 }

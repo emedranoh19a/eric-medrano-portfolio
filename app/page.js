@@ -24,8 +24,7 @@ export default function Home() {
       <Timeline />
       <Contact
       />
-      {/* TODO: Make a functionality in order to swap languages. */}
-      {/* TODO: Make a Loading animation but not that required.*/}
+
       {/* <Hero /> */}
       {/* <div className="z-10 flex min-h-64 items-center justify-center rounded-lg border bg-white"> */}
       {/* </div> */}

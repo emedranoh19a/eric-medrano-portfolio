@@ -50,7 +50,7 @@ export function SidebarDemo({ children }) {
 
 function InvertedCorner() {
   const positioningStyles = clsx(
-    " w-full h-40 absolute top-0 right-0 translate-x-full -translate-y-full"
+    "hidden md:block w-full h-40 absolute top-0 right-0 translate-x-full -translate-y-full"
   );
   //Step 2: Create a pseudoelement
   const pseudoStyles = clsx(
