@@ -30,14 +30,22 @@ export function BentoGridItem({
   index,
 }) {
   //Style:
+  // const containerStyles = cn(
+  //   "group/bento flex flex-1 relative flex-col justify-start gap-2",
+  //   "bg-white p-4",
+  //   "border border-neutral-100 rounded-xl overflow-hidden",
+  //   "hover:shadow-xl transition duration-200 shadow-input",
+  //   isImportant ? "md:col-span-2" : "col-span-1",
+  //   // !isComplete &&
+  //   // "after:absolute after:content-['developing...'] after:text-yellow-300 after:w-40 after:h-fit after:bg-slate-950 after:top-0 after:left-0 after:text-center after:text-xs after:-rotate-45 after:translate-y-5 after:-translate-x-10 after:text-2xs",
+  //   className
+  // );
   const containerStyles = cn(
-    "group/bento flex flex-1 relative flex-col justify-start gap-2",
+    "group/bento absolute flex flex-1 relative flex-col justify-start gap-2",
     "bg-white p-4",
     "border border-neutral-100 rounded-xl overflow-hidden",
     "hover:shadow-xl transition duration-200 shadow-input",
     isImportant ? "md:col-span-2" : "col-span-1",
-    // !isComplete &&
-    // "after:absolute after:content-['developing...'] after:text-yellow-300 after:w-40 after:h-fit after:bg-slate-950 after:top-0 after:left-0 after:text-center after:text-xs after:-rotate-45 after:translate-y-5 after:-translate-x-10 after:text-2xs",
     className
   );
 
@@ -48,13 +56,13 @@ export function BentoGridItem({
 
   return (
     <motion.div
-      // layout
+      layout
       key={index}
       className={containerStyles}
       initial={{ opacity: 0, y: index % 2 === 0 ? 100 : -100 }}
       viewport={{ once: true }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, ease: "easeOut" }}
+      transition={{ duration: 1, type: "spring", stiffness: 100 }}
     >
       {/* <motion.div
       
