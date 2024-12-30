@@ -13,8 +13,11 @@ export default function Skills() {
   }
 
   return (
-    <section className="h-fit w-full" id="skills">
-      <div className="container w-full h-full px-20 my-10 gap-6 grid grid-cols-1 lg:grid-cols-2 place-items-center mx-auto">
+    <section
+      className="h-fit w-full py-10 px-20 h-full container mx-auto"
+      id="skills"
+    >
+      <div className="container w-full h-full   gap-6 grid grid-cols-1 lg:grid-cols-2 place-items-center mx-auto">
         <SkillsContent />
         <SkillsGlobe iconSlugs={slugs} imageArray={skillImages} />
       </div>
@@ -32,17 +35,18 @@ function SkillsContent() {
 
   return (
     <div className="max-w-lg flex flex-col items-stretch justify-center overflow-hidden pt-8">
-      <Heading text="Skills" />
-
+      <BoxReveal className="w-full">
+        <Heading text="The Code I Speak" />
+      </BoxReveal>
       <BoxReveal>
         <Subheading>
-          A plethora of <Span>Skills</Span> in Motion
+          A plethora of <Span>Skills</Span> in Motion.
         </Subheading>
       </BoxReveal>
 
       <BoxReveal>
         <Text>
-          My skill set is a growing ecosystem. A{" "}
+          My tech palette is a growing ecosystem. A{" "}
           <Span> world of knowledge</Span> that is constantly spinning,
           expanding and evolving.
         </Text>
