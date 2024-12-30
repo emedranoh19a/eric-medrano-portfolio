@@ -32,13 +32,14 @@ export default function Projects() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeOption, setActiveOption] = useState(sortOptions[0]);
 
+  const [hovering, setHovering] = useState(false);
+  const [hoveredSkill, setHoveredSkill] = useState("");
   //Dataflow:
   const filteredProjects = projects.filter((project) => {
     if (activeTab.tech === "all") return true;
     return project.techs.includes(activeTab.tech);
   });
 
-  // const [hovering, setHovering] = useState(false);
   // //Handlers:
   const sortedProjects = filteredProjects.sort((a, b) => {
     if (activeOption.value === 0) return a.level > b.level ? 1 : -1;
@@ -56,8 +57,11 @@ export default function Projects() {
   //   setActiveTab(newTabs[0]);
   // };
   //Controll the state from here.
-  function setHover() {
+  function hoverHandler(tab) {
     console.log("hovering");
+    console.log(tab);
+    setHovering(true);
+    setHoveredSkill(tab.tech);
   }
   function onTabClick(idx) {
     setActiveTab(levelTabs[idx]);
@@ -72,9 +76,11 @@ export default function Projects() {
         <Tabs
           active={activeTab}
           tabs={levelTabs}
-          setHovering={setHover}
+          setHovering={setHovering}
           onTabClick={onTabClick}
           tabsLabel={"Skill"}
+          allowNumbers={false}
+          hoverHandler={hoverHandler}
         />
         <Select
           options={sortOptions}
@@ -86,7 +92,13 @@ export default function Projects() {
       </div>
       <BentoGrid className="max-w-4xl mx-auto mb-20">
         {sortedProjects.map((project, i) => (
-          <BentoGridItem key={i} index={i} {...project} />
+          <BentoGridItem
+            key={i}
+            index={i}
+            {...project}
+            hovering={hovering}
+            hoveredSkill={hoveredSkill}
+          />
         ))}
       </BentoGrid>
     </section>

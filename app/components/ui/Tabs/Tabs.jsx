@@ -9,6 +9,8 @@ export default function Tabs({
   setHovering, //required
   onTabClick, //onTaClick must receive the index of the tab
   tabsLabel = "Level",
+  allowNumbers = true,
+  hoverHandler,
 }) {
   //Style:
   const containerStyles = cn(
@@ -28,8 +30,11 @@ export default function Tabs({
         <button
           key={idx + tab.title}
           onClick={() => onTabClick(idx)}
-          onMouseEnter={() => setHovering(true)}
-          onMouseLeave={() => setHovering(false)}
+          onMouseEnter={() => setHovering(hoverHandler?.(tab) || true)}
+          onMouseLeave={() => {
+            hoverHandler?.("");
+            setHovering(false);
+          }}
           className={cn("relative px-4 py-2 rounded-full", tabClassName)}
           style={{
             transformStyle: "preserve-3d",
@@ -48,20 +53,23 @@ export default function Tabs({
 
           <span
             className={cn(
-              "relative text-black hidden md:block",
+              "relative text-black ",
+              allowNumbers && "hidden md:block",
               active.value === tab.value && " text-white"
             )}
           >
             {tab.title}
           </span>
-          <span
-            className={cn(
-              "relative block text-black md:hidden",
-              active.value === tab.value && " text-white"
-            )}
-          >
-            {idx + 1}
-          </span>
+          {allowNumbers && (
+            <span
+              className={cn(
+                "relative block text-black md:hidden",
+                active.value === tab.value && " text-white"
+              )}
+            >
+              {idx + 1}
+            </span>
+          )}
         </button>
       ))}
     </div>

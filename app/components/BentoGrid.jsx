@@ -28,6 +28,8 @@ export function BentoGridItem({
   isPublic = false,
   isExternalProject,
   index,
+  hovering,
+  hoveredSkill,
 }) {
   //Style:
   // const containerStyles = cn(
@@ -65,12 +67,17 @@ export function BentoGridItem({
       transition={{ duration: 1, type: "spring", stiffness: 100 }}
     >
       {/* <motion.div
-      
+    
         className="w-full h-full"
       > */}
       <ProjectLink
         href={url}
         externalProject={isExternalProject}
+        className={cn(
+          "transition duration-200 scale-100",
+          hovering && "opacity-50 scale-95 ",
+          techs.includes(hoveredSkill) && "opacity-100 scale-[1.05]"
+        )}
         // className={containerStyles}
       >
         <div className={imageStyles}>
@@ -158,7 +165,7 @@ function DevelopingLabel() {
         // fill
         // objectFit="contain"
         alt=""
-        className="absolute inline-block w-auto h-3 top-0 -left-1 -rotate-[12deg]"
+        className="absolute inline-block w-auto h-3 -top-2 -left-4 -rotate-[20deg] scale-[1.3]"
       />
       <Image
         src="/caution-stripes.png"
@@ -167,7 +174,7 @@ function DevelopingLabel() {
         // fill
         // objectFit="contain"
         alt=""
-        className="absolute inline-block w-auto h-3 bottom-0.5 -rotate-[12deg] -right-4"
+        className="absolute inline-block w-auto h-3 -bottom-14 -rotate-[20deg] -right-10"
       />
       <Image
         src="/construction-sign.png"
@@ -176,7 +183,7 @@ function DevelopingLabel() {
         // fill
         // objectFit="contain"
         alt=""
-        className="absolute inline-block w-20 h-20 -bottom-3 -right-2"
+        className="absolute inline-block w-20 h-20 -bottom-14 -right-2"
       />
     </>
   );
