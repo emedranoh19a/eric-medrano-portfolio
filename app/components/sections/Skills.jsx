@@ -10,10 +10,10 @@ import Span from "./Span";
 export default function Skills() {
   return (
     <section
-      className="h-[80vh] w-full py-10 px-20 h-full container mx-auto"
+      className="min-h-[80vh] w-full py-10 px-10 md:px-20 h-full container mx-auto"
       id="skills"
     >
-      <div className="container w-full h-full   gap-6 grid grid-cols-1 lg:grid-cols-2 place-items-center mx-auto">
+      <div className="container w-full h-full  gap-1 lg:gap-6 grid grid-cols-1 lg:grid-cols-2 place-items-center mx-auto">
         <SkillsContent />
         <SkillsGlobe iconSlugs={slugs} imageArray={skillImages} />
       </div>
@@ -52,8 +52,6 @@ function SkillsContent() {
           finds its place into my arsenal.
         </Text>
       </BoxReveal>
-
-      <BoxReveal></BoxReveal>
     </div>
   );
 }

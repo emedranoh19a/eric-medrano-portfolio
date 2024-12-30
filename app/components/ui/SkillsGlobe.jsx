@@ -70,7 +70,7 @@ const SkillsGlobe = ({ iconSlugs = [], imageArray }) => {
   }, [data, theme]);
 
   return (
-    <div className="h-full w-full relative">
+    <div className="w-full h-full min-h-96 relative">
       <div className="w-5/6  absolute z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
         <Cloud {...cloudProps}>
           <>

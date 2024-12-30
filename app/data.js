@@ -1,5 +1,6 @@
 import { FaCode, FaHome, FaUser } from "react-icons/fa"
 import { MdOutlineLaptopMac } from "react-icons/md"
+import { TechIcon } from "./components/TechIcons"
 
 export const sidebarLinks = [
     {
@@ -371,6 +372,17 @@ export const slugs = [
     "cssmodules",
     "openai",
     "github",
+]
+
+export const levelTabs = [
+    { title: "All", value: 0, tech: "all" },
+    { title: <TechIcon tech="html" />, value: 1, tech: "html" },
+    { title: <TechIcon tech="css" />, value: 2, tech: "css" },
+    { title: <TechIcon tech="sass" />, value: 3, tech: "sass" },
+    { title: <TechIcon tech="tailwindcss" />, value: 4, tech: "tailwindcss" },
+    { title: <TechIcon tech="react" />, value: 5, tech: "react" },
+    { title: <TechIcon tech="nextjs" />, value: 6, tech: "nextjs" },
+    { title: <TechIcon tech="framer-motion" />, value: 7, tech: "framer-motion" },
 ]
 
 export const skillImages = [

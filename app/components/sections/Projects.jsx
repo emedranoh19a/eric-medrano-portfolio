@@ -1,42 +1,53 @@
 "use client";
 
 import { useState } from "react";
-import { projects } from "../../data";
+import {
+  FaFeatherAlt,
+  FaSortAlphaDown,
+  FaSortAlphaDownAlt,
+} from "react-icons/fa";
+import { GiWeightLiftingUp } from "react-icons/gi";
+import { levelTabs, projects } from "../../data";
 import { BentoGrid, BentoGridItem } from "../BentoGrid";
 import BoxReveal from "../effects/BoxReveal";
-import { TechIcon } from "../TechIcons";
 import Heading from "../ui/Heading";
 import Subheading from "../ui/Subheading";
 import Tabs from "../ui/Tabs/Tabs";
 import Text from "../ui/Text";
+import Select from "./Select";
 import Span from "./Span";
 
-const levelTabs = [
-  { title: "All", value: 0, tech: "all" },
-  { title: <TechIcon tech="html" />, value: 1, tech: "html" },
-  { title: <TechIcon tech="css" />, value: 2, tech: "css" },
-  { title: <TechIcon tech="sass" />, value: 3, tech: "sass" },
-  { title: <TechIcon tech="tailwindcss" />, value: 4, tech: "tailwindcss" },
-  { title: <TechIcon tech="react" />, value: 5, tech: "react" },
-  { title: <TechIcon tech="nextjs" />, value: 6, tech: "nextjs" },
-  { title: <TechIcon tech="framer-motion" />, value: 7, tech: "framer-motion" },
+const sortOptions = [
+  { label: "Easier first", value: 0, icon: <FaFeatherAlt /> },
+  { label: "Harder first", value: 1, icon: <GiWeightLiftingUp /> },
+  { label: "A~Z", value: 2, icon: <FaSortAlphaDown /> },
+  { label: "Z-A", value: 3, icon: <FaSortAlphaDownAlt /> },
 ];
 //Project component.
 export default function Projects() {
-  //TODO: Filter projects by technology.
-  //TODO: give motion to the filtered items.
-
   //State:
   const [activeTab, setActiveTab] = useState(levelTabs[0]);
-  const [tabs, setTabs] = useState(levelTabs);
+
+  //Select related:
+  const [isOpen, setIsOpen] = useState(false);
+  const [activeOption, setActiveOption] = useState(sortOptions[0]);
 
   //Dataflow:
   const filteredProjects = projects.filter((project) => {
     if (activeTab.tech === "all") return true;
     return project.techs.includes(activeTab.tech);
   });
+
   // const [hovering, setHovering] = useState(false);
   // //Handlers:
+  const sortedProjects = filteredProjects.sort((a, b) => {
+    if (activeOption.value === 0) return a.level > b.level ? 1 : -1;
+    if (activeOption.value === 1) return a.level < b.level ? 1 : -1;
+    if (activeOption.value === 2) return a.title > b.title ? 1 : -1;
+    if (activeOption.value === 3) return a.title < b.title ? 1 : -1;
+    return true;
+  });
+
   // const moveSelectedTabToTop = (idx) => {
   //   const newTabs = [...propTabs];
   //   const selectedTab = newTabs.splice(idx, 1);
@@ -57,15 +68,24 @@ export default function Projects() {
       // className="h-fit w-full py-10 px-20 h-full container mx-auto grid"
     >
       <ProjectsContent />
-      <Tabs
-        active={activeTab}
-        tabs={levelTabs}
-        setHovering={setHover}
-        onTabClick={onTabClick}
-        tabsLabel={"Skill"}
-      />
+      <div className="flex justify-around gap-2">
+        <Tabs
+          active={activeTab}
+          tabs={levelTabs}
+          setHovering={setHover}
+          onTabClick={onTabClick}
+          tabsLabel={"Skill"}
+        />
+        <Select
+          options={sortOptions}
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+          activeOption={activeOption}
+          setActiveOption={setActiveOption}
+        />
+      </div>
       <BentoGrid className="max-w-4xl mx-auto mb-20">
-        {filteredProjects.map((project, i) => (
+        {sortedProjects.map((project, i) => (
           <BentoGridItem key={i} index={i} {...project} />
         ))}
       </BentoGrid>
@@ -92,14 +112,11 @@ function ProjectsContent() {
       </BoxReveal>
 
       <BoxReveal>
-        <Text>
+        <Text className="text-center">
           Here&apos;s where ideas meet execution. Each project is a reflection
           of my curiosity, effort, and my constant drive to improve my skills.
         </Text>
-        <Text>
-          Dive in and discover the stories behind the code, the pixels, and the
-          melodies.
-        </Text>
+        <Text className="text-center">Dive in and discover the stories</Text>
       </BoxReveal>
 
       <BoxReveal>

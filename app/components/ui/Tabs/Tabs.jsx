@@ -21,7 +21,7 @@ export default function Tabs({
 
   return (
     <div className={containerStyles}>
-      <div className="bg-black/50 mr-4 text-white font-bold px-2 rounded-full h-full inline-block">
+      <div className="bg-black/50 mr-4 text-white font-bold px-4 rounded-full h-full inline-block grid place-items-center">
         {`${tabsLabel}: `}
       </div>
       {tabs.map((tab, idx) => (
