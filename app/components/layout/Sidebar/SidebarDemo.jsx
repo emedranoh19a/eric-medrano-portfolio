@@ -27,17 +27,19 @@ export function SidebarDemo({ children }) {
         <SidebarBody className="gap-10 relative self-stretch h-full w-full">
           {/* TODO: Insert here a fancy corner */}
 
-          <div className="top-0 left-20">
-            <div className="flex flex-col overflow-x-hidden sticky h-fit">
+          <div className="top-0 left-0 p-0 fixed w-[inherit]">
+            <div className="flex flex-col overflow-x-hidden px-2 mt-2 h-fit">
               {open ? <SidebarLogo /> : <SidebarLogoIcon />}
-              <div className="mt-8 flex flex-col gap-2">
+              <div
+                className={cn("mt-8 ml-0 flex flex-col gap-2", open && "ml-6")}
+              >
                 {sidebarLinks.map((link, idx) => (
                   <SidebarLink key={idx} link={link} />
                 ))}
               </div>
             </div>
 
-            <div>
+            {/* <div>
               <SidebarLink
                 link={{
                   label: "Eric Medrano",
@@ -55,7 +57,7 @@ export function SidebarDemo({ children }) {
                   icon: "", //This is essentially, my avatar, .
                 }}
               />
-            </div>
+            </div> */}
           </div>
         </SidebarBody>
       </Sidebar>
