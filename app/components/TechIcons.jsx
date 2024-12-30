@@ -13,26 +13,64 @@ export default function TechIcons({ techs = [] }) {
   );
 }
 
-function TechIcon({ tech }) {
+export function TechIcon({ tech }) {
   switch (tech) {
     case "html":
-      return <FaHtml5 className="w-5 h-fit fill-[#e34f26] block" />;
+      return (
+        <FaHtml5
+          className="w-5 h-fit fill-[#e34f26] block"
+          style={{ filter: "drop-shadow(0 0 0.75rem #e34f26)" }}
+        />
+      );
     case "css":
-      return <FaCss3Alt className="w-5 h-fit fill-[#3C99DC] block" />;
+      return (
+        <FaCss3Alt
+          className="w-5 h-fit fill-[#3C99DC] block"
+          style={{ filter: "drop-shadow(0 0 0.75rem #3C99DC)" }}
+        />
+      );
 
     case "sass":
-      return <FaSass className="w-5 h-fit fill-[#c69] block" />;
+      return (
+        <FaSass
+          className="w-5 h-fit fill-[#c69] block"
+          style={{ filter: "drop-shadow(0 0 0.75rem #c69)" }}
+        />
+      );
     case "react":
-      return <FaReact className="w-5 h-fit fill-[#61DBFB] block" />;
+      return (
+        <FaReact
+          className="w-5 h-fit fill-[#61DBFB] block"
+          style={{ filter: "drop-shadow(0 0 0.75rem #61DBFB)" }}
+        />
+      );
     case "redux":
-      return <SiRedux className="w-5 h-fit fill-[#764abc] block" />;
+      return (
+        <SiRedux
+          className="w-5 h-fit fill-[#764abc] block"
+          style={{ filter: "drop-shadow(0 0 0.75rem #764abc)" }}
+        />
+      );
     case "nextjs":
-      return <RiNextjsFill className="w-5 block" />;
+      return (
+        <RiNextjsFill
+          className="w-5 block"
+          style={{ filter: "drop-shadow(0 0 0.75rem #000000)" }}
+        />
+      );
     case "tailwindcss":
-      return <RiTailwindCssFill className="w-5 h-fit fill-[#36b7f0] block" />;
+      return (
+        <RiTailwindCssFill
+          className="w-5 h-fit fill-[#36b7f0] block"
+          style={{ filter: "drop-shadow(0 0 0.75rem #36b7f0)" }}
+        />
+      );
     case "framer-motion":
       return (
-        <TbBrandFramerMotion className="w-5 h-fit stroke-violet-800 block" />
+        <TbBrandFramerMotion
+          className="w-5 h-fit stroke-violet-800 block"
+          style={{ filter: "drop-shadow(0 0 0.75rem #5b21b6)" }}
+        />
       );
 
     default:

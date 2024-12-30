@@ -70,30 +70,32 @@ const SkillsGlobe = ({ iconSlugs = [], imageArray }) => {
   }, [data, theme]);
 
   return (
-    <div className="h-full w-full grid place-items-center">
-      <Cloud {...cloudProps}>
-        <>
-          {renderedIcons}
-          {imageArray &&
-            imageArray.length > 0 &&
-            imageArray.map((image, index) => (
-              <a
-                className="relative w-1 h-1"
-                key={index}
-                href="#"
-                onClick={(e) => e.preventDefault()}
-              >
-                <Image
-                  height="42"
-                  width="42"
-                  alt="A globe"
-                  src={image}
-                  priority
-                />
-              </a>
-            ))}
-        </>
-      </Cloud>
+    <div className="h-full w-full relative">
+      <div className="w-5/6  absolute z-10 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+        <Cloud {...cloudProps}>
+          <>
+            {renderedIcons}
+            {imageArray &&
+              imageArray.length > 0 &&
+              imageArray.map((image, index) => (
+                <a
+                  className="relative w-1 h-1"
+                  key={index}
+                  href="#"
+                  onClick={(e) => e.preventDefault()}
+                >
+                  <Image
+                    height="42"
+                    width="42"
+                    alt="A globe"
+                    src={image}
+                    priority
+                  />
+                </a>
+              ))}
+          </>
+        </Cloud>
+      </div>{" "}
     </div>
   );
 };

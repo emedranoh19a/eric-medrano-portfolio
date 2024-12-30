@@ -1,4 +1,3 @@
-//TODO: Hoy ultimo dia del año en el trabajo.
 //TODO: Not started.Recipe page.
 
 //TODO: (Paid) Workit landing pageResults summary component
@@ -83,14 +82,12 @@ Project tracking intro component
 Hero Section
 Title:
 "Crafting Experiences, One Line of Code at a Time."
-
 Text:
 "Welcome to my world of creativity, where innovation meets passion. I’m here to transform ideas into reality, with a touch of imagination and a dash of skill."
 
 About Section
 Title:
 "More Than Just a Title."
-
 Text:
 "I’m a versatile individual with a curious mind, passionate about exploring and excelling in multiple fields. You might call me a Developer today, but tomorrow I could be a Musician, a Dancer, or even a Pianist. The possibilities are endless, and I’m constantly redefining myself—because why settle for one role when you can master many?"
 
@@ -99,14 +96,12 @@ Text:
 Skills Section
 Title:
 "Expanding Horizons, One Skill at a Time."
-
 Text:
 "My skill set isn’t just a list; it’s a growing ecosystem. Picture a globe filled with logos of everything I know and love—a globe that’s constantly spinning, expanding, and evolving. With every new challenge I take on, another skill finds its place, making this sphere of knowledge even richer. Explore it today, and let’s watch it grow together."
 
 Projects Section
 Title:
 "Turning Concepts into Creations."
-
 Text:
 "Here’s where imagination meets execution. Each project reflects a part of me—my curiosity, my dedication, and my constant drive to innovate. Dive in and discover the stories behind the code, the pixels, and the melodies."
 

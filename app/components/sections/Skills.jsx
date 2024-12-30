@@ -8,13 +8,9 @@ import Text from "../ui/Text";
 import Span from "./Span";
 
 export default function Skills() {
-  {
-    /* TODO: Skills section with Globe. */
-  }
-
   return (
     <section
-      className="h-fit w-full py-10 px-20 h-full container mx-auto"
+      className="h-[80vh] w-full py-10 px-20 h-full container mx-auto"
       id="skills"
     >
       <div className="container w-full h-full   gap-6 grid grid-cols-1 lg:grid-cols-2 place-items-center mx-auto">
@@ -36,11 +32,11 @@ function SkillsContent() {
   return (
     <div className="max-w-lg flex flex-col items-stretch justify-center overflow-hidden pt-8">
       <BoxReveal className="w-full">
-        <Heading text="The Code I Speak" />
+        <Heading text="Skills" />
       </BoxReveal>
       <BoxReveal>
         <Subheading>
-          A plethora of <Span>Skills</Span> in Motion.
+          A plethora of <Span>abilities</Span> in Motion.
         </Subheading>
       </BoxReveal>
 
@@ -55,12 +51,9 @@ function SkillsContent() {
           <Span>new technology</Span>
           finds its place into my arsenal.
         </Text>
-        <Text></Text>
       </BoxReveal>
 
-      <BoxReveal>
-        {/* <Button className="mt-[1.6rem] bg-[#5046e6]">Explore</Button> */}
-      </BoxReveal>
+      <BoxReveal></BoxReveal>
     </div>
   );
 }

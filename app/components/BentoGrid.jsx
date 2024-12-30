@@ -1,9 +1,10 @@
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { ImNewTab } from "react-icons/im";
 import { cn } from "../utils/utils";
 import ProjectLink from "./ProjectLink";
 import TechIcons from "./TechIcons";
-
 export function BentoGrid({ className, children }) {
   //Style:
   const containerStyles = cn(
@@ -26,6 +27,7 @@ export function BentoGridItem({
   isComplete,
   isPublic = false,
   isExternalProject,
+  index,
 }) {
   //Style:
   const containerStyles = cn(
@@ -45,39 +47,88 @@ export function BentoGridItem({
   );
 
   return (
-    <ProjectLink
-      href={url}
-      externalProject={isExternalProject}
+    <motion.div
+      // layout
+      key={index}
       className={containerStyles}
+      initial={{ opacity: 0, y: index % 2 === 0 ? 100 : -100 }}
+      viewport={{ once: true }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
     >
-      <div className={imageStyles}>
-        <Image
-          src={image}
-          fill={true}
-          objectFit="cover"
-          objectPosition="top"
-          alt={`Preview image for the ${title} project`}
-        />
-        {isExternalProject && (
-          <ImNewTab className="absolute top-2 right-2 text-2xl w-6 h-6 fill-white/60 backdrop-shadow-sm group-hover/bento:fill-white group-hover/bento:scale-[1.2] transition-colors" />
-        )}
-      </div>
-      <div className="group-hover/bento:translate-x-2 transition duration-200">
-        <div className="flex flex-row justify-between">
-          <div className="font-sans font-bold text-neutral-600  mb-2 mt-2">
-            {title}
+      {/* <motion.div
+      
+        className="w-full h-full"
+      > */}
+      <ProjectLink
+        href={url}
+        externalProject={isExternalProject}
+        // className={containerStyles}
+      >
+        <div className={imageStyles}>
+          <Image
+            src={image}
+            fill={true}
+            objectFit="cover"
+            objectPosition="top"
+            alt={`Preview image for the ${title} project`}
+          />
+          {isExternalProject && (
+            <ImNewTab className="absolute top-2 right-2 text-2xl w-6 h-6 fill-white/60 backdrop-shadow-sm group-hover/bento:fill-white group-hover/bento:scale-[1.2] transition-colors" />
+          )}
+          <div className="absolute w-fit h-auto bottom-2 left-2 bg-white/60 p-2 rounded-full">
+            <TechIcons techs={techs} />
           </div>
-          <TechIcons techs={techs} />
+          <LevelLabel level={level} />
         </div>
-        <div className="font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300">
-          {description}
+        <div className="group-hover/bento:translate-x-2 transition duration-200">
+          <div className="flex flex-row justify-between">
+            <div className="font-sans font-bold text-neutral-600  mb-2 mt-2">
+              {title}
+            </div>
+            {/* <TechIcons techs={techs} /> */}
+          </div>
+          <div className="font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300">
+            {description}
+          </div>
         </div>
-      </div>
-      {!isComplete && <DevelopingLabel />}
-    </ProjectLink>
+        {!isComplete && <DevelopingLabel />}
+      </ProjectLink>
+    </motion.div>
   );
 }
+function LevelLabel({ level }) {
+  //Style:
+  const labelStyles = cn(
+    "absolute w-fit h-auto bottom-2 right-2 p-2 rounded-full text-[12px] font-semibold",
+    level === 0
+      ? "text-pink-500 bg-pink-300/50" //newbie
+      : level === 1
+      ? "text-yellow-500 bg-yellow-100/60" //beginner
+      : level === 2 //intermediate
+      ? "text-orange-500 bg-orange-200/60" //beginner
+      : level === 3
+      ? "text-red-700 bg-red-400/60" //advanced
+      : "text-violet-300 bg-violet-800/60" //guru
+  );
+  //Dataflow:
+  const levelText =
+    level === 0
+      ? "Newbie"
+      : level === 1
+      ? "Beginner"
+      : level === 2
+      ? "Intermediate"
+      : level === 3
+      ? "Advanced"
+      : "Guru";
 
+  return (
+    <div className={labelStyles} style={{ textShadow: "1px 1px 10px #ffffff" }}>
+      {levelText}
+    </div>
+  );
+}
 function DevelopingLabel() {
   return (
     <>

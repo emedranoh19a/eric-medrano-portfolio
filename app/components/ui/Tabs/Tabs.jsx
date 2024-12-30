@@ -8,6 +8,7 @@ export default function Tabs({
   tabClassName,
   setHovering, //required
   onTabClick, //onTaClick must receive the index of the tab
+  tabsLabel = "Level",
 }) {
   //Style:
   const containerStyles = cn(
@@ -21,11 +22,11 @@ export default function Tabs({
   return (
     <div className={containerStyles}>
       <div className="bg-black/50 mr-4 text-white font-bold px-2 rounded-full h-full inline-block">
-        Level:{" "}
+        {`${tabsLabel}: `}
       </div>
       {tabs.map((tab, idx) => (
         <button
-          key={tab.title}
+          key={idx + tab.title}
           onClick={() => onTabClick(idx)}
           onMouseEnter={() => setHovering(true)}
           onMouseLeave={() => setHovering(false)}
