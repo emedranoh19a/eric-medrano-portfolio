@@ -80,6 +80,8 @@ export function BentoGridItem({
             objectFit="cover"
             objectPosition="top"
             alt={`Preview image for the ${title} project`}
+            loading="eager"
+            priority
           />
           {isExternalProject && (
             <ImNewTab className="absolute top-2 right-2 text-2xl w-6 h-6 fill-white/60 backdrop-shadow-sm group-hover/bento:fill-white group-hover/bento:scale-[1.2] transition-colors" />
