@@ -54,7 +54,6 @@ export default function Select({
           >
             <RiArrowDropDownLine className="fill-gray-600 text-4xl" />
           </motion.div>
-          {/* TODO: Add an icon. move it with framer motion */}
         </button>
 
         {isOpen && (

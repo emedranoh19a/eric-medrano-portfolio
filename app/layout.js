@@ -21,6 +21,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      {/* TODO: Add title to my page <Head>
+        <title>Eric Medrano</title>
+      </Head> */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >

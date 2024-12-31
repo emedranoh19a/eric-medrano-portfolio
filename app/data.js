@@ -315,10 +315,6 @@ export const projects = [
     //Skills.
     //Contact.
 
-    //TODO: Fix usePopcorn
-    //TODO: Fix worldwise
-    //TODO: Fix at all costs, the wild oasis admin page
-    //TODO: If it is actually fixed, then finish once and for all the nextJS course from schmedtmann
 
 ]
 

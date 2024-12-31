@@ -1,0 +1,27 @@
+//------Add any google font in 2 steps.
+import { Josefin_Sans } from "next/font/google"
+const josefinSans = Josefin_Sans({ subsets: ["latin"] }) 
+//The weight might be required, and have to be strings, although they seem like numbers
+
+
+
+...later use in the jsx as {josefinSans.className}
+
+//------Using CSS variables as tailwind arbitrary values in a single page.
+<div
+        style={{
+            
+            '--primary-color': '#ff0000',
+            '--secondary-color': '#4caf50',
+            '--font-family': 'Arial, sans-serif',
+        }}
+        className="bg-[var(--primary-color)] text-white font-sans"
+    >
+        <h1 className="text-[var(--secondary-color)] font-[var(--font-family)]">
+            Welcome to My Portfolio
+        </h1>
+        <p>This page uses custom colors and fonts defined locally.</p>
+    </div>
+
+...then, use the fariables as... text-[var(--secondary-color)], and so on and so forth.
+

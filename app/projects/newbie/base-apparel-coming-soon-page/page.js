@@ -5,6 +5,9 @@ import { Josefin_Sans } from "next/font/google"
 import Image from "next/image"
 import { useState } from "react"
 const josefinSans = Josefin_Sans({ subsets: ["latin"] })
+//Note: add any google font in 2 steps.
+// import { Josefin_Sans } from "next/font/google"
+// const josefinSans = Josefin_Sans({ subsets: ["latin"] })
 
 function Background({ children }) {
   return (
