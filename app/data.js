@@ -299,7 +299,7 @@ export const projects = [
     },
     {
         title: "Keeper",
-        description: "",
+        description: "My very first steps for knowing the essentials of React.js. Proyect is very basic, extracted from The Complete Web Development Bootcamp by Angela Yu.",
         image: "/projects/other/keeper_preview.png",
         url: "https://cool-centaur-8a3c2e.netlify.app/",
         level: 0,
@@ -308,6 +308,18 @@ export const projects = [
         isComplete: true,
         isPublic: true,
         isExternalProject: true,
+    },
+    {
+        title: "Clipboard website",
+        description: "A website to explore TailwindCSS. The project is extracted by the TailwindCSS course by Brad Traversy.",
+        image: "/projects/beginner/clipboard/desktop-preview.png",
+        url: "/projects/beginner/clipboard",
+        level: 1,
+        techs: ["html", "tailwindcss"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
     },
 
     //Hero.
