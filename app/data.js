@@ -333,6 +333,18 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    {
+        title: "Shortly",
+        description: "A website to explore TailwindCSS. The project is extracted by the TailwindCSS course by Brad Traversy.",
+        image: "/projects/beginner/shortly/desktop-preview.png",
+        url: "/projects/beginner/shortly",
+        level: 1,
+        techs: ["html", "tailwindcss"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
 
     //Hero.
     //About me.
@@ -388,11 +400,6 @@ export const projects = [
 //"nintendogamecube",
 // "jira",
 // "c",
-export const slugs = [
-    "cssmodules",
-    "openai",
-    "github",
-]
 
 export const levelTabs = [
     { title: "All", value: 0, tech: "all" },
@@ -404,6 +411,13 @@ export const levelTabs = [
     { title: <TechIcon tech="nextjs" />, value: 6, tech: "nextjs" },
     { title: <TechIcon tech="framer-motion" />, value: 7, tech: "framer-motion" },
 ]
+export const slugs = [
+    "cssmodules",
+    "openai",
+    "github",
+]
+
+
 
 export const skillImages = [
     "/skills/html.png",
