@@ -9,6 +9,12 @@ import SidebarLink from "./SidebarLink";
 import SidebarLogo from "./SidebarLogo";
 import SidebarLogoIcon from "./SidebarLogoIcon";
 
+import { Bai_Jamjuree } from "next/font/google";
+const baiJamjuree = Bai_Jamjuree({
+  subsets: ["latin"],
+  weight: ["400", "600"],
+});
+
 export function SidebarDemo({ children }) {
   //State:
   const [open, setOpen] = useState(false);
@@ -18,7 +24,8 @@ export function SidebarDemo({ children }) {
     "flex flex-col md:flex-row",
     "w-full max-w-screen min-h-screen h-fit",
     "mx-auto",
-    "rounded-md"
+    "rounded-md",
+    baiJamjuree.className
   );
 
   return (

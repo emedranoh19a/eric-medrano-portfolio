@@ -10,6 +10,7 @@ import { GiWeightLiftingUp } from "react-icons/gi";
 import { levelTabs, projects } from "../../data";
 import { BentoGrid, BentoGridItem } from "../BentoGrid";
 import BoxReveal from "../effects/BoxReveal";
+import GoToProjects from "../ui/GoToProjects";
 import Heading from "../ui/Heading";
 import Subheading from "../ui/Subheading";
 import Tabs from "../ui/Tabs/Tabs";
@@ -58,8 +59,8 @@ export default function Projects() {
   // };
   //Controll the state from here.
   function hoverHandler(tab) {
-    console.log("hovering");
-    console.log(tab);
+    // console.log("hovering");
+    // console.log(tab);
     setHovering(true);
     setHoveredSkill(tab.tech);
   }
@@ -128,11 +129,10 @@ function ProjectsContent() {
           Here&apos;s where ideas meet execution. Each project is a reflection
           of my curiosity, effort, and my constant drive to improve my skills.
         </Text>
-        <Text className="text-center">Dive in and discover the stories</Text>
       </BoxReveal>
 
       <BoxReveal>
-        {/* <Button className="mt-[1.6rem] bg-[#5046e6]">Explore</Button> */}
+        <GoToProjects className="mt-[1.6rem]" text="Go to project navigation" />
       </BoxReveal>
     </div>
   );

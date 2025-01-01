@@ -8,10 +8,12 @@ import Projects from "./components/sections/Projects"
 import Skills from "./components/sections/Skills"
 import Timeline from "./components/sections/Timeline"
 
+import { Bai_Jamjuree } from "next/font/google"
+const baiJamjuree = Bai_Jamjuree({ subsets: ["latin"], weight: ["400", "600"] })
 export default function Home() {
-
+  //tODO: verify every text. it should be jamboree
   return (
-    <div className="">
+    <div className={`${baiJamjuree.className}`}>
       <Head>
         <title>Eric Medrano</title>
         {/* <link rel="icon" href="/favicon.ico" /> */}
