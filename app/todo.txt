@@ -2,7 +2,9 @@
 
 //TODO: (Paid) Workit landing pageResults summary component
 //TODO: (Paid)Skilled e-learning landing page
-
+//TODO: change the logo with cornered radius.
+//TODO: Generate the favicon, as above.
+//TODO: Change the typography. Jumboree
 //Checkpoint
 
 (Paid) Equalizer landing page

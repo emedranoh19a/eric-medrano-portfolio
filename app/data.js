@@ -321,6 +321,18 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    {
+        title: "Loopstudios",
+        description: "A website to explore TailwindCSS. The project is extracted by the TailwindCSS course by Brad Traversy.",
+        image: "/projects/beginner/loopstudios/desktop-preview.png",
+        url: "/projects/beginner/loopstudios",
+        level: 1,
+        techs: ["html", "tailwindcss"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
 
     //Hero.
     //About me.
@@ -330,7 +342,7 @@ export const projects = [
 
 ]
 
-//TODO: Maybe some stats. TOEIC, languages. 
+//TODO: Maybe some stats. TOEIC, languages. Number of projects. Number of Udemy courses?
 
 //"typescript",
 //"dart",
