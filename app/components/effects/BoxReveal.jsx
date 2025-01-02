@@ -1,5 +1,6 @@
 "use client";
 
+import { cn } from "@/app/utils/utils";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 
@@ -8,7 +9,10 @@ export default function BoxReveal({
   width = "fit-content",
   boxColor = "#5046e6",
   duration = 0.5,
+  className = "",
+  delay = 0,
 }) {
+  //State:
   const mainControls = useAnimation();
   const slideControls = useAnimation();
 
@@ -25,8 +29,10 @@ export default function BoxReveal({
     }
   }, [isInView, mainControls, slideControls]);
 
+  //Style:
+  const boxStyles = cn("relative overflow-hidden", className);
   return (
-    <div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
+    <div ref={ref} style={{ width }} className={boxStyles}>
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },
@@ -46,7 +52,11 @@ export default function BoxReveal({
         }}
         initial="hidden"
         animate={slideControls}
-        transition={{ duration: duration ? duration : 0.5, ease: "easeIn" }}
+        transition={{
+          duration: duration ? duration : 0.5,
+          ease: "easeIn",
+          delay,
+        }}
         style={{
           position: "absolute",
           top: 4,

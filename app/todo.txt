@@ -4,7 +4,7 @@
 //TODO: (Paid)Skilled e-learning landing page
 //TODO: change the logo with cornered radius.
 //TODO: Generate the favicon, as above.
-//TODO: Change the typography. Jumboree
+
 //Checkpoint
 
 (Paid) Equalizer landing page
@@ -92,9 +92,21 @@ About Section
 Title:
 "More Than Just a Title."
 Text:
-"I’m a versatile individual with a curious mind, passionate about exploring and excelling in multiple fields. You might call me a Developer today, but tomorrow I could be a Musician, a Dancer, or even a Pianist. The possibilities are endless, and I’m constantly redefining myself—because why settle for one role when you can master many?"
+"I’m a versatile individual with a curious mind, passionate about exploring and excelling in multiple fields. Youmight call me a Developer today, but tomorrow I could be a Musician, a Dancer, or even a Pianist. The possibilities are endless, and I’m constantly redefining myself—because why settle for one role when you can master many?"
 
-(Swappable words displayed dynamically: Developer, Musician, Dancer, Pianist, Writer, Designer, Explorer, Visionary, Artist, Engineer, Innovator, Creator, Dreamer, Thinker, Leader, Builder.)
+Swappable words displayed dynamically:
+ Developer,
+  Musician, 
+  Dancer, 
+  Pianist, 
+ Explorer, 
+ Visionary,
+ Engineer,
+ Creator, 
+ Dreamer,
+  Thinker,
+   Leader, 
+  
 
 Skills Section
 Title:
