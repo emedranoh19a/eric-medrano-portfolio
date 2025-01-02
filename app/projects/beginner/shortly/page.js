@@ -99,7 +99,7 @@ function Hero() {
                     More than just shorter links
                 </h1>
                 <p className="text-2xl text-center text-gray-400 lg:max-w-md lg:text-left"                    >
-                    Build your brand's recognition and get detailed insights on how your
+                    Build your brand&apos;s recognition and get detailed insights on how your
                     links are performing.
                 </p>
                 <div className="mx-auto lg:mx-0">
@@ -246,7 +246,6 @@ function Feature() {
                 <div
                     className="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-[var(--veryDarkViolet)]"
                 >
-                    {/* //TODO: Swap the image */}
                     <Image src={image} alt="" width={50} height={50} />
                 </div>
             </div>
