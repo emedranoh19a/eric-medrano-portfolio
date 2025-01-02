@@ -80,7 +80,7 @@ function Navigation() {
             <div
                 className="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm"
             >
-                {["Features", "Pricing", "Resources"].map((item, i) => (<a href="#" className="w-full text-center">{item}</a>))}
+                {["Features", "Pricing", "Resources"].map((item, i) => (<a href="#" key={i} className="w-full text-center">{item}</a>))}
                 <a href="#" className="w-full pt-6 border-t border-gray-400 text-center">Login</a>
                 <a href="#" className="w-full py-3 text-center rounded-full bg-cyan">Sign Up</a>
             </div>
