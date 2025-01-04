@@ -129,3 +129,4 @@ Text:
 
 //TODO: Intro with sign up: newbie.
 //TODO: Results summary component.
+//TODO: Review Josh Comeau z-wars article. 

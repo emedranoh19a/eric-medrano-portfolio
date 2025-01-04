@@ -1,34 +1,9 @@
-import clsx from "clsx"
-import Image from "next/image"
-//TODO: REDO the background.
 import { Kumbh_Sans } from "next/font/google"
+import Image from "next/image"
 
 const kumbhSans = Kumbh_Sans({ subsets: ["latin"] })
 
-function Background({ children }) {
-  const circleStyles = clsx(
-    "absolute top-0 left-0 h-full w-full bg-gradient-to-bl from-cyan-200/40 to-70% to-transparent  rounded-full w-96 h-96 scale-150 md:scale-[2] lg:scale-[2.2]"
-  )
-  return (
-    <div className="relative w-screen h-screen bg-cyan-700/55 flex items-center justify-center overflow-hidden">
-      <div className="relative w-full h-full overflow-hidden">
-        <div
-          className={clsx(
-            circleStyles,
-            "left-0 top-0 -translate-y-1/2 -translate-x-1/3 absolute"
-          )}
-        ></div>
-        <div
-          className={clsx(
-            circleStyles,
-            "bottom-0 right-0 absolute translate-x-1/2 translate-y-1/2 -rotate-45"
-          )}
-        ></div>
-        {children}
-      </div>
-    </div>
-  )
-}
+
 function Avatar() {
   return (
     <div className="w-1/3 aspect-square rounded-full border-4 border-white absolute left-1/2 -translate-x-1/2 top-0 -translate-y-1/2 overflow-hidden">
@@ -53,7 +28,7 @@ function Stat({ value, desc }) {
 }
 function Card() {
   return (
-    <div className="bg-white shadow-lg shadow-cyan-900/40 h-96 w-80 flex flex-col rounded-xl overflow-hidden">
+    <div className="z-0 bg-white shadow-lg shadow-cyan-900/40 h-96 w-80 flex flex-col rounded-xl overflow-hidden">
       <div className="h-56 relative opacity-65">
         <Image
           src="/projects/newbie/profile-card-component/images/bg-pattern-card.svg"
@@ -82,9 +57,10 @@ function Card() {
 
 function Page() {
   return (
-    <div className={`relative bg-cyan-600/60 w-screen h-screen flex items-center justify-center ${kumbhSans.className}`}>
-      {/* <Background /> */}
+    <div className={`relative bg-cyan-600/60 w-full h-screen flex items-center justify-center ${kumbhSans.className}`}>
       <Card />
+      <Image className="-z-10 absolute w-1/2 h-1/2 top-0 left-0 -translate-y-1/2 -translate-x-1/2" src="/projects/newbie/profile-card-component/images/bg-pattern-top.svg" fill objectFit="contain" alt="" />
+      <Image className="-z-10 absolute w-1/2 h-1/2 top-0 right-0 translate-y-1/2 translate-x-1/2" src="/projects/newbie/profile-card-component/images/bg-pattern-bottom.svg" fill objectFit="contain" alt="" />
     </div>
   )
 }
