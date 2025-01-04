@@ -4,7 +4,7 @@ import Image from "next/image"
 const outfit = Outfit({ subsets: ['latin'], weight: ['400', '700'] })
 function Page() {
   return (
-    <div className={`bg-slate-300 w-screen h-screen flex relative justify-center items-center ${outfit.className}`}>
+    <div className={`bg-slate-300 w-full h-screen flex relative justify-center items-center ${outfit.className}`}>
       <div className="bg-white min-w-10 max-w-80 h-fit p-5 rounded-lg">
         <div className="relative w-full aspect-square rounded-lg overflow-hidden mb-4">
           <Image

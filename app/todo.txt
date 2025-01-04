@@ -72,9 +72,7 @@ Project tracking intro component
     //TODO: Fix at all costs, the wild oasis admin page
     //TODO: If it is actually fixed, then finish once and for all the nextJS course from schmedtmann
 
-//TODO: Add the favicon. 
-//TODO: Add the metadata. 
- // El gato negro de Rive.
+
     {/* TODO: Make a functionality in order to swap languages. */}
       {/* TODO: Make a Loading animation but not that required.*/}
 

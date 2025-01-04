@@ -25,3 +25,10 @@ const josefinSans = Josefin_Sans({ subsets: ["latin"] })
 
 ...then, use the fariables as... text-[var(--secondary-color)], and so on and so forth.
 
+
+Things I learned/.
+
+It is useful to start with the overall structure of the html. 
+Then, make the basic layout. 
+Just after styling the typography, start dealing with sizing stuff. 
+Then you can just add details like colors and other stuff.

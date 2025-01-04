@@ -52,9 +52,7 @@ export async function generateMetadata() {
 export default function RootLayout({ children }) {
   return (
     <html>
-      {/* TODO: Add title to my page <Head>
-        <title>Eric Medrano</title>
-      </Head> */}
+
       <Head>
         <link rel="icon" href="/favicon/favicon.png" />
       </Head>

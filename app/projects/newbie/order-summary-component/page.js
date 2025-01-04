@@ -57,7 +57,6 @@ function Card() {
     </div>
   )
 }
-//TODO: FIX this page
 function Page() {
 
   const backgroundBase = clsx(
@@ -73,7 +72,7 @@ function Page() {
     "after:absolute after:bg-indigo-50 after:w-1/2 after:aspect-square after:bottom-1/2 after:translate-y-1/2 after:scale-y-50 after:right-0  after:right-0 after:rounded-t-full after:-z-30"
   )
   return (
-    <div className={`h-screen w-screen overflow-hidden ${redHatDisplay.className}`}>
+    <div className={`h-screen w-full overflow-hidden ${redHatDisplay.className}`}>
       <section className={backgroundBase}>
         <div className={waveStyles}></div>
         <Card />

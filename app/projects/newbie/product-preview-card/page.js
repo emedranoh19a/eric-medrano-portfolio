@@ -7,20 +7,43 @@ const montserrat = Montserrat({ subsets: ["latin"] })
 const fraunces = Fraunces({ subsets: ["latin"], weight: "700" })
 function Card() {
   const cardStyles = clsx(
-    "absolute bg-white inset-y-16 inset-x-6 rounded-xl",
-    "md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 md:max-h-96 md:w-[700px]",
-    "flex flex-col md:flex-row",
-    "overflow-hidden border-xl shadow-xl shadow-orange-200/30"
+
+
+    // "border-xl overflow-hidden rounded-xl shadow-xl",
+
+    "flex flex-col md:flex-row justify-between",
+    "bg-white ",
+    "w-full h-full max-w-80 md:max-w-xl  md:w-[700px]",
+    "border-xl overflow-hidden rounded-xl shadow-xl shadow-orange-200/30",
+    ""
+
   )
+
+  // const cardStyles = clsx(
+  //   "absolute inset-0 flex items-center justify-center", // Center the card on all screen sizes
+  //   "md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2", // Fine-tune centering for medium screens or larger
+  //   "w-full max-w-sm md:max-w-xl", // Define responsive width
+
+  // )
+
   return (
     <div className={cardStyles}>
-      <div className="min-h-2/5 h-full md:h-full w-full md:basis-1/2 relative">
+      <div className="min-h-2/5 h-1/2 md:h-full w-full md:basis-1/2 relative bg-red-500">
         <Image
           src="/projects/newbie/product-preview-card/images/image-product-desktop.jpg"
           fill
           objectFit="cover"
-          objectPosition="center"
+          // objectPosition="center"
           alt="Image of Gabrielle Essence Eau De Parfum"
+          className="object-top hidden md:block"
+        />
+        <Image
+          src="/projects/newbie/product-preview-card/images/image-product-mobile.jpg"
+          fill
+          objectFit="cover"
+          // objectPosition="center"
+          alt="Image of Gabrielle Essence Eau De Parfum"
+          className="object-center block md:hidden"
         />
       </div>
       <div className="md:w-1/2 p-4 h-full flex flex-col gap-3 justify-between">
@@ -48,7 +71,7 @@ function Card() {
 
 function Page() {
   return (
-    <div className={`w-screen h-screen relative bg-orange-50 ${montserrat.className}`}>
+    <div className={`w-full h-screen relative bg-orange-50 grid place-items-center py-24 md:py-60 ${montserrat.className}`}>
       <Card />
     </div>
   )

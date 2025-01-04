@@ -5,9 +5,7 @@ import { Josefin_Sans } from "next/font/google"
 import Image from "next/image"
 import { useState } from "react"
 const josefinSans = Josefin_Sans({ subsets: ["latin"] })
-//Note: add any google font in 2 steps.
-// import { Josefin_Sans } from "next/font/google"
-// const josefinSans = Josefin_Sans({ subsets: ["latin"] })
+
 
 function Background({ children }) {
   return (
@@ -163,7 +161,7 @@ function Input() {
 function Page() {
 
   return (
-    <div className="w-screen h-screen bg-rose-50 mx-auto grid grid-cols-1 ">
+    <div className="w-full h-screen bg-rose-50 mx-auto grid grid-cols-1 ">
       <div className="relative w-full h-full max-w-80 sm:max-w-none mx-auto grid grid-cols-1 sm:grid-cols-2 grid-rows-[repeat(2,min-content)_auto] sm:grid-rows-[1fr_10fr]">
         <Background />
         <div className="h-fit w-20 p-6 ml-4 relative">

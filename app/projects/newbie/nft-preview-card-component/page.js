@@ -25,7 +25,7 @@ function IconClock() {
 }
 function Page() {
   return (
-    <div className={`w-screen h-screen flex justify-center items-center bg-slate-900 ${outfit.className}`}>
+    <div className={`w-full h-screen flex justify-center items-center bg-slate-900 ${outfit.className}`}>
       <div className="group bg-slate-800 h-[450px] w-72 rounded-xl p-6 transition duration-200">
         <div className="h-1/2 w-full relative rounded-xl overflow-hidden group-hover:brightness-200 group-hover:sepia-0">
           <Image
