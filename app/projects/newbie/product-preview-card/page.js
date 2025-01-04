@@ -1,7 +1,10 @@
 import clsx from "clsx"
+import { Fraunces, Montserrat } from "next/font/google"
 import Image from "next/image"
-
-//TODO: screen styles and z-index verification.
+//TODO: centrar imagen del perfume
+//TODO: Establecer un max Width
+const montserrat = Montserrat({ subsets: ["latin"] })
+const fraunces = Fraunces({ subsets: ["latin"], weight: "700" })
 function Card() {
   const cardStyles = clsx(
     "absolute bg-white inset-y-16 inset-x-6 rounded-xl",
@@ -24,7 +27,7 @@ function Card() {
         <p className="uppercase text-slate-400 text-xs tracking-widest leading-4">
           Perfume
         </p>
-        <h2 className="text-2xl leading-wider font-bold leading-6">
+        <h2 className={`${fraunces.className} text-slate-900 text-2xl leading-wider font-bold leading-6`}>
           Gabrielle Essence
           <br /> Eau De Parfum
         </h2>
@@ -32,7 +35,7 @@ function Card() {
           A floral, solar and voluptuous interpretation composed by Oliver
           Polge, Perfumer-Creator for the House of CHANEL.
         </p>
-        <span className="relative text-green-700 text-2xl font-bold after:content-['$169.99'] after:text-xs after:absolute after:text-slate-400 after:line-through after:top-1/2 after:-translate-y-1/2 after:ml-4">
+        <span className={`relative text-green-700 text-2xl font-bold after:content-['$169.99'] after:text-xs after:absolute after:text-slate-400 after:line-through after:top-1/2 after:-translate-y-1/2 after:ml-4 ${fraunces.className}`}>
           $149.99
         </span>
         <button className="bg-emerald-700 text-white py-3 rounded-xl">
@@ -45,7 +48,7 @@ function Card() {
 
 function Page() {
   return (
-    <div className="w-screen h-screen relative bg-orange-50">
+    <div className={`w-screen h-screen relative bg-orange-50 ${montserrat.className}`}>
       <Card />
     </div>
   )

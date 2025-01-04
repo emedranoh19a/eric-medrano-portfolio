@@ -1,6 +1,10 @@
 import clsx from "clsx"
 import Image from "next/image"
 //TODO: REDO the background.
+import { Kumbh_Sans } from "next/font/google"
+
+const kumbhSans = Kumbh_Sans({ subsets: ["latin"] })
+
 function Background({ children }) {
   const circleStyles = clsx(
     "absolute top-0 left-0 h-full w-full bg-gradient-to-bl from-cyan-200/40 to-70% to-transparent  rounded-full w-96 h-96 scale-150 md:scale-[2] lg:scale-[2.2]"
@@ -50,7 +54,7 @@ function Stat({ value, desc }) {
 function Card() {
   return (
     <div className="bg-white shadow-lg shadow-cyan-900/40 h-96 w-80 flex flex-col rounded-xl overflow-hidden">
-      <div class="h-56 relative opacity-65">
+      <div className="h-56 relative opacity-65">
         <Image
           src="/projects/newbie/profile-card-component/images/bg-pattern-card.svg"
           alt=""
@@ -78,7 +82,7 @@ function Card() {
 
 function Page() {
   return (
-    <div className="relative bg-cyan-600/60 w-screen h-screen flex items-center justify-center">
+    <div className={`relative bg-cyan-600/60 w-screen h-screen flex items-center justify-center ${kumbhSans.className}`}>
       {/* <Background /> */}
       <Card />
     </div>

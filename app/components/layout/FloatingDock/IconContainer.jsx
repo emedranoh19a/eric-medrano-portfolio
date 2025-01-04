@@ -73,7 +73,6 @@ export default function IconContainer({
         onMouseLeave={() => setHovered(false)}
         className="aspect-square flex items-center justify-center relative"
       >
-        {/* //Pues, si es posible, hacer las imágenes redondas. */}
         <AnimatePresence>
           {hovered && (
             <motion.div

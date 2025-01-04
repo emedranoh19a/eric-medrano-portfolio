@@ -1,6 +1,9 @@
-"use client";
-import clsx from "clsx";
-import { useState } from "react";
+"use client"
+import clsx from "clsx"
+import { Overpass } from "next/font/google"
+import { useState } from "react"
+
+const overpass = Overpass({ subsets: ["latin"], weight: ["400", "700"] })
 function Star() {
   return (
     <div className="w-fit h-fit p-3 rounded-full bg-gray-700/70">
@@ -11,7 +14,7 @@ function Star() {
         />
       </svg>
     </div>
-  );
+  )
 }
 
 function RatingCard({ children }) {
@@ -20,13 +23,13 @@ function RatingCard({ children }) {
     "flex flex-col gap-5 items-center",
     "bg-gradient-to-b from-gray-800 to-gray-900 text-white",
     "rounded-2xl"
-  );
-  return <div className={containerStyles}>{children}</div>;
+  )
+  return <div className={containerStyles}>{children}</div>
 }
 
 export default function Page() {
-  const [rank, setRank] = useState(0);
-  const [isRanked, setIsRanked] = useState(false);
+  const [rank, setRank] = useState(0)
+  const [isRanked, setIsRanked] = useState(false)
 
   function NumberButton({ number }) {
     const numberButtonStyles = clsx(
@@ -35,15 +38,15 @@ export default function Page() {
       "transition-all",
       number === rank && "bg-orange-500 text-black",
       ""
-    );
+    )
     return (
       <button className={numberButtonStyles} onClick={() => setRank(number)}>
         {number}
       </button>
-    );
+    )
   }
   return (
-    <div className="w-screen h-screen bg-gray-950 relative">
+    <div className={`w-screen h-screen bg-gray-950 relative ${overpass.className}`}>
       <RatingCard>
         {!isRanked ? (
           <>
@@ -171,5 +174,5 @@ export default function Page() {
         )}
       </RatingCard>
     </div>
-  );
+  )
 }

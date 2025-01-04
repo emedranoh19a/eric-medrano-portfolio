@@ -1,4 +1,7 @@
+import { Outfit } from "next/font/google"
 import Image from "next/image"
+
+const outfit = Outfit({ subsets: ["latin"], weight: ["400", "700"] })
 
 function IconEthereum() {
   return (
@@ -22,8 +25,8 @@ function IconClock() {
 }
 function Page() {
   return (
-    <div className="w-screen h-screen flex justify-center items-center bg-slate-900">
-      <div className="group bg-slate-800 h-[450px] w-72 rounded-xl p-6">
+    <div className={`w-screen h-screen flex justify-center items-center bg-slate-900 ${outfit.className}`}>
+      <div className="group bg-slate-800 h-[450px] w-72 rounded-xl p-6 transition duration-200">
         <div className="h-1/2 w-full relative rounded-xl overflow-hidden group-hover:brightness-200 group-hover:sepia-0">
           <Image
             src="/projects/newbie/nft-preview-card-component/images/image-equilibrium.jpg"

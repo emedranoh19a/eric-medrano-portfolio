@@ -1,10 +1,9 @@
 import Image from "next/image"
 
-//TODO make this page a lazy component.
 
 function SocialLink({ text }) {
   return (
-    <div className="bg-stone-600 rounded-lg text-white h-full py-4 hover:pointer hover:bg-lime-400 hover:text-black transition-all">
+    <div className="bg-stone-600 rounded-lg text-white h-full py-4 hover:cursor-pointer hover:bg-lime-400 hover:text-black transition-all">
       <p className="leading-none block">{text}</p>
     </div>
   )
@@ -17,26 +16,9 @@ const socialLinks = [
   "Instagram",
 ]
 function Page() {
-  //
 
-  //   Jessica Randall
-  //   London, United Kingdom
-  //   "Front-end developer and avid reader."
-
-  //   GitHub
-  //   Frontend Mentor
-  //   LinkedIn
-  //   Twitter
-  //   Instagram
-
-  //   <div class="attribution">
-  //     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-  //     Coded by <a href="#">Your Name Here</a>.
-  //   </div>
-  // </body>
-  //
   return (
-    <div className="bg-stone-800 w-screen h-screen grid place-items-center text-center">
+    <div className="bg-stone-800 w-full min-h-screen grid place-items-center text-center">
       <div className="bg-stone-700 w-80 md:w-96 h-fit flex flex-col items-center p-10 gap-5 rounded-lg">
         <div className="relative w-20 h-20 rounded-full">
           <Image

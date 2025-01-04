@@ -1,22 +1,19 @@
-// Learning
-// Published 21 Dec 2023
-// HTML & CSS foundations
-// These languages are the backbone of every website, defining structure, content, and presentation.
-// Greg Hooper
+
 
 import clsx from "clsx"
+import { Figtree } from "next/font/google"
 import Image from "next/image"
 
-//TODO: Screen styles
+const figtree = Figtree({ subsets: ["latin"], weight: ["400", "500", "600"] })
 function Page() {
   const cardStyles = clsx(
-    "bg-white relative flex flex-col gap-2 h-fit w-80 p-4",
+    "group hover:cursor-pointer bg-white relative flex flex-col gap-2 h-fit w-80 p-4",
     "border border-black rounded-xl",
     "drop-shadow-[5px_5px_0px_rgba(0,0,0,1)]"
   )
 
   return (
-    <div className="bg-amber-300 h-screen w-screen flex  items-center justify-center">
+    <div className={`bg-amber-300 min-h-screen w-full flex  items-center justify-center ${figtree.className}`}>
       <div className={cardStyles}>
         <div className="w-full h-40 relative rounded-xl overflow-hidden">
           <Image
@@ -32,7 +29,7 @@ function Page() {
         <p className="text-sm font-light text-gray-800">
           Published 21 Dec 2023
         </p>
-        <h3 className="text-lg font-bold hover:text-amber-300 hover:cursor-pointer transition-all">
+        <h3 className="text-lg font-bold group-hover:text-amber-300 hover:cursor-pointer transition-all">
           HTML & CSS foundations
         </h3>
         <p className=" text-gray-500">

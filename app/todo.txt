@@ -65,7 +65,6 @@ Project tracking intro component
 //TODO: Features sections. Just to get them to know me.
 //TODO: Contact form. with React-Hook-Form and basic stuff.
 //TODO: Text generate Effect. Para títulos grandes.
-//TODO: Eric Medrano.  (Text Hover Effect), and maybe the fancy sparkles.
 //TODO: Timeline, for my life.
 //TODO: World Map. (Think global. Since I know English, Spanish and Japanese. Can I help you translatinf your business in the outside?)
     //TODO: Fix usePopcorn
@@ -108,18 +107,6 @@ Swappable words displayed dynamically:
    Leader, 
   
 
-Skills Section
-Title:
-"Expanding Horizons, One Skill at a Time."
-Text:
-"My skill set isn’t just a list; it’s a growing ecosystem. Picture a globe filled with logos of everything I know and love—a globe that’s constantly spinning, expanding, and evolving. With every new challenge I take on, another skill finds its place, making this sphere of knowledge even richer. Explore it today, and let’s watch it grow together."
-
-Projects Section
-Title:
-"Turning Concepts into Creations."
-Text:
-"Here’s where imagination meets execution. Each project reflects a part of me—my curiosity, my dedication, and my constant drive to innovate. Dive in and discover the stories behind the code, the pixels, and the melodies."
-
 Contact Section
 Title:
 "Let’s Make Something Extraordinary."
@@ -132,6 +119,15 @@ Title:
 "Gratitude Beyond Words."
 
 Text:
-"Thank you for stopping by and taking the time to explore my work. Your support fuels my journey, and I can’t wait to share more with you as I continue to grow, learn, and create. Let’s stay connected and build something unforgettable."
+"Thank you for stopping by and taking the time to explore my work. Your support fuels my journey,
+ and I can’t wait to share more with you as I continue to grow, learn, and create.
+  Let’s stay connected and build something unforgettable."
 
-This structure gives your portfolio a personal, engaging tone while highlighting your ambition and versatility. Let me know if you’d like further refinements or additional sections!
+
+//join a group or club of my hobbbies to meet people that share my interesests.
+
+//hiking. joining a choir. open mind nights.
+
+
+//TODO: Intro with sign up: newbie.
+//TODO: Results summary component.

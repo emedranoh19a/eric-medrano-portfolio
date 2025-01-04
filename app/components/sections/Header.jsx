@@ -36,7 +36,7 @@ export default function Header() {
 
   return (
     <section
-      className="relative w-full min-h-screen h-[120vh] overflow-y-visible z-0 py-40 xl:-mt-20"
+      className="relative w-full min-h-screen h-[120vh] overflow-y-visible overflow-x-hidden z-0 py-40 xl:-mt-20"
       id="home"
     >
       <Content />

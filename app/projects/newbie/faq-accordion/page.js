@@ -1,10 +1,9 @@
 "use client"
 import clsx from "clsx"
+import { Work_Sans } from "next/font/google"
 import Image from "next/image"
 import { useState } from "react"
-//TODO: Screen styles.
-//TODO: Verify the zIndex for the responsive menu.
-//TODO: Verify the zIndex for the Oject navigation, on mobile.
+const workSans = Work_Sans({ subsets: ["latin"], weight: ["400", "500"] })
 function PlusIcon() {
   return <>+</>
 }
@@ -61,7 +60,7 @@ function AccordionItem({ title, content }) {
 }
 function BackgroundImage() {
   return (
-    <div className="w-full top-0 absolute h-56 bg-red-50">
+    <div className="w-full top-0 left-0 absolute h-56 bg-red-50 z-0">
       <Image
         src="/projects/newbie/faq-accordion/images/background-pattern-desktop.svg"
         fill
@@ -95,9 +94,9 @@ const questions = [
 ]
 function Page() {
   return (
-    <div className="bg-purple-50  w-screen h-screen relative flex items-center justify-center">
+    <div className={`z-0  bg-purple-50 relative  w-full min-h-screen  flex items-center justify-center ${workSans.className}`}>
       <BackgroundImage />
-      <div className="bg-white shadow-2xl shadow-purple-500/20 h-fit min-h-5/6 w-1/2 z-10 p-6 rounded-xl  flex flex-col justify-start gap-5">
+      <div className="bg-white z-10 shadow-2xl shadow-purple-100/20 h-fit min-h-5/6 w-1/2  p-6 rounded-xl  flex flex-col justify-start gap-5">
         <div className="flex gap-6 items-center">
           <IconStar />
           <h1 className="inline text-4xl font-bold">FAQs</h1>

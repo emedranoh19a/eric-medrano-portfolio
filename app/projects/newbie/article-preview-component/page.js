@@ -1,4 +1,9 @@
 import Image from "next/image"
+
+import { Manrope } from "next/font/google"
+
+const manrope = Manrope({ subsets: ["latin"] })
+
 function IconShare() {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
@@ -78,7 +83,7 @@ function Card() {
 }
 function Page() {
   return (
-    <div className="w-screen h-screen bg-slate-200">
+    <div className={`w-screen h-screen bg-slate-200 ${manrope.className}`}>
       <div className="relative container px-8 mx-auto grid w-full h-full place-items-center">
         <Card />
       </div>

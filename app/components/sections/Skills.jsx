@@ -42,8 +42,8 @@ function SkillsContent() {
 
       <BoxReveal>
         <Text>
-          My tech palette is a growing ecosystem. A{" "}
-          <Span> world of knowledge</Span> that is constantly spinning,
+          My tech palette isn&apos;t just a list, it&apos;s a growing ecosystem.
+          A <Span> world of knowledge</Span> that is constantly spinning,
           expanding and evolving.
         </Text>
         <Text>

@@ -59,8 +59,6 @@ export default function Projects() {
   // };
   //Controll the state from here.
   function hoverHandler(tab) {
-    // console.log("hovering");
-    // console.log(tab);
     setHovering(true);
     setHoveredSkill(tab.tech);
   }

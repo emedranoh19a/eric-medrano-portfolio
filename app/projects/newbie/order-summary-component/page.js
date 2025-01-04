@@ -1,5 +1,8 @@
 import clsx from "clsx"
+import { Red_Hat_Display } from "next/font/google"
 import Image from "next/image"
+
+const redHatDisplay = Red_Hat_Display({ subsets: ["latin"], weight: ["400"] })
 
 function Card() {
   return (
@@ -56,41 +59,7 @@ function Card() {
 }
 //TODO: FIX this page
 function Page() {
-  // .container {
-  //   position: relative;
-  //   background: #2c3e50;
-  //   height: 50vh;
-  // }
 
-  // .wave {
-  //   position: absolute;
-  //   height: 130px;
-  //   width: 100%;
-  //   background: #2c3e50;
-  //   bottom: 0;
-  // }
-
-  // .wave::after, .wave::after {
-  //   content: "";
-  //   display: block;
-  //   position: absolute;
-  //   border-radius: 100% 50%;
-  // }
-
-  // .wave::before {
-  //   width: 55%;
-  //   height: 109%;
-  //   background-color: #fff;
-  //   right: -1.5%;
-  //   top: 60%;
-  // }
-  // .wave::after {
-  //   width: 55%;
-  //   height: 100%;
-  //   background-color: #2c3e50;
-  //   left: -1.5%;
-  //   top: 40%;
-  // }
   const backgroundBase = clsx(
     "relative h-screen w-screen bg-indigo-100 flex items-center justify-center -z-50",
     "before:absolute before:bg-indigo-50 before:w-full before:h-1/2 before:bottom-0 before:-z-40",
@@ -104,7 +73,7 @@ function Page() {
     "after:absolute after:bg-indigo-50 after:w-1/2 after:aspect-square after:bottom-1/2 after:translate-y-1/2 after:scale-y-50 after:right-0  after:right-0 after:rounded-t-full after:-z-30"
   )
   return (
-    <div className="h-screen w-screen overflow-hidden">
+    <div className={`h-screen w-screen overflow-hidden ${redHatDisplay.className}`}>
       <section className={backgroundBase}>
         <div className={waveStyles}></div>
         <Card />

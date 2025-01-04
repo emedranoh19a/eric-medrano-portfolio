@@ -1,9 +1,15 @@
 import clsx from "clsx"
+import { Inter, Lexend_Deca } from "next/font/google"
 import Image from "next/image"
+//TODO: fix layout.
+//TODO: Fix letter spacing
+
+const inter = Inter({ subsets: ["latin"] })
+const lexendDeca = Lexend_Deca({ subsets: ["latin"] })
 
 function Stat({ stat, description }) {
   return (
-    <div className="flex flex-col">
+    <div className={`${lexendDeca.className} flex flex-col`}>
       <span className="block text-white text-xl font-bold">{stat}</span>
       <span className="block text-slate-400 uppercase text-sm ">
         {description}
@@ -26,7 +32,7 @@ function Page() {
     "rounded-xl overflow-hidden"
   )
   return (
-    <div className="relative bg-slate-900 h-screen w-screen">
+    <div className={`relative bg-slate-900 h-screen w-screen ${inter.className}`}>
       <div className={cardContainerStyles}>
         <div className="h-40 lg:h-80 lg:basis-1/2 relative bg-gradient-to-tr from-purple-300 to-purple-400">
           <Image

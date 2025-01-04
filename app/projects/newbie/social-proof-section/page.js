@@ -1,5 +1,10 @@
 import clsx from "clsx"
 import Image from "next/image"
+
+import { League_Spartan } from "next/font/google"
+
+const leagueSpartan = League_Spartan({ subsets: ["latin"] })
+
 function IconStar() {
   return (
     <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
@@ -115,7 +120,7 @@ export default function Page() {
   )
   //TODO: Try to fix the background.
   return (
-    <div className="container mx-auto w-screen h-screen relative">
+    <div className={`container mx-auto w-screen h-screen relative ${leagueSpartan.className}`}>
       <Image
         src="/projects/newbie/social-proof-section/images/bg-pattern-bottom-mobile.svg"
         fill
