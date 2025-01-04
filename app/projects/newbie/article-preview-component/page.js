@@ -83,7 +83,7 @@ function Card() {
 }
 function Page() {
   return (
-    <div className={`w-screen h-screen bg-slate-200 ${manrope.className}`}>
+    <div className={`w-full h-screen bg-slate-200 ${manrope.className}`}>
       <div className="relative container px-8 mx-auto grid w-full h-full place-items-center">
         <Card />
       </div>

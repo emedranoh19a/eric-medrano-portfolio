@@ -39,7 +39,7 @@ const cards = [
 ]
 export default function Page() {
 
-    return <main className={`${poppins.className} text-gray-400 relative`}>
+    return <main className={`${poppins.className} text-gray-400 relative pb-96`}>
         <Intro />
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-fit mx-auto ">
             {cards.map((card, i) => <Card key={i} {...card} />)}

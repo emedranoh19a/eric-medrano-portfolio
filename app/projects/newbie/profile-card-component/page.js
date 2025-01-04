@@ -57,7 +57,7 @@ function Card() {
 
 function Page() {
   return (
-    <div className={`relative bg-cyan-600/60 w-full h-screen flex items-center justify-center ${kumbhSans.className}`}>
+    <div className={`relative bg-cyan-600/60 w-full overflow-x-hidden h-screen flex items-center justify-center ${kumbhSans.className}`}>
       <Card />
       <Image className="-z-10 absolute w-1/2 h-1/2 top-0 left-0 -translate-y-1/2 -translate-x-1/2" src="/projects/newbie/profile-card-component/images/bg-pattern-top.svg" fill objectFit="contain" alt="" />
       <Image className="-z-10 absolute w-1/2 h-1/2 top-0 right-0 translate-y-1/2 translate-x-1/2" src="/projects/newbie/profile-card-component/images/bg-pattern-bottom.svg" fill objectFit="contain" alt="" />
