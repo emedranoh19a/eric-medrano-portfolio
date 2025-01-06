@@ -1,7 +1,7 @@
 import { FaCss3Alt, FaHtml5, FaReact, FaSass } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiRedux } from "react-icons/si";
-import { TbBrandFramerMotion } from "react-icons/tb";
+import { SiRedux, SiStyledcomponents } from "react-icons/si";
+import { TbApi, TbBrandFramerMotion } from "react-icons/tb";
 
 export default function TechIcons({ techs = [] }) {
   return (
@@ -37,11 +37,25 @@ export function TechIcon({ tech }) {
           style={{ filter: "drop-shadow(0 0 0.75rem #c69)" }}
         />
       );
+    case "styled-components":
+      return (
+        <SiStyledcomponents
+          className="w-5 h-fit fill-[#c69] block"
+          style={{ filter: "drop-shadow(0 0 0.75rem #c69)" }}
+        />
+      );
     case "react":
       return (
         <FaReact
           className="w-5 h-fit fill-[#61DBFB] block"
           style={{ filter: "drop-shadow(0 0 0.75rem #61DBFB)" }}
+        />
+      );
+    case "api":
+      return (
+        <TbApi
+          className="w-5 h-fit stroke-yellow-400 block"
+          style={{ filter: "drop-shadow(0 0 0.75rem #facc15)" }}
         />
       );
     case "redux":

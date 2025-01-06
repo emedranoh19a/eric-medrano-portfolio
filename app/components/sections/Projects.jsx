@@ -7,7 +7,7 @@ import {
   FaSortAlphaDownAlt,
 } from "react-icons/fa";
 import { GiWeightLiftingUp } from "react-icons/gi";
-import { levelTabs, projects } from "../../data";
+import { projects, skillTabs } from "../../data";
 import { BentoGrid, BentoGridItem } from "../BentoGrid";
 import BoxReveal from "../effects/BoxReveal";
 import GoToProjects from "../ui/GoToProjects";
@@ -27,7 +27,7 @@ const sortOptions = [
 //Project component.
 export default function Projects() {
   //State:
-  const [activeTab, setActiveTab] = useState(levelTabs[0]);
+  const [activeTab, setActiveTab] = useState(skillTabs[0]);
 
   //Select related:
   const [isOpen, setIsOpen] = useState(false);
@@ -63,7 +63,7 @@ export default function Projects() {
     setHoveredSkill(tab.tech);
   }
   function onTabClick(idx) {
-    setActiveTab(levelTabs[idx]);
+    setActiveTab(skillTabs[idx]);
   }
   return (
     <section
@@ -74,7 +74,7 @@ export default function Projects() {
       <div className="flex justify-around gap-2">
         <Tabs
           active={activeTab}
-          tabs={levelTabs}
+          tabs={skillTabs}
           setHovering={setHovering}
           onTabClick={onTabClick}
           tabsLabel={"Skill"}

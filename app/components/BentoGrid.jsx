@@ -133,11 +133,11 @@ function LevelLabel({ level }) {
     level === 0
       ? "Newbie"
       : level === 1
-      ? "Beginner"
+      ? "Junior"
       : level === 2
-      ? "Intermediate"
+      ? "Medium"
       : level === 3
-      ? "Advanced"
+      ? "Hard"
       : "Guru";
 
   return (

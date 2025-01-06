@@ -34,21 +34,3 @@ Dark gray: hsl(0, 0%, 59%)
 
 > 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
 
-//TODO: Hacer el ultimo dia de mi descanso.
-
--Ir a comprar camisas, camisetas, calcetines, un cinturón, y una mochila.
-Agregar padding a FOUR CARD FEATURE.
-Lavar mi ropa. 
-Limpiar mi piso.
-Tomar medicina en la mañana
-Tomar medicina en la tarde
-Tomar medicina en la noche.
-Tratar de acabar un portafolio que pueda presentar.
-Hacer una buena presentación de mí.
-Hacer una buena línea del tiempo.
-Tratar de terminar un form bien hecho. Basta con sólo Netlify y Google Sheets (Sheety)
-Llevar a cabo la implementación de todos los proyectos inconclusos que se encuentren dentro de este proyecto de nextjs.
-//TODO: Intro with sign up.
-//TODO: Results summary component.
-//TODO: Bento Grid.
-//TODO: Download starter files for the next 3 proyects. Get something to do at work, on the break time.

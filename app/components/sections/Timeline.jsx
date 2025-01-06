@@ -1,7 +1,11 @@
+import { timelineData } from "@/app/data";
+import { Timeline as TimelineUI } from "../ui/Timeline";
+//TODO: mover esto a los datos centralizados.
+
 export default function Timeline() {
   return (
-    <section className="h-screen w-full" id="timeline">
-      Timeline
-    </section>
+    <div className="w-full">
+      <TimelineUI data={timelineData} />
+    </div>
   );
 }

@@ -48,8 +48,7 @@ function SkillsContent() {
         </Text>
         <Text>
           With every <Span> challenge</Span> I take on, a{" "}
-          <Span>new technology</Span>
-          finds its place into my arsenal.
+          <Span>new technology</Span> finds its place into my arsenal.
         </Text>
       </BoxReveal>
     </div>
