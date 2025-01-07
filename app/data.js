@@ -1,150 +1,171 @@
 import { FaCode, FaHome, FaUser } from "react-icons/fa"
 import { MdOutlineLaptopMac } from "react-icons/md"
 import { TechIcon } from "./components/TechIcons"
+import AchievementsList from "./components/ui/AchievementsList"
 
+//TODO: Add languages functionality.
 export const timelineData = [
+    // {/**1997
+    // El día de mi nacimiento
+    //Bloques: Desde 200X hasta 2010.
+    //secundaria
+    //preparatoria
+    //vida universitaria. Preferiblemente solo CIT. Baito de Narita.
+    //Vida profesional, ocupación, etc.
     {
-        title: "2024",
-        content: (
-            <div>
-                <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-                    Built and launched Aceternity UI and Aceternity UI Pro from scratch
-                </p>
-                <div className="grid grid-cols-2 gap-4">
-                    {/* <Image
-              src="https://assets.aceternity.com/templates/startup-1.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/templates/startup-2.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/templates/startup-3.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/templates/startup-4.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            /> */}
-                </div>
-            </div>
-        ),
+        //Actualmente.                    WSソリューションズ株式会社に入社。システムエンジニアとしての活動を開始。
+
+        title: "2022〜now",
+        content: <AchievementsList achievements={
+            [{
+                en: "Joined WS Solutions Co., Ltd. Started activities as a System Engineer.",
+                ja: "WSソリューションズ株式会社に入社。システムエンジニアとしての活動を開始。",
+                es: "Me uní a WS Solutions Co., Ltd. Comencé actividades como Ingeniero de Sistemas."
+            }]} />,
     },
     {
-        title: "Early 2023",
-        content: (
-            <div>
-                <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-                    I usually run out of copy, but when I see content this big, I try to
-                    integrate lorem ipsum.
-                </p>
-                <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-                    Lorem ipsum is for people who are too lazy to write copy. But we are
-                    not. Here are some more example of beautiful designs I built.
-                </p>
-                <div className="grid grid-cols-2 gap-4">
-                    {/* <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/features-section.png"
-              alt="feature template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/pro/bento-grids.png"
-              alt="bento template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/cards.png"
-              alt="cards template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            /> */}
-                </div>
-            </div>
-        ),
+        //vida universitaria
+        title: "2018〜2022",
+        content:
+            <AchievementsList achievements={
+                [
+                    {
+                        en: "Graduated from Chiba Institute of Technology, Department of Informatics, with a Bachelor Degree in Computer Science.",
+                        ja: "千葉工業大学情報科学部情報工学科 卒業",
+                        es: "Graduado de la Facultad de Ciencias de la Información, Departamento de Ciencias de la Computación, Instituto Tecnológico de Chiba."
+                    },
+                    {
+                        en: "Awarded a 4-year scholarship from the Mabuchi International Scholarship Foundation.",
+                        ja: "公益財団法人マブチ国際育英財団より奨学金を授与（4年間）",
+                        es: "Becado durante 4 años por la Fundación Internacional de Becas Mabuchi."
+                    },
+                    {
+                        en: "Achieved a TOEIC IP score of 890.",
+                        ja: "TOEIC IP 890点達成",
+                        es: "Alcancé una puntuación de 890 en TOEIC IP"
+                    },
+                    {
+                        en: "Provided guidance and interpretation assistance at Narita Airport Sanitary Control.",
+                        ja: "成田空港検疫で案内・通訳援助",
+                        es: "Ofrecí orientación y asistencia de interpretación en la cuarentena del Aeropuerto de Narita."
+                    },
+                    {
+                        en: "CG-ARTS Image Processing Engineer Certification (Basic).",
+                        ja: "CG-ARTS検定 画像処理エンジニア検定（ベーシック）合格",
+                        es: "Certificación de Ingeniero en Procesamiento de Imágenes CG-ARTS (Básico)."
+                    },
+                    {
+                        en: " CG-ARTS Compputer Graphics Engineer Certification (Basic).",
+                        ja: "CG-ARTS検定 CGエンジニア検定（ベーシック） ",
+                        es: "Certificación de Ingeniero en Gráficos Computacionales CG-ARTS (Básico)."
+                    }
+                ]} />
+
+        //     {/* <li>
+        //         千葉工業大学情報科学部　情報工学科　長谷川研究室　（画像処理）
+        //     </li> */}
+
+
     },
     {
-        title: "Changelog",
-        content: (
-            <div>
-                <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-                    Deployed 5 new components on Aceternity today
-                </p>
-                <div className="mb-8">
-                    <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-                        ✅ Card grid component
-                    </div>
-                    <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-                        ✅ Startup template Aceternity
-                    </div>
-                    <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-                        ✅ Random file upload lol
-                    </div>
-                    <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-                        ✅ Himesh Reshammiya Music CD
-                    </div>
-                    <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-                        ✅ Salman Bhai Fan Club registrations open
-                    </div>
-                </div>
-                <div className="grid grid-cols-2 gap-4">
-                    {/* <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/features-section.png"
-              alt="feature template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/pro/bento-grids.png"
-              alt="bento template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            />
-            <Image
-              src="https://assets.aceternity.com/cards.png"
-              alt="cards template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-            /> */}
-                </div>
-            </div>
-        ),
+        //prepa
+        title: "2013〜2016",
+        content: <AchievementsList achievements={[
+            {
+                en: "Graduated from Liceo Mexicano Japones (日本メキシコ学院) Senior High School (Mexico).",
+                ja: "日本メキシコ学院　高校卒業　（メキシコ）",
+                es: "Graduado de la escuela preparatoria del Liceo Mexicano Japonés (México)."
+            },
+            {
+                en: "Second place in the 33rd National Japanese Language Oratory Contest in Mexico",
+                ja: "大３３回メキシコ日本語弁論大会第二位入賞",
+                es: "Segundo lugar en el 33.º Concurso de Oratoria en Japonés en México."
+            },
+            {
+                en: "Participated in the Second Mexico-Japan Exchange Program at Onjuku, Chiba",
+                ja: "第２回御宿における日本メキシコ交流プログラムに参加",
+                es: "Participación en el Segundo Programa de Intercambio México-Japón en Onjuku, Chiba"
+            },
+            {
+                en: "JLPT N2 (Japanese Language Proficiency Test) Passed",
+                ja: "日本語能力試験N2　合格",
+                es: "JLPT N2 (Examen de Aptitud del Idioma Japonés) Aprobado"
+            },
+            {
+                en: "JLPT N3 (Japanese Language Proficiency Test) Passed",
+                ja: "日本語能力試験N3　合格",
+                es: "JLPT N3 (Examen de Aptitud del Idioma Japonés) Aprobado"
+            },
+            {
+                en: "Japanese Kanji Aptitude Test (Kanken) Level 6 Passed",
+                ja: "日本語漢字能力検定試験6級　合格",
+                es: "Examen de Aptitud de Kanji del Idioma Japonés (Kanken) Nivel 6 Aprobado"
+            },
+            {
+                en: "Japanese Kanji Aptitude Test (Kanken) Level 7 Passed",
+                ja: "日本語漢字能力検定試験7級　合格",
+                es: "Examen de Aptitud de Kanji del Idioma Japonés (Kanken) Nivel 7 Aprobado"
+            },
+            {
+                en: "Japanese Kanji Aptitude Test (Kanken) Level 8 Passed",
+                ja: "日本語漢字能力検定試験8級　合格",
+                es: "Examen de Aptitud de Kanji del Idioma Japonés (Kanken) Nivel 8 Aprobado"
+
+            },
+            {
+                en: "Japanese Kanji Aptitude Test (Kanken) Level 9 Passed",
+                ja: "日本語漢字能力検定試験9級　合格",
+                es: "Examen de Aptitud de Kanji del Idioma Japonés (Kanken) Nivel 9 Aprobado"
+
+            },
+            {
+                en: "Japanese Kanji Aptitude Test (Kanken) Level 10 Passed",
+                ja: "日本語漢字能力検定試験10級　合格",
+                es: "Examen de Aptitud de Kanji del Idioma Japonés (Kanken) Nivel 10 Aprobado"
+
+            },
+
+        ]} />
     },
+    {
+        //secundaria
+        title: "2010〜2013",
+        content: <AchievementsList achievements={[
+            {
+                en: "Graduated from Liceo Mexicano Japones (日本メキシコ学院) Junior High School (Mexico).",
+                ja: "日本メキシコ学院　中学校卒業　（メキシコ)",
+                es: "Graduado de la escuela secundaria del Liceo Mexicano Japonés (México)."
+            },
+            {
+                en: "JLPT N4 (Japanese Language Proficiency Test) Passed",
+                ja: "日本語能力試験N4　合格",
+                es: "JLPT N4 (Examen de Aptitud del Idioma Japonés) Aprobado"
+            },
+            {
+                en: "JLPT N5 (Japanese Language Proficiency Test) Passed",
+                ja: "日本語能力試験N5　合格",
+                es: "JLPT N5 (Examen de Aptitud del Idioma Japonés) Aprobado"
+            }
+        ]} />
+
+    },
+
+
+
+    // 2015
+    // Participación en el Servicio Militar Nacional
+    // 2016
+    // Empecé la carrera de Ingeniería en Animación Digital en la Universidad Panamericana.
+    // 2018
+    // 2019
+    // 2020
+    // 2021
+    // 2022
+    // Ingresar a WSS
+    // 2023
+    // 2024 */}
+
+
 ]
 export const sidebarLinks = [
     {
@@ -226,7 +247,7 @@ export const projects = [
         level: 1,
         techs: ["html", "sass"],
         isImportant: true,
-        isComplete: false,
+        isComplete: true,
         isPublic: true,
         isExternalProject: true,
     },

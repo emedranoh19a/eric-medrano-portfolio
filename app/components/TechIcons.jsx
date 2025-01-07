@@ -54,8 +54,8 @@ export function TechIcon({ tech }) {
     case "api":
       return (
         <TbApi
-          className="w-5 h-fit stroke-yellow-400 block"
-          style={{ filter: "drop-shadow(0 0 0.75rem #facc15)" }}
+          className="w-5 h-fit stroke-lime-400 block"
+          style={{ filter: "drop-shadow(0 0 0.75rem #a3e635)" }}
         />
       );
     case "redux":
