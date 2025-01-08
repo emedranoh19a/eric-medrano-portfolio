@@ -243,7 +243,7 @@ export const projects = [
         title: "Natours",
         description: "A project to explore the power of Sass and the 7-1 architecture. From the Advanced CSS and Sass course from Jonas Schmedtmann.",
         image: "/projects/other/natours_preview.png",
-        url: "https://sass-natours-for-erichiki.netlify.app/",
+        url: "https://natours-for-eric-medrano.netlify.app/",
         level: 1,
         techs: ["html", "sass"],
         isImportant: true,
@@ -516,12 +516,23 @@ export const projects = [
         image: "/projects/other/use-popcorn.png",
         url: "https://usepopcorn-for-erichiki.netlify.app",
         level: 2,
-        //TODO: Styled components.
         techs: ["react", "styled-components", "api"],
         isImportant: false,
         isComplete: true,
         isPublic: true,
         isExternalProject: true,
+    },
+    {
+        title: "Bento Grid",
+        description: "Junior challenge from Front End Mentor.",
+        image: "/projects/beginner/bento-grid/desktop-design.jpg",
+        url: "/projects/beginner/bento-grid",
+        level: 1,
+        techs: ["html", "tailwindcss"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
     },
 
     //Hero.

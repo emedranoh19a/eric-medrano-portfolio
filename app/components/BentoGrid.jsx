@@ -8,8 +8,8 @@ import TechIcons from "./TechIcons";
 export function BentoGrid({ className, children }) {
   //Style:
   const containerStyles = cn(
-    "max-w-80 xl:max-w-5xl 2xl:max-w-7xl mx-auto md:p-2 px-[20vw] sm:px-44",
-    "grid gap-4 grid-cols-1 md:auto-rows-[18rem] md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 ",
+    "max-w-md xl:max-w-5xl 2xl:max-w-7xl mx-auto px-3  ",
+    "grid gap-4 grid-cols-2 md:auto-rows-[18rem] md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 ",
     "grid-flow-row-dense" //This will positionate the items in the grid.
   );
   return <div className={cn(containerStyles, className)}>{children}</div>;
@@ -38,7 +38,7 @@ export function BentoGridItem({
     "bg-white p-4",
     "border border-neutral-100 rounded-xl overflow-hidden",
     "hover:shadow-xl transition duration-200 shadow-input",
-    isImportant ? "md:col-span-2" : "col-span-1",
+    isImportant ? "lg:col-span-2" : "col-span-1",
     className
   );
 
