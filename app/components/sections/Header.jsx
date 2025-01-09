@@ -8,35 +8,22 @@ import MainTitle from "../ui/MainTitle";
 
 export default function Header() {
   //State:
-  {
-    /* TODO: Hero section. with contact links? */
-  }
+
   //Style:
   //For sizing purposes
   const catContainerStyles = cn(
-    // "absolute w-full h-screen  bg-red-500 z-20",
-    " overflow-y-visible",
-    "absolute w-full h-screen bottom-0 translate-y-5/6",
-    "scale-[0.7] lg:scale-[1] xl:scale-[1.6] 2xl:scale-[1.6] overflow-hidden",
-    ""
+    "relative grid place-items-center",
+    "z-50 w-full h-[100vw] overflow-hidden",
+    "-mt-[20vw] ",
+    "bg-red-500/50 sm:bg-sky-500/50 md:bg-lime-500/50 lg:bg-yellow-500/50 xl:bg-fuchsia-500/50 2xl:bg-orange-500/50",
+    //This styles will block the cat interacction on touch screens.
+    "no-hover:before:bg-transparent no-hover:before:absolute no-hover:before:w-full no-hover:before:h-full no-hover:before:z-20 "
   );
-  // TODO: probably we need here the bsolute positioning.
-  const catStyles = cn(
-    "absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2  w-[94%] h-[94%]  overflow-y-visible",
-    "-mt-28 md:-mt-20 lg:mt-14 xl:mt-28 2xl:mt-32" //20, 24, 28,
-    //TODO: Use the measures above to add some padding to the about section.
-    //TODO: Adjust the z-index for the section, then for the navigation
-    // " h-96 aspect-square",
-    // "bottom-0 translate-y-[0%]"
-    // "md:translate-y-[40%]"
-
-    //  " left-1/2 -translate-x-1/2   ",
-  );
-  //   const idle = useStateMachineInput(rive, "State Machine 1", "Idle");
+  const catStyles = cn("absolute top-0 w-full h-full");
 
   return (
     <section
-      className="relative w-full min-h-screen h-[120vh] overflow-y-visible overflow-x-hidden z-0 py-40 xl:-mt-20"
+      className="relative w-full min-h-screen h-fit  overflow-x-hidden z-0 py-40 xl:-mt-20"
       id="home"
     >
       <Content />
