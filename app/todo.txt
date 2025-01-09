@@ -17,7 +17,6 @@ Ping single column coming soon page
 Huddle landing page with a single introductory section
 Conference ticket generator
 (Paid) Tech book club landing page
-Bento grid
 Product list with cart
 
 Mortgage repayment calculator
@@ -161,7 +160,8 @@ Huddle
 
 
 //Intermediate: 
-Bento GridProduct List cart
+Bento Grid
+Product List cart
 Mortgage repayment calculator.
 //Age calculator
 notifications.

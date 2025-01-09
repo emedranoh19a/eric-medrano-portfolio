@@ -534,6 +534,18 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    {
+        title: "Advice generator",
+        description: "Junior challenge from Front End Mentor.",
+        image: "/projects/beginner/advice-generator/desktop-design.jpg",
+        url: "/projects/beginner/advice-generator",
+        level: 1,
+        techs: ["react", "tailwindcss", "api"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
 
     //Hero.
     //About me.
@@ -638,3 +650,7 @@ export const skillImages = [
     "/skills/react-router.png",
     "/skills/motion.png"
 ]
+
+//TODO: Dark classes of Timeline to be erased. 
+//TODO: cat container overflow to be fixed. 
+//TODO: A photo of myself in a square. Take Angela Yu as an Inspiration.

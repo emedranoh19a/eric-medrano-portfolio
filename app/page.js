@@ -1,6 +1,4 @@
 "use client"
-import Head from "next/head"
-import TextReveal from "./components/effects/TextReveal"
 import About from "./components/sections/About"
 import Contact from "./components/sections/Contact"
 import Header from "./components/sections/Header"
@@ -14,10 +12,10 @@ const baiJamjuree = Bai_Jamjuree({ subsets: ["latin"], weight: ["400", "600"] })
 export default function Home() {
   return (
     <div className={`${baiJamjuree.className}`}>
-      <Head>
+      {/* <Head>
         <title>Eric Medrano</title>
-        {/* <link rel="icon" href="/favicon.ico" /> */}
-      </Head>
+        {/* <link rel="icon" href="/favicon.ico" /> 
+    </Head> */}
 
       <Header />
       <About />
@@ -44,23 +42,6 @@ export default function Home() {
   )
 }
 
-function Hero() {
-  return <section id="header" className="container">
-    <div className="mx-auto w-fit">
-      <div className="w-fit w-fit h-fit bg-red-500 flex flex-col items-center justify-center">
-        <div className="w-full flex justify-center">
-          <p className="block text-center whitespace-nowrap">
-
-            Hi! I&apos;m Eric
-          </p>
-
-        </div>
-        <TextReveal words="On a journey from ‘Hello World’ to ‘Hello Dream Job.’ Let’s build something amazing (and functional) together!" />
-      </div>
-    </div>
-
-    The new weapon to your front-end arsenal.</section>
-}
 
 /**
 

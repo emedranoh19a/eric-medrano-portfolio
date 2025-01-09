@@ -1,5 +1,4 @@
 import localFont from "next/font/local"
-import Head from "next/head"
 import { SidebarDemo } from "./components/layout/Sidebar/SidebarDemo"
 import "./globals.css"
 
@@ -53,9 +52,9 @@ export default function RootLayout({ children }) {
   return (
     <html>
 
-      <Head>
+      {/* <Head>
         <link rel="icon" href="/favicon/favicon.png" />
-      </Head>
+      </Head> */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
