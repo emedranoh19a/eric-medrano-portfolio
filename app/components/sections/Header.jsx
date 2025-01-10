@@ -5,6 +5,7 @@ import Cat from "../Cat";
 import BoxReveal from "../effects/BoxReveal";
 import FadedText from "../ui/FadedText";
 import MainTitle from "../ui/MainTitle";
+import Text from "../ui/Text";
 
 export default function Header() {
   //State:
@@ -49,11 +50,15 @@ function Content() {
         I turn coffee into code
       </FadedText>
       {/* //Set a max-width for this */}
-      <BoxReveal className="block mx-auto" delay={1} boxColor="#fff">
-        <p className="text-center text-xl">
-          Let&apos;s have a cup of coffee, and understand each other througout
+      <BoxReveal
+        className="block mx-auto text-center"
+        delay={1}
+        boxColor="#fff"
+      >
+        <Text className="text-center ">
+          Let&apos;s have a cup of coffee, and understand each other throughout
           this page.
-        </p>
+        </Text>
       </BoxReveal>
     </div>
   );

@@ -14,6 +14,20 @@ export default function About() {
   );
   return (
     <section className={containerStyles} id="about">
+      <div className="grid gap-10 container h-fit place-items-center lg:grid-cols-2">
+        <div>
+          <Content />
+        </div>
+        <div className="w-full h-full py-20 px-20 relative bg-red-400 ">
+          <div className="bg-sky-500 w-full h-96 aspect-square"></div>
+        </div>
+      </div>
+    </section>
+  );
+}
+function Content() {
+  return (
+    <>
       <Heading text="Hi! I'm Eric" className="text-center block" />
       <BoxReveal className="mx-auto">
         <Text className="text-center max-w-xl">
@@ -26,6 +40,6 @@ export default function About() {
           <Span>awesome</Span>!
         </Text>
       </BoxReveal>
-    </section>
+    </>
   );
 }
