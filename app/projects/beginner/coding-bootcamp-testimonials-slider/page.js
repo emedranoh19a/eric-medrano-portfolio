@@ -1,3 +1,4 @@
+import Quote from "@/app/components/ui/Quote"
 import { Inter } from "next/font/google"
 
 const inter = Inter({ subsets: ["latin"], weight: ["300", "500", "700"] })
@@ -8,9 +9,11 @@ export default function Page() {
             </div>
             <div className="max-w-md">
                 <p>
-                    "I&apoos;ve been interested in coding for a while but never taken the jump, until now.
-                    I couldn&apos;t recommend this course enough. I&apos;m now in the job of my dreams and so
-                    excited about the future."
+                    <Quote>
+                        I&apos;ve been interested in coding for a while but never taken the jump, until now.
+                        I couldn&apos;t recommend this course enough. I&apos;m now in the job of my dreams and so
+                        excited about the future.
+                    </Quote>
                 </p>
                 <h3>Tanya Sinclair</h3>
                 <h4>UX Engineer</h4>
