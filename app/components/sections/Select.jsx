@@ -41,11 +41,11 @@ export default function Select({
   return (
     <div ref={clickRef}>
       <label className={labelStyles}>Sorted by:</label>
-      <div class="relative mt-2">
+      <div className="relative mt-2">
         <button className={buttonStyles} onClick={() => setIsOpen((s) => !s)}>
-          <span class="col-start-1 row-start-1 flex items-center gap-3 pr-6">
+          <span className="col-start-1 row-start-1 flex items-center gap-3 pr-6">
             {activeOption.icon}
-            <span class="block truncate"> {activeOption.label}</span>
+            <span className="block truncate"> {activeOption.label}</span>
           </span>
           <motion.div
             initial={{ rotate: 0 }}

@@ -63,16 +63,13 @@ Project tracking intro component
 //TODO: Animated tooltip for the proyects.
 //TODO: Features sections. Just to get them to know me.
 //TODO: Contact form. with React-Hook-Form and basic stuff.
-//TODO: Text generate Effect. Para títulos grandes.
 //TODO: Timeline, for my life.
 //TODO: World Map. (Think global. Since I know English, Spanish and Japanese. Can I help you translatinf your business in the outside?)
-    //TODO: Fix usePopcorn
     //TODO: Fix worldwise
     //TODO: Fix at all costs, the wild oasis admin page
     //TODO: If it is actually fixed, then finish once and for all the nextJS course from schmedtmann
 
 
-    {/* TODO: Make a functionality in order to swap languages. */}
       {/* TODO: Make a Loading animation but not that required.*/}
 
 
@@ -88,7 +85,16 @@ About Section
 Title:
 "More Than Just a Title."
 Text:
-"I’m a versatile individual with a curious mind, passionate about exploring and excelling in multiple fields. Youmight call me a Developer today, but tomorrow I could be a Musician, a Dancer, or even a Pianist. The possibilities are endless, and I’m constantly redefining myself—because why settle for one role when you can master many?"
+"I’m a versatile individual with a curious mind,
+ passionate about exploring and excelling in
+  multiple fields. 
+  Youmight call me a Developer today,
+   but tomorrow I could be a Musician,
+    a Dancer, or even a Pianist. 
+    The possibilities are endless, 
+    and I’m constantly redefining 
+    myself—because why settle for one role 
+    when you can master many?"
 
 Swappable words displayed dynamically:
  Developer,
@@ -135,21 +141,15 @@ Text:
 
 //TODO: Hacer el ultimo dia de mi descanso.
 
--Ir a comprar camisas, camisetas, calcetines, un cinturón, y una mochila.
+-Ir a comprarmy una mochila.
 Agregar padding a FOUR CARD FEATURE.
-Lavar mi ropa. 
-Limpiar mi piso.
-Tomar medicina en la tarde
-Tomar medicina en la noche.
+
 Tratar de acabar un portafolio que pueda presentar:
 Hacer una buena presentación de mí.
-Hacer una buena línea del tiempo.
 Tratar de terminar un form bien hecho. Basta con sólo Netlify y Google Sheets (Sheety)
 Llevar a cabo la implementación de todos los proyectos inconclusos que se encuentren dentro de este proyecto de nextjs.
 //TODO: Intro with sign up.
 //TODO: Results summary component.
-//TODO: Bento Grid.
-//TODO: Download starter files for the next 3 proyects. Get something to do at work, on the break time.
 
 //TODO: Subir un poco la zona de about
 //QUIERO DE VERDAD HACER...
@@ -160,12 +160,10 @@ Huddle
 
 
 //Intermediate: 
-Bento Grid
+
 Product List cart
 Mortgage repayment calculator.
 //Age calculator
 notifications.
 Interactive Card details form.
 //Chart component.
-
-Hi, I'm Eric!

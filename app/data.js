@@ -296,7 +296,6 @@ export const projects = [
         image: "/projects/newbie/faq-accordion/desktop-design.jpg",
         url: "/projects/newbie/faq-accordion",
         level: 0,
-        //TODO: maybe just vanilla JS
         techs: ["html", "tailwindcss"],
         isImportant: false,
         isComplete: true,
@@ -322,7 +321,6 @@ export const projects = [
         image: "/projects/newbie/interactive-rating-component/desktop-design.jpg",
         url: "/projects/newbie/interactive-rating-component",
         level: 0,
-        //TODO: maybe just vanilla JS
         techs: ["html", "tailwindcss", "react"],
         isImportant: false,
         isComplete: true,
@@ -546,6 +544,18 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    {
+        title: "Age Calculator",
+        description: "Junior challenge from Front End Mentor.",
+        image: "/projects/beginner/age-calculator/images/desktop-completed.jpg",
+        url: "/projects/beginner/age-calculator",
+        level: 1,
+        techs: ["react", "tailwindcss"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
 
     //Hero.
     //About me.
@@ -651,6 +661,4 @@ export const skillImages = [
     "/skills/motion.png"
 ]
 
-//TODO: Dark classes of Timeline to be erased. 
-//TODO: cat container overflow to be fixed. 
 //TODO: A photo of myself in a square. Take Angela Yu as an Inspiration.
