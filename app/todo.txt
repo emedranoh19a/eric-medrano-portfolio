@@ -2,8 +2,6 @@
 
 //TODO: (Paid) Workit landing pageResults summary component
 //TODO: (Paid)Skilled e-learning landing page
-//TODO: change the logo with cornered radius.
-//TODO: Generate the favicon, as above.
 
 //Checkpoint
 
@@ -24,7 +22,6 @@ Contact form
 Newletter sign-up form with success message
 
 Body Mass Index calculator
-Age calculator app
 Single-page developer portfolio
 News homepage
 
@@ -147,23 +144,18 @@ Agregar padding a FOUR CARD FEATURE.
 Tratar de acabar un portafolio que pueda presentar:
 Hacer una buena presentación de mí.
 Tratar de terminar un form bien hecho. Basta con sólo Netlify y Google Sheets (Sheety)
-Llevar a cabo la implementación de todos los proyectos inconclusos que se encuentren dentro de este proyecto de nextjs.
 //TODO: Intro with sign up.
-//TODO: Results summary component.
-
 //TODO: Subir un poco la zona de about
 //QUIERO DE VERDAD HACER...
 //Bajar de peso.
 //TODO: Ahorrar para unas fotos profesionales.
-newbie: 
-Huddle
+
 
 
 //Intermediate: 
 
 Product List cart
 Mortgage repayment calculator.
-//Age calculator
 notifications.
 Interactive Card details form.
 //Chart component.

@@ -13,7 +13,9 @@ export const timelineData = [
     //vida universitaria. Preferiblemente solo CIT. Baito de Narita.
     //Vida profesional, ocupación, etc.
     {
-        //Actualmente.                    WSソリューションズ株式会社に入社。システムエンジニアとしての活動を開始。
+        //Actualmente.
+        // // WSソリューションズ株式会社に入社。
+        // システムエンジニアとしての活動を開始。
 
         title: "2022〜now",
         content: <AchievementsList achievements={

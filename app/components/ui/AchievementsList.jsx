@@ -7,7 +7,7 @@ export default function AchievementsList({ achievements = [] }) {
           {achievement[language]}
         </li>
       ))}
-      {/* TODO: Agregar 4 proyectos y  su descripción, y sus fotos. */}
+      {/* TODO: Agregar 4  proyectos y  su descripción, y sus fotos. */}
     </ul>
   );
 }

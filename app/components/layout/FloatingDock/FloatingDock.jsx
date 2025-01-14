@@ -23,7 +23,7 @@ export const FloatingDock = ({
         items={filteredProjects}
         className={desktopClassName}
       />
-      {/* TODO: The mobile version */}
+      {/* TODO: Docker:The mobile version */}
       <FloatingDockMobile
         items={filteredProjects}
         className={mobileClassName}

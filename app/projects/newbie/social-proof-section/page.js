@@ -38,7 +38,7 @@ function TestimonialHeader({ img, name }) {
   return (
     <div className="flex  gap-5 justify-start items-center">
       <div className="relative w-10 aspect-square rounded-full overflow-hidden">
-        <Image src={img} fill objectFit="cover" alt="" />
+        <Image src={img} fill objectFit="cover" alt={`Image of ${name}`} />
       </div>
       <div>
         <h4 className="text-white font-semibold">{name}</h4>
@@ -114,18 +114,18 @@ function TestimonialsBlock({ className }) {
 }
 export default function Page() {
   const gridStyles = clsx(
-    "py-14 h-fit grid grid-cols-1 px-4 gap-7",
+    "container py-14 h-fit grid grid-cols-1 px-4 gap-7",
     "lg:grid-cols-2 lg:place-items-center",
     ""
   )
-  //TODO: Try to fix the background.
   return (
-    <div className={`container mx-auto w-screen h-screen relative ${leagueSpartan.className}`}>
+    <div className={`mx-auto w-full h-screen relative ${leagueSpartan.className} grid place-items-center`}>
       <Image
         src="/projects/newbie/social-proof-section/images/bg-pattern-bottom-mobile.svg"
         fill
         objectFit="cover"
         className="absolute -z-10"
+        alt=""
       />
       <div className={gridStyles}>
         <InformationBlock />

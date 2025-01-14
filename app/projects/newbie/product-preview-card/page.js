@@ -1,8 +1,7 @@
 import clsx from "clsx"
 import { Fraunces, Montserrat } from "next/font/google"
 import Image from "next/image"
-//TODO: centrar imagen del perfume
-//TODO: Establecer un max Width
+
 const montserrat = Montserrat({ subsets: ["latin"] })
 const fraunces = Fraunces({ subsets: ["latin"], weight: "700" })
 function Card() {
@@ -13,7 +12,7 @@ function Card() {
 
     "flex flex-col md:flex-row justify-between",
     "bg-white ",
-    "w-full h-full max-w-80 md:max-w-xl  md:w-[700px]",
+    "w-full h-full min-h-40 max-w-80 md:max-w-xl  md:w-[700px]",
     "border-xl overflow-hidden rounded-xl shadow-xl shadow-orange-200/30",
     ""
 
@@ -28,7 +27,7 @@ function Card() {
 
   return (
     <div className={cardStyles}>
-      <div className="min-h-2/5 h-1/2 md:h-full w-full md:basis-1/2 relative bg-red-500">
+      <div className="min-h-2/5 h-1/2 md:h-full w-full md:basis-1/2 relative ">
         <Image
           src="/projects/newbie/product-preview-card/images/image-product-desktop.jpg"
           fill
@@ -71,7 +70,7 @@ function Card() {
 
 function Page() {
   return (
-    <div className={`w-full h-screen relative bg-orange-50 grid place-items-center py-24 md:py-60 ${montserrat.className}`}>
+    <div className={`w-full h-screen relative bg-orange-50 grid place-items-center py-24  md:py-60 ${montserrat.className}`}>
       <Card />
     </div>
   )

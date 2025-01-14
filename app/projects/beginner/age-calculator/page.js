@@ -13,7 +13,7 @@ export default function Page() {
 
     return <VariablesSetup>
         <FormProvider {...{ ...formMethods, setDisplayResults }}>
-            <div className="flex w-80 lg:w-[30em] flex-col gap-8 lg:gap-3">
+            <div className="flex w-80 lg:w-[30em] flex-col gap-8 lg:gap-3 bg-white rounded-2xl p-5 rounded-br-[100px]">
                 {/* Flex with 2 items:  the form and the results. */}
 
                 <Form />
@@ -201,7 +201,7 @@ function Arrow() {
 //font size: 32px.
 function VariablesSetup({ children }) {
     return <div
-        className={`${poppins.className}   h-screen w-full grid place-items-center`}
+        className={`${poppins.className}   h-screen w-full grid place-items-center bg-[var(--off-white)] shadow-2xl`}
         style={{
             "--purple": "hsl(259, 100%, 65%)",
             "--light-red": "hsl(0, 100%, 67%)",
