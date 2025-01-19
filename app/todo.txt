@@ -1,161 +1,196 @@
-//TODO: Not started.Recipe page.
+¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
+   PROJECTS Progress...
+¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
 
-//TODO: (Paid) Workit landing pageResults summary component
-//TODO: (Paid)Skilled e-learning landing page
 
-//Checkpoint
-
-(Paid) Equalizer landing page
-(Paid) Meet landing page
-Not started. 3-column preview card component
-(Paid) Pod request access landing page
-Intro componentn with sign-up form
-Single price grid component
-Ping single column coming soon page
-Huddle landing page with a single introductory section
-Conference ticket generator
-(Paid) Tech book club landing page
-Product list with cart
-
-Mortgage repayment calculator
-Contact form
-Newletter sign-up form with success message
-
-Body Mass Index calculator
-Single-page developer portfolio
-News homepage
-
-Notifications page
-Interactive card details form
-Single-oage design portfolioExpenses char component
-Intro section with dropdown navigation
-Advice generator app
-suite landing page
-Art gallerty website
-Time tracking dashboard
-
-GiotHub user search app
-Tip calculator app
-Agency landing page
-typemaster pre-launch landing page
-Blogr landing page
-Crowdfunding product page
-Interactive pricing component
-Maker pre-launch landing page
-Loop studios landing page
-Officelite coming soon stiffness
-Testimonials grid section
-Fylo data storage component
-Coding bootcamp testimonials slider
-Social media dashboard with theme switcher
-Insure landing page
-Pricing component with toggle
-
-Project tracking intro component
+¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
+PRIORITY:
+//TODO: -Quitar el fondo del gato negro de Review
+//TODO: -Ver qué onda con la animación inicial del tercer título.
+//TODO: -Haber si me da tiempo para una animación inicial.
+//TODO: -Colocar una foto de mi en el cuadro azul.
+//TODO: -Eliminar el fondo azul, y el fondo rojo.
+//TODO: Cambiar Layout horizontal de Skills.
+//TODO: -El orden de las cartas debería ser:
+-Primero Por nivel de dificultad. 
+-Orden secundario: Por más viejo (como aparezcan en front-end)
+//TODO: 
+//TODO: -Revisar qué projectos quiero mostrar, y asignar el span correspondiente.
+//TODO: -Ver cómo puedo agregar y presumir que soy trilingue
+//TODO: -Esconder la navegación de los proyectos mobil, por ahora. 
+//TODO: -Detectar con un efecto, el nivel correpondiente, segun el link.
+//TODO: El select component debería empezar por harder first.
 
 
 
+
+Frontend Mentor ¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
+Newbie
+{
+  //TODO: Recipe page
+  Social links profile
+  Blog preview card
+  FAQ accordion
+  //TODO: (Paid) Working landing page
+  Results summary component
+  Product preview card component
+  //TODO: Skilled e-learning landing page
+  Interactive rating component
+  QR code component
+  NFT preview card component
+  //TODO: Equalizer landing page
+  Order summary component 
+  Stats preview card component
+  //TODO: Meet landing page
+  //TODO: 3-column preview card component
+  //TODO: Pod request access landing page
+  Profile card component
+  Social proof section
+  Article preview component
+  Four card feature section
+  Base Apparel coming soon page
+  //TODO: Intro component with sign-up form
+  //TODO: Single grid component.
+  //TODO: Ping single column coming soon page
+  //TODO: Huddle landing page with a single introductory section.
+}
+Beginner/Junior
+{
+  //TODO: Conference ticket generator
+  //TODO: Tech book club landing page
+  //Bento grid
+  //TODO: Product list with cart
+  //TODO: Mortgage repayment calculator
+  //TODO: Contact form
+  //TODO: Newsletter sign-up form with success message
+  //TODO: Body Mass Index Calculator
+  // Age calculator app
+  //TODO: single-page developer portfolio
+  //TODO: News homepage
+  //TODO: Notifications page
+  //TODO: Interactive card details form.
+  //TODO: Single-page design portfolio
+  //TODO: Expenses chart component
+  //TODO: Intro section with dropdown navigation
+  //Advice generator app
+  //TODO: Suite landing page
+  //TODO: Art gallery website
+  //TODO: Time tracking dashboard
+  //TODO: GitHub user search app
+  //TODO: Tip calculator app
+  //TODO: Agency landing page
+  //TODO: Typemaster pre-launch landing page
+  //TODO: Blogr landing page
+  //TODO: Crowdfuncing product page
+  //TODO: Interactive pricing component
+  //TODO: Maker pre-launch landing page
+  //Loopstudios landing page.
+  //TODO: Officelite coming soon site
+  //TODO: Testimonials grid section.
+  //TODO: Fylo data storage component
+  //TODO: Coding bootcamp testimonials slider
+  //TODO: Social media dashboard with theme switcher
+  //TODO: Insure landing page.
+  //TODO: Pricing component with toggle.
+  //TODO: Project tracking into component
+   Clipboard landing page.
+  //TODO: Huddle landing page wuth alternating feature blocks.
+  //TODO: Fylo dark theme landing page
+  //TODO: Fylo landing page with two column layout
+  //TODO: Huddle lending page with curved sections
+}
+Intermediate
+{
+  //TODO: Frontend Quizz app.
+  //TODO: Dictionary web app
+  //TODO: Password generator app.
+  //TODO: In-browser markdown editor.
+  //TODO: Tic Tac Toe game.
+  //TODO: Interactive coments section
+  //TODO: Space turisn multi page website
+  //TODO: E-commerce product page
+  //TODO: Galleria slideshow site
+  //TODO: Planets fact site
+  //TODO: Calculator app. 
+  //TODO: Coffeeroasters subscription site.
+  //TODO: Launch countdown timer. 
+  //TODO: Create agency 
+  //TODO: Launch countdown timer.
+  //TODO: Creative agency single-page site
+  //TODO: TO DO app.
+  //TODO: Clock app
+  //TODO: Room homepage.
+  //TODO: IP Address Tracker
+  //TODO: Chat app CSS illustration
+  //TODO: Scoot multi-page website
+  //TODO: Dine restaurant website
+  //TODO: Minimalist portfolio website
+  //TODO: Job listings with filtering
+  //TODO: Easybank landing page
+  //TODO: Manage landing page
+  URL shortening API landing page
+  //TODO: Bookmark landing page. 
+}
+  Advanced:
+{
+  //TODO: Note-talking web app
+  //TODO: Hangman game
+  //TODO: Multi-step form
+  //TODO: Connect Four game  
+  //TODO: Entertainment web app
+  //TODO: Memory game
+  //TODO: Pomodoro app
+  //TODO: Devjobs web app.
+  //TODO: Photosnap multi-page website
+  //TODO: Arch studio multi-page website
+  //TODO: Myteam multi-page website
+  //TODO: Rock, paper, scissors game.
+  //TODO: REST Countries API eith color theme switcher.
+  //TODO: Personal finance app
+}
+ Guru
+{
+  //TODO: Personal finance app
+  //TODO: Link-sharing app
+  //TODO: Kanban task management web app
+  //TODO: Product feedback app
+  //TODO: Audiophile e-commerce website
+  //TODO: Invoice app
+  //TODO: Designo multi-page website
+}
+
+Projects from Udemy.¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
+//TODO: World Map. (Think global. Since I know English, Spanish and Japanese. Can I help you translatinf your business in the outside?)
+//TODO: Fix worldwise
+//TODO: Fix at all costs, the wild oasis admin page
+//TODO: If it is actually fixed, then finish once and for all the nextJS course from schmedtmann
+//TODO: Natours Backend: API, and other stuff. 
+//TODO: Secrets from Angela Yu.
+
+¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
+    Whole sections related...
+¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
+//TODO: Features sections. Just to get them to know me.
+//TODO: Contact form. with React-Hook-Form and basic stuff.
+
+
+¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
+    Component related...
+¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
 
 //TODO: Animated tooltip for the skills.
 //TODO: Animated tooltip for the proyects.
-//TODO: Features sections. Just to get them to know me.
-//TODO: Contact form. with React-Hook-Form and basic stuff.
-//TODO: Timeline, for my life.
-//TODO: World Map. (Think global. Since I know English, Spanish and Japanese. Can I help you translatinf your business in the outside?)
-    //TODO: Fix worldwise
-    //TODO: Fix at all costs, the wild oasis admin page
-    //TODO: If it is actually fixed, then finish once and for all the nextJS course from schmedtmann
+//TODO: Make a Loading animation but not that required.
 
 
-      {/* TODO: Make a Loading animation but not that required.*/}
-
-
-//TODO: add content:
-
-Hero Section
-Title:
-"Crafting Experiences, One Line of Code at a Time."
-Text:
-"Welcome to my world of creativity, where innovation meets passion. I’m here to transform ideas into reality, with a touch of imagination and a dash of skill."
-
-About Section
-Title:
-"More Than Just a Title."
-Text:
-"I’m a versatile individual with a curious mind,
- passionate about exploring and excelling in
-  multiple fields. 
-  Youmight call me a Developer today,
-   but tomorrow I could be a Musician,
-    a Dancer, or even a Pianist. 
-    The possibilities are endless, 
-    and I’m constantly redefining 
-    myself—because why settle for one role 
-    when you can master many?"
-
-Swappable words displayed dynamically:
- Developer,
-  Musician, 
-  Dancer, 
-  Pianist, 
- Explorer, 
- Visionary,
- Engineer,
- Creator, 
- Dreamer,
-  Thinker,
-   Leader, 
-  
-
-Contact Section
-Title:
-"Let’s Make Something Extraordinary."
-
-Text:
-"I’d love to hear from you! Whether you have an idea, a collaboration opportunity, or just want to say hi, drop me a message. Together, we can create something remarkable."
-
-Thank You Section
-Title:
-"Gratitude Beyond Words."
-
-Text:
-"Thank you for stopping by and taking the time to explore my work. Your support fuels my journey,
- and I can’t wait to share more with you as I continue to grow, learn, and create.
-  Let’s stay connected and build something unforgettable."
-
-
-//join a group or club of my hobbbies to meet people that share my interesests.
-
-//hiking. joining a choir. open mind nights.
-
-
-//TODO: Intro with sign up: newbie.
-//TODO: Results summary component.
+¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
+    Other stuff...
+¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
+--Ir a comprarmy una mochila.
+--limpiar mi casita.
+--Bajar de peso.
+--Ahorrar para unas fotos profesionales.
 //TODO: Review Josh Comeau z-wars article. 
 
 
 
-
-//TODO: Hacer el ultimo dia de mi descanso.
-
--Ir a comprarmy una mochila.
-Agregar padding a FOUR CARD FEATURE.
-
-Tratar de acabar un portafolio que pueda presentar:
-Hacer una buena presentación de mí.
-Tratar de terminar un form bien hecho. Basta con sólo Netlify y Google Sheets (Sheety)
-//TODO: Intro with sign up.
-//TODO: Subir un poco la zona de about
-//QUIERO DE VERDAD HACER...
-//Bajar de peso.
-//TODO: Ahorrar para unas fotos profesionales.
-
-
-
-//Intermediate: 
-
-Product List cart
-Mortgage repayment calculator.
-notifications.
-Interactive Card details form.
-//Chart component.

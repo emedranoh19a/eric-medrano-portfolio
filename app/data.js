@@ -216,18 +216,18 @@ export const sidebarLinks = [
 
 export const projects = [
 
-    {
-        title: "REDA舞神楽 website",
-        description: "A real project for the amazing Yosakoi Soran Team REDA舞神楽. An initiative that made me realize an amazing way to juggle with TailwindCSS utility classes, while thinking of maintainable and reusable code.",
-        image: "/projects/other/reda-website_preview.png",
-        url: "https://our-little-secret.netlify.app/theme/2023",
-        level: 3,
-        techs: ["nextjs", "tailwindcss", "framer-motion"],
-        isImportant: true,
-        isComplete: false,
-        isPublic: true,
-        isExternalProject: true,
-    },
+    // {
+    //     title: "REDA舞神楽 website",
+    //     description: "A real project for the amazing Yosakoi Soran Team REDA舞神楽. An initiative that made me realize an amazing way to juggle with TailwindCSS utility classes, while thinking of maintainable and reusable code.",
+    //     image: "/projects/other/reda-website_preview.png",
+    //     url: "https://our-little-secret.netlify.app/theme/2023",
+    //     level: 3,
+    //     techs: ["nextjs", "tailwindcss", "framer-motion"],
+    //     isImportant: true,
+    //     isComplete: false,
+    //     isPublic: true,
+    //     isExternalProject: true,
+    // },
 
     {
         title: "The React Quiz",
@@ -291,7 +291,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Add the results-summary-component page.
     {
         title: "FAQ accordion",
         description: "Newbie challenge from Front End Mentor",
@@ -377,7 +376,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-
     {
         title: "Order Summary Component",
         description: "Newbie challenge from Front End Mentor",
@@ -385,7 +383,7 @@ export const projects = [
         url: "/projects/newbie/order-summary-component",
         level: 0,
         techs: ["html", "tailwindcss"],
-        isImportant: false,
+        isImportant: true,
         isComplete: true,
         isPublic: true,
         isExternalProject: false,
@@ -463,6 +461,18 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        title: "Results Summary Component",
+        description: "Newbie challenge from Front End Mentor",
+        image: "/projects/newbie/results-summary-component/desktop-design.jpg",
+        url: "/projects/newbie/results-summary-component",
+        level: 0,
+        techs: ["html", "tailwindcss"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
+    {
         title: "Keeper",
         description: "My very first steps for knowing the essentials of React.js. Proyect is very basic, extracted from The Complete Web Development Bootcamp by Angela Yu.",
         image: "/projects/other/keeper_preview.png",
@@ -517,7 +527,7 @@ export const projects = [
         url: "https://usepopcorn-for-erichiki.netlify.app",
         level: 2,
         techs: ["react", "styled-components", "api"],
-        isImportant: false,
+        isImportant: true,
         isComplete: true,
         isPublic: true,
         isExternalProject: true,
@@ -529,7 +539,7 @@ export const projects = [
         url: "/projects/beginner/bento-grid",
         level: 1,
         techs: ["html", "tailwindcss"],
-        isImportant: false,
+        isImportant: true,
         isComplete: true,
         isPublic: true,
         isExternalProject: false,

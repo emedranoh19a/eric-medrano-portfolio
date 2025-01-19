@@ -1,0 +1,50 @@
+Hero Section
+Title:
+"Crafting Experiences, One Line of Code at a Time."
+Text:
+"Welcome to my world of creativity, where innovation meets passion. I’m here to transform ideas into reality, with a touch of imagination and a dash of skill."
+
+About Section
+Title:
+"More Than Just a Title."
+Text:
+"I’m a versatile individual with a curious mind,
+ passionate about exploring and excelling in
+  multiple fields. 
+  Youmight call me a Developer today,
+   but tomorrow I could be a Musician,
+    a Dancer, or even a Pianist. 
+    The possibilities are endless, 
+    and I’m constantly redefining 
+    myself—because why settle for one role 
+    when you can master many?"
+
+Swappable words displayed dynamically:
+ Developer,
+  Musician, 
+  Dancer, 
+  Pianist, 
+ Explorer, 
+ Visionary,
+ Engineer,
+ Creator, 
+ Dreamer,
+  Thinker,
+   Leader, 
+  
+
+Contact Section
+Title:
+"Let’s Make Something Extraordinary."
+
+Text:
+"I’d love to hear from you! Whether you have an idea, a collaboration opportunity, or just want to say hi, drop me a message. Together, we can create something remarkable."
+
+Thank You Section
+Title:
+"Gratitude Beyond Words."
+
+Text:
+"Thank you for stopping by and taking the time to explore my work. Your support fuels my journey,
+ and I can’t wait to share more with you as I continue to grow, learn, and create.
+  Let’s stay connected and build something unforgettable."
