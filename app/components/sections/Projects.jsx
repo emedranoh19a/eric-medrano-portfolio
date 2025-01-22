@@ -68,16 +68,17 @@ export default function Projects() {
   return (
     <section
       id="projects"
+      className="py-14"
       // className="h-fit w-full py-10 px-20 h-full container mx-auto grid"
     >
       <ProjectsContent />
-      <div className="flex justify-around gap-2">
+      <div className="flex mb-6 justify-around gap-2">
         <Tabs
           active={activeTab}
           tabs={skillTabs}
           setHovering={setHovering}
           onTabClick={onTabClick}
-          tabsLabel={"Skill"}
+          tabsLabel={"Filter"}
           allowNumbers={false}
           hoverHandler={hoverHandler}
         />
@@ -89,7 +90,7 @@ export default function Projects() {
           setActiveOption={setActiveOption}
         />
       </div>
-      <BentoGrid className="max-w-4xl mx-auto mb-20">
+      <BentoGrid className="max-w-4xl mx-auto mb-20 min-h-96">
         {sortedProjects.map((project, i) => (
           <BentoGridItem
             key={i}
@@ -114,7 +115,7 @@ function ProjectsContent() {
   return (
     <div className="max-w-lg flex flex-col items-center overflow-hidden pt-8 mx-auto my-10">
       <BoxReveal className="w-full">
-        <Heading text="Projects" />
+        <Heading text="Projects" className="mb-4" />
       </BoxReveal>
       <BoxReveal>
         <Subheading>
@@ -123,14 +124,17 @@ function ProjectsContent() {
       </BoxReveal>
 
       <BoxReveal>
-        <Text className="text-center">
+        <Text className="text-center mb-6">
           Here&apos;s where ideas meet execution. Each project is a reflection
           of my curiosity, effort, and my constant drive to improve my skills.
         </Text>
       </BoxReveal>
 
       <BoxReveal>
-        <GoToProjects className="mt-[1.6rem]" text="Go to project navigation" />
+        <GoToProjects
+          className="mt-[1.6rem] mb-10"
+          text="Go to project navigation"
+        />
       </BoxReveal>
     </div>
   );

@@ -13,7 +13,7 @@ export default function Skills() {
       className="min-h-[80vh] w-full py-10 px-10 md:px-20 h-full container mx-auto"
       id="skills"
     >
-      <div className="container w-full h-full  gap-1 lg:gap-6 grid grid-cols-1 lg:grid-cols-2 place-items-center mx-auto">
+      <div className="container gap-10 w-full h-full  gap-1 lg:gap-6 grid grid-cols-1 lg:grid-cols-2 place-items-center mx-auto">
         <SkillsContent />
         <SkillsGlobe iconSlugs={slugs} imageArray={skillImages} />
       </div>
@@ -30,9 +30,9 @@ function SkillsContent() {
   // "My skill set isn’t just a list; it’s a growing ecosystem. Picture a globe filled with logos of everything I know and love—a globe that’s constantly spinning, expanding, and evolving. With every new challenge I take on, another skill finds its place, making this sphere of knowledge even richer. Explore it today, and let’s watch it grow together."
 
   return (
-    <div className="max-w-lg flex flex-col items-stretch justify-center overflow-hidden pt-8">
+    <div className="max-w-lg lg:order-2 flex flex-col items-stretch justify-center overflow-hidden pt-8">
       <BoxReveal className="w-full">
-        <Heading text="Skills" />
+        <Heading text="Skills" className="mb-4" />
       </BoxReveal>
       <BoxReveal>
         <Subheading>

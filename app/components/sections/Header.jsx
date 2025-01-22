@@ -16,7 +16,7 @@ export default function Header() {
     "relative grid place-items-center",
     "z-50 w-full h-[100vw] overflow-hidden",
     "-mt-[20vw] ",
-    "bg-red-500/50 sm:bg-sky-500/50 md:bg-lime-500/50 lg:bg-yellow-500/50 xl:bg-fuchsia-500/50 2xl:bg-orange-500/50",
+    // "bg-red-500/50 sm:bg-sky-500/50 md:bg-lime-500/50 lg:bg-yellow-500/50 xl:bg-fuchsia-500/50 2xl:bg-orange-500/50",
     //This styles will block the cat interacction on touch screens.
     "no-hover:before:bg-transparent no-hover:before:absolute no-hover:before:w-full no-hover:before:h-full no-hover:before:z-20 "
   );

@@ -1,5 +1,9 @@
+import { BsPersonVcardFill } from "react-icons/bs"
 import { FaCode, FaHome, FaUser } from "react-icons/fa"
 import { MdOutlineLaptopMac } from "react-icons/md"
+
+import { FaEnvelope } from "react-icons/fa6"
+
 import { TechIcon } from "./components/TechIcons"
 import AchievementsList from "./components/ui/AchievementsList"
 
@@ -198,13 +202,13 @@ export const sidebarLinks = [
         label: "History",
         href: "/#timeline",
 
-        icon: <MdOutlineLaptopMac />,
+        icon: <BsPersonVcardFill />,
     },
     {
         label: "Contact",
         href: "/#contact",
 
-        icon: <MdOutlineLaptopMac />,
+        icon: <FaEnvelope />,
     },
 ]
 

@@ -5,19 +5,21 @@
 
 ¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
 PRIORITY:
-//TODO: -Quitar el fondo del gato negro de Review
-//TODO: -Ver qué onda con la animación inicial del tercer título.
-//TODO: -Haber si me da tiempo para una animación inicial.
+//TODO: -Quitar el fondo del gato negro de Rive.
 //TODO: -Colocar una foto de mi en el cuadro azul.
 //TODO: -Eliminar el fondo azul, y el fondo rojo.
+//TODO: -Ver cómo puedo agregar y presumir que soy trilingue
+//TODO: -Esconder la navegación de los proyectos mobil, por ahora. 
+//TODO: Hacer el contact form, extraer de Maikagura o de plano traérselo de otro lugar.
+//TODO: Hacer un Layout estupendo comom cell promote.
+
+//TODO: -Ver qué onda con la animación inicial del tercer título.
+//TODO: -Haber si me da tiempo para una animación inicial.
 //TODO: Cambiar Layout horizontal de Skills.
 //TODO: -El orden de las cartas debería ser:
 -Primero Por nivel de dificultad. 
 -Orden secundario: Por más viejo (como aparezcan en front-end)
-//TODO: 
 //TODO: -Revisar qué projectos quiero mostrar, y asignar el span correspondiente.
-//TODO: -Ver cómo puedo agregar y presumir que soy trilingue
-//TODO: -Esconder la navegación de los proyectos mobil, por ahora. 
 //TODO: -Detectar con un efecto, el nivel correpondiente, segun el link.
 //TODO: El select component debería empezar por harder first.
 
@@ -189,6 +191,7 @@ Projects from Udemy.¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·�
 --Ir a comprarmy una mochila.
 --limpiar mi casita.
 --Bajar de peso.
+--leer un libro semanalmente. En lo posible
 --Ahorrar para unas fotos profesionales.
 //TODO: Review Josh Comeau z-wars article. 
 
