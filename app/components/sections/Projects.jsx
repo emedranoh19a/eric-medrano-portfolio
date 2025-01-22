@@ -19,8 +19,8 @@ import Select from "./Select";
 import Span from "./Span";
 
 const sortOptions = [
-  { label: "Easier first", value: 0, icon: <FaFeatherAlt /> },
-  { label: "Harder first", value: 1, icon: <GiWeightLiftingUp /> },
+  { label: "Harder first", value: 0, icon: <GiWeightLiftingUp /> },
+  { label: "Easier first", value: 1, icon: <FaFeatherAlt /> },
   { label: "A~Z", value: 2, icon: <FaSortAlphaDown /> },
   { label: "Z-A", value: 3, icon: <FaSortAlphaDownAlt /> },
 ];
@@ -43,8 +43,8 @@ export default function Projects() {
 
   // //Handlers:
   const sortedProjects = filteredProjects.sort((a, b) => {
-    if (activeOption.value === 0) return a.level > b.level ? 1 : -1;
-    if (activeOption.value === 1) return a.level < b.level ? 1 : -1;
+    if (activeOption.value === 0) return a.level <= b.level ? 1 : -1;
+    if (activeOption.value === 1) return a.level >= b.level ? 1 : -1;
     if (activeOption.value === 2) return a.title > b.title ? 1 : -1;
     if (activeOption.value === 3) return a.title < b.title ? 1 : -1;
     return true;
@@ -68,7 +68,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-14"
+      className="pb-8"
       // className="h-fit w-full py-10 px-20 h-full container mx-auto grid"
     >
       <ProjectsContent />

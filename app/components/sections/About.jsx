@@ -2,12 +2,13 @@ import { cn } from "@/app/utils/utils";
 import Image from "next/image";
 import BoxReveal from "../effects/BoxReveal";
 import Heading from "../ui/Heading";
+import Subheading from "../ui/Subheading";
 import Text from "../ui/Text";
 import Span from "./Span";
 
 export default function About() {
   const containerStyles = cn(
-    "relative w-full h-fit mx-auto -z-10 -mt-[20vw] py-20 background-transparent",
+    "relative w-full h-fit mx-auto -z-10 -mt-[20vw] py-20 background-transparent lg:mb-40",
     ""
     //The following styles are correctors for issues with the cat transformation
     // "-mt-36 md:-mt-14 lg:mt-0 xl:mt-72 2xl:mt-96"
@@ -38,6 +39,11 @@ function Content() {
         text="Hi! I'm Eric"
         className="text-center lg:text-left block mb-4"
       />
+      <BoxReveal>
+        <Subheading>
+          ...and i&apos;m aiming to be your next <Span>best decision</Span>.
+        </Subheading>
+      </BoxReveal>
       <BoxReveal className="mx-auto">
         <Text className="text-center lg:text-left max-w-xl">
           I&apos;m passionate about crafting meaningful designs and developing

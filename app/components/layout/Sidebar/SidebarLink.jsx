@@ -10,12 +10,12 @@ export default function SidebarLink({ link, className, ...props }) {
 
   //Style:
   const linkStyles = cn(
-    "flex items-center justify-start gap-2  group/sidebar py-2",
+    "flex items-center justify-start gap-2  group/sidebar py-2 w-fit lg:w-full mx-auto md:mx-0",
     !open && "justify-center",
     className
   );
   const spanStyles = cn(
-    "text-neutral-700 text-sm whitespace-pre",
+    "text-neutral-900 md:text-neutral-600 font-bold text-4xl md:text-sm whitespace-pre",
     "inline-block",
     "",
     "group-hover/sidebar:translate-x-1 transition duration-150"
@@ -29,7 +29,7 @@ export default function SidebarLink({ link, className, ...props }) {
       onClick={() => setOpen((s) => !s)}
       {...props}
     >
-      {link.icon}
+      <span className="hidden md:inline">{link.icon}</span>
       <motion.span
         initial={{ opacity: 0 }}
         animate={{

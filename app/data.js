@@ -220,18 +220,18 @@ export const sidebarLinks = [
 
 export const projects = [
 
-    // {
-    //     title: "REDA舞神楽 website",
-    //     description: "A real project for the amazing Yosakoi Soran Team REDA舞神楽. An initiative that made me realize an amazing way to juggle with TailwindCSS utility classes, while thinking of maintainable and reusable code.",
-    //     image: "/projects/other/reda-website_preview.png",
-    //     url: "https://our-little-secret.netlify.app/theme/2023",
-    //     level: 3,
-    //     techs: ["nextjs", "tailwindcss", "framer-motion"],
-    //     isImportant: true,
-    //     isComplete: false,
-    //     isPublic: true,
-    //     isExternalProject: true,
-    // },
+    {
+        title: "REDA舞神楽 website",
+        description: "A real project for the amazing Yosakoi Soran Team REDA舞神楽. An initiative that made me realize an amazing way to juggle with TailwindCSS utility classes, while thinking of maintainable and reusable code.",
+        image: "/projects/other/reda-website_preview.png",
+        url: "https://our-little-secret.netlify.app/theme/2023",
+        level: 3,
+        techs: ["nextjs", "tailwindcss", "framer-motion"],
+        isImportant: true,
+        isComplete: false,
+        isPublic: true,
+        isExternalProject: true,
+    },
 
     {
         title: "The React Quiz",
@@ -245,18 +245,7 @@ export const projects = [
         isPublic: true,
         isExternalProject: true,
     },
-    {
-        title: "Natours",
-        description: "A project to explore the power of Sass and the 7-1 architecture. From the Advanced CSS and Sass course from Jonas Schmedtmann.",
-        image: "/projects/other/natours_preview.png",
-        url: "https://natours-for-eric-medrano.netlify.app/",
-        level: 1,
-        techs: ["html", "sass"],
-        isImportant: true,
-        isComplete: true,
-        isPublic: true,
-        isExternalProject: true,
-    },
+
 
     {
         title: "Social Links Profile",
@@ -284,13 +273,25 @@ export const projects = [
 
     },
     {
+        title: "Natours",
+        description: "A project to explore the power of Sass and the 7-1 architecture. From the Advanced CSS and Sass course from Jonas Schmedtmann.",
+        image: "/projects/other/natours_preview.png",
+        url: "https://natours-for-eric-medrano.netlify.app/",
+        level: 1,
+        techs: ["html", "sass"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: true,
+    },
+    {
         title: "Blog Preview Card",
         description: "Newbie challenge from Front End Mentor",
         image: "/projects/newbie/blog-preview-card/desktop-design.jpg",
         url: "/projects/newbie/blog-preview-card",
         level: 0,
         techs: ["html", "tailwindcss"],
-        isImportant: false,
+        isImportant: true,
         isComplete: true,
         isPublic: true,
         isExternalProject: false,
@@ -332,18 +333,7 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    {
-        title: "Trillo",
-        description: "A review of Flexbox by applying it through and through. From the Advanced CSS and Sass course from Jonas Schmedtmann.",
-        image: "/projects/other/trillo_preview.png",
-        url: "https://trillo-for-eric-medrano.netlify.app/",
-        level: 1,
-        techs: ["html", "sass"],
-        isImportant: true,
-        isComplete: true,
-        isPublic: true,
-        isExternalProject: true,
-    },
+
     {
         title: "QR Code Component",
         description: "Newbie challenge from Front End Mentor",
@@ -375,7 +365,7 @@ export const projects = [
         url: "/projects/newbie/base-apparel-coming-soon-page",
         level: 0,
         techs: ["html", "tailwindcss"],
-        isImportant: true,
+        isImportant: false,
         isComplete: true,
         isPublic: true,
         isExternalProject: false,
@@ -475,6 +465,18 @@ export const projects = [
         isComplete: true,
         isPublic: true,
         isExternalProject: false,
+    },
+    {
+        title: "Trillo",
+        description: "A review of Flexbox by applying it through and through. From the Advanced CSS and Sass course from Jonas Schmedtmann.",
+        image: "/projects/other/trillo_preview.png",
+        url: "https://trillo-for-eric-medrano.netlify.app/",
+        level: 1,
+        techs: ["html", "sass"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: true,
     },
     {
         title: "Keeper",

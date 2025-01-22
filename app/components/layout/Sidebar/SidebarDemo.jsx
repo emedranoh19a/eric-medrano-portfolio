@@ -32,7 +32,7 @@ export function SidebarDemo({ children }) {
     <div className={containerStyles}>
       <Sidebar open={open} setOpen={setOpen}>
         {/* Display related styles will conflict with "hidden" */}
-        <SidebarBody className="gap-10 relative self-stretch h-full w-full">
+        <SidebarBody className="gap-10 relative self-stretch h-full w-full overflow-y-scroll ">
           <div className="top-0 left-0 p-0 fixed w-[inherit]">
             <InvertedCorner />
             <div className="flex flex-col overflow-x-hidden px-2 mt-2 h-fit">

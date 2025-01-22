@@ -5,9 +5,9 @@
 
 ¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
 PRIORITY:
-//TODO: -Quitar el fondo del gato negro de Rive.
-//TODO: -Colocar una foto de mi en el cuadro azul.
-//TODO: -Eliminar el fondo azul, y el fondo rojo.
+-Quitar el fondo del gato negro de Rive.
+ -Colocar una foto de mi en el cuadro azul.
+ -Eliminar el fondo azul, y el fondo rojo.
 //TODO: -Ver cómo puedo agregar y presumir que soy trilingue
 //TODO: -Esconder la navegación de los proyectos mobil, por ahora. 
 //TODO: Hacer el contact form, extraer de Maikagura o de plano traérselo de otro lugar.

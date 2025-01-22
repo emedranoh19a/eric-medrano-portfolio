@@ -4,6 +4,7 @@ import Contact from "./components/sections/Contact"
 import Header from "./components/sections/Header"
 import Projects from "./components/sections/Projects"
 import Skills from "./components/sections/Skills"
+import Thanks from "./components/sections/Thanks"
 import Timeline from "./components/sections/Timeline"
 
 import { Bai_Jamjuree } from "next/font/google"
@@ -22,21 +23,8 @@ export default function Home() {
       <Skills />
       <Projects />
       <Timeline />
-      <Contact
-      />
-
-      {/* <Hero /> */}
-      {/* <div className="z-10 flex min-h-64 items-center justify-center rounded-lg border bg-white"> */}
-      {/* </div> */}
-
-      {/* <SkillsGlobe /> */}
-      {/* <div className="h-10"> 
-
-      */}
-
-      {/* <Mac /> */}
-      {/* </div> */}
-
+      <Contact />
+      <Thanks />
 
     </div >
   )

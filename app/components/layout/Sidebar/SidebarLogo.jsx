@@ -4,13 +4,14 @@ export default function SidebarLogo() {
   return (
     <Link
       href="/"
-      className="font-normal flex  items-center justify-center text-sm text-black py-1 relative z-20"
+      className="relative flex items-center justify-center z-20 w-80 md:w-full aspect-square mx-auto"
     >
       <Image
         src="/Logo.png"
-        className="w-full h-auto max-w-36"
-        width={200}
-        height={200}
+        className="w-full h-full"
+        fill
+        // width={200}
+        // height={200}
         alt="Eric Medrano Logo"
       />
     </Link>

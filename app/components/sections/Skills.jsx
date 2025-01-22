@@ -32,7 +32,10 @@ function SkillsContent() {
   return (
     <div className="max-w-lg lg:order-2 flex flex-col items-stretch justify-center overflow-hidden pt-8">
       <BoxReveal className="w-full">
-        <Heading text="Skills" className="mb-4" />
+        <Heading
+          text="Skills"
+          className=" text-center lg:text-left block mb-4"
+        />
       </BoxReveal>
       <BoxReveal>
         <Subheading>
