@@ -41,7 +41,7 @@ function Content() {
       />
       <BoxReveal>
         <Subheading>
-          ...and i&apos;m aiming to be your next <Span>best decision</Span>.
+          Potentially, your next <Span>best decision</Span>.
         </Subheading>
       </BoxReveal>
       <BoxReveal className="mx-auto">
