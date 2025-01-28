@@ -36,7 +36,8 @@ export default function TextGenerate({
           return (
             <motion.span
               key={word + idx}
-              className="text-black opacity-0"
+              className="text-black"
+              initial={{ opacity: 0 }}
               style={{
                 filter: filter ? "blur(10px)" : "none",
               }}

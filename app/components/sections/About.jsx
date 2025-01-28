@@ -19,12 +19,12 @@ export default function About() {
         <div className="self-center">
           <Content />
         </div>
-        {/* TODO: FIX the following padding x */}
         <div className="w-full h-full  px-2 sm:px-20 md:px-28 md:py-18 relative ">
           <div className="relative px-4 w-full h-72 sm:h-96 md:h-96 aspect-square rounded-xl overflow-hidden">
             <Image
               src="/about/eric-chiquito.png"
               fill
+              alt="A photo of Eric Medrano holding a mexican doll that represents a little version of myself."
               className="object-cover rounded-xl overflow-hidden"
             />
           </div>
