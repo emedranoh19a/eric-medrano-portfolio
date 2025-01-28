@@ -1,5 +1,5 @@
 "use client";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import BoxReveal from "../effects/BoxReveal";
 import Heading from "./Heading";
@@ -24,6 +24,12 @@ export const Timeline = ({ data }) => {
 
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
+
+  const heightSpring = useSpring(heightTransform, {
+    stiffness: 200,
+    damping: 50,
+    restDelta: 0.001,
+  });
 
   return (
     <div className="w-full md:px-10" ref={containerRef}>
@@ -72,10 +78,11 @@ export const Timeline = ({ data }) => {
         >
           <motion.div
             style={{
-              height: heightTransform,
+              height: heightSpring,
               opacity: opacityTransform,
             }}
-            className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full"
+            // className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full"
+            className="absolute inset-x-0 top-0  w-[2px] bg-gradient-to-t from-indigo-600 via-indigo-500 to-transparent from-[0%] via-[10%] rounded-full"
           />
         </div>
       </div>

@@ -19,8 +19,9 @@ export default function About() {
         <div className="self-center">
           <Content />
         </div>
-        <div className="w-full h-full px-20 md:px-28 md:py-18 relative ">
-          <div className="relative px-4 w-full h-96 md:h-96 aspect-square rounded-xl overflow-hidden">
+        {/* TODO: FIX the following padding x */}
+        <div className="w-full h-full  px-2 sm:px-20 md:px-28 md:py-18 relative ">
+          <div className="relative px-4 w-full h-72 sm:h-96 md:h-96 aspect-square rounded-xl overflow-hidden">
             <Image
               src="/about/eric-chiquito.png"
               fill
@@ -34,7 +35,7 @@ export default function About() {
 }
 function Content() {
   return (
-    <>
+    <div className="max-w-lg lg:order-2 flex flex-col items-stretch justify-center overflow-hidden pt-8">
       <Heading
         text="Hi! I'm Eric"
         className="text-center lg:text-left block mb-4"
@@ -45,16 +46,16 @@ function Content() {
         </Subheading>
       </BoxReveal>
       <BoxReveal className="mx-auto">
-        <Text className="text-center lg:text-left max-w-xl">
+        <Text className="text-center lg:text-left">
           I&apos;m passionate about crafting meaningful designs and developing
           user-friendly <Span> web applications.</Span>
         </Text>
-        <Text className="text-center lg:text-left max-w-xl mt-2">
+        <Text className="text-center lg:text-left mt-2">
           Simplicity, collaboration and creativity are some examples of what I
           value in everything I do. Let&apos;s connect and create something{" "}
           <Span>awesome</Span>!
         </Text>
       </BoxReveal>
-    </>
+    </div>
   );
 }

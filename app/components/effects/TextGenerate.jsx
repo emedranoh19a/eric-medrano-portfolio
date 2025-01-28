@@ -19,6 +19,7 @@ export default function TextGenerate({
       },
       {
         duration: duration ? duration : 1,
+        //TODO: set a good timing. It is OK to not attach to a useInView hook
         delay: stagger(0.2),
       }
     );

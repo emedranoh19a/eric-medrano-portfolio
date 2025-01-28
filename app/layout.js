@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon/favicon.png" />
       </Head> */}
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
       >
         <main className="max-w-screen min-h-screen overflow-x-hidden">
 
