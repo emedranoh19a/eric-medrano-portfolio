@@ -291,7 +291,7 @@ export const projects = [
         url: "/projects/newbie/blog-preview-card",
         level: 0,
         techs: ["html", "tailwindcss"],
-        isImportant: true,
+        isImportant: false,
         isComplete: true,
         isPublic: true,
         isExternalProject: false,
