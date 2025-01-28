@@ -57,6 +57,8 @@ export default function BoxReveal({
           ease: "easeIn",
           delay,
         }}
+        className="bg-gradient-to-br from-indigo-400 via-indigo-500 to-indigo-700"
+        // className="absolute top-[4] bottom-[4] left-0 right-0 z-20"
         style={{
           position: "absolute",
           top: 4,
@@ -64,7 +66,7 @@ export default function BoxReveal({
           left: 0,
           right: 0,
           zIndex: 20,
-          background: boxColor ? boxColor : "#5046e6",
+          // background: boxColor ? boxColor : "#5046e6",
         }}
       />
     </div>

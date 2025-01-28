@@ -2,10 +2,9 @@
 
 import { cn } from "@/app/utils/utils";
 import Cat from "../Cat";
-import BoxReveal from "../effects/BoxReveal";
+import TextGenerate from "../effects/TextGenerate";
 import FadedText from "../ui/FadedText";
 import MainTitle from "../ui/MainTitle";
-import Text from "../ui/Text";
 
 export default function Header() {
   //State:
@@ -50,7 +49,11 @@ function Content() {
         I turn coffee into code
       </FadedText>
       {/* //Set a max-width for this */}
-      <BoxReveal
+      <TextGenerate
+        className="block mx-auto text-center"
+        words="Let's have a cup of coffee, and unuderstand each other throughout this page."
+      />
+      {/* <BoxReveal
         className="block mx-auto text-center"
         delay={1}
         boxColor="#fff"
@@ -59,7 +62,7 @@ function Content() {
           Let&apos;s have a cup of coffee, and understand each other throughout
           this page.
         </Text>
-      </BoxReveal>
+      </BoxReveal> */}
     </div>
   );
 }
