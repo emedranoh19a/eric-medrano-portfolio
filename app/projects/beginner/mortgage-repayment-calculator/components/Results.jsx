@@ -42,7 +42,7 @@ export default function Results({ isSubmitted, results }) {
               </h3>
               <hr className="opacity-20 mb-3" />
               <p className="text-slate-500 mb-2 text-sm">
-                Total you'll repay over the term
+                Total you&apos;ll repay over the term
               </p>
               <h3 className="text-white  mb-2 font-bold">€{results.total}</h3>
             </div>
