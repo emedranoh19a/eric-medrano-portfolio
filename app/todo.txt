@@ -21,8 +21,7 @@ PRIORITY:
 -Orden secundario: Por más viejo (como aparezcan en front-end)
 //TODO: -Revisar qué projectos quiero mostrar, y asignar el span correspondiente.
 //TODO: -Detectar con un efecto, el nivel correpondiente, segun el link.
-//TODO: El select component debería empezar por harder first.
-
+//TODO: Sidebar will show like "text-left" on small screens
 
 
 

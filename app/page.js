@@ -20,7 +20,9 @@ export default function Home() {
       <ScrollProgress className="" />
       <Header />
       <About />
+      {/* <Languages /> */}
       <Skills />
+
       <Projects />
       <Timeline />
       {/* <Contact /> */}

@@ -61,7 +61,7 @@ export const timelineData = [
                         es: "Certificación de Ingeniero en Procesamiento de Imágenes CG-ARTS (Básico)."
                     },
                     {
-                        en: " CG-ARTS Compputer Graphics Engineer Certification (Basic).",
+                        en: " CG-ARTS Computer Graphics Engineer Certification (Basic).",
                         ja: "CG-ARTS検定 CGエンジニア検定（ベーシック） ",
                         es: "Certificación de Ingeniero en Gráficos Computacionales CG-ARTS (Básico)."
                     }
@@ -567,6 +567,18 @@ export const projects = [
         description: "Junior challenge from Front End Mentor.",
         image: "/projects/beginner/age-calculator/images/desktop-completed.jpg",
         url: "/projects/beginner/age-calculator",
+        level: 1,
+        techs: ["react", "tailwindcss"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
+    {
+        title: "Mortgage Repayment Calculator",
+        description: "Junior challenge from Front End Mentor.",
+        image: "/projects/beginner/mortgage-repayment-calculator/images/desktop-design-empty.jpg",
+        url: "/projects/beginner/mortgage-repayment-calculator",
         level: 1,
         techs: ["react", "tailwindcss"],
         isImportant: false,

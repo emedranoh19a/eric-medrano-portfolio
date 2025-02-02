@@ -1,13 +1,10 @@
 import { timelineData } from "@/app/data";
-import { Timeline as TimelineUI } from "../ui/Timeline";
+import { Timeline } from "../ui/Timeline";
 
-//TODO: Change the name, start refactoring the code.
-//TODO: The Section component should be "History", and the Aceternity component "Timeline"
-//TODO: Separation of concers, and so on and so forth.
 export default function History() {
   return (
     <div className="w-full">
-      <TimelineUI data={timelineData} />
+      <Timeline data={timelineData} />
     </div>
   );
 }
