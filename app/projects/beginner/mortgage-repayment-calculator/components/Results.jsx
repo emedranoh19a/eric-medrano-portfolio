@@ -17,8 +17,8 @@ export default function Results({ isSubmitted, results }) {
             Results shown here
           </h2>
           <p className="text-slate-300 max-w-60 text-xs ">
-            Complete the form and click "calculate repayments" to see what your
-            monthly repayments would be.
+            Complete the form and click &ldquo;calculate repayments&rdquo; to
+            see what your monthly repayments would be.
           </p>
         </div>
       ) : (
@@ -28,8 +28,8 @@ export default function Results({ isSubmitted, results }) {
           </h2>
           <p className="text-slate-500 text-xs text-left mb-5 ">
             Your results are shown below based on the information you provided.
-            To adjust the results, edit the form and lick "calculate rapyments"
-            again
+            To adjust the results, edit the form and click &ldquo;calculate
+            repayments&rdquo; again
           </p>
           <div className="relative bg-slate-950 text-left rounded-lg overflow-hidden">
             <div className="absolute w-full h-1 bg-[var(--lime)]" />
