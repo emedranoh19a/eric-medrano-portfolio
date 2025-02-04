@@ -27,7 +27,7 @@ function Card({ className, accentClassName, title, content, visual, width }) {
         <div className={accentStyles} />
         <h3 className="font-bold text-xl text-slate-600">{title}</h3>
         <p className="text-slate-400">{content}</p>
-        <div className="bg-red-500 relative h-fit mt-6"><Image src={visual} width={width} height={width} className="absolute right-0 top-0" /></div>
+        <div className="bg-red-500 relative h-fit mt-6"><Image src={visual} width={width} height={width} className="absolute right-0 top-0" alt="" /></div>
     </div>
 }
 

@@ -1,34 +1,11 @@
-//------Add any google font in 2 steps.
+//Font from Google.
 import { Josefin_Sans } from "next/font/google"
 const josefinSans = Josefin_Sans({ subsets: ["latin"] }) 
-//The weight might be required, and have to be strings, although they seem like numbers
+//Then interpolate in className as {josefinSans.className}
 
+//CSS variables in tailwind. (Version 4.0 changes the notation.)
+<div style={{'--primary-color': '#ff0000'}} className="bg-[var(--primary-color)]" />
+        
+Handy task order for markup: HTML → tokenSetup → pseudoColors → layout and gaps → sizing&spacing → typography → shadows and effects.
 
-
-...later use in the jsx as {josefinSans.className}
-
-//------Using CSS variables as tailwind arbitrary values in a single page.
-<div
-        style={{
-            
-            '--primary-color': '#ff0000',
-            '--secondary-color': '#4caf50',
-            '--font-family': 'Arial, sans-serif',
-        }}
-        className="bg-[var(--primary-color)] text-white font-sans"
-    >
-        <h1 className="text-[var(--secondary-color)] font-[var(--font-family)]">
-            Welcome to My Portfolio
-        </h1>
-        <p>This page uses custom colors and fonts defined locally.</p>
-    </div>
-
-...then, use the fariables as... text-[var(--secondary-color)], and so on and so forth.
-
-
-Things I learned/.
-
-It is useful to start with the overall structure of the html. 
-Then, make the basic layout. 
-Just after styling the typography, start dealing with sizing stuff. 
-Then you can just add details like colors and other stuff.
+//Note: label will allow click for the radio button. Better than a div.

@@ -102,4 +102,3 @@ function RadioOption({ option, value, label }) {
     </label>
   );
 }
-//Note: label will allow click for the radio button. Better than a div.

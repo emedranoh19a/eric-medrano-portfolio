@@ -10,6 +10,12 @@ export default function TextGenerate({
 }) {
   //State:
   const [scope, animate] = useAnimate();
+  // 10:22:03 PM: 26:6
+  // //Warning: React Hook useEffect has missing dependencies:
+  // //'animate', 'duration', and 'filter'.
+  // Either include them or remove the dependency array.
+  // Mutable values like 'scope.current' aren't valid dependencies because mutating
+  // them doesn't re-render the component.  react-hooks/exhaustive-deps
   useEffect(() => {
     animate(
       "span",
@@ -23,7 +29,7 @@ export default function TextGenerate({
         delay: stagger(0.2),
       }
     );
-  }, [scope.current]);
+  }, [animate, duration, filter]);
 
   //Dataflow:
   let wordsArray = words.split(" ");

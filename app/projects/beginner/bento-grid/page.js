@@ -56,7 +56,7 @@ export default function Page() {
                     {/* <div className="relative h-full w-full"> */}
                     <div className="absolute left-0 bottom-0  w-[75%] lg:w-full max-w-68 lg:translate-y-5 aspect-video">
 
-                        <Image fill objectFit="contain" src="/projects/beginner/bento-grid/images/illustration-consistent-schedule.webp" />
+                        <Image alt="" fill objectFit="contain" src="/projects/beginner/bento-grid/images/illustration-consistent-schedule.webp" />
                     </div>
                     {/* </div> */}
                 </div>
@@ -67,7 +67,11 @@ export default function Page() {
                         <p className=" font-bold text-xl mt-2 ">Schedule to social media</p>
                     </div>
                     <div className=" w-full h-full min-h-80 relative">
-                        <Image src="/projects/beginner/bento-grid/images/illustration-schedule-posts.webp" fill className="absolute lg:h-full aspect-square object-contain lg:object-cover object-left " />
+                        <Image
+                            src="/projects/beginner/bento-grid/images/illustration-schedule-posts.webp"
+                            alt=""
+                            fill
+                            className="absolute lg:h-full aspect-square object-contain lg:object-cover object-left " />
                     </div>
                     <div className="pr-4">
                         <p className="text-sm">
@@ -80,7 +84,11 @@ export default function Page() {
             <div className="rounded-lg p-4 relative bg-[var(--primaryDark)] lg:col-start-3 lg:col-span-2 lg:row-span-3">
                 <div className="flex flex-col lg:flex-row w-full h-fit gap-2">
                     <div className="self-center relative  w-[75%] aspect-square">
-                        <Image src="/projects/beginner/bento-grid/images/illustration-grow-followers.webp" fill objectFit="contain" />
+                        <Image
+                            alt=""
+                            src="/projects/beginner/bento-grid/images/illustration-grow-followers.webp"
+                            fill
+                            objectFit="contain" />
                     </div>
                     <div className="relative self-center">
 
@@ -99,7 +107,13 @@ export default function Page() {
                         faster audience growth
                     </div>
                     <div className=" w-full min-h-20 relative">
-                        <Image src="/projects/beginner/bento-grid/images/illustration-audience-growth.webp" fill objectFit="contain" objectPosition="left" />
+                        <Image
+                            src="/projects/beginner/bento-grid/images/illustration-audience-growth.webp"
+                            fill
+                            objectFit="contain"
+                            objectPosition="left"
+                            alt=""
+                        />
                     </div>
                 </div>
             </div>
@@ -111,7 +125,12 @@ export default function Page() {
                         </span>
                     </p></div>
                     <div className=" w-full min-h-24 relative">
-                        <Image src="/projects/beginner/bento-grid/images/illustration-create-post.webp" fill objectFit="contain" />
+                        <Image
+                            src="/projects/beginner/bento-grid/images/illustration-create-post.webp"
+                            fill
+                            objectFit="contain"
+                            alt=""
+                        />
                     </div>
 
                 </div>
@@ -123,7 +142,12 @@ export default function Page() {
                         Write your content using AI.
                     </p>
                     <div className=" h-full  w-2/3 lg:w-auto min-h-40 relative ">
-                        <Image fill objectFit="contain" src="/projects/beginner/bento-grid/images/illustration-ai-content.webp" />
+                        <Image
+                            fill
+                            objectFit="contain"
+                            src="/projects/beginner/bento-grid/images/illustration-ai-content.webp"
+                            alt=""
+                        />
                     </div>
                 </div>
             </div>
