@@ -50,7 +50,6 @@ function Content() {
       </FadedText>
       {/* //Set a max-width for this */}
       <TextGenerate
-        //TODO: try changing the text size, and verify max width.
         className="block mx-auto text-center text-pretty max-w-md"
         // words="Let's have a cup of coffee, and unuderstand each other throughout this page."
         words="Take a paws! Brew a coffee, cat-alogue my work, and let’s craft together something meow-gnificent!"

@@ -25,7 +25,7 @@ export default function AchievementsList({ achievements = [] }) {
           {achievement[language]}
         </motion.li>
       ))}
-      {/* TODO: Agregar 4  proyectos y  su descripción, y sus fotos. */}
+      {/* TODO: Agregar los 4 proyectos de WebSpace, su descripción, y si aplica, sus ilustraciones. */}
     </ul>
   );
 }

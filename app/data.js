@@ -595,7 +595,10 @@ export const projects = [
 
 ]
 
-//TODO: Maybe some stats. TOEIC, languages. Number of projects. Number of Udemy courses?
+//TODO: Quantify the TOEIC score with a ticker component.
+//TODO: Quantify the number of proyects from Front End Mentor with another ticker component.
+//TODO: What else can i quantify? Kanjis known? Kanken? JLPT? Hours dedicated to something?
+//  Maybe some stats. TOEIC, languages. Number of projects. Minutes of udemy of Udemy courses?
 
 //"typescript",
 //"dart",
