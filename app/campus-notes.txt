@@ -5,7 +5,10 @@ const josefinSans = Josefin_Sans({ subsets: ["latin"] })
 
 //CSS variables in tailwind. (Version 4.0 changes the notation.)
 <div style={{'--primary-color': '#ff0000'}} className="bg-[var(--primary-color)]" />
-        
+※The tokens setup in tailwind will no take effect on portals generated outside!
+
+
 Handy task order for markup: HTML → tokenSetup → pseudoColors → layout and gaps → sizing&spacing → typography → shadows and effects.
 
 //Note: label will allow click for the radio button. Better than a div.
+

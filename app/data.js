@@ -586,6 +586,18 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    {
+        title: "Product List with Cart",
+        description: "Junior challenge from Front End Mentor.",
+        image: "/projects/beginner/product-list-with-cart/desktop-design-selected.jpg",
+        url: "/projects/beginner/product-list-with-cart",
+        level: 1,
+        techs: ["react", "tailwindcss"],
+        isImportant: true,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
 
     //Hero.
     //About me.
