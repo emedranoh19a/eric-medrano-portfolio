@@ -598,6 +598,18 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    {
+        title: "Notifications Page",
+        description: "Junior challenge from Front End Mentor.",
+        image: "/projects/beginner/notifications-page/desktop-design.jpg",
+        url: "/projects/beginner/notifications-page",
+        level: 1,
+        techs: ["react", "tailwindcss"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
 
     //Hero.
     //About me.

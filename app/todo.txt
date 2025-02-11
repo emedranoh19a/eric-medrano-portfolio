@@ -5,25 +5,22 @@
 
 ¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
 PRIORITY:
--Quitar el fondo del gato negro de Rive.
- -Colocar una foto de mi en el cuadro azul.
- -Eliminar el fondo azul, y el fondo rojo.
+//TODO: Bajar de peso y tomarme unas fotos cool.
 //TODO: -Ver cómo puedo agregar y presumir que soy trilingue
-//TODO: -Esconder la navegación de los proyectos mobil, por ahora. 
 //TODO: Hacer el contact form, extraer de Maikagura o de plano traérselo de otro lugar.
 //TODO: Hacer un Layout estupendo comom cell promote.
 
 //TODO: -Ver qué onda con la animación inicial del tercer título.
 //TODO: -Haber si me da tiempo para una animación inicial.
 //TODO: Cambiar Layout horizontal de Skills.
-//TODO: -El orden de las cartas debería ser:
+//TODO: -El orden de las cartas debería ser: Primario: de difíciles a no dificiles. Secundario: De nuevos a viejos.
 -Primero Por nivel de dificultad. 
 -Orden secundario: Por más viejo (como aparezcan en front-end)
 //TODO: -Revisar qué projectos quiero mostrar, y asignar el span correspondiente.
 //TODO: -Detectar con un efecto, el nivel correpondiente, segun el link.
 //TODO: Sidebar will show like "text-left" on small screens
 
-
+//Repayment calculator background must be sky.
 
 Frontend Mentor ¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
 Newbie
@@ -60,13 +57,13 @@ Beginner/Junior
   //TODO: Conference ticket generator
   //TODO: Tech book club landing page
   //Bento grid
-  //TODO: Product list with cart
+  //Product list with cart
   //TODO: Mortgage repayment calculator
   //TODO: Contact form
   //TODO: Newsletter sign-up form with success message
   //TODO: Body Mass Index Calculator
   // Age calculator app
-  //TODO: single-page developer portfolio
+  //TODO: Single-page developer portfolio
   //TODO: News homepage
   //TODO: Notifications page
   //TODO: Interactive card details form.
