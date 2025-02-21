@@ -38,6 +38,7 @@ export default function OrderConfirmation({ onCloseModal }) {
         width={30}
         height={30}
         className="mb-3"
+        alt="Confirm Order icon"
       />
 
       <h2 className="text-3xl text-[var(--rose-900)] font-bold">
@@ -91,6 +92,7 @@ function ListItem({ dessertId, quantity }) {
             src={`/projects/beginner/product-list-with-cart/images/image-${imgInterpolation}-thumbnail.jpg`}
             className="object-cover"
             fill
+            alt={`Thumbnail for ${title}`}
           />
         </div>
         <div className="flex flex-col">

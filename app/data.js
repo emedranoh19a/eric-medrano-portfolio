@@ -610,6 +610,18 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    {
+        title: "Expenses Chart Component",
+        description: "Junior challenge from Front End Mentor.",
+        image: "/projects/beginner/expenses-chart-component/desktop-design.jpg",
+        url: "/projects/beginner/expenses-chart-component",
+        level: 1,
+        techs: ["react", "tailwindcss", "framer-motion"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
 
     //Hero.
     //About me.

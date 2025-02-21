@@ -13,24 +13,25 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Tomato: hsl(4, 100%, 67%)
+- Soft red: hsl(10, 79%, 65%)
+- Cyan: hsl(186, 34%, 60%)
 
 ### Neutral
 
-- Dark Slate Grey: hsl(234, 29%, 20%)
-- Charcoal Grey: hsl(235, 18%, 26%)
-- Grey: hsl(231, 7%, 60%)
-- White: hsl(0, 0%, 100%)
+- Dark brown: hsl(25, 47%, 15%)
+- Medium brown: hsl(28, 10%, 53%)
+- Cream: hsl(27, 66%, 92%)
+- Very pale orange: hsl(33, 100%, 98%)
 
 ## Typography
 
 ### Body Copy
 
-- Font size (paragraph): 16px
+- Font size: 18px
 
 ### Font
 
-- Family: [Roboto](https://fonts.google.com/specimen/Roboto)
+- Family: [DM Sans](https://fonts.google.com/specimen/DM+Sans)
 - Weights: 400, 700
 
 > 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
