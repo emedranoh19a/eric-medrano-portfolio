@@ -630,7 +630,8 @@ export const projects = [
 
 
 ]
-
+//TODO: Maybe, a timeline is just not worth the certifications.
+//TODO: Consider making a different component for the certifications.
 //TODO: Quantify the TOEIC score with a ticker component.
 //TODO: Quantify the number of proyects from Front End Mentor with another ticker component.
 //TODO: What else can i quantify? Kanjis known? Kanken? JLPT? Hours dedicated to something?
