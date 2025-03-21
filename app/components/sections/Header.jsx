@@ -52,7 +52,7 @@ function Content() {
       <TextGenerate
         className="block mx-auto text-center text-pretty max-w-md"
         // words="Let's have a cup of coffee, and unuderstand each other throughout this page."
-        words="Take a paws! Brew a coffee, cat-alogue my work, and let’s craft together something meow-gnificent!"
+        words="Take a paws! Let's understand each other troughout this page."
         filter={false}
       />
       {/* <BoxReveal
