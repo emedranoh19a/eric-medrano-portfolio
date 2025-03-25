@@ -221,6 +221,18 @@ export const sidebarLinks = [
 export const projects = [
 
     {
+        title: "The Wild Oasis",
+        description: "A heavy Front End project with express Back End. From the Ultimate React course by Jonas Schmedtmann ",
+        image: "/projects/other/the-wild-oasis_preview.png",
+        url: "https://the-wild-oasis-for-eric-medrano.netlify.app/login",
+        level: 4,
+        techs: ["react", "styled-components", "api", "tanstack-query", "supabase"],
+        isImportant: true,
+        isComplete: false,
+        isPublic: true,
+        isExternalProject: true,
+    },
+    {
         title: "REDA舞神楽 website",
         description: "A real project for the amazing Yosakoi Soran Team REDA舞神楽. An initiative that made me realize an amazing way to juggle with TailwindCSS utility classes, while thinking of maintainable and reusable code.",
         image: "/projects/other/reda-website_preview.png",

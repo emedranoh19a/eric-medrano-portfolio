@@ -108,17 +108,20 @@ export function BentoGridItem({
 function LevelLabel({ level }) {
   //Style:
   const labelStyles = cn(
-    "absolute w-fit h-auto bottom-2 right-2 p-2 rounded-full text-[12px] font-semibold",
-    level === 0
-      ? "text-pink-500 bg-pink-300/50" //newbie
-      : level === 1
-      ? "text-yellow-500 bg-yellow-100/60" //beginner
-      : level === 2 //intermediate
-      ? "text-orange-500 bg-orange-200/60" //beginner
-      : level === 3
-      ? "text-red-700 bg-red-400/60" //advanced
-      : "text-violet-300 bg-violet-800/60" //guru
+    "absolute w-fit h-auto bottom-2 right-2 p-2 rounded-full text-[12px] font-semibold backdrop-blur-xs",
+    level === 0 //newbie
+      ? //everything is 60: opacity.
+        "text-pink-100 bg-pink-500/50"
+      : level === 1 //junior
+      ? "text-yellow-100 bg-yellow-500/80"
+      : level === 2 //intermediate "medium"
+      ? "text-orange-100 bg-orange-500/80"
+      : level === 3 //advanced "hard"
+      ? "text-red-100 bg-red-500/70"
+      : "text-violet-100 bg-violet-800/90", //guru
+    ""
   );
+
   //Dataflow:
   const levelText =
     level === 0

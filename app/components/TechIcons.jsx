@@ -1,6 +1,11 @@
 import { FaCss3Alt, FaHtml5, FaReact, FaSass } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiRedux, SiStyledcomponents } from "react-icons/si";
+import {
+  SiReactquery,
+  SiRedux,
+  SiStyledcomponents,
+  SiSupabase,
+} from "react-icons/si";
 import { TbApi, TbBrandFramerMotion } from "react-icons/tb";
 
 export default function TechIcons({ techs = [] }) {
@@ -86,6 +91,21 @@ export function TechIcon({ tech }) {
           style={{ filter: "drop-shadow(0 0 0.75rem #5b21b6)" }}
         />
       );
+    case "tanstack-query":
+      return (
+        <SiReactquery
+          className="w-5 h-fit fill-[#f73f51] block"
+          style={{ filter: "drop-shadow(0 0 0.75rem #f73f51 )" }}
+        />
+      );
+    case "supabase":
+      return (
+        <SiSupabase
+          className="w-5 h-fit fill-[#3dc88b] block"
+          style={{ filter: "drop-shadow(0 0 0.75rem #3dc88b )" }}
+        />
+      );
+    //#3dc88b
 
     default:
       return <div className=""></div>;
