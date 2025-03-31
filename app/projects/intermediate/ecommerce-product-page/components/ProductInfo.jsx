@@ -15,8 +15,8 @@ function Description() {
       <h1>Fall Limited Edition Sneakers</h1>
       <p>
         There low-profile sneakers are youur perfect casual wear companion.
-        Featuring a durable rubber outer sole, they'll withsand everything the
-        weather can offer.
+        Featuring a durable rubber outer sole, they&apos;ll withsand everything
+        the weather can offer.
       </p>
     </div>
   );
