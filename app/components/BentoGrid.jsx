@@ -118,7 +118,7 @@ function LevelLabel({ level }) {
       ? "text-orange-100 bg-orange-500/80"
       : level === 3 //advanced "hard"
       ? "text-red-100 bg-red-500/70"
-      : "text-violet-100 bg-violet-800/90", //guru
+      : "text-violet-100 bg-violet-800/70", //guru
     ""
   );
 

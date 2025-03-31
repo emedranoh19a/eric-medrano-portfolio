@@ -1,8 +1,10 @@
 import Navbar from "./components/Navbar"
+import Product from "./components/Product"
 import StylesSetup from "./components/StylesSetup"
-
+//logo.svg
+//image-avatar.png
 export default function Page() {
-    return <StylesSetup className="container mx-auto">
+    return <StylesSetup className="container mx-auto max-w-6xl flex-flex-col">
         <Navbar />
         <Product />
     </StylesSetup>
@@ -16,6 +18,4 @@ export default function Page() {
 
 
 
-function Product() {
-    return <div>Product</div>
-}
+

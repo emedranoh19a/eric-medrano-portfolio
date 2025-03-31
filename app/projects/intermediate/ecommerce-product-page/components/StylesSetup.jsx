@@ -7,7 +7,7 @@ export default function StylesSetup({ className, children }) {
   return (
     <div
       className={cn(
-        "max-w-screen min-h-screen",
+        "max-w-screen min-h-screen flex flex-col",
         kumbhSans.className,
         className
       )}

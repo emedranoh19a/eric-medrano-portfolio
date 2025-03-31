@@ -634,6 +634,18 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    {
+        title: "E-commerce Product Page",
+        description: "Intermediate challenge from Front End Mentor.",
+        image: "/projects/intermediate/ecommerce-product-page/desktop-design.jpg",
+        url: "/projects/intermediate/ecommerce-product-page",
+        level: 2,
+        techs: ["react", "tailwindcss", "zustand"],
+        isImportant: false,
+        isComplete: false,
+        isPublic: true,
+        isExternalProject: false,
+    },
 
     //Hero.
     //About me.
