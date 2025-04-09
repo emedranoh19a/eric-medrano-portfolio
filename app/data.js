@@ -222,7 +222,7 @@ export const projects = [
 
     {
         title: "The Wild Oasis",
-        description: "A heavy Front End project with express Back End. From the Ultimate React course by Jonas Schmedtmann ",
+        description: "Admin page, from the Ultimate React course by Jonas Schmedtmann.",
         image: "/projects/other/the-wild-oasis_preview.png",
         url: "https://the-wild-oasis-for-eric-medrano.netlify.app/login",
         level: 4,
@@ -234,7 +234,7 @@ export const projects = [
     },
     {
         title: "REDA舞神楽 website",
-        description: "A real project for the amazing Yosakoi Soran Team REDA舞神楽. An initiative that made me realize an amazing way to juggle with TailwindCSS utility classes, while thinking of maintainable and reusable code.",
+        description: "A real project for the Yosakoi Soran team 「REDA舞神楽」.",
         image: "/projects/other/reda-website_preview.png",
         url: "https://our-little-secret.netlify.app/theme/2023",
         level: 3,
@@ -247,7 +247,7 @@ export const projects = [
 
     {
         title: "The React Quiz",
-        description: "A project involving Redux. From the Ultimate React course from Jonas Schmedtmann.",
+        description: "Redux, from the Ultimate React course from Jonas Schmedtmann.",
         image: "/projects/other/react-quiz_preview.png",
         url: "https://react-quiz-for-erichiki.netlify.app/",
         level: 2,
@@ -273,7 +273,7 @@ export const projects = [
     },
     {
         title: "Omnifood",
-        description: "Project from the HTML & CSS course from Jonas Schmedtmann.",
+        description: "Project from HTML & CSS course from Jonas Schmedtmann.",
         image: "/projects/other/omnifood_preview.png",
         url: "https://omnifood-for-eric-medrano.netlify.app/",
         level: 2,
@@ -286,7 +286,7 @@ export const projects = [
     },
     {
         title: "Natours",
-        description: "A project to explore the power of Sass and the 7-1 architecture. From the Advanced CSS and Sass course from Jonas Schmedtmann.",
+        description: "Overview of Sass capabilities. From the Advanced CSS and Sass course from Jonas Schmedtmann.",
         image: "/projects/other/natours_preview.png",
         url: "https://natours-for-eric-medrano.netlify.app/",
         level: 2,
@@ -455,7 +455,7 @@ export const projects = [
     },
     {
         title: "Nexter",
-        description: "A review of CSS Grid by applying it through and through. From the Advanced CSS and Sass course from Jonas Schmedtmann.",
+        description: "CSS-Grid projects with Sass. From the Advanced CSS and Sass course from Jonas Schmedtmann.",
         image: "/projects/other/nexter_preview.png",
         url: "https://nexter-for-eric-medrano.netlify.app/",
         level: 2,
@@ -492,7 +492,7 @@ export const projects = [
 
     {
         title: "Keeper",
-        description: "My very first steps for knowing the essentials of React.js. Proyect is very basic, extracted from The Complete Web Development Bootcamp by Angela Yu.",
+        description: "Final React project from The Complete Web Development Bootcamp by Angela Yu.",
         image: "/projects/other/keeper_preview.png",
         url: "https://cool-centaur-8a3c2e.netlify.app/",
         level: 0,

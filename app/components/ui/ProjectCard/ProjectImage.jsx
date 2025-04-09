@@ -43,11 +43,11 @@ function LevelLabel({ level }) {
     "absolute w-fit h-auto bottom-2 right-2 p-2 rounded-full text-[12px] font-semibold backdrop-blur-xs",
     level === 0 //newbie
       ? //everything is 60: opacity.
-        "text-pink-100 bg-pink-500/50"
+        "text-sky-100 bg-sky-500/50"
       : level === 1 //junior
-      ? "text-yellow-100 bg-yellow-500/80"
+      ? "text-lime-100 bg-lime-500/80"
       : level === 2 //intermediate "medium"
-      ? "text-orange-100 bg-orange-500/80"
+      ? "text-yellow-100 bg-yellow-500/80"
       : level === 3 //advanced "hard"
       ? "text-red-100 bg-red-500/70"
       : "text-violet-100 bg-violet-800/70", //guru

@@ -1,7 +1,7 @@
-import { motion } from "framer-motion";
 import Image from "next/image";
 import { cn } from "../../../utils/utils";
 import ProjectLink from "../../ProjectLink";
+import PixelCard from "./PixelCard";
 import ProjectBody from "./ProjectBody";
 import ProjectImage from "./ProjectImage";
 export function ProjectCard({
@@ -27,27 +27,44 @@ export function ProjectCard({
   //Style:
   const containerStyles = cn(
     "group/bento absolute flex flex-1 relative flex-col justify-start gap-2",
-    "bg-white p-4",
+    "bg-white hover:bg-neutral-50",
+
     "border border-neutral-100 rounded-xl overflow-hidden",
     "hover:shadow-xl transition duration-200 shadow-input",
+    level === 0 && "hover:shadow-sky-500/5",
+    level === 1 && "hover:shadow-lime-500/5",
+    level === 2 && "hover:shadow-yellow-500/5",
+    level === 3 && "hover:shadow-red-500/5",
+    level === 4 && "hover:shadow-violet-500/5",
     isImportant ? "lg:col-span-2" : "col-span-1",
     className
   );
+  const variant =
+    level === 0
+      ? "default"
+      : level === 1
+      ? "beginner"
+      : level === 2
+      ? "intermediate"
+      : level === 3
+      ? "advanced"
+      : "guru";
   return (
-    <motion.div
-      layout
-      key={index}
-      className={containerStyles}
-      initial={{ opacity: 0, y: index % 2 === 0 ? 100 : -100 }}
-      viewport={{ once: true }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, type: "spring", stiffness: 100 }}
-    >
+    // <motion.div
+    //   layout
+    //   key={index}
+    //   className={containerStyles}
+    //   initial={{ opacity: 0, y: index % 2 === 0 ? 100 : -100 }}
+    //   viewport={{ once: true }}
+    //   whileInView={{ opacity: 1, y: 0 }}
+    //   transition={{ duration: 1, type: "spring", stiffness: 100 }}
+    // >
+    <PixelCard className={containerStyles} index={index} variant={variant}>
       <ProjectLink
         href={url}
         externalProject={isExternalProject}
         className={cn(
-          "transition duration-200 scale-100",
+          "transition duration-200 scale-100 p-4 w-full h-full",
           hovering && "opacity-50 scale-95 ",
           techs.includes(hoveredSkill) && "opacity-100 scale-[1.05]"
         )}
@@ -60,11 +77,12 @@ export function ProjectCard({
           techs={techs}
           level={level}
         />
-        <ProjectBody title={title} description={description} />
+        <ProjectBody title={title} description={description} level={level} />
         {!isComplete && <DevelopingLabel />}
-        {/* </PixelCard> */}
       </ProjectLink>
-    </motion.div>
+    </PixelCard>
+
+    // {/* </motion.div> */}
   );
 }
 

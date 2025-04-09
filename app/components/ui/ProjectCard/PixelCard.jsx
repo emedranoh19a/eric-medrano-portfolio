@@ -1,5 +1,5 @@
+import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
-
 class Pixel {
   constructor(canvas, context, x, y, color, speed, delay) {
     this.width = canvas.width;
@@ -100,31 +100,40 @@ function getEffectiveSpeed(value, reducedMotion) {
  */
 const VARIANTS = {
   default: {
-    activeColor: null,
-    gap: 5,
-    speed: 35,
-    colors: "#f8fafc,#f1f5f9,#cbd5e1",
-    noFocus: false,
-  },
-  blue: {
-    activeColor: "#e0f2fe",
-    gap: 10,
-    speed: 25,
-    colors: "#e0f2fe,#7dd3fc,#0ea5e9",
-    noFocus: false,
-  },
-  yellow: {
-    activeColor: "#fef08a",
-    gap: 3,
-    speed: 20,
-    colors: "#fef08a,#fde047,#eab308",
-    noFocus: false,
-  },
-  pink: {
     activeColor: "#fecdd3",
     gap: 6,
     speed: 80,
-    colors: "#fecdd3,#fda4af,#e11d48",
+    colors: "#f0f9ff,#bae6fd,#38bdf8",
+    noFocus: true,
+  },
+  beginner: {
+    activeColor: "#fecdd3",
+    gap: 6,
+    speed: 80,
+    colors: "#ecfccb,#bef264,#84cc16",
+    noFocus: true,
+  },
+  intermediate: {
+    activeColor: "#fecdd3",
+    gap: 6,
+    speed: 80,
+    colors: "#fef9c3,#fde047,#eab308",
+    noFocus: true,
+  },
+  advanced: {
+    activeColor: "#fecdd3",
+    gap: 6,
+    speed: 80,
+    colors: "#fef2f2,#fecaca,#f87171",
+    noFocus: true,
+  },
+  guru: {
+    activeColor: "#fecdd3",
+    gap: 6,
+    speed: 80,
+    // colors: "#f5f3ff,#c4b5fd,#8b5cf6", //50,300,500
+    // colors: "#f5f3ff,#ddd6fe,#c4b5fd", //50,200,300
+    colors: "#f5f3ff,#ddd6fe,#a78bfa", //50,200,400
     noFocus: true,
   },
 };
@@ -137,6 +146,7 @@ export default function PixelCard({
   noFocus,
   className = "",
   children,
+  index,
 }) {
   const containerRef = useRef(null);
   const canvasRef = useRef(null);
@@ -253,17 +263,25 @@ export default function PixelCard({
   }, [finalGap, finalSpeed, finalColors, finalNoFocus]);
 
   return (
-    <div
+    <motion.div
       ref={containerRef}
       // className={`h-full w-full relative overflow-hidden grid place-items-center aspect-[4/5] border border-[#27272a] rounded-[25px] isolate transition-colors duration-200 ease-[cubic-bezier(0.5,1,0.89,1)] select-none ${className}`}
+      className={className}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       onFocus={finalNoFocus ? undefined : onFocus}
       onBlur={finalNoFocus ? undefined : onBlur}
       tabIndex={finalNoFocus ? -1 : 0}
+      layout
+      key={index}
+      // className={containerStyles}
+      initial={{ opacity: 0, y: index % 2 === 0 ? 100 : -100 }}
+      viewport={{ once: true }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, type: "spring", stiffness: 100 }}
     >
-      <canvas className="w-full h-full block" ref={canvasRef} />
+      <canvas className="w-full h-full absolute " ref={canvasRef} />
       {children}
-    </div>
+    </motion.div>
   );
 }
