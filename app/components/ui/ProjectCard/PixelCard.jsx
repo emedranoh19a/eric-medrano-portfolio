@@ -152,7 +152,7 @@ export default function PixelCard({
   const finalSpeed = speed ?? variantCfg.speed;
   const finalColors = colors ?? variantCfg.colors;
   const finalNoFocus = noFocus ?? variantCfg.noFocus;
-
+  //Handlers:
   const initPixels = () => {
     if (!containerRef.current || !canvasRef.current) return;
 
@@ -255,7 +255,7 @@ export default function PixelCard({
   return (
     <div
       ref={containerRef}
-      className={`h-full w-full relative overflow-hidden grid place-items-center aspect-[4/5] border border-[#27272a] rounded-[25px] isolate transition-colors duration-200 ease-[cubic-bezier(0.5,1,0.89,1)] select-none ${className}`}
+      // className={`h-full w-full relative overflow-hidden grid place-items-center aspect-[4/5] border border-[#27272a] rounded-[25px] isolate transition-colors duration-200 ease-[cubic-bezier(0.5,1,0.89,1)] select-none ${className}`}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       onFocus={finalNoFocus ? undefined : onFocus}

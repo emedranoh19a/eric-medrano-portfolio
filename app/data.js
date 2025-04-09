@@ -320,7 +320,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-
     {
         title: "Product Preview Card",
         description: "Newbie challenge from Front End Mentor",

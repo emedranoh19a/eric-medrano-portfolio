@@ -8,10 +8,11 @@ import {
 } from "react-icons/fa";
 import { GiWeightLiftingUp } from "react-icons/gi";
 import { projects, skillTabs } from "../../data";
-import { BentoGrid, BentoGridItem } from "../BentoGrid";
+import { BentoGrid } from "../BentoGrid";
 import BoxReveal from "../effects/BoxReveal";
 import GoToProjects from "../ui/GoToProjects";
 import Heading from "../ui/Heading";
+import { ProjectCard } from "../ui/ProjectCard/ProjectCard";
 import Subheading from "../ui/Subheading";
 import Tabs from "../ui/Tabs/Tabs";
 import Text from "../ui/Text";
@@ -92,7 +93,7 @@ export default function Projects() {
       </div>
       <BentoGrid className="max-w-4xl mx-auto mb-20 min-h-96">
         {sortedProjects.map((project, i) => (
-          <BentoGridItem
+          <ProjectCard
             key={i}
             index={i}
             {...project}
