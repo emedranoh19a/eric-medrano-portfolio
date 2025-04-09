@@ -4,7 +4,7 @@ import StylesSetup from "./components/StylesSetup"
 //logo.svg
 //image-avatar.png
 export default function Page() {
-    return <StylesSetup className="container mx-auto max-w-6xl flex-flex-col">
+    return <StylesSetup className="container mx-auto max-w-6xl flex flex-col pb-40">
         <Navbar />
         <Product />
     </StylesSetup>

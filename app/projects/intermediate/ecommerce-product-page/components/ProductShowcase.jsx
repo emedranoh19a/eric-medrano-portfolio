@@ -4,6 +4,12 @@ export default function ProductShowcase() {
       {/* Desktoop version */}
       <div className=" hidden sm:block bg-lime-200 grid grid-cols-4 grid-rows-[repeat(4,1fr)] gap-3 place-items-center">
         <div className=" bg-lime-300 aspect-square">item</div>
+        <div className=" bg-lime-300 aspect-square">item</div>
+        <div className=" bg-lime-300 aspect-square">item</div>
+        <div className=" bg-lime-300 aspect-square">item</div>
+        <div className=" bg-lime-300 aspect-square">item</div>
+        <div className=" bg-lime-300 aspect-square">item</div>
+        <div className=" bg-lime-300 aspect-square">item</div>
       </div>
       {/* Mobile version version */}
       <div className="block sm:hidden">Mobile version</div>
