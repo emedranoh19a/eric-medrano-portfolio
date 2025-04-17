@@ -171,7 +171,6 @@ export default function PixelCard({
   const pixelsRef = useRef([]);
   const animationRef = useRef(null);
   const timePreviousRef = useRef(performance.now());
-  //TODO: get rid of the window.
   // const reducedMotion = useRef(
   //   window.matchMedia("(prefers-reduced-motion: reduce)").matches
   // ).current;
