@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 class Pixel {
   constructor(canvas, context, x, y, color, speed, delay) {
     this.width = canvas.width;
@@ -95,42 +95,42 @@ function getEffectiveSpeed(value, reducedMotion) {
     return parsed * throttle;
   }
 }
-
+const GAP = 4;
 /**
  *  You can change/expand these as you like.
  */
 const VARIANTS = {
   default: {
     activeColor: "#fecdd3",
-    gap: 6,
+    gap: GAP,
     speed: 80,
     colors: "#f0f9ff,#bae6fd,#38bdf8",
     noFocus: true,
   },
   beginner: {
     activeColor: "#fecdd3",
-    gap: 6,
+    gap: GAP,
     speed: 80,
     colors: "#ecfccb,#bef264,#84cc16",
     noFocus: true,
   },
   intermediate: {
     activeColor: "#fecdd3",
-    gap: 6,
+    gap: GAP,
     speed: 80,
     colors: "#fef9c3,#fde047,#eab308",
     noFocus: true,
   },
   advanced: {
     activeColor: "#fecdd3",
-    gap: 6,
+    gap: GAP,
     speed: 80,
     colors: "#fef2f2,#fecaca,#f87171",
     noFocus: true,
   },
   guru: {
     activeColor: "#fecdd3",
-    gap: 6,
+    gap: GAP,
     speed: 80,
     // colors: "#f5f3ff,#c4b5fd,#8b5cf6", //50,300,500
     // colors: "#f5f3ff,#ddd6fe,#c4b5fd", //50,200,300
@@ -138,7 +138,23 @@ const VARIANTS = {
     noFocus: true,
   },
 };
+function useReducedMotion() {
+  const [reducedMotion, setReducedMotion] = useState(false);
 
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setReducedMotion(mediaQuery.matches);
+
+    const handleChange = (event) => {
+      setReducedMotion(event.matches);
+    };
+
+    mediaQuery.addEventListener("change", handleChange);
+    return () => mediaQuery.removeEventListener("change", handleChange);
+  }, []);
+
+  return reducedMotion;
+}
 export default function PixelCard({
   variant = "default",
   gap,
@@ -149,15 +165,18 @@ export default function PixelCard({
   children,
   index,
 }) {
+  //State:
   const containerRef = useRef(null);
   const canvasRef = useRef(null);
   const pixelsRef = useRef([]);
   const animationRef = useRef(null);
   const timePreviousRef = useRef(performance.now());
-  const reducedMotion = useRef(
-    window.matchMedia("(prefers-reduced-motion: reduce)").matches
-  ).current;
-
+  //TODO: get rid of the window.
+  // const reducedMotion = useRef(
+  //   window.matchMedia("(prefers-reduced-motion: reduce)").matches
+  // ).current;
+  const reducedMotion = useReducedMotion();
+  //Dataflow:
   const variantCfg = VARIANTS[variant] || VARIANTS.default;
   const finalGap = gap ?? variantCfg.gap;
   const finalSpeed = speed ?? variantCfg.speed;
