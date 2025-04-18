@@ -1,3 +1,8 @@
+import Navigation from "./components/Navigation"
+import StylesSetup from "./components/StylesSetup"
+
 export default function Layout({ children }) {
-    return <div>{children}</div>
+    return <StylesSetup>
+        <Navigation />
+        {children}</StylesSetup>
 }
