@@ -6,8 +6,12 @@ export default function Content() {
   return (
     <div className={contentStyles}>
       <Category />
-      <Text preset={3}>Published 21 Dec 2023</Text>
-      <Text preset={1}>HTML & CSS foundations</Text>
+      <Text preset={3} as="span">
+        Published 21 Dec 2023
+      </Text>
+      <Text preset={1} as="h1">
+        HTML & CSS foundations
+      </Text>
       <Text preset={2} className="text-[var(--gray-500)]">
         These languages are the backbone of every website, defining structure,
         content, and presentation.
@@ -25,7 +29,7 @@ function Category() {
   );
   return (
     <div className={chipStyles}>
-      <Text className="" preset={4}>
+      <Text className="" preset={4} as="span">
         Learning
       </Text>
     </div>
