@@ -12,22 +12,18 @@ PRIORITY:
 
 //TODO: -Ver qué onda con la animación inicial del tercer título.
 //TODO: -Haber si me da tiempo para una animación inicial.
-//TODO: Cambiar Layout horizontal de Skills.
-//TODO: -El orden de las cartas debería ser: Primario: de difíciles a no dificiles. Secundario: De nuevos a viejos.
--Primero Por nivel de dificultad. 
--Orden secundario: Por más viejo (como aparezcan en front-end)
+
 //TODO: -Revisar qué projectos quiero mostrar, y asignar el span correspondiente.
 //TODO: -Detectar con un efecto, el nivel correpondiente, segun el link.
 //TODO: Sidebar will show like "text-left" on small screens
 
-//Repayment calculator background must be sky.
 
 Frontend Mentor ¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
 Newbie
 {
-  //TODO: Recipe page
-  Social links profile
-  Blog preview card
+  //ok Recipe page
+  //ok Social links profile
+  //ok Blog preview card
   FAQ accordion
   //TODO: (Paid) Working landing page
   Results summary component

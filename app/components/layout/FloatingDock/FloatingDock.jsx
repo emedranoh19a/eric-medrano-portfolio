@@ -15,7 +15,7 @@ export const FloatingDock = ({
   level,
 }) => {
   const filteredProjects = items.filter(
-    (project) => project.level === level.value
+    (project) => project.level === level.value && project.isComplete === true
   );
   return (
     <>

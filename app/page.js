@@ -4,31 +4,35 @@ import Header from "./components/sections/Header"
 import Projects from "./components/sections/Projects"
 import Skills from "./components/sections/Skills"
 import Thanks from "./components/sections/Thanks"
-import Timeline from "./components/sections/Timeline"
 
 import { Bai_Jamjuree } from "next/font/google"
+import History from "./components/sections/History"
 import ScrollProgress from "./components/ui/ScrollProgress"
 const baiJamjuree = Bai_Jamjuree({ subsets: ["latin"], weight: ["400", "600"] })
 
 export default function Home() {
   return (
-    <div className={`${baiJamjuree.className}`}>
-      {/* <Head>
+    <>
+
+      <div className={`${baiJamjuree.className} px-10`}>
+
+        {/* <Head>
         <title>Eric Medrano</title>
         {/* <link rel="icon" href="/favicon.ico" /> 
-    </Head> */}
-      <ScrollProgress className="" />
-      <Header />
-      <About />
-      {/* <Languages /> */}
-      <Skills />
+        </Head> */}
+        <ScrollProgress className="" />
+        <Header />
+        <About />
+        {/* <Languages /> */}
+        <Skills />
 
-      <Projects />
-      <Timeline />
-      {/* <Contact /> */}
-      <Thanks />
+        <Projects />
+        <History />
+        {/* <Contact /> */}
+        <Thanks />
 
-    </div >
+      </div >
+    </>
   )
 }
 

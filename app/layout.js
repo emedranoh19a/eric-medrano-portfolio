@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
       >
-        <main className="max-w-screen min-h-screen overflow-x-hidden">
+        <main className="max-w-screen min-h-screen h-fit overflow-x-hidden">
 
           <SidebarDemo >
 

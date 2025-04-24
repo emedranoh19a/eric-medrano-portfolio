@@ -6,10 +6,7 @@ const montserrat = Montserrat({ subsets: ["latin"] })
 const fraunces = Fraunces({ subsets: ["latin"], weight: "700" })
 function Card() {
   const cardStyles = clsx(
-
-
     // "border-xl overflow-hidden rounded-xl shadow-xl",
-
     "flex flex-col md:flex-row justify-between",
     "bg-white ",
     "w-full h-full min-h-40 max-w-80 md:max-w-xl  md:w-[700px]",

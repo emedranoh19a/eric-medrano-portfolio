@@ -119,12 +119,11 @@ export default function Page() {
     ""
   )
   return (
-    <div className={`mx-auto w-full h-screen relative ${leagueSpartan.className} grid place-items-center`}>
+    <div className={`mx-auto w-full h-screen relative bg-white ${leagueSpartan.className} grid place-items-center`}>
       <Image
         src="/projects/newbie/social-proof-section/images/bg-pattern-bottom-mobile.svg"
         fill
-        objectFit="cover"
-        className="absolute -z-10"
+        className="object-cover absolute z-10"
         alt=""
       />
       <div className={gridStyles}>

@@ -114,7 +114,7 @@ function CSSVariables({ children }) {
       "--light-lavender": "hsl(241, 100%, 89%)",
       "--dark-gray-blue": "hsl(224, 30%, 27%)"
     }}
-    className={`w-full min-h-screen grid place-items-center ${hankenGrotesk.className}`}
+    className={`w-full min-h-screen grid place-items-center bg-white ${hankenGrotesk.className}`}
 
   >{children}</div>
 }

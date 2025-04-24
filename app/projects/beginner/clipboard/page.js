@@ -55,7 +55,6 @@ export default function Page() {
     </CSSPageVariables>
 }
 
-//TODO: FIX something, it seems we have double scroll y overflow
 function CSSPageVariables({ children }) {
     return <div
         style={{
@@ -67,7 +66,7 @@ function CSSPageVariables({ children }) {
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'contain',
         }}
-        className={`${baiJamjuree.className} w-full h-fit`}
+        className={`${baiJamjuree.className} w-full h-fit bg-white`}
     >
         {children}
     </div>

@@ -200,7 +200,7 @@ export const sidebarLinks = [
     },
     {
         label: "History",
-        href: "/#timeline",
+        href: "/#history",
 
         icon: <BsPersonVcardFill />,
     },
@@ -652,9 +652,9 @@ export const projects = [
         image: "/projects/newbie/recipe-page/desktop-design.jpg",
         url: "/projects/newbie/recipe-page",
         level: 0,
-        techs: ["html", "tailwindcss"],
-        isImportant: true,
-        isComplete: true,
+        techs: ["html", "tailwindcss", "zustand"],
+        isImportant: false,
+        isComplete: false,
         isPublic: true,
         isExternalProject: false,
     },
@@ -737,16 +737,19 @@ export const slugs = [
 ]
 
 
-
+//TODO: Add docker when you feel nice
 export const skillImages = [
     "/skills/html.png",
-    "/skills/css.png",
+    "/skills/css.webp",
+    "/skills/figma.png",
+    "/skills/zustand.svg",
     "/skills/tailwind-css.png",
     "/skills/javascript.png",
     "/skills/python.png",
     "/skills/redux.png",
     "/skills/node-js.png",
     "/skills/sass.png",
+    "/skills/supabase.png",
     "/skills/react.png",
     "/skills/react-hook-form.png",
     "/skills/tanstack-query.webp",

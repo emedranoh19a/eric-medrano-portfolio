@@ -14,9 +14,20 @@
 
 body {
   /* background: var(--background); */
+  /* options for backgrounds: 
+  ag-square.png
+  natural-paper.png
+  redox-02.png
+  subtle-grey.png
+  swirl.png
+  textured-stripes.png
+  tiny-grid.png
+  transparent-square-tiles.png
+  white-tiles.png
+  */
   font-family: Arial, Helvetica, sans-serif;
   background-color: #ffffff;
-  background-image: url("/ag-square.png");
+  background-image: url("/backgrounds/transparent-square-tiles.png");
    /* 3. Add accessible line-height */
    line-height: 1.5;
    /* 4. Improve text rendering */

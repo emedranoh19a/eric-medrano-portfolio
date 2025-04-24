@@ -5,7 +5,7 @@ const dmSans = DM_Sans({ subsets: ["latin"], weight: ["400", "500"] })
 
 export default function Page() {
     return <div
-        className={`h-fit w-full mx-auto  ${dmSans.className} max-w-sm lg:max-w-none px-3 py-5 mb-40`}
+        className={`h-fit w-full mx-auto  ${dmSans.className} max-w-sm lg:max-w-none px-3 py-5 mb-40 bg-white`}
         style={{
             "--primaryLight": "hsl(254, 88%, 90%)",
             "--primaryDark": "hsl(256, 67%, 59%)",

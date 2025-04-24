@@ -10,7 +10,7 @@ import Span from "./Span";
 export default function Skills() {
   return (
     <section
-      className="min-h-[80vh] w-full py-10 px-10 md:px-20 h-full container mx-auto"
+      className="min-h-[80vh] -mt-10 w-full py-10 px-10 md:px-20 h-full container mx-auto"
       id="skills"
     >
       <div className="container gap-10 w-full h-full  gap-1 lg:gap-6 grid grid-cols-1 lg:grid-cols-2 place-items-center mx-auto">

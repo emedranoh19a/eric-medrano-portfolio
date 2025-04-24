@@ -6,11 +6,7 @@ import Instructions from "./components/Instructions"
 import Nutrition from "./components/Nutrition"
 import Overview from "./components/Overview"
 import StylesSetup from "./components/StylesSetup"
-//TODO: Aventarse toda la tipografía.
-//TODO: Establecer espaciado vertical.
-//TODO: Agregar colores del fondo.
-//TODO: Agregar la imagen.
-//TODO: Espaciado de padding vs
+
 export default function Page() {
     return <StylesSetup>
         <Card>

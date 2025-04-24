@@ -69,7 +69,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="pb-8"
+      className="pb-8  mb-20 lg:-mt-20"
       // className="h-fit w-full py-10 px-20 h-full container mx-auto grid"
     >
       <ProjectsContent />

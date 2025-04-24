@@ -23,7 +23,7 @@ export default function Header() {
 
   return (
     <section
-      className="relative w-full min-h-screen h-fit  overflow-x-hidden z-0 py-40 xl:-mt-20"
+      className="relative w-full min-h-screen h-fit overflow-x-hidden z-0 py-40 xl:-mt-28"
       id="home"
     >
       <Content />
