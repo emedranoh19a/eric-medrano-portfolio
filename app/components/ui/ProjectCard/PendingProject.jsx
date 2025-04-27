@@ -79,13 +79,17 @@ export default function PendingProject({
       </div>
       <ProjectImage
         image={image}
-        title="???"
+        title="developing (future) "
         isComplete={false}
         isExternalProject={isExternalProject}
         techs={techs}
         level={level}
       />
-      <ProjectBody title="???" description={randomDescription} level={level} />
+      <ProjectBody
+        title="?????"
+        description={randomDescription}
+        level={level}
+      />
       {/* {!isComplete && <DevelopingLabel />} */}
     </div>
   );

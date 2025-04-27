@@ -63,14 +63,11 @@ export function ProjectCard({
     <PixelCard className={containerStyles} index={index} variant={variant}>
       {!isComplete ? (
         <PendingProject
-          url={url}
           isExternalProject={isExternalProject}
           hovering={hovering}
           techs={techs}
           image={image}
-          title={title}
           level={level}
-          description={description}
           hoveredSkill={hoveredSkill}
         />
       ) : (
