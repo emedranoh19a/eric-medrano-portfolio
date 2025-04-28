@@ -715,7 +715,7 @@ export const projects = [
         level: 0,
         techs: ["html", "tailwindcss"],
         isImportant: false,
-        isComplete: false,
+        isComplete: true,
         isPublic: true,
         isExternalProject: false,
     },
