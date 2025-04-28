@@ -23,18 +23,7 @@ export default function Hero() {
           src="/projects/newbie/workit-landing-page/images/image-hero.webp"
         />
       </div>
-      {/* /* ornamental 
-
-width: 375px;
-height: 24px;
-
-background: #FCF8FF;
-
-/* Inside auto layout 
-flex: none;
-order: 2;
-align-self: stretch;
-flex-grow: 0; */}
+      {/* <Ornamental /> */}
     </section>
   );
 }

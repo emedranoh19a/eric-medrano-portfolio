@@ -12,7 +12,7 @@ export default function Ornamental({
   return (
     <div className={containerStyles}>
       <svg
-        className="w-full h-auto" // make it fluid!
+        className="w-full h-full" // make it fluid!
         viewBox="0 0 375 24" // this is REQUIRED
         preserveAspectRatio="none" // stretch without distortion
         fill="none"

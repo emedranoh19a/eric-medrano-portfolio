@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import Image from "next/image";
 import Text from "./components/Text";
 
 const features = [
@@ -19,23 +20,35 @@ const features = [
   },
 ];
 export default function Value() {
+  const sectionClasses = clsx(
+    "relative",
+    "md:px-10 xl:px-20",
+    //We don't need padding top, because we got far from the cellphone image with margin.
+    "mt-40 px-5 py-14 pb-28 md:pb-40 xl:pb-72  bg-[var(--purple-100)]"
+  );
   const featuresLayoutStyles = clsx(
     "flex flex-col xl:flex-row mx-auto gap-8  ",
     "items-center md:items-start xl:justify-center xl:items-start",
     "text-center md:text-start xl:text-center"
   );
   return (
-    <section
-      id="value"
-      className="mt-20 xl:px-20 md:px-10 px-5 py-14 md:py-16 xl:pt-20 xl:pb-10 bg-[var(--purple-100)] "
-    >
+    <section id="value" className={sectionClasses}>
       <div className={featuresLayoutStyles}>
         {features.map((feature, index) => (
           <Feature key={index} {...feature} number={index + 1} />
         ))}
       </div>
+      <div className="absolute w-full h-6 md:h-14 xl:h-20  bottom-0 left-0">
+        <div className="relative w-full h-full">
+          <Image
+            src="/projects/newbie/workit-landing-page/images/ornamental2.png"
+            fill
+            className="object-fill"
+          />
+        </div>
+      </div>
       {/* <Ornamental
-        className="bg-[var(--purple-100)]"
+        className="bg-[var(--purple-100)] bottom-0"
         bottomColor="var(--white)"
       /> */}
     </section>
