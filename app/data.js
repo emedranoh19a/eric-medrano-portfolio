@@ -721,6 +721,18 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    {
+        title: "Skilled E-learning Landing Page",
+        description: "Newbie challenge from Front End Mentor",
+        image: "/projects/newbie/skilled-elearning-landing-page/preview.png",
+        url: "/projects/newbie/skilled-elearning-landing-page",
+        level: 0,
+        techs: ["html", "tailwindcss"],
+        isImportant: true,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
     //Hero.
     //About me.
     //Skills.
