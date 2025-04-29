@@ -219,6 +219,18 @@ export const sidebarLinks = [
 //4. guru.
 
 export const projects = [
+    {
+        title: "Keeper",
+        description: "Final React project from The Complete Web Development Bootcamp by Angela Yu.",
+        image: "/projects/other/keeper_preview.png",
+        url: "https://cool-centaur-8a3c2e.netlify.app/",
+        level: 0,
+        techs: ["react"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: true,
+    },
 
     {
         title: "The Wild Oasis",
@@ -357,18 +369,7 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    {
-        title: "Coding Bootcamp Testimonials",
-        description: "Newbie challenge from Front End Mentor",
-        image: "/projects/beginner/coding-bootcamp-testimonials-slider/images/desktop-design-slide-1.jpg",
-        url: "/projects/beginner/coding-bootcamp-testimonials-slider",
-        level: 1,
-        techs: ["react", "tailwindcss", "framer-motion"],
-        isImportant: false,
-        isComplete: false,
-        isPublic: true,
-        isExternalProject: false,
-    },
+
     {
         title: "NFT Preview Card Component",
         description: "Newbie challenge from Front End Mentor",
@@ -503,18 +504,7 @@ export const projects = [
         isExternalProject: false,
     },
 
-    {
-        title: "Keeper",
-        description: "Final React project from The Complete Web Development Bootcamp by Angela Yu.",
-        image: "/projects/other/keeper_preview.png",
-        url: "https://cool-centaur-8a3c2e.netlify.app/",
-        level: 0,
-        techs: ["react"],
-        isImportant: false,
-        isComplete: true,
-        isPublic: true,
-        isExternalProject: true,
-    },
+
     {
         title: "Clipboard website",
         description: "A website to explore TailwindCSS. The project is extracted by the TailwindCSS course by Brad Traversy.",
@@ -647,18 +637,18 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    {
-        title: "E-commerce Product Page",
-        description: "Intermediate challenge from Front End Mentor.",
-        image: "/projects/intermediate/ecommerce-product-page/desktop-design.jpg",
-        url: "/projects/intermediate/ecommerce-product-page",
-        level: 2,
-        techs: ["react", "tailwindcss", "zustand"],
-        isImportant: false,
-        isComplete: false,
-        isPublic: true,
-        isExternalProject: false,
-    },
+    // {
+    //     title: "E-commerce Product Page",
+    //     description: "Intermediate challenge from Front End Mentor.",
+    //     image: "/projects/intermediate/ecommerce-product-page/desktop-design.jpg",
+    //     url: "/projects/intermediate/ecommerce-product-page",
+    //     level: 2,
+    //     techs: ["react", "tailwindcss", "zustand"],
+    //     isImportant: false,
+    //     isComplete: false,
+    //     isPublic: true,
+    //     isExternalProject: false,
+    // },
     {
         title: "Recipe Page",
         description: "Newbie challenge from Front End Mentor.",
@@ -666,23 +656,23 @@ export const projects = [
         url: "/projects/newbie/recipe-page",
         level: 0,
         techs: ["html", "tailwindcss", "zustand"],
-        isImportant: false,
+        isImportant: true,
         isComplete: true,
         isPublic: true,
         isExternalProject: false,
     },
-    {
-        title: "Space Tourism",
-        description: "Intermediate challenge from Front End Mentor.",
-        image: "/projects/intermediate/space-tourism-website/preview.jpg",
-        url: "/projects/intermediate/space-tourism-website",
-        level: 2,
-        techs: ["react", "tailwindcss", "framer-motion"],
-        isImportant: true,
-        isComplete: false,
-        isPublic: true,
-        isExternalProject: false,
-    },
+    // {
+    //     title: "Space Tourism",
+    //     description: "Intermediate challenge from Front End Mentor.",
+    //     image: "/projects/intermediate/space-tourism-website/preview.jpg",
+    //     url: "/projects/intermediate/space-tourism-website",
+    //     level: 2,
+    //     techs: ["react", "tailwindcss", "framer-motion"],
+    //     isImportant: true,
+    //     isComplete: false,
+    //     isPublic: true,
+    //     isExternalProject: false,
+    // },
     {
         title: "Fylo",
         description: "Beginner challenge from Front End Mentor.",
@@ -719,7 +709,18 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-
+    {
+        title: "Coding Bootcamp Testimonials",
+        description: "Newbie challenge from Front End Mentor",
+        image: "/projects/beginner/coding-bootcamp-testimonials-slider/images/desktop-design-slide-1.jpg",
+        url: "/projects/beginner/coding-bootcamp-testimonials-slider",
+        level: 1,
+        techs: ["react", "tailwindcss", "framer-motion"],
+        isImportant: false,
+        isComplete: false,
+        isPublic: true,
+        isExternalProject: false,
+    },
     //Hero.
     //About me.
     //Skills.

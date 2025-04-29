@@ -42,15 +42,22 @@ export default function Projects() {
     return project.techs.includes(activeTab.tech);
   });
 
-  // //Handlers:
   const sortedProjects = filteredProjects.sort((a, b) => {
+    // If projects have the same level, suborder them by reverse order
+    if (a.level === b.level) {
+      // Here you reverse the order to bring the last project first
+      return filteredProjects.indexOf(b) - filteredProjects.indexOf(a);
+    }
+
     if (activeOption.value === 0) return a.level <= b.level ? 1 : -1;
     if (activeOption.value === 1) return a.level >= b.level ? 1 : -1;
     if (activeOption.value === 2) return a.title > b.title ? 1 : -1;
     if (activeOption.value === 3) return a.title < b.title ? 1 : -1;
+
     return true;
   });
 
+  //Handlers:
   // const moveSelectedTabToTop = (idx) => {
   //   const newTabs = [...propTabs];
   //   const selectedTab = newTabs.splice(idx, 1);

@@ -24,7 +24,7 @@ export default function Value() {
     "relative",
     "md:px-10 xl:px-20",
     //We don't need padding top, because we got far from the cellphone image with margin.
-    "mt-40 px-5 py-14 pb-28 md:pb-40 xl:pb-72  bg-[var(--purple-100)]"
+    "mt-16 px-5 py-14 py-28 md:py-40 xl:py-72  bg-[var(--purple-100)]"
   );
   const featuresLayoutStyles = clsx(
     "flex flex-col xl:flex-row mx-auto gap-8  ",

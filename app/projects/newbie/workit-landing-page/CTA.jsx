@@ -55,9 +55,9 @@ function UserImage() {
 
   const userStyles = clsx(
     " w-60 aspect-square",
-    "absolute top-0 right-1/2 translate-x-1/2 -translate-y-[80%] bg-lime-500 ",
-    "md:right-[504px] md:-translate-y-[60%] md:translate-x-[40%] md:bg-sky-500",
-    "xl:bg-fuchsia-500 xl:w-96 xl:transform-[translateX(-50%)]",
+    "absolute top-0 right-1/2 translate-x-1/2 -translate-y-[80%]",
+    "md:right-[504px] md:-translate-y-[60%] md:translate-x-[40%]",
+    "xl:w-96 xl:transform-[translateX(-50%)]",
     "rounded-full"
   );
   return (
