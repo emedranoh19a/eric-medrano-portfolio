@@ -5,7 +5,7 @@ import Text from "../components/Text";
 
 export default function Hero() {
   return (
-    <div className="relative -mb-20 md:mb-0 grid grid-cols-1 md:grid-cols-2 grid-rows-[1fr_1fr] md:grid-rows-[1fr] px-5 py-16 pb-0 md:pb-16 md:px-10  xl:px-20 ">
+    <div className="-z-0 relative -mb-20 md:mb-0 grid grid-cols-1 md:grid-cols-2 grid-rows-[1fr_1fr] md:grid-rows-[1fr] px-5 py-16 pb-0 md:pb-16 md:px-10  xl:px-20 ">
       <Content />
       <Illustration />
     </div>

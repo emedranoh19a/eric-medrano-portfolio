@@ -45,13 +45,13 @@ function SkillsContent() {
 
       <BoxReveal>
         <Text>
-          My tech palette isn&apos;t just a list, it&apos;s a growing ecosystem.
-          A <Span> world of knowledge</Span> that is constantly spinning,
+          My tech palette isn&apos;t just a list, it&apos;s a growing
+          <Span> world of knowledge</Span> that is constantly spinning,
           expanding and evolving.
         </Text>
         <Text>
-          With every <Span> challenge</Span> I take on, a{" "}
-          <Span>new technology</Span> finds its place into my arsenal.
+          With every <Span> challenge</Span> I take on, I surprise myself with a{" "}
+          <Span>new piece of knowledge</Span> .
         </Text>
       </BoxReveal>
     </div>

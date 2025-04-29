@@ -133,8 +133,9 @@ function ProjectsContent() {
 
       <BoxReveal>
         <Text className="text-center mb-6">
-          Here&apos;s where ideas meet execution. Each project is a reflection
-          of my curiosity, effort, and my constant drive to improve my skills.
+          I constantly build projects with<Span> effort and purpose</Span>. What
+          I dreamed of as a child still waits in the distance — but I
+          haven&apos;t stopped reaching for it.
         </Text>
       </BoxReveal>
 
