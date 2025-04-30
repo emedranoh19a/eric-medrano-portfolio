@@ -5,8 +5,8 @@ export default function LevelChip({ level, className }) {
   const labelStyles = cn(
     //positioning classes (to get out.)
     "absolute bottom-2 right-2",
-    "text-base font-semibold",
-    "w-fit h-fit p-2",
+    "text-xs font-semibold",
+    "w-fit h-fit px-2 py-1",
     "rounded-full  backdrop-blur-xs",
     level === 0 //newbie
       ? //everything is 60: opacity.

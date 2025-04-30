@@ -7,6 +7,7 @@ import {
   SiSupabase,
 } from "react-icons/si";
 import { TbApi, TbBrandFramerMotion } from "react-icons/tb";
+import { cn } from "../utils/utils";
 
 export default function TechIcons({ techs = [] }) {
   return (
@@ -19,18 +20,19 @@ export default function TechIcons({ techs = [] }) {
 }
 
 export function TechIcon({ tech }) {
+  const commonStyles = "w-4 h-fit block";
   switch (tech) {
     case "html":
       return (
         <FaHtml5
-          className="w-5 h-fit fill-[#e34f26] block"
+          className={cn(commonStyles, "fill-[#e34f26]")}
           style={{ filter: "drop-shadow(0 0 0.75rem #e34f26)" }}
         />
       );
     case "css":
       return (
         <FaCss3Alt
-          className="w-5 h-fit fill-[#3C99DC] block"
+          className={cn(commonStyles, "fill-[#3C99DC]")}
           style={{ filter: "drop-shadow(0 0 0.75rem #3C99DC)" }}
         />
       );
@@ -38,70 +40,70 @@ export function TechIcon({ tech }) {
     case "sass":
       return (
         <FaSass
-          className="w-5 h-fit fill-[#c69] block"
+          className={cn(commonStyles, "fill-[#c69]")}
           style={{ filter: "drop-shadow(0 0 0.75rem #c69)" }}
         />
       );
     case "styled-components":
       return (
         <SiStyledcomponents
-          className="w-5 h-fit fill-[#c69] block"
+          className={cn(commonStyles, "fill-[#c69]")}
           style={{ filter: "drop-shadow(0 0 0.75rem #c69)" }}
         />
       );
     case "react":
       return (
         <FaReact
-          className="w-5 h-fit fill-[#61DBFB] block"
+          className={cn(commonStyles, "fill-[#61DBFB]")}
           style={{ filter: "drop-shadow(0 0 0.75rem #61DBFB)" }}
         />
       );
     case "api":
       return (
         <TbApi
-          className="w-5 h-fit stroke-lime-400 block"
+          className={cn(commonStyles, "stroke-lime-400")}
           style={{ filter: "drop-shadow(0 0 0.75rem #a3e635)" }}
         />
       );
     case "redux":
       return (
         <SiRedux
-          className="w-5 h-fit fill-[#764abc] block"
+          className={cn(commonStyles, "fill-[#764abc]")}
           style={{ filter: "drop-shadow(0 0 0.75rem #764abc)" }}
         />
       );
     case "nextjs":
       return (
         <RiNextjsFill
-          className="w-5 block"
+          className="w-5"
           style={{ filter: "drop-shadow(0 0 0.75rem #000000)" }}
         />
       );
     case "tailwindcss":
       return (
         <RiTailwindCssFill
-          className="w-5 h-fit fill-[#36b7f0] block"
+          className={cn(commonStyles, "fill-[#36b7f0]")}
           style={{ filter: "drop-shadow(0 0 0.75rem #36b7f0)" }}
         />
       );
     case "framer-motion":
       return (
         <TbBrandFramerMotion
-          className="w-5 h-fit stroke-violet-800 block"
+          className={cn(commonStyles, "stroke-violet-800")}
           style={{ filter: "drop-shadow(0 0 0.75rem #5b21b6)" }}
         />
       );
     case "tanstack-query":
       return (
         <SiReactquery
-          className="w-5 h-fit fill-[#f73f51] block"
+          className={cn(commonStyles, "fill-[#f73f51]")}
           style={{ filter: "drop-shadow(0 0 0.75rem #f73f51 )" }}
         />
       );
     case "supabase":
       return (
         <SiSupabase
-          className="w-5 h-fit fill-[#3dc88b] block"
+          className={cn(commonStyles, "fill-[#3dc88b]")}
           style={{ filter: "drop-shadow(0 0 0.75rem #3dc88b )" }}
         />
       );

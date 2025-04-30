@@ -6,6 +6,7 @@ import { useMemo } from "react";
 import ProjectLink from "../../ProjectLink";
 import PixelCard from "./PixelCard";
 import AlmostReadySign from "./Slots/AlmostReadySign";
+import ImageFg from "./Slots/ImageFg";
 import Ornamentals from "./Slots/Ornamentals";
 import ProjectDescription from "./Slots/ProjectDescription";
 import ProjectTitle from "./Slots/ProjectTitle";
@@ -127,7 +128,6 @@ export default function ProjectCard({
               loading="eager"
               priority
             />
-
             {!isComplete && (
               <ZCardItem
                 translateZ="150"
@@ -136,7 +136,11 @@ export default function ProjectCard({
                 <AlmostReadySign level={level} />
               </ZCardItem>
             )}
-            {/* TODO: Here, insert the ornamentals */}
+            <ImageFg
+              isExternalProject={isExternalProject}
+              techs={techs}
+              level={level}
+            />
           </ZCardItem>
           <ZCardItem
             translateZ="50"
