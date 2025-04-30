@@ -1,19 +1,26 @@
 import Link from "next/link";
 
 export default function ProjectLink({
-  externalProject,
+  isExternalProject,
+  cancel = false, // true to return a simple div.
   href,
   children,
   className = "",
 }) {
   return (
-    <Link
-      href={href}
-      passHref={externalProject}
-      className={className}
-      target={externalProject ? "_blank" : ""}
-    >
-      {children}
-    </Link>
+    <>
+      {cancel ? (
+        <div className={className}>{children}</div>
+      ) : (
+        <Link
+          href={href}
+          passHref={isExternalProject}
+          className={className}
+          target={isExternalProject ? "_blank" : ""}
+        >
+          {children}
+        </Link>
+      )}
+    </>
   );
 }

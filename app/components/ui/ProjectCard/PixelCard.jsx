@@ -1,6 +1,8 @@
 "use client";
+import { cn } from "@/app/utils/utils";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { useMouseEnter } from "./ZCard";
 class Pixel {
   constructor(canvas, context, x, y, color, speed, delay) {
     this.width = canvas.width;
@@ -162,8 +164,8 @@ export default function PixelCard({
   colors,
   noFocus,
   className = "",
-  children,
   index,
+  children,
 }) {
   //State:
   const containerRef = useRef(null);
@@ -255,16 +257,17 @@ export default function PixelCard({
     animationRef.current = requestAnimationFrame(() => doAnimate(name));
   };
 
-  const onMouseEnter = () => handleAnimation("appear");
-  const onMouseLeave = () => handleAnimation("disappear");
-  const onFocus = (e) => {
-    if (e.currentTarget.contains(e.relatedTarget)) return;
-    handleAnimation("appear");
-  };
-  const onBlur = (e) => {
-    if (e.currentTarget.contains(e.relatedTarget)) return;
-    handleAnimation("disappear");
-  };
+  // const onMouseEnter = () => handleAnimation("appear");
+  // const onMouseLeave = () => handleAnimation("disappear");
+
+  // const onFocus = (e) => {
+  //   if (e.currentTarget.contains(e.relatedTarget)) return;
+  //   handleAnimation("appear");
+  // };
+  // const onBlur = (e) => {
+  //   if (e.currentTarget.contains(e.relatedTarget)) return;
+  //   handleAnimation("disappear");
+  // };
 
   useEffect(() => {
     initPixels();
@@ -280,16 +283,29 @@ export default function PixelCard({
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [finalGap, finalSpeed, finalColors, finalNoFocus]);
-
+  const [zCardHovered, setZCardHovered] = useMouseEnter();
+  if (zCardHovered) {
+    handleAnimation("appear");
+  } else {
+    handleAnimation("disappear");
+  }
+  //Style:
+  const containerStyles = cn(
+    "relative h-full w-full",
+    "grid place-items-center",
+    "overflow-hidden isolate transition-colors duration-200 ease-[cubic-bezier(0.5,1,0.89,1)] select-none",
+    className
+  );
   return (
     <motion.div
       ref={containerRef}
-      // className={`h-full w-full relative overflow-hidden grid place-items-center aspect-[4/5] border border-[#27272a] rounded-[25px] isolate transition-colors duration-200 ease-[cubic-bezier(0.5,1,0.89,1)] select-none ${className}`}
-      className={className}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
-      onFocus={finalNoFocus ? undefined : onFocus}
-      onBlur={finalNoFocus ? undefined : onBlur}
+      className={containerStyles}
+      // onHoverStart={onMouseEnter}
+      // onMouseEnter={onMouseEnter}
+      // onHoverEnd={onMouseLeave}
+      // onMouseLeave={onMouseLeave}
+      // onFocus={finalNoFocus ? undefined : onFocus}
+      // onBlur={finalNoFocus ? undefined : onBlur}
       tabIndex={finalNoFocus ? -1 : 0}
       layout
       key={index}
@@ -299,8 +315,7 @@ export default function PixelCard({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, type: "spring", stiffness: 100 }}
     >
-      <canvas className="w-full h-full absolute " ref={canvasRef} />
-      {children}
+      <canvas className="w-full h-full block scale-150" ref={canvasRef} />
     </motion.div>
   );
 }

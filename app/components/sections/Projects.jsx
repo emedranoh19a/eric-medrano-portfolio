@@ -12,7 +12,7 @@ import { BentoGrid } from "../BentoGrid";
 import BoxReveal from "../effects/BoxReveal";
 import GoToProjects from "../ui/GoToProjects";
 import Heading from "../ui/Heading";
-import { ProjectCard } from "../ui/ProjectCard/ProjectCard";
+import ProjectCard from "../ui/ProjectCard/ProjectCard";
 import Subheading from "../ui/Subheading";
 import Tabs from "../ui/Tabs/Tabs";
 import Text from "../ui/Text";
