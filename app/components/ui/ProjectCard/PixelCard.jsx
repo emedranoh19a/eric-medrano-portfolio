@@ -283,12 +283,14 @@ export default function PixelCard({
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [finalGap, finalSpeed, finalColors, finalNoFocus]);
-  const [zCardHovered, setZCardHovered] = useMouseEnter();
-  if (zCardHovered) {
-    handleAnimation("appear");
-  } else {
-    handleAnimation("disappear");
-  }
+  const [zCardHovered] = useMouseEnter();
+  useEffect(() => {
+    if (zCardHovered) {
+      handleAnimation("appear");
+    } else {
+      handleAnimation("disappear");
+    }
+  }, [zCardHovered]);
   //Style:
   const containerStyles = cn(
     "relative h-full w-full",
