@@ -5,7 +5,7 @@ const homemadeApple = Homemade_Apple({
   weight: ["400"],
 });
 
-export default function AlmostReadySign({ level }) {
+export default function AlmostReadySign({ level, className }) {
   const styles = cn(
     "absolute grid place-items-center w-full h-full text-2xl font-bold -rotate-12",
     "bg-gradient-to-r bg-clip-text text-transparent group-hover/bento:scale-150 transition ease-in-out",
@@ -16,7 +16,8 @@ export default function AlmostReadySign({ level }) {
     level === 3 && "from-red-300 to-red-800",
     level === 4 && "from-violet-300 to-violet-900",
 
-    homemadeApple.className
+    homemadeApple.className,
+    className
   );
   return (
     <div className={styles}>
