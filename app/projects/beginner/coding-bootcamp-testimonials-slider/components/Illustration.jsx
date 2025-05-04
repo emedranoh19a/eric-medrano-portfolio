@@ -60,7 +60,7 @@ function Buttons() {
         />
       </div>
       <div
-        className="relative w-8 lg:w-10 aspect-square grid place-items-center"
+        className="cursor pointer relative w-8 lg:w-10 aspect-square grid place-items-center"
         onClick={handleNext}
       >
         <Image
