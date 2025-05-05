@@ -8,7 +8,7 @@ export default function Button({ className, text = "", onClick }) {
     className
   );
   return (
-    <button className={buttonStyles} onClick={onClick}>
+    <button type="submit" className={buttonStyles} onClick={onClick}>
       <div className="absolute opacity-0 transition transition-colors top-0 left-0 w-full h-full group-hover:opacity-50 bg-white" />
       {text}
     </button>

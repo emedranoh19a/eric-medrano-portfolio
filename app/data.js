@@ -733,6 +733,18 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    {
+        title: "Pod Request Access Landing Page",
+        description: "Newbie challenge from Front End Mentor",
+        image: "/projects/newbie/pod-request-access-landing-page/Desktop.jpg",
+        url: "/projects/newbie/pod-request-access-landing-page",
+        level: 0,
+        techs: ["react", "tailwindcss"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
     //Hero.
     //About me.
     //Skills.

@@ -1,20 +1,36 @@
-import clsx from "clsx";
+import { cn } from "@/app/utils/utils";
 import { useFormContext } from "react-hook-form";
+import Button from "./Button";
 
-export default function TextField() {
+export default function TextField({ className }) {
   //State:
-  const { register } = useFormContext();
+  const {
+    register,
+    formState: { errors },
+  } = useFormContext();
   //Style:
-  const inputStyles = clsx(
-    "px-7 py-2 text-white font-semibold bg-[var(--blue-900)] rounded-full"
+  const inputStyles = cn(
+    "px-7 py-2  rounded-full flex justify-between bg-[var(--blue-900)]",
+    errors && " border boder-solid border-[var(--red)]",
+    className
   );
-  //TODO:apply the corresponding validations
-  //TODO:deactivate the enter (?)
-  //TODO: detect error messaages for styling
+
   return (
-    <input
-      className={inputStyles}
-      {...register("email", { pattern: "^[w-.]+@([w-]+.)+[w-]{2,4}$" })}
-    ></input>
+    <div className={inputStyles}>
+      <input
+        className="text-white font-semibold bg-transparent"
+        {...register("email", {
+          required: "Email is required",
+          pattern: {
+            value: /^[\w.-]+@([\w-]+\.)+[\w-]{2,4}$/,
+            message: "Invalid email format",
+          },
+        })}
+      />
+      <Button
+        text="Resquest Access"
+        className="hidden md:inline-block text-sm"
+      />
+    </div>
   );
 }
