@@ -745,6 +745,18 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    {
+        title: "Browser Extensions Manager",
+        description: "Newbie challenge from Front End Mentor",
+        image: "/projects/beginner/browser-extensions-manager-ui-main/desktop-design-dark.jpg",
+        url: "/projects/beginner/browser-extensions-manager-ui-main",
+        level: 1,
+        techs: ["react", "tailwindcss", "zustand"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
     //Hero.
     //About me.
     //Skills.
