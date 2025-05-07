@@ -1,5 +1,6 @@
 import localFont from "next/font/local"
 import { SidebarDemo } from "./components/layout/Sidebar/SidebarDemo"
+import { SmoothCursor } from "./components/layout/SmoothCursor"
 import "./globals.css"
 
 const geistSans = localFont({
@@ -51,7 +52,7 @@ export async function generateMetadata() {
 export default function RootLayout({ children }) {
   return (
     <html>
-
+      <SmoothCursor />
       {/* <Head>
         <link rel="icon" href="/favicon/favicon.png" />
       </Head> */}
