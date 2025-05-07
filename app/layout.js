@@ -52,13 +52,13 @@ export async function generateMetadata() {
 export default function RootLayout({ children }) {
   return (
     <html>
-      <SmoothCursor />
       {/* <Head>
         <link rel="icon" href="/favicon/favicon.png" />
-      </Head> */}
+        </Head> */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
       >
+        <SmoothCursor />
         <main className="max-w-screen min-h-screen h-fit overflow-x-hidden">
 
           <SidebarDemo >
