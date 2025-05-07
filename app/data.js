@@ -1,8 +1,7 @@
 import { BsPersonVcardFill } from "react-icons/bs"
-import { FaCode, FaHome, FaUser } from "react-icons/fa"
+import { FaCode, FaEnvelope, FaHome, FaUser } from "react-icons/fa"
 import { MdOutlineLaptopMac } from "react-icons/md"
 
-import { FaEnvelope } from "react-icons/fa6"
 
 import { TechIcon } from "./components/TechIcons"
 import AchievementsList from "./components/ui/AchievementsList"
@@ -251,7 +250,7 @@ export const projects = [
         url: "https://our-little-secret.netlify.app/theme/2023",
         level: 3,
         techs: ["nextjs", "tailwindcss", "framer-motion"],
-        isImportant: true,
+        isImportant: false,
         isComplete: false,
         isPublic: true,
         isExternalProject: true,
@@ -303,7 +302,7 @@ export const projects = [
         url: "https://natours-for-eric-medrano.netlify.app/",
         level: 2,
         techs: ["html", "sass"],
-        isImportant: false,
+        isImportant: true,
         isComplete: true,
         isPublic: true,
         isExternalProject: true,
@@ -474,7 +473,7 @@ export const projects = [
         url: "https://nexter-for-eric-medrano.netlify.app/",
         level: 2,
         techs: ["html", "sass"],
-        isImportant: true,
+        isImportant: false,
         isComplete: true,
         isPublic: true,
         isExternalProject: true,
@@ -548,7 +547,7 @@ export const projects = [
         url: "https://usepopcorn-for-erichiki.netlify.app",
         level: 2,
         techs: ["react", "styled-components", "api"],
-        isImportant: true,
+        isImportant: false,
         isComplete: true,
         isPublic: true,
         isExternalProject: true,
@@ -716,7 +715,7 @@ export const projects = [
         url: "/projects/beginner/coding-bootcamp-testimonials-slider",
         level: 1,
         techs: ["react", "tailwindcss", "framer-motion"],
-        isImportant: true,
+        isImportant: false,
         isComplete: true,
         isPublic: true,
         isExternalProject: false,
@@ -752,8 +751,20 @@ export const projects = [
         url: "/projects/beginner/browser-extensions-manager-ui-main",
         level: 1,
         techs: ["react", "tailwindcss", "zustand"],
-        isImportant: false,
+        isImportant: true,
         isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
+    {
+        title: "Dictionary",
+        description: "Intermediate challenge from Front End Mentor",
+        image: "/projects/intermediate/dictionary/dictionary-preview.jpg",
+        url: "/projects/intermediate/dictionary",
+        level: 2,
+        techs: ["react", "tailwindcss", "zustand", "api", "tanstack-query"],
+        isImportant: true,
+        isComplete: false,
         isPublic: true,
         isExternalProject: false,
     },
