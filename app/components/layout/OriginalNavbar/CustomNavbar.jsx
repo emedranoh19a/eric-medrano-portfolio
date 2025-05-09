@@ -1,12 +1,14 @@
 "use client";
 
-import { Dock, DockIcon } from "./Dock";
+import { Dock } from "./Dock";
+import DockIcon from "./DockIcon";
+import { FloatingNav } from "./FloatingNavbar";
 
 export default function CustomNavbar() {
   return (
-    <div className="relative">
+    <FloatingNav>
       <Dock direction="middle">
-        <DockIcon>
+        <DockIcon className="mr-20">
           <Icons.gitHub className="size-6" />
         </DockIcon>
         <DockIcon>
@@ -28,7 +30,7 @@ export default function CustomNavbar() {
           <Icons.whatsapp className="size-6" />
         </DockIcon>
       </Dock>
-    </div>
+    </FloatingNav>
   );
 }
 

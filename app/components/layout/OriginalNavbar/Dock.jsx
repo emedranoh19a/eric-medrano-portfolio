@@ -1,8 +1,9 @@
 "use client";
 
 import { cn } from "@/app/utils/utils";
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import React, { useRef } from "react";
+import { motion, useMotionValue } from "framer-motion";
+import React from "react";
+import DockIcon from "./DockIcon";
 
 const DEFAULT_SIZE = 40;
 const DEFAULT_MAGNIFICATION = 60;
@@ -38,7 +39,11 @@ const Dock = React.forwardRef(
       });
     };
     const styles = cn(
-      "supports-backdrop-blur:bg-white/10 supports-backdrop-blur:dark:bg-black/10 mx-auto mt-8 flex h-[58px] w-max items-center justify-center gap-2 rounded-2xl border p-2 backdrop-blur-md",
+      // "mx-auto mt-8 w-max",
+      "h-[58px] p-2",
+      "flex items-center justify-center gap-2",
+      "bg-white/50 backdrop-blur-md",
+      "rounded-2xl border",
       direction === "top" && "items-start",
       direction === "middle" && "items-center",
       direction === "bottom" && "items-end"
@@ -60,51 +65,4 @@ const Dock = React.forwardRef(
 
 Dock.displayName = "Dock";
 
-const DockIcon = ({
-  size = DEFAULT_SIZE,
-  magnification = DEFAULT_MAGNIFICATION,
-  distance = DEFAULT_DISTANCE,
-  mouseX,
-  className,
-  children,
-  ...props
-}) => {
-  const ref = useRef(null);
-  const padding = Math.max(6, size * 0.2);
-  const defaultMouseX = useMotionValue(Infinity);
-
-  const distanceCalc = useTransform(mouseX ?? defaultMouseX, (val) => {
-    const bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
-    return val - bounds.x - bounds.width / 2;
-  });
-
-  const sizeTransform = useTransform(
-    distanceCalc,
-    [-distance, 0, distance],
-    [size, magnification, size]
-  );
-
-  const scaleSize = useSpring(sizeTransform, {
-    mass: 0.1,
-    stiffness: 150,
-    damping: 12,
-  });
-
-  return (
-    <motion.div
-      ref={ref}
-      style={{ width: scaleSize, height: scaleSize, padding }}
-      className={cn(
-        "flex aspect-square cursor-pointer items-center justify-center rounded-full",
-        className
-      )}
-      {...props}
-    >
-      {children}
-    </motion.div>
-  );
-};
-
-DockIcon.displayName = "DockIcon";
-
-export { Dock, DockIcon };
+export { Dock };
