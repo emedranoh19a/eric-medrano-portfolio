@@ -1,5 +1,6 @@
 import localFont from "next/font/local"
-import { SidebarDemo } from "./components/layout/Sidebar/SidebarDemo"
+import CustomNavbar from "./components/layout/OriginalNavbar/CustomNavbar"
+import { navbarItems } from "./components/layout/OriginalNavbar/NavbarItems"
 import { SmoothCursor } from "./components/layout/SmoothCursor"
 import "./globals.css"
 
@@ -59,12 +60,15 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}
       >
         <SmoothCursor />
-        <main className="max-w-screen min-h-screen h-fit overflow-x-hidden">
-
-          <SidebarDemo >
+        <main className="relative max-w-screen min-h-screen h-fit overflow-x-hidden z-0">
+          {/* <NavbarDemo /> */}
+          {/* <SidebarDemo > */}
+          <CustomNavbar navItems={navbarItems} />
+          <div className="min-h-screen w-full relative -z-10">
 
             {children}
-          </SidebarDemo>
+          </div>
+          {/* </SidebarDemo> */}
         </main>
       </body>
     </html >
