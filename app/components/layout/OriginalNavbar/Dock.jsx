@@ -50,7 +50,7 @@ const Dock = React.forwardRef(
     );
 
     return (
-      <motion.div
+      <motion.ul
         ref={ref}
         onMouseMove={(e) => mouseX.set(e.pageX)}
         onMouseLeave={() => mouseX.set(Infinity)}
@@ -58,7 +58,7 @@ const Dock = React.forwardRef(
         className={styles}
       >
         {renderChildren()}
-      </motion.div>
+      </motion.ul>
     );
   }
 );

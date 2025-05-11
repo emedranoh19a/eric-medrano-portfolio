@@ -1,36 +1,43 @@
 "use client";
 
-import { Dock } from "./Dock";
-import DockIcon from "./DockIcon";
-import { FloatingNav } from "./FloatingNavbar";
+import GooeyNav from "./GooeyNav";
+import { navbarItems } from "./NavbarItems";
+import NavbarProvider from "./NavbarProvider";
 
 export default function CustomNavbar() {
   return (
-    <FloatingNav>
-      <Dock direction="middle">
-        <DockIcon className="mr-20">
-          <Icons.gitHub className="size-6" />
-        </DockIcon>
-        <DockIcon>
-          <Icons.gitHub className="size-6" />
-        </DockIcon>
-        <DockIcon>
-          <Icons.gitHub className="size-6" />
-        </DockIcon>
-        <DockIcon>
-          <Icons.gitHub className="size-6" />
-        </DockIcon>
-        <DockIcon>
-          <Icons.googleDrive className="size-6" />
-        </DockIcon>
-        <DockIcon>
-          <Icons.notion className="size-6" />
-        </DockIcon>
-        <DockIcon>
-          <Icons.whatsapp className="size-6" />
-        </DockIcon>
-      </Dock>
-    </FloatingNav>
+    <NavbarProvider>
+      {/* <FloatingNav> */}
+      {/* <Dock direction="middle">
+          <DockIcon className="mr-20">Logo</DockIcon>
+
+          {navbarItems.map((item, index) => (
+            <DockIcon key={index}>
+              <Icons.gitHub className="size-6" />
+            </DockIcon>
+          ))}
+        </Dock> */}
+      <GooeyNav
+        items={navbarItems}
+        particleCount={15}
+        particleDistances={[90, 10, 30, 20, 40]}
+        particleR={20}
+        initialActiveIndex={0}
+        animationTime={300}
+        timeVariance={300}
+        // colors={[1, 2, 3, 1, 2, 3, 1, 4]}
+        colors={[
+          "#1a1a1a",
+          "#333333",
+          "#000000",
+          "#2c2c2c",
+          "#444",
+          "#111",
+          "darkslategray",
+        ]}
+      />{" "}
+      {/* </FloatingNav> */}
+    </NavbarProvider>
   );
 }
 

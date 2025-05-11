@@ -33,7 +33,7 @@ const DockIcon = ({
   });
 
   return (
-    <motion.div
+    <motion.li
       ref={ref}
       style={{ width: scaleSize, height: scaleSize, padding }}
       className={cn(
@@ -43,7 +43,7 @@ const DockIcon = ({
       {...props}
     >
       {children}
-    </motion.div>
+    </motion.li>
   );
 };
 DockIcon.displayName = "DockIcon";
