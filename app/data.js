@@ -768,6 +768,18 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    {
+        title: "Typemaster Pre-launch website",
+        description: "Junior challenge from Front End Mentor",
+        image: "/projects/beginner/typemaster-pre-launch-landing-page/preview.png",
+        url: "/projects/beginner/typemaster-pre-launch-landing-page",
+        level: 1,
+        techs: ["html", "tailwindcss"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
     //Hero.
     //About me.
     //Skills.
