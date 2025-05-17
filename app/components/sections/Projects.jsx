@@ -37,7 +37,14 @@ export default function Projects() {
   const [hovering, setHovering] = useState(false);
   const [hoveredSkill, setHoveredSkill] = useState("");
   //Dataflow:
-  const filteredProjects = projects.filter((project) => {
+
+  // Step 1: Tag the last 3 projects in the *original order* as isNew
+  const projectsWithNewFlag = projects.map((project, index) => {
+    const isNew = index >= projects.length - 3 && project.isComplete;
+    return { ...project, isNew };
+  });
+
+  const filteredProjects = projectsWithNewFlag.filter((project) => {
     if (activeTab.tech === "all") return true;
     return project.techs.includes(activeTab.tech);
   });

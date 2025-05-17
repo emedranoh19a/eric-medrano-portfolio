@@ -1,4 +1,3 @@
-//TODO:
 //Note: Until line 102, everything works good
 import { cn } from "@/app/utils/utils";
 import Image from "next/image";
@@ -7,6 +6,7 @@ import ProjectLink from "../../ProjectLink";
 import PixelCard from "./PixelCard";
 import AlmostReadySign from "./Slots/AlmostReadySign";
 import ImageFg from "./Slots/ImageFg";
+import NewChip from "./Slots/NewChip";
 import Ornamentals from "./Slots/Ornamentals";
 import ProjectDescription from "./Slots/ProjectDescription";
 import ProjectTitle from "./Slots/ProjectTitle";
@@ -29,6 +29,7 @@ export default function ProjectCardDesktop({
   index,
   hovering,
   hoveredSkill,
+  isNew = true,
   ...projectData
 }) {
   //Dataflow:
@@ -101,6 +102,15 @@ export default function ProjectCardDesktop({
       : level === 3
       ? "advanced"
       : "guru";
+
+  const newSparkleColors = {
+    guru: { first: "#a78bfa", second: "#c4b5fd" },
+    advanced: { first: "#be123c", second: "#ef4444" },
+    intermediate: { first: "#fbbf24", second: "#fcd34d" },
+    beginner: { first: "#a3e635", second: "#bef264" },
+    default: { first: "#38bdf8", second: "#bae6fd" },
+  };
+
   return (
     <ProjectLink
       className={containerStyles}
@@ -109,7 +119,7 @@ export default function ProjectCardDesktop({
       isExternalProject={isExternalProject}
     >
       <ZCardContainer
-        containerClassName="h-full w-full"
+        containerClassName="relative h-full w-full"
         className="h-full w-full"
       >
         <ZCardBody className={zCardBodyStyles}>
@@ -131,7 +141,7 @@ export default function ProjectCardDesktop({
             />
             {!isComplete && (
               <ZCardItem
-                translateZ="150"
+                translateZ="500"
                 className="w-full h-full absolute top-0 left-0"
               >
                 <AlmostReadySign level={level} />
@@ -142,6 +152,11 @@ export default function ProjectCardDesktop({
               techs={techs}
               level={level}
             />
+            {isNew && (
+              <NewChip colors={newSparkleColors[variant]} sparklesCount={5}>
+                New!
+              </NewChip>
+            )}
           </ZCardItem>
           <ZCardItem
             translateZ="50"

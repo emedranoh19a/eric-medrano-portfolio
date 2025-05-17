@@ -780,6 +780,18 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    {
+        title: "Modern Art Gallery website",
+        description: "Junior challenge from Front End Mentor",
+        image: "/projects/other/modern-art-gallery_preview.png",
+        url: "https://art-gallery-for-eric-medrano.netlify.app/",
+        level: 1,
+        techs: ["nextjs", "tailwindcss"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: true,
+    },
     //Hero.
     //About me.
     //Skills.
