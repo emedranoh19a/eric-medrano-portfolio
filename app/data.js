@@ -7,12 +7,14 @@ import { TechIcon } from "./components/TechIcons"
 import AchievementsList from "./components/ui/AchievementsList"
 
 //TODO: Add languages functionality.
+//TODO: Mover los proyectos a otro lugar.
 export const timelineData = [
     // {/**1997
     // El día de mi nacimiento
     //Bloques: Desde 200X hasta 2010.
     //secundaria
     //preparatoria
+
     //vida universitaria. Preferiblemente solo CIT. Baito de Narita.
     //Vida profesional, ocupación, etc.
     {
@@ -217,10 +219,21 @@ export const sidebarLinks = [
 //3. advanced.
 //4. guru.
 
+//TODO: título en japonés.
+//TODO: título en español. 
+
+//Descripción en japonés. 
+//Descripción en español.
+//Cortar la descripción. 
+//Cortar el título.
 export const projects = [
     {
         title: "Keeper",
-        description: "Final React project from The Complete Web Development Bootcamp by Angela Yu.",
+        titleJp: "Keeper",//1
+        titleEs: "Keeper",//2
+        description: "Project from The Complete Web Development Bootcamp by Angela Yu.",
+        descriptionJp: "WEB開発ブートキャンプ-React演習 (Angela Yu)",
+        descriptionEs: "Proyecto del Bootcamp de Desarrollo Web por Angela Yu",
         image: "/projects/other/keeper_preview.png",
         url: "https://cool-centaur-8a3c2e.netlify.app/",
         level: 0,
@@ -233,7 +246,11 @@ export const projects = [
 
     {
         title: "The Wild Oasis",
-        description: "Admin page, from the Ultimate React course by Jonas Schmedtmann.",
+        titleJp: "The Wild Oasis",//1
+        titleEs: "The Wild Oasis",//2
+        description: "Project from The Ultimate React Course by Jonas Schmedtmann.",
+        descriptionJp: "Reactのコース-管理画面プロジェクト (Jonas Schmedtmann)",
+        descriptionEs: "Proyecto del curso de React por Jonas Schmedtmann",
         image: "/projects/other/the-wild-oasis_preview.png",
         url: "https://the-wild-oasis-for-eric-medrano.netlify.app/login",
         level: 4,
@@ -243,22 +260,27 @@ export const projects = [
         isPublic: true,
         isExternalProject: true,
     },
-    {
-        title: "REDA舞神楽 website",
-        description: "A real project for the Yosakoi Soran team 「REDA舞神楽」.",
-        image: "/projects/other/reda-website_preview.png",
-        url: "https://our-little-secret.netlify.app/theme/2023",
-        level: 3,
-        techs: ["nextjs", "tailwindcss", "framer-motion"],
-        isImportant: false,
-        isComplete: false,
-        isPublic: true,
-        isExternalProject: true,
-    },
+    // {
+
+    //     title: "REDA舞神楽 website",
+    //     description: "A real project for the Yosakoi Soran team 「REDA舞神楽」.",
+    //     image: "/projects/other/reda-website_preview.png",
+    //     url: "https://our-little-secret.netlify.app/theme/2023",
+    //     level: 3,
+    //     techs: ["nextjs", "tailwindcss", "framer-motion"],
+    //     isImportant: false,
+    //     isComplete: false,
+    //     isPublic: true,
+    //     isExternalProject: true,
+    // },
 
     {
         title: "The React Quiz",
-        description: "Redux, from the Ultimate React course from Jonas Schmedtmann.",
+        titleJp: "Reactのクイズ",//1
+        titleEs: "El Quiz de React",//2
+        description: "Redux project, from the Ultimate React course from Jonas Schmedtmann.",
+        descriptionJp: "Reactのコース-Redux演習 (Jonas Schmedtmann)",
+        descriptionEs: "Proyecto de Redux, de Jonas Schmedtmann",
         image: "/projects/other/react-quiz_preview.png",
         url: "https://react-quiz-for-erichiki.netlify.app/",
         level: 2,
@@ -272,7 +294,12 @@ export const projects = [
 
     {
         title: "Social Links Profile",
-        description: "Newbie challenge from Front End Mentor",
+        titleJp: "プロファイルのSNS",//1
+        titleEs: "Enlaces de Perfil",//2
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
+
         image: "/projects/newbie/social-links-profile/desktop-preview.jpg",
         url: "/projects/newbie/social-links-profile",
         level: 0,
@@ -284,7 +311,11 @@ export const projects = [
     },
     {
         title: "Omnifood",
-        description: "Project from HTML & CSS course from Jonas Schmedtmann.",
+        titleJp: "Omnifood",
+        titleEs: "Omnifood",
+        description: "Final project from the HTML & CSS course by Jonas Schmedtmann.",
+        descriptionJp: "HTML+CSS基礎コース(Jonas Schmedtmann)のプロジェクト",
+        descriptionEs: "Proyecto del curso de HTML y CSS, por Jonas Schmedtmann.",
         image: "/projects/other/omnifood_preview.png",
         url: "https://omnifood-for-eric-medrano.netlify.app/",
         level: 2,
@@ -297,7 +328,11 @@ export const projects = [
     },
     {
         title: "Natours",
-        description: "Overview of Sass capabilities. From the Advanced CSS and Sass course from Jonas Schmedtmann.",
+        titleJp: "Natours",
+        titleEs: "Natours",
+        description: "Sass Architecture project from the Advanced CSS/Sass course by Jonas Schmedtmann.",
+        descriptionJp: "CSS応用・Sassのコース(Jonas Schmedtmann)-Sass アーキテクチャー",
+        descriptionEs: "Proyecto de Arquitectura Sass del curso de CSS Avanzado y Sass, por Jonas Schmedtmann.",
         image: "/projects/other/natours_preview.png",
         url: "https://natours-for-eric-medrano.netlify.app/",
         level: 2,
@@ -309,7 +344,11 @@ export const projects = [
     },
     {
         title: "Blog Preview Card",
-        description: "Newbie challenge from Front End Mentor",
+        titleJp: "ブログプレビューカード",//1
+        titleEs: "Previsualización de Blog",//2
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/newbie/blog-preview-card/desktop-design.jpg",
         url: "/projects/newbie/blog-preview-card",
         level: 0,
@@ -321,7 +360,11 @@ export const projects = [
     },
     {
         title: "FAQ accordion",
-        description: "Newbie challenge from Front End Mentor",
+        titleJp: "FAQアコーディオン",//1
+        titleEs: "Acordeón de preguntas",//2
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/newbie/faq-accordion/desktop-design.jpg",
         url: "/projects/newbie/faq-accordion",
         level: 0,
@@ -333,7 +376,11 @@ export const projects = [
     },
     {
         title: "Product Preview Card",
-        description: "Newbie challenge from Front End Mentor",
+        titleJp: "商品PVカード",//1
+        titleEs: "Previsualización de producto",//2
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/newbie/product-preview-card/desktop-design.jpg",
         url: "/projects/newbie/product-preview-card",
         level: 0,
@@ -344,8 +391,12 @@ export const projects = [
         isExternalProject: false,
     },
     {
-        title: "Interactive Rating Component",
-        description: "Newbie challenge from Front End Mentor",
+        title: "Interactive Rating",
+        titleJp: "インタラクティブ評価",//1
+        titleEs: "Evaluación interactiva",//2
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/newbie/interactive-rating-component/desktop-design.jpg",
         url: "/projects/newbie/interactive-rating-component",
         level: 0,
@@ -357,8 +408,12 @@ export const projects = [
     },
 
     {
-        title: "QR Code Component",
-        description: "Newbie challenge from Front End Mentor",
+        title: "QR Code",
+        titleJp: "QR コード",//1
+        titleEs: "Código QR",//2
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/newbie/qr-code-component/desktop-design.jpg",
         url: "/projects/newbie/qr-code-component",
         level: 0,
@@ -370,8 +425,12 @@ export const projects = [
     },
 
     {
-        title: "NFT Preview Card Component",
-        description: "Newbie challenge from Front End Mentor",
+        title: "NFT Preview Card",
+        titleJp: "NFT PVカード",//1
+        titleEs: "Previsualización de NFT",//2
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/newbie/nft-preview-card-component/desktop-design.jpg",
         url: "/projects/newbie/nft-preview-card-component",
         level: 0,
@@ -383,7 +442,11 @@ export const projects = [
     },
     {
         title: "Base Apparel Coming Soon Page",
-        description: "Newbie challenge from Front End Mentor",
+        titleJp: "Base Apparel 近日公開ページ",
+        titleEs: "Base Apparel próximamente",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/newbie/base-apparel-coming-soon-page/desktop-design.jpg",
         url: "/projects/newbie/base-apparel-coming-soon-page",
         level: 0,
@@ -394,8 +457,12 @@ export const projects = [
         isExternalProject: false,
     },
     {
-        title: "Order Summary Component",
-        description: "Newbie challenge from Front End Mentor",
+        title: "Order Summary",
+        titleJp: "注文概要",
+        titleEs: "Resumen de pedido",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/newbie/order-summary-component/desktop-design.jpg",
         url: "/projects/newbie/order-summary-component",
         level: 0,
@@ -407,6 +474,11 @@ export const projects = [
     },
     {
         title: "Stats Preview Card",
+        titleJp: "実績PVカード",
+        titleEs: "Previsualización de Stats",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         description: "Newbie challenge from Front End Mentor",
         image: "/projects/newbie/stats-preview-card/desktop-design.jpg",
         url: "/projects/newbie/stats-preview-card",
@@ -418,8 +490,12 @@ export const projects = [
         isExternalProject: false,
     },
     {
-        title: "Profile Card Component",
-        description: "Newbie challenge from Front End Mentor",
+        title: "Profile Card",
+        titleJp: "プロファイルカード",
+        titleEs: "Tarjeta de Perfil",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/newbie/profile-card-component/desktop-design.jpg",
         url: "/projects/newbie/profile-card-component",
         level: 0,
@@ -430,8 +506,12 @@ export const projects = [
         isExternalProject: false,
     },
     {
-        title: "Social Proof Section",
-        description: "Newbie challenge from Front End Mentor",
+        title: "Social Proof",
+        titleJp: "ソーシャル プルーフ",
+        titleEs: "Evidencia social",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/newbie/social-proof-section/desktop-design.jpg",
         url: "/projects/newbie/social-proof-section",
         level: 0,
@@ -442,8 +522,12 @@ export const projects = [
         isExternalProject: false,
     },
     {
-        title: "Article Preview Component",
-        description: "Newbie challenge from Front End Mentor",
+        title: "Article Preview",
+        titleJp: "記事PV",
+        titleEs: "Previsualización de artículo",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/newbie/article-preview-component/desktop-design.jpg",
         url: "/projects/newbie/article-preview-component",
         level: 0,
@@ -455,7 +539,11 @@ export const projects = [
     },
     {
         title: "Trillo",
-        description: "Flexbox project with Sass. From the Advanced CSS and Sass course from Jonas Schmedtmann.",
+        titleJp: "Trillo",
+        titleEs: "Trillo",
+        description: "Flexbox project from the Advanced CSS/Sass course by Jonas Schmedtmann.",
+        descriptionJp: "CSS応用・Sassのコース(Jonas Schmedtmann)-フレックスボックス",
+        descriptionEs: "Proyecto de Flexbox del curso de CSS Avanzado y Sass, por Jonas Schmedtmann.",
         image: "/projects/other/trillo_preview.png",
         url: "https://trillo-for-eric-medrano.netlify.app/",
         level: 2,
@@ -465,10 +553,13 @@ export const projects = [
         isPublic: true,
         isExternalProject: true,
     },
-
     {
         title: "Nexter",
-        description: "CSS-Grid projects with Sass. From the Advanced CSS and Sass course from Jonas Schmedtmann.",
+        titleJp: "Nexter",
+        titleEs: "Nexter",
+        description: "CSS Grid project from the Advanced CSS/Sass course by Jonas Schmedtmann.",
+        descriptionJp: "CSS応用・Sassのコース(Jonas Schmedtmann)-CSS Grid",
+        descriptionEs: "Proyecto de CSS Grid del curso de CSS Avanzado y Sass, por Jonas Schmedtmann.",
         image: "/projects/other/nexter_preview.png",
         url: "https://nexter-for-eric-medrano.netlify.app/",
         level: 2,
@@ -480,7 +571,11 @@ export const projects = [
     },
     {
         title: "Four Card Feature Section",
-        description: "Newbie challenge from Front End Mentor",
+        titleJp: "特徴カードの４枚",
+        titleEs: "Cuatro cartas de cualidades",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/newbie/four-card-feature-section/desktop-design.jpg",
         url: "/projects/newbie/four-card-feature-section",
         level: 0,
@@ -491,8 +586,12 @@ export const projects = [
         isExternalProject: false,
     },
     {
-        title: "Results Summary Component",
-        description: "Newbie challenge from Front End Mentor",
+        title: "Results Summary",
+        titleJp: "結果一覧",
+        titleEs: "Resultados",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/newbie/results-summary-component/desktop-design.jpg",
         url: "/projects/newbie/results-summary-component",
         level: 0,
@@ -502,11 +601,13 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-
-
     {
-        title: "Clipboard website",
-        description: "A website to explore TailwindCSS. The project is extracted by the TailwindCSS course by Brad Traversy.",
+        title: "Clipboard",
+        titleJp: "Clipboard",
+        titleEs: "Clipboard",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/beginner/clipboard/desktop-preview.png",
         url: "/projects/beginner/clipboard",
         level: 1,
@@ -518,7 +619,11 @@ export const projects = [
     },
     {
         title: "Loopstudios",
-        description: "A website to explore TailwindCSS. The project is extracted by the TailwindCSS course by Brad Traversy.",
+        titleJp: "Loopstudios",
+        titleEs: "Loopstudios",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/beginner/loopstudios/desktop-preview.png",
         url: "/projects/beginner/loopstudios",
         level: 1,
@@ -530,7 +635,11 @@ export const projects = [
     },
     {
         title: "Shortly",
-        description: "A website to explore TailwindCSS. The project is extracted by the TailwindCSS course by Brad Traversy.",
+        titleJp: "Shortly",
+        titleEs: "Shortly",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/beginner/shortly/desktop-preview.png",
         url: "/projects/beginner/shortly",
         level: 1,
@@ -541,8 +650,12 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        description: "Custom hooks project from the ReactJS course by Jonas Schmedtmann.",
+        descriptionJp: "ReactJSのコース(Jonas Schmedtmann)-カスタムフック",
+        descriptionEs: "Proyecto de hooks personalizados del curso de ReactJS, por Jonas Schmedtmann.",
         title: "usePopcorn",
-        description: "A simple app to dive into custom hooks. From The Ultimate React Course by Jonas Schmedtmann.",
+        titleJp: "usePopcorn",
+        titleEs: "usePopcorn",
         image: "/projects/other/use-popcorn.png",
         url: "https://usepopcorn-for-erichiki.netlify.app",
         level: 2,
@@ -554,7 +667,11 @@ export const projects = [
     },
     {
         title: "Bento Grid",
-        description: "Junior challenge from Front End Mentor.",
+        titleJp: "弁当グリッド",
+        titleEs: "Grid de Bento",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/beginner/bento-grid/desktop-design.jpg",
         url: "/projects/beginner/bento-grid",
         level: 1,
@@ -566,7 +683,11 @@ export const projects = [
     },
     {
         title: "Advice generator",
-        description: "Junior challenge from Front End Mentor.",
+        titleJp: "アドバイスジェネレーター",
+        titleEs: "Generador de consejos",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/beginner/advice-generator/desktop-design.jpg",
         url: "/projects/beginner/advice-generator",
         level: 1,
@@ -578,7 +699,11 @@ export const projects = [
     },
     {
         title: "Age Calculator",
-        description: "Junior challenge from Front End Mentor.",
+        titleJp: "年齢計算機",
+        titleEs: "Calculadora de la edad",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/beginner/age-calculator/images/desktop-completed.jpg",
         url: "/projects/beginner/age-calculator",
         level: 1,
@@ -590,7 +715,11 @@ export const projects = [
     },
     {
         title: "Mortgage Repayment Calculator",
-        description: "Junior challenge from Front End Mentor.",
+        titleJp: "住宅ローン返済計算機",
+        titleEs: "Calculadora de pago hipotecario",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/beginner/mortgage-repayment-calculator/images/desktop-design-empty.jpg",
         url: "/projects/beginner/mortgage-repayment-calculator",
         level: 1,
@@ -602,7 +731,11 @@ export const projects = [
     },
     {
         title: "Product List with Cart",
-        description: "Junior challenge from Front End Mentor.",
+        titleJp: "商品リストとショッピングカート",
+        titleEs: "Lista de productos con carrito de compra",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/beginner/product-list-with-cart/desktop-design-selected.jpg",
         url: "/projects/beginner/product-list-with-cart",
         level: 1,
@@ -614,7 +747,11 @@ export const projects = [
     },
     {
         title: "Notifications Page",
-        description: "Junior challenge from Front End Mentor.",
+        titleJp: "通知ページ",
+        titleEs: "Página de notificaciones",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/beginner/notifications-page/desktop-design.jpg",
         url: "/projects/beginner/notifications-page",
         level: 1,
@@ -625,8 +762,12 @@ export const projects = [
         isExternalProject: false,
     },
     {
-        title: "Expenses Chart Component",
-        description: "Junior challenge from Front End Mentor.",
+        title: "Expenses Chart",
+        titleJp: "支出チャート",
+        titleEs: "Gráfica de gastos",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/beginner/expenses-chart-component/desktop-design.jpg",
         url: "/projects/beginner/expenses-chart-component",
         level: 1,
@@ -649,12 +790,16 @@ export const projects = [
     //     isExternalProject: false,
     // },
     {
-        title: "Recipe Page",
-        description: "Newbie challenge from Front End Mentor.",
+        title: "Recipe",
+        titleJp: "レシピ",
+        titleEs: "Receta",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/newbie/recipe-page/desktop-design.jpg",
         url: "/projects/newbie/recipe-page",
         level: 0,
-        techs: ["html", "tailwindcss", "zustand"],
+        techs: ["html", "tailwindcss"],
         isImportant: true,
         isComplete: true,
         isPublic: true,
@@ -674,7 +819,11 @@ export const projects = [
     // },
     {
         title: "Fylo",
-        description: "Beginner challenge from Front End Mentor.",
+        titleJp: "Fylo",
+        titleEs: "Fylo",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/beginner/fylo/desktop-preview.png",
         url: "/projects/beginner/fylo",
         level: 1,
@@ -686,7 +835,11 @@ export const projects = [
     },
     {
         title: "Interactive Card Details",
-        description: "Beginner challenge from Front End Mentor.",
+        titleJp: "インタラクティブカードの詳細",
+        titleEs: "Detalles de tarjeta interactiva",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/beginner/interactive-card-details-form/desktop-design.jpg",
         url: "/projects/beginner/interactive-card-details-form",
         level: 1,
@@ -697,8 +850,12 @@ export const projects = [
         isExternalProject: false,
     },
     {
-        title: "Workit Landing Page",
-        description: "Newbie challenge from Front End Mentor.",
+        title: "Workit",
+        titleJp: "Workit",
+        titleEs: "Workit",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/newbie/workit-landing-page/Tablet.jpg",
         url: "/projects/newbie/workit-landing-page",
         level: 0,
@@ -710,7 +867,11 @@ export const projects = [
     },
     {
         title: "Coding Bootcamp Testimonials",
-        description: "Junior challenge from Front End Mentor",
+        titleJp: "コーディングブートキャンプのテスティモニアル",
+        titleEs: "Testimoniales del Coding Bootcamp",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/beginner/coding-bootcamp-testimonials-slider/images/desktop-design-slide-1.jpg",
         url: "/projects/beginner/coding-bootcamp-testimonials-slider",
         level: 1,
@@ -722,7 +883,11 @@ export const projects = [
     },
     {
         title: "Skilled E-learning Landing Page",
-        description: "Newbie challenge from Front End Mentor",
+        titleJp: "EラーニングLP",
+        titleEs: "Página de e-learning",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/newbie/skilled-elearning-landing-page/preview.png",
         url: "/projects/newbie/skilled-elearning-landing-page",
         level: 0,
@@ -733,8 +898,12 @@ export const projects = [
         isExternalProject: false,
     },
     {
-        title: "Pod Request Access Landing Page",
-        description: "Newbie challenge from Front End Mentor",
+        title: "Pod Request Access LP",
+        titleJp: "PODアクセスリクエストLP",
+        titleEs: "Página de acceso a POD",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/newbie/pod-request-access-landing-page/Desktop.jpg",
         url: "/projects/newbie/pod-request-access-landing-page",
         level: 0,
@@ -746,7 +915,11 @@ export const projects = [
     },
     {
         title: "Browser Extensions Manager",
-        description: "Newbie challenge from Front End Mentor",
+        titleJp: "ブラウザー拡張管理",
+        titleEs: "Gestión de extensiones",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/beginner/browser-extensions-manager-ui-main/desktop-design-dark.jpg",
         url: "/projects/beginner/browser-extensions-manager-ui-main",
         level: 1,
@@ -758,7 +931,11 @@ export const projects = [
     },
     {
         title: "Dictionary",
-        description: "Intermediate challenge from Front End Mentor",
+        titleJp: "辞書",
+        titleEs: "Diccionario",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/intermediate/dictionary/dictionary-preview.jpg",
         url: "/projects/intermediate/dictionary",
         level: 2,
@@ -769,8 +946,12 @@ export const projects = [
         isExternalProject: false,
     },
     {
-        title: "Typemaster Pre-launch website",
-        description: "Junior challenge from Front End Mentor",
+        title: "Typemaster Pre-launch Website",
+        titleJp: "Typemaster近日公開wEBサイト",
+        titleEs: "Prelanzamiento de Typemaster",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/beginner/typemaster-pre-launch-landing-page/preview.png",
         url: "/projects/beginner/typemaster-pre-launch-landing-page",
         level: 1,
@@ -782,7 +963,11 @@ export const projects = [
     },
     {
         title: "Modern Art Gallery website",
-        description: "Junior challenge from Front End Mentor",
+        titleJp: "美術ギャラリーWebサイト",
+        titleEs: "Galería de arte moderno",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/other/modern-art-gallery_preview.png",
         url: "https://art-gallery-for-eric-medrano.netlify.app/",
         level: 1,

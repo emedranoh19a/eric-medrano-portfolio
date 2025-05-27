@@ -5,7 +5,7 @@ const spaceMono = Space_Mono({ subsets: ["latin"], weight: ["700"] });
 export default function StylesSetup({ children }) {
   return (
     <div
-      className={`w-full min-h-screen ${spaceMono.className}`}
+      className={`w-full min-h-screen grid place-items-center ${spaceMono.className} bg-[var(--grey-200)]`}
       style={{
         //Grey
         "--grey-900": "#00474B",

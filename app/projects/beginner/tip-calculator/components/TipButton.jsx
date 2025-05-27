@@ -1,11 +1,12 @@
 import { cn } from "@/app/utils/utils";
 
 export default function TipButton({
-  text,
+  value,
   variant = "normal",
   className,
   ...otherProps
 }) {
+  //Style:
   const buttonStyles = cn(
     "rounded-[5px] py-2 px-4",
     variant === "normal" && "bg-[var(--green-900)] text-[var(--grey-50)]",
@@ -15,8 +16,8 @@ export default function TipButton({
     className
   );
   return (
-    <button as="button" className={buttonStyles} {...otherProps}>
-      {text}
+    <button className={buttonStyles} {...otherProps}>
+      {value}%
     </button>
   );
 }

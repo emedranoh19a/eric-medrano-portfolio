@@ -1,5 +1,3 @@
-//TODO:
-//Note: Until line 102, everything works good
 import ProjectCardDesktop from "./ProjectCardDesktop";
 import ProjectCardMobile from "./ProjectCardMobile";
 

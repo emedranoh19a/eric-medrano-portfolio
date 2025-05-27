@@ -1,10 +1,17 @@
 "use client";
 
 import { cn } from "@/app/utils/utils";
+import localFont from "next/font/local";
 import Cat from "../Cat";
-import TextGenerate from "../effects/TextGenerate";
-import FadedText from "../ui/FadedText";
-import MainTitle from "../ui/MainTitle";
+import BlurText from "../effects/BlurText";
+import TextSwapper from "../effects/TextSwapper";
+
+const hamiltone = localFont({
+  src: "../../fonts/hamiltone.otf",
+  style: "normal",
+  weight: "400",
+  variable: "normal",
+});
 
 export default function Header() {
   //State:
@@ -30,31 +37,74 @@ export default function Header() {
       <div className={catContainerStyles}>
         <Cat className={catStyles} />
       </div>
-      {/* <div className={catContainer}> */}
-      {/* <div className={catPosition}> */}
-      {/* <Cat className={catStyles} /> */}
-      {/* </div> */}
     </section>
   );
 }
 
-function Content() {
+function Content({ language = "en" }) {
+  const words = {
+    en: [
+      "developer",
+      "translator",
+      "mentor",
+      "supporter",
+      "coder",
+      "leader",
+      "traveler",
+      "creator",
+      "dreamer",
+      "challenger",
+      "student",
+      "fighter",
+      "mentor",
+      "rival",
+      "pianist",
+      "dancer",
+    ],
+    jp: [],
+    es: [],
+  };
   return (
     <div className="relative mt-4 lg:mt-20">
-      <MainTitle
-        className="text-center text-4xl font-semibold -tracking-widest  text-black  md:text-8xl md:leading-[6rem] md:tracking-wide"
+      {/* <MainTitle
+        className={`${hamiltone.className} text-center text-5xl md:text-8xl lg:text-9xl font-semibold -tracking-widest font-bold text-black   md:leading-[6rem] md:tracking-wide`}
         text="Eric Medrano"
+      /> */}
+      {/* <TextAnimate
+        className={`${hamiltone.className} text-center text-5xl md:text-8xl lg:text-9xl font-semibold -tracking-widest font-bold text-black   md:leading-[6rem] md:tracking-wide`}
+        text="Eric Medrano"
+      >
+        {" "}
+        Eric Medrano{" "}
+      </TextAnimate> */}
+      <BlurText
+        text="Eric Medrano"
+        delay={150}
+        animateBy="letters"
+        direction="bottom"
+        // onAnimationComplete={handleAnimationComplete}
+        className={`${hamiltone.className} mx-auto justify-center text-center text-6xl md:text-8xl lg:text-9xl font-semibold -tracking-widest font-bold text-black   md:leading-[6rem] md:tracking-wide`}
       />
-      <FadedText as="h3" className="text-center text-xl md:text-4xl mb-5">
-        I turn coffee into code
-      </FadedText>
+      <div className="h-40 flex justify-center items-center px-4">
+        <div className="relative text-xl md:text-2xl lg:text-4xl mx-auto text-neutral-800 -translate-x-8 md:-translate-x-14">
+          Sometimes, a {"    "}
+          <div className="absolute w-fit h-fit right-0 top-1/2 -translate-y-1/2 translate-x-full">
+            <TextSwapper
+              words={words[language]}
+              className="text-5xl md:text-7xl lg:text-9xl"
+            />{" "}
+          </div>
+          <br />
+        </div>
+      </div>
+      {/* </div> */}
       {/* //Set a max-width for this */}
-      <TextGenerate
+      {/* <TextGenerate
         className="block mx-auto text-center text-pretty max-w-md"
         // words="Let's have a cup of coffee, and unuderstand each other throughout this page."
         words="Take a paws! Let's understand each other troughout this page."
         filter={false}
-      />
+      /> */}
       {/* <BoxReveal
         className="block mx-auto text-center"
         delay={1}

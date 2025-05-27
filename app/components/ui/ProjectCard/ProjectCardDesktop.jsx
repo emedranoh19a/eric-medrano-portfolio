@@ -51,7 +51,7 @@ export default function ProjectCardDesktop({
     "hidden sm:flex",
     "group/bento relative",
     "flex-col justify-start w-full h-full gap-2 pb-auto",
-    "bg-transparent",
+    // "bg-white/50 shadow-2xl shadow-neutral-200/70 rounded-2xl",
     // "overflow-hidden",
     // "border border-neutral-100 rounded-xl ",
     // "transition duration-200 shadow-input",
@@ -85,7 +85,8 @@ export default function ProjectCardDesktop({
     // !isComplete && "backdrop-blue-sm"
   );
   const zCardBodyStyles = cn(
-    " relative group/card border-black/[0.1] rounded-xl p-4 border ",
+    //TODO:
+    " relative group/card border-black/[0.1] rounded-xl p-4 border bg-white/30",
     level === 0 && "hover:shadow-sky-500/5",
     level === 1 && "hover:shadow-lime-500/5",
     level === 2 && "hover:shadow-yellow-500/5",
@@ -120,7 +121,7 @@ export default function ProjectCardDesktop({
     >
       <ZCardContainer
         containerClassName="relative h-full w-full"
-        className="h-full w-full"
+        className="h-full w-full shadow-2xl shadow-neutral-900/20 rounded-xl"
       >
         <ZCardBody className={zCardBodyStyles}>
           <PixelCard

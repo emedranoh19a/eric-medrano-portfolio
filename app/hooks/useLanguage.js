@@ -1,21 +1,9 @@
-"use client"
-import { createContext, useContext } from "react"
+import { create } from "zustand"
 
-const LanguageContext = createContext(null)
+const initialLanguage = "jp"
 
-export default function LanguageProvider() {
-    //State: 
-    const [language, setLanguage] = useState("en")
+export const useLanguage = create((set) => ({
+    language: initialLanguage,
+    setLanguage: (newLang) => set(() => ({ language: newLang }))
 
-    //TODO: Extract with an effect the language set in the local storage.
-    //TODO: set the language in local storage.
-    //Handle state
-    return <LanguageContext.Provider value={{ language, setLanguage }}>
-        {children}
-    </LanguageContext.Provider>
-}
-
-export function useLanguage() {
-    const { language, setLanguage } = useContext(LanguageContext)
-    return { language, setLanguage }
-}
+}))
