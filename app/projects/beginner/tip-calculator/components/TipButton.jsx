@@ -8,7 +8,7 @@ export default function TipButton({
 }) {
   //Style:
   const buttonStyles = cn(
-    "rounded-[5px] py-2 px-4",
+    "rounded-[5px] py-2 px-4  w-full",
     variant === "normal" && "bg-[var(--green-900)] text-[var(--grey-50)]",
     variant === "selected" && "bg-[var(--green-400)] text-[var(--green-900)]",
     //This is not a variant, but a pseudoclass.

@@ -56,7 +56,6 @@ function Content({ language = "en" }) {
       "challenger",
       "student",
       "fighter",
-      "mentor",
       "rival",
       "pianist",
       "dancer",

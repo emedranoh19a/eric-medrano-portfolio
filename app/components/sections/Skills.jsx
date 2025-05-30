@@ -39,7 +39,7 @@ function SkillsContent() {
       </BoxReveal>
       <BoxReveal>
         <Subheading>
-          A plethora of <Span>abilities</Span> in Motion.
+          {/*  */}A plethora of <Span>abilities</Span> in Motion.
         </Subheading>
       </BoxReveal>
 
