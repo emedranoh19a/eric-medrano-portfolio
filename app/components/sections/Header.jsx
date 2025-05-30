@@ -7,7 +7,7 @@ import BlurText from "../effects/BlurText";
 import TextSwapper from "../effects/TextSwapper";
 
 const hamiltone = localFont({
-  src: "../../fonts/hamiltone.otf",
+  src: "../../fonts/Hamiltone.otf",
   style: "normal",
   weight: "400",
   variable: "normal",
