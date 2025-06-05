@@ -12,6 +12,7 @@ const DefaultCursorSVG = () => {
       viewBox="0 0 50 54"
       fill="none"
       style={{ scale: 0.5 }}
+      className="no-hover:hidden"
     >
       <g filter="url(#filter0_d_91_7928)">
         <path
