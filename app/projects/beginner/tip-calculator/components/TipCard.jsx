@@ -1,7 +1,12 @@
+"use client";
 import clsx from "clsx";
+import { useFormContext } from "react-hook-form";
 import Text from "./Text";
 
 export default function TipCard() {
+  //State:
+  const { results } = useFormContext();
+  //Style:
   const containerClasses = clsx(
     "bg-[var(--green-900)]",
     "p-6 sm:px-9",
@@ -11,8 +16,8 @@ export default function TipCard() {
   return (
     <div className={containerClasses}>
       <div>
-        <TipCardDetail text="Tip Amount" />
-        <TipCardDetail text="Total" />
+        <TipCardDetail text="Tip Amount" value={results.tipAmount} />
+        <TipCardDetail text="Total" value={results.total} />
       </div>
       <ResetButton />
     </div>
@@ -21,7 +26,7 @@ export default function TipCard() {
 
 function TipCardDetail({ text, value }) {
   return (
-    <div className="flex justify-between mb-3">
+    <div className="flex justify-between mb-3 min-w-60">
       <div className="flex flex-col">
         <Text as="span" preset={5} className="text-white">
           {text}
@@ -34,15 +39,22 @@ function TipCardDetail({ text, value }) {
         as="span"
         className=" ml-14 lg:ml-0 text-[var(--green-400)] font-bold font-mono tracking-[-0.67px] text-[32px]"
       >
-        $4.00
+        ${parseFloat(value).toFixed(2)}
       </Text>
     </div>
   );
 }
 
 function ResetButton() {
+  const { reset, setResults } = useFormContext();
   return (
-    <button className="w-full uppercase rounded-[5px] py-2 px-4 bg-[var(--green-400)] text-[var(--green-900)] active:bg-[var(--green-200)] active:text-[var(--green-900)]">
+    <button
+      onClick={() => {
+        setResults({ tipAmount: 0, total: 0 });
+        reset();
+      }}
+      className="w-full uppercase rounded-[5px] py-2 px-4 bg-[var(--green-400)] text-[var(--green-900)] active:bg-[var(--green-200)] active:text-[var(--green-900)]"
+    >
       Reset
     </button>
   );

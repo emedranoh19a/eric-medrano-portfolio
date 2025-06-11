@@ -23,7 +23,7 @@ export default function ProjectImage({
     // !isComplete && "backdrop-blue-sm"
   );
   const imageStyles = cn(
-    "object-cover object-top group-hover/bento:scale-110 transition",
+    "object-cover object-top scale-120 group-hover/bento:scale-75 transition",
     !isComplete && "blur-md"
   );
   const projectAlt = `Preview image for the ${

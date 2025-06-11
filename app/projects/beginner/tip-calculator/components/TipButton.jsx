@@ -6,6 +6,8 @@ export default function TipButton({
   className,
   ...otherProps
 }) {
+  //State:
+
   //Style:
   const buttonStyles = cn(
     "rounded-[5px] py-2 px-4  w-full",

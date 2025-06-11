@@ -977,6 +977,22 @@ export const projects = [
         isPublic: true,
         isExternalProject: true,
     },
+    {
+        title: "Tip Calculator",
+        titleJp: "チップ計算機",
+        titleEs: "Calculadora de Propina",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
+        image: "/projects/beginner/tip-calculator/tip-calculator-preview.jpg",
+        url: "/projects/beginner/tip-calculator",
+        level: 1,
+        techs: ["react", "react-hook-form", "tailwindcss"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
     //Hero.
     //About me.
     //Skills.

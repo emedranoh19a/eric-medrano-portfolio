@@ -29,6 +29,7 @@ Newbie
   Results summary component
   Product preview card component
   //TODO: Skilled e-learning landing page
+  //TODO: Tip calculator: The TipButton group resets to 5 on every submission.
   Interactive rating component
   QR code component
   NFT preview card component

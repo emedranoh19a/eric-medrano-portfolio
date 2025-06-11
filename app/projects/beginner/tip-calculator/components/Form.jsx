@@ -1,8 +1,27 @@
+"use client";
 import clsx from "clsx";
+import { useState } from "react";
+import { FormProvider, useForm } from "react-hook-form";
 import FormControls from "./FormControls";
 import TipCard from "./TipCard";
 
 export default function Form() {
+  //State:
+  const methods = useForm();
+  const [results, setResults] = useState({ tipAmount: 0, total: 0 });
+  const { handleSubmit } = methods;
+  function onSubmit(data) {
+    const { billAmount, people, tipPercentage } = data;
+
+    const tip = (billAmount * tipPercentage) / 100;
+    const tipAmount = tip / people; //Per person
+
+    const total = billAmount + tip; //
+    const totalByPerson = total / people;
+
+    setResults({ tipAmount, total: totalByPerson });
+  }
+
   //This is the form
   const cardStyles = clsx(
     "w-full flex-grow ",
@@ -12,9 +31,11 @@ export default function Form() {
     "bg-white"
   );
   return (
-    <div className={cardStyles}>
-      <FormControls />
-      <TipCard />
-    </div>
+    <FormProvider {...{ ...methods, results, setResults }}>
+      <form className={cardStyles} onSubmit={handleSubmit(onSubmit)}>
+        <FormControls />
+        <TipCard />
+      </form>
+    </FormProvider>
   );
 }
