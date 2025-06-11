@@ -85,8 +85,7 @@ export default function ProjectCardDesktop({
     // !isComplete && "backdrop-blue-sm"
   );
   const zCardBodyStyles = cn(
-    //TODO:
-    " relative group/card border-black/[0.1] rounded-xl p-4 border bg-white/30",
+    " relative group/card border-black/[0.1] rounded-xl p-4 border bg-white/90",
     level === 0 && "hover:shadow-sky-500/5",
     level === 1 && "hover:shadow-lime-500/5",
     level === 2 && "hover:shadow-yellow-500/5",
