@@ -993,6 +993,22 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    {
+        title: "Equalizer LP",
+        titleJp: "イコライザ LP",
+        titleEs: "Ecualizador ",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
+        image: "/projects/newbie/equalizer-landing-page/desktop-preview.png",
+        url: "/projects/newbie/equalizer-landing-page",
+        level: 0,
+        techs: ["tailwindcss"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
     //Hero.
     //About me.
     //Skills.
