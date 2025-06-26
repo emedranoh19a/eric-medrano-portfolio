@@ -1009,6 +1009,22 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    {
+        title: "3-Column Cards",
+        titleJp: "3つのカードPV",
+        titleEs: "Cartas en 3 columnas ",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
+        image: "/projects/newbie/3-column-preview-card-component/desktop-preview.jpg",
+        url: "/projects/newbie/3-column-preview-card-component",
+        level: 0,
+        techs: ["tailwindcss"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
     //Hero.
     //About me.
     //Skills.
