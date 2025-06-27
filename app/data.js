@@ -1041,6 +1041,22 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    {
+        title: "Single Price Grid",
+        titleJp: "単価グリッド",
+        titleEs: "Grid de Precio Único",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
+        image: "/projects/newbie/single-price-grid-component/desktop-design.jpg",
+        url: "/projects/newbie/single-price-grid-component",
+        level: 0,
+        techs: ["html", "tailwindcss"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
     //Hero.
     //About me.
     //Skills.
