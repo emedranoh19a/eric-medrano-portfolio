@@ -1073,6 +1073,22 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    {
+        title: "Sign Up Intro",
+        titleJp: "アカウント登録",
+        titleEs: "Registro",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
+        image: "/projects/newbie/intro-with-sign-up/desktop-design.jpg",
+        url: "/projects/newbie/intro-with-sign-up",
+        level: 0,
+        techs: ["html", "tailwindcss"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
     //Hero.
     //About me.
     //Skills.
