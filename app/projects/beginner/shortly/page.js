@@ -116,7 +116,6 @@ function Hero() {
                 <Image src="/projects/beginner/shortly/images/illustration-working.svg" alt=""
                     // fill
                     // objectFit="contain"
-                    // objectPosition="center"
                     width={400} height={400}
                     className="" />
 
