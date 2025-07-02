@@ -1105,6 +1105,22 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    {
+        title: "Text Analyzer",
+        titleJp: "テキスト分析",
+        titleEs: "Analizador de texto",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
+        image: "/projects/beginner/character-counter/desktop-design.jpg",
+        url: "/projects/beginner/character-counter",
+        level: 1,
+        techs: ["react", "tailwindcss", "framer-motion"],
+        isImportant: false, //It is, but the progress bars won't be seen
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
     //Hero.
     //About me.
     //Skills.
