@@ -1229,7 +1229,8 @@ export const skillImages = [
     "/skills/mui.png",
     "/skills/react-icon.png",
     "/skills/react-router.png",
-    "/skills/motion.png"
+    "/skills/motion.png",
+    "/skills/react-hot-toast.svg"
 ]
 
 //TODO: A photo of myself in a square. Take Angela Yu as an Inspiration.

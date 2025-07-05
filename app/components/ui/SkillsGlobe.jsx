@@ -90,6 +90,7 @@ const SkillsGlobe = ({ iconSlugs = [], imageArray }) => {
                     alt="A globe"
                     src={image}
                     priority
+                    className="bg-red-500 object-contain"
                   />
                 </a>
               ))}

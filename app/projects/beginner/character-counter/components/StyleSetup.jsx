@@ -19,7 +19,6 @@ export default function StyleSetup({ children }) {
     "",
     ""
   );
-  // const breakpoint = bp("lg", containerStyles);
   return (
     <main
       className={mainStyles}

@@ -9,6 +9,4 @@ export function toKebabCase(str) {
     .toLowerCase() // Convert to lowercase
     .replace(/\s+/g, "-") // Replace spaces with hyphens
 }
-export function bp(breakpoint, classes) {
-  return classes.trim().split(/\s+/).map(cls => `${breakpoint}:${cls}`).join(" ")
-}
+
