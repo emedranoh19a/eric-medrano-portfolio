@@ -34,7 +34,7 @@ function FirstBlockContent() {
       <Text preset={2}>Read together, grow together</Text>
       <ul className="flex flex-col gap-4 sm:gap-6">
         {listItems.map((item, i) => (
-          <li className="flex flex-row items-center gap-[14px]">
+          <li className="flex flex-row items-center gap-[14px]" key={i}>
             <div className="relative w-8 aspect-square">
               <Image
                 className="object-contain"

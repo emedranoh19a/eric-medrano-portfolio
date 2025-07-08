@@ -41,6 +41,7 @@ export default function Journey() {
         <div className={stepsContainerStyles}>
           {steps.map((step, i) => (
             <Step
+              key={i}
               number={i + 1}
               content={step}
               hasArrow={i <= steps.length - 2}
