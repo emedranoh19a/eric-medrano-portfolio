@@ -1121,6 +1121,22 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    {
+        title: "Tech Book Club LP",
+        titleJp: "TechBook部 LP",
+        titleEs: "Club TechBook",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
+        image: "/projects/beginner/tech-book-club-landing-page/desktop-design.jpg",
+        url: "/projects/beginner/tech-book-club-landing-page",
+        level: 1,
+        techs: ["html", "tailwindcss"],
+        isImportant: true, //It is, but the progress bars won't be seen
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
     //Hero.
     //About me.
     //Skills.
