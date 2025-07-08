@@ -1122,6 +1122,22 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        title: "Contact Form",
+        titleJp: "お問い合わせフォーム",
+        titleEs: "Formulario de contacto",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
+        image: "/projects/beginner/contact-form/desktop-design.jpg",
+        url: "/projects/beginner/contact-form",
+        level: 1,
+        techs: ["react", "tailwindcss", "react-hot-toast"],
+        isImportant: false, //It is, but the progress bars won't be seen
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
+    {
         title: "Tech Book Club LP",
         titleJp: "TechBook部 LP",
         titleEs: "Club TechBook",

@@ -43,7 +43,7 @@ function RadioOption({ fieldName, optionName = "", label = "" }) {
     "group flex items-center gap-3",
     "py-3 px-6",
     "cursor-pointer rounded-lg bg-white transition-colors",
-    "border-2 border-[var(--grey-500)]",
+    "border border-[var(--grey-500)]",
     "hover:border-[var(--green-600)] hover:bg-white",
     watchedField === optionName && "bg-[var(--green-200)]"
   );

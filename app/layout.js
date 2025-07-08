@@ -1,4 +1,5 @@
 import localFont from "next/font/local"
+import { Toaster } from "react-hot-toast"
 import { SidebarDemo } from "./components/layout/Sidebar/SidebarDemo"
 import { SmoothCursor } from "./components/layout/SmoothCursor"
 import "./globals.css"
@@ -66,6 +67,7 @@ export default function RootLayout({ children }) {
             {children}
           </SidebarDemo>
         </main>
+        <Toaster />
       </body>
     </html >
   )

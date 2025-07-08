@@ -1,16 +1,18 @@
 "use client";
 import { FormProvider, useForm, useFormContext } from "react-hook-form";
+import toast, { Toaster } from "react-hot-toast";
 import Button from "./Button";
 import Checkbox from "./Checkbox";
 import RadioSelection from "./RadioSelection";
 import Text from "./Text";
 import TextField from "./TextField";
+import Toast from "./Toast";
 
 export default function Form() {
   const methods = useForm();
   //TODO: trigger a toast from here. Do we need providers?
   function onSubmit(data) {
-    console.log(data);
+    toast.custom(<Toast />);
   }
   return (
     <FormProvider {...methods}>
@@ -21,6 +23,7 @@ export default function Form() {
         <Fields />
         <TermConditions />
         <Button />
+        <Toaster />
       </form>
     </FormProvider>
   );

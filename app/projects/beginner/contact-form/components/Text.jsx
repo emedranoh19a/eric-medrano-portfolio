@@ -12,7 +12,7 @@ export default function Text({
   //Style:
   const textStyles = cn(
     karla.className,
-    "antialiased text-[var(--grey-900)] font-regular tracking-0",
+    "antialiased font-regular tracking-0",
     variant === "heading" &&
       "text-3xl font-bold leading-[100%] tracking-[-1px]",
     variant === "body-md" && "text-lg leading-[150%]",
