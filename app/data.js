@@ -219,9 +219,6 @@ export const sidebarLinks = [
 //3. advanced.
 //4. guru.
 
-//TODO: título en japonés.
-//TODO: título en español. 
-
 //Descripción en japonés. 
 //Descripción en español.
 //Cortar la descripción. 
@@ -234,7 +231,7 @@ export const projects = [
         description: "Project from The Complete Web Development Bootcamp by Angela Yu.",
         descriptionJp: "WEB開発ブートキャンプ-React演習 (Angela Yu)",
         descriptionEs: "Proyecto del Bootcamp de Desarrollo Web por Angela Yu",
-        image: "/projects/other/keeper_preview.png",
+        image: "/projects/other/keeper.webp",
         url: "https://cool-centaur-8a3c2e.netlify.app/",
         level: 0,
         techs: ["react"],
@@ -243,7 +240,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: true,
     },
-
     {
         title: "The Wild Oasis",
         titleJp: "The Wild Oasis",//1
@@ -251,7 +247,7 @@ export const projects = [
         description: "Project from The Ultimate React Course by Jonas Schmedtmann.",
         descriptionJp: "Reactのコース-管理画面プロジェクト (Jonas Schmedtmann)",
         descriptionEs: "Proyecto del curso de React por Jonas Schmedtmann",
-        image: "/projects/other/the-wild-oasis_preview.png",
+        image: "/projects/other/the-wild-oasis.webp",
         url: "https://the-wild-oasis-for-eric-medrano.netlify.app/login",
         level: 4,
         techs: ["react", "styled-components", "api", "tanstack-query", "supabase"],
@@ -264,7 +260,7 @@ export const projects = [
 
     //     title: "REDA舞神楽 website",
     //     description: "A real project for the Yosakoi Soran team 「REDA舞神楽」.",
-    //     image: "/projects/other/reda-website_preview.png",
+    //     image: "/projects/other/reda-maikagura.webp",
     //     url: "https://our-little-secret.netlify.app/theme/2023",
     //     level: 3,
     //     techs: ["nextjs", "tailwindcss", "framer-motion"],
@@ -273,7 +269,6 @@ export const projects = [
     //     isPublic: true,
     //     isExternalProject: true,
     // },
-
     {
         title: "The React Quiz",
         titleJp: "Reactのクイズ",//1
@@ -281,7 +276,7 @@ export const projects = [
         description: "Redux project, from the Ultimate React course from Jonas Schmedtmann.",
         descriptionJp: "Reactのコース-Redux演習 (Jonas Schmedtmann)",
         descriptionEs: "Proyecto de Redux, de Jonas Schmedtmann",
-        image: "/projects/other/react-quiz_preview.png",
+        image: "/projects/other/the-react-quiz.webp",
         url: "https://react-quiz-for-erichiki.netlify.app/",
         level: 2,
         techs: ["react", "redux"],
@@ -290,8 +285,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: true,
     },
-
-
     {
         title: "Social Links Profile",
         titleJp: "プロファイルのSNS",//1
@@ -299,8 +292,8 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-
-        image: "/projects/newbie/social-links-profile/desktop-preview.jpg",
+        // image: "/projects/newbie/social-links-profile/desktop-preview.jpg",
+        image: "/projects/front-end-mentor/newbie_social-links-profile.webp",
         url: "/projects/newbie/social-links-profile",
         level: 0,
         techs: ["html", "tailwindcss"],
@@ -316,7 +309,7 @@ export const projects = [
         description: "Final project from the HTML & CSS course by Jonas Schmedtmann.",
         descriptionJp: "HTML+CSS基礎コース(Jonas Schmedtmann)のプロジェクト",
         descriptionEs: "Proyecto del curso de HTML y CSS, por Jonas Schmedtmann.",
-        image: "/projects/other/omnifood_preview.png",
+        image: "/projects/other/omnifood.webp",
         url: "https://omnifood-for-eric-medrano.netlify.app/",
         level: 2,
         techs: ["html", "css"],
@@ -326,6 +319,7 @@ export const projects = [
         isExternalProject: true,
 
     },
+
     {
         title: "Natours",
         titleJp: "Natours",
@@ -333,7 +327,7 @@ export const projects = [
         description: "Sass Architecture project from the Advanced CSS/Sass course by Jonas Schmedtmann.",
         descriptionJp: "CSS応用・Sassのコース(Jonas Schmedtmann)-Sass アーキテクチャー",
         descriptionEs: "Proyecto de Arquitectura Sass del curso de CSS Avanzado y Sass, por Jonas Schmedtmann.",
-        image: "/projects/other/natours_preview.png",
+        image: "/projects/other/natours.webp",
         url: "https://natours-for-eric-medrano.netlify.app/",
         level: 2,
         techs: ["html", "sass"],
@@ -342,6 +336,7 @@ export const projects = [
         isPublic: true,
         isExternalProject: true,
     },
+
     {
         title: "Blog Preview Card",
         titleJp: "ブログプレビューカード",//1
@@ -349,7 +344,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/newbie/blog-preview-card/desktop-design.jpg",
+        image: "/projects/front-end-mentor/newbie_blog-preview-card.jpg",
         url: "/projects/newbie/blog-preview-card",
         level: 0,
         techs: ["html", "tailwindcss"],
@@ -358,6 +353,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "FAQ accordion",
         titleJp: "FAQアコーディオン",//1
@@ -374,6 +375,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Product Preview Card",
         titleJp: "商品PVカード",//1
@@ -390,6 +397,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Interactive Rating",
         titleJp: "インタラクティブ評価",//1
@@ -406,7 +419,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "QR Code",
         titleJp: "QR コード",//1
@@ -423,7 +441,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "NFT Preview Card",
         titleJp: "NFT PVカード",//1
@@ -440,6 +463,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Base Apparel Coming Soon Page",
         titleJp: "Base Apparel 近日公開ページ",
@@ -456,6 +485,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Order Summary",
         titleJp: "注文概要",
@@ -472,6 +507,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Stats Preview Card",
         titleJp: "実績PVカード",
@@ -489,6 +530,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Profile Card",
         titleJp: "プロファイルカード",
@@ -505,6 +552,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Social Proof",
         titleJp: "ソーシャル プルーフ",
@@ -521,6 +574,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Article Preview",
         titleJp: "記事PV",
@@ -537,6 +596,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Trillo",
         titleJp: "Trillo",
@@ -553,6 +618,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: true,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Nexter",
         titleJp: "Nexter",
@@ -569,6 +640,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: true,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Four Card Feature Section",
         titleJp: "特徴カードの４枚",
@@ -585,6 +662,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Results Summary",
         titleJp: "結果一覧",
@@ -601,6 +684,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Clipboard",
         titleJp: "Clipboard",
@@ -617,6 +706,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Loopstudios",
         titleJp: "Loopstudios",
@@ -633,6 +728,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Shortly",
         titleJp: "Shortly",
@@ -649,6 +750,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         description: "Custom hooks project from the ReactJS course by Jonas Schmedtmann.",
         descriptionJp: "ReactJSのコース(Jonas Schmedtmann)-カスタムフック",
@@ -665,6 +772,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: true,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Bento Grid",
         titleJp: "弁当グリッド",
@@ -681,6 +794,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Advice generator",
         titleJp: "アドバイスジェネレーター",
@@ -697,6 +816,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Age Calculator",
         titleJp: "年齢計算機",
@@ -713,6 +838,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Mortgage Repayment Calculator",
         titleJp: "住宅ローン返済計算機",
@@ -723,12 +854,18 @@ export const projects = [
         image: "/projects/beginner/mortgage-repayment-calculator/images/desktop-design-empty.jpg",
         url: "/projects/beginner/mortgage-repayment-calculator",
         level: 1,
-        techs: ["react", "tailwindcss"],
+        techs: ["react", "tailwindcss", "react-hook-form"],
         isImportant: false,
         isComplete: true,
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Product List with Cart",
         titleJp: "商品リストとショッピングカート",
@@ -745,6 +882,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Notifications Page",
         titleJp: "通知ページ",
@@ -761,6 +904,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Expenses Chart",
         titleJp: "支出チャート",
@@ -789,6 +938,12 @@ export const projects = [
     //     isPublic: true,
     //     isExternalProject: false,
     // },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Recipe",
         titleJp: "レシピ",
@@ -805,6 +960,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     // {
     //     title: "Space Tourism",
     //     description: "Intermediate challenge from Front End Mentor.",
@@ -817,6 +978,12 @@ export const projects = [
     //     isPublic: true,
     //     isExternalProject: false,
     // },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Fylo",
         titleJp: "Fylo",
@@ -833,6 +1000,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Interactive Card Details",
         titleJp: "インタラクティブカードの詳細",
@@ -849,6 +1022,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Workit",
         titleJp: "Workit",
@@ -865,6 +1044,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Coding Bootcamp Testimonials",
         titleJp: "コーディングブートキャンプのテスティモニアル",
@@ -881,6 +1066,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Skilled E-learning Landing Page",
         titleJp: "EラーニングLP",
@@ -897,6 +1088,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Pod Request Access LP",
         titleJp: "PODアクセスリクエストLP",
@@ -913,6 +1110,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Browser Extensions Manager",
         titleJp: "ブラウザー拡張管理",
@@ -929,6 +1132,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Dictionary",
         titleJp: "辞書",
@@ -945,6 +1154,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Typemaster Pre-launch Website",
         titleJp: "Typemaster近日公開wEBサイト",
@@ -961,6 +1176,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Modern Art Gallery website",
         titleJp: "美術ギャラリーWebサイト",
@@ -977,6 +1198,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: true,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Tip Calculator",
         titleJp: "チップ計算機",
@@ -993,6 +1220,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Equalizer LP",
         titleJp: "イコライザ LP",
@@ -1009,6 +1242,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "3-Column Cards",
         titleJp: "3つのカードPV",
@@ -1025,6 +1264,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Meet LP",
         titleJp: "Meet LP",
@@ -1041,6 +1286,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Single Price Grid",
         titleJp: "単価グリッド",
@@ -1057,6 +1308,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Huddle LP",
         titleJp: "Huddle LP",
@@ -1073,6 +1330,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Sign Up Intro",
         titleJp: "アカウント登録",
@@ -1089,6 +1352,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Ping Coming Soon Page",
         titleJp: "Ping 近日公開ページ",
@@ -1105,6 +1374,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Text Analyzer",
         titleJp: "テキスト分析",
@@ -1121,6 +1396,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Contact Form",
         titleJp: "お問い合わせフォーム",
@@ -1137,6 +1418,12 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Copy the assets to the project path (inside app)
+    //TODO: Refactor all the project Images
+    //TODO: Take a snapshot of the FULL Page
+    //TODO: Optimize the snapshot to web.p
+    //TODO: Delete the assets used from the public folder
+    //TODO: Add .webp version in the public folder 
     {
         title: "Tech Book Club LP",
         titleJp: "TechBook部 LP",

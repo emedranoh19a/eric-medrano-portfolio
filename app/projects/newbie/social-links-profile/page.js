@@ -1,5 +1,5 @@
 import Image from "next/image"
-
+import avatarJessica from "./images/avatar-jessica.jpeg"
 
 function SocialLink({ text }) {
   return (
@@ -22,10 +22,9 @@ function Page() {
       <div className="bg-stone-700 w-80 md:w-96 h-fit flex flex-col items-center p-10 gap-5 rounded-lg">
         <div className="relative w-20 h-20 rounded-full">
           <Image
-            className="w-20 bg-gray-300 h-20 rounded-full"
+            className="w-20 bg-gray-300 h-20 rounded-full object-cover"
             fill
-            objectFit="cover"
-            src="/projects/newbie/social-links-profile/images/avatar-jessica.jpeg"
+            src={avatarJessica}
             alt="Avatar of Jessica"
           />
         </div>
