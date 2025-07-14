@@ -138,6 +138,8 @@ export default function ProjectCardDesktop({
               alt={projectAlt}
               loading="eager"
               priority
+              placeholder="blur"
+              blurDataURL={image}
             />
             {!isComplete && (
               <ZCardItem

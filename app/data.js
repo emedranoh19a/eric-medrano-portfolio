@@ -293,7 +293,7 @@ export const projects = [
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
         // image: "/projects/newbie/social-links-profile/desktop-preview.jpg",
-        image: "/projects/front-end-mentor/newbie_social-links-profile.webp",
+        image: "/projects/front-end-mentor/newbie/newbie_social-links-profile.webp",
         url: "/projects/newbie/social-links-profile",
         level: 0,
         techs: ["html", "tailwindcss"],
@@ -317,9 +317,7 @@ export const projects = [
         isComplete: true,
         isPublic: true,
         isExternalProject: true,
-
     },
-
     {
         title: "Natours",
         titleJp: "Natours",
@@ -336,7 +334,7 @@ export const projects = [
         isPublic: true,
         isExternalProject: true,
     },
-
+    //TODO: convert .jpg to .webp
     {
         title: "Blog Preview Card",
         titleJp: "ブログプレビューカード",//1
@@ -344,7 +342,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/front-end-mentor/newbie_blog-preview-card.jpg",
+        image: "/projects/front-end-mentor/newbie/newbie_blog-preview-card.jpg",
         url: "/projects/newbie/blog-preview-card",
         level: 0,
         techs: ["html", "tailwindcss"],
@@ -353,12 +351,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         title: "FAQ accordion",
         titleJp: "FAQアコーディオン",//1
@@ -366,7 +358,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/newbie/faq-accordion/desktop-design.jpg",
+        image: "/projects/front-end-mentor/newbie/newbie_faq-accordion.jpg",
         url: "/projects/newbie/faq-accordion",
         level: 0,
         techs: ["html", "tailwindcss"],

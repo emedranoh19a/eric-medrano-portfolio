@@ -3,6 +3,8 @@ import clsx from "clsx"
 import { Work_Sans } from "next/font/google"
 import Image from "next/image"
 import { useState } from "react"
+import backgroundPattern from "./images/background-pattern-desktop.svg"
+
 const workSans = Work_Sans({ subsets: ["latin"], weight: ["400", "500"] })
 function PlusIcon() {
   return <>+</>
@@ -61,12 +63,15 @@ function AccordionItem({ title, content }) {
 function BackgroundImage() {
   return (
     <div className="w-full top-0 left-0 absolute h-56 bg-red-50 z-0">
-      <Image
-        src="/projects/newbie/faq-accordion/images/background-pattern-desktop.svg"
-        fill
-        objectFit="cover"
-        alt="background image"
-      />
+      <div className="relative w-full h-full">
+
+        <Image
+          src={backgroundPattern}
+          fill
+          className="object-cover"
+          alt="background image"
+        />
+      </div>
     </div>
   )
 }
