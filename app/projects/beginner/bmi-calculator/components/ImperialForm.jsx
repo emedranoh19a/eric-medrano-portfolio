@@ -7,7 +7,7 @@ export default function ImperialForm() {
     <FormProvider {...methods}>
       <form>
         Enter your details below Metric Imperial Height Weight Your BMI is...
-        Your BMI suggests you're Your ideal weight is between
+        Your BMI suggests you&apos;re Your ideal weight is between
       </form>
     </FormProvider>
   );

@@ -9,8 +9,8 @@ export default function MetricForm() {
   return (
     <FormProvider {...methods}>
       <form onSubmit={methods.handleSubmit(onSubmit)}>
-        Metric Imperial Height Weight Your BMI is... Your BMI suggests you're
-        Your ideal weight is between
+        Metric Imperial Height Weight Your BMI is... Your BMI suggests
+        you&apos;re Your ideal weight is between
       </form>
     </FormProvider>
   );

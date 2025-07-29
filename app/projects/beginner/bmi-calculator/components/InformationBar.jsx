@@ -15,7 +15,7 @@ function Empty() {
     <div className="flex flex-col gap-4">
       <Text preset={4}>Welcome!</Text>
       <Text preset={7}>
-        Enter your height and weight and you’ll see your BMI result here
+        Enter your height and weight and you&apos;ll see your BMI result here
       </Text>
     </div>
   );
