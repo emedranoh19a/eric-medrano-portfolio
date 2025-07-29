@@ -10,7 +10,6 @@ import Toast from "./Toast";
 
 export default function Form() {
   const methods = useForm();
-  //TODO: trigger a toast from here. Do we need providers?
   function onSubmit(data) {
     toast.custom(<Toast />);
   }

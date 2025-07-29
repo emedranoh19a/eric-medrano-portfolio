@@ -1,7 +1,29 @@
 import Image from "next/image";
 import Step from "../components/Step";
 import Text from "../components/Text";
+import image4 from "../images/desktop/image-man-texting.jpg";
+import image3 from "../images/desktop/image-men-in-meeting.jpg";
+import image1 from "../images/desktop/image-woman-in-videocall.jpg";
+import image2 from "../images/desktop/image-women-videochatting.jpg";
 
+const items = [
+  {
+    src: image1,
+    alt: "woman in videocall",
+  },
+  {
+    src: image2,
+    alt: "woman in videochatting",
+  },
+  {
+    src: image3,
+    alt: "men in meeting",
+  },
+  {
+    src: image4,
+    alt: "man texting",
+  },
+];
 export default function About() {
   return (
     <main className="flex-1 flex flex-col items-center gap-16 px-8 lg:px-20 pt-8 sm:pt-14 pb-16 lg:pb-18">
@@ -13,24 +35,6 @@ export default function About() {
 }
 
 function Gallery() {
-  const items = [
-    {
-      src: "/projects/newbie/meet-landing-page/desktop/image-woman-in-videocall.jpg",
-      alt: "woman in videocall",
-    },
-    {
-      src: "/projects/newbie/meet-landing-page/desktop/image-women-videochatting.jpg",
-      alt: "woman in videochatting",
-    },
-    {
-      src: "/projects/newbie/meet-landing-page/desktop/image-men-in-meeting.jpg",
-      alt: "men in meeting",
-    },
-    {
-      src: "/projects/newbie/meet-landing-page/desktop/image-man-texting.jpg",
-      alt: "man texting",
-    },
-  ];
   return (
     <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 w-fit">
       {items.map((item, i) => (

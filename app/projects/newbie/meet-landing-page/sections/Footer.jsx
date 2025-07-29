@@ -2,6 +2,7 @@ import Image from "next/image";
 import Button from "../components/Button";
 import Step from "../components/Step";
 import Text from "../components/Text";
+import imgFooter from "../images/desktop/image-footer.jpg";
 
 export default function Footer() {
   return (
@@ -24,7 +25,7 @@ function Content() {
             className="object-cover"
             fill
             alt="woman talking"
-            src="/projects/newbie/meet-landing-page/desktop/image-footer.jpg"
+            src={imgFooter}
           />
           <div className="absolute w-full h-full top-0 left-0 bg-[var(--cyan-600)] opacity-90" />
         </div>

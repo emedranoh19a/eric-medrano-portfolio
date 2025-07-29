@@ -1,6 +1,5 @@
-import clsx from "clsx";
-import Image from "next/image";
 import Button from "../components/Button";
+import FullBleedImage from "../components/FullBleedImage";
 import Text from "../components/Text";
 
 export default function Hero() {
@@ -20,44 +19,6 @@ export default function Hero() {
         <Content />
       </div>
     </header>
-  );
-}
-
-function FullBleedImage() {
-  const fullwidthStyles = clsx(
-    "lg:hidden scale-[110%] sm:scale-[101%]",
-    "h-40 sm:h-[303px]",
-    "w-screen relative"
-    //in case it is not centered with flex, use "left-1/2 ml-[-50vw]"
-  );
-
-  return (
-    <>
-      <div className="scale-125 -translate-y-12 -translate-x-6 -ml-8 relative hidden lg:block order-first flex-1 h-60">
-        <Image
-          src="/projects/newbie/meet-landing-page/desktop/image-hero-left.png"
-          alt="avatars"
-          fill
-          className="object-contain"
-        />
-      </div>
-      <div className="scale-125 translate-y-12 translate-x-6 -mr-8 relative hidden lg:block order-last flex-1 h-60">
-        <Image
-          src="/projects/newbie/meet-landing-page/desktop/image-hero-right.png"
-          alt="avatars"
-          fill
-          className="object-contain"
-        />
-      </div>
-      <div className={fullwidthStyles}>
-        <Image
-          alt="avatars"
-          src="/projects/newbie/meet-landing-page/tablet/image-hero.png"
-          fill
-          className="object-contain"
-        />
-      </div>
-    </>
   );
 }
 

@@ -1234,20 +1234,14 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         title: "3-Column Cards",
         titleJp: "3つのカードPV",
-        titleEs: "Cartas en 3 columnas ",
+        titleEs: "Cartas en 3 columnas",
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/newbie/3-column-preview-card-component/desktop-preview.jpg",
+        image: "/projects/front-end-mentor/newbie/newbie_3-column-preview-card-component.jpg",
         url: "/projects/newbie/3-column-preview-card-component",
         level: 0,
         techs: ["html", "tailwindcss"],
@@ -1269,7 +1263,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/newbie/meet-landing-page/desktop-preview.jpg",
+        image: "/projects/front-end-mentor/newbie/newbie_meet-landing-page.jpg",
         url: "/projects/newbie/meet-landing-page",
         level: 0,
         techs: ["html", "tailwindcss"],

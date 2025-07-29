@@ -1,7 +1,9 @@
 import { cn } from "@/app/utils/utils"
 import { Big_Shoulders_Display, Lexend_Deca } from "next/font/google"
 import Image from "next/image"
-
+import LuxuryIcon from "./images/icon-luxury.svg"
+import SedansIcon from "./images/icon-sedans.svg"
+import SuvsIcon from "./images/icon-suvs.svg"
 //normal
 const lexendDeca = Lexend_Deca({ subsets: ["latin"], weight: ["400"] })
 //semibold
@@ -10,21 +12,21 @@ const bigShouldersDisplay = Big_Shoulders_Display({ subsets: ["latin"], weight: 
 const items = [
     {
         title: "Sedans",
-        icon: "/projects/newbie/3-column-preview-card-component/images/icon-sedans.svg",
+        icon: SedansIcon,
         className: "bg-[var(--bright-orange)]",
         buttonClassName: "text-[var(--bright-orange)]",
         description: "Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip."
     },
     {
         title: "SUVs",
-        icon: "/projects/newbie/3-column-preview-card-component/images/icon-suvs.svg",
+        icon: SuvsIcon,
         className: "bg-[var(--dark-cyan)]",
         buttonClassName: "text-[var(--dark-cyan)]",
         description: "Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures."
     },
     {
         title: "Luxury",
-        icon: "/projects/newbie/3-column-preview-card-component/images/icon-luxury.svg",
+        icon: LuxuryIcon,
         className: "bg-[var(--very-dark-cyan)]",
         buttonClassName: "text-[var(--very-dark-cyan)]",
         description: "Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style."
