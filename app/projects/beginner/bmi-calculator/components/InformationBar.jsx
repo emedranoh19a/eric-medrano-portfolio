@@ -33,8 +33,8 @@ function Results() {
         </Text>
       </div>
       <Text preset={7}>
-        Your BMI suggests you're a healthy weight. Your ideal weight is between{" "}
-        <span className="font-bold">63.3kgs - 85.2kgs.</span>
+        Your BMI suggests you&apos;re a healthy weight. Your ideal weight is
+        between <span className="font-bold">63.3kgs - 85.2kgs.</span>
       </Text>
     </div>
   );
