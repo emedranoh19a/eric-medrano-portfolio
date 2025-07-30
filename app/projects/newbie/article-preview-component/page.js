@@ -1,6 +1,6 @@
-import Image from "next/image"
-
 import { Manrope } from "next/font/google"
+import Image from "next/image"
+import { avatarMichelle, drawers } from "./assets"
 
 const manrope = Manrope({ subsets: ["latin"] })
 
@@ -18,7 +18,7 @@ function CardHeader() {
   return (
     <div className="relative h-64 md:h-72 w-full brightness-110">
       <Image
-        src="/projects/newbie/article-preview-component/images/drawers.jpg"
+        src={drawers}
         fill
         objectFit="cover"
         alt=""
@@ -49,7 +49,7 @@ function CardFooter() {
       <div className="flex gap-2 items-center">
         <div className="relative overflow-hidden w-10 h-10 rounded-full">
           <Image
-            src="/projects/newbie/article-preview-component/images/avatar-michelle.jpg"
+            src={avatarMichelle}
             alt=""
             fill
             objectFit="cover"
