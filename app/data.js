@@ -625,12 +625,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: true,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         title: "Four Card Feature Section",
         titleJp: "特徴カードの４枚",
@@ -638,7 +632,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/newbie/four-card-feature-section/desktop-design.jpg",
+        image: "/projects/front-end-mentor/newbie/newbie_four-card-feature-section.jpg",
         url: "/projects/newbie/four-card-feature-section",
         level: 0,
         techs: ["html", "tailwindcss"],
