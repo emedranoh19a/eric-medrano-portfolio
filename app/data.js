@@ -1298,7 +1298,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/newbie/intro-with-sign-up/desktop-design.jpg",
+        image: "/projects/front-end-mentor/newbie/newbie_intro-with-sign-up.jpg",
         url: "/projects/newbie/intro-with-sign-up",
         level: 0,
         techs: ["react", "tailwindcss"],
