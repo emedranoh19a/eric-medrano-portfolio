@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { iconCart } from "../imageIndex";
 import Text from "./Text";
 
 export default function Button() {
@@ -9,7 +10,7 @@ export default function Button() {
     >
       <div className="relative h-[16px] aspect-square mr-2">
         <Image
-          src="/projects/newbie/product-preview-card/images/icon-cart.svg"
+          src={iconCart}
           fill
           alt="Shopping cart icon"
           className="object-contain "

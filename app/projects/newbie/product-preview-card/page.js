@@ -2,13 +2,14 @@ import Image from "next/image"
 import Button from "./components/Button"
 import StyleSetup from "./components/StyleSetup"
 import Text from "./components/Text"
+import { productDesktop, productMobile } from "./imageIndex"
 
 export default function Page() {
   return <StyleSetup>
     <div className=" bg-white max-w-[350px] sm:max-w-[600px] grid grid-cols-1 sm:grid-cols-2 grid-rows-[2fr_3fr] sm:grid-rows-1 rounded-lg overflow-hidden">
-      <div className=" sm:hidden relative w-full h-auto md:aspect-auto">
+      <div className="sm:hidden relative w-full h-auto md:aspect-auto">
         <Image
-          src="/projects/newbie/product-preview-card/images/image-product-mobile.jpg"
+          src={productMobile}
           alt="Preview image for Gabrielle Essence Eau De Parfum"
           fill
           className="object-cover"
@@ -16,7 +17,7 @@ export default function Page() {
       </div>
       <div className="hidden sm:block relative w-full h-auto md:aspect-auto">
         <Image
-          src="/projects/newbie/product-preview-card/images/image-product-desktop.jpg"
+          src={productDesktop}
           alt="Preview image for Gabrielle Essence Eau De Parfum"
           fill
           className="object-cover"

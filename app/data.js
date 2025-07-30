@@ -366,12 +366,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         title: "Product Preview Card",
         titleJp: "商品PVカード",//1
@@ -379,7 +373,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/newbie/product-preview-card/desktop-design.jpg",
+        image: "/projects/front-end-mentor/newbie/newbie_product-preview-card.jpg",
         url: "/projects/newbie/product-preview-card",
         level: 0,
         techs: ["html", "tailwindcss"],
@@ -388,12 +382,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         title: "Interactive Rating",
         titleJp: "インタラクティブ評価",//1
@@ -401,7 +389,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/newbie/interactive-rating-component/desktop-design.jpg",
+        image: "/projects/front-end-mentor/newbie/newbie_interactive-rating-component.jpg",
         url: "/projects/newbie/interactive-rating-component",
         level: 0,
         techs: ["tailwindcss", "react"],
