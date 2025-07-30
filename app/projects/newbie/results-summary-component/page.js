@@ -2,6 +2,7 @@ import { cn } from "@/app/utils/utils"
 import clsx from "clsx"
 import { Hanken_Grotesk } from "next/font/google"
 import Image from "next/image"
+import { memory, reaction, verbal, visual } from "./imageIndex"
 
 const hankenGrotesk = Hanken_Grotesk({ subsets: ["latin"], weight: ["500", "700", "800"] })
 //TODO: FIX the whole page.
@@ -50,10 +51,10 @@ export default function Page() {
       "--oragey-yellow": "hsl(39, 100%, 56%)",
       "--green-teal": "hsl(166, 100%, 37%)",
       "--cobalt-blue": "hsl(234, 85%, 45%)", */}
-            <Slot score="80" title="Reaction" className="text-[var(--light-red)] bg-[hsla(0,100%,67%,0.05)]" image="/projects/newbie/results-summary-component/images/icon-reaction.svg" />
-            <Slot score="92" title="Memory" className="text-[var(--oragey-yellow)] bg-[hsl(39,100%,56%)] bg-opacity-10" image="/projects/newbie/results-summary-component/images/icon-memory.svg" />
-            <Slot score="61" title="Verbal" className="text-[var(--green-teal)] bg-[hsl(166,100%,37%)] bg-opacity-10" image="/projects/newbie/results-summary-component/images/icon-verbal.svg" />
-            <Slot score="72" title="Visual" className="text-[var(--cobalt-blue)] bg-[hsl(234,85%,45%)] bg-opacity-10" image="/projects/newbie/results-summary-component/images/icon-visual.svg" />
+            <Slot score="80" title="Reaction" className="text-[var(--light-red)] bg-[hsla(0,100%,67%,0.05)]" image={reaction} />
+            <Slot score="92" title="Memory" className="text-[var(--oragey-yellow)] bg-[hsl(39,100%,56%)] bg-opacity-10" image={memory} />
+            <Slot score="61" title="Verbal" className="text-[var(--green-teal)] bg-[hsl(166,100%,37%)] bg-opacity-10" image={verbal} />
+            <Slot score="72" title="Visual" className="text-[var(--cobalt-blue)] bg-[hsl(234,85%,45%)] bg-opacity-10" image={visual} />
           </div>
           {/* "--white": "hsl(0, 0%, 100%)",
       "--pale-blue": "hsl(221, 100%, 96%)",

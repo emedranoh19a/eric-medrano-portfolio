@@ -99,6 +99,7 @@ const BlurText = ({
             onAnimationComplete={
               index === elements.length - 1 ? onAnimationComplete : undefined
             }
+            style={{ textShadow: "3px 1px 5px rgba(255,255,255,0.9)" }}
           >
             {segment === " " ? "\u00A0" : segment}
             {animateBy === "words" && index < elements.length - 1 && "\u00A0"}

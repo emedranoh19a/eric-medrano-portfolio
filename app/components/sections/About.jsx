@@ -8,7 +8,7 @@ import Span from "./Span";
 
 export default function About() {
   const containerStyles = cn(
-    "relative w-full h-fit mx-auto -z-10 -mt-[26vw] py-20 background-transparent lg:mb-40",
+    "relative w-full h-fit mx-auto z-0 -mt-[26vw] py-20 background-transparent lg:mb-40",
     ""
     //The following styles are correctors for issues with the cat transformation
     // "-mt-36 md:-mt-14 lg:mt-0 xl:mt-72 2xl:mt-96"

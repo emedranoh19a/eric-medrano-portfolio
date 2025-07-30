@@ -1,11 +1,18 @@
 "use client";
 
 import { cn } from "@/app/utils/utils";
+import { motion } from "framer-motion";
 import localFont from "next/font/local";
 import Cat from "../Cat";
 import BlurText from "../effects/BlurText";
 import TextSwapper from "../effects/TextSwapper";
-
+import { MarqueeDemoVertical } from "../ui/Marquee/MarqueeDemo";
+const emmeline = localFont({
+  src: "../../fonts/emmeline-regular-webfont.woff2",
+  style: "normal",
+  weight: "400",
+  variable: "normal",
+});
 const hamiltone = localFont({
   src: "../../fonts/Hamiltone.otf",
   style: "normal",
@@ -30,9 +37,10 @@ export default function Header() {
 
   return (
     <section
-      className="relative w-full min-h-screen h-fit overflow-x-hidden z-0 py-40 xl:-mt-28"
+      className="relative z-0 w-full min-h-screen h-fit overflow-x-hidden z-0 py-40 xl:-mt-28"
       id="home"
     >
+      <MarqueeDemoVertical />
       <Content />
       <div className={catContainerStyles}>
         <Cat className={catStyles} />
@@ -86,7 +94,15 @@ function Content({ language = "en" }) {
       />
       <div className="h-40 flex justify-center items-center px-4">
         <div className="relative text-xl md:text-2xl lg:text-4xl mx-auto text-neutral-800 -translate-x-8 md:-translate-x-14">
-          Sometimes, a {"    "}
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0, duration: 1 }}
+            className={`${emmeline.className} text-3xl md:text-5xl lg:text-7xl`}
+            style={{ textShadow: "3px 1px 5px rgba(255,255,255,0.9)" }}
+          >
+            Sometimes, a{"   "}
+          </motion.span>
           <div className="absolute w-fit h-fit right-0 top-1/2 -translate-y-1/2 translate-x-full">
             <TextSwapper
               words={words[language]}

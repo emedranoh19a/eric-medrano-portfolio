@@ -219,10 +219,6 @@ export const sidebarLinks = [
 //3. advanced.
 //4. guru.
 
-//Descripción en japonés. 
-//Descripción en español.
-//Cortar la descripción. 
-//Cortar el título.
 export const projects = [
     {
         title: "Keeper",
@@ -501,12 +497,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         title: "Social Proof",
         titleJp: "ソーシャル プルーフ",
@@ -539,12 +529,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         title: "Trillo",
         titleJp: "Trillo",
@@ -552,7 +536,7 @@ export const projects = [
         description: "Flexbox project from the Advanced CSS/Sass course by Jonas Schmedtmann.",
         descriptionJp: "CSS応用・Sassのコース(Jonas Schmedtmann)-フレックスボックス",
         descriptionEs: "Proyecto de Flexbox del curso de CSS Avanzado y Sass, por Jonas Schmedtmann.",
-        image: "/projects/other/trillo_preview.png",
+        image: "/projects/other/trillo.webp",
         url: "https://trillo-for-eric-medrano.netlify.app/",
         level: 2,
         techs: ["html", "sass"],
@@ -561,12 +545,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: true,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         title: "Nexter",
         titleJp: "Nexter",
@@ -574,7 +552,7 @@ export const projects = [
         description: "CSS Grid project from the Advanced CSS/Sass course by Jonas Schmedtmann.",
         descriptionJp: "CSS応用・Sassのコース(Jonas Schmedtmann)-CSS Grid",
         descriptionEs: "Proyecto de CSS Grid del curso de CSS Avanzado y Sass, por Jonas Schmedtmann.",
-        image: "/projects/other/nexter_preview.png",
+        image: "/projects/other/nexter.webp",
         url: "https://nexter-for-eric-medrano.netlify.app/",
         level: 2,
         techs: ["html", "sass"],
@@ -599,12 +577,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         title: "Results Summary",
         titleJp: "結果一覧",
@@ -612,7 +584,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/newbie/results-summary-component/desktop-design.jpg",
+        image: "/projects/front-end-mentor/newbie/newbie_results-summary-component.jpg",
         url: "/projects/newbie/results-summary-component",
         level: 0,
         techs: ["html", "tailwindcss"],
@@ -939,7 +911,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/beginner/interactive-card-details-form/desktop-design.jpg",
+        image: "/projects/front-end-mentor/beginner/beginner_interactive-card-details-form.jpg",
         url: "/projects/beginner/interactive-card-details-form",
         level: 1,
         techs: ["react", "tailwindcss"],

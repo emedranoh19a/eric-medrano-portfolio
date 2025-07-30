@@ -76,6 +76,7 @@ export default function TextSwapper({ words, duration = 3000, className }) {
               duration: 0.3,
             }}
             className="inline-block whitespace-nowrap"
+            style={{ textShadow: "3px 1px 5px rgba(255,255,255,0.9)" }}
           >
             {word.split("").map((letter, letterIndex) => (
               <motion.span
