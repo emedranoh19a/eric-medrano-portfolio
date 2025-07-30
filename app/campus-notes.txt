@@ -12,3 +12,14 @@ Handy task order for markup: HTML → tokenSetup → pseudoColors → layout and
 
 //Note: label will allow click for the radio button. Better than a div.
 
+//This inside the centralization of images inside the app router.
+ export { default as imageAngela } from './images/image-angela.jpg';
+
+export { default as ... } from '...'	
+You want quick, minimal re-exports with no need to manipulate
+
+import ..., export {...}	
+You want more flexibility, possible grouping, processing, or clarity
+
+
+----------------

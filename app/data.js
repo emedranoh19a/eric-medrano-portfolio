@@ -334,7 +334,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: true,
     },
-    //TODO: convert .jpg to .webp
     {
         title: "Blog Preview Card",
         titleJp: "ブログプレビューカード",//1
@@ -1206,12 +1205,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         title: "Equalizer LP",
         titleJp: "イコライザ LP",
@@ -1219,7 +1212,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/newbie/equalizer-landing-page/desktop-preview.png",
+        image: "/projects/front-end-mentor/newbie/newbie_equalizer-landing-page.png",
         url: "/projects/newbie/equalizer-landing-page",
         level: 0,
         techs: ["html", "tailwindcss"],

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { bgMainDesktop, bgMainMobile, bgMainTablet } from "../assetIndex";
 
 export default function StylesSetup({ children }) {
   return (
@@ -17,22 +18,22 @@ export default function StylesSetup({ children }) {
           className="object-cover sm:hidden"
           fill
           alt=""
-          src="/projects/newbie/equalizer-landing-page/bg-main-mobile.png"
+          src={bgMainMobile}
         />
         <Image
           className="object-cover hidden sm:block lg:hidden"
           fill
           alt=""
-          src="/projects/newbie/equalizer-landing-page/bg-main-tablet.png"
+          src={bgMainTablet}
         />
         <Image
           className="object-cover hidden sm:hidden lg:block"
           fill
           alt=""
-          src="/projects/newbie/equalizer-landing-page/bg-main-desktop.png"
+          src={bgMainDesktop}
         />
       </div>
-      <div className="w-full h-auto relative   flex flex-col">{children}</div>
+      <div className="w-full h-auto relative flex flex-col">{children}</div>
     </div>
   );
 }

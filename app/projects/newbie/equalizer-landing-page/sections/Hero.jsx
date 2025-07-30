@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import Image from "next/image";
+import { bgPattern1 } from "../assetIndex";
 import Logo from "../components/Logo";
 import Text from "../components/Text";
 
@@ -11,12 +12,7 @@ export default function Hero() {
   return (
     <>
       <div className="absolute hidden sm:block top-0 right-0 sm:w-64 sm:h-96 lg:w-80 lg:h-[468px] -translate-y-10 translate-x-10 lg:translate-x-0">
-        <Image
-          src="/projects/newbie/equalizer-landing-page/bg-pattern-1.svg"
-          fill
-          alt=""
-          className="object-contain"
-        />
+        <Image src={bgPattern1} fill alt="" className="object-contain" />
       </div>
       <section className={sectionStyles}>
         <Logo />

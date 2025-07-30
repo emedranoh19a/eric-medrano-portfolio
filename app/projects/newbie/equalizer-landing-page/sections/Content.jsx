@@ -1,6 +1,7 @@
 import { cn } from "@/app/utils/utils";
 import clsx from "clsx";
 import Image from "next/image";
+import { bgPattern2, illustrationApp } from "../assetIndex";
 import Button from "../components/Button";
 import Text from "../components/Text";
 
@@ -33,7 +34,7 @@ function Ornamental({ className = "" }) {
   return (
     <div className={ornamentalContainer}>
       <Image
-        src="/projects/newbie/equalizer-landing-page/bg-pattern-2.svg"
+        src={bgPattern2}
         alt=""
         fill
         className="object-contain scale-125 sm:scale-100 origin-top"
@@ -57,7 +58,7 @@ function MobileIllustration() {
       <Ornamental />
       <div className={imageContainerStyles}>
         <Image
-          src="/projects/newbie/equalizer-landing-page/illustration-app.png"
+          src={illustrationApp}
           alt="app showcase"
           fill
           className="object-contain"
