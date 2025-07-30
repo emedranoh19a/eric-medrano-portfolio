@@ -1,5 +1,6 @@
 import { Kumbh_Sans } from "next/font/google"
 import Image from "next/image"
+import { bgPatternBottom, bgPatternCard, bgPatternTop, imgVictor } from "./imageIndex"
 
 const kumbhSans = Kumbh_Sans({ subsets: ["latin"] })
 
@@ -9,7 +10,7 @@ function Avatar() {
     <div className="w-1/3 aspect-square rounded-full border-4 border-white absolute left-1/2 -translate-x-1/2 top-0 -translate-y-1/2 overflow-hidden">
       <div className="relative w-full h-full">
         <Image
-          src="/projects/newbie/profile-card-component/images/image-victor.jpg"
+          src={imgVictor}
           alt=""
           fill
           objectFit="cover"
@@ -31,13 +32,13 @@ function Card() {
     <div className="z-0 bg-white shadow-lg shadow-cyan-900/40 h-96 w-80 flex flex-col rounded-xl overflow-hidden">
       <div className="h-56 relative opacity-65">
         <Image
-          src="/projects/newbie/profile-card-component/images/bg-pattern-card.svg"
+          src={bgPatternCard}
           alt=""
           fill
           objectFit="cover"
         />
       </div>
-      <div className="relative flex flex-col h-full justify-center gap-5  ">
+      <div className="relative flex flex-col h-full justify-center gap-5">
         <Avatar />
         <div className="flex justify-center items-center gap-3  mt-8">
           <div className="font-bold text-lg text-cyan-950">Victor Crest</div>
@@ -59,8 +60,8 @@ function Page() {
   return (
     <div className={`relative bg-cyan-600/60 w-full overflow-x-hidden h-screen flex items-center justify-center ${kumbhSans.className}`}>
       <Card />
-      <Image className="-z-10 absolute w-1/2 h-1/2 top-0 left-0 -translate-y-1/2 -translate-x-1/2" src="/projects/newbie/profile-card-component/images/bg-pattern-top.svg" fill objectFit="contain" alt="" />
-      <Image className="-z-10 absolute w-1/2 h-1/2 top-0 right-0 translate-y-1/2 translate-x-1/2" src="/projects/newbie/profile-card-component/images/bg-pattern-bottom.svg" fill objectFit="contain" alt="" />
+      <Image className="-z-10 absolute w-1/2 h-1/2 top-0 left-0 -translate-y-1/2 -translate-x-1/2" src={bgPatternTop} fill objectFit="contain" alt="" />
+      <Image className="-z-10 absolute w-1/2 h-1/2 top-0 right-0 translate-y-1/2 translate-x-1/2" src={bgPatternBottom} fill objectFit="contain" alt="" />
     </div>
   )
 }

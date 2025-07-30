@@ -1,12 +1,13 @@
 import { cn } from "@/app/utils/utils"
 import { Inter, Lexend_Deca } from "next/font/google"
 import Image from "next/image"
+import { headerMobile } from "./imageIndex"
 
 
 const inter = Inter({ subsets: ["latin"] })
 const lexendDeca = Lexend_Deca({ subsets: ["latin"] })
 
-
+//TODO: Where is header Desktop?
 function Card() {
   const cardLayoutStyles = cn(
     "h-full w-full bg-[var(--dark-desaturated-blue)] max-w-xs md:max-w-xl md:max-h-72",
@@ -15,9 +16,8 @@ function Card() {
   )
   return <div className={cardLayoutStyles}>
     <div className="relative basis-1/3 md:basis-1/2">
-
       <Image
-        src="/projects/newbie/stats-preview-card/images/image-header-mobile.jpg"
+        src={headerMobile}
         alt=""
         fill
         objectFit="cover"
