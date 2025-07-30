@@ -11,8 +11,6 @@ export default function Page() {
                 <Content />
             </div>
         </main>
-
         <Footer />
-
     </StylesSetup>
 }

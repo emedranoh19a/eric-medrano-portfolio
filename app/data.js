@@ -1253,12 +1253,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         title: "Single Price Grid",
         titleJp: "単価グリッド",
@@ -1266,7 +1260,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/newbie/single-price-grid-component/desktop-design.jpg",
+        image: "/projects/front-end-mentor/newbie/newbie_single-price-grid-component.jpg",
         url: "/projects/newbie/single-price-grid-component",
         level: 0,
         techs: ["html", "tailwindcss"],
@@ -1275,12 +1269,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         title: "Huddle LP",
         titleJp: "Huddle LP",
@@ -1288,7 +1276,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/newbie/huddle-landing-page-with-single-introductory-section/desktop-design.jpg",
+        image: "/projects/front-end-mentor/newbie/newbie_huddle-landing-page-with-single-introductory-section.jpg",
         url: "/projects/newbie/huddle-landing-page-with-single-introductory-section",
         level: 0,
         techs: ["html", "tailwindcss"],
