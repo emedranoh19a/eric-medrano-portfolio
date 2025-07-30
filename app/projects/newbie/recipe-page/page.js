@@ -12,24 +12,11 @@ export default function Page() {
         <Card>
             <FoodImage />
             <CardContent>
-
                 <Overview />
                 <Ingredients />
                 <Instructions />
                 <Nutrition />
             </CardContent>
-
-
-
-
         </Card>
     </StylesSetup>
 }
-
-
-
-
-
-
-
-

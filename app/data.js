@@ -414,12 +414,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         title: "NFT Preview Card",
         titleJp: "NFT PVカード",//1
@@ -427,7 +421,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/newbie/nft-preview-card-component/desktop-design.jpg",
+        image: "/projects/front-end-mentor/newbie/newbie_nft-preview-card-component.jpg",
         url: "/projects/newbie/nft-preview-card-component",
         level: 0,
         techs: ["html", "tailwindcss"],
@@ -899,12 +893,6 @@ export const projects = [
     //     isPublic: true,
     //     isExternalProject: false,
     // },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         title: "Recipe",
         titleJp: "レシピ",
@@ -912,7 +900,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/newbie/recipe-page/desktop-design.jpg",
+        image: "/projects/front-end-mentor/newbie/newbie_recipe-page.jpg",
         url: "/projects/newbie/recipe-page",
         level: 0,
         techs: ["html", "tailwindcss"],
@@ -921,12 +909,7 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
+
     // {
     //     title: "Space Tourism",
     //     description: "Intermediate challenge from Front End Mentor.",

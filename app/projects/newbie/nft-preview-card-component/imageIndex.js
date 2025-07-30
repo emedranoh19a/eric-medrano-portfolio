@@ -1,0 +1,5 @@
+export { default as iconClock } from "./images/icon-clock.svg"
+export { default as iconEth } from "./images/icon-ethereum.svg"
+export { default as iconView } from "./images/icon-view.svg"
+export { default as imageAvatar } from "./images/image-avatar.png"
+export { default as imageEquilibrium } from "./images/image-equilibrium.jpg"
