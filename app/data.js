@@ -485,12 +485,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         title: "Profile Card",
         titleJp: "プロファイルカード",
@@ -520,7 +514,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/newbie/social-proof-section/desktop-design.jpg",
+        image: "/projects/front-end-mentor/newbie/newbie_social-proof-section.jpg",
         url: "/projects/newbie/social-proof-section",
         level: 0,
         techs: ["html", "tailwindcss"],

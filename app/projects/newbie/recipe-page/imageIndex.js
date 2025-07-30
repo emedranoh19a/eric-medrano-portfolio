@@ -1,1 +1,1 @@
-export { default as omelette } from "./images/image-omelette.jpg"
+export { default as omelette } from "./images/image-omelette.jpeg"

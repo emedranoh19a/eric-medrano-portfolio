@@ -2,6 +2,7 @@ import clsx from "clsx"
 import Image from "next/image"
 
 import { League_Spartan } from "next/font/google"
+import { bgPatterBottomMobile, imgAnne, imgColton, imgIrene } from "./imageIndex"
 
 const leagueSpartan = League_Spartan({ subsets: ["latin"] })
 
@@ -63,19 +64,19 @@ function Testimonial({ name, img, text, className }) {
 const testimonials = [
   {
     name: "Colton Smith",
-    img: "/projects/newbie/social-proof-section/images/image-colton.jpg",
+    img: imgColton,
     text: `"We needed the same printed design as the one we had ordered a week prior. Not only did they find the origin order, but we also received it in time. Excellent!"`,
     className: "",
   },
   {
     name: "Irene Roberts",
-    img: "/projects/newbie/social-proof-section/images/image-irene.jpg",
+    img: imgIrene,
     text: `"Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."`,
     className: "lg:mt-4",
   },
   {
     name: "Anne Wallace",
-    img: "/projects/newbie/social-proof-section/images/image-anne.jpg",
+    img: imgAnne,
     text: `"Put on order with this company and can only praise them for the very high standard. Will definitely use them again and recommendd them to everyone!"`,
     className: "lg:mt-8",
   },
@@ -121,7 +122,7 @@ export default function Page() {
   return (
     <div className={`mx-auto w-full h-screen relative bg-white ${leagueSpartan.className} grid place-items-center`}>
       <Image
-        src="/projects/newbie/social-proof-section/images/bg-pattern-bottom-mobile.svg"
+        src={bgPatterBottomMobile}
         fill
         className="object-cover absolute z-10"
         alt=""
