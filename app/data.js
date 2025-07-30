@@ -452,12 +452,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         title: "Order Summary",
         titleJp: "注文概要",
@@ -465,7 +459,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/newbie/order-summary-component/desktop-design.jpg",
+        image: "/projects/front-end-mentor/newbie/newbie_order-summary-component.jpg",
         url: "/projects/newbie/order-summary-component",
         level: 0,
         techs: ["html", "tailwindcss"],

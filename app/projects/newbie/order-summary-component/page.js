@@ -1,6 +1,7 @@
 import clsx from "clsx"
 import { Red_Hat_Display } from "next/font/google"
 import Image from "next/image"
+import { illustrationHero } from "./imageIndex"
 
 const redHatDisplay = Red_Hat_Display({ subsets: ["latin"], weight: ["400"] })
 
@@ -9,7 +10,7 @@ function Card() {
     <div className="bg-white w-80 h-fit overflow-hidden rounded-[20px] transition-all">
       <div className="relative h-40 w-full opacity-90">
         <Image
-          src="/projects/newbie/order-summary-component/images/illustration-hero.svg"
+          src={illustrationHero}
           fill
           objectFit="cover"
           alt="Order summary hero image"
