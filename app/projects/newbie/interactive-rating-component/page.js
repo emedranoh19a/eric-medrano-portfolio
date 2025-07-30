@@ -46,7 +46,7 @@ export default function Page() {
     )
   }
   return (
-    <div className={`w-full h-screen bg-gray-950 relative ${overpass.className}`}>
+    <div className={`w-full min-h-screen bg-gray-950 relative ${overpass.className}`}>
       <RatingCard>
         {!isRanked ? (
           <>

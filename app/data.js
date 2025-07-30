@@ -398,12 +398,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         title: "QR Code",
         titleJp: "QR コード",//1
@@ -411,7 +405,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/newbie/qr-code-component/desktop-design.jpg",
+        image: "/projects/front-end-mentor/newbie/newbie_qr-code-component.jpg",
         url: "/projects/newbie/qr-code-component",
         level: 0,
         techs: ["html", "tailwindcss",],
