@@ -2,6 +2,7 @@ import clsx from "clsx"
 import { Libre_Franklin } from "next/font/google"
 import Image from "next/image"
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa6"
+import { dashboard, logo } from "./imageIndex"
 
 const libreFranklin = Libre_Franklin({ subsets: ["latin"], weight: ["300", "600", "700"] })
 
@@ -14,7 +15,7 @@ export default function Page() {
 }
 function Logo() {
     return <div className="relative mx-auto w-14 h-6 mb-8 lg:mb-10">
-        <Image alt="Ping logo" className="object-contain" fill src="/projects/newbie/ping/logo.svg" />
+        <Image alt="Ping logo" className="object-contain" fill src={logo} />
     </div>
 }
 function Hero() {
@@ -32,8 +33,6 @@ function Hero() {
         </p>
         <form className="flex flex-col gap-2.5 lg:flex-row w-full">
             <input placeholder="Your email address..." className=" flex-1 border border-[#C2D3FF] rounded-full py-[18px] pl-[32px] w-full" />
-
-
             <button className="bg-[#4C7BF3] lg:w-[40%] shadow-xl shadow-[0px_5px_10px_2px_rgba(76,123,243,0.230414)] rounded-full font-semibold text-[16px] text-white py-[18px] px-[62px] w-full"> Notify Me</button>
         </form>
     </div>
@@ -41,7 +40,7 @@ function Hero() {
 function Illustration() {
     return <div className="flex-1 w-full text-center grid place-items-center">
         <div className="lg:mb-18 mb-28 relative mx-auto inline-block  w-full max-w-[320px] sm:max-w-none h-[192px] lg:w-[640px] sm:h-[383px]">
-            <Image src="/projects/newbie/ping/illustration-dashboard.png" fill alt="dashboard" className="object-contain" />
+            <Image src={dashboard} fill alt="dashboard" className="object-contain" />
         </div>
     </div>
 }

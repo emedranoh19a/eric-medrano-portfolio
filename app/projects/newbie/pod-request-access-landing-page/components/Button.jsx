@@ -1,7 +1,6 @@
 import clsx from "clsx";
 
 export default function Button({ className, text = "", onClick }) {
-  //TODO: consume the context of the form.
   const buttonStyles = clsx(
     "relative rounded-full  group px-8 py-2 bg-[var(--green)] overflow-hidden text-[var(--blue-950)]",
     "lg:w-full",

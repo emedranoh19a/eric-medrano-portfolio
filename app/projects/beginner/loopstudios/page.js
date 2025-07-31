@@ -15,17 +15,18 @@ const hamburguerBottom = "translate-y-[14px]"
 
 import { Alata } from "next/font/google"
 import { useState } from "react"
+import { curiosityDesktop, curiosityMobile, deepEarthDesktop, deepEarthMobile, fisheyeDesktop, fisheyeMobile, fromAboveDesktop, fromAboveMobile, gridDesktop, gridMobile, iconFacebook, iconInstagram, iconPinterest, iconTwitter, imgHeroDesktop, imgHeroMobile, interactiveDesktop, logo, nightArcadeDesktop, nightArcadeMobile, pocketBorealisDesktop, pocketBorealisMobile, soccerTeamDesktop, soccerTeamMobile } from "./imageIndex"
 const alata = Alata({ subsets: ["latin"], weight: "400" })
 
 const labels = ["About", "Careers", "Events", "Products", "Support"]
 
 export default function Page() {
-    return <>
+    return <div className="bg-white w-full min-h-screnn">
         <Hero />
         <Features />
         <Creations />
         <Footer />
-    </>
+    </div>
 
 }
 function Hero() {
@@ -51,10 +52,14 @@ function Hero() {
     // //     transform: rotate(-45deg) translateY(6px) translateX(-6px);
     // //   }
 
-    return <section id="hero" className="bg-no-repeat pt-10 md:pt-0 bg-center md:bg-cover bg-[url('/projects/beginner/loopstudios/images/mobile/image-hero.jpg')] md:bg-[url('/projects/beginner/loopstudios/images/desktop/image-hero.jpg')]">
+    return <section id="hero" className="relative z-0 pt-10 md:pt-0 bg-center md:bg-cover">
+        <div className="absolute inset-0 -z-10">
+            <Image src={imgHeroMobile} fill className="object-cover md:hidden" alt="Man with VR" />
+            <Image src={imgHeroDesktop} fill className="object-coverhidden md:block" alt="Man with VR" />
+        </div>
         <div className="container max-w-6xl mx-auto px-6 py-12">
             <nav className="flex items-center justify-between font-bold text-white">
-                <Image src="/projects/beginner/loopstudios/images/logo.svg" width={100} height={100} alt="" />
+                <Image src={logo} width={100} height={100} alt="" />
                 <Menu />
                 <div className="md:hidden relative">
                     <button
@@ -109,7 +114,7 @@ function Features() {
             className="relative container flex flex-col max-w-6xl mx-auto my-32 px-6 text-gray-900 md:flex-row md:px-0"
         >
             {/* <!-- Image --> */}
-            <Image className="-translate-y-10" src="/projects/beginner/loopstudios/images/desktop/image-interactive.jpg" width={600} height={500} alt="Man with VR Interactive device." />
+            <Image className="-translate-y-10" src={interactiveDesktop} width={600} height={500} alt="Man with VR Interactive device." />
             {/* <!-- Text Container --> */}
             <div
                 className="top-48 pr-0 bg-white md:absolute md:right-0 md:py-20 md:pl-20"
@@ -134,45 +139,45 @@ function Features() {
 function Creations() {
     const creations = [
         {
-            desktopImage: "/projects/beginner/loopstudios/images/desktop/image-deep-earth.jpg",
-            mobileImage: "/projects/beginner/loopstudios/images/mobile/image-deep-earth.jpg",
+            desktopImage: deepEarthDesktop,
+            mobileImage: deepEarthMobile,
             title: "Deep Earth"
         },
         {
-            desktopImage: "/projects/beginner/loopstudios/images/desktop/image-night-arcade.jpg",
-            mobileImage: "/projects/beginner/loopstudios/images/mobile/image-night-arcade.jpg",
+            desktopImage: nightArcadeDesktop,
+            mobileImage: nightArcadeMobile,
             title: "Night Arcade"
         },
         {
-            desktopImage: "/projects/beginner/loopstudios/images/desktop/image-soccer-team.jpg",
-            mobileImage: "/projects/beginner/loopstudios/images/mobile/image-soccer-team.jpg",
+            desktopImage: soccerTeamDesktop,
+            mobileImage: soccerTeamMobile,
             title: "Soccer Team"
         },
         {
-            desktopImage: "/projects/beginner/loopstudios/images/desktop/image-grid.jpg",
-            mobileImage: "/projects/beginner/loopstudios/images/mobile/image-grid.jpg",
+            desktopImage: gridDesktop,
+            mobileImage: gridMobile,
             title: "The Grid"
         },
     ]
     const secondCreations = [
         {
-            desktopImage: "/projects/beginner/loopstudios/images/desktop/image-from-above.jpg",
-            mobileImage: "/projects/beginner/loopstudios/images/mobile/image-from-above.jpg",
+            desktopImage: fromAboveDesktop,
+            mobileImage: fromAboveMobile,
             title: "From Up Above VR"
         },
         {
-            desktopImage: "/projects/beginner/loopstudios/images/desktop/image-pocket-borealis.jpg",
-            mobileImage: "/projects/beginner/loopstudios/images/mobile/image-pocket-borealis.jpg",
+            desktopImage: pocketBorealisDesktop,
+            mobileImage: pocketBorealisMobile,
             title: "Pocket Borealis"
         },
         {
-            desktopImage: "/projects/beginner/loopstudios/images/desktop/image-curiosity.jpg",
-            mobileImage: "/projects/beginner/loopstudios/images/mobile/image-curiosity.jpg",
+            desktopImage: curiosityDesktop,
+            mobileImage: curiosityMobile,
             title: "The Curiosity"
         },
         {
-            desktopImage: "/projects/beginner/loopstudios/images/desktop/image-fisheye.jpg",
-            mobileImage: "/projects/beginner/loopstudios/images/mobile/image-fisheye.jpg",
+            desktopImage: fisheyeDesktop,
+            mobileImage: fisheyeMobile,
             title: "Make it Fisheye"
         },
     ]
@@ -255,10 +260,10 @@ function Footer() {
     }
 
     const icons = [
-        "/projects/beginner/loopstudios/images/icon-facebook.svg",
-        "/projects/beginner/loopstudios/images/icon-twitter.svg",
-        "/projects/beginner/loopstudios/images/icon-pinterest.svg",
-        "/projects/beginner/loopstudios/images/icon-instagram.svg"
+        iconFacebook,
+        iconTwitter,
+        iconPinterest,
+        iconInstagram
     ]
     return <footer className="bg-black">
         {/* <!-- Container --> */}
@@ -273,7 +278,7 @@ function Footer() {
                 >
                     {/* <!-- Logo --> */}
                     <div className="h-8">
-                        <Image src="/projects/beginner/loopstudios/images/logo.svg" alt="" className="w-44 md:ml-3" height={100} width={100} />
+                        <Image src={logo} alt="" className="w-44 md:ml-3" height={100} width={100} />
                     </div>
                     {/* <!-- Menu Container --> */}
                     <div

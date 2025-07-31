@@ -24,5 +24,3 @@ export default function StylesSetup({ children, className }) {
     </div>
   );
 }
-//TODO: set palette
-//TODO: set typography

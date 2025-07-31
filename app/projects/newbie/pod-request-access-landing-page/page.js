@@ -3,7 +3,6 @@ import DesktopImage from "./components/DesktopImage"
 import Logo from "./components/Logo"
 import MobileImage from "./components/MobileImage"
 import StylesSetup from "./components/StylesSetup"
-//Review: set the transition colors with TailwindCSS.
 export default function Page() {
     return <StylesSetup className="relative grid place-items-center relative p-9 md:pr-0 lg:pl-28 md:pt-0 md:place-items-start lg:place-items-center z-0" >
         <MobileImage />

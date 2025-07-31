@@ -10,10 +10,9 @@ export default function Form() {
     handleSubmit,
     formState: { errors },
   } = methods;
-  console.log(errors);
   //Handlers:
   function onSubmit(data) {
-    alert("handling function");
+    alert("handling function...");
   }
 
   return (

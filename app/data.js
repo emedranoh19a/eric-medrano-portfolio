@@ -615,12 +615,7 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
+    //TODO: retrieve the full design.
     {
         title: "Loopstudios",
         titleJp: "Loopstudios",
@@ -628,7 +623,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/beginner/loopstudios/desktop-preview.png",
+        image: "/projects/front-end-mentor/beginner/to-change_loopstudios.png",
         url: "/projects/beginner/loopstudios",
         level: 1,
         techs: ["html", "tailwindcss"],
@@ -964,12 +959,7 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
+    //TODO: replace preview image
     {
         title: "Skilled E-learning Landing Page",
         titleJp: "EラーニングLP",
@@ -977,7 +967,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/newbie/skilled-elearning-landing-page/preview.png",
+        image: "/projects/front-end-mentor/newbie/newbie_skilled-elearning-landing-page.png",
         url: "/projects/newbie/skilled-elearning-landing-page",
         level: 0,
         techs: ["html", "tailwindcss"],
@@ -986,12 +976,7 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
+    //TODO: End the project POD
     {
         title: "Pod Request Access LP",
         titleJp: "PODアクセスリクエストLP",
@@ -999,7 +984,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/newbie/pod-request-access-landing-page/Desktop.jpg",
+        image: "/projects/front-end-mentor/newbie/newbie_pod-request-access-landing-page.jpg",
         url: "/projects/newbie/pod-request-access-landing-page",
         level: 0,
         techs: ["react", "tailwindcss"],
@@ -1087,7 +1072,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/other/modern-art-gallery_preview.png",
+        image: "/projects/front-end-mentor/beginner/to-change-modern-art-gallery_preview.png",
         url: "https://art-gallery-for-eric-medrano.netlify.app/",
         level: 1,
         techs: ["nextjs", "tailwindcss"],
@@ -1198,12 +1183,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         title: "Sign Up Intro",
         titleJp: "アカウント登録",
@@ -1220,12 +1199,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         title: "Ping Coming Soon Page",
         titleJp: "Ping 近日公開ページ",
@@ -1233,7 +1206,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/newbie/ping/desktop-design.jpg",
+        image: "/projects/front-end-mentor/newbie/newbie_ping.jpg",
         url: "/projects/newbie/ping",
         level: 0,
         techs: ["html", "tailwindcss"],

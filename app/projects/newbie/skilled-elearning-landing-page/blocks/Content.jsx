@@ -2,34 +2,41 @@ import clsx from "clsx";
 import Image from "next/image";
 import Button from "../components/Button";
 import Text from "../components/Text";
+import {
+  iconAnimation,
+  iconBusiness,
+  iconCrypto,
+  iconDesign,
+  iconPhotography,
+} from "../imageIndex";
 
 const features = [
   {
-    icon: "animation",
+    icon: iconAnimation,
     title: "Animation",
     content:
       "Animation Learn the latest animation techniques to create stunning motion design and captivate your audience.",
   },
   {
-    icon: "design",
+    icon: iconDesign,
     title: "Design",
     content:
       "Create beautiful, usable interfaces to help shape the future of how the web looks.",
   },
   {
-    icon: "photography",
+    icon: iconPhotography,
     title: "Photography",
     content:
       "Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.",
   },
   {
-    icon: "crypto",
+    icon: iconCrypto,
     title: "Crypto",
     content:
       "All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.",
   },
   {
-    icon: "business",
+    icon: iconBusiness,
     title: "Business",
     content:
       "A step-by-step playbook to help you start, scale, and sustain your business without outside investment.",
@@ -77,12 +84,7 @@ function FeatureIcon({ icon }) {
   return (
     <div className="absolute w-14 aspect-square top-0 left-8 -translate-y-1/2 bg-gradient-to-b from-[var(--gradient-pink-top)] to-[var(--gradient-pink-bottom)] rounded-full">
       <div className="w-full h-full relative">
-        <Image
-          fill
-          className="object-contain"
-          alt=""
-          src={`/projects/newbie/skilled-elearning-landing-page/assets/icon-${icon}.svg`}
-        />
+        <Image fill className="object-contain" alt="" src={icon} />
       </div>
     </div>
   );

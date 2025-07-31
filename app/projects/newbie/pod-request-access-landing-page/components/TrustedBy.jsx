@@ -1,21 +1,27 @@
 import Image from "next/image";
+import {
+  applePodcast,
+  googlePodcasts,
+  pocketCasts,
+  spotify,
+} from "../imageIndex";
 
 const logos = [
   {
     title: "Spotify",
-    url: "/projects/newbie/pod-request-access-landing-page/desktop/spotify.svg",
+    url: spotify,
   },
   {
     title: "Apple Podcast",
-    url: "/projects/newbie/pod-request-access-landing-page/desktop/apple-podcast.svg",
+    url: applePodcast,
   },
   {
     title: "Google Podcasts",
-    url: "/projects/newbie/pod-request-access-landing-page/desktop/google-podcasts.svg",
+    url: googlePodcasts,
   },
   {
     title: "Pocket Casts",
-    url: "/projects/newbie/pod-request-access-landing-page/desktop/pocket-casts.svg",
+    url: pocketCasts,
   },
 ];
 export default function TrustedBy() {

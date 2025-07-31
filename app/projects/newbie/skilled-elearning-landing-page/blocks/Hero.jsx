@@ -2,6 +2,7 @@ import clsx from "clsx";
 import Image from "next/image";
 import Button from "../components/Button";
 import Text from "../components/Text";
+import { imgHeroDesktop, imgHeroMobile } from "../imageIndex";
 
 export default function Hero() {
   return (
@@ -44,14 +45,14 @@ function Illustration() {
         alt="Developer drinking coffee"
         fill
         className="object-contain hidden md:block scale-150 translate-x-28 -translate-y-10"
-        src="/projects/newbie/skilled-elearning-landing-page/assets/image-hero-desktop@2x.webp"
+        src={imgHeroDesktop}
       />
       {/* Mobile image */}
       <Image
         alt="Developer drinking coffee"
         fill
         className="object-contain  inline-block md:hidden"
-        src="/projects/newbie/skilled-elearning-landing-page/assets/image-hero-mobile@2x.webp"
+        src={imgHeroMobile}
       />
     </div>
   );

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { logoDark, logoLight } from "../imageIndex";
 
 export default function Logo({ dark = false }) {
   return (
@@ -7,9 +8,7 @@ export default function Logo({ dark = false }) {
         fill
         className="object-contain"
         alt="Skilled logo"
-        src={`/projects/newbie/skilled-elearning-landing-page/assets/logo-${
-          dark ? "dark" : "light"
-        }.svg`}
+        src={dark ? logoDark : logoLight}
       />
     </div>
   );
