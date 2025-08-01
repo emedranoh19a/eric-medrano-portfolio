@@ -2,6 +2,7 @@ import clsx from "clsx";
 import Image from "next/image";
 import Button from "./components/Button";
 import Text from "./components/Text";
+import { imgFounder } from "./imageIndex";
 
 export default function CTA() {
   const containerStyles = clsx(
@@ -67,7 +68,7 @@ function UserImage() {
           fill
           alt="Founder of Webkit"
           className="object-cover"
-          src="/projects/newbie/workit-landing-page/images/image-founder.webp"
+          src={imgFounder}
         />
       </div>
     </div>

@@ -654,12 +654,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         description: "Custom hooks project from the ReactJS course by Jonas Schmedtmann.",
         descriptionJp: "ReactJSのコース(Jonas Schmedtmann)-カスタムフック",
@@ -667,7 +661,7 @@ export const projects = [
         title: "usePopcorn",
         titleJp: "usePopcorn",
         titleEs: "usePopcorn",
-        image: "/projects/other/use-popcorn.png",
+        image: "/projects/other/use-popcorn.webp",
         url: "https://usepopcorn-for-erichiki.netlify.app",
         level: 2,
         techs: ["react", "styled-components", "api"],
@@ -915,12 +909,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         title: "Workit",
         titleJp: "Workit",
@@ -928,7 +916,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/newbie/workit-landing-page/Tablet.jpg",
+        image: "/projects/front-end-mentor/newbie/newbie_workit-landing-page.jpg",
         url: "/projects/newbie/workit-landing-page",
         level: 0,
         techs: ["html", "tailwindcss"],
@@ -1359,7 +1347,6 @@ export const slugs = [
 ]
 
 
-//TODO: Add docker when you feel nice
 export const skillImages = [
     "/skills/html.png",
     "/skills/css.webp",
@@ -1393,4 +1380,3 @@ export const skillImages = [
     "/skills/react-hot-toast.svg"
 ]
 
-//TODO: A photo of myself in a square. Take Angela Yu as an Inspiration.

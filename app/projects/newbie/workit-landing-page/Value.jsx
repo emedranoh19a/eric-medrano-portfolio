@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import Image from "next/image";
 import Text from "./components/Text";
+import { ornamental2 } from "./imageIndex";
 
 const features = [
   {
@@ -40,11 +41,7 @@ export default function Value() {
       </div>
       <div className="absolute w-full h-6 md:h-14 xl:h-20  bottom-0 left-0">
         <div className="relative w-full h-full">
-          <Image
-            src="/projects/newbie/workit-landing-page/images/ornamental2.png"
-            fill
-            className="object-fill"
-          />
+          <Image src={ornamental2} fill className="object-fill" />
         </div>
       </div>
       {/* <Ornamental

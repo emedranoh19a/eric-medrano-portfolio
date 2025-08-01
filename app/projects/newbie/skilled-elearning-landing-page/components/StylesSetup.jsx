@@ -1,7 +1,7 @@
 export default function StylesSetup({ children }) {
   return (
     <div
-      className="w-full z-0 relative bg-white min-h-screen"
+      className="w-full overflow-x-hidden z-0 relative bg-white min-h-screen"
       style={{
         "--blue-900": "#13183F",
         "--blue-600": "#666CA3",

@@ -3,6 +3,7 @@ import Button from "./components/Button";
 import Logo from "./components/Logo";
 import Ornamental from "./components/Ornamental";
 import Text from "./components/Text";
+import { imgHero } from "./imageIndex";
 
 export default function Hero() {
   return (
@@ -20,7 +21,7 @@ export default function Hero() {
           fill
           className="object-contain"
           alt="smartphone illustration"
-          src="/projects/newbie/workit-landing-page/images/image-hero.webp"
+          src={imgHero}
         />
       </div>
       {/* <Ornamental /> */}
