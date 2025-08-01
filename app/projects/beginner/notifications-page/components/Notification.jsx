@@ -12,6 +12,7 @@ export default function Notification({
   photo,
   boxMessage,
   setNotifications,
+  url,
 }) {
   //Style:
   const containerStyles = cn(
@@ -21,7 +22,6 @@ export default function Notification({
   );
   //Dataflow:
   const kebabName = toKebabCase(subject);
-  const avatarUrl = `/projects/beginner/notifications-page/images/avatar-${kebabName}.webp`;
   //Handlers:
   function onSetUnread() {
     //find the notification.
@@ -40,7 +40,7 @@ export default function Notification({
         <div className="h-10 aspect-square relative mr-2 cursor-pointer">
           <Image
             alt={`Avatar of ${subject}`}
-            src={avatarUrl}
+            src={url}
             fill
             className="object-contain"
           />

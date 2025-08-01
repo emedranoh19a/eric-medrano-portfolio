@@ -7,15 +7,6 @@ import { useTheme } from "./ThemeProvider";
 export default function TextArea({ ...otherProps }) {
   const { register } = useFormContext();
   const { isDark } = useTheme();
-
-  // const validations = {
-  //   ...(hasLimit && {
-  //     maxLength: {
-  //       value: 5,
-  //       message: "Too large",
-  //     },
-  //   }),
-  // };
   /* Text Input Container */
 
   const styles = cn(

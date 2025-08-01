@@ -1,15 +1,11 @@
 import Image from "next/image";
+import { logo } from "../imageIndex";
 
 export default function Logo() {
   //public
   return (
     <div className="relative w-[86px] h-[53px]">
-      <Image
-        src="/projects/beginner/tip-calculator/logo.svg"
-        alt="Splitter Logo"
-        fill
-        className="object-contain"
-      />
+      <Image src={logo} alt="Splitter Logo" fill className="object-contain" />
     </div>
   );
 }

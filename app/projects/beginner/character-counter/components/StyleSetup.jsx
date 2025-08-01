@@ -7,6 +7,7 @@ import { useTheme } from "./ThemeProvider";
 export default function StyleSetup({ children }) {
   //State:
   const { isDark } = useTheme();
+
   //Style:
   const mainStyles = cn(
     "w-full min-h-screen relative z-0 transition-colors duration-700 bg-white",
@@ -14,11 +15,9 @@ export default function StyleSetup({ children }) {
   );
   const containerStyles = cn(
     "container mx-auto flex flex-col gap-10",
-    "pt-4 px-4 pb-8",
-    "",
-    "",
-    ""
+    "pt-4 px-4 pb-8"
   );
+
   return (
     <main
       className={mainStyles}

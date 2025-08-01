@@ -793,7 +793,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/beginner/notifications-page/desktop-design.jpg",
+        image: "/projects/front-end-mentor/beginner/beginner_notifications-page.jpg",
         url: "/projects/beginner/notifications-page",
         level: 1,
         techs: ["react", "tailwindcss"],
@@ -824,10 +824,11 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Intermediate: E-commerce Product Page
     // {
     //     title: "E-commerce Product Page",
     //     description: "Intermediate challenge from Front End Mentor.",
-    //     image: "/projects/intermediate/ecommerce-product-page/desktop-design.jpg",
+    //     image: "/projects/front-end-mentor/intermediate/intermediate_ecommercer-product-page.jpg",
     //     url: "/projects/intermediate/ecommerce-product-page",
     //     level: 2,
     //     techs: ["react", "tailwindcss", "zustand"],
@@ -1003,12 +1004,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         title: "Dictionary",
         titleJp: "辞書",
@@ -1047,12 +1042,7 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
+    //TODO: get the full page design
     {
         title: "Modern Art Gallery website",
         titleJp: "美術ギャラリーWebサイト",
@@ -1069,12 +1059,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: true,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         title: "Tip Calculator",
         titleJp: "チップ計算機",
@@ -1082,7 +1066,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/beginner/tip-calculator/tip-calculator-preview.jpg",
+        image: "/projects/front-end-mentor/beginner/beginner_tip-calculator.jpg",
         url: "/projects/beginner/tip-calculator",
         level: 1,
         techs: ["react", "react-hook-form", "tailwindcss"],
@@ -1203,12 +1187,7 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
+
     {
         title: "Text Analyzer",
         titleJp: "テキスト分析",
@@ -1216,7 +1195,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/beginner/character-counter/desktop-design.jpg",
+        image: "/projects/front-end-mentor/beginner/beginner_caracter-counter.jpg",
         url: "/projects/beginner/character-counter",
         level: 1,
         techs: ["react", "tailwindcss", "framer-motion"],
@@ -1225,12 +1204,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         title: "Contact Form",
         titleJp: "お問い合わせフォーム",
@@ -1238,7 +1211,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/beginner/contact-form/desktop-design.jpg",
+        image: "/projects/front-end-mentor/beginner/beginner_contact-form.jpg",
         url: "/projects/beginner/contact-form",
         level: 1,
         techs: ["react", "tailwindcss", "react-hot-toast"],

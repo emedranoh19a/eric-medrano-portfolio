@@ -8,9 +8,6 @@ export default function Page() {
             <Logo />
             <Form />
         </div>
-        {/* <TipButton value="Text" variant="normal" /> */}
-        {/* <TipButton value="Text" /> */}
-        {/* <TipButton value="Text" variant="selected" /> */}
     </StylesSetup>
 }
 

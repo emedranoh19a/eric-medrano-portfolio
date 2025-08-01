@@ -1,6 +1,7 @@
 "use client";
 import { cn } from "@/app/utils/utils";
 import Image from "next/image";
+import { iconMoon, iconSun } from "../imageIndex";
 import { useTheme } from "./ThemeProvider";
 
 export default function ThemeToggle() {
@@ -14,9 +15,7 @@ export default function ThemeToggle() {
   );
 
   //Dataflow:
-  const iconSrc = !isDark
-    ? "/projects/beginner/character-counter/icon-moon.svg"
-    : "/projects/beginner/character-counter/icon-sun.svg";
+  const iconSrc = !isDark ? iconMoon : iconSun;
   return (
     <button className={iconContainerStyles} onClick={toggle}>
       <Image height={22} width={22} alt="moon icon" src={iconSrc} />

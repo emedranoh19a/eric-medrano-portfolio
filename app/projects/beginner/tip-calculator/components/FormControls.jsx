@@ -1,3 +1,4 @@
+import { iconDollar, iconPerson } from "../imageIndex";
 import Input from "./Input";
 import RadioGroup from "./RadioGroup";
 
@@ -7,7 +8,7 @@ export default function FormControls() {
       <Input
         label="Bill"
         name="billAmount"
-        icon="/projects/beginner/tip-calculator/icon-dollar.svg"
+        icon={iconDollar}
         options={{
           valueAsNumber: true,
           required: "Add bill",
@@ -18,7 +19,7 @@ export default function FormControls() {
       <Input
         label="Number of people"
         name="people"
-        icon="/projects/beginner/tip-calculator/icon-person.svg"
+        icon={iconPerson}
         options={{
           valueAsNumber: true,
           min: { value: 1, message: "Must be at least 1" },

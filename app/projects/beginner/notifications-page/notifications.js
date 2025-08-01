@@ -1,8 +1,11 @@
+import { angela, anna, imgChess, jacob, kimberly, mark, nathan, rizky } from "./imageIndex"
+
 export const notifications = [
     // Mark Webber reacted to your recent post My first tournament today!
     //         1m ago
     {
         subject: "Mark Webber",
+        src: mark,
         predicate: "reacted to your recent post My first tournament today!",
         isRead: false,
         date: "1m ago",
@@ -15,6 +18,7 @@ export const notifications = [
     //         5m ago
     {
         subject: "Angela Gray",
+        src: angela,
         predicate: "followed you",
         isRead: false,
         date: "5m ago",
@@ -28,6 +32,7 @@ export const notifications = [
     //         1 day ago
     {
         subject: "Jacob Thompson",
+        src: jacob,
         isRead: false,
         predicate: "has joined your group Chess Club",
         date: "1 day ago",
@@ -40,6 +45,7 @@ export const notifications = [
     //         5 days ago
     {
         subject: "Rizky Hasanuddin",
+        src: rizky,
         predicate: "sent you a private message",
         date: "5 day ago",
         isRead: true,
@@ -52,19 +58,21 @@ export const notifications = [
     //         1 week ago
     {
         subject: "Kimberly Smith",
+        src: kimberly,
         predicate: "commented on your picture",
         date: "1 week ago",
         isRead: true,
 
         highlight: "",
         highlightType: "none",
-        photo: "/projects/beginner/notifications-page/images/image-chess.webp",
+        photo: imgChess,
         boxMessage: ""
     },
     //         Nathan Peterson reacted to your recent post 5 end - game strategies to increase your win rate
     // 2 weeks ago
     {
         subject: "Nathan Peterson",
+        src: nathan,
         predicate: "reacted to your recent post 5 end - game strategies to increase your win rate",
         date: "1 week ago",
         isRead: true,
@@ -77,6 +85,7 @@ export const notifications = [
     // 2 weeks ago 
     {
         subject: "Anna Kim",
+        src: anna,
         predicate: "left the group Chess Club",
         date: "2 weeks ago",
         isRead: true,
@@ -85,11 +94,5 @@ export const notifications = [
         photo: "",
         boxMessage: ""
     },
-
-
-
-
-
-
 ]
 
