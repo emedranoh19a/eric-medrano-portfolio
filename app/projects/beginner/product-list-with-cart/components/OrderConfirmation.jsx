@@ -3,6 +3,7 @@ import { Red_Hat_Text } from "next/font/google";
 import Image from "next/image";
 import { useContext } from "react";
 import { dessertsCatalogue } from "../dessertsCatalogue";
+import { iconOrderConfirmed } from "../imageIndex";
 import { CartContext } from "../page";
 const redHatText = Red_Hat_Text({ subsets: ["latin"] });
 
@@ -34,7 +35,7 @@ export default function OrderConfirmation({ onCloseModal }) {
       }}
     >
       <Image
-        src="/projects/beginner/product-list-with-cart/images/icon-order-confirmed.svg"
+        src={iconOrderConfirmed}
         width={30}
         height={30}
         className="mb-3"
@@ -81,7 +82,11 @@ export default function OrderConfirmation({ onCloseModal }) {
 
 function ListItem({ dessertId, quantity }) {
   const dessertInfo = dessertsCatalogue.find((item) => item.id === dessertId);
-  const { title, price, imgInterpolation } = dessertInfo;
+  const {
+    title,
+    price,
+    imageSet: { thumbnail },
+  } = dessertInfo;
   const subtotal = price * quantity;
 
   return (
@@ -89,7 +94,7 @@ function ListItem({ dessertId, quantity }) {
       <div className="flex flex-row gap-3">
         <div className="relative aspect-square w-10 rounded-md overflow-hidden ">
           <Image
-            src={`/projects/beginner/product-list-with-cart/images/image-${imgInterpolation}-thumbnail.jpg`}
+            src={thumbnail}
             className="object-cover"
             fill
             alt={`Thumbnail for ${title}`}

@@ -2,6 +2,7 @@ import Modal, { ModalOpen, ModalWindow } from "@/app/components/ui/Modal";
 import Image from "next/image";
 import { useContext } from "react";
 import { dessertsCatalogue } from "../dessertsCatalogue";
+import { iconCarbonNeutral, illustrationEmptyCart } from "../imageIndex";
 import { CartContext } from "../page";
 import CartItem from "./CartItem";
 import OrderConfirmation from "./OrderConfirmation";
@@ -27,7 +28,7 @@ export default function Cart() {
         <div>
           <div className="relative w-40 aspect-square mx-auto my-5">
             <Image
-              src="/projects/beginner/product-list-with-cart/images/illustration-empty-cart.svg"
+              src={illustrationEmptyCart}
               fill
               className="object-contain"
               alt=""
@@ -51,7 +52,7 @@ export default function Cart() {
           <div className="bg-[var(--rose-50)] py-3 rounded-lg flex gap-2 justify-center items-center">
             <div className="relative h-4 aspect-square">
               <Image
-                src="/projects/beginner/product-list-with-cart/images/icon-carbon-neutral.svg"
+                src={iconCarbonNeutral}
                 fill
                 className="object-contain"
                 alt="carbon neutral icon"

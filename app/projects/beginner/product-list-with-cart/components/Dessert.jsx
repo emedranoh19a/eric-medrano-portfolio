@@ -1,15 +1,18 @@
 import { cn } from "@/app/utils/utils";
 import Image from "next/image";
 import { useContext } from "react";
+import { iconAddToCart } from "../imageIndex";
 import { CartContext } from "../page";
 import ItemOperator from "./ItemOperator";
 
-export default function Dessert({ id, type, imgInterpolation, title, price }) {
+export default function Dessert({ id, type, imageSet, title, price }) {
   //State:
   const { cartItems, handleAdd } = useContext(CartContext);
   //Dataflow:
   const isInCart = cartItems.find((item) => item.id === id);
   const cartQuantity = isInCart?.quantity || 0;
+
+  const { desktop, movile, tablet, thumbnail } = imageSet;
   //Style:
 
   const mainButtonStyles = cn(
@@ -31,19 +34,14 @@ export default function Dessert({ id, type, imgInterpolation, title, price }) {
     <div className="flex gap-5 flex-col mb-2">
       <div className="relative h-fit w-full">
         <div className={imgContainerStyles}>
-          <Image
-            src={`/projects/beginner/product-list-with-cart/images/image-${imgInterpolation}-desktop.jpg`}
-            fill
-            className="object-cover"
-            alt={title}
-          />
+          <Image src={desktop} fill className="object-cover" alt={title} />
         </div>
 
         {!isInCart ? (
           <button className={mainButtonStyles} onClick={() => handleAdd(id)}>
             <div className="relative w-4 aspect-square">
               <Image
-                src="/projects/beginner/product-list-with-cart/images/icon-add-to-cart.svg"
+                src={iconAddToCart}
                 fill
                 className="object-contain fill-white"
                 alt="Add to cart icon"

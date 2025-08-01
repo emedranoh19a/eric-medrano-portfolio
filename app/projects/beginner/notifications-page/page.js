@@ -1,6 +1,4 @@
 "use client"
-// ### The challenge
-// Users should be able to:
 
 import { useState } from "react"
 import Notification from "./components/Notification"
@@ -33,8 +31,6 @@ export default function Page() {
                 {notifications.map((notification, i) => <Notification key={i} {...notification} setNotifications={setNotifications} />)}
             </ul>
         </div>
-
-
     </StylesSetup>
 }
 
