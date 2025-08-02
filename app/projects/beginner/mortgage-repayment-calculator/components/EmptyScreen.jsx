@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { illustrationEmpty } from "../imageIndex";
 import Text from "./Text";
 
 export default function EmptyScreen() {
@@ -18,7 +19,7 @@ export default function EmptyScreen() {
 function EmptyIllustration() {
   return (
     <Image
-      src="/projects/beginner/mortgage-repayment-calculator/images/illustration-empty.svg"
+      src={illustrationEmpty}
       height={192}
       width={192}
       alt="empty illustration"

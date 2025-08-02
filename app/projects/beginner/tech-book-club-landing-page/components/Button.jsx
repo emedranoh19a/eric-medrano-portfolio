@@ -1,5 +1,6 @@
 import { cn } from "@/app/utils/utils";
 import Image from "next/image";
+import { arrowDown, arrowUp } from "../imageIndex";
 import Text from "./Text";
 
 export default function Button({
@@ -9,6 +10,7 @@ export default function Button({
   icon = "",
   ...otherProps
 }) {
+  //Style:
   const buttonStyles = cn(
     "group relative z-0 uppercase",
     "py-5 px-6",
@@ -30,6 +32,9 @@ export default function Button({
     variant === "alternate" &&
       "bg-gradient-to-r from-[var(--neutral-700)] to-[var(--neutral-900)]"
   );
+  //Dataflow:
+  const alt = icon === "up" ? "up icon" : "down icon";
+  const src = icon === "up" ? arrowUp : arrowDown;
 
   return (
     <button className={buttonStyles} {...otherProps}>
@@ -37,26 +42,11 @@ export default function Button({
       <Text as="span" preset={6} className="w-full">
         {text}
       </Text>
-      {icon === "up" && (
-        <span className="relative aspect-square w-5">
-          <Image
-            className="object-contain"
-            fill
-            alt="up icon"
-            src="/projects/beginner/tech-book-club-landing-page/icon-arrow-up.svg"
-          />
-        </span>
-      )}
-      {icon === "down" && (
-        <span className="relative aspect-square w-5">
-          <Image
-            className="object-contain"
-            fill
-            alt="down icon"
-            src="/projects/beginner/tech-book-club-landing-page/icon-arrow-down.svg"
-          />
-        </span>
-      )}
+      <span className="relative aspect-square w-5">
+        {icon === "up" && (
+          <Image className="object-contain" fill alt={alt} src={src} />
+        )}
+      </span>
     </button>
   );
 }

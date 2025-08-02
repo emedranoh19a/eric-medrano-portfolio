@@ -40,9 +40,7 @@ function Form() {
     const reactiveYear = watch("year")
 
     useEffect(() => {
-
         clearErrors()
-        console.log(reactiveMonth)
         if (monthsWith30.includes(Number(reactiveMonth))) {
             if (Number(reactiveMonth) !== 2 && Number(reactiveDay) > 30) {
                 // console.log("Case: reactive month shouldn't be 31")
@@ -63,20 +61,9 @@ function Form() {
 
                 }
             }
-
-
-
         }
 
     }, [reactiveDay, reactiveMonth, reactiveYear])
-    // useEffect(() => {
-    //     console.log("Effect is triggered:")
-    //     if (monthsWith30.includes(reactiveMonth) && reactiveDay > 30) {
-    //         // setMaxDay(31)
-    //         setError("day", { message: "Month does not have thatasas many days" })
-    //     }
-    // }, [reactiveDay, reactiveMonth])
-
 
     //Handlers:
     // we need it in the format of "yyyy-mm-dd"
@@ -128,8 +115,7 @@ function Form() {
     function onSubmit(data) {
         //How to fix this logic?
         if (Object.keys(errors).length > 0) {
-            console.log("Errors detected:")
-            console.log(errors)
+
             return
         }
         else {

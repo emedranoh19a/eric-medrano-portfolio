@@ -3,12 +3,13 @@ import Image from "next/image";
 import Container from "../components/Container";
 import ResponsiveImageSet from "../components/ResponsiveImageSet";
 import Text from "../components/Text";
+import { check, imgReadTogether } from "../imageIndex";
 
 export default function Features() {
   return (
     <Container as="section" id="features">
       <IllustratedBlock
-        srcPrefix="/projects/beginner/tech-book-club-landing-page/image-read-together"
+        imageSet={imgReadTogether}
         className="mb-16 sm:mb-20 lg:mb-32"
         alt="People reading together"
         reverse
@@ -40,7 +41,7 @@ function FirstBlockContent() {
                 className="object-contain"
                 alt="check icon"
                 fill
-                src="/projects/beginner/tech-book-club-landing-page/icon-check.svg"
+                src={check}
               />
             </div>
             <Text key={i} as="p" preset={5} className="w-full">
@@ -65,13 +66,7 @@ function SecondBlockContent() {
     </div>
   );
 }
-function IllustratedBlock({
-  className,
-  srcPrefix = "",
-  alt,
-  children,
-  reverse,
-}) {
+function IllustratedBlock({ className, imageSet, alt, children, reverse }) {
   const containerStyles = clsx(
     "relative w-full text-[var(--neutral-900)]",
     "flex flex-col xl:flex-row gap-10 xl:gap-20 justify-between items-center",
@@ -84,7 +79,7 @@ function IllustratedBlock({
       <div className="w-full">{children}</div>
       <div className="rounded-2xl overflow-hidden relative w-full h-[318px] sm:h-[650px] lg:h-[520px]">
         <ResponsiveImageSet
-          srcPrefix={srcPrefix}
+          imageSet={imageSet}
           alt={alt}
           className="object-left"
         />

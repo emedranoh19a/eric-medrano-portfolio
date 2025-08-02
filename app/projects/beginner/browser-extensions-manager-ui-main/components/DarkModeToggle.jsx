@@ -1,15 +1,13 @@
 "use client";
 import { cn } from "@/app/utils/utils";
 import Image from "next/image";
+import { moon, sun } from "../imageIndex";
 import { useDarkMode } from "./DarkThemeProvider";
 
 export default function DarkModeToggle() {
   //State:
   const { isDark, onToggle } = useDarkMode();
-  const imageSrc = `/projects/beginner/browser-extensions-manager-ui-main/icon-${
-    !isDark ? "moon" : "sun"
-  }.svg`;
-
+  const imageSrc = !isDark ? moon : sun;
   const buttonStyles = cn(
     "w-[50px] aspect-square",
     "grid place-items-center",

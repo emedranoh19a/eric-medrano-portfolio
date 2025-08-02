@@ -1,5 +1,6 @@
 import { cn } from "@/app/utils/utils";
 import Image from "next/image";
+import { iconCalculator } from "../imageIndex";
 import Text from "./Text";
 
 export default function Button({ text = "button", className, ...otherProps }) {
@@ -16,7 +17,7 @@ export default function Button({ text = "button", className, ...otherProps }) {
         height={24}
         width={24}
         alt="calculator icon"
-        src="/projects/beginner/mortgage-repayment-calculator/images/icon-calculator.svg"
+        src={iconCalculator}
       />
       <Text as="span" preset={3} className="text-[var(--slate-900)]">
         {text}

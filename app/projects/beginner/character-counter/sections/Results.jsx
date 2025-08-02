@@ -5,6 +5,11 @@ import Image from "next/image";
 import { useFormContext } from "react-hook-form";
 import Text from "../components/Text";
 import { useTheme } from "../components/ThemeProvider";
+import {
+  patternCharacterCount,
+  patternSentenceCount,
+  patternWordCount,
+} from "../imageIndex";
 
 export default function Results() {
   return (
@@ -59,13 +64,12 @@ function MainStat({ variant = "characters", value = "" }) {
       : variant === "words"
       ? "Word Count"
       : "Sentence Count";
-  const srcFragment =
+  const imgSrc =
     variant === "characters"
-      ? "character"
+      ? patternCharacterCount
       : variant === "words"
-      ? "word"
-      : "sentence";
-  const imgSrc = `/projects/beginner/character-counter/pattern-${srcFragment}-count.svg`;
+      ? patternWordCount
+      : patternSentenceCount;
   return (
     <div className={containerStyles}>
       <div className={ornamentalStyles}>

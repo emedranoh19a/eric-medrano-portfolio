@@ -5,6 +5,7 @@ import Button from "../components/Button";
 import Container from "../components/Container";
 import Glow from "../components/Glow";
 import Text from "../components/Text";
+import { check } from "../imageIndex";
 
 const cards = [
   {
@@ -46,14 +47,13 @@ export default function MembershipOptions() {
           {cards.map((card, i) => (
             <Card key={i} {...card} />
           ))}
-          {/* <Card /> <Card /> <Card /> */}
         </div>
       </div>
     </Container>
   );
 }
 
-function Card({ title, price, className, features, specialCard = false }) {
+function Card({ features, specialCard = false }) {
   const containerStyles = cn(
     "relative z-0 flex flex-col gap-8 overflow-hidden",
     "p-6",
@@ -85,7 +85,7 @@ function Card({ title, price, className, features, specialCard = false }) {
                 className="object-contain"
                 alt="check icon"
                 fill
-                src="/projects/beginner/tech-book-club-landing-page/icon-check.svg"
+                src={check}
               />
             </div>
             <Text preset={5} className="text-[var(--neutral-700)]" as="span">

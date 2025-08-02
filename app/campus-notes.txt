@@ -21,5 +21,7 @@ You want quick, minimal re-exports with no need to manipulate
 import ..., export {...}	
 You want more flexibility, possible grouping, processing, or clarity
 
+import data from './data.json' with { type: "json" }
+
 
 ----------------

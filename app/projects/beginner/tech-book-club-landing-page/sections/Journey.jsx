@@ -5,6 +5,7 @@ import Container from "../components/Container";
 import Glow from "../components/Glow";
 import Pattern from "../components/Pattern";
 import Text from "../components/Text";
+import { patternArrow } from "../imageIndex";
 
 export default function Journey() {
   //Style:
@@ -85,11 +86,7 @@ function Arrow({ className }) {
   return (
     <div className={positionStyles}>
       <div className="relative w-full h-full">
-        <Image
-          fill
-          className="object-contain"
-          src="/projects/beginner/tech-book-club-landing-page/pattern-arrow.svg"
-        />
+        <Image fill className="object-contain" src={patternArrow} />
       </div>
     </div>
   );

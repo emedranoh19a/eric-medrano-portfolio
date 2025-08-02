@@ -4,6 +4,7 @@ import Pattern from "../components/Pattern";
 import RankingStars from "../components/RankingStars";
 import TestimonialAvatars from "../components/TestimonialAvatars";
 import Text from "../components/Text";
+import { logoBluesky, logoLinkedIn } from "../imageIndex";
 
 export default function Footer() {
   return (
@@ -28,7 +29,7 @@ function Icons() {
           alt="Blue Sky icon"
           className="object-contain"
           fill
-          src="/projects/beginner/tech-book-club-landing-page/logo-bluesky.svg"
+          src={logoBluesky}
         />
       </div>
       <div className="relative w-[22px] aspect-square">
@@ -36,7 +37,7 @@ function Icons() {
           alt="LinkedIn icon"
           className="object-contain"
           fill
-          src="/projects/beginner/tech-book-club-landing-page/logo-linkedin.svg"
+          src={logoLinkedIn}
         />
       </div>
     </div>

@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import StylesSetup from "./components/StylesSetup"
 import data from './data.json' with { type: "json" }
+import { logo } from "./imageIndex"
 export default function Page() {
 
     return <StylesSetup>
@@ -22,7 +23,7 @@ function Header({ balance = 921.48 }) {
             <span className=" font-bold text-2xl">${balance}</span>
         </div>
         <div className="relative aspect-video h-12">
-            <Image src="/projects/beginner/expenses-chart-component/images/logo.svg" className="object-contain" fill alt="logo" />
+            <Image src={logo} className="object-contain" fill alt="logo" />
         </div>
     </div>
 }
@@ -33,7 +34,6 @@ function Chart({ data }) {
     return <div className="bg-[var(--very-pale-orange)] text-[var(--medium-brown)] p-5 rounded-xl flex flex-col gap-4">
         <div >
             <span className="text-2xl font-bold text-[var(--dark-brown)]">
-
                 Spending - Last 7 days
             </span>
         </div>

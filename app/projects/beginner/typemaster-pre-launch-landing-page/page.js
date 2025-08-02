@@ -3,6 +3,7 @@ import Image from "next/image"
 import Button from "./Button"
 import StylesSetup from "./StylesSetup"
 import Text from "./Text"
+import { iconBattery, iconBluetooth, iconCompatible, iconLight, imgGlassAndKeyboard, imgKeyboard, imgPhoneAndKeyboard, logo } from "./imageIndex"
 //Note: Maybe have to set relative positioning when working with dummy CSS Grid cells.
 {/* <div className="relative overflow-hidden w-full bg-[var(--primary)] bg-blend-multiply h-full w-full rounded-2xl">
 <Image
@@ -15,7 +16,6 @@ export default function Page() {
     return <StylesSetup>
         <PageNavbar />
         <Header />
-
         <Features />
         <Footer />
     </StylesSetup>
@@ -24,22 +24,22 @@ export default function Page() {
 const features = [
     {
         title: "Highly compatible",
-        icon: "/projects/beginner/typemaster-pre-launch-landing-page/assets/shared/icon-compatible.svg",
+        icon: iconCompatible,
         description: "Easy to use and works well with all major computer brands, gaming consoles and mobile devices. Plug & play, no installation or driver needed.",
     },
     {
         title: "Wireless with bluetooth",
-        icon: "/projects/beginner/typemaster-pre-launch-landing-page/assets/shared/icon-bluetooth.svg",
+        icon: iconBluetooth,
         description: "Powerful 2.4G RF technology allows you to connect the cordless keyboard from up to 30ft away. Simply plug the unifying receiver into your computer."
     },
     {
         title: "High capacity battery",
-        icon: "/projects/beginner/typemaster-pre-launch-landing-page/assets/shared/icon-battery.svg",
+        icon: iconBattery,
         description: "Equipped with a long-lasting built-in battery, you'll never have to spend a dime on replaceable ones. Enjoy 40 hours of usage time between charges."
     },
     {
         title: "RGB backlit modes",
-        icon: "/projects/beginner/typemaster-pre-launch-landing-page/assets/shared/icon-light.svg",
+        icon: iconLight,
         description: "Choose from 4 backlight brightness levels and adjustable breathing speed. Each key glows intensely in the dark and helps you type in low light conditions."
     }]
 
@@ -47,7 +47,7 @@ const features = [
 function PageNavbar() {
     return <nav className="container mx-auto p-4 w-full h-fit flex justify-between">
         <div className="relative h-10 aspect-square bg-red-500">
-            <Image src="/projects/beginner/typemaster-pre-launch-landing-page/assets/shared/logo.svg"
+            <Image src={logo}
                 className="object-contain"
                 fill
                 alt="Logo of Typemaster" />
@@ -75,14 +75,14 @@ function Header() {
         </div>
         <div className="relative w-full bg-neutral-100 rounded-2xl overflow-hidden h-full aspect-square sm:scale-x-125 lg:scale-x-100 origin-left rounded-2xl col-span-2 sm:col-span-1">
             <Image
-                src="/projects/beginner/typemaster-pre-launch-landing-page/assets/mobile/image-keyboard.jpg"
-                alt=""
+                src={imgKeyboard.mobile}
+                alt="Keyboard"
                 fill
                 className="object-cover block sm:hidden "
             />
             <Image
-                src="/projects/beginner/typemaster-pre-launch-landing-page/assets/desktop/image-keyboard.jpg"
-                alt=""
+                src={imgKeyboard.desktop}
+                alt="Keyboard"
                 fill
                 className="object-cover hidden sm:block"
             />
@@ -91,34 +91,33 @@ function Header() {
         </div>
         <div className="relative overflow-hidden w-full sm:scale-x-150 lg:scale-x-100 origin-right bg-[var(--primary)] bg-blend-multiply h-full w-full rounded-2xl">
             <Image
-                src="/projects/beginner/typemaster-pre-launch-landing-page/assets/mobile/image-phone-and-keyboard.jpg"
-                alt=""
+                src={imgPhoneAndKeyboard.mobile}
+                alt="Phone and keyboard"
                 fill
                 className="object-cover block sm:hidden mix-blend-multiply"
             />
             <Image
-                src="/projects/beginner/typemaster-pre-launch-landing-page/assets/desktop/image-phone-and-keyboard.jpg"
-                alt=""
+                src={imgPhoneAndKeyboard.desktop}
+                alt="Phone and keyboard"
                 fill
                 className="object-cover hidden sm:block mix-blend-multiply"
             />
         </div>
         <div className="relative overflow-hidden transform-gpu w-full h-full w-full rounded-2xl sm:col-span-2 lg:col-span-1 lg:scale-x-[150%] origin-left">
             <Image
-                src="/projects/beginner/typemaster-pre-launch-landing-page/assets/mobile/image-glass-and-keyboard.jpg"
-                alt=""
+                src={imgGlassAndKeyboard.mobile}
+                alt="Glass and keyboard"
                 fill
                 className="object-cover block sm:hidden"
             />
             <Image
-                src="/projects/beginner/typemaster-pre-launch-landing-page/assets/desktop/image-glass-and-keyboard.jpg"
-                alt=""
+                src={imgGlassAndKeyboard.desktop}
+                alt="Glass and keyboard"
                 fill
                 className="object-cover hidden sm:block "
             />
         </div>
         <div className="flex flex-col gap-4 lg:pl-[40%] items-center justify-center sm:flex-row lg:flex-col mx-auto  h-full w-full col-span-2 sm:col-span-3 lg:col-span-1">
-
             <Text as="h2"> Mechanical wireless keyboard</Text>
             <Text>The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety
                 of switches and keycaps, along with reliable wireless connectivity.</Text>

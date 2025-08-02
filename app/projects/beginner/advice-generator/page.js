@@ -3,6 +3,7 @@ import clsx from "clsx"
 import { Manrope } from "next/font/google"
 import Image from "next/image"
 import { useEffect, useState } from "react"
+import { dividerDesktop, iconDice } from "./imageIndex"
 const manrope = Manrope({ subsets: ["latin"], weights: ["800"] })
 
 function ChallengeContainer({ children }) {
@@ -19,9 +20,6 @@ function ChallengeContainer({ children }) {
     </div>
 }
 export default function Page() {
-
-
-
     //State: 
     const [adviceId, setAdviceId] = useState("...")
     const [advice, setAdvice] = useState("loading...")
@@ -62,7 +60,7 @@ export default function Page() {
             <div className={imageContainer}>
 
                 <Image
-                    src="/projects/beginner/advice-generator/images/pattern-divider-desktop.svg"
+                    src={dividerDesktop}
                     alt=""
                     fill
                     className={imageStyles}
@@ -74,7 +72,7 @@ export default function Page() {
                 onClick={handleAdvice}
             >
 
-                <Image height={20} width={20} src="/projects/beginner/advice-generator/images/icon-dice.svg" alt="" />
+                <Image height={20} width={20} src={iconDice} alt="" />
             </button>
         </div>
     </ChallengeContainer>

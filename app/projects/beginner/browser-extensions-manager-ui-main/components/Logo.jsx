@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { logo, logoDark } from "../imageIndex";
 import { useDarkMode } from "./DarkThemeProvider";
 
 export default function Logo() {
@@ -10,9 +11,7 @@ export default function Logo() {
         alt="Extensions Logo"
         fill
         className="object-contain"
-        src={`/projects/beginner/browser-extensions-manager-ui-main/logo${
-          isDark ? "-dark" : ""
-        }.svg`}
+        src={isDark ? logoDark : logo}
       />
     </div>
   );

@@ -1,5 +1,6 @@
 import { DM_Sans } from "next/font/google"
 import Image from "next/image"
+import { aiContent, audienceGrowth, consistentSchedule, createPost, fiveStars, growFollowers, multiplePlatforms, schedulePosts } from "./imageIndex"
 
 const dmSans = DM_Sans({ subsets: ["latin"], weight: ["400", "500"] })
 
@@ -28,7 +29,7 @@ export default function Page() {
                 <div className="flex flex-col gap-1 ">
 
                     <div className="relative h-6">
-                        <Image fill objectFit="contain" src="/projects/beginner/bento-grid/images/illustration-five-stars.webp" alt="" />
+                        <Image fill objectFit="contain" src={fiveStars} alt="" />
                     </div>
                     <div>
                         <span className="text-white/90 font-light">Over 4,000 5-star reviews</span>
@@ -38,7 +39,7 @@ export default function Page() {
             <div className=" rounded-lg p-4 relative bg-[var(--white)] lg:col-start-2 lg:row-start-6 lg:row-span-4">
                 <div className="relative flex flex-col gap-3 justify-between h-full ">
                     <div className="w-full relative flex-1 min-h-20 md:min-h-10 ">
-                        <Image src="/projects/beginner/bento-grid/images/illustration-multiple-platforms.webp" alt="" fill objectFit="contain" />
+                        <Image src={multiplePlatforms} alt="" fill objectFit="contain" />
                     </div>
                     <div className="font-bold text-2xl">
                         Manage multiple accounts and platforms
@@ -47,18 +48,12 @@ export default function Page() {
             </div>
             <div className="rounded-lg overflow-hidden p-4 pb-0 relative bg-[var(--accentDark)] lg:col-start-3 lg:row-start-6 lg:row-span-4">
                 <div className="h-full w-full pb-40  flex relative flex-col gap-1 ">
-
                     <p className="text-[var(--black)] text-2xl font-bold">
-
                         Maintain a consistent posting schedule.
                     </p>
-
-                    {/* <div className="relative h-full w-full"> */}
                     <div className="absolute left-0 bottom-0  w-[75%] lg:w-full max-w-68 lg:translate-y-5 aspect-video">
-
-                        <Image alt="" fill objectFit="contain" src="/projects/beginner/bento-grid/images/illustration-consistent-schedule.webp" />
+                        <Image alt="" fill objectFit="contain" src={consistentSchedule} />
                     </div>
-                    {/* </div> */}
                 </div>
             </div>
             <div className="rounded-lg p-4 pr-0 relative bg-[var(--primaryLight)] lg:col-start-4 lg:row-start-1 lg:row-span-9">
@@ -68,7 +63,7 @@ export default function Page() {
                     </div>
                     <div className=" w-full h-full min-h-80 relative">
                         <Image
-                            src="/projects/beginner/bento-grid/images/illustration-schedule-posts.webp"
+                            src={schedulePosts}
                             alt=""
                             fill
                             className="absolute lg:h-full aspect-square object-contain lg:object-cover object-left " />
@@ -86,12 +81,11 @@ export default function Page() {
                     <div className="self-center relative  w-[75%] aspect-square">
                         <Image
                             alt=""
-                            src="/projects/beginner/bento-grid/images/illustration-grow-followers.webp"
+                            src={growFollowers}
                             fill
                             objectFit="contain" />
                     </div>
                     <div className="relative self-center">
-
                         <p className="text-4xl text-center lg:text-left text-[var(--white)]  font-semibold tracking-wide">
                             Grow followers with non-stop content.
                         </p>
@@ -108,7 +102,7 @@ export default function Page() {
                     </div>
                     <div className=" w-full min-h-20 relative">
                         <Image
-                            src="/projects/beginner/bento-grid/images/illustration-audience-growth.webp"
+                            src={audienceGrowth}
                             fill
                             objectFit="contain"
                             objectPosition="left"
@@ -126,18 +120,16 @@ export default function Page() {
                     </p></div>
                     <div className=" w-full min-h-24 relative">
                         <Image
-                            src="/projects/beginner/bento-grid/images/illustration-create-post.webp"
+                            src={createPost}
                             fill
                             objectFit="contain"
                             alt=""
                         />
                     </div>
-
                 </div>
             </div>
             <div className="rounded-lg p-4 relative bg-[var(--accentDark)] lg:row-start-7 lg:row-span-6 lg:col-start-1">
                 <div className="w-full h-full flex flex-col gap-3">
-
                     <p className="text-[var(--black)] text-2xl font-bold">
                         Write your content using AI.
                     </p>
@@ -145,7 +137,7 @@ export default function Page() {
                         <Image
                             fill
                             objectFit="contain"
-                            src="/projects/beginner/bento-grid/images/illustration-ai-content.webp"
+                            src={aiContent}
                             alt=""
                         />
                     </div>
@@ -154,4 +146,3 @@ export default function Page() {
         </div>
     </div >
 }
-//To use:

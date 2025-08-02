@@ -7,6 +7,7 @@ import RankingStars from "../components/RankingStars";
 import ResponsiveImageSet from "../components/ResponsiveImageSet";
 import TestimonialAvatars from "../components/TestimonialAvatars";
 import Text from "../components/Text";
+import { imgHero } from "../imageIndex";
 
 export default function Hero() {
   return (
@@ -22,7 +23,7 @@ export default function Hero() {
         <ContentSide />
         <div className="relative w-full h-[384px] md:h-[790px] lg:h-[606px] rounded-2xl overflow-hidden">
           <ResponsiveImageSet
-            srcPrefix="/projects/beginner/tech-book-club-landing-page/image-hero"
+            imageSet={imgHero}
             alt="People reading the same book"
             className="object-top"
           />
