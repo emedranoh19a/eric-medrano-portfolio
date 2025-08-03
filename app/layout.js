@@ -1,18 +1,18 @@
 import localFont from "next/font/local"
 import { Toaster } from "react-hot-toast"
-import { SidebarDemo } from "./components/layout/Sidebar/SidebarDemo"
+import Navbar from "./components/layout/Navbar/Navbar"
 import { SmoothCursor } from "./components/layout/SmoothCursor"
 import "./globals.css"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
-  weight: "100 900",
+  weight: "100 300 500 700 900",
 })
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
-  weight: "100 900",
+  weight: "100 300 500 700 900",
 })
 
 // export const metadata = {
@@ -57,15 +57,16 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon/favicon.png" />
         </Head> */}
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth overflow-x-hidden relative z-0`}
       >
+        <Navbar />
         <SmoothCursor />
-        <main className="max-w-screen min-h-screen h-fit overflow-x-hidden">
+        <main className="max-w-screen min-h-screen h-fit overflow-x-hidden z-10">
 
-          <SidebarDemo >
 
-            {children}
-          </SidebarDemo>
+
+          {children}
+
         </main>
         <Toaster />
       </body>

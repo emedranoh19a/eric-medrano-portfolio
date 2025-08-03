@@ -15,7 +15,7 @@ const thirdRow = shuffledProjects.slice(size * 2);
 
 function DesignPreview({ image }) {
   return (
-    <div className="relative z-0 w-fit rounded-2xl overflow-hidden border-neutral-900">
+    <div className="relative z-0 w-fit rounded-lg md:rounded-2xl overflow-hidden border-neutral-900">
       <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-neutral/10 " />
       {/* It works on all screen sizes. */}
       <Image
@@ -34,7 +34,7 @@ function DesignPreview({ image }) {
 export function MarqueeDemoVertical() {
   const durationStyles = "[--duration:80s]";
   const containerStyles = cn(
-    "absolute -z-10 flex flex-row gap-4 items-center justify-between",
+    "absolute -z-10 flex flex-row gap-2 md:gap-4 items-center justify-between",
     "h-full w-full",
     "opacity-60 top-0 overflow-hidden"
   );

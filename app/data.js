@@ -177,7 +177,7 @@ export const timelineData = [
 export const sidebarLinks = [
     {
         label: "Home",
-        href: "/",
+        href: "/#home",
 
         icon: <FaHome />,
     },
