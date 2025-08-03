@@ -3,7 +3,7 @@ import Image from "next/image";
 import Container from "../components/Container";
 import ResponsiveImageSet from "../components/ResponsiveImageSet";
 import Text from "../components/Text";
-import { check, imgReadTogether } from "../imageIndex";
+import { check, imgNotAverage, imgReadTogether } from "../imageIndex";
 
 export default function Features() {
   return (
@@ -16,7 +16,7 @@ export default function Features() {
       >
         <FirstBlockContent />
       </IllustratedBlock>
-      <IllustratedBlock srcPrefix="/projects/beginner/tech-book-club-landing-page/image-not-average">
+      <IllustratedBlock imageSet={imgNotAverage}>
         <SecondBlockContent />
       </IllustratedBlock>
     </Container>
