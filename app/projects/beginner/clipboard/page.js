@@ -1,6 +1,7 @@
 import { cn } from "@/app/utils/utils"
 import { Bai_Jamjuree } from "next/font/google"
 import Image from "next/image"
+import { iconBlacklist, iconFacebook, iconInstagram, iconPreview, iconText, iconTwitter, imageComputer, imageDevices, logo, logoGoogle, logoHp, logoIbm, logoMicrosoft, logoVectorGraphics } from "./imageIndex"
 const baiJamjuree = Bai_Jamjuree({ subsets: ["latin"], weight: ["400", "600"] })
 
 export default function Page() {
@@ -14,7 +15,7 @@ export default function Page() {
         <Bottom />
         <footer className="pb-40">
             <div className="max-w-6xl mx-auto text-center px-10">
-                <Image src="/projects/beginner/clipboard/images/logo.svg" alt="clipboard logo" width={200} height={200} className="mx-auto scale-50" />
+                <Image src={logo} alt="clipboard logo" width={200} height={200} className="mx-auto scale-50" />
                 <div className="flex flex-col items-center justify-between flex-1 mb-10 space-y-6 md:flex-row md:mb-0 md:space-y-0 text-[var(--grayish-blue)]">
                     {/* Menu 1*/}
                     <div className="flex flex-col space-y-4 md:flex-row md:ml-24 md:space-x-6 md:space-y-0">
@@ -45,10 +46,10 @@ export default function Page() {
                     </div>
                 </div>
                 <div className="flex justify-between w-32 py-10">
-                    <a href="#"><Image src="/projects/beginner/clipboard/images/icon-facebook.svg" alt="facebook logo" width={20} height={20} className="hover:opacity-50 duration-200" /></a>
-                    <a href="#"><Image src="/projects/beginner/clipboard/images/icon-twitter.svg" alt="facebook logo" width={20} height={20} className="hover:opacity-50 duration-200" /></a>
-                    <a href="#"><Image src="/projects/beginner/clipboard/images/icon-instagram.svg" alt="facebook logo" width={20} height={20} className="hover:opacity-50 duration-200" /></a>
-                    <a href="#"><Image src="/projects/beginner/clipboard/images/icon-facebook.svg" alt="facebook logo" width={20} height={20} className="hover:opacity-50 duration-200" /></a>
+                    <a href="#"><Image src={iconFacebook} alt="facebook logo" width={20} height={20} className="hover:opacity-50 duration-200" /></a>
+                    <a href="#"><Image src={iconTwitter} alt="facebook logo" width={20} height={20} className="hover:opacity-50 duration-200" /></a>
+                    <a href="#"><Image src={iconInstagram} alt="facebook logo" width={20} height={20} className="hover:opacity-50 duration-200" /></a>
+                    <a href="#"><Image src={iconFacebook} alt="facebook logo" width={20} height={20} className="hover:opacity-50 duration-200" /></a>
                 </div>
             </div>
         </footer>
@@ -74,7 +75,7 @@ function CSSPageVariables({ children }) {
 
 function Hero() {
     return <SectionContainer id="hero" className="mb-40 pt-16 w-full">
-        <Image src="/projects/beginner/clipboard/images/logo.svg" alt="clipboard logo" width={200} height={200} className="mx-auto my-16" />
+        <Image src={logo} alt="clipboard logo" width={200} height={200} className="mx-auto my-16" />
         <Heading text="A history of everything you copy" />
         <p className="max-w-3xl mx-auto mb-10 text-2xl text-[var(--grayish-blue)]">Clipboard allows you to track and organize everything you copy. Instantly access yout clipboard on all your devices.</p>
         <ButtonContainer>
@@ -115,7 +116,7 @@ function Features() {
     return <SectionContainer id="features" className="">
         <div className="relative flex flex-col md:flex-row md:space-x-32">
             <div className="md:w-1/2 relative grid place-items-center">
-                <Image alt="Mac computer using clipboard" width={500} height={500} src="/projects/beginner/clipboard/images/image-computer.png" className="w-full absolute h-auto" />
+                <Image alt="Mac computer using clipboard" width={500} height={500} src={imageComputer} className="w-full absolute h-auto" />
             </div>
             <div className="flex flex-col justify-center items-center h-full gap-12 text-xl md:text-left md:w-1/2 md:pl-16">
                 <div>
@@ -139,7 +140,7 @@ function AccessAnywhere() {
     return <SectionContainer id="access" className="my-20">
         <Heading text="Access Clipboard anywhere" />
         <p className="max-w-3xl mx-auto text-xl text-[var(--grayish-blue)]">Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
-        <Image src="/projects/beginner/clipboard/images/image-devices.png" alt="clipboard logo" width={500} height={500} className="mx-auto my-16" />
+        <Image src={imageDevices} alt="clipboard logo" width={500} height={500} className="mx-auto my-16" />
     </SectionContainer>
 }
 
@@ -151,17 +152,17 @@ function Supercharge() {
         {/* Items container */}
         <div className="flex flex-col items-center justify-between space-y-16 md:flex-row md:space-y-0 md:space-x-12">
             <div className="flex flex-col items-center justify-center space-y-5">
-                <Image src="/projects/beginner/clipboard/images/icon-blacklist.svg" alt="clipboard logo" width={50} height={50} />
+                <Image src={iconBlacklist} alt="clipboard logo" width={50} height={50} />
                 <h5 className="mb-2 text-2xl font-bold text-[var(--dark-grayish-blue)]">Completely History</h5>
                 <p className="max-w-md text-[var(--grayish-blue)]">Easily search your snippets by content, category, web address, application, and more.</p>
             </div>
             <div className="flex flex-col items-center justify-center space-y-5">
-                <Image src="/projects/beginner/clipboard/images/icon-text.svg" alt="clipboard logo" width={50} height={50} />
+                <Image src={iconText} alt="clipboard logo" width={50} height={50} />
                 <h5 className="mb-2 text-2xl font-bold text-[var(--dark-grayish-blue)]">Plain Text Snippets</h5>
                 <p className="max-w-md text-[var(--grayish-blue)]">Remove unwanted formatting from copied text for a consistent look.</p>
             </div>
             <div className="flex flex-col items-center justify-center space-y-5">
-                <Image src="/projects/beginner/clipboard/images/icon-preview.svg" alt="clipboard logo" width={50} height={50} />
+                <Image src={iconPreview} alt="clipboard logo" width={50} height={50} />
                 <h5 className="mb-2 text-2xl font-bold text-[var(--dark-grayish-blue)]"> Sneak Preview</h5>
                 <p className="max-w-md text-[var(--grayish-blue)]">Quick preview of all snippets on your Clipboard for easy access</p>
             </div>
@@ -171,11 +172,11 @@ function Supercharge() {
 
 function References() {
     return <SectionContainer id="references" className="flex flex-col items-center justify-between max-w-6xl px-10 mx-auto space-y-16 my-44 md:flex-row md:space-y-0">
-        <Image src="/projects/beginner/clipboard/images/logo-google.png" alt="" width={200} height={200} />
-        <Image src="/projects/beginner/clipboard/images/logo-ibm.png" alt="" width={200} height={200} />
-        <Image src="/projects/beginner/clipboard/images/logo-microsoft.png" alt="" width={200} height={200} />
-        <Image src="/projects/beginner/clipboard/images/logo-hp.png" alt="" width={200} height={200} />
-        <Image src="/projects/beginner/clipboard/images/logo-vector-graphics.png" alt="" width={200} height={200} />
+        <Image src={logoGoogle} alt="" width={200} height={200} />
+        <Image src={logoIbm} alt="" width={200} height={200} />
+        <Image src={logoMicrosoft} alt="" width={200} height={200} />
+        <Image src={logoHp} alt="" width={200} height={200} />
+        <Image src={logoVectorGraphics} alt="" width={200} height={200} />
     </SectionContainer>
 }
 function Bottom() {
