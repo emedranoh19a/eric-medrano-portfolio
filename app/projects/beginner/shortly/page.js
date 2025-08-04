@@ -1,6 +1,7 @@
 import { cn } from "@/app/utils/utils"
 import { Poppins } from "next/font/google"
 import Image from "next/image"
+import { iconBrandRecognition, iconDetailedRecords, iconFacebook, iconFullyCustomizable, iconInstagram, iconPinterest, iconTwitter, illustrationWorking, logo } from "./imageIndex"
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "700"] })
 
@@ -41,7 +42,7 @@ function Navigation() {
             {/* <!-- Flex Container For Logo/Menu --> */}
             <div className="flex items-center space-x-20">
                 {/* <!-- Logo --> */}
-                <Image src="/projects/beginner/shortly/images/logo.svg" alt="" width={100} height={100} />
+                <Image src={logo} alt="" width={100} height={100} />
                 {/* <!-- Left Menu --> */}
                 <div className="hidden space-x-8 font-bold lg:flex">
                     {["Features", "Pricing", "Resources"].map((item, i) => <a key={i} href="#" className="text-[var(--grayishViolet)] hover:text-[--veryDarkViolet]"
@@ -113,7 +114,7 @@ function Hero() {
 
             {/* <!-- Image --> */}
             <div className="mb-24 mx-auto md:w-180 lg:mb-0 lg:w-1/2 relative">
-                <Image src="/projects/beginner/shortly/images/illustration-working.svg" alt=""
+                <Image src={illustrationWorking} alt=""
                     // fill
                     // objectFit="contain"
                     width={400} height={400}
@@ -201,7 +202,6 @@ function Shorten() {
     </section>
 }
 function Stats() {
-
     return <section id="stats" className="py-24 bg-gray-100">
         <div className="container mx-auto px-3">
             <h2 className="text-4xl mb-6 font-bold text-center">Advanced Statistics</h2>
@@ -219,19 +219,19 @@ function Feature() {
             title: "Brand Recognition",
             text: "Boost your brand recognition with each click. Generic links don'tmean a thing. Branded links help instil confidence in your content.",
             boxCn: "",
-            image: "/projects/beginner/shortly/images/icon-brand-recognition.svg"
+            image: iconBrandRecognition
         },
         {
             title: "Detailed records",
             text: "Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.",
             boxCn: "mt-24 md:mt-8 md:w-1/3",
-            image: "/projects/beginner/shortly/images/icon-detailed-records.svg"
+            image: iconDetailedRecords
         },
         {
             title: "Fully customizable",
             text: "Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.",
             boxCn: "mt-24 md:mt-16 md:w-1/3",
-            image: "/projects/beginner/shortly/images/icon-fully-customizable.svg"
+            image: iconFullyCustomizable
         },
     ]
     function Box({ boxCn, title, text, image }) {
@@ -310,7 +310,7 @@ function Footer() {
         <div
             className="container flex flex-col items-center  mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start" >
             {/* <!-- Logo --> */}
-            <Image src="/projects/beginner/shortly/images/logo.svg" alt="" width={150} height={150} className="mr-16" />
+            <Image src={logo} alt="" width={150} height={150} className="mr-16" />
 
             {/* <!-- Menus Container --> */}
             <div
@@ -320,16 +320,16 @@ function Footer() {
                 {/* <!-- Social Container --> */}
                 <div className="flex space-x-6 w-full">
                     <a href="#">
-                        <Image src="/projects/beginner/shortly/images/icon-facebook.svg" alt="" className={ficonCn} width={100} height={100} />
+                        <Image src={iconFacebook} alt="" className={ficonCn} width={100} height={100} />
                     </a>
                     <a href="#">
-                        <Image src="/projects/beginner/shortly/images/icon-twitter.svg" alt="" className={ficonCn} width={100} height={100} />
+                        <Image src={iconTwitter} alt="" className={ficonCn} width={100} height={100} />
                     </a>
                     <a href="#">
-                        <Image src="/projects/beginner/shortly/images/icon-pinterest.svg" alt="" className={ficonCn} width={100} height={100} />
+                        <Image src={iconPinterest} alt="" className={ficonCn} width={100} height={100} />
                     </a>
                     <a href="#">
-                        <Image src="/projects/beginner/shortly/images/icon-instagram.svg" alt="" className={ficonCn} width={100} height={100} />
+                        <Image src={iconInstagram} alt="" className={ficonCn} width={100} height={100} />
                     </a>
                 </div>
             </div>
