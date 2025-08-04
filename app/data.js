@@ -852,7 +852,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/beginner/coding-bootcamp-testimonials-slider/images/desktop-design-slide-1.jpg",
+        image: "/projects/front-end-mentor/beginner/beginner_coding-bootcamp-testimonials-slider.jpg",
         url: "/projects/beginner/coding-bootcamp-testimonials-slider",
         level: 1,
         techs: ["react", "tailwindcss", "framer-motion"],

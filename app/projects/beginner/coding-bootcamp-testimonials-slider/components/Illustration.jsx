@@ -1,6 +1,7 @@
 "use client";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
+import { iconNext, iconPrev } from "../imageIndex";
 import { useTestimonial } from "./TestimonialProvider";
 export default function Illustration() {
   const { testimonial } = useTestimonial();
@@ -56,19 +57,14 @@ function Buttons() {
           height={10}
           alt="prev icon"
           className=""
-          src="/projects/beginner/coding-bootcamp-testimonials-slider/images/icon-prev.svg"
+          src={iconPrev}
         />
       </div>
       <div
         className="cursor pointer relative w-8 lg:w-10 aspect-square grid place-items-center"
         onClick={handleNext}
       >
-        <Image
-          width={10}
-          height={10}
-          alt="prev icon"
-          src="/projects/beginner/coding-bootcamp-testimonials-slider/images/icon-next.svg"
-        />
+        <Image width={10} height={10} alt="prev icon" src={iconNext} />
       </div>
     </div>
   );

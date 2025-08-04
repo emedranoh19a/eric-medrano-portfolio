@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
+import { patternQuotes } from "../imageIndex";
 import { useTestimonial } from "./TestimonialProvider";
 import Text from "./Text";
 export default function Quote() {
@@ -9,11 +10,7 @@ export default function Quote() {
   return (
     <div className="relative flex flex-col max-w-sm  lg:max-w-lg  lg:-translate-x-10 z-30">
       <div className="absolute z-20 w-20 aspect-square -top-14 left-1/2 -translate-x-1/2 md:-left-0 md:translate-x-full">
-        <Image
-          src="/projects/beginner/coding-bootcamp-testimonials-slider/images/pattern-quotes.svg"
-          fill
-          className="object-contain"
-        />
+        <Image src={patternQuotes} fill className="object-contain" />
       </div>
       {
         <AnimatePresence mode="wait">
