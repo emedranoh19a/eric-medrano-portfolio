@@ -788,14 +788,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-
-
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         title: "Fylo",
         titleJp: "Fylo",
@@ -803,7 +795,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/beginner/fylo/desktop-preview.png",
+        image: "/projects/front-end-mentor/beginner/beginner_fylo.png",
         url: "/projects/beginner/fylo",
         level: 1,
         techs: ["html", "tailwindcss"],
