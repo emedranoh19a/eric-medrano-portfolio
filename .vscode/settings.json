@@ -103,6 +103,15 @@
             "overviewRulerColor": "grey",
         },
         {
+            "text": "//Derived:",
+            "isWholeLine": false,
+            "color": "#a5f3fc",
+            "backgroundColor": "transparent",
+            "border": "1px solid #a5f3fc",
+            "borderRadius": "4px",
+            "overviewRulerColor": "grey",
+        },
+        {
             "text": "//Style:",
             "isWholeLine": false,
             "color": "#e879f9",

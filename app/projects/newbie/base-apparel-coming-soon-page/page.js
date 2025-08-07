@@ -1,7 +1,11 @@
+import ApparelForm from "./components/ApparelForm"
+import StyleSetup from "./components/StyleSetup"
+
 export default function Page() {
   return (
-    <div>
+    <StyleSetup>
+      <ApparelForm />
       Base Apparel Page
-    </div>
+    </StyleSetup>
   )
 }
