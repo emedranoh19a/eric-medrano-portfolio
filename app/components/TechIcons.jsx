@@ -1,6 +1,7 @@
 import { FaCss3Alt, FaHtml5, FaReact, FaSass } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import {
+  SiReacthookform,
   SiReactquery,
   SiRedux,
   SiStyledcomponents,
@@ -105,6 +106,13 @@ export function TechIcon({ tech }) {
         <SiSupabase
           className={cn(commonStyles, "fill-[#3dc88b]")}
           style={{ filter: "drop-shadow(0 0 0.75rem #3dc88b )" }}
+        />
+      );
+    case "react-hook-form":
+      return (
+        <SiReacthookform
+          className={cn(commonStyles, "fill-[#ec5990]")}
+          style={{ filter: "drop-shadow(0 0 0.75rem #ec5990 )" }}
         />
       );
     //#3dc88b

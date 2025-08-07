@@ -1075,7 +1075,7 @@ export const projects = [
         image: "/projects/front-end-mentor/beginner/beginner_caracter-counter.jpg",
         url: "/projects/beginner/character-counter",
         level: 1,
-        techs: ["react", "tailwindcss", "framer-motion"],
+        techs: ["react", "tailwindcss", "framer-motion", "react-hook-form"],
         isImportant: false, //It is, but the progress bars won't be seen
         isComplete: true,
         isPublic: true,
@@ -1091,7 +1091,7 @@ export const projects = [
         image: "/projects/front-end-mentor/beginner/beginner_contact-form.jpg",
         url: "/projects/beginner/contact-form",
         level: 1,
-        techs: ["react", "tailwindcss", "react-hot-toast"],
+        techs: ["react", "tailwindcss", "react-hot-toast", "react-hook-form"],
         isImportant: false, //It is, but the progress bars won't be seen
         isComplete: true,
         isPublic: true,

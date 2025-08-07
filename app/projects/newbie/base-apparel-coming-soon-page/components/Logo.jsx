@@ -3,7 +3,7 @@ import { logo } from "../imageIndex";
 
 export default function Logo() {
   return (
-    <div className="relative mb-8 lg:mb-[136px] w-[133px] sm:w-[260px] h-[20px]">
+    <div className="relative mb-8 lg:mb-[136px] w-[133px] sm:w-[260px] h-[20px] lg:h-8">
       <Image
         fill
         className="object-contain object-right sm:object-center lg:object-left"

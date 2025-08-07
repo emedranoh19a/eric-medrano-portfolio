@@ -1,4 +1,6 @@
 import { Josefin_Sans } from "next/font/google";
+import Image from "next/image";
+import { bgPatternDesktop } from "../imageIndex";
 
 const josefinSans = Josefin_Sans({
   subsets: ["latin"],
@@ -20,6 +22,11 @@ export default function StyleSetup({ children }) {
         "--gradient-3-end": "#ffffff",
       }}
     >
+      <div className="absolute inset-0 -z-10">
+        <div className="w-full h-full relative">
+          <Image src={bgPatternDesktop} alt="" fill className="object-cover" />
+        </div>
+      </div>
       {children}
     </div>
   );
