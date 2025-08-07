@@ -16,12 +16,14 @@ export default function ApparelForm({ className }) {
 
   //Derived:
   const hasError = errors.email;
+
   //Handlers:
   function onSubmit(data) {
     console.log(data);
   }
+
   //Style:
-  const formStyles = cn("m-40 w-80 ", "w-96 relative z-0", className);
+  const formStyles = cn("w-full relative z-0", className);
   const inputStyles = cn(
     "py-4 px-8",
     "text-[16px] leading-[215%] tracking-0 font-normal w-full",
@@ -61,7 +63,7 @@ export default function ApparelForm({ className }) {
         </button>
       </div>
       {hasError && (
-        <Text preset={5} className="text-[var(--red-400)] indent-8 mt-2">
+        <Text as="span" preset={5} className="text-[var(--red-400)] ml-8 mt-2">
           {errors.email?.message}
         </Text>
       )}

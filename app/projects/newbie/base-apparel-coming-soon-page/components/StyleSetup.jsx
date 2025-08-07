@@ -7,7 +7,7 @@ const josefinSans = Josefin_Sans({
 export default function StyleSetup({ children }) {
   return (
     <div
-      className={`w-full min-h-screen relative z-0 ${josefinSans.className}`}
+      className={`w-full min-h-screen lg:flex lg:justify-between lg:gap-20 justify-start lg:pl-[165px]  relative z-0 pt-8 pb-[92px] sm:pb-[62px] lg:pt-0 lg:pb-0 bg-gradient-to-br from-[var(--gradient-2-start)] to-[var(--gradient-2-end)] ${josefinSans.className}`}
       style={{
         "--gray-900": "#423a3a",
         "--red-400": "#f96464",
@@ -15,7 +15,7 @@ export default function StyleSetup({ children }) {
         "--gradient-1-start": "#f8bfbf",
         "--gradient-1-end": "#ee8b8b",
         "--gradient-2-start": "#ffffff",
-        "--gradient-2-end": "#fff4f",
+        "--gradient-2-end": "#fff4f4",
         "--gradient-3-start": "#fff1f1",
         "--gradient-3-end": "#ffffff",
       }}

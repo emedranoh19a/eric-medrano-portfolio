@@ -19,7 +19,7 @@ export default function Text({
   children,
   as: Tag = "p",
   className,
-  preset = 3,
+  preset,
   accent = false,
   ...otherProps
 }) {
