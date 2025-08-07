@@ -57,7 +57,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon/favicon.png" />
         </Head> */}
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth overflow-x-hidden relative z-0`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth overflow-x-hidden overscroll-none relative z-0`}
       >
         <Navbar />
         <SmoothCursor />
