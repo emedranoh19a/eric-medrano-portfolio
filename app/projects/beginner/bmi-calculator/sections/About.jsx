@@ -1,3 +1,5 @@
+"use client";
+import { useBreakpoint } from "@/app/hooks/useBreakpoint";
 import clsx from "clsx";
 import Image from "next/image";
 import Text from "../components/Text";
@@ -29,10 +31,15 @@ function ManIllustration() {
 }
 
 function Content() {
+  const breakpoint = useBreakpoint();
+  const isDesktop = breakpoint === "lg";
   return (
-    <div className="max-w-[328px] sm:max-w-[331px] lg:max-w-[465px]">
-      {/*TODO:  It is preset 2 on desktop, but 3 on mobile. create the hook. */}
-      <Text as="h2" preset={3} className="text-[var(--blue-900)] mb-8">
+    <div className="max-w-[328px] sm:max-w-[331px] lg:max-w-[465px] mx-6">
+      <Text
+        as="h2"
+        preset={isDesktop ? 2 : 3}
+        className="text-[var(--blue-900)] mb-8"
+      >
         What your BMI result means
       </Text>
       <Text preset={6} className="text-[var(--grey-500)]">

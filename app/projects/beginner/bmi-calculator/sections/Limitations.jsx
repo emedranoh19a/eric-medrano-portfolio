@@ -12,7 +12,7 @@ const limitations = [
   {
     title: "gender",
     icon: iconGender,
-    className: "lg:-translate-x-20",
+    className: "lg:-translate-x-[20%]",
     text: "The development and body fat composition of girls and boys vary with age. Consequently, a child's age and gender are considered when evaluating their BMI.",
   },
   {
@@ -30,13 +30,13 @@ const limitations = [
   {
     title: "pregnancy",
     icon: iconPregnancy,
-    className: "lg:-translate-x-40",
+    className: "lg:-translate-x-[30%]",
     text: "Expectant mothers experience weight gain due to their growing baby. Maintaining a healthy pre-pregnancy BMI is advisable to minimise health risks for both mother and child.",
   },
   {
     title: "race",
     icon: iconRace,
-    className: "sm:translate-x-1/2 lg:-translate-x-40",
+    className: "sm:translate-x-1/2 lg:-translate-x-[30%]",
     text: "Certain health concerns may affect individuals of some Black and Asian origins at lower BMIs than others. To learn more, it is advised to discuss this with your GP or practice nurse.",
   },
 ];
@@ -48,7 +48,7 @@ export default function Limitations() {
   return (
     <section className={sectionCn}>
       <Content />
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-8 max-w-3xl ml-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-8 max-w-3xl mx-auto lg:mr-0 lg:ml-0lg:ml-auto">
         <div className="hidden lg:block" />
         {limitations.map((lim, i) => (
           <Limitation {...lim} key={i} />
@@ -59,11 +59,11 @@ export default function Limitations() {
 }
 function Content() {
   return (
-    <div className="text-center lg:text-left sm:col-span-2 lg:absolute lg:left-0 lg:top-0 max-w-xl">
+    <div className="text-center lg:text-left sm:col-span-2 lg:absolute lg:left-0 lg:top-0 lg:max-w-[40%]">
       <Text as="h2" className="text-[var(--blue-900)] mb-8" preset={3}>
         Limitations of BMI
       </Text>
-      <Text preset={6} className="text-[var(--grey-500)]">
+      <Text preset={6} className="text-[var(--grey-500)] max-w-md mx-auto">
         Although BMI is often a practical indicator of healthy weight, it is not
         suited for every person. Specific groups should carefully consider their
         BMI outcomes, and in certain cases, the measurement may not be

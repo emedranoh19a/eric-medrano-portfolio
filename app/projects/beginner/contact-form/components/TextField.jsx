@@ -34,11 +34,15 @@ export default function TextField({
         )}
       </Text>
       <Tag {...register(name, validations)} className={inputStyles} />
-      {errors[name] && (
-        <Text variant="body-sm" className="text-[var(--red)]" as="span">
-          {errors[name]?.message}
-        </Text>
-      )}
+      {errors[name] && <ErrorMessage message={errors[name]?.message} />}
     </fieldset>
+  );
+}
+
+function ErrorMessage({ message }) {
+  return (
+    <Text variant="body-sm" className="text-[var(--red)]" as="span">
+      {message}
+    </Text>
   );
 }

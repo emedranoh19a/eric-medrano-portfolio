@@ -3,10 +3,12 @@ import { cn } from "@/app/utils/utils";
 import { useFormContext } from "react-hook-form";
 
 export default function TextField({
-  fieldName, //to register with hook form
-  placeholder, //an example of the expected input (太郎　舞神楽)
-  label, //in japanese
-  validations, // To let or not to let the submission.
+  //Hook form related.
+  fieldName,
+  validations,
+  //UI related
+  placeholder,
+  label,
   className = "",
   labelClassName = "",
   as: Tag = "input",

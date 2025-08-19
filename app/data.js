@@ -426,12 +426,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO: Copy the assets to the project path (inside app)
-    //TODO: Refactor all the project Images
-    //TODO: Take a snapshot of the FULL Page
-    //TODO: Optimize the snapshot to web.p
-    //TODO: Delete the assets used from the public folder
-    //TODO: Add .webp version in the public folder 
     {
         title: "Base Apparel Coming Soon Page",
         titleJp: "Base Apparel 近日公開ページ",
@@ -442,7 +436,7 @@ export const projects = [
         image: "/projects/front-end-mentor/newbie/newbie_base-apparel-coming-soon-page.jpg",
         url: "/projects/newbie/base-apparel-coming-soon-page",
         level: 0,
-        techs: ["html", "tailwindcss"],
+        techs: ["react", "tailwindcss", "react-hook-form"],
         isImportant: false,
         isComplete: true,
         isPublic: true,

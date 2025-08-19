@@ -40,7 +40,7 @@ function Layer() {
 }
 function Feature({ title, icon, text }) {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-8 sm:flex-row lg:flex-col">
       <div className="w-16 aspect-square relative">
         <Image
           src={icon}
@@ -49,7 +49,7 @@ function Feature({ title, icon, text }) {
           className="object-contain"
         />
       </div>
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col flex-1 gap-6">
         <Text as="h3" preset={4} className="text-[var(--blue-900)]">
           {title}
         </Text>

@@ -1,8 +1,10 @@
 import clsx from "clsx";
+import { useFormContext } from "react-hook-form";
 import Text from "./Text";
 
 export default function SelectionButton({ label, value }) {
-  //State: Set it manually. No hook form.
+  //State:
+  const { register } = useFormContext();
   const inputCn = clsx(
     "relative aspect-square w-[31px] appearance-none cursor-pointer",
     "checked:bg-[var(--blue-100)] checked:before:bg-[var(--blue-500)]",
@@ -13,14 +15,14 @@ export default function SelectionButton({ label, value }) {
   return (
     <label
       htmlFor={label}
-      className="group cursor-pointer flex flex-row items-center gap-4"
+      className="group cursor-pointer flex flex-row items-center gap-4 w-full"
     >
       <input
         type="radio"
         id={label}
-        name="mode"
+        value={label}
         className={inputCn}
-        value={value}
+        {...register("mode")}
       />
       <Text as="span" preset={6} className="font-bold capitalize">
         {label}
