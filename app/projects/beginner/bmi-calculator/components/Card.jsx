@@ -10,7 +10,7 @@ import Text from "./Text";
 
 export default function Card() {
   //State: Control Imperial or Metric Form
-  const [bmi, setBmi] = useState(0);
+  const [bmi, setBmi] = useState(null);
   const methods = useForm({ defaultValues: { mode: "metric" } });
   const { watch } = methods;
   const mode = watch("mode");

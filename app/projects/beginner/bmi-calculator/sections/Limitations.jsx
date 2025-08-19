@@ -1,6 +1,7 @@
 import { cn } from "@/app/utils/utils";
 import clsx from "clsx";
 import Image from "next/image";
+import Curve from "../components/Curve";
 import Text from "../components/Text";
 import iconAge from "../images/icon-age.svg";
 import iconGender from "../images/icon-gender.svg";
@@ -63,11 +64,15 @@ function Content() {
       <Text as="h2" className="text-[var(--blue-900)] mb-8" preset={3}>
         Limitations of BMI
       </Text>
-      <Text preset={6} className="text-[var(--grey-500)] max-w-md mx-auto">
+      <Text
+        preset={6}
+        className="relative text-[var(--grey-500)] max-w-md mx-auto"
+      >
         Although BMI is often a practical indicator of healthy weight, it is not
         suited for every person. Specific groups should carefully consider their
         BMI outcomes, and in certain cases, the measurement may not be
         beneficial to use.
+        <Curve className="hidden lg:block top-full left-1/2" />
       </Text>
     </div>
   );

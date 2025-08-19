@@ -2,6 +2,7 @@
 import { useBreakpoint } from "@/app/hooks/useBreakpoint";
 import clsx from "clsx";
 import Image from "next/image";
+import Curve from "../components/Curve";
 import Text from "../components/Text";
 import manEating from "../images/image-man-eating.webp";
 export default function About() {
@@ -34,7 +35,11 @@ function Content() {
   const breakpoint = useBreakpoint();
   const isDesktop = breakpoint === "lg";
   return (
-    <div className="max-w-[328px] sm:max-w-[331px] lg:max-w-[465px] mx-6">
+    <div className="relative max-w-[328px] sm:max-w-[331px] lg:max-w-[465px] mx-6">
+      <Curve
+        className="hidden lg:block top-0 right-0 -translate-y-[140%]"
+        left
+      />
       <Text
         as="h2"
         preset={isDesktop ? 2 : 3}

@@ -1,3 +1,4 @@
+import Rings from "../components/Rings";
 import Text from "../components/Text";
 
 const techs = [
@@ -10,7 +11,10 @@ const techs = [
 ];
 export default function TechnologyStack() {
   return (
-    <section className="mb-20 sm:mb-24 lg:mb-36 border-t-2 border-[var(--grey)] py-10 sm:py-[52px] lg:py-18 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-[30px] gap-y-[58px]">
+    <section className="relative z-0 mb-20 sm:mb-24 lg:mb-36 border-t-2 border-[var(--grey)] py-10 sm:py-[52px] lg:py-18 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-[30px] gap-y-[58px]">
+      <div className="absolute -z-10 h-full w-screen left-1/2 -translate-x-1/2">
+        <Rings className="bottom-0 right-0 translate-x-1/2 translate-y-1/2" />
+      </div>
       {techs.map((tech, index) => (
         <Technology {...tech} key={index} />
       ))}

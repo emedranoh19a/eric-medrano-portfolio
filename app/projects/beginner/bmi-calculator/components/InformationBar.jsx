@@ -4,19 +4,17 @@ import { useFormContext } from "react-hook-form";
 import Text from "./Text";
 
 export default function InformationBar() {
-  //TODO:
+  //State:
+  const { bmi } = useFormContext();
+
   //Question: Why are the small corners on the left not being rounded when the right margins are set like this?
   const barContainer = clsx(
-    "@container  @lg:rounded-r-full ml-20",
+    "@container  @lg:rounded-r-full",
     "@base:rounded-l-xl @base:rounded-r-xl",
     "col-span-2 w-full p-8 bg-[var(--blue-500)]",
     "text-white overflow-hidden"
   );
-  return (
-    <div className={barContainer}>
-      <Results />
-    </div>
-  );
+  return <div className={barContainer}>{!bmi ? <Empty /> : <Results />}</div>;
 }
 
 function Empty() {
@@ -43,25 +41,45 @@ function Results() {
           {bmi}
         </Text>
       </div>
+      <ResultDetails bmi={bmi} />
+    </div>
+  );
+}
+
+function ResultDetails({ bmi }) {
+  if (bmi <= 18.5) {
+    return (
       <Text preset={7}>
         Your BMI suggests you&apos;re a bit underweight. A balanced diet could
         help you reach a healthier range. Your ideal weight is between{" "}
         <span className="font-bold">63.3kgs - 85.2kgs.</span>
       </Text>
+    );
+  }
+  if (bmi < 24.9) {
+    return (
       <Text preset={7}>
         Your BMI suggests you&apos;re a healthy weight. Your ideal weight is
         between <span className="font-bold">63.3kgs - 85.2kgs.</span>
       </Text>
+    );
+  }
+  if (bmi < 29.9) {
+    return (
       <Text preset={7}>
         Your BMI suggests you&apos;re slightly above the healthy range. Small
         lifestyle changes can make a big difference! Your ideal weight is
         between <span className="font-bold">63.3kgs - 85.2kgs.</span>
       </Text>
+    );
+  }
+  if (bmi < 34.9) {
+    return (
       <Text preset={7}>
         Your BMI suggests you&apos;re above the recommended range. With steady
         steps, you can work towards a healthier balance. Your ideal weight is
         between <span className="font-bold">63.3kgs - 85.2kgs.</span>
       </Text>
-    </div>
-  );
+    );
+  }
 }

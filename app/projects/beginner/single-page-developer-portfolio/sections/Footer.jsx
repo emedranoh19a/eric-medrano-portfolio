@@ -1,5 +1,6 @@
 import { cn } from "@/app/utils/utils";
 import Image from "next/image";
+import Rings from "../components/Rings";
 import Text from "../components/Text";
 import {
   iconFrontendMentor,
@@ -16,7 +17,10 @@ const icons = [
 export default function Footer({ as: Tag = "footer" }) {
   const iconsContainer = cn("flex flex-row gap-6", Tag === "nav" && "mr-6");
   return (
-    <Tag className="pt-10 pb-14 sm:pt-[30px] sm:pb-10 lg:pt-[47px] lg:pb-[92px] w-full lg:col-span-2 flex flex-col gap-5 items-center sm:flex-row justify-between">
+    <Tag className="relative pt-10 pb-14 sm:pt-[30px] sm:pb-10 lg:pt-[47px] lg:pb-[92px] w-full lg:col-span-2 flex flex-col gap-5 items-center sm:flex-row justify-between">
+      {Tag === "footer" && (
+        <Rings className="-translate-y-[130%] -translate-x-2/3" />
+      )}
       <Logo />
       <div className={iconsContainer}>
         {icons.map((icon, i) => (

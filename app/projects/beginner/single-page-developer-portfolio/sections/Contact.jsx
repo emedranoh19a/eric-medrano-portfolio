@@ -20,7 +20,7 @@ export default function Contact() {
 
 function FormContent() {
   return (
-    <div className="mb-[50px] sm:mb-[48px] text-center lg:text-left sm:mx-[162px] lg:mx-0">
+    <div className="relative mb-[50px] sm:mb-[48px] text-center lg:text-left sm:mx-[162px] lg:mx-0">
       <Subtitle text="Contact" className="mb-5  lg:mb-8" />
       <Text>
         I would love to hear about your project and how I could help. Please
