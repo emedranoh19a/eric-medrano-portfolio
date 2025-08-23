@@ -23,5 +23,13 @@ You want more flexibility, possible grouping, processing, or clarity
 
 import data from './data.json' with { type: "json" }
 
-
+ {/* The following snippet will full bleed the image, regadless of the container constraints */}
+      {/* .full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+} */}
 ----------------
