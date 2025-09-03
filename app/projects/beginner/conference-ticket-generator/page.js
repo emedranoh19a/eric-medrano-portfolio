@@ -14,7 +14,7 @@ export default function Page() {
     //TODO: - Complete the form only using their keyboard
     //TODO: - Have inputs, form field hints, and error messages announced on their screen reader
     //TODO: - See the generated conference ticket when they successfully submit the form
-    //TODO: - View the optimal layout for the interface depending on their device's screen size
+    //TODO: - View the optimal layout for the interface depending on their device&apos;s screen size
     //TODO: - See hover and focus states for all interactive elements on the page
 
     return <StyleSetup>
@@ -36,7 +36,7 @@ export default function Page() {
         <ThankYouCard />
 
         Your Journey to Coding Conf 2025 Starts Here!
-        Secure your spot at next year's biggest coding conference.
+        Secure your spot at next year&apos;s biggest coding conference.
         Upload Avatar
         Drag and drop or click to upload
         Upload your photo (JPG or PNG, max size: 500KB).
@@ -47,7 +47,7 @@ export default function Page() {
         @yourusername
         Generate My Ticket
         Congrats, [NAME]! Your ticket is ready.
-        We've emailed your ticket to EMAIL_ADDRESS and will send updates in the run up to the event.
+        We&apos;ve emailed your ticket to EMAIL_ADDRESS and will send updates in the run up to the event.
         Coding Conf
         Jan 31, 2025 / Austin, TX
     </StyleSetup>
