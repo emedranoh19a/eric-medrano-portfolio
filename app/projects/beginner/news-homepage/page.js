@@ -1,45 +1,14 @@
-import Article from "./components/Article"
-import Button from "./components/Button"
+import ArticleCard from "./ArticleCard"
 import StyleSetup from "./components/StyleSetup"
+import MainArticle from "./MainArticle"
+import MoreArticles from "./MoreArticles"
 
 export default function Page() {
-    return <StyleSetup>
-        <Button />
-        <Article />
-        <Article />
-        <Article />
-        Home
-        New
-        Popular
-        Trending
-        Categories
-
-        The Bright Future of Web 3.0?
-        We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
-        But is it really fulfilling its promise?
-
-        Read more
-
-        New
-
-        Hydrogen VS Electric Cars
-        Will hydrogen-fueled cars ever catch up to EVs?
-
-        The Downsides of AI Artistry
-        What are the possible adverse effects of on-demand AI image generation?
-
-        Is VC Funding Drying Up?
-        Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-        01
-        Reviving Retro PCs
-        What happens when old PCs are given modern upgrades?
-
-        02
-        Top 10 Laptops of 2022
-        Our best picks for various needs and budgets.
-
-        03
-        The Growth of Gaming
-        How the pandemic has sparked fresh opportunities.</StyleSetup>
+    return <StyleSetup className="mx-auto ">
+        <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr]">
+            <MainArticle />
+            <ArticleCard />
+            <MoreArticles className="lg:col-span-2 grid grid-cols-1 lg:grid-cols-3" />
+        </div>
+    </StyleSetup>
 }

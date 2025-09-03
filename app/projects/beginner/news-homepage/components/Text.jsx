@@ -1,4 +1,7 @@
 import { cn } from "@/app/utils/utils";
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"], weight: ["400", "700", "800"] });
 
 export default function Text({
   className,
@@ -7,16 +10,16 @@ export default function Text({
   as: Tag = "p",
   ...otherProps
 }) {
-  //TODO: Extract the font from NextJS, with weights: 400 & 700
   const textStyles = cn(
-    "antialiased tracking-0 font-bold",
-    preset === 1 && "text-[56px] leading-[56px]",
-    preset === 2 && "text-[40px] leading-[40px]",
-    preset === 3 && "text-[32px] leading-[32px]",
-    preset === 4 && "text-[20px] leading-[24px]",
-    preset === 5 && "text-[18px] leading-[24px]",
+    "antialiased tracking-0",
+    inter.className,
+    preset === 1 && "text-[56px] leading-[56px] font-extrabold",
+    preset === 2 && "text-[40px] leading-[40px] font-extrabold",
+    preset === 3 && "text-[32px] leading-[32px] font-bold",
+    preset === 4 && "text-[20px] leading-[24px] font-extrabold",
+    preset === 5 && "text-[18px] leading-[24px] font-bold",
     preset === 6 && "text-[15px] leading-[26px] font-normal",
-    preset === 7 && "text-[14px] leading-[24px] tracking-[4.38px]",
+    preset === 7 && "text-[14px] leading-[24px] tracking-[4.38px] font-bold",
     className
   );
   return (

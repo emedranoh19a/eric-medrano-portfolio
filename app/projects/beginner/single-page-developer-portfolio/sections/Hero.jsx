@@ -18,14 +18,14 @@ export default function Hero() {
           className="relative z-0 mb-6 sm:mb-14 lg:mb-10 font-bold text-[40px] leading-[40px] tracking-[-1.14px] sm:text-[72px] sm:leading-[72px] sm:tracking-[-2.05px] lg:font-bold lg:text-[88px] lg:leading-[88px] lg:tracking-[-2.5px]"
         >
           <Rings className="-z-10 top-0 left-0 -translate-y-1/2 -translate-x-1/2" />
-          Nice to meet you! I'm{" "}
+          Nice to meet you! I&apos;m{" "}
           <span className="underline decoration-[var(--green)]">
             Adam Keyes.
           </span>
         </Text>
         <Text className="mb-6 sm:mb-8 lg:mb-16">
-          Based in the UK, I'm a front-end developer passionate about building
-          accessible web apps that users love.
+          Based in the UK, I&apos;m a front-end developer passionate about
+          building accessible web apps that users love.
         </Text>
         <Button
           text="Contact me"

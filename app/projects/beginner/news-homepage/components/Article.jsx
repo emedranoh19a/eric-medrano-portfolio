@@ -1,18 +1,25 @@
+import Image from "next/image";
 import Text from "./Text";
 
-export default function Article() {
+export default function Article({ index, title, content, imgSrc }) {
   //TODO: Not sure about the max width
   return (
-    <div className="flex gap-6 mb-10 ">
-      <div className="w-[100px] h-[129px] bg-neutral-200"></div>
-      <div className="flex flex-col gap-2 max-w-[212px]">
+    <div className="h-full w-full flex justify-start gap-6 mb-10">
+      <div className="relative min-w-[100px] h-full bg-neutral-200">
+        <Image
+          src={imgSrc}
+          alt=""
+          fill
+          className="object-cover"
+          priority={true}
+        />
+      </div>
+      <div className="flex flex-col gap-2 max-w-[212px] ">
         <Text preset={3} as="span">
-          01
+          {`${index}`.padStart(2, "0")}
         </Text>
-        <Text preset={5}>Reviving Retro PCs</Text>
-        <Text preset={6}>
-          What happens when old PCS are given modern updates?
-        </Text>
+        <Text preset={5}>{title}</Text>
+        <Text preset={6}>{content} </Text>
       </div>
     </div>
   );

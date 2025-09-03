@@ -1,21 +1,23 @@
-Inter Variable Font
-===================
+Inconsolata Variable Font
+=========================
 
-This download contains Inter as both a variable font and static fonts.
+This download contains Inconsolata as both a variable font and static fonts.
 
-Inter is a variable font with these axes:
-  slnt
+Inconsolata is a variable font with these axes:
+  wdth
   wght
 
 This means all the styles are contained in a single file:
-  Inter-VariableFont_slnt,wght.ttf
+  Inconsolata-VariableFont_wdth,wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Inter:
-  static/Inter-Regular.ttf
-  static/Inter-Bold.ttf
-  static/Inter-ExtraBold.ttf
+in those cases you can use the static font files for Inconsolata:
+  
+  static/Inconsolata-Regular.ttf
+  static/Inconsolata-Medium.ttf
+  static/Inconsolata-Bold.ttf
+  static/Inconsolata-ExtraBold.ttf
 
 Get started
 -----------
