@@ -1177,6 +1177,18 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    {
+        title: "News Homepage",
+        description: "Beginner challenge from Front End Mentor.",
+        image: "/projects/front-end-mentor/beginner/begineer_news-homepage.jpg",
+        url: "/projects/beginner/news-homepage",
+        level: 1,
+        techs: ["react", "tailwindcss"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
 ]
 //TODO: Maybe, a timeline is just not worth the certifications.
 //TODO: Consider making a different component for the certifications.
