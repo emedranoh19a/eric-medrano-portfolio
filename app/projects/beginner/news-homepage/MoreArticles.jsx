@@ -25,7 +25,7 @@ const articles = [
 ];
 
 export default function MoreArticles({ className }) {
-  const containerCn = cn("gap-8 lg:gap-10 bg-lime-500", className);
+  const containerCn = cn("gap-8 lg:gap-10", className);
   return (
     <div className={containerCn}>
       {articles.map((article, i) => (

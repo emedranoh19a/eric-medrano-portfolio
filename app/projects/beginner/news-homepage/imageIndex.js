@@ -6,4 +6,3 @@ export { default as imageTopLaptops } from "./images/image-top-laptops.jpg"
 export { default as imageWeb3Desktop } from "./images/image-web-3-desktop.jpg"
 export { default as imageWeb3Mobile } from "./images/image-web-3-mobile.jpg"
 export { default as logo } from "./images/logo.svg"
-
