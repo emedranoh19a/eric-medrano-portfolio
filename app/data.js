@@ -6,8 +6,7 @@ import { MdOutlineLaptopMac } from "react-icons/md"
 import { TechIcon } from "./components/TechIcons"
 import AchievementsList from "./components/ui/AchievementsList"
 
-//TODO: Add languages functionality.
-//TODO: Mover los proyectos a otro lugar.
+
 export const timelineData = [
     // {/**1997
     // El día de mi nacimiento
@@ -412,7 +411,7 @@ export const projects = [
     },
     {
         title: "NFT Preview Card",
-        titleJp: "NFT PVカード",//1
+        titleJp: "NFTプレビューカード",//1
         titleEs: "Previsualización de NFT",//2
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
@@ -1107,7 +1106,7 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO:
+    //TODO: Proyect: Interactive Card Details Form.
     {
         title: "Interactive Card Details",
         titleJp: "インタラクティブカードの詳細",
@@ -1142,7 +1141,11 @@ export const projects = [
     },
     {
         title: "SP Developer Portfolio",
-        description: "Beginner challenge from Front End Mentor.",
+        titleJp: "開発者SPポートフォリオ",
+        titleEs: "Portafolio SP de desarrollador",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/front-end-mentor/beginner/beginner_single-page-developer-portfolio.jpg",
         url: "/projects/beginner/single-page-developer-portfolio",
         level: 1,
@@ -1152,10 +1155,13 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO:
     {
         title: "Space Tourism",
-        description: "Intermediate challenge from Front End Mentor.",
+        titleJp: "宇宙観光",
+        titleEs: "Turismo espacial",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/front-end-mentor/intermediate/intermediate_space-tourism-website.jpg",
         url: "/projects/intermediate/space-tourism-website",
         level: 2,
@@ -1167,7 +1173,11 @@ export const projects = [
     },
     {
         title: "Newsletter Sign Up",
-        description: "Beginner challenge from Front End Mentor.",
+        titleJp: "ニュースレター登録",
+        titleEs: "Registro al boletín",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
         image: "/projects/front-end-mentor/beginner/beginner_newsletter-sign-up.jpg",
         url: "/projects/beginner/newsletter-sign-up",
         level: 1,
@@ -1179,8 +1189,12 @@ export const projects = [
     },
     {
         title: "News Homepage",
-        description: "Beginner challenge from Front End Mentor.",
-        image: "/projects/front-end-mentor/beginner/begineer_news-homepage.jpg",
+        titleJp: "ニュースHP",
+        titleEs: "Portada de noticias",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
+        image: "/projects/front-end-mentor/beginner/beginner_news-homepage.jpg",
         url: "/projects/beginner/news-homepage",
         level: 1,
         techs: ["react", "tailwindcss"],
@@ -1190,12 +1204,6 @@ export const projects = [
         isExternalProject: false,
     },
 ]
-//TODO: Maybe, a timeline is just not worth the certifications.
-//TODO: Consider making a different component for the certifications.
-//TODO: Quantify the TOEIC score with a ticker component.
-//TODO: Quantify the number of proyects from Front End Mentor with another ticker component.
-//TODO: What else can i quantify? Kanjis known? Kanken? JLPT? Hours dedicated to something?
-//  Maybe some stats. TOEIC, languages. Number of projects. Minutes of udemy of Udemy courses?
 
 //"typescript",
 //"dart",
@@ -1218,8 +1226,7 @@ export const projects = [
 //"docker",
 //"flutter quiero"
 //"jira",
-//quiero pstgresql
-//quierno nintendogamecube
+//quiero posgresql
 //opencv
 //pandas
 //graphql

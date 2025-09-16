@@ -1,10 +1,5 @@
-¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
-   PROJECTS Progress...
-¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
-
-
-¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
-PRIORITY:
+Doing:
+To Do, priority:
 //TODO: Bajar de peso y tomarme unas fotos cool.
 //TODO: -Ver cómo puedo agregar y presumir que soy trilingue
 //TODO: Hacer el contact form, extraer de Maikagura o de plano traérselo de otro lugar.
@@ -15,9 +10,7 @@ PRIORITY:
 //TODO: -Detectar con un efecto, el nivel correpondiente, segun el link.
 
 
-Frontend Mentor ¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
-
-Projects from Udemy.¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
+To Do:
 //TODO: World Map. (Think global. Since I know English, Spanish and Japanese. Can I help you translatinf your business in the outside?)
 //TODO: Fix worldwise
 //TODO: Fix at all costs, the wild oasis admin page
@@ -25,29 +18,27 @@ Projects from Udemy.¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·�
 //TODO: Natours Backend: API, and other stuff. 
 //TODO: Secrets from Angela Yu.
 
-¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
-    Whole sections related...
-¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
-//TODO: Features sections. Just to get them to know me.
-//TODO: Contact form. with React-Hook-Form and basic stuff.
+//TODO: Fusilarse los textFields de Maikagura para este Proyecto.
+//TODO: Manejar el Form submit en React Hook Form.
+//TODO: Verificar que form submission funcione en Netlify.
+//TODO: Verificar que form submission registre un API.
+//TODO: Hacer una clase de feedback que indique proceso de envío.
 
-
-¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
-    Component related...
-¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
-
-//TODO: Animated tooltip for the proyects.
-//TODO: Make a Loading animation but not that required.
-
-
-¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
-    Other stuff...
-¸¸♬·¯·♩¸¸♪·¯·♫¸¸¸♬·¯·♩¸¸♪·¯·♫¸¸
---Ir a comprarmy una mochila.
---limpiar mi casita.
---Bajar de peso.
---leer un libro semanalmente. En lo posible
---Ahorrar para unas fotos profesionales.
+//TODO: Maybe, a timeline is just not worth the certifications.
+//TODO: Consider making a different component for the certifications.
+//TODO: Quantify the TOEIC score with a ticker component.
+//TODO: Quantify the number of proyects from Front End Mentor with another ticker component.
+//TODO: What else can i quantify? Kanjis known? Kanken? JLPT? Hours dedicated to something?
+//TODO: Maybe some stats. TOEIC, languages. Number of projects. Minutes of udemy of Udemy courses?
 
 
 
+//TODO: Hacer todo el arreglo de los proyectos.
+
+
+//TODO: Add languages functionality.
+//TODO: Mover los proyectos a otro lugar.
+
+//TODO: Hacer un Marquee que esté lleno con previews tipo Front End Mentor?
+//TODO: Skeletton for the Marquees. 
+//TODO: A loading animation before the page loads, and the images load, and so on...

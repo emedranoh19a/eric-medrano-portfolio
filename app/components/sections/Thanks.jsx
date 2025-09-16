@@ -29,8 +29,3 @@ export default function Thanks() {
     </section>
   );
 }
-//TODO: Fusilarse los textFields de Maikagura para este Proyecto.
-//TODO: Manejar el Form submit en React Hook Form.
-//TODO: Verificar que form submission funcione en Netlify.
-//TODO: Verificar que form submission registre un API.
-//TODO: Hacer una clase de feedback que indique proceso de envío.
