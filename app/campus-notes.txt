@@ -33,3 +33,22 @@ import data from './data.json' with { type: "json" }
   margin-right: -50vw;
 } */}
 ----------------
+
+hover: → when hovered
+
+focus: → when focused
+focus-visible: → when focus is keyboard-triggered
+focus-within: → parent reacts when any child is focused
+
+placeholder-shown: → input is empty and showing placeholder
+not-placeholder-shown: → input has value
+
+peer-*: → reacts based on sibling input state 
+
+active: → while being clicked
+
+disabled: → disabled state
+
+aria-[invalid=true]: → when input has aria-invalid="true"
+
+

@@ -1,54 +1,55 @@
-import Button from "./components/Button"
-import Input from "./components/Input"
+"use client"
+import { useBreakpoint } from "@/app/hooks/useBreakpoint"
+import { cn } from "@/app/utils/utils"
+import { useState } from "react"
+import { FormProvider, useForm } from "react-hook-form"
+import Logo from "./components/Logo"
 import StyleSetup from "./components/StyleSetup"
-import Text from "./components/Text"
-import ThankYouCard from "./components/ThankYouCard"
+import Ticket from "./components/Ticket"
+import TicketForm from "./components/TicketForm"
 
 export default function Page() {
 
-    //TODO: - Complete the form with their details
-    //TODO: - Receive form validation messages if:
-    //TODO: - Any field is missed
-    //TODO: - The email address is not formatted correctly
-    //TODO: - The avatar upload is too big or the wrong image format
+    //TODO: - Receive form validation messages if the avatar upload is too big or the wrong image format
     //TODO: - Complete the form only using their keyboard
     //TODO: - Have inputs, form field hints, and error messages announced on their screen reader
-    //TODO: - See the generated conference ticket when they successfully submit the form
-    //TODO: - View the optimal layout for the interface depending on their device&apos;s screen size
-    //TODO: - See hover and focus states for all interactive elements on the page
-
+    const methods = useForm({ mode: "onTouched" })
+    const [ticketData, setTicketData] = useState({ image: "", name: "", email: "", githubUser: "" })
+    const [isTicketGenerated, setIsTicketGenerated] = useState(false)
+    const [preview, setPreview] = useState(null)
+    //Note: With TailwindCSS layers we may escape breakpoint hooks.
     return <StyleSetup>
-
-        <Button />
-        <Text preset={1}>There are more credit cards in heaven and earth than those dreamt of in your philosophy</Text>
-        <Text preset={2}>There are more credit cards in heaven and earth than those dreamt of in your philosophy</Text>
-        <Text preset={3}>There are more credit cards in heaven and earth than those dreamt of in your philosophy</Text>
-        <Text preset={4}>There are more credit cards in heaven and earth than those dreamt of in your philosophy</Text>
-        <Text preset={5}>There are more credit cards in heaven and earth than those dreamt of in your philosophy</Text>
-        <Text preset={6}>There are more credit cards in heaven and earth than those dreamt of in your philosophy</Text>
-        <Text preset={7}>There are more credit cards in heaven and earth than those dreamt of in your philosophy</Text>
-        <Text preset={1}>There are more credit cards in heaven and earth than those dreamt of in your philosophy</Text>
-        <Input />
-        <Input />
-        <Input />
-        <Input />
-        <Input />
-        <ThankYouCard />
-
-        Your Journey to Coding Conf 2025 Starts Here!
-        Secure your spot at next year&apos;s biggest coding conference.
-        Upload Avatar
-        Drag and drop or click to upload
-        Upload your photo (JPG or PNG, max size: 500KB).
-        Full Name
-        Email Address
-        example@email.com
-        GitHub Username
-        @yourusername
-        Generate My Ticket
-        Congrats, [NAME]! Your ticket is ready.
-        We&apos;ve emailed your ticket to EMAIL_ADDRESS and will send updates in the run up to the event.
-        Coding Conf
-        Jan 31, 2025 / Austin, TX
+        <FormProvider {...{ ...methods, setIsTicketGenerated, ticketData, setTicketData, preview, setPreview }}>
+            <div className="w-fit h-fit mx-auto mb-10 sm:mb-16">
+                <Logo full />
+            </div>
+            {!isTicketGenerated ? <>
+                <Content />
+                <TicketForm />
+            </> :
+                <Ticket />
+            }
+        </FormProvider>
     </StyleSetup>
+}
+
+function Content() {
+    const bp = useBreakpoint()
+
+    //Style:
+    const titleStyles = cn(
+        "mb-5 text-[var(--neutral-0)] text-center",
+        bp === "base" || bp === "sm" ? "preset-1" : "preset-1-desktop")
+    const paragraphStyles = cn(
+        "mb-5 text-[var(--neutral-300)] text-center",
+        bp === "base" || bp === "sm" ? "preset-4" : "preset-4-desktop")
+
+    return <div className="mx-auto w-full max-w-[890px]">
+        <h1 className={titleStyles}>
+            Your Journey to Coding Conf 2025 Starts Here!
+        </h1>
+        <p className={paragraphStyles}>
+            Secure your spot at next year&apos;s biggest coding conference.
+        </p>
+    </div>
 }

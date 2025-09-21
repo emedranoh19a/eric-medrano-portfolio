@@ -1203,6 +1203,22 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    {
+        title: "Conference Ticket Generator",
+        titleJp: "会議チケット生成機",
+        titleEs: "Generador de boletos de conferencia",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
+        image: "/projects/front-end-mentor/beginner/beginner_conference-ticker-generator.jpg",
+        url: "/projects/beginner/conference-ticker-generator",
+        level: 1,
+        techs: ["react", "tailwindcss", "react-hook-form"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
 ]
 
 //"typescript",

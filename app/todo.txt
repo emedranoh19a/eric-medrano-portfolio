@@ -1,5 +1,6 @@
 Doing:
 To Do, priority:
+//TODO: Single Page design portfolio
 //TODO: Bajar de peso y tomarme unas fotos cool.
 //TODO: -Ver cómo puedo agregar y presumir que soy trilingue
 //TODO: Hacer el contact form, extraer de Maikagura o de plano traérselo de otro lugar.

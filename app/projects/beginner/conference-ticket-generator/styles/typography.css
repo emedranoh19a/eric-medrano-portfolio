@@ -1,0 +1,84 @@
+.preset-1-desktop {
+  font-size: 60px;
+  line-height: 110%;
+  letter-spacing: -1px;
+  font-weight: 800;
+}
+.preset-1 {
+  font-size: 30px;
+  line-height: 110%;
+  letter-spacing: -1px;
+  font-weight: 800;
+}
+
+.preset-2-desktop {
+  font-size: 40px;
+  line-height: 110%;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+.preset-2 {
+  font-size: 24px;
+  line-height: 110%;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
+.preset-3-desktop {
+  font-size: 30px;
+  line-height: 110%;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+.preset-3 {
+  font-size: 22px;
+  line-height: 110%;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
+.preset-4-desktop {
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.5px;
+  font-weight: 500;
+}
+.preset-4 {
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.5px;
+  font-weight: 500;
+}
+
+.preset-5-strong {
+  font-size: 20px;
+  line-height: 110%;
+  letter-spacing: -0.3px;
+  font-weight: 800;
+}
+.preset-5 {
+  font-size: 20px;
+  line-height: 110%;
+  letter-spacing: -0.5px;
+  font-weight: 500;
+}
+
+.preset-6-desktop {
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  font-weight: 500;
+}
+.preset-6 {
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0px;
+  font-weight: 500;
+}
+
+.preset-7 {
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: -0.2px;
+  font-weight: 400;
+}

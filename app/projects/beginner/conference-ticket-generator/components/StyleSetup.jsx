@@ -1,31 +1,59 @@
+import Image from "next/image";
+import { bgDesktop, bgMobile, bgTablet } from "../imageIndex";
+import "../styles/typography.css";
+
+import { Inconsolata } from "next/font/google";
+//800 700 500 400
+
+const inconsolata = Inconsolata({
+  subsets: ["latin"],
+  weight: ["400", "500", "700", "800"],
+});
 export default function StyleSetup({ children }) {
-  //TODO: Typography setup
-  //TODO: imageIndex.
-  //TODO: Components.
-  //TODO: Mobile markup
-  //TODO: Tablet markup
-  //TODO: Desktop markup
-  //TODO: Functionality: ...others (Conditionals, Motion, Forms, Fetchers, etc...)
-  //TODO: Set font from NextJS: Inconsolata: Bold, extrabold, medium and regular.
   return (
     <div
-      className="w-full min-h-screen z-0 relative"
+      className={`antialiased w-full min-h-screen z-0 relative pt-10 ${inconsolata.className}`}
       style={{
-        "--gray-950": "#2f2f2f",
-        "--gray-400": "#adb5be",
-        "--gray-200": "#dfdee0",
-        "--purple-950": "#21092f",
-        "--purple-500": "#d53aff",
-        "--orange-400": "#ff934a",
-        "--blue-400": "#47a2ff",
-        "--red-400": "#ff5050",
-        "--gradient-white-start": "#ffffff",
-        "--gradient-white-end": "#d2d3d9",
-        "--gradient-purple-start": "#6348fe",
-        "--gradient-purple-end": "#610595",
+        "--neutral-900": "#0d082d",
+        "--neutral-700": "#4b4869",
+        "--neutral-500": "#8784a5",
+        "--neutral-300": "#d1d0d5",
+        "--neutral-0": "#fff",
+        "--orange-700": "#e1604f",
+        "--orange-500": "#f57463",
+        "--gradient-start": "#f37362",
+        "--gradient-end": "#fff",
       }}
     >
-      {children}
+      <Background />
+      <div className="w-full h-full">{children}</div>
+    </div>
+  );
+}
+
+function Background() {
+  return (
+    <div className="absolute inset-0 -z-10">
+      <div className="w-full h-full relative">
+        <Image
+          src={bgDesktop}
+          alt=""
+          className="object-cover hidden lg:block"
+          fill
+        />
+        <Image
+          src={bgTablet}
+          alt=""
+          className="object-cover hidden sm:block lg:hidden"
+          fill
+        />
+        <Image
+          src={bgMobile}
+          alt=""
+          className="object-cover block sm:hidden"
+          fill
+        />
+      </div>
     </div>
   );
 }
