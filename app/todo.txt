@@ -1,12 +1,10 @@
 Doing:
 To Do, priority:
-//TODO: Single Page design portfolio
+
 //TODO: Bajar de peso y tomarme unas fotos cool.
 //TODO: -Ver cómo puedo agregar y presumir que soy trilingue
 //TODO: Hacer el contact form, extraer de Maikagura o de plano traérselo de otro lugar.
 //TODO: Hacer un Layout estupendo comom cell promote.
-
-//TODO: -Haber si me da tiempo para una animación inicial.
 
 //TODO: -Detectar con un efecto, el nivel correpondiente, segun el link.
 
@@ -31,10 +29,6 @@ To Do:
 //TODO: Quantify the number of proyects from Front End Mentor with another ticker component.
 //TODO: What else can i quantify? Kanjis known? Kanken? JLPT? Hours dedicated to something?
 //TODO: Maybe some stats. TOEIC, languages. Number of projects. Minutes of udemy of Udemy courses?
-
-
-
-//TODO: Hacer todo el arreglo de los proyectos.
 
 
 //TODO: Add languages functionality.

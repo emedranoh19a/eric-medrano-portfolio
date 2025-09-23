@@ -13,4 +13,3 @@ export default function StylesSetup({ children }) {
     </div>
   );
 }
-//TODO: Spacing

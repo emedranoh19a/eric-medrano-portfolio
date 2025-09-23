@@ -103,7 +103,7 @@ function TicketHeader() {
     </div>
   );
 }
-
+//TODO: delete image or change image
 function TicketBody({ name, githubUser, image }) {
   const bp = useBreakpoint();
   const { preview } = useFormContext();
@@ -118,8 +118,8 @@ function TicketBody({ name, githubUser, image }) {
 
   return (
     <div className="flex items-center gap-3 sm:gap-4">
-      <div className="bg-red-500 w-10 sm:w-20 aspect-square rounded-xl block">
-        <img src={preview} alt="Preview" className="w-[100px] aspect square" />
+      <div className="w-10 sm:w-20 aspect-square rounded-xl block relative">
+        <img src={preview} alt="Preview" className="object-cover" />
       </div>
       <div className="flex-1 flex flex-col gap-1">
         <h3 className={nameStyles}>{name}</h3>
