@@ -19,7 +19,7 @@ export default function SidebarLink({ link, className, ...props }) {
     "inline-block",
     "",
     "group-hover/sidebar:translate-x-1 transition duration-150"
-    // "      !p-0 !m-0"
+    // "      p-0! m-0!"
   );
 
   return (

@@ -4,10 +4,10 @@ import { iconArrowLeft, iconArrowRight } from "../imageIndex";
 
 export default function Arrow({ className, left = false, ...otherProps }) {
   const buttonStyles = cn(
-    "grid place-items-center rounded-full transition-colors ",
+    "grid place-items-center rounded-full transition-colors cursor-pointer",
     "w-16 aspect-square",
-    "focus:outline focus:outline-4 focus:outline-offset-4",
-    "bg-[var(--neutral-900)] focus:hover:bg-[var(--neutral-900)] hover:bg-[var(--galactic-blue-500)] focus:outline-[var(--galactic-blue-500)]",
+    "focus:outline-solid focus:outline-4 focus:outline-offset-4",
+    "bg-(--neutral-900) focus:hover:bg-(--neutral-900) hover:bg-(--galactic-blue-500) focus:outline-(--galactic-blue-500)",
     className
   );
   return (

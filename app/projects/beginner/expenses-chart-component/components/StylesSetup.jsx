@@ -12,7 +12,7 @@ export default function StylesSetup({ children }) {
         "--cream": "hsl(27, 66%, 92%)",
         "--very-pale-orange": "hsl(33, 100%, 98%)",
       }}
-      className={`bg-[var(--cream)] w-full min-h-screen grid place-items-center ${dmSans.className}`}
+      className={`bg-(--cream) w-full min-h-screen grid place-items-center ${dmSans.className}`}
     >
       {children}
     </div>

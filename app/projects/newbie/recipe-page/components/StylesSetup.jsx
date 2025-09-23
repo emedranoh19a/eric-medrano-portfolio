@@ -11,7 +11,7 @@ export default function StylesSetup({ children }) {
         "--rose-50": "hsl(330, 100%, 98%)", //preparation time bg
         "--rose-800": "hsl(332, 51%, 32%)", //preparation time title
       }}
-      className="w-full lg:pb-60 md:py-20 min-h-screen bg-[var(--stone-100)]"
+      className="w-full lg:pb-60 md:py-20 min-h-screen bg-(--stone-100)"
     >
       {children}
     </div>

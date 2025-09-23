@@ -5,7 +5,7 @@ import Image from "next/image"
 const btnCn = "px-10 py-2 my-0 font-bold tracking-widest uppercase border-2 border-black font-alata hover:bg-black hover:text-white"
 const itemContainerCn = "flex flex-col justify-between w-full space-y-6 text-2xl text-white uppercase md:flex-row md:space-y-0 md:space-x-8"
 const itemCn = "relative overflow-hidden md:w-1/4"
-const itemGradientCn = "absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"
+const itemGradientCn = "absolute top-0 bottom-0 right-0 left-0 bg-linear-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70"
 
 const hamburguerCn = "cursor-pointer w-[24px] h-[24px] transition-all duration-200 ease-in-out"
 const hamburguerIconCommon = "absolute w-[24px] h-[2px] top-0 left-0 bg-white rotate-0 transition-all duration-500"
@@ -34,7 +34,7 @@ function Hero() {
     const [open, setOpen] = useState(false)
     //Style:
 
-    const buttonStyles = cn(hamburguerCn, "z-40 block md-hidden focus:outline-none top-5 left-5")
+    const buttonStyles = cn(hamburguerCn, "z-40 block md-hidden focus:outline-hidden top-5 left-5")
 
     const hamburguerTopStyles = cn(hamburguerIconCommon, hamburguerTopCn)
     const hamburguerMiddleStyles = cn(hamburguerIconCommon, hamburguerMiddleCn)

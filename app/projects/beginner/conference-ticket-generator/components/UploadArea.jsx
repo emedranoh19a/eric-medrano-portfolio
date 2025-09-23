@@ -12,18 +12,18 @@ export default function UploadArea() {
   //Style:
   const areaStyles = clsx(
     "flex flex-col gap-4",
-    "peer transition-all  ease-in-out preset-6 text-[var(--neutral-300)]",
-    "p-4 bg-white/10 group-hover:bg-white/20 backdrop-blur-sm",
+    "peer transition-all  ease-in-out preset-6 text-(--neutral-300)",
+    "p-4 bg-white/10 group-hover:bg-white/20 backdrop-blur-xs",
     "border border-px border-dashed aspect-none rounded-xl",
-    "outline outline-0 outline-offset-2 outline-[var(--neutral-500)]",
+    "outline-solid outline-0 outline-offset-2 outline-(--neutral-500)",
     "focus:outline-2  focus:outline-offset-4",
     "placeholder:opacity-25 ",
-    "border-[var(--neutral-400)] focus:outline-[var(--neutral-400)]"
+    "border-(--neutral-400) focus:outline-(--neutral-400)"
   );
   const helperStyles = clsx(
     "preset-7",
     "flex gap-2 justify-start items-center",
-    "text-[var(--neutral-300)]"
+    "text-(--neutral-300)"
   );
 
   //Handlers:
@@ -57,7 +57,7 @@ export default function UploadArea() {
   return (
     <fieldset className="flex flex-col gap-3">
       <label
-        className="capitalize preset-5 text-[var(--neutral-0)]"
+        className="capitalize preset-5 text-(--neutral-0)"
         htmlFor="image"
       >
         Upload Avatar
@@ -75,7 +75,7 @@ export default function UploadArea() {
         onDrop={handleDrop}
       >
         {
-          <div className="mx-auto border border-1 border-[var(--neutral-700)] w-[50px] aspect-square grid place-items-center relative z-0 rounded-xl overflow-hidden">
+          <div className="mx-auto border border border-(--neutral-700) w-[50px] aspect-square grid place-items-center relative z-0 rounded-xl overflow-hidden">
             <div className="absolute inset-0 -z-10 bg-white/10" />
             {preview ? (
               <img

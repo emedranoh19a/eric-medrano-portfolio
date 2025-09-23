@@ -13,7 +13,7 @@ export default function Content() {
     "my-20 sm:mt-48",
     "",
     // "sm:px-10 lg:px-20",
-    "bg-[var(--slate)] sm:rounded-3xl "
+    "bg-(--slate) sm:rounded-3xl "
   );
   return (
     <div className={gridStyles}>
@@ -70,11 +70,11 @@ function MobileIllustration() {
 
 function ContentText() {
   return (
-    <div className="bg-[var(--orange)] flex flex-col w-full sm:rounded-3xl px-5 py-12 sm:px-12 sm:py-12 lg:px-14 lg:py-14 sm:translate-y-14 sm:-translate-x-14">
-      <Text preset={3} className="text-[var(--slate)] mb-6 whitespace-nowrap">
+    <div className="bg-(--orange) flex flex-col w-full sm:rounded-3xl px-5 py-12 sm:px-12 sm:py-12 lg:px-14 lg:py-14 sm:translate-y-14 sm:-translate-x-14">
+      <Text preset={3} className="text-(--slate) mb-6 whitespace-nowrap">
         Premium EQ
       </Text>
-      <Text preset={4} className="text-[var(--slate)] mb-10">
+      <Text preset={4} className="text-(--slate) mb-10">
         Get expert-level control with a robust equalizer, volume mixer, and
         spatial audio. Take your listening experience to a whole new level and
         access all our incredible features!

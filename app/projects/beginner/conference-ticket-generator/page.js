@@ -38,10 +38,10 @@ function Content() {
 
     //Style:
     const titleStyles = cn(
-        "mb-5 text-[var(--neutral-0)] text-center",
+        "mb-5 text-(--neutral-0) text-center",
         bp === "base" || bp === "sm" ? "preset-1" : "preset-1-desktop")
     const paragraphStyles = cn(
-        "mb-5 text-[var(--neutral-300)] text-center",
+        "mb-5 text-(--neutral-300) text-center",
         bp === "base" || bp === "sm" ? "preset-4" : "preset-4-desktop")
 
     return <div className="mx-auto w-full max-w-[890px]">

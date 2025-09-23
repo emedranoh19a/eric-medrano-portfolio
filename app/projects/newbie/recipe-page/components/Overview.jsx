@@ -23,7 +23,7 @@ function PreparationTime() {
     { property: "Cooking", description: "5 minutes" },
   ];
   return (
-    <div className="bg-[var(--rose-50)] p-4 rounded-lg">
+    <div className="bg-(--rose-50) p-4 rounded-lg">
       <Text as="h3" variant="prepTitle" className="mb-2">
         Preparation time
       </Text>

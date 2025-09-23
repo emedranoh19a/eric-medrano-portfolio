@@ -21,7 +21,7 @@ export default function Cart() {
 
   return (
     <div className="bg-white h-fit p-4 text-sm">
-      <h2 className="font-bold text-[var(--red)] text-lg mb-2">
+      <h2 className="font-bold text-(--red) text-lg mb-2">
         Your Cart ({itemsNumber})
       </h2>
       {itemsNumber === 0 ? (
@@ -34,7 +34,7 @@ export default function Cart() {
               alt=""
             />
           </div>
-          <p className="text-center font-bold text-[var(--rose-500)] mb-5 text-sm">
+          <p className="text-center font-bold text-(--rose-500) mb-5 text-sm">
             Your added items will appear here
           </p>
         </div>
@@ -49,7 +49,7 @@ export default function Cart() {
             <span>Order Total</span>
             <span className="font-bold text-lg">${totalAmount.toFixed(2)}</span>
           </div>
-          <div className="bg-[var(--rose-50)] py-3 rounded-lg flex gap-2 justify-center items-center">
+          <div className="bg-(--rose-50) py-3 rounded-lg flex gap-2 justify-center items-center">
             <div className="relative h-4 aspect-square">
               <Image
                 src={iconCarbonNeutral}
@@ -73,7 +73,7 @@ export default function Cart() {
               <OrderConfirmation />
             </ModalWindow>
             <ModalOpen opens="cartModal">
-              <button className="bg-[var(--red)] hover:brightness-[.9] transition text-center text-[var(--rose-100)] w-full rounded-full py-2">
+              <button className="bg-(--red) cursor-pointer hover:brightness-[.9] transition text-center text-(--rose-100) w-full rounded-full py-2">
                 Confirm Order
               </button>
             </ModalOpen>

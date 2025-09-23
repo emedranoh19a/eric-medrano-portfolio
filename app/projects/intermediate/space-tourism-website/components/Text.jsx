@@ -18,7 +18,7 @@ export default function Text({
   //Style:
   const textStyles = cn(
     bellefair.className,
-    "text-[var(--white)] uppercase tracking-[0px]",
+    "text-(--white) uppercase tracking-[0px]",
     preset === 1 && "text-[80px] xl:text-[144px]",
     preset === 2 && "text-[56px] md:text-[80px] xl:text-[100px]",
     preset === 3 && "text-[24px] md:text-[40px] xl:text-[56px]",

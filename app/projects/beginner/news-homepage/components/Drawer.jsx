@@ -53,7 +53,7 @@ function Background() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 0.5 }}
       exit={{ opacity: 0 }}
-      className="lg:hidden absolute opacity-50 top-0 left-0 bg-[var(--navy-950)] h-full w-screen z-10"
+      className="lg:hidden absolute opacity-50 top-0 left-0 bg-(--navy-950) h-full w-screen z-10"
     >
       Portal
     </motion.div>
@@ -83,7 +83,7 @@ function Paper({ children, isOpen, setIsOpen, ref }) {
           />
           {/* X */}
         </button>
-        {/* <div className="h-[1px] w-full bg-[var(--grey-200)]"></div> */}
+        {/* <div className="h-px w-full bg-(--grey-200)"></div> */}
         <div>{children}</div>
       </div>
     </motion.div>

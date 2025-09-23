@@ -12,7 +12,7 @@ import { imgHero } from "../imageIndex";
 export default function Hero() {
   return (
     <Container
-      className="w-full overflow-hidden relative z-0 flex flex-col gap-12 sm:gap-16 lg:gap-20 bg-[var(--light-salmon-50)] pt-6 sm:pt-8 px-4 sm:px-8 lg:px-[135px] pb-20 lg:pt-8 lg:pb-20"
+      className="w-full overflow-hidden relative z-0 flex flex-col gap-12 sm:gap-16 lg:gap-20 bg-(--light-salmon-50) pt-6 sm:pt-8 px-4 sm:px-8 lg:px-[135px] pb-20 lg:pt-8 lg:pb-20"
       as="header"
       id="hero"
     >
@@ -38,12 +38,12 @@ function ContentSide() {
     <div className="h-fit">
       <Text
         preset={1}
-        className="mb-6 bg-gradient-to-br from-[var(--light-salmon-500)] to-[var(--neutral-900)] bg-clip-text text-transparent"
+        className="mb-6 bg-linear-to-br from-(--light-salmon-500) to-(--neutral-900) bg-clip-text text-transparent"
         as="h1"
       >
         Join the ultimate tech book club
       </Text>
-      <Text preset={5} className="mb-8 text-[var(--neutral-700)]">
+      <Text preset={5} className="mb-8 text-(--neutral-700)">
         Turn your reading time into learning time with fellow tech enthusiasts.
         Get curated recommendations, join vibrant discussions, and level up your
         skills one chapter at a time.
@@ -53,7 +53,7 @@ function ContentSide() {
         <TestimonialAvatars />
         <div className="flex flex-col gap-1">
           <RankingStars />
-          <Text as="span" preset={7} className="text-[var(--neutral-700)]">
+          <Text as="span" preset={7} className="text-(--neutral-700)">
             200+ developers joined already
           </Text>
         </div>

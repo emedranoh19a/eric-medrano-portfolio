@@ -175,7 +175,7 @@ function Form() {
             <button onClick={(e) => {
                 e.preventDefault()
                 handleSubmit(onSubmit)()
-            }} className="relative w-14 h-14 p-2 bg-[var(--purple)] rounded-full self-center lg:self-end">
+            }} className="relative w-14 h-14 p-2 bg-(--purple) rounded-full self-center lg:self-end">
                 <span className="inline-block scale-[0.75]"><Arrow /></span>
             </button>
         </div>
@@ -187,7 +187,7 @@ function Arrow() {
 //font size: 32px.
 function VariablesSetup({ children }) {
     return <div
-        className={`${poppins.className}   h-screen w-full grid place-items-center bg-[var(--off-white)] shadow-2xl`}
+        className={`${poppins.className}   h-screen w-full grid place-items-center bg-(--off-white) shadow-2xl`}
         style={{
             "--purple": "hsl(259, 100%, 65%)",
             "--light-red": "hsl(0, 100%, 67%)",
@@ -205,15 +205,15 @@ function Input({ label, placeholder = "", validations = {} }) {
     const { register, formState: { errors } } = useFormContext()
 
     //Style: 
-    const labelStyles = cn("text-[var(--smokey-grey)]  font-bold text-center lg:text-left  inline-block tracking-widest uppercase text-sm lg:text-[10px]",
-        errors[label] && "text-[var(--light-red)]"
+    const labelStyles = cn("text-(--smokey-grey)  font-bold text-center lg:text-left  inline-block tracking-widest uppercase text-sm lg:text-[10px]",
+        errors[label] && "text-(--light-red)"
     )
 
 
     return <div className="w-28 flex flex-col gap-3 relative  ">
         <label className={labelStyles}>{label}</label>
-        <input {...register(label, validations)} type="number" className="w-full indent-3 py-1.5 self-center placeholder:font-bold bg-white border-transparent border-[var(--off-white)] border rounded-md" placeholder={placeholder} />
-        <span className="absolute bottom-0 translate-y-[110%]  text-[9px] text-[var(--light-red)]">
+        <input {...register(label, validations)} type="number" className="w-full indent-3 py-1.5 self-center placeholder:font-bold bg-white border-transparent border-(--off-white) border rounded-md" placeholder={placeholder} />
+        <span className="absolute bottom-0 translate-y-[110%]  text-[9px] text-(--light-red)">
             {errors[label]?.message}
         </span>
     </div>
@@ -221,7 +221,7 @@ function Input({ label, placeholder = "", validations = {} }) {
 
 function ResultLabel({ value = "--", label }) {
     return <div className="text-5xl font-bold italic mb-6">
-        <span className="text-[var(--purple)]">{value}</span>{" "}
+        <span className="text-(--purple)">{value}</span>{" "}
         <span>{label}</span>
     </div>
 }

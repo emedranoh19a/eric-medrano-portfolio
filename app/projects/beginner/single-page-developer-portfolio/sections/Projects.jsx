@@ -76,7 +76,7 @@ function Project({ title, stack, img }) {
       </Text>
       <div className="flex flex-row gap-5">
         {stack.map((s, i) => (
-          <Text key={i} preset={4} as="span" className="text-[var(--grey)]">
+          <Text key={i} preset={4} as="span" className="text-(--grey)">
             {s}
           </Text>
         ))}

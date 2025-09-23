@@ -7,7 +7,7 @@ const spaceGrotesk = Space_Grotesk({
 export default function StylesSetup({ children }) {
   return (
     <div
-      className={`w-full min-h-screen relative z-0 bg-[var(--black)] text-white ${spaceGrotesk.className}`}
+      className={`w-full min-h-screen relative z-0 bg-(--black) text-white ${spaceGrotesk.className}`}
       style={{
         "--black": "#151515",
         "--dark-grey": "#242424",

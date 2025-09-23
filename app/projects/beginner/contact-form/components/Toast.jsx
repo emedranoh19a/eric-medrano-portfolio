@@ -5,7 +5,7 @@ import Text from "./Text";
 
 export default function Toast({ className }) {
   const toastContainerStyles = cn(
-    "bg-[var(--grey-900)] rounded-2xl",
+    "bg-(--grey-900) rounded-2xl",
     "p-6 flex flex-col gap-2",
     className
   );

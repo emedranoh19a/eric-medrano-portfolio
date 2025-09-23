@@ -10,7 +10,7 @@ export default function SidebarLogoIcon() {
   const containerStyles = cn(
     "text-2xl text-center text-white font-light",
     "h-fit w-full bg-black rounded-br-lg rounded-tr-sm rounded-tl-lg rounded-bl-sm ",
-    "flex-shrink-0"
+    "shrink-0"
   );
 
   return (

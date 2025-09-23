@@ -62,7 +62,7 @@ export default function Page() {
 
 function StyleTokensSetup({ children }) {
     return <div
-        className={`w-full text-[var(--rose-900)] min-h-screen h-fit lg:pb-60 bg-[var(--rose-50)] grid place-items-center ${redHatText.className}`}
+        className={`w-full text-(--rose-900) min-h-screen h-fit lg:pb-60 bg-(--rose-50) grid place-items-center ${redHatText.className}`}
         style={{
             "--red": "hsl(14,86%,42%)",
             "--green": "hsl(159, 69%, 38%)",

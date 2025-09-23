@@ -7,7 +7,7 @@ export default function Button({ text = "button", className, ...otherProps }) {
   const buttonStyles = cn(
     "relative group z-0 overflow-hidden w-fit",
     "flex gap-3 items-center",
-    "bg-[var(--lime)] py-4 px-10 rounded-full",
+    "bg-(--lime) py-4 px-10 rounded-full",
     className
   );
   return (
@@ -19,7 +19,7 @@ export default function Button({ text = "button", className, ...otherProps }) {
         alt="calculator icon"
         src={iconCalculator}
       />
-      <Text as="span" preset={3} className="text-[var(--slate-900)]">
+      <Text as="span" preset={3} className="text-(--slate-900)">
         {text}
       </Text>
     </button>

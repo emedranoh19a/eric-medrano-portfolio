@@ -27,10 +27,10 @@ export default function Form() {
           className="md:hidden font-semibold w-full"
         />
         {errors && (
-          <span className="text-[var(--red)]">{errors.email?.message}</span>
+          <span className="text-(--red)">{errors.email?.message}</span>
         )}
         {errors && (
-          <span className="text-[var(--red)]">{errors.email?.required}</span>
+          <span className="text-(--red)">{errors.email?.required}</span>
         )}
       </form>
     </FormProvider>

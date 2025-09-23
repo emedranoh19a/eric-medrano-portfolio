@@ -1,7 +1,7 @@
 export default function StylesSetup({ children }) {
   return (
     <div
-      className="w-full min-h-screen h-fit bg-[var(--purple-100)]"
+      className="w-full min-h-screen h-fit bg-(--purple-100)"
       style={{
         "--green": "#44ffa1",
         "--purple-900": "#24053e",

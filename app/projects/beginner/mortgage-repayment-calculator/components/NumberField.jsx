@@ -41,21 +41,21 @@ function InputGroup({ fieldName, units = "€", reverse = false }) {
   const containerStyles = cn(
     "group h-full w-full flex gap-0 transition-colors cursor-pointer",
     reverse && "flex-row-reverse",
-    "rounded overflow-hidden border border-[var(--slate-500)]",
-    "focus-within:border-[var(--lime)] focus-within:hover:border-[var(--lime)]",
-    "hover:border-[var(--slate-900)]",
-    errors[fieldName] && "border-[var(--red)]"
+    "rounded-sm overflow-hidden border border-(--slate-500)",
+    "focus-within:border-(--lime) focus-within:hover:border-(--lime)",
+    "hover:border-(--slate-900)",
+    errors[fieldName] && "border-(--red)"
   );
   const inputStyles = clsx(
-    "peer inline-block h-fit w-full px-4 py-[12.5px] focus:outline-none",
+    "peer inline-block h-fit w-full px-4 py-[12.5px] focus:outline-hidden",
     reverse ? "text-left" : "text-right"
   );
   const tagStyles = cn(
-    "transition-colors inline-block text-[var(--slate-700)]",
-    "py-3 px-4 bg-[var(--slate-100)]",
-    "peer-focus:bg-[var(--lime)]",
+    "transition-colors inline-block text-(--slate-700)",
+    "py-3 px-4 bg-(--slate-100)",
+    "peer-focus:bg-(--lime)",
     errors[fieldName] &&
-      "bg-[var(--red)] text-white peer-focus:text-[var(--slate-700)]"
+      "bg-(--red) text-white peer-focus:text-(--slate-700)"
   );
   return (
     <label className={containerStyles}>

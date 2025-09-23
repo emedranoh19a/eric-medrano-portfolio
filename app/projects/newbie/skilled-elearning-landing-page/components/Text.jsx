@@ -17,9 +17,9 @@ export default function Text({
     preset === 2 && "text-4xl font-extrabold leading-[1.2]",
     preset === 3 && "text-3xl font-extrabold leading-[1.2]",
     preset === 4 && "text-2xl font-extrabold leading-[1.2]",
-    preset === 5 && "text-lg font-medium leading-[1.5]",
-    preset === 6 && "text-base font-bold leading-[1.5]",
-    preset === 7 && "text-xlg font-bold leading-[1.5]",
+    preset === 5 && "text-lg font-medium leading-normal",
+    preset === 6 && "text-base font-bold leading-normal",
+    preset === 7 && "text-xlg font-bold leading-normal",
 
     className
   );

@@ -12,7 +12,7 @@ export default function Content() {
       <Text preset={1} as="h1">
         HTML & CSS foundations
       </Text>
-      <Text preset={2} className="text-[var(--gray-500)]">
+      <Text preset={2} className="text-(--gray-500)">
         These languages are the backbone of every website, defining structure,
         content, and presentation.
       </Text>
@@ -24,8 +24,8 @@ function Category() {
   const chipStyles = cn(
     "flex flex-row gap-2 justify-center items-center",
     "py-1 px-3",
-    "bg-[var(--yellow)]",
-    "gap-2 rounded"
+    "bg-(--yellow)",
+    "gap-2 rounded-sm"
   );
   return (
     <div className={chipStyles}>
@@ -54,7 +54,7 @@ function Category() {
 // /* Inside auto layout */
 // flex: none;
 // order: 0;
-// flex-grow: 0;
+// grow: 0;
 
 // /* Publish Date */
 
@@ -74,7 +74,7 @@ function Category() {
 // /* Inside auto layout */
 // flex: none;
 // order: 1;
-// flex-grow: 0;
+// grow: 0;
 
 // /* Title */
 
@@ -94,7 +94,7 @@ function Category() {
 // flex: none;
 // order: 2;
 // align-self: stretch;
-// flex-grow: 0;
+// grow: 0;
 
 // /* Description */
 
@@ -114,4 +114,4 @@ function Category() {
 // flex: none;
 // order: 3;
 // align-self: stretch;
-// flex-grow: 0;
+// grow: 0;

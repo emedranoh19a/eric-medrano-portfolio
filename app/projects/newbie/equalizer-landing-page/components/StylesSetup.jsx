@@ -4,7 +4,7 @@ import { bgMainDesktop, bgMainMobile, bgMainTablet } from "../assetIndex";
 export default function StylesSetup({ children }) {
   return (
     <div
-      className="relative z-0 w-full min-h-screen bg-[var(--white)] overflow-x-hidden"
+      className="relative z-0 w-full min-h-screen bg-(--white) overflow-x-hidden"
       style={{
         "--cyan": "#66E2DC",
         "--orange": "#FA7453",

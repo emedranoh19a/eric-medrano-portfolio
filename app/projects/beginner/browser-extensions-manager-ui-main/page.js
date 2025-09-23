@@ -37,10 +37,10 @@ function Header() {
     const { isDark } = useDarkMode()
     const styles = clsx(
         "flex justify-between items-center ",
-        "px-3 py-2 bg-[var(--neutral-0)]",
-        "border border-[var(--neutral-200)] rounded-[20px]",
+        "px-3 py-2 bg-(--neutral-0)",
+        "border border-(--neutral-200) rounded-[20px]",
         "shadow-lg",
-        isDark && "bg-[var(--neutral-800)] border-transparent"
+        isDark && "bg-(--neutral-800) border-transparent"
     )
 
     return <header className={styles}>
@@ -57,8 +57,8 @@ function Toolbar() {
     const resetExtensions = useExtensionsStore((s) => s.resetExtensions)
     //Style: 
     const titleStyles = cn(
-        "text-center text-[var(--neutral-900)]",
-        isDark && "text-[var(--neutral-0)]")
+        "text-center text-(--neutral-900)",
+        isDark && "text-(--neutral-0)")
     //Dataflow: 
     return <div className="flex flex-col md:flex-row gap-6 justify-center md:justify-between">
         <Text className={titleStyles} as="h1" preset={1}>Extensions List</Text>

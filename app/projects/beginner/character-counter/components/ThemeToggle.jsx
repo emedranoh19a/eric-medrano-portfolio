@@ -10,8 +10,8 @@ export default function ThemeToggle() {
 
   //Style:
   const iconContainerStyles = cn(
-    "relative transition-colors w-[44px] aspect-square grid place-items-center rounded-[8px]",
-    !isDark ? "bg-[var(--neutral-100)]" : "bg-[var(--neutral-700)]"
+    "relative cursor-pointer transition-colors w-[44px] aspect-square grid place-items-center rounded-[8px]",
+    !isDark ? "bg-(--neutral-100)" : "bg-(--neutral-700)"
   );
 
   //Dataflow:

@@ -57,7 +57,7 @@ export default function BoxReveal({
           ease: "easeIn",
           delay,
         }}
-        className="bg-gradient-to-br from-indigo-400 via-indigo-500 to-indigo-700"
+        className="bg-linear-to-br from-indigo-400 via-indigo-500 to-indigo-700"
         // className="absolute top-[4] bottom-[4] left-0 right-0 z-20"
         style={{
           position: "absolute",

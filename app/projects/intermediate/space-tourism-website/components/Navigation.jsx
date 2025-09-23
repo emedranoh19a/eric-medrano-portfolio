@@ -15,7 +15,7 @@ export default function Navigation() {
 function NavigationSlot() {
   //Style:
   const containerStyles = clsx(
-    "flex flex-col gap-2 right-0 border-r-1 border-white justify-center items-start absolute w-56 h-5"
+    "flex flex-col gap-2 right-0 border-r border-white justify-center items-start absolute w-56 h-5"
   );
 
   const labelBoxStyles = clsx("inline-flex justify-start items-start gap-3");

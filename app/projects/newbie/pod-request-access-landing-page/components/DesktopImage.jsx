@@ -17,7 +17,7 @@ export default function DesktopImage() {
           src="/projects/newbie/pod-request-access-landing-page/desktop/image-host.jpg"
           fill
           //TODO: This changes on version4: object-top-right
-          className="object-cover object-top lg:object-right-top"
+          className="object-cover object-top lg:object-top-right"
         />
         <div className="h-32 w-80  bottom-0 absolute right-0 translate-y-1/2">
           <div className="h-full w-full relative">

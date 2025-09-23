@@ -31,11 +31,11 @@ function MainArticleContent({ className }) {
 
   return (
     <div className={containerCn}>
-      <Text preset={2} className="text-[var(--navy-950)]">
+      <Text preset={2} className="text-(--navy-950)">
         The Bright Future of Web 3.0?
       </Text>
       <div className="flex flex-col justify-between gap-6 lg:gap-8">
-        <Text preset={6} className="text-[var(--navy-600)]">
+        <Text preset={6} className="text-(--navy-600)">
           We dive into the next evolution of the web that claims to put the
           power of the platforms back into the hands of the people. But is it
           really fulfilling its promise?

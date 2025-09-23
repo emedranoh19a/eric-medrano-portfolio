@@ -4,7 +4,7 @@ const josefinSans = Josefin_Sans({ subsets: ["latin"] })
 //Then interpolate in className as {josefinSans.className}
 
 //CSS variables in tailwind. (Version 4.0 changes the notation.)
-<div style={{'--primary-color': '#ff0000'}} className="bg-[var(--primary-color)]" />
+<div style={{'--primary-color': '#ff0000'}} className="bg-(--primary-color)" />
 ※The tokens setup in tailwind will no take effect on portals generated outside!
 
 
@@ -54,5 +54,5 @@ aria-[invalid=true]: → when input has aria-invalid="true"
 
 //gradient borders: 
 Note that the 1.5 rem inside cal should be the half of the rounded corner.
- <div class="max-w-md rounded-3xl p-px bg-gradient-to-b from-blue-300 to-pink-300 dark:from-blue-800 dark:to-purple-800 ">
+ <div class="max-w-md rounded-3xl p-px bg-linear-to-b from-blue-300 to-pink-300 dark:from-blue-800 dark:to-purple-800 ">
       <div class="rounded-[calc(1.5rem-1px)] p-10 bg-white"></div></div>

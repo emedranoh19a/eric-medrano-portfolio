@@ -19,6 +19,9 @@ export default function Form() {
         label="Cardholder name"
         placeholder="e.g. Jane Appleseed"
         className="col-span-2"
+        validations={{
+          required: "Please insert a cardholder name",
+        }}
       />
       <Input
         fieldName="number"

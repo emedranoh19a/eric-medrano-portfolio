@@ -13,7 +13,7 @@ export default function NavbarMenu() {
         />
       </div>
       {/* Navbar for screens */}
-      <ul className="hidden md:flex flex-row items-center gap-2 text-[var(--dark-grayish-blue)] text-sm">
+      <ul className="hidden md:flex flex-row items-center gap-2 text-(--dark-grayish-blue) text-sm">
         {menuItems.map((menuItem, i) => (
           <div key={i} className="">
             {menuItem}

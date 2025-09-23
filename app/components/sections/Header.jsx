@@ -74,11 +74,11 @@ function Content({ language = "en" }) {
   return (
     <div className="relative mt-4 lg:mt-20">
       {/* <MainTitle
-        className={`${hamiltone.className} text-center text-5xl md:text-8xl lg:text-9xl font-semibold -tracking-widest font-bold text-black   md:leading-[6rem] md:tracking-wide`}
+        className={`${hamiltone.className} text-center text-5xl md:text-8xl lg:text-9xl font-semibold -tracking-widest font-bold text-black   md:leading-24 md:tracking-wide`}
         text="Eric Medrano"
       /> */}
       {/* <TextAnimate
-        className={`${hamiltone.className} text-center text-5xl md:text-8xl lg:text-9xl font-semibold -tracking-widest font-bold text-black   md:leading-[6rem] md:tracking-wide`}
+        className={`${hamiltone.className} text-center text-5xl md:text-8xl lg:text-9xl font-semibold -tracking-widest font-bold text-black   md:leading-24 md:tracking-wide`}
         text="Eric Medrano"
       >
         {" "}
@@ -90,7 +90,7 @@ function Content({ language = "en" }) {
         animateBy="letters"
         direction="bottom"
         // onAnimationComplete={handleAnimationComplete}
-        className={`${hamiltone.className} mx-auto justify-center text-center text-6xl md:text-8xl lg:text-9xl font-semibold -tracking-widest font-bold text-black   md:leading-[6rem] md:tracking-wide`}
+        className={`${hamiltone.className} mx-auto justify-center text-center text-6xl md:text-8xl lg:text-9xl font-semibold -tracking-widest font-bold text-black   md:leading-24 md:tracking-wide`}
       />
       <div className="h-40 flex justify-center items-center px-4">
         <div className="relative text-xl md:text-2xl lg:text-4xl mx-auto text-neutral-800 -translate-x-8 md:-translate-x-14">

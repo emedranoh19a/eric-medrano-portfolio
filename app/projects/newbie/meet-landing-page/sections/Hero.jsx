@@ -25,10 +25,10 @@ export default function Hero() {
 function Content() {
   return (
     <div className="sm:max-w-[448px] text-center flex flex-col gap-6 lg:gap-8">
-      <Text as="h1" preset={1} className="text-[var(--slate-900)]">
+      <Text as="h1" preset={1} className="text-(--slate-900)">
         Group Chat for Everyone
       </Text>
-      <Text preset={4} className="text-[var(--slate-600)]">
+      <Text preset={4} className="text-(--slate-600)">
         Meet makes it easy to connect with others face-to-face virtually and
         collaborate across any device.
       </Text>

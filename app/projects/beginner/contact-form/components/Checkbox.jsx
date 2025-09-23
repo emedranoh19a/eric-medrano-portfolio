@@ -15,7 +15,7 @@ export default function Checkbox({ label, name, validations = {} }) {
           required: "Please accept the terms and conditions.",
         })}
       />
-      <Text variant="body-sm" className="text-[var(--grey-900)]" as="span">
+      <Text variant="body-sm" className="text-(--grey-900)" as="span">
         {label} {validations.required && " *"}
       </Text>
     </label>

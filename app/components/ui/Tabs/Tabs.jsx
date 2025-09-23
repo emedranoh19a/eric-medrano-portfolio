@@ -16,7 +16,7 @@ export default function Tabs({
   const containerStyles = cn(
     "relative flex justify-start items-center",
     "bg-white/50 max-w-full w-fit px-4 rounded-full py-2",
-    "[perspective:1000px]",
+    "perspective-[1000px]",
     "overflow-auto sm:overflow-visible no-visible-scrollbar ",
     containerClassName
   );

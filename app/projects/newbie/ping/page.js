@@ -55,7 +55,7 @@ function Footer() {
 }
 
 function SNSIcon({ variant = "facebook" }) {
-    const iconContainerStyles = clsx("border border-[#4C7BF3] border-opacity-[14%] rounded-full p-2 grid place-items-center")
+    const iconContainerStyles = clsx("border border-[#4C7BF3]/10 rounded-full p-2 grid place-items-center")
     const iconStyles = clsx("fill-[#4C7BF3] w-[15px] aspect-square ")
     return <div className={iconContainerStyles}>
         {variant === "facebook" ? <FaFacebookF className={iconStyles} /> :

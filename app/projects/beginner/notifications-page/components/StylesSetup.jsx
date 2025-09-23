@@ -8,7 +8,7 @@ export default function StylesSetup({ children }) {
   //Fonts: extrabold, and medium.
   return (
     <div
-      className={`${plusJakartaSans.className} w-full min-h-screen grid place-items-center py-10 bg-[var(--grayish-blue-50)]`}
+      className={`${plusJakartaSans.className} w-full min-h-screen grid place-items-center py-10 bg-(--grayish-blue-50)`}
       style={{
         "--red": "hsl(1, 90%, 64%)",
         "--blue": "hsl(219, 85%, 26%)",

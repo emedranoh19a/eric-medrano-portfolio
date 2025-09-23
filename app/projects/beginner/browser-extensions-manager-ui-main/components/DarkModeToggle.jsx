@@ -9,11 +9,11 @@ export default function DarkModeToggle() {
   const { isDark, onToggle } = useDarkMode();
   const imageSrc = !isDark ? moon : sun;
   const buttonStyles = cn(
-    "w-[50px] aspect-square",
+    "w-[50px] aspect-square cursor-pointer",
     "grid place-items-center",
-    "bg-[var(--neutral-100)] rounded-2xl",
+    "bg-(--neutral-100) rounded-2xl",
     "no-sr",
-    isDark && "bg-[var(--neutral-700)]"
+    isDark && "bg-(--neutral-700)"
   );
   return (
     <button className={buttonStyles} onClick={onToggle}>

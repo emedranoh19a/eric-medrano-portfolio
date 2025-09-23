@@ -19,15 +19,15 @@ export default function Dessert({ id, type, imageSet, title, price }) {
     "h-fit w-2/3 px-3 py-1.5",
     "flex gap-2 items-center justify-center",
     "absolute bottom-0 left-1/2 translate-y-1/2 -translate-x-1/2",
-    "border border-[var(--rose-400)] bg-white rounded-full transition-colors",
+    "border border-(--rose-400) bg-white rounded-full transition-colors",
     "",
     isInCart &&
-      "bg-[var(--red)] border-[var(--red)] justify-between text-white",
-    !isInCart && "hover:text-[var(--red)]"
+      "bg-(--red) border-(--red) justify-between text-white",
+    !isInCart && "hover:text-(--red)"
   );
   const imgContainerStyles = cn(
     "relative aspect-video lg:aspect-square w-full bg-gray-200 rounded-lg overflow-hidden",
-    isInCart && "border-2 border-[var(--red)]"
+    isInCart && "border-2 border-(--red)"
   );
 
   return (
@@ -60,9 +60,9 @@ export default function Dessert({ id, type, imageSet, title, price }) {
         )}
       </div>
       <div className="flex flex-col font-bold text-sm">
-        <span className="text-xs text-[var(--rose-500)]">{type}</span>
+        <span className="text-xs text-(--rose-500)">{type}</span>
         <h3 className="text-md">{title}</h3>
-        <span className="text-[var(--red)]">${price.toFixed(2)}</span>
+        <span className="text-(--red)">${price.toFixed(2)}</span>
       </div>
     </div>
   );

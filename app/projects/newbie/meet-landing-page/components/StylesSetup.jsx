@@ -1,7 +1,7 @@
 export default function StylesSetup({ children }) {
   return (
     <div
-      className="relative w-full min-h-screen overflow-x-hidden flex flex-col bg-[var(--white)]"
+      className="relative w-full min-h-screen overflow-x-hidden flex flex-col bg-(--white)"
       style={{
         "--cyan-600": "#4d95a9",
         "--cyan-300": "#8fe3f9",

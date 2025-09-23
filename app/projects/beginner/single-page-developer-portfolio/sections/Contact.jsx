@@ -9,10 +9,10 @@ export default function Contact() {
       id="contact"
       className="relative z-0 grid grid-cols-1 gap-x-56 lg:grid-cols-2 pt-16 lg:pt-20"
     >
-      <div className="-z-10 bg-[var(--dark-grey)] absolute w-screen inset-y-0 left-1/2 -translate-x-1/2" />
+      <div className="-z-10 bg-(--dark-grey) absolute w-screen inset-y-0 left-1/2 -translate-x-1/2" />
       <FormContent />
       <Form />
-      <hr className="text-[var(--grey)] h-2 mt-20 sm:[92px] lg:col-span-2" />
+      <hr className="text-(--grey) h-2 mt-20 sm:[92px] lg:col-span-2" />
       <Footer />
     </section>
   );

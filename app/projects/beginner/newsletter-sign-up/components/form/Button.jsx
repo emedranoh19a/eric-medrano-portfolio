@@ -4,9 +4,9 @@ import Text from "../Text";
 
 export default function Button({ text, className, disabled, ...otherProps }) {
   const buttonStyles = cn(
-    "group py-4 text-center bg-[var(--blue-800)] text-white rounded-lg font-bold transition-colors relative z-0 overflow-hidden transition hover:shadow-xl ",
+    "group cursor-pointer py-4 text-center bg-(--blue-800) text-white rounded-lg font-bold transition-colors relative z-0 overflow-hidden transition hover:shadow-xl ",
     disabled
-      ? "opacity-50 cursor-not-allowed bg-[var(--blue-800)]"
+      ? "opacity-50 cursor-not-allowed bg-(--blue-800)"
       : "hover:shadow-[0px_16px_32px_rgba(255,97,85,0.5)]",
     className
   );
@@ -17,7 +17,7 @@ export default function Button({ text, className, disabled, ...otherProps }) {
 
   const layerClasses = clsx(
     "absolute -z-10 inset-0",
-    "bg-gradient-to-r from-[var(--gradient-start)] to-[var(--gradient-end)]",
+    "bg-linear-to-r from-(--gradient-start) to-(--gradient-end)",
 
     "opacity-0 group-hover:opacity-100 transition"
   );

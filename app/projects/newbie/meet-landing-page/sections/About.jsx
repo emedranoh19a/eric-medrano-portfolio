@@ -55,13 +55,13 @@ function GalleryItem({ alt, src }) {
 function Content() {
   return (
     <div className="text-center sm:max-w-[504px] lg:max-w-[544px]">
-      <Text as="h3" className="text-[var(--cyan-600)] mb-4" preset={3}>
+      <Text as="h3" className="text-(--cyan-600) mb-4" preset={3}>
         Built for modern use
       </Text>
-      <Text as="h2" className="text-[var(--slate-900)] mb-8" preset={2}>
+      <Text as="h2" className="text-(--slate-900) mb-8" preset={2}>
         Smarter meetings, all in one place{" "}
       </Text>
-      <Text className="text-[var(--slate-900)]" preset={4}>
+      <Text className="text-(--slate-900)" preset={4}>
         Send messages, share files, show your screen, and record your meetings —
         all in one workspace. Control who can join with invite-only team access,
         data encryption, and data export.

@@ -15,7 +15,7 @@ export default function Article({ index, title, content, imgSrc }) {
         />
       </div>
       <div className="flex flex-col gap-2 max-w-[212px] ">
-        <Text preset={3} as="span" className="text-[var(--red-500)]">
+        <Text preset={3} as="span" className="text-(--red-500)">
           {`${index}`.padStart(2, "0")}
         </Text>
         <Text preset={5}>{title}</Text>

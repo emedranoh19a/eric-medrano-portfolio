@@ -24,12 +24,12 @@ export default function Page() {
         />
       </div>
       <div className="p-8 flex flex-col gap-6">
-        <Text as="h2" preset={4} className="text-[var(--grey)] uppercase">Perfume</Text>
-        <Text as="h1" preset={1} className="text-[var(--black)]">Gabrielle Essence Eau De Parfum</Text>
-        <Text preset={3} className="text-[var(--grey)]"> A floral, solar and voluptuous interpretation composed by Olivier polge, Perfumer-Creator for the House of CHANEL</Text>
+        <Text as="h2" preset={4} className="text-(--grey) uppercase">Perfume</Text>
+        <Text as="h1" preset={1} className="text-(--black)">Gabrielle Essence Eau De Parfum</Text>
+        <Text preset={3} className="text-(--grey)"> A floral, solar and voluptuous interpretation composed by Olivier polge, Perfumer-Creator for the House of CHANEL</Text>
         <div className="flex flex-row gap-4 items-center">
-          <Text as="span" preset={1} className="text-[var(--green-500)]">149.99</Text>
-          <Text as="span" preset={5} className="text-[var(--grey)]">$169.99</Text>
+          <Text as="span" preset={1} className="text-(--green-500)">149.99</Text>
+          <Text as="span" preset={5} className="text-(--grey)">$169.99</Text>
         </div>
         <Button />
       </div>

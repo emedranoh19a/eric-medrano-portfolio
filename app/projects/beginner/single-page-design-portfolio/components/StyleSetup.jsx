@@ -9,7 +9,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 export default function StyleSetup({ children }) {
   return (
     <div
-      className={`min-h-screen w-full relative z-0 py-6 px-4 sm:pb-10 sm:px-8 lg:px-[165px] bg-[var(--neutral-200)] flex flex-col gap-16 sm:gap-20 lg:gap-32 ${plusJakartaSans.className}`}
+      className={`min-h-screen w-full relative z-0 py-6 px-4 sm:pb-10 sm:px-8 lg:px-[165px] bg-(--neutral-200) flex flex-col gap-16 sm:gap-20 lg:gap-32 ${plusJakartaSans.className}`}
       style={{
         "--neutral-0": "#ffffff",
         "--neutral-200": "#fff7f0",

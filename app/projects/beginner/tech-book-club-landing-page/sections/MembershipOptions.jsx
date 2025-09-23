@@ -39,7 +39,7 @@ export default function MembershipOptions() {
         <Text
           preset={2}
           as="h2"
-          className="text-[var(--neutral-900)] mb-6 sm:mb-10 lg:mb-16 w-full text-center"
+          className="text-(--neutral-900) mb-6 sm:mb-10 lg:mb-16 w-full text-center"
         >
           Membership options
         </Text>
@@ -58,21 +58,21 @@ function Card({ features, specialCard = false }) {
     "relative z-0 flex flex-col gap-8 overflow-hidden",
     "p-6",
     "rounded-lg border boder-[var(--neutral-200)] lg:place-self-center",
-    specialCard && "lg:py-10 bg-[var(--light-salmon-50)]"
+    specialCard && "lg:py-10 bg-(--light-salmon-50)"
   );
   return (
     <div className={containerStyles}>
       {specialCard && (
         <Glow className="-z-10 w-full bottom-0 right-0 translate-x-1/3 translate-y-1/3" />
       )}
-      <Text preset={4} as="h4" className="text-[var(--neutral-900)]">
+      <Text preset={4} as="h4" className="text-(--neutral-900)">
         Starter
       </Text>
       <div className="flex flex-row items-center gap-3">
-        <Text as="span" className="text-[var(--neutral-900)]" preset={3}>
+        <Text as="span" className="text-(--neutral-900)" preset={3}>
           $19
         </Text>
-        <Text as="span" className="text-[var(--neutral-700)]" preset={5}>
+        <Text as="span" className="text-(--neutral-700)" preset={5}>
           /month
         </Text>
       </div>
@@ -88,7 +88,7 @@ function Card({ features, specialCard = false }) {
                 src={check}
               />
             </div>
-            <Text preset={5} className="text-[var(--neutral-700)]" as="span">
+            <Text preset={5} className="text-(--neutral-700)" as="span">
               {feature}
             </Text>
           </li>

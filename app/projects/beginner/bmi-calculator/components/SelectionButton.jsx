@@ -7,10 +7,10 @@ export default function SelectionButton({ label, value }) {
   const { register } = useFormContext();
   const inputCn = clsx(
     "relative aspect-square w-[31px] appearance-none cursor-pointer",
-    "checked:bg-[var(--blue-100)] checked:before:bg-[var(--blue-500)]",
+    "checked:bg-(--blue-100) checked:before:bg-(--blue-500)",
     "checked:before:inset-0 checked:before:absolute checked:before:rounded-full checked:before:scale-50",
-    "border border-px border-[var(--grey-500)] checked:border-transparent rounded-full",
-    "group-hover:border-[var(--blue-500)] transition-colors"
+    "border border-px border-(--grey-500) checked:border-transparent rounded-full",
+    "group-hover:border-(--blue-500) transition-colors"
   );
   return (
     <label

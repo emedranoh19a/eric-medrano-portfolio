@@ -55,7 +55,7 @@ function FirstBlockContent() {
 }
 function SecondBlockContent() {
   return (
-    <div className="flex flex-col gap-6 sm:gap-[34px] text-[var(--neutral-900)]">
+    <div className="flex flex-col gap-6 sm:gap-[34px] text-(--neutral-900)">
       <Text preset={2}>Not your average book club</Text>
       <Text preset={5}>
         Connect with a community that speaks your language - from{" "}
@@ -68,7 +68,7 @@ function SecondBlockContent() {
 }
 function IllustratedBlock({ className, imageSet, alt, children, reverse }) {
   const containerStyles = clsx(
-    "relative w-full text-[var(--neutral-900)]",
+    "relative w-full text-(--neutral-900)",
     "flex flex-col xl:flex-row gap-10 xl:gap-20 justify-between items-center",
     reverse && "xl:flex-row-reverse",
     className

@@ -7,7 +7,7 @@ export default function StylesSetup({ children }) {
         "--blue-300": "#D0D6F9",
         "--white": "#ffffff",
       }}
-      className="bg-[var(--blue-900)]"
+      className="bg-(--blue-900)"
     >
       {children}
     </div>

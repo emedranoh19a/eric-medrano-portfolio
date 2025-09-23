@@ -48,11 +48,11 @@ function MainStats() {
 function MainStat({ variant = "characters", value = "" }) {
   const containerStyles = cn(
     "relative overflow-hidden z-0 flex flex-col gap-2 w-full",
-    "text-[var(--neutral-900)]",
+    "text-(--neutral-900)",
     "p-5 rounded-[12px]",
-    variant === "characters" && "bg-[var(--purple-400)]",
-    variant === "words" && "bg-[var(--yellow-500)]",
-    variant === "sentences" && "bg-[var(--orange-500)]"
+    variant === "characters" && "bg-(--purple-400)",
+    variant === "words" && "bg-(--yellow-500)",
+    variant === "sentences" && "bg-(--orange-500)"
   );
   const ornamentalStyles = cn(
     "absolute h-full aspect-square right-0 top-0 z-10 scale-125 translate-x-1/2"
@@ -114,12 +114,12 @@ function DensityStats() {
   //3. Finally, sorting the data according to the value
   const sortedDensities = filteredDensities.sort((a, b) => b.value - a.value);
   const titleStyles = cn(
-    "flex flex-col gap-5 w-full text-[var(--neutral-900)]",
-    isDark && "text-[var(--neutral-100)]"
+    "flex flex-col gap-5 w-full text-(--neutral-900)",
+    isDark && "text-(--neutral-100)"
   );
   return (
     <div className={titleStyles}>
-      <Text preset={2} className="text-[var(--neutral-900)]" as="h2">
+      <Text preset={2} className="text-(--neutral-900)" as="h2">
         Letter Density
       </Text>
       {sortedDensities.map((item) => (
@@ -142,8 +142,8 @@ function DensityStats() {
 function Density({ letter = "E", empty, letterCount, textLength }) {
   const { isDark } = useTheme();
   const barStyles = cn(
-    "transition-colors w-full flex-1 bg-[var(--neutral-100)] relative h-full rounded-full",
-    isDark && "bg-[var(--neutral-800)]"
+    "transition-colors w-full flex-1 bg-(--neutral-100) relative h-full rounded-full",
+    isDark && "bg-(--neutral-800)"
   );
   const percentage = `${((letterCount / textLength) * 100).toFixed(2)}`;
   return (
@@ -151,7 +151,7 @@ function Density({ letter = "E", empty, letterCount, textLength }) {
       <div className="uppercase">{letter}</div>
       <div className={barStyles}>
         <motion.div
-          className="absolute bg-[var(--purple-400)] h-full w-1/2 top-0 left-0 rounded-full"
+          className="absolute bg-(--purple-400) h-full w-1/2 top-0 left-0 rounded-full"
           initial={{ width: 0 }}
           animate={{ width: `${percentage}%` }}
         />

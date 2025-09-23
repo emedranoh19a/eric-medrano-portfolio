@@ -16,7 +16,7 @@ const thirdRow = shuffledProjects.slice(size * 2);
 function DesignPreview({ image }) {
   return (
     <div className="relative z-0 w-fit rounded-lg md:rounded-2xl overflow-hidden border-neutral-900">
-      <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-neutral/10 " />
+      <div className="absolute inset-0 bg-linear-to-br from-white/20 to-neutral/10 " />
       {/* It works on all screen sizes. */}
       <Image
         src={image}
@@ -55,8 +55,8 @@ export function MarqueeDemoVertical() {
           <DesignPreview key={review.title} {...review} />
         ))}
       </Marquee>
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-white to-transparent"></div>
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-white to-transparent"></div>
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-linear-to-b from-white to-transparent"></div>
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-linear-to-t from-white to-transparent"></div>
     </div>
   );
 }

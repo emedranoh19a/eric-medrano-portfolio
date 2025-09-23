@@ -11,7 +11,7 @@ export const notifications = [
         date: "1m ago",
         highlight: "My first tournament today!",
         highlightType: "normal",//it can also be a link, or none.
-        photo: "",//for conditional rendering
+        photo: mark,//for conditional rendering
         boxMessage: ""//for conditional rendering as well
     },
     //         Angela Gray followed you
@@ -24,7 +24,7 @@ export const notifications = [
         date: "5m ago",
         highlight: "",
         highlightType: "none",
-        photo: "",
+        photo: angela,
         boxMessage: ""
     },
 
@@ -38,7 +38,7 @@ export const notifications = [
         date: "1 day ago",
         highlight: "Chess Club",
         highlightType: "link",
-        photo: "",
+        photo: jacob,
         boxMessage: ""
     },
     //         Rizky Hasanuddin sent you a private message
@@ -51,7 +51,7 @@ export const notifications = [
         isRead: true,
         highlight: "",
         highlightType: "none",
-        photo: "",
+        photo: rizky,
         boxMessage: "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm really having lots of fun and improving my game."
     },
     //         Kimberly Smith commented on your picture
@@ -78,7 +78,7 @@ export const notifications = [
         isRead: true,
         highlight: "5 end - game strategies to increase your win rate",
         highlightType: "normal",
-        photo: "",
+        photo: nathan,
         boxMessage: ""
     },
     //         Anna Kim left the group Chess Club
@@ -91,7 +91,7 @@ export const notifications = [
         isRead: true,
         highlight: "Chess Club",
         highlightType: "link",
-        photo: "",
+        photo: anna,
         boxMessage: ""
     },
 ]

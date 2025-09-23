@@ -15,10 +15,10 @@ export default function Input({
   } = useFormContext();
   const errorMessage = errors[name]?.message;
   const inputStyles = clsx(
-    "w-full rounded-xl border-2 text-[var(--dark-blue)] placeholder-[var(--dark-blue)] placeholder:opacity-70",
-    "focus:border-[var(--blue)]",
+    "w-full rounded-xl border-2 text-(--dark-blue) placeholder-(--dark-blue) placeholder:opacity-70",
+    "focus:border-(--blue)",
     "py-[15px] pl-[19.41px]",
-    errorMessage ? "border-[var(--red)]" : "border-[#dedede]"
+    errorMessage ? "border-(--red)" : "border-[#dedede]"
   );
   return (
     <div className="relative">
@@ -36,10 +36,10 @@ export default function Input({
 function ErrorMessage({ message = "" }) {
   return (
     <>
-      <div className="absolute top-4 right-[27px] w-6 aspect-square bg-[var(--red)] grid place-items-center rounded-full">
+      <div className="absolute top-4 right-[27px] w-6 aspect-square bg-(--red) grid place-items-center rounded-full">
         <FaExclamation className="fill-white" />
       </div>
-      <span className="mt-[6px] text-[var(--red)] font-normal text-[11px] italic text-right w-full inline-block">
+      <span className="mt-[6px] text-(--red) font-normal text-[11px] italic text-right w-full inline-block">
         {message}
       </span>
     </>

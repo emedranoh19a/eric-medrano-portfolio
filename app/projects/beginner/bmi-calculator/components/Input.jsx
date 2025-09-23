@@ -18,21 +18,21 @@ export default function Input({
   );
   const inputContainerCn = clsx(
     "py-4 px-6 gap-auto cursor-pointer w-full flex flex-row",
-    "border border-px border-[var(--grey-500)] rounded-xl",
-    "focus-within:border-[var(--blue-500)] transition-colors"
+    "border border-px border-(--grey-500) rounded-xl",
+    "focus-within:border-(--blue-500) transition-colors"
   );
   const inputCn = clsx(
-    "appearance-none hover:cursor-pointer focus:appearance-none flex-1 min-w-0 outline-none",
+    "appearance-none hover:cursor-pointer focus:appearance-none flex-1 min-w-0 outline-hidden",
     "text-2xl font-bold leading-[120%] tracking-[-5%]",
     //Color changes when there is a value inserted
-    "focus:text-[var(--blue-900)]",
+    "focus:text-(--blue-900)",
     "appearance-none [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none [-moz-appearance:textfield]"
   );
   return (
     <fieldset className={fieldsetCn} htmlFor={fieldName}>
       <Text
         as="label"
-        className="text-[var(--grey-500)]"
+        className="text-(--grey-500)"
         htmlFor={fieldName}
         preset={7}
       >
@@ -45,7 +45,7 @@ export default function Input({
           {...register(fieldName, { valueAsNumber: true, required: true })}
           type="number"
         />
-        <Text preset={4} as="span" className="text-[var(--blue-500)]">
+        <Text preset={4} as="span" className="text-(--blue-500)">
           {units}
         </Text>
       </label>

@@ -27,13 +27,13 @@ function Content() {
             alt="woman talking"
             src={imgFooter}
           />
-          <div className="absolute w-full h-full top-0 left-0 bg-[var(--cyan-600)] opacity-90" />
+          <div className="absolute w-full h-full top-0 left-0 bg-(--cyan-600) opacity-90" />
         </div>
       </div>
-      <Text preset={2} as="h2" className=" text-[var(--white)]">
+      <Text preset={2} as="h2" className=" text-(--white)">
         Experience more together
       </Text>
-      <Text preset={4} className="max-w-sm text-[var(--white)]">
+      <Text preset={4} className="max-w-sm text-(--white)">
         Stay connected with reliable HD meetings and unlimited one-on-one and
         group video sessions.
       </Text>

@@ -16,10 +16,10 @@ export default function Success() {
           alt="Icon complete"
         />
       </div>
-      <h1 className="preset-1 text-[var(--purple-950)] uppercase mb-4">
+      <h1 className="preset-1 text-(--purple-950) uppercase mb-4">
         Thank You!
       </h1>
-      <p className="preset-3 text-[var(--gray-400)] mb-12">
+      <p className="preset-3 text-(--gray-400) mb-12">
         We&apos;ve added your card details
       </p>
       <Button

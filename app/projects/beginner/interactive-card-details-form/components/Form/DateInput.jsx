@@ -15,30 +15,30 @@ export default function DateInput({ className, label }) {
   const hasMonthError = errors?.expirationDate?.month;
   const hasYearError = errors?.expirationDate?.year;
   //Style:
-  const labelStyles = cn("text-[var(--purple-950)] uppercase preset-5 mb-2");
+  const labelStyles = cn("text-(--purple-950) uppercase preset-5 mb-2");
   const commonInputContainerStyles = clsx(
     "rounded-lg p-px", //Related with gradient border calculation! lg=8px (0.5rem) and padding 1px
-    "bg-gradient-to-b transition-colors"
+    "bg-linear-to-b transition-colors"
   );
 
   const monthContainerStyles = clsx(
     commonInputContainerStyles,
     reactiveMonth
-      ? "from-[var(--gradient-purple-start)] to-[var(--gradient-purple-end)]"
-      : "from-[var(--gray-200)] to-[var(--gray-200)]",
-    hasMonthError && "from-[var(--red-400)] to-[var(--red-400)]"
+      ? "from-(--gradient-purple-start) to-(--gradient-purple-end)"
+      : "from-(--gray-200) to-(--gray-200)",
+    hasMonthError && "from-(--red-400) to-(--red-400)"
   );
   const yearContainerStyles = clsx(
     commonInputContainerStyles,
     reactiveYear
-      ? "from-[var(--gradient-purple-start)] to-[var(--gradient-purple-end)]"
-      : "from-[var(--gray-200)] to-[var(--gray-200)]",
-    hasYearError && "from-[var(--red-400)] to-[var(--red-400)]"
+      ? "from-(--gradient-purple-start) to-(--gradient-purple-end)"
+      : "from-(--gray-200) to-(--gray-200)",
+    hasYearError && "from-(--red-400) to-(--red-400)"
   );
   const inputStyles = clsx(
-    "peer preset-3 text-[var(--purple-950)] placeholder:opacity-[0.25] placeholder:text-[var(--purple-950)] font-inherit",
+    "peer preset-3 text-(--purple-950) placeholder:opacity-[0.25] placeholder:text-(--purple-950) font-inherit",
     "rounded-[calc(0.5rem-1px)] px-4 py-2 bg-white w-full",
-    "appearance-none outline-none"
+    "appearance-none outline-hidden"
   );
   return (
     <fieldset className={className}>
@@ -91,5 +91,5 @@ export default function DateInput({ className, label }) {
 }
 
 function ErrorMessage({ message }) {
-  return <span className="preset-6 text-[var(--red-400)] ">{message}</span>;
+  return <span className="preset-6 text-(--red-400) ">{message}</span>;
 }

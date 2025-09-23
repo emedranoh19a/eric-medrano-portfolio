@@ -6,7 +6,7 @@ export default function Label({ label, fieldName }) {
       as="label"
       preset={4}
       htmlFor={fieldName}
-      className="text-[var(--slate-700)]"
+      className="text-(--slate-700)"
     >
       {label}
     </Text>

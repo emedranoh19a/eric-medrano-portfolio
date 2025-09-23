@@ -11,7 +11,7 @@ export default function InformationBar() {
   const barContainer = clsx(
     "@container  @lg:rounded-r-full",
     "@base:rounded-l-xl @base:rounded-r-xl",
-    "col-span-2 w-full p-8 bg-[var(--blue-500)]",
+    "col-span-2 w-full p-8 bg-(--blue-500)",
     "text-white overflow-hidden"
   );
   return <div className={barContainer}>{!bmi ? <Empty /> : <Results />}</div>;

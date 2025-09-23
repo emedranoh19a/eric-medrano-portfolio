@@ -12,7 +12,7 @@ export default function RadioSelection({ name = "", label, validations = {} }) {
       <Text as="legend" htmlFor={name} variant="body-sm" className="mb-2">
         {label}{" "}
         {validations.required && (
-          <span className="text-[var(--green-600)]">*</span>
+          <span className="text-(--green-600)">*</span>
         )}
       </Text>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -28,7 +28,7 @@ export default function RadioSelection({ name = "", label, validations = {} }) {
         />
       </div>
       {errors?.queryType && (
-        <Text variant="body-sm" className="text-[var(--red)]" as="span">
+        <Text variant="body-sm" className="text-(--red)" as="span">
           {errors.queryType.message}
         </Text>
       )}
@@ -43,11 +43,11 @@ function RadioOption({ fieldName, optionName = "", label = "" }) {
     "group flex items-center gap-3",
     "py-3 px-6",
     "cursor-pointer rounded-lg bg-white transition-colors",
-    "border border-[var(--grey-500)]",
-    "hover:border-[var(--green-600)] hover:bg-white",
-    watchedField === optionName && "bg-[var(--green-200)]"
+    "border border-(--grey-500)",
+    "hover:border-(--green-600) hover:bg-white",
+    watchedField === optionName && "bg-(--green-200)"
   );
-  const radioOptionStyles = clsx(" peer accent-[var(--green-600)]");
+  const radioOptionStyles = clsx(" peer accent-(--green-600)");
   return (
     <label htmlFor={optionName} className={buttonStyles}>
       <input

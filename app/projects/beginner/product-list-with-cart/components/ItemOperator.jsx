@@ -7,7 +7,7 @@ export default function ItemOperator({ decrements, dessertId }) {
   //Note: At this point, the item is already in the cart
   return (
     <button
-      className="group p-1 border border-[var(--rose-100)] transition-colors rounded-full hover:bg-[var(--rose-100)]"
+      className="group cursor-pointer p-1 border border-(--rose-100) transition-colors rounded-full hover:bg-(--rose-100)"
       onClick={() => {
         if (decrements) {
           handleDelete(dessertId);
@@ -16,7 +16,7 @@ export default function ItemOperator({ decrements, dessertId }) {
         }
       }}
     >
-      <div className="relative aspect-square w-2.5 fill-[var(--rose-50)] transition-colors group-hover:fill-[var(--red)] grid place-items-center">
+      <div className="relative aspect-square w-2.5 fill-(--rose-50) transition-colors group-hover:fill-(--red) grid place-items-center">
         <OperatorIcon decrements={decrements} />
       </div>
     </button>

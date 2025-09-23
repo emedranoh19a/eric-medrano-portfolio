@@ -16,8 +16,8 @@ export default function HighlightText({
             key={index}
             className={cn(
               "font-bold",
-              highlightType === "normal" && "text-[var(--grayish-blue-500)]",
-              highlightType === "link" && "text-[var(--blue)]"
+              highlightType === "normal" && "text-(--grayish-blue-500)",
+              highlightType === "link" && "text-(--blue)"
             )}
           >
             {part}
@@ -27,7 +27,7 @@ export default function HighlightText({
         )
       )}
       {!isRead && (
-        <span className="w-1.5 aspect-square bg-[var(--red)] rounded-full inline-block ml-1 " />
+        <span className="w-1.5 aspect-square bg-(--red) rounded-full inline-block ml-1 " />
       )}
     </>
   );

@@ -24,11 +24,11 @@ function PageContent({ name, email }) {
 
   //Style:
   const titleStyles = clsx(
-    "mb-5 text-[var(--neutral-0)] text-center",
+    "mb-5 text-(--neutral-0) text-center",
     bp === "base" ? "preset-1" : "preset-1-desktop"
   );
   const paragraphStyles = clsx(
-    "mb-5 text-[var(--neutral-300)] text-center text-pretty ",
+    "mb-5 text-(--neutral-300) text-center text-pretty ",
     "max-w-[514px] mx-auto",
     bp === "base" ? "preset-4" : "preset-4-desktop"
   );
@@ -36,14 +36,14 @@ function PageContent({ name, email }) {
     <div className="mb-[72px] sm:mb-20 lg:mb-[110px] w-full max-w-[814px] mx-auto px-4 sm:px-8">
       <h1 className={titleStyles}>
         Congrats,{" "}
-        <span className="bg-gradient-to-r from-[var(--gradient-start)] to-[var(--gradient-end)] text-transparent bg-clip-text">
+        <span className="bg-linear-to-r from-(--gradient-start) to-(--gradient-end) text-transparent bg-clip-text">
           {name}{" "}
         </span>
         Your ticket is ready.
       </h1>
       <p className={paragraphStyles}>
         We&apos;ve emailed your ticket to{" "}
-        <span className="text-[var(--orange-500)]">{email}</span> and will send
+        <span className="text-(--orange-500)">{email}</span> and will send
         updates in the run up to the event.
       </p>
     </div>
@@ -54,7 +54,7 @@ function TicketShape({ githubUser, name, image }) {
 
   const ticketNumberStyles = clsx(
     bp === "base" || bp === "sm" ? "preset-3" : "preset-3-desktop",
-    "text-[var(--neutral-500)]",
+    "text-(--neutral-500)",
     "top-1/2 right-4 -translate-y-1/2",
     "absolute rotate-90"
   );
@@ -70,7 +70,7 @@ function TicketShape({ githubUser, name, image }) {
           src={patternTicket}
         />
       </div>
-      <div className="flex flex-col justify-between h-full w-[100%] p-4">
+      <div className="flex flex-col justify-between h-full w-full p-4">
         <TicketHeader />
         <TicketBody name={name} githubUser={githubUser} image={image} />
       </div>
@@ -83,11 +83,11 @@ function TicketHeader() {
 
   //Style:
   const titleStyles = clsx(
-    "mb-2 text-[var(--neutral-0)] text-center whitespace-nowrap text-left w-fit",
+    "mb-2 text-(--neutral-0) text-center whitespace-nowrap text-left w-fit",
     bp === "base" ? "preset-2" : "preset-2-desktop"
   );
   const textStyles = cn(
-    "text-[var(--neutral-300)] flex items-center gap-2 text-left w-fit",
+    "text-(--neutral-300) flex items-center gap-2 text-left w-fit",
     bp === "base" || bp === "sm" ? "preset-6-mobile" : "preset-6"
   );
 
@@ -108,11 +108,11 @@ function TicketBody({ name, githubUser, image }) {
   const bp = useBreakpoint();
   const { preview } = useFormContext();
   const nameStyles = clsx(
-    "text-[var(--neutral-0)]",
+    "text-(--neutral-0)",
     bp === "base" || bp === "sm" ? "preset-3" : "preset-3-desktop"
   );
   const emailStyles = clsx(
-    "flex items-center gap-1 sm:gap-2.5 preset-6 text-[var(--neutral-300)]",
+    "flex items-center gap-1 sm:gap-2.5 preset-6 text-(--neutral-300)",
     bp === "base" || bp === "sm" ? "preset-6" : "preset-6-desktop"
   );
 

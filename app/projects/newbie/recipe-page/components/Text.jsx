@@ -13,11 +13,11 @@ export default function Text({
     outfit.className,
     "antialiased text-base",
     variant === "mainTitle" &&
-      `${youngSerif.className} text-[var(--stone-900)] text-3xl mb-4`,
-    variant === "normal" && "text-[var(--stone-600)] mb-4",
+      `${youngSerif.className} text-(--stone-900) text-3xl mb-4`,
+    variant === "normal" && "text-(--stone-600) mb-4",
     variant === "title" &&
-      `text-2xl ${youngSerif.className} text-[var(--brown-800)] my-4`,
-    variant === "prepTitle" && "font-bold text-lg text-[var(--rose-800)]",
+      `text-2xl ${youngSerif.className} text-(--brown-800) my-4`,
+    variant === "prepTitle" && "font-bold text-lg text-(--rose-800)",
 
     className
   );

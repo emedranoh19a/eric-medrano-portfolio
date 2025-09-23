@@ -10,10 +10,10 @@ import Toggle from "./Toggle";
 export default function ExtensionCard({ logo, name, description, isActive }) {
   const { isDark } = useDarkMode();
   const containerStyles = cn(
-    "border border-[var(--neutral-200)] rounded-[20px]",
+    "border border-(--neutral-200) rounded-[20px]",
     "p-6 flex flex-col justify-between",
-    "bg-[var(--neutral-0)]",
-    isDark && "bg-[var(--neutral-800)] border-[var(--neutral-600)]"
+    "bg-(--neutral-0)",
+    isDark && "bg-(--neutral-800) border-(--neutral-600)"
     // isActive && "bg-lime-500"
   );
 
@@ -31,12 +31,12 @@ function ExtensionInfo({ logo, name, description }) {
     "flex flex-row min-h-36 justify-start items-start gap-4"
   );
   const titleStyles = cn(
-    "text-[var(--neutral-900)]",
-    isDark && "text-[var(--neutral-0)]"
+    "text-(--neutral-900)",
+    isDark && "text-(--neutral-0)"
   );
   const paragraphStyles = cn(
-    "text-[var(--neutral-600)]",
-    isDark && "text-[var(--neutral-300)]"
+    "text-(--neutral-600)",
+    isDark && "text-(--neutral-300)"
   );
   return (
     <div className={containerStyles}>
@@ -58,7 +58,7 @@ function ExtensionActions({ name, isActive }) {
   const removeExtension = useExtensionsStore((s) => s.removeExtension);
   //Style:
   const buttonStyles = cn(
-    "hover:bg-[var(--red-700)] hover:text-[var(--neutral-0)]"
+    "hover:bg-(--red-700) hover:text-(--neutral-0)"
   );
 
   return (

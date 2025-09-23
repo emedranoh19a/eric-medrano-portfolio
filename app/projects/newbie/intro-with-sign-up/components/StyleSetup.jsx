@@ -8,7 +8,7 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["500", "700"] });
 export default function StyleSetup({ children }) {
   const containerStyles = clsx(
     poppins.className,
-    "grid place-items-center bg-[var(--red)] w-full min-h-screen",
+    "grid place-items-center bg-(--red) w-full min-h-screen",
     "pt-[88px] pb-16 px-6",
     "relative z-0"
   );

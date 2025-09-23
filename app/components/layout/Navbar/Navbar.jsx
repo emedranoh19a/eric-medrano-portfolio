@@ -10,9 +10,9 @@ const sharedStyles = cn(
   "fixed   aspect-square rounded-full",
   "w-[5em] lg:w-[7em]",
   //   "scale-[60%] sm:scale-[75%] lg:scale-100",
-  "top-[1rem] right-[1rem]",
-  "sm:top-[2.5rem] sm:right-[2.5rem]",
-  "lg:top-[6rem] lg:right-[6rem]"
+  "top-4 right-4",
+  "sm:top-10 sm:right-10",
+  "lg:top-24 lg:right-24"
 );
 //     &__background {
 
@@ -101,7 +101,7 @@ function NavigationButton({ open, setOpen }) {
     sharedStyles,
     "z-50 relative group grid place-items-center fixed",
     "shadow-2xl",
-    "bg-white/70 backdrop-blur-sm",
+    "bg-white/70 backdrop-blur-xs",
     "text-center cursor-pointer"
   );
 
@@ -117,7 +117,7 @@ function NavigationButton({ open, setOpen }) {
     "transition ease-out",
     "-translate-y-4 group-hover:-translate-y-3",
     open &&
-      "rotate-[135deg] top-1/2 -translate-y-1/2 group-hover:-translate-y-1/2"
+      "rotate-135 top-1/2 -translate-y-1/2 group-hover:-translate-y-1/2"
   );
   const middleLineStyles = cn(
     sharedIconStyles,

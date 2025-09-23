@@ -8,7 +8,7 @@ export default function StyleSetup({ children }) {
         "--green-500": "#3D8168",
         "--green-700": "#144032",
       }}
-      className="w-full min-h-screen grid place-items-center bg-[var(--cream)]"
+      className="w-full min-h-screen grid place-items-center bg-(--cream)"
     >
       {children}
     </div>

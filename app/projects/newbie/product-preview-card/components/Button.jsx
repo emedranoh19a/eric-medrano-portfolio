@@ -6,7 +6,7 @@ export default function Button() {
   return (
     <Text
       as="button"
-      className="py-4 h-fit px-8 rounded-lg text-center flex justify-center w-full items-center bg-[var(--green-500)] hover:bg-[var(--green-700)] transition-colors"
+      className="py-4 cursor-pointer h-fit px-8 rounded-lg text-center flex justify-center w-full items-center bg-(--green-500) hover:bg-(--green-700) transition-colors"
     >
       <div className="relative h-[16px] aspect-square mr-2">
         <Image

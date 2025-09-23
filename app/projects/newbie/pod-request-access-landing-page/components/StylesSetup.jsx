@@ -5,7 +5,7 @@ const chivo = Chivo({ subsets: ["latin"], weight: ["100", "600"] });
 export default function StylesSetup({ children, className }) {
   const styles = cn(
     chivo.className,
-    "w-full h-full min-h-screen bg-[var(--blue-950)]",
+    "w-full h-full min-h-screen bg-(--blue-950)",
     className
   );
   return (

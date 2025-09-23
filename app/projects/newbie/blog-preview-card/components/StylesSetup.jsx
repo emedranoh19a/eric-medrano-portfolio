@@ -9,7 +9,7 @@ export default function StylesSetup({ children }) {
         "--gray-950": "#111111",
         "--gray-500": "#686868",
       }}
-      className={`relative w-full h-full min-h-screen bg-[var(--yellow)] grid place-items-center ${figtree.className}`}
+      className={`relative w-full h-full min-h-screen bg-(--yellow) grid place-items-center ${figtree.className}`}
     >
       {children}
     </div>

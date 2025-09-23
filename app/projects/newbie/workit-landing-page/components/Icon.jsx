@@ -10,7 +10,7 @@ export default function Icon({ name, src }) {
         src={src}
         fill
         alt={`${name} logo`}
-        className="object-contain transition-colors text-[var(--purple-500)] hover:text-[var(--purple-900)]"
+        className="object-contain transition-colors text-(--purple-500) hover:text-(--purple-900)"
       />
     </div>
   );

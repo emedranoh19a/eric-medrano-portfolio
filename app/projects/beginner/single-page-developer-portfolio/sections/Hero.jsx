@@ -19,7 +19,7 @@ export default function Hero() {
         >
           <Rings className="-z-10 top-0 left-0 -translate-y-1/2 -translate-x-1/2" />
           Nice to meet you! I&apos;m{" "}
-          <span className="underline decoration-[var(--green)]">
+          <span className="underline decoration-(--green)">
             Adam Keyes.
           </span>
         </Text>

@@ -10,7 +10,7 @@ import { patternArrow } from "../imageIndex";
 export default function Journey() {
   //Style:
   const cardStyles = clsx(
-    "relative z-0 w-full bg-gradient-to-r from-[var(--light-salmon-100)] to-[var(--light-salmon-50)] overflow-hidden",
+    "relative z-0 w-full bg-linear-to-r from-(--light-salmon-100) to-(--light-salmon-50) overflow-hidden",
     "flex flex-col ",
     "py-16 px-4 gap-8",
     "sm:py-20 sm:px-8 sm:gap-12",
@@ -67,7 +67,7 @@ function NumberBox({ number }) {
   const containerStyles = clsx(
     "aspect-square w-[32px] sm:w-[40px]",
     "grid place-items-center",
-    "rounded border-2 border-[var(--neutral-900)]",
+    "rounded-sm border-2 border-(--neutral-900)",
     "py-1"
   );
   return (

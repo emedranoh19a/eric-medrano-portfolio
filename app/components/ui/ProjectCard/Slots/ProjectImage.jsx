@@ -53,7 +53,7 @@ export default function ProjectImage({
 function AlmostReady({ level }) {
   const styles = cn(
     "absolute grid place-items-center w-full h-full text-2xl font-bold -rotate-12",
-    "bg-gradient-to-r bg-clip-text text-transparent group-hover/bento:scale-150 transition ease-in-out",
+    "bg-linear-to-r bg-clip-text text-transparent group-hover/bento:scale-150 transition ease-in-out",
 
     level === 0 && "from-sky-200 to-sky-500 ",
     level === 1 && "from-lime-300 to-lime-500",

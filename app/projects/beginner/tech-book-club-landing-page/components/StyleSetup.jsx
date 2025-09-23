@@ -1,7 +1,7 @@
 export default function StyleSetup({ children }) {
   return (
     <div
-      className="w-full min-h-screen overflow-x-hidden relative z-0 bg-[var(--neutral-0)] flex flex-col gap-16 sm:gap-20 lg:gap-28"
+      className="w-full min-h-screen overflow-x-hidden relative z-0 bg-(--neutral-0) flex flex-col gap-16 sm:gap-20 lg:gap-28"
       style={{
         "--neutral-900": "#062630",
         "--neutral-700": "#385159",

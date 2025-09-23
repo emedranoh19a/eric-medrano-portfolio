@@ -12,10 +12,10 @@ export default function TextArea({ ...otherProps }) {
   const styles = cn(
     "transition-colors text-[20px] font-normal leading-[140%] tracking-[-0.6px] p-5",
     "w-full min-h-[200px]",
-    "bg-[var(--neutral-100)] ring-2 ring-[var(--neutral-200)] rounded-[12px]",
-    "focus:outline-none focus:ring-2 focus:ring-[var(--purple-500)] focus:shadow-[0px_0px_10px_#D3A0FA]",
+    "bg-(--neutral-100) ring-2 ring-(--neutral-200) rounded-[12px]",
+    "focus:outline-hidden focus:ring-2 focus:ring-(--purple-500) focus:shadow-[0px_0px_10px_#D3A0FA]",
     isDark &&
-      "bg-[var(--neutral-800)] ring-[var(--neutral-700)] text-[var(--neutral-100)] border-[var(--neutral-800)]"
+      "bg-(--neutral-800) ring-(--neutral-700) text-(--neutral-100) border-(--neutral-800)"
   );
   return (
     <textarea

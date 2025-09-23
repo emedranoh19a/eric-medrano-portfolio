@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Text from "./Text";
 
 export default function ErrorMessage({ message, className }) {
-  const textStyles = cn("text-[var(--red)]", className);
+  const textStyles = cn("text-(--red)", className);
   return (
     <AnimatePresence>
       {message && (

@@ -82,7 +82,7 @@ function TermConditions() {
         label="I consent to being contacted by the team"
       />
       {errors?.acceptedTerms && (
-        <Text variant="body-sm" className="text-[var(--red)]" as="span">
+        <Text variant="body-sm" className="text-(--red)" as="span">
           {errors.acceptedTerms.message}
         </Text>
       )}

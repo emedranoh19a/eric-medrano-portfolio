@@ -8,7 +8,7 @@ export default function CTA() {
   const containerStyles = clsx(
     "w-full flex flex-col lg:flex-row gap-10 lg:justify-between items-center",
     // "mb-8 sm:mb-12",
-    "bg-[var(--neutral-900)] py-10 px-4 sm:py-16 sm:px-10 lg:py-20 lg:px-16",
+    "bg-(--neutral-900) py-10 px-4 sm:py-16 sm:px-10 lg:py-20 lg:px-16",
     "rounded-xl"
   );
   return (
@@ -27,7 +27,7 @@ function Content() {
     bp === "base" || bp === "sm" ? "preset-1-mobile" : "preset-2"
   );
   return (
-    <div className="antialiased text-[var(--neutral-200)] max-w-[540px] text-center lg:text-left">
+    <div className="antialiased text-(--neutral-200) max-w-[540px] text-center lg:text-left">
       <h2 className={titleStyles}>Book a call with me</h2>
       <p className="preset-4">
         I&apos;d love to have a chat to see how I can help you. The best first

@@ -18,7 +18,7 @@ export default function Notification({
   const containerStyles = cn(
     "relative  flex p-3  justify-start rounded-lg w-full cursor-pointer",
     boxMessage && "flex-col",
-    isRead ? "" : "bg-[var(--grayish-blue-50)]"
+    isRead ? "" : "bg-(--grayish-blue-50)"
   );
   //Dataflow:
   const kebabName = toKebabCase(subject);
@@ -40,14 +40,14 @@ export default function Notification({
         <div className="h-10 aspect-square relative mr-2 cursor-pointer">
           <Image
             alt={`Avatar of ${subject}`}
-            src={url}
+            src={photo}
             fill
             className="object-contain"
           />
         </div>
         <div className="text-sm">
           <p>
-            <span className="font-bold hover:text-[var(--blue)] hover:cursor-pointer transition-colors">
+            <span className="font-bold hover:text-(--blue) hover:cursor-pointer transition-colors">
               {subject}{" "}
             </span>{" "}
             <HighlightText
@@ -57,17 +57,17 @@ export default function Notification({
               isRead={isRead}
             />
           </p>
-          <span className="text-[var(--grayish-blue-300)] text-xs">{date}</span>
+          <span className="text-(--grayish-blue-300) text-xs">{date}</span>
         </div>
       </div>
-      {photo && (
+      {/* {boxMessage && (
         <div className="relative w-10 aspect-square ml-auto rounded-md overflow-hidden">
-          <Image src={photo} fill className="object-cover" />
+          <Image src={url} fill className="object-cover" />
         </div>
-      )}
+      )} */}
       {boxMessage && (
-        <div className="hover:cursor-pointer hover:bg-[var(--grayish-blue-100)] ml-12 mt-2 border border-[var(--grayish-blue-200)] rounded-md p-2.5">
-          <p className="text-sm text-[var(--grayish-blue-500)]">{boxMessage}</p>
+        <div className="hover:cursor-pointer hover:bg-(--grayish-blue-100) ml-12 mt-2 border border-(--grayish-blue-200) rounded-md p-2.5">
+          <p className="text-sm text-(--grayish-blue-500)">{boxMessage}</p>
         </div>
       )}
     </li>

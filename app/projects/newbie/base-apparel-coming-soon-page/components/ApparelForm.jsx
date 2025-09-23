@@ -27,14 +27,14 @@ export default function ApparelForm({ className }) {
   const inputStyles = cn(
     "py-4 px-8",
     "text-[16px] leading-[215%] tracking-0 font-normal w-full",
-    "outline-none rounded-full",
-    "border-2 border-[var(--pink-400)] transition-colors",
-    "placeholder:text-[16px] placeholder:leading-[215%] placeholder:tracking-0 placeholder:font-normal placeholder:text-[var(--pink-400)] placeholder:opacity-50",
-    hasError && "border-[var(--red-400)]"
+    "outline-hidden rounded-full",
+    "border-2 border-(--pink-400) transition-colors",
+    "placeholder:text-[16px] placeholder:leading-[215%] placeholder:tracking-0 placeholder:font-normal placeholder:text-(--pink-400) placeholder:opacity-50",
+    hasError && "border-(--red-400)"
   );
   const buttonStyles = clsx(
     "absolute z-10 py-4 px-10 h-full right-0 rounded-full overflow-hidden",
-    "bg-gradient-to-br from-[var(--gradient-1-start)] to-[var(--gradient-1-end)]",
+    "bg-linear-to-br from-(--gradient-1-start) to-(--gradient-1-end)",
     "shadow-2xl shadow-[#C66E64]/50",
     //Note: Another option would be to use a conditional tailwind string. But it is better to leave everything to CSS.
     // hasError && "before:inset-0 before:bg-white/50 before:z-10 before:absolute"
@@ -63,7 +63,7 @@ export default function ApparelForm({ className }) {
         </button>
       </div>
       {hasError && (
-        <Text as="span" preset={5} className="text-[var(--red-400)] ml-8 mt-2">
+        <Text as="span" preset={5} className="text-(--red-400) ml-8 mt-2">
           {errors.email?.message}
         </Text>
       )}

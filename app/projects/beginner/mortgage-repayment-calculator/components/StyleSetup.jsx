@@ -1,7 +1,7 @@
 export default function StyleSetup({ children }) {
   return (
     <div
-      className="w-full bg-[var(--slate-100)] min-h-screen grid place-items-center sm:p-10"
+      className="w-full bg-(--slate-100) min-h-screen grid place-items-center sm:p-10"
       style={{
         "--lime": "#D8DB2F",
         "--red": "#d73328",

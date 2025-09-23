@@ -3,7 +3,7 @@ import Text from "./Text";
 
 export default function Button({ text = "Read more", className }) {
   const buttonStyles = cn(
-    "py-2 px-8 uppercase hover:bg-[var(--navy-950)] hover:text-white transition-colors bg-[var(--red-500)] text-[var(--navy-950)]",
+    "py-2 px-8 cursor-pointer uppercase hover:bg-(--navy-950) hover:text-white transition-colors bg-(--red-500) text-(--navy-950)",
     className
   );
   return (

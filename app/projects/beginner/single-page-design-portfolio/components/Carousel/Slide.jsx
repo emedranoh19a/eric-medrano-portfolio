@@ -42,7 +42,7 @@ export default function Slide({ slide, index, current, handleSlideClick }) {
   const { imgSrc, title } = slide;
 
   return (
-    <div className="[perspective:1200px] [transform-style:preserve-3d]">
+    <div className="perspective-distant transform-3d">
       <li
         ref={slideRef}
         className="flex flex-1 flex-col items-center justify-center relative text-center text-white opacity-100 transition-all duration-300 ease-in-out w-[270px] h-[180px] sm:w-[540px] sm:h-[360px]  z-10 "

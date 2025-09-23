@@ -21,7 +21,7 @@ const inconsolata = Inconsolata({
 export default function StyleSetup({ children }) {
   return (
     <div
-      className={`antialiased w-full min-h-screen z-0 relative pt-10 ${inconsolata.className} overflow-y-hidden h-fit`}
+      className={`antialiased w-full min-h-screen z-0 relative py-10 ${inconsolata.className} overflow-y-hidden h-fit`}
       style={{
         "--neutral-900": "#0d082d",
         "--neutral-700": "#4b4869",

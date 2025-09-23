@@ -7,12 +7,12 @@ export default function Button({
   ...otherProps
 }) {
   const buttonStyles = cn(
-    "preset-5 text-[var(--neutral-200)] rounded-full transition-colors ",
+    "preset-5 cursor-pointer text-(--neutral-200) rounded-full transition-colors ",
     "py-4 px-12",
-    " focus:outline focus:outline-4 focus:outline-offset-4",
+    " focus:outline-solid focus:outline-4 focus:outline-offset-4",
     variant === "dark"
-      ? "bg-[var(--neutral-900)] focus:hover:bg-[var(--neutral-900)] hover:bg-[var(--galactic-blue-500)] focus:outline-[var(--galactic-blue-500)]"
-      : "bg-[var(--light-red-500)] focus:hover:bg-[var(--light-red-500)] hover:bg-[var(--summer-yellow-500)] focus:outline-[var(--summer-yellow-500)]",
+      ? "bg-(--neutral-900) focus:hover:bg-(--neutral-900) hover:bg-(--galactic-blue-500) focus:outline-(--galactic-blue-500)"
+      : "bg-(--light-red-500) focus:hover:bg-(--light-red-500) hover:bg-(--summer-yellow-500) focus:outline-(--summer-yellow-500)",
     className
   );
   return (

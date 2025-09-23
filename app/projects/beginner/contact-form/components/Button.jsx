@@ -6,7 +6,7 @@ export default function Button() {
     "group font-bold capitalize text-white",
     "relative z-0 py-4 px-10",
     "rounded-lg overflow-hidden",
-    "bg-[var(--green-600)]"
+    "bg-(--green-600)"
   );
 
   return (

@@ -22,14 +22,14 @@ export default function Select({
     "text-base sm:text-sm",
     "bg-white mt-1 py-1 rounded-md shadow-lg",
     "overflow-auto",
-    "ring-1 ring-black/5 focus:outline-none"
+    "ring-1 ring-black/5 focus:outline-hidden"
   );
   const buttonStyles = clsx(
     "flex items-center justify-between",
     "text-left text-gray-900 sm:text-sm/6",
     "w-full min-w-40 w-fit bg-white rounded-md py-1.5 pl-3 pr-2",
-    "outline outline-1 -outline-offset-1 outline-gray-300",
-    "focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600",
+    "outline-solid outline-1 -outline-offset-1 outline-gray-300",
+    "focus:outline-solid focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600",
     "cursor-pointer transition-colors duration-200"
   );
   //Handlers:

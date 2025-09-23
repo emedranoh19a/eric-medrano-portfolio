@@ -11,12 +11,12 @@ export default function CheckBox({ label, name, value, setValue }) {
 
   //Style:
   const labelStyles = clsx(
-    isDark ? "text-[var(--neutral-100)]" : "text-[var(--neutral-900)]"
+    isDark ? "text-(--neutral-100)" : "text-(--neutral-900)"
   );
   const checkboxStyles = clsx(
     "w-4 aspect-square rounded-[4px] ",
-    "accent-[var(--purple-400)] ouline-none",
-    isDark && "bg-[var(--neutral-800)]"
+    "accent-(--purple-400) ouline-none",
+    isDark && "bg-(--neutral-800)"
   );
   return (
     <label htmlFor={name} className="flex flex-row gap-2.5 cursor-pointer">

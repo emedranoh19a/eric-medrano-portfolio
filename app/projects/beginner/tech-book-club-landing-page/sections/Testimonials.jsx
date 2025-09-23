@@ -18,7 +18,7 @@ export default function Testimonials() {
 
 function Testimonial() {
   return (
-    <Text preset={3} className="w-full text-[var(--neutral-900)]">
+    <Text preset={3} className="w-full text-(--neutral-900)">
       &apos;This book club transformed my technical reading from a solitary
       activity into an enriching community experience. The discussions are
       gold!&apos;
@@ -27,7 +27,7 @@ function Testimonial() {
 }
 function Signature() {
   return (
-    <Text preset={5} className="text-[var(--neutral-700)] w-full">
+    <Text preset={5} className="text-(--neutral-700) w-full">
       Sarah Chen, Software Architect
     </Text>
   );

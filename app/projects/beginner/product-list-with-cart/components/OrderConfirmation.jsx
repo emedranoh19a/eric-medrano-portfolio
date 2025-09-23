@@ -42,13 +42,11 @@ export default function OrderConfirmation({ onCloseModal }) {
         alt="Confirm Order icon"
       />
 
-      <h2 className="text-3xl text-[var(--rose-900)] font-bold">
-        Order Confirmed
-      </h2>
-      <p className="mb-3 text-sm text-[var(--rose-500)]">
+      <h2 className="text-3xl text-(--rose-900) font-bold">Order Confirmed</h2>
+      <p className="mb-3 text-sm text-(--rose-500)">
         We hope you enjoy your food!
       </p>
-      <div className="mb-3 min-w-96 bg-[var(--rose-50)] p-4">
+      <div className="mb-3 min-w-96 bg-(--rose-50) p-4">
         <ul>
           {cartItems.map((item, index) => (
             <ListItem
@@ -59,10 +57,10 @@ export default function OrderConfirmation({ onCloseModal }) {
           ))}
         </ul>
         <div className="w-full pt-4 flex justify-between items-center">
-          <span className="text-[var(--rose-900)] text-sm font-semibold">
+          <span className="text-(--rose-900) text-sm font-semibold">
             Order total
           </span>
-          <span className="text-xl font-bold text-[var(--rose-900)]">
+          <span className="text-xl font-bold text-(--rose-900)">
             ${totalAmount.toFixed(2)}
           </span>
         </div>
@@ -72,7 +70,7 @@ export default function OrderConfirmation({ onCloseModal }) {
           onCloseModal();
           setCartItems([]);
         }}
-        className="w-full text-center text-[var(--rose-50)] bg-[var(--red)] rounded-full py-2"
+        className="cursor-pointer w-full text-center text-(--rose-50) bg-(--red) rounded-full py-2"
       >
         Start New Order
       </button>
@@ -101,12 +99,10 @@ function ListItem({ dessertId, quantity }) {
           />
         </div>
         <div className="flex flex-col">
-          <h5 className="font-bold text-[var(--rose-900)] text-sm">{title}</h5>
+          <h5 className="font-bold text-(--rose-900) text-sm">{title}</h5>
           <div className="flex gap-3">
-            <span className="text-[var(--red)] font-bold text-xs">
-              {quantity}x
-            </span>
-            <span className="text-[var(--rose-500)] text-xs">
+            <span className="text-(--red) font-bold text-xs">{quantity}x</span>
+            <span className="text-(--rose-500) text-xs">
               @ ${price.toFixed(2)}
             </span>
           </div>

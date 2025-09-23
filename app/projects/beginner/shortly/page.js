@@ -7,7 +7,7 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "700"] })
 
 
 const ctaCn = "bg-[url('/projects/beginner/shortly/images/bg-boost-desktop.svg')] bg-no-repeat bg-cover"
-const ficonCn = "hover:filter hover:invert-[79%] hover:sepia-[61%] hover:saturate-[464%] hover:hue-rotate-[130deg] hover:brightness-[89%] hover:contrast-[85%]"
+const ficonCn = "hover:filter hover:invert-79 hover:sepia-61 hover:saturate-464 hover:hue-rotate-130 hover:brightness-89 hover:contrast-85"
 const hamburguerCn = "cursor-pointer w-6 h-6 transition-all duration-250 relative"
 const hamburguerCommonCn = "absolute w-6 h-[3px] top-0 left-0 bg-[#9c9aa6] rotate-0 transition-all duration-500"
 const hamburguerTopCn = hamburguerCommonCn
@@ -16,7 +16,7 @@ const hamburguerBottomCn = cn(hamburguerCommonCn, "translate-y-[14px]")
 
 
 export default function Page() {
-    return <div className={`${poppins.className}`} style={{
+    return <div className={`${poppins.className} bg-white`} style={{
         "--cyan": 'hsl(180, 66%, 49%)',
         "--cyanLight": 'hsl(180, 66%, 69%)',
         "--darkViolet": 'hsl(257, 27%, 26%)',
@@ -45,26 +45,26 @@ function Navigation() {
                 <Image src={logo} alt="" width={100} height={100} />
                 {/* <!-- Left Menu --> */}
                 <div className="hidden space-x-8 font-bold lg:flex">
-                    {["Features", "Pricing", "Resources"].map((item, i) => <a key={i} href="#" className="text-[var(--grayishViolet)] hover:text-[--veryDarkViolet]"
+                    {["Features", "Pricing", "Resources"].map((item, i) => <a key={i} href="#" className="text-(--grayishViolet) hover:text-(--veryDarkViolet)"
                     >{item}</a>)}
                 </div>
             </div>
 
             {/* <!-- Right Buttons Menu --> */}
             <div
-                className="hidden items-center space-x-6 font-bold text-[var(--grayishViolet)] lg:flex"
+                className="hidden items-center space-x-6 font-bold text-(--grayishViolet) lg:flex"
             >
-                <div className="hover:text-[var(--veryDarkViolet)]">Login</div>
+                <div className="hover:text-(--veryDarkViolet)">Login</div>
                 <a
                     href="#"
-                    className="px-8 py-3 font-bold text-white bg-[var(--cyan)] rounded-full hover:opacity-70"
+                    className="px-8 py-3 font-bold text-white bg-(--cyan) rounded-full hover:opacity-70"
                 >Sign Up</a>
             </div>
 
             {/* <!-- Hamburger Button --> */}
             <button
                 id="menu-btn"
-                className={cn(hamburguerCn, "block lg:hidden focus:outline-none")}
+                className={cn(hamburguerCn, "block lg:hidden focus:outline-hidden")}
                 type="button"
             >
                 <span className={hamburguerTopCn}></span>
@@ -76,10 +76,10 @@ function Navigation() {
         {/* <!-- Mobile Menu --> */}
         <div
             id="menu"
-            className="absolute hidden p-6 rounded-lg bg-[var(--darkViolet)] left-6 right-6 top-20 z-100"
+            className="absolute hidden p-6 rounded-lg bg-(--darkViolet) left-6 right-6 top-20 z-100"
         >
             <div
-                className="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm"
+                className="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-xs"
             >
                 {["Features", "Pricing", "Resources"].map((item, i) => (<a href="#" key={i} className="w-full text-center">{item}</a>))}
                 <a href="#" className="w-full pt-6 border-t border-gray-400 text-center">Login</a>
@@ -128,17 +128,17 @@ function Shorten() {
 
     const links = [
         {
-            btnCn: "bg-[var(--cyan)]",
+            btnCn: "bg-(--cyan)",
             link: "https://frontendmentor.io",
             shortLink: "https://rel.ink/k4IKyk",
         },
         {
-            btnCn: "bg-[var(--darkViolet)]",
+            btnCn: "bg-(--darkViolet)",
             link: "https://twitter.com/frontendmentor",
             shortLink: "https://rel.ink/gxOXp9",
         },
         {
-            btnCn: "bg-[var(--cyan)]",
+            btnCn: "bg-(--cyan)",
             link: "https://linkedin.com/frontend-mentor",
             shortLink: "https://rel.ink/gob3X9",
         },
@@ -161,7 +161,7 @@ function Shorten() {
                     {shortLink}
                 </div>
                 <button
-                    className={cn("p-2 px-8 text-white  rounded-lg hover:opacity-70 focus:outline-none", btnCn)}
+                    className={cn("p-2 px-8 text-white  rounded-lg hover:opacity-70 focus:outline-hidden", btnCn)}
                 >
                     Copy
                 </button>
@@ -175,17 +175,17 @@ function Shorten() {
             {/* <!-- Form --> */}
             <form
                 id="link-form"
-                className="relative flex flex-col w-full p-10 -mt-20 space-y-4 bg-[var(--darkViolet)] rounded-lg md:flex-row md:space-y-0 md:space-x-3"
+                className="relative flex flex-col w-full p-10 -mt-20 space-y-4 bg-(--darkViolet) rounded-lg md:flex-row md:space-y-0 md:space-x-3"
             >
                 <input
                     type="text"
-                    className="flex-1 p-3 border-2 rounded-lg placeholder-yellow-500 focus:outline-none"
+                    className="flex-1 p-3 border-2 rounded-lg placeholder-yellow-500 focus:outline-hidden"
                     placeholder="Shorten a link here"
                     id="link-input"
                 />
 
                 <button
-                    className="px-10 py-3 text-white bg-[var(--cyan)] rounded-lg hover:bg-[var(--cyanLight)] focus:outline-none md:py-2"
+                    className="px-10 py-3 text-white bg-(--cyan) rounded-lg hover:bg-(--cyanLight) focus:outline-hidden md:py-2"
                 >
                     Shorten It!
                 </button>
@@ -243,7 +243,7 @@ function Feature() {
             <div className="absolute -ml-10 left-1/2 -top-10 md:left-16">
                 {/* <!-- Image Container For Background & Center --> */}
                 <div
-                    className="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-[var(--veryDarkViolet)]"
+                    className="flex items-center justify-center w-20 h-20 p-4 rounded-full bg-(--veryDarkViolet)"
                 >
                     <Image src={image} alt="" width={50} height={50} />
                 </div>
@@ -264,10 +264,10 @@ function Feature() {
         >
             {/* <!-- Horizontal Line --> */}
             <div
-                className="hidden absolute top-24 w-10/12 left-16 h-3 bg-[var(--cyan)] md:block"
+                className="hidden absolute top-24 w-10/12 left-16 h-3 bg-(--cyan) md:block"
             ></div>
             {/* <!-- Vertical Line --> */}
-            <div className="absolute w-2 left-1/2 h-full -ml-1 bg-[var(--cyan)] md:hidden"></div>
+            <div className="absolute w-2 left-1/2 h-full -ml-1 bg-(--cyan) md:hidden"></div>
 
             {boxes.map((box, i) => <Box {...box} key={i} />)}
 
@@ -276,7 +276,7 @@ function Feature() {
 }
 function CTA() {
 
-    return <section id="cta" className={cn(ctaCn, "py-24 bg-[var(--darkViolet)]")}>
+    return <section id="cta" className={cn(ctaCn, "py-24 bg-(--darkViolet)")}>
         <div className="flex flex-col p-2 space-y-6">
             <h5
                 className="mx-auto space-y-10 text-4xl font-bold text-center text-white"
@@ -284,7 +284,7 @@ function CTA() {
                 Boost your links today
             </h5>
             <button
-                className="px-10 py-5 mx-auto text-2xl font-bold text-white rounded-full bg-cyan hover:bg-[var(--cyanLlight)] md:text-base md:py-3 focus:outline-none"
+                className="px-10 py-5 mx-auto text-2xl font-bold text-white rounded-full bg-cyan hover:bg-(--cyanLlight) md:text-base md:py-3 focus:outline-hidden"
             >
                 Get Started
             </button>
@@ -297,7 +297,7 @@ function Footer() {
         return <div className="flex flex-col items-center w-full md:items-start">
             <div className="mb-5 font-bold text-white capitalize">{title}</div>
             <div className="flex flex-col items-center space-y-3 md:items-start">
-                {links.map((link, i) => <a href="#" className="capitalize text-[var(--grayishViolet)] hover:text-[var(--cyan)]" key={i}>{link}</a>)}
+                {links.map((link, i) => <a href="#" className="capitalize text-(--grayishViolet) hover:text-(--cyan)" key={i}>{link}</a>)}
             </div>
         </div>
     }
@@ -306,7 +306,7 @@ function Footer() {
         { title: "Resources", links: ["Blog", "Developers", "Support"] },
         { title: "Company", links: ["About", "Our Team", "Careers", "Contact"] }
     ]
-    return <footer className="py-16 bg-[var(--veryDarkViolet)]">
+    return <footer className="py-16 bg-(--veryDarkViolet)">
         <div
             className="container flex flex-col items-center  mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start" >
             {/* <!-- Logo --> */}

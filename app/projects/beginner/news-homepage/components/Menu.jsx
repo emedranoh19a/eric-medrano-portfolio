@@ -36,7 +36,7 @@ function Logo() {
 function Menus({ className = "", preset = 6, textCn }) {
   const listCn = clsx("list-none relative gap-10", className);
   const textStyles = cn(
-    "hover:text-[var(--gold-400)] cursor-pointer transition-colors",
+    "hover:text-(--gold-400) cursor-pointer transition-colors",
     textCn
   );
   return (

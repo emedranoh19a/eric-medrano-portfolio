@@ -1,7 +1,7 @@
 export default function StyleSetup({ children }) {
   return (
     <div
-      className="w-full min-h-screen bg-[var(--green-200)] px-4 py-8 grid place-items-center"
+      className="w-full min-h-screen bg-(--green-200) px-4 py-8 grid place-items-center"
       style={{
         "--grey-900": "#2A4144",
         "--grey-500": "#86A2A5",

@@ -1,16 +1,36 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@config '../tailwind.config.js';
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 /* 2. Remove default margin */
-* {
+/* * {
   margin: 0;
-}
+} */
 
 body {
   /* background: var(--background); */
@@ -29,43 +49,58 @@ body {
   background-color: #ffffff;
   background-image: url("/backgrounds/transparent-square-tiles.png");
   background-attachment: fixed;
-   /* 3. Add accessible line-height */
-   line-height: 1.5;
-   /* 4. Improve text rendering */
-   -webkit-font-smoothing: antialiased;
+  /* 3. Add accessible line-height */
+  /* line-height: 1.5; */
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
 }
-
-
-
-
 
 /* 5. Improve media defaults */
-img, picture, video, canvas, svg {
+/* img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
-}
+} */
 
 /* 6. Inherit fonts for form controls */
-input, button, textarea, select {
+/* input,
+button,
+textarea,
+select {
   font: inherit;
-}
+} */
 
 /* 7. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+/* p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
-}
+} */
 
 /* 8. Improve line wrapping */
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
 /*
   9. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }

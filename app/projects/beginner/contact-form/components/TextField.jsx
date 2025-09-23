@@ -22,7 +22,7 @@ export default function TextField({
   const inputStyles = clsx(
     "px-6 py-3 min-w-[200px] rounded-lg",
     "border border-px",
-    errors[name] ? "border-[var(--red)]" : "border-[var(--grey-500)]",
+    errors[name] ? "border-(--red)" : "border-(--grey-500)",
     className
   );
   return (
@@ -30,7 +30,7 @@ export default function TextField({
       <Text as="label" htmlFor={name} variant="body-sm">
         {label}{" "}
         {validations.required && (
-          <span className="text-[var(--green-600)]">*</span>
+          <span className="text-(--green-600)">*</span>
         )}
       </Text>
       <Tag {...register(name, validations)} className={inputStyles} />
@@ -41,7 +41,7 @@ export default function TextField({
 
 function ErrorMessage({ message }) {
   return (
-    <Text variant="body-sm" className="text-[var(--red)]" as="span">
+    <Text variant="body-sm" className="text-(--red)" as="span">
       {message}
     </Text>
   );

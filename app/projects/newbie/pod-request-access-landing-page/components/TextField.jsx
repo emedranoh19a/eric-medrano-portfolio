@@ -10,8 +10,8 @@ export default function TextField({ className }) {
   } = useFormContext();
   //Style:
   const inputStyles = cn(
-    "px-7 py-2  rounded-full flex justify-between bg-[var(--blue-900)]",
-    errors && " border boder-solid border-[var(--red)]",
+    "px-7 py-2  rounded-full flex justify-between bg-(--blue-900)",
+    errors && " border boder-solid border-(--red)",
     className
   );
 

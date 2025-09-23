@@ -19,12 +19,12 @@ const partialCards = [
 ];
 export default function ArticleCard({ className }) {
   const containerCn = cn(
-    "bg-[var(--navy-950)] py-4 px-6 sm:px-10 sm:py-8 lg:py-4 lg:px-6",
+    "bg-(--navy-950) py-4 px-6 sm:px-10 sm:py-8 lg:py-4 lg:px-6",
     className
   );
   return (
     <aside className={containerCn}>
-      <Text as="h2" preset={3} className="text-[var(--gold-400)]">
+      <Text as="h2" preset={3} className="text-(--gold-400)">
         New
       </Text>
       <div>
@@ -38,15 +38,15 @@ export default function ArticleCard({ className }) {
 
 function ArticlePartialCard({ title, content }) {
   return (
-    <div className="group pt-8 pb-8 border-b border-[var(--grey-200)] last-of-type:pb-0 last-of-type:border-none">
+    <div className="group pt-8 pb-8 border-b border-(--grey-200) last-of-type:pb-0 last-of-type:border-none">
       <Text
         as="h3"
-        className="text-white group-hover:text-[var(--gold-400)] transition-colors"
+        className="text-white group-hover:text-(--gold-400) transition-colors"
         preset={4}
       >
         {title}{" "}
       </Text>
-      <Text as="h3" className="text-[var(--grey-300)]" preset={6}>
+      <Text as="h3" className="text-(--grey-300)" preset={6}>
         {content}{" "}
       </Text>
     </div>

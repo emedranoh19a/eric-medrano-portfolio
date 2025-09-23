@@ -28,7 +28,7 @@ export default function Form() {
   //Style:
   const titleStyles = clsx(
     "mx-auto mb-10 inline-block max-w-[510px] mx-auto text-center transition-colors",
-    !isDark ? "text-[var(--neutral-900)]" : "text-[var(--neutral-100)]"
+    !isDark ? "text-(--neutral-900)" : "text-(--neutral-100)"
   );
 
   return (
@@ -67,7 +67,7 @@ export default function Form() {
         <Text
           preset={4}
           className={` transition-colors ${
-            !isDark ? "text-[var(--neutral-900)]" : "text-[var(--neutral-100)]"
+            !isDark ? "text-(--neutral-900)" : "text-(--neutral-100)"
           }`}
         >
           Approx. reading time: {readingTime.toFixed(1)} minutes
@@ -84,9 +84,9 @@ function ErrorMessage({ message = "Message for the error" }) {
     <div className="w-full text-left flex flex-row gap-2 items-center mt-1">
       <span>
         {" "}
-        <IoInformationCircleOutline className="text-[var(--orange-800)]" />
+        <IoInformationCircleOutline className="text-(--orange-800)" />
       </span>
-      <Text className="text-[var(--orange-800)]" as="span" preset={4}>
+      <Text className="text-(--orange-800)" as="span" preset={4}>
         {message}
       </Text>
     </div>

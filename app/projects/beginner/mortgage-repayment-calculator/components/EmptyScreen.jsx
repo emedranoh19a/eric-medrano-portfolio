@@ -9,7 +9,7 @@ export default function EmptyScreen() {
       <Text preset={2} className="text-white" as="h2">
         Results shown here
       </Text>
-      <Text preset={4} className="text-[var(--slate-300)]">
+      <Text preset={4} className="text-(--slate-300)">
         Complete the form and click &ldquo;calculate repayments&rdquo; to see
         what your monthly repayments would be.
       </Text>

@@ -5,7 +5,7 @@ const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700"] });
 export default function StyleSetup({ children }) {
   return (
     <div
-      className={`w-full min-h-screen relative z-0 bg-[var(--blue-700)] grid place-items-center ${roboto.className}`}
+      className={`w-full min-h-screen relative z-0 bg-(--blue-700) grid place-items-center ${roboto.className}`}
       style={{
         "--grey": "#949494",
         "--red": "#FF6155",

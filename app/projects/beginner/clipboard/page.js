@@ -16,31 +16,31 @@ export default function Page() {
         <footer className="pb-40">
             <div className="max-w-6xl mx-auto text-center px-10">
                 <Image src={logo} alt="clipboard logo" width={200} height={200} className="mx-auto scale-50" />
-                <div className="flex flex-col items-center justify-between flex-1 mb-10 space-y-6 md:flex-row md:mb-0 md:space-y-0 text-[var(--grayish-blue)]">
+                <div className="flex flex-col items-center justify-between flex-1 mb-10 space-y-6 md:flex-row md:mb-0 md:space-y-0 text-(--grayish-blue)">
                     {/* Menu 1*/}
                     <div className="flex flex-col space-y-4 md:flex-row md:ml-24 md:space-x-6 md:space-y-0">
                         <div className="flex flex-col space-y-4 text-center md:text-left">
-                            <div><a href="#" className="hover:text-[var(--strong-cyan)] duration-200">
+                            <div><a href="#" className="hover:text-(--strong-cyan) duration-200">
                                 FAQs</a></div>
-                            <div><a href="#" className="hover:text-[var(--strong-cyan)] duration-200">
+                            <div><a href="#" className="hover:text-(--strong-cyan) duration-200">
                                 Contact Us</a></div>
                         </div>
                     </div>
                     {/* Menu 2*/}
                     <div className="flex flex-col space-y-4 md:flex-row md:ml-24 md:space-x-6 md:space-y-0">
                         <div className="flex flex-col space-y-4 text-center md:text-left">
-                            <div><a href="#" className="hover:text-[var(--strong-cyan)] duration-200">
+                            <div><a href="#" className="hover:text-(--strong-cyan) duration-200">
                                 Privacy Policy</a></div>
-                            <div><a href="#" className="hover:text-[var(--strong-cyan)] duration-200">
+                            <div><a href="#" className="hover:text-(--strong-cyan) duration-200">
                                 Press Kit</a></div>
                         </div>
                     </div>
                     {/* Menu 3*/}
                     <div className="flex flex-col space-y-4 md:flex-row md:ml-24 md:space-x-6 md:space-y-0">
                         <div className="flex flex-col space-y-4 text-center md:text-left">
-                            <div><a href="#" className="hover:text-[var(--strong-cyan)] duration-200">
+                            <div><a href="#" className="hover:text-(--strong-cyan) duration-200">
                                 Install Guide</a></div>
-                            {/* <div><a href="#" className="hover:text-[var(--strong-cyan)] duration-200">
+                            {/* <div><a href="#" className="hover:text-(--strong-cyan) duration-200">
                                 Contact Us</a></div> */}
                         </div>
                     </div>
@@ -77,10 +77,10 @@ function Hero() {
     return <SectionContainer id="hero" className="mb-40 pt-16 w-full">
         <Image src={logo} alt="clipboard logo" width={200} height={200} className="mx-auto my-16" />
         <Heading text="A history of everything you copy" />
-        <p className="max-w-3xl mx-auto mb-10 text-2xl text-[var(--grayish-blue)]">Clipboard allows you to track and organize everything you copy. Instantly access yout clipboard on all your devices.</p>
+        <p className="max-w-3xl mx-auto mb-10 text-2xl text-(--grayish-blue)">Clipboard allows you to track and organize everything you copy. Instantly access yout clipboard on all your devices.</p>
         <ButtonContainer>
-            <a href="#" className="p-4 px-8 rounded-full shadow-lg bg-[var(--strong-cyan)] duration-200 hover:opacity-80">Download for iOS</a>
-            <a href="#" className="p-4 px-8 rounded-full shadow-lg bg-[var(--light-blue)] duration-200 hover:opacity-80">Download for Mac</a>
+            <a href="#" className="p-4 px-8 rounded-full shadow-lg bg-(--strong-cyan) duration-200 hover:opacity-80">Download for iOS</a>
+            <a href="#" className="p-4 px-8 rounded-full shadow-lg bg-(--light-blue) duration-200 hover:opacity-80">Download for Mac</a>
         </ButtonContainer>
 
     </SectionContainer>
@@ -93,7 +93,7 @@ function Snippets() {
     return <SectionContainer id="snippets" className="my-20">
         <div className="max-w-6xl mx-auto text-center my-20 px-10">
             <Heading text="Keep track of your snippets" />
-            <p className="max-w-3xl mx-auto mb-24 text-xl leading-9 text-center text-[var(--grayish-blue)]">
+            <p className="max-w-3xl mx-auto mb-24 text-xl leading-9 text-center text-(--grayish-blue)">
                 Clipboard instantly stores any item you copy in the cloud,
                 meaning you can access them on all your devices.
                 Our Mac and iOS apps will help you organize everything.</p>
@@ -105,7 +105,7 @@ function ButtonContainer({ children }) {
     return <div className="flex flex-col justify-center w-full space-y-6 text-xl text-white md:flex-row md:space-y-0 md:space-x-4">{children}</div>
 }
 function Heading({ text }) {
-    return <h3 className="mb-8 text-4xl font-bold text-[var(--dark-grayish-blue)] md:text-5xl">{text}</h3>
+    return <h3 className="mb-8 text-4xl font-bold text-(--dark-grayish-blue) md:text-5xl">{text}</h3>
 }
 function SectionContainer({ className, id, children }) {
     return <section id={id} className={cn("max-w-6xl mx-auto text-center px-10", className)}>{children}</section>
@@ -120,16 +120,16 @@ function Features() {
             </div>
             <div className="flex flex-col justify-center items-center h-full gap-12 text-xl md:text-left md:w-1/2 md:pl-16">
                 <div>
-                    <h5 className="mb-2 text-2xl font-bold text-[var(--dark-grayish-blue)]">Quick Search</h5>
-                    <p className="max-w-md text-[var(--grayish-blue)]">Easily search your snippets by content, category, web address, application, and more.</p>
+                    <h5 className="mb-2 text-2xl font-bold text-(--dark-grayish-blue)">Quick Search</h5>
+                    <p className="max-w-md text-(--grayish-blue)">Easily search your snippets by content, category, web address, application, and more.</p>
                 </div>
                 <div>
-                    <h5 className="mb-2 text-2xl font-bold text-[var(--dark-grayish-blue)]">iCloud Sync</h5>
-                    <p className="max-w-md text-[var(--grayish-blue)]">Instantly saves and sync snippets across all your devices.</p>
+                    <h5 className="mb-2 text-2xl font-bold text-(--dark-grayish-blue)">iCloud Sync</h5>
+                    <p className="max-w-md text-(--grayish-blue)">Instantly saves and sync snippets across all your devices.</p>
                 </div>
                 <div>
-                    <h5 className="mb-2 text-2xl font-bold text-[var(--dark-grayish-blue)]">Completely History</h5>
-                    <p className="max-w-md text-[var(--grayish-blue)]">Easily search your snippets by content, category, web address, application, and more.</p>
+                    <h5 className="mb-2 text-2xl font-bold text-(--dark-grayish-blue)">Completely History</h5>
+                    <p className="max-w-md text-(--grayish-blue)">Easily search your snippets by content, category, web address, application, and more.</p>
                 </div>
             </div>
         </div>
@@ -139,7 +139,7 @@ function Features() {
 function AccessAnywhere() {
     return <SectionContainer id="access" className="my-20">
         <Heading text="Access Clipboard anywhere" />
-        <p className="max-w-3xl mx-auto text-xl text-[var(--grayish-blue)]">Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
+        <p className="max-w-3xl mx-auto text-xl text-(--grayish-blue)">Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
         <Image src={imageDevices} alt="clipboard logo" width={500} height={500} className="mx-auto my-16" />
     </SectionContainer>
 }
@@ -147,24 +147,24 @@ function AccessAnywhere() {
 function Supercharge() {
     return <SectionContainer id="supercharge" className="my-20">
         <Heading text="Supercharge your workworflow" />
-        <p className="max-w-3xl mx-auto mb-24 text-xl leading-9 text-center text-[var(--grayish-blue)]">
+        <p className="max-w-3xl mx-auto mb-24 text-xl leading-9 text-center text-(--grayish-blue)">
             We&apos;ve got the tools to boost your productivity/</p>
         {/* Items container */}
         <div className="flex flex-col items-center justify-between space-y-16 md:flex-row md:space-y-0 md:space-x-12">
             <div className="flex flex-col items-center justify-center space-y-5">
                 <Image src={iconBlacklist} alt="clipboard logo" width={50} height={50} />
-                <h5 className="mb-2 text-2xl font-bold text-[var(--dark-grayish-blue)]">Completely History</h5>
-                <p className="max-w-md text-[var(--grayish-blue)]">Easily search your snippets by content, category, web address, application, and more.</p>
+                <h5 className="mb-2 text-2xl font-bold text-(--dark-grayish-blue)">Completely History</h5>
+                <p className="max-w-md text-(--grayish-blue)">Easily search your snippets by content, category, web address, application, and more.</p>
             </div>
             <div className="flex flex-col items-center justify-center space-y-5">
                 <Image src={iconText} alt="clipboard logo" width={50} height={50} />
-                <h5 className="mb-2 text-2xl font-bold text-[var(--dark-grayish-blue)]">Plain Text Snippets</h5>
-                <p className="max-w-md text-[var(--grayish-blue)]">Remove unwanted formatting from copied text for a consistent look.</p>
+                <h5 className="mb-2 text-2xl font-bold text-(--dark-grayish-blue)">Plain Text Snippets</h5>
+                <p className="max-w-md text-(--grayish-blue)">Remove unwanted formatting from copied text for a consistent look.</p>
             </div>
             <div className="flex flex-col items-center justify-center space-y-5">
                 <Image src={iconPreview} alt="clipboard logo" width={50} height={50} />
-                <h5 className="mb-2 text-2xl font-bold text-[var(--dark-grayish-blue)]"> Sneak Preview</h5>
-                <p className="max-w-md text-[var(--grayish-blue)]">Quick preview of all snippets on your Clipboard for easy access</p>
+                <h5 className="mb-2 text-2xl font-bold text-(--dark-grayish-blue)"> Sneak Preview</h5>
+                <p className="max-w-md text-(--grayish-blue)">Quick preview of all snippets on your Clipboard for easy access</p>
             </div>
         </div>
     </SectionContainer>
@@ -182,11 +182,11 @@ function References() {
 function Bottom() {
     return <SectionContainer id="bottom" className="my-20">
         <Heading text="Clipboard for iOS and Mac OS" />
-        <p className="max-w-3xl mx-auto mb-24 text-xl leading-9 text-center text-[var(--grayish-blue)]">
+        <p className="max-w-3xl mx-auto mb-24 text-xl leading-9 text-center text-(--grayish-blue)">
             Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.</p>
         <div className="flex flex-col items-center justify-between space-y-16 md:flex-row md:space-y-0 md:space-x-12">
-            <a href="#" className="p-4 px-8 rounded-full shadow-lg bg-[var(--strong-cyan)] duration-200 hover:opacity-80">Download for iOS</a>
-            <a href="#" className="p-4 px-8 rounded-full shadow-lg bg-[var(--light-blue)] duration-200 hover:opacity-80">Download for Mac</a>
+            <a href="#" className="p-4 px-8 rounded-full shadow-lg bg-(--strong-cyan) duration-200 hover:opacity-80">Download for iOS</a>
+            <a href="#" className="p-4 px-8 rounded-full shadow-lg bg-(--light-blue) duration-200 hover:opacity-80">Download for Mac</a>
         </div>
     </SectionContainer>
 }

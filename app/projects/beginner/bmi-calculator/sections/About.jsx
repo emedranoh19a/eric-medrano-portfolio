@@ -43,11 +43,11 @@ function Content() {
       <Text
         as="h2"
         preset={isDesktop ? 2 : 3}
-        className="text-[var(--blue-900)] mb-8"
+        className="text-(--blue-900) mb-8"
       >
         What your BMI result means
       </Text>
-      <Text preset={6} className="text-[var(--grey-500)]">
+      <Text preset={6} className="text-(--grey-500)">
         A BMI range of 18.5 to 24.9 is considered a &lquot;healthy
         weight.&rquot; Maintaining a healthy weight may lower your chances of
         experiencing health issues later on, such as obesity and type 2

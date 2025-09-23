@@ -53,7 +53,7 @@ export default function Content() {
   );
   const firstItemStyles = clsx(
     "h-auto mt-8 py-8 px-8 md:py-16 shadow-2xl shadow-neutral-100/80 rounded-3xl",
-    "bg-gradient-to-b from-[var(--gradient-pink-top)] to-[var(--gradient-pink-bottom)]"
+    "bg-linear-to-b from-(--gradient-pink-top) to-(--gradient-pink-bottom)"
   );
   return (
     <section className={sectionStyles}>
@@ -82,7 +82,7 @@ function Feature({ icon, title, content }) {
 }
 function FeatureIcon({ icon }) {
   return (
-    <div className="absolute w-14 aspect-square top-0 left-8 -translate-y-1/2 bg-gradient-to-b from-[var(--gradient-pink-top)] to-[var(--gradient-pink-bottom)] rounded-full">
+    <div className="absolute w-14 aspect-square top-0 left-8 -translate-y-1/2 bg-linear-to-b from-(--gradient-pink-top) to-(--gradient-pink-bottom) rounded-full">
       <div className="w-full h-full relative">
         <Image fill className="object-contain" alt="" src={icon} />
       </div>

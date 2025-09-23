@@ -61,12 +61,12 @@ export default function Limitations() {
 function Content() {
   return (
     <div className="text-center lg:text-left sm:col-span-2 lg:absolute lg:left-0 lg:top-0 lg:max-w-[40%]">
-      <Text as="h2" className="text-[var(--blue-900)] mb-8" preset={3}>
+      <Text as="h2" className="text-(--blue-900) mb-8" preset={3}>
         Limitations of BMI
       </Text>
       <Text
         preset={6}
-        className="relative text-[var(--grey-500)] max-w-md mx-auto"
+        className="relative text-(--grey-500) max-w-md mx-auto"
       >
         Although BMI is often a practical indicator of healthy weight, it is not
         suited for every person. Specific groups should carefully consider their
@@ -93,11 +93,11 @@ function Limitation({ title, text, icon, className }) {
             alt={`${title} icon`}
           />
         </div>
-        <Text as="h3" className="text-[var(--blue-900)] capitalize" preset={5}>
+        <Text as="h3" className="text-(--blue-900) capitalize" preset={5}>
           {title}
         </Text>
       </div>
-      <Text className="text-[var(--grey-500)]" preset={6}>
+      <Text className="text-(--grey-500)" preset={6}>
         {text}
       </Text>
     </div>

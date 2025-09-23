@@ -25,7 +25,7 @@ export default function Value() {
     "relative",
     "md:px-10 xl:px-20",
     //We don't need padding top, because we got far from the cellphone image with margin.
-    "mt-16 px-5 py-14 py-28 md:py-40 xl:py-72  bg-[var(--purple-100)]"
+    "mt-16 px-5 py-14 py-28 md:py-40 xl:py-72  bg-(--purple-100)"
   );
   const featuresLayoutStyles = clsx(
     "flex flex-col xl:flex-row mx-auto gap-8  ",
@@ -45,7 +45,7 @@ export default function Value() {
         </div>
       </div>
       {/* <Ornamental
-        className="bg-[var(--purple-100)] bottom-0"
+        className="bg-(--purple-100) bottom-0"
         bottomColor="var(--white)"
       /> */}
     </section>
@@ -54,7 +54,7 @@ export default function Value() {
 
 function Feature({ title, description, number }) {
   return (
-    <div className="gap-6 flex flex-col md:flex-row xl:flex-col">
+    <div className="gap-6  flex flex-col md:flex-row xl:flex-col">
       <FeatureNumber number={number} />
       <FeatureContent title={title} description={description} />
     </div>
@@ -63,7 +63,7 @@ function Feature({ title, description, number }) {
 
 function FeatureNumber({ number = 1 }) {
   const circleStyles =
-    "relative mx-auto my-auto w-12 xl:w-14 h-12 xl:h-14 aspect-square text-center rounded-full grid place-items-center border border-2 border-[var(--purple-900)]";
+    "relative mx-auto my-auto w-12 xl:w-14 h-12 xl:h-14 aspect-square text-center rounded-full grid place-items-center border border-2 border-(--purple-900)";
   const textStyles =
     "absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2";
 
@@ -77,7 +77,7 @@ function FeatureNumber({ number = 1 }) {
 function FeatureContent({ title, description }) {
   return (
     <div>
-      <Text preset={3} className="mb-4">
+      <Text preset={3} className="mb-4 leading-tight">
         {title}
       </Text>
       <Text preset={4}>{description} </Text>

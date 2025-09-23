@@ -9,7 +9,7 @@ export default function Card({ children }) {
     //Positioning.
     "flex flex-col gap-6",
     //Background & Borders
-    "hover:cursor-pointer bg-white border rounded-[20px] border-solid border-[var(--gray-950)]",
+    "hover:cursor-pointer bg-white border rounded-[20px] border-solid border-(--gray-950)",
     //Effects
     "shadow-[8px_8px_0px_#000000]"
   );

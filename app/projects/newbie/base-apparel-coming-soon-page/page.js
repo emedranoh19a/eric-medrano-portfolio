@@ -31,7 +31,7 @@ function Content() {
 
   return <div className="mb-8 max-w-[311px] sm:max-w-[445px] mx-auto">
     <Text preset={titlePreset} as="h1" className="mt-16 mb-8  uppercase text-center lg:text-left">
-      <Text preset={titlePreset} as="span" className="text-[var(--pink-400)]">
+      <Text preset={titlePreset} as="span" className="text-(--pink-400)">
         We&apos;re{" "}
       </Text><br />
       <Text preset={titlePreset} accent as="span">
@@ -39,7 +39,7 @@ function Content() {
         coming<br /> soon
       </Text>
     </Text>
-    <Text className="text-[var(--pink-400)] text-center lg:text-left mb-8" preset={contentPreset}>
+    <Text className="text-(--pink-400) text-center lg:text-left mb-8" preset={contentPreset}>
 
       Hello fellow shoppers! We&apos;re currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
     </Text>

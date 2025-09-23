@@ -42,7 +42,7 @@ export default function Card() {
   return (
     <FormProvider {...{ ...methods, bmi }}>
       <form className={cardStyles} onSubmit={methods.handleSubmit(onSubmit)}>
-        <Text preset={4} className="col-span-2 text-[var(--blue-900)]">
+        <Text preset={4} className="col-span-2 text-(--blue-900)">
           Enter your details below
         </Text>
         <SelectionButton label="metric" />

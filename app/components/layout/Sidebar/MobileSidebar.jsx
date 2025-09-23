@@ -39,7 +39,7 @@ export default function MobileSidebar({ className, children, ...props }) {
                 ease: "easeInOut",
               }}
               className={cn(
-                "fixed h-full w-screen bg-white/50 backdrop-blur-md  inset-0 p-10 z-[100] flex flex-col justify-between",
+                "fixed h-full w-screen bg-white/50 backdrop-blur-md  inset-0 p-10 z-100 flex flex-col justify-between",
                 className
               )}
             >
@@ -64,14 +64,14 @@ function NavigationButton({ setOpen, open }) {
   const buttonStyles = clsx(
     basePosition,
     "group scale-1.25",
-    "fixed z-[2000] bg-white/70 backdrop-blur-md rounded-full",
+    "fixed z-2000 bg-white/70 backdrop-blur-md rounded-full",
     "text-center cursor-pointer shadow-2xl "
   );
   const backgroundStyles = clsx(
     basePosition,
-    "fixed z-[1000]",
+    "fixed z-1000",
     // "bg-gradient-radial from-white to-transparent rounded-full",
-    "bg-gradient-radial from-white/100 to-white/80 rounded-full",
+    "bg-gradient-radial from-white to-white/80 rounded-full",
     "shadow-2xl transition duration-1000 ease-in-out",
     open && "scale-screen"
   );
@@ -92,7 +92,7 @@ function NavigationButton({ setOpen, open }) {
     !open &&
       "group-hover:after:translate-y-1.5 group-hover:before:-translate-y-1.5",
     open &&
-      "bg-transparent after:translate-y-1/2 after:rotate-[135deg] before:translate-y-1/2 before:-rotate-[135deg]",
+      "bg-transparent after:translate-y-1/2 after:rotate-135 before:translate-y-1/2 before:-rotate-135",
     ""
   );
 

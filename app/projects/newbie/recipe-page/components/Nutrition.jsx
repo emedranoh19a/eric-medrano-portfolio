@@ -41,7 +41,7 @@ function TableItem({ field, value, hasBorder = true }) {
   const cellStyles = clsx(
     "py-2",
 
-    hasBorder && "border-b-2 border-solid border-[var(--stone-150)]"
+    hasBorder && "border-b-2 border-solid border-(--stone-150)"
   );
   return (
     <>
@@ -51,7 +51,7 @@ function TableItem({ field, value, hasBorder = true }) {
       <div
         className={clsx(
           cellStyles,
-          "col-start-2 font-bold text-[var(--brown-800)]"
+          "col-start-2 font-bold text-(--brown-800)"
         )}
       >
         <Text className="mb-0">{value}</Text>

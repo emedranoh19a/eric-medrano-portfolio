@@ -10,7 +10,7 @@ export default function Text({
   const textStyles = cn(
     "leading-[150%] tracking-[0px]",
     preset === 1 &&
-      "text-2xl font-[600] group-hover:text-[var(--yellow)] transition-colors",
+      "text-2xl font-semibold group-hover:text-(--yellow) transition-colors",
     preset === 2 && "text-base",
     preset === 3 && "text-sm",
     preset === 4 && "text-sm font-extrabold",

@@ -35,7 +35,7 @@ export default function Features() {
 }
 function Layer() {
   return (
-    <div className="bg-gradient-to-r from-[var(--gradient-start-transparent)] to-[var(--gradient-end)] inset-0 absolute -z-10 lg:mr-10 lg:rounded-[35px] opacity-25" />
+    <div className="bg-linear-to-r from-(--gradient-start-transparent) to-(--gradient-end) inset-0 absolute -z-10 lg:mr-10 lg:rounded-[35px] opacity-25" />
   );
 }
 function Feature({ title, icon, text }) {
@@ -50,10 +50,10 @@ function Feature({ title, icon, text }) {
         />
       </div>
       <div className="flex flex-col flex-1 gap-6">
-        <Text as="h3" preset={4} className="text-[var(--blue-900)]">
+        <Text as="h3" preset={4} className="text-(--blue-900)">
           {title}
         </Text>
-        <Text preset={6} className="text-[var(--grey-500)]">
+        <Text preset={6} className="text-(--grey-500)">
           {text}
         </Text>
       </div>

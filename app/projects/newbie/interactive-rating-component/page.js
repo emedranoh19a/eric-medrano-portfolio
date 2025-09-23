@@ -21,7 +21,7 @@ function RatingCard({ children }) {
   const containerStyles = clsx(
     "absolute top-1/2 left-1/2 p-8 -translate-x-1/2 -translate-y-1/2 w-96 h-fit",
     "flex flex-col gap-5 items-center",
-    "bg-gradient-to-b from-gray-800 to-gray-900 text-white",
+    "bg-linear-to-b from-gray-800 to-gray-900 text-white",
     "rounded-2xl"
   )
   return <div className={containerStyles}>{children}</div>
@@ -33,7 +33,7 @@ export default function Page() {
 
   function NumberButton({ number }) {
     const numberButtonStyles = clsx(
-      "bg-gray-800 text-gray-400 w-12 h-12 rounded-full",
+      "bg-gray-800 text-gray-400 w-12 h-12 rounded-full cursor-pointer",
       "hover:bg-white hover:text-black",
       "transition-all",
       number === rank && "bg-orange-500 text-black",
@@ -63,7 +63,7 @@ export default function Page() {
             </ul>
             <button
               onClick={() => setIsRanked(true)}
-              className="bg-orange-500/90 w-full uppercase text-black py-5 tracking-widest font-bold rounded-full hover:bg-white transition-all"
+              className="bg-orange-500/90 cursor-pointer w-full uppercase text-black py-5 tracking-widest font-bold rounded-full hover:bg-white transition-all"
             >
               Submit
             </button>

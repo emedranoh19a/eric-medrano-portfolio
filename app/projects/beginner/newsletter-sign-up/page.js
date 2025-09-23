@@ -34,7 +34,7 @@ function Success({ onReset }) {
 const items = ["Product discovery and building what matters", "Measuring to ensure updates are a success", "And much more!"]
 
 function Form({ onSubmit }) {
-    return <Card as="div" className="text-[var(--blue-800)] flex flex-col lg:items-center lg:flex-row-reverse gap-10 lg:gap-16 pt-0 sm:pt-6">
+    return <Card as="div" className="text-(--blue-800) flex flex-col lg:items-center lg:flex-row-reverse gap-10 lg:gap-16 pt-0 sm:pt-6">
         <FormImage />
         <FormContent onSubmit={onSubmit} />
     </Card>
@@ -56,7 +56,7 @@ function FormContent({ onSubmit: onSubmitProp }) {
         onSubmitProp()
     }
     return <FormProvider {...methods}>
-        <form className="text-[var(--blue-800)] flex flex-col gap-10" onSubmit={handleSubmit(onSubmit)}>
+        <form className="text-(--blue-800) flex flex-col gap-10" onSubmit={handleSubmit(onSubmit)}>
             <div className="flex flex-col gap-6">
                 <Text as="h1" preset={1} >
                     Stay updated!

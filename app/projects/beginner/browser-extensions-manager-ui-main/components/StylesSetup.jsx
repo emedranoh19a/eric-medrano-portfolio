@@ -12,9 +12,9 @@ export default function StylesSetup({ children }) {
   const { isDark } = useDarkMode();
   const setupStyles = cn(
     `w-full min-h-screen transition-colors ease-in ${notoSans.className}`,
-    "bg-gradient-to-b from-[var(--light-gradient-top)] to-[var(--light-gradient-bottom)]",
+    "bg-linear-to-b from-(--light-gradient-top) to-(--light-gradient-bottom)",
     isDark &&
-      "bg-gradient-to-b from-[var(--dark-gradient-top)] to-[var(--dark-gradient-bottom)]",
+      "bg-linear-to-b from-(--dark-gradient-top) to-(--dark-gradient-bottom)",
     isDark && "bg-black"
   );
   return (

@@ -5,7 +5,7 @@ import StylesSetup from "./StylesSetup"
 import Text from "./Text"
 import { iconBattery, iconBluetooth, iconCompatible, iconLight, imgGlassAndKeyboard, imgKeyboard, imgPhoneAndKeyboard, logo } from "./imageIndex"
 //Note: Maybe have to set relative positioning when working with dummy CSS Grid cells.
-{/* <div className="relative overflow-hidden w-full bg-[var(--primary)] bg-blend-multiply h-full w-full rounded-2xl">
+{/* <div className="relative overflow-hidden w-full bg-(--primary) bg-blend-multiply h-full w-full rounded-2xl">
 <Image
     src="/projects/beginner/typemaster-pre-launch-landing-page/assets/mobile/image-phone-and-keyboard.jpg"
     alt=""
@@ -61,8 +61,8 @@ function Header() {
         "p-4  gap-4 sm:mb-6 lg:mb-20",
         "grid-cols-[1fr_3fr] sm:grid-cols-[1fr_1fr_2fr]",
         "grid-rows-[3fr_3fr_2fr_3fr] sm:grid-rows-[3fr_3fr_2fr] lg:grid-rows-[3fr_2fr]",
-        "lg:after:absolute lg:after:w-1/4 lg:after:bg-[var(--light-gray)] lg:after:aspect-square lg:after:top-4 lg:after:right-0 lg:after:translate-x-full lg:after:rounded-2xl",
-        "lg:before:absolute lg:before:w-1/4 lg:before:bg-[var(--light-gray)] lg:before:aspect-square lg:before:bottom-4 lg:before:left-0 lg:before:-translate-x-full lg:before:rounded-2xl")
+        "lg:after:absolute lg:after:w-1/4 lg:after:bg-(--light-gray) lg:after:aspect-square lg:after:top-4 lg:after:right-0 lg:after:translate-x-full lg:after:rounded-2xl",
+        "lg:before:absolute lg:before:w-1/4 lg:before:bg-(--light-gray) lg:before:aspect-square lg:before:bottom-4 lg:before:left-0 lg:before:-translate-x-full lg:before:rounded-2xl")
     return <header className={gridStyles}>
         <div className="col-span-2 flex flex-col gap-4 self-center">
             <Text as="h1">Typemaster keyboard</Text>
@@ -89,7 +89,7 @@ function Header() {
 
             {/* <Image src="" alt="" fill className="object-cover"/> */}
         </div>
-        <div className="relative overflow-hidden w-full sm:scale-x-150 lg:scale-x-100 origin-right bg-[var(--primary)] bg-blend-multiply h-full w-full rounded-2xl">
+        <div className="relative overflow-hidden w-full sm:scale-x-150 lg:scale-x-100 origin-right bg-(--primary) bg-blend-multiply h-full w-full rounded-2xl">
             <Image
                 src={imgPhoneAndKeyboard.mobile}
                 alt="Phone and keyboard"
@@ -103,7 +103,7 @@ function Header() {
                 className="object-cover hidden sm:block mix-blend-multiply"
             />
         </div>
-        <div className="relative overflow-hidden transform-gpu w-full h-full w-full rounded-2xl sm:col-span-2 lg:col-span-1 lg:scale-x-[150%] origin-left">
+        <div className="relative overflow-hidden transform-gpu w-full h-full w-full rounded-2xl sm:col-span-2 lg:col-span-1 lg:scale-x-150 origin-left">
             <Image
                 src={imgGlassAndKeyboard.mobile}
                 alt="Glass and keyboard"
@@ -137,7 +137,7 @@ function Features() {
 function Feature({ title, icon, description }
 ) {
     return <div className="mb-10 text-center sm:text-left">
-        <div className=" mx-auto sm:mx-0 mb-8 bg-[var(--primary)] rounded-[16px] p-4 h-fit w-fit">
+        <div className=" mx-auto sm:mx-0 mb-8 bg-(--primary) rounded-[16px] p-4 h-fit w-fit">
             <div className="relative h-10 aspect-square">
                 <Image src={icon} fill alt="" className="object-contain" />
             </div>

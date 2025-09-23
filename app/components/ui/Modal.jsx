@@ -97,7 +97,7 @@ export function ModalWindow({
   //Style:
   const overlayCn = cn(
     "fixed w-full h-screen z-50 inset-0",
-    "bg-black/50 backdrop-blur-sm",
+    "bg-black/50 backdrop-blur-xs",
     "transition-all duration-500",
     overlayStyles
   );

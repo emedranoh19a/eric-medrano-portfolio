@@ -12,38 +12,38 @@ import {
 const services = [
   {
     imgCn: "w-[128px] h-[192px]",
-    className: "col-span-2 row-span-2 bg-[var(--galactic-blue-500)]", //FIX this. it does not span the rows on mobile.
+    className: "col-span-2 row-span-2 bg-(--galactic-blue-500)", //FIX this. it does not span the rows on mobile.
     imgSrc: ptnGraphicDesign,
     title: "Graphic Design",
   },
   {
     imgCn: "w-16 aspect-square",
-    className: "bg-[var(--summer-yellow-500)]",
+    className: "bg-(--summer-yellow-500)",
     imgSrc: ptnUiUx,
     title: "UI/UX",
   },
   {
     imgCn: "w-16 aspect-square",
-    className: "bg-[var(--pink-500)]",
+    className: "bg-(--pink-500)",
     imgSrc: ptnApps,
     title: "Apps",
   },
   {
     imgCn: "w-32 h-16",
     className:
-      "col-span-2 lg:col-start-3 lg:row-start-2 bg-[var(--light-red-500)]",
+      "col-span-2 lg:col-start-3 lg:row-start-2 bg-(--light-red-500)",
     imgSrc: ptnIllustrations,
     title: "Illustrations",
   },
   {
     imgCn: "w-[160px] h-16",
-    className: "col-span-2 bg-[var(--cyan-500)]",
+    className: "col-span-2 bg-(--cyan-500)",
     imgSrc: ptnPhotography,
     title: "Photography",
   },
   {
     imgCn: "w-[128] h-16",
-    className: "col-span-2 bg-[var(--dark-purple-500)]",
+    className: "col-span-2 bg-(--dark-purple-500)",
     imgSrc: ptnMotionGraphics,
     title: "Motion Graphics",
   },
@@ -65,7 +65,7 @@ function Service({ imgCn, className, imgSrc, title }) {
             <Image src={imgSrc} fill className="object-contain" alt="alt" />
           </div>
         </div>
-        <span className="preset-3 text-[var(--neutral-0)] mt-auto absolute bottom-0 left-0">
+        <span className="preset-3 text-(--neutral-0) mt-auto absolute bottom-0 left-0">
           {title}
         </span>
       </div>

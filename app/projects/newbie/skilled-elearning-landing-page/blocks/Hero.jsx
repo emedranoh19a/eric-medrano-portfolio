@@ -51,7 +51,7 @@ function Illustration() {
       <Image
         alt="Developer drinking coffee"
         fill
-        className="object-contain  inline-block md:hidden"
+        className="object-contain inline-block md:hidden"
         src={imgHeroMobile}
       />
     </div>

@@ -13,7 +13,7 @@ import {
 export default function Works() {
   const bp = useBreakpoint();
   const titleStyles = clsx(
-    "antialiased text-[var(--neutral-900)] text-center",
+    "antialiased text-(--neutral-900) text-center",
     bp === "base" || bp === "sm" ? "preset-1-mobile" : "preset-2"
   );
   return (
