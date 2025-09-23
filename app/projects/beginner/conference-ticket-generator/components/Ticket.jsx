@@ -60,7 +60,7 @@ function TicketShape({ githubUser, name, image }) {
   );
 
   return (
-    <div className="relative z-0 w-[343px] h-[160px] sm:w-[600px] sm:min-h-[280px] h-fit mx-auto">
+    <div className="relative z-0 w-[343px] h-[160px] sm:w-[600px] sm:min-h-[280px] mx-auto">
       <div className={ticketNumberStyles}>#01609</div>
       <div className="w-full -z-10 absolute inset-0">
         <Image
@@ -92,7 +92,7 @@ function TicketHeader() {
   );
 
   return (
-    <div className="flex gap-3 sm:gap-5 items-start">
+    <div className="flex gap-3 sm:gap-5 items-start ">
       <Logo />
       <div>
         <h2 className={titleStyles}>Coding Conf</h2>
