@@ -2,7 +2,7 @@ import { cn } from "@/app/utils/utils";
 import Image from "next/image";
 import { iconArrowLeft, iconArrowRight } from "../imageIndex";
 
-export default function Arrow({ className, left = false }) {
+export default function Arrow({ className, left = false, ...otherProps }) {
   const buttonStyles = cn(
     "grid place-items-center rounded-full transition-colors ",
     "w-16 aspect-square",
@@ -11,7 +11,7 @@ export default function Arrow({ className, left = false }) {
     className
   );
   return (
-    <button className={buttonStyles}>
+    <button className={buttonStyles} {...otherProps}>
       <div className="w-[14.81px] h-4 relative">
         <Image
           src={left ? iconArrowLeft : iconArrowRight}

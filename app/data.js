@@ -1217,6 +1217,22 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    {
+        title: "Single Page Design Portfolio",
+        titleJp: "デザインポートフォリオSP",
+        titleEs: "Portafolio de diseño",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
+        image: "/projects/front-end-mentor/beginner/beginner_single-page-design-portfolio.jpg",
+        url: "/projects/beginner/single-page-design-portfolio",
+        level: 1,
+        techs: ["react", "tailwindcss"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
 ]
 
 //"typescript",
