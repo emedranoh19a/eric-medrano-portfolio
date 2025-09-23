@@ -1,19 +1,25 @@
 import { Space_Grotesk } from "next/font/google";
+import "../styles/typography.css";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], weight: ["500"] });
 export default function StylesSetup({ children }) {
   // - Red (input errors): hsl(0, 100%, 66%)
   return (
     <div
-      className={`min-h-screen w-full bg-violet-100 flex ${spaceGrotesk.className}`}
+      className={`antialiased overflow-auto min-h-screen bg-white w-full pt-8 relative z-0 grid lg:place-items-center mx-auto  ${spaceGrotesk.className}`}
       style={{
-        "--white": "hsl(0, 0%, 100%)",
-        "--violet-50": "hsl(270, 3%, 87%)",
-        "--violet-100": "hsl(279, 6%, 55%)",
-        "--violet-900": "hsl(278, 68%, 11%)",
-        "--gradient-start": "hsl(249, 99%, 64%)", //active input border
-        "--gradient-end": "hsl(278, 94%, 30%)", //active input border
-        "--error": "hsl(0, 100%, 66%)", //input errors
+        "--gray-950": "#2f2f2f",
+        "--gray-400": "#adb5be",
+        "--gray-200": "#dfdee0",
+        "--purple-950": "#21092f",
+        "--purple-500": "#d53aff",
+        "--orange-400": "#ff834a",
+        "--blue-400": "#47a2ff",
+        "--red-400": "#ff5050",
+        "--gradient-white-start": "#ffffff",
+        "--gradient-white-end": "#d2d3d9",
+        "--gradient-purple-start": "#6348fe",
+        "--gradient-purple-end": "#610595",
       }}
     >
       {children}

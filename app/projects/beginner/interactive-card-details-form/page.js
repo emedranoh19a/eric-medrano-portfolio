@@ -1,40 +1,34 @@
+"use client"
 //_The challenge: 
 // Users should be able to:
 
+import { useState } from "react"
+import { FormProvider, useForm } from "react-hook-form"
+import ColorBackground from "./components/ColorBackground"
+import CreditCard from "./components/CreditCard"
+import Form from "./components/Form/Form"
+import Success from "./components/Form/Success"
 import StylesSetup from "./components/StylesSetup"
 
-//TODO: - Fill in the form and see the card details update in real-time
-//TODO: - Receive error messages when the form is submitted if:
-//TODO:   - Any input field is empty
-//TODO:   - The card number, expiry date, or CVC fields are in the wrong format
-//TODO: - View the optimal layout depending on their device's screen size
-//TODO: - See hover, active, and focus states for interactive elements on the page
+//TODO: - Receive error messages when the form is submitted if the card number is in the wrong format
 
 export default function Page() {
+    const [isSubmitted, setIsSubmitted] = useState(false)
+    const methods = useForm({ mode: "onTouched" })
     return <StylesSetup>
-        {/* <div className="w-full h-full bg-red-500 flex"> */}
-        <div className="flex-1 h-full block bg-red-100">hello Card</div>
-        <div className="flex-1 bg-gray-300 h-full block">Form</div>
-        {/* </div> */}
-        {/* Cardholder Name
-        e.g. Jane Appleseed
-
-        Card Number
-        e.g. 1234 5678 9123 0000
-
-        Exp. Date (MM/YY)
-        MM
-        YY
-
-        CVC
-        e.g. 123
-
-        Confirm
-
-
-        Thank you!
-        We've added your card details
-        Continue */}
-
+        <ColorBackground />
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:place-items-center gap-[49px] sm:gap-[69px] lg:gap-[127px] w-fit h-fit mx-auto">
+            <FormProvider {...{ ...methods, setIsSubmitted }}>
+                <Cards />
+                {!isSubmitted ? <Form /> : <Success />}
+            </FormProvider>
+        </div>
     </StylesSetup>
+}
+
+function Cards() {
+    return <div className="relative z-0 w-[342px] h-[250px] sm:w-[543px] sm:h-[384px] lg:h-[541px] lg:w-[522px]">
+        <CreditCard className="absolute top-0 right-0" flipped />
+        <CreditCard className="absolute bottom-0 left-0" />
+    </div>
 }
