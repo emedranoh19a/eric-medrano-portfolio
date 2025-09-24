@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@theme {
+  --color-black: #121212;
+  --color-dark-blue: #19202d;
+  --color-white: #ffffff;
+  --color-grey-100: #e7eaee;
+  --color-grey-200: #cfcfcf;
+  --color-grey-400: #676d7e;
+  --color-grey-500: #48556a;
+  --color-purple-50: #ede4f1;
+  --color-purple-300: #a775f1;
+  --color-purple-500: #733fc8;
+}
+
+@layer utilities {
+  .preset-1 {
+    @apply text-[1.25rem] leading-[120%] tracking-normal font-semibold;
+  }
+  .preset-2 {
+    @apply text-[.8125rem] leading-[110%] tracking-normal font-medium;
+  }
+  .preset-3 {
+    @apply text-[.8125rem] leading-[140%] tracking-normal font-medium;
+  }
+  .preset-4 {
+    @apply text-[.6875rem] leading-[110%] tracking-normal font-medium;
+  }
+}
