@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@theme {
+  --color-blue-950: #0c122c;
+  --color-blue-900: #0f1b3d;
+  --color-blue-850: #1e2d69;
+  --color-blue-600: #697ed4;
+  --color-blue-200: #dbd9ff;
+
+  --color-pink-gradient-start: #ffa197;
+  --color-pink-gradient-end: #ff4a95;
+}
+
+@layer utilities {
+  .preset-1 {
+    @apply text-[40px] leading-[100%] tracking-normal font-bold;
+  }
+  .preset-2-bold {
+    @apply text-[14px] leading-[115%] tracking-normal font-bold;
+  }
+  .preset-2-regular {
+    @apply text-[14px] leading-[115%] tracking-normal font-medium;
+  }
+  .preset-3-extrabold {
+    @apply text-[12px] leading-[115%] tracking-normal font-extrabold;
+  }
+  .preset-3-bold {
+    @apply text-[12px] leading-[115%] tracking-normal font-bold;
+  }
+}

@@ -56,3 +56,18 @@ aria-[invalid=true]: → when input has aria-invalid="true"
 Note that the 1.5 rem inside cal should be the half of the rounded corner.
  <div class="max-w-md rounded-3xl p-px bg-linear-to-b from-blue-300 to-pink-300 dark:from-blue-800 dark:to-purple-800 ">
       <div class="rounded-[calc(1.5rem-1px)] p-10 bg-white"></div></div>
+
+//Tailwind theme setup: Colour Palette tokens prefixed with --color- (the tailwind utilities will then be all created.)
+//Typography layers can be used with tailwind responsivenes!
+
+@import "tailwindcss";
+@theme {
+  --color-purple-300: #a775f1;
+  --color-purple-500: #733fc8;
+}
+
+@layer utilities {
+  .preset-1 {
+    @apply text-[1.25rem] leading-[120%] tracking-normal font-semibold;
+  }
+}
