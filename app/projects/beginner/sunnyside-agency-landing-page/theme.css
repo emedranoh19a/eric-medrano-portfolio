@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@theme {
+  --font-fraunces: var(--next-font-fraunces);
+  --font-barlow: var(--next-font-barlow);
+
+  --color-green-800: #24554a;
+  --color-green-600: #3e7467;
+  --color-green-500: #458d7e;
+  --color-green-300: #90d4c6;
+
+  --color-grey-950: #24303e;
+  --color-grey-600: #5b636d;
+  --color-grey-550: #808397;
+  --color-grey-400: #a7aaad;
+
+  --color-blue-950: #052c3b;
+  --color-blue-800: #19536c;
+
+  --color-red-400: #fe7766;
+
+  --color-yellow-500: #fad400;
+}
+
+@layer utilities {
+  .preset-1 {
+    @apply text-[56px] leading-[125%] tracking-[9px] font-black font-fraunces;
+  }
+  .preset-2 {
+    @apply text-[42px] leading-[125%] tracking-[6px] font-black font-fraunces;
+  }
+  .preset-3 {
+    @apply text-[40px] leading-[125%] tracking-normal font-black font-fraunces;
+  }
+  .preset-4 {
+    @apply text-[32px] leading-[125%] tracking-normal font-black font-fraunces;
+  }
+  .preset-5 {
+    @apply text-[28px] leading-[125%] tracking-normal font-black font-fraunces;
+  }
+  .preset-6 {
+    @apply text-[20px] leading-[125%] tracking-[4px] font-black font-fraunces;
+  }
+  .preset-7 {
+    @apply text-[18px] leading-[125%] tracking-normal font-black font-fraunces;
+  }
+  .preset-8 {
+    @apply text-[15px] leading-[165%] tracking-[1px] font-black font-fraunces;
+  }
+  .preset-9 {
+    @apply text-[20px] leading-[125%] tracking-normal font-semibold font-barlow;
+  }
+  .preset-10 {
+    @apply text-[18px] leading-[165%] tracking-normal font-semibold font-barlow;
+  }
+  .preset-11 {
+    @apply text-[16px] leading-[170%] tracking-normal font-semibold font-barlow;
+  }
+  .preset-12 {
+    @apply text-[14px] leading-[180%] tracking-normal font-semibold font-barlow;
+  }
+}

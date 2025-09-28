@@ -45,8 +45,8 @@ body {
   transparent-square-tiles.png
   white-tiles.png
   */
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #ffffff;
+  /* font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff; */
   background-image: url("/backgrounds/transparent-square-tiles.png");
   background-attachment: fixed;
   /* 3. Add accessible line-height */
