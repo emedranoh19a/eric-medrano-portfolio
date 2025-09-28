@@ -176,7 +176,11 @@ export default function ProjectCardDesktop({
               level={level}
             />
           </ZCardItem>
-          {!isComplete && <Ornamentals level={level} />}
+          <div className="h-40 w-full absolute bottom-0 right-0 rounded-lg overflow-hidden">
+            <div className="w-full h-full relative">
+              {!isComplete && <Ornamentals level={level} />}
+            </div>
+          </div>
         </ZCardBody>
       </ZCardContainer>
     </ProjectLink>

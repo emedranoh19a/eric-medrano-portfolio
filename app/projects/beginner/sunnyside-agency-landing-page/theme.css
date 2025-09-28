@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@theme {
+@theme inline {
   --font-fraunces: var(--next-font-fraunces);
   --font-barlow: var(--next-font-barlow);
 

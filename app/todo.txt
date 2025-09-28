@@ -1,4 +1,9 @@
 Doing:
+//TODO: In order to advance to the minimalist portfolio website: we first need to complete:
+--Manager
+--Bookmark
+--Insure
+--Filo
 To Do, priority:
 
 //TODO: Bajar de peso y tomarme unas fotos cool.

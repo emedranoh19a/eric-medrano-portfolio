@@ -61,7 +61,7 @@ Note that the 1.5 rem inside cal should be the half of the rounded corner.
 //Typography layers can be used with tailwind responsivenes!
 
 @import "tailwindcss";
-@theme {
+@theme inline {
   --color-purple-300: #a775f1;
   --color-purple-500: #733fc8;
 }
