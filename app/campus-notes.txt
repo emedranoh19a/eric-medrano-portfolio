@@ -62,6 +62,7 @@ Note that the 1.5 rem inside cal should be the half of the rounded corner.
 
 @import "tailwindcss";
 @theme inline {
+  --font-***: var(--font-setup-in-next);
   --color-purple-300: #a775f1;
   --color-purple-500: #733fc8;
 }

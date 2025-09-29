@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@theme inline {
+  /* Since we have only one font, we inyect not the variable, but the classNamein StyleSetup */
+  /* otherwise: --font-***: var(--font-setup-in-next); */
+  --color-gray-600: #9597a5;
+  --color-gray-100: #f4f5f7;
+  --color-gray-50: #fafafa;
+  --color-blue-950: #2d314d;
+  --color-green-400: #30c88f;
+}
+
+@layer utilities {
+  .preset-1 {
+    @apply text-[56px] leading-[120%] tracking-[-1px] font-light;
+  }
+  .preset-2 {
+    @apply text-[40px] leading-[120%] tracking-[-0.75px] font-light;
+  }
+  .preset-3 {
+    @apply text-[32px] leading-[120%] tracking-[-0.5px] font-light;
+  }
+  .preset-4 {
+    @apply text-[24px] leading-[155%] tracking-[-0.25px] font-normal;
+  }
+  .preset-5 {
+    @apply text-[18px] leading-[155%] tracking-[-0.25px] font-normal;
+  }
+  .preset-6 {
+    @apply text-[16px] leading-[120%] tracking-[-0.25px] font-light;
+  }
+  .preset-7-bold {
+    @apply text-[14px] leading-[200%] tracking-[0px] font-bold;
+  }
+  .preset-7-regular {
+    @apply text-[14px] leading-[115%] tracking-[0px] font-normal;
+  }
+  .preset-8 {
+    @apply text-[10px] leading-[115%] tracking-[0px] font-normal;
+  }
+}
