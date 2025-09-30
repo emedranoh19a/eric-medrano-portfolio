@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Colors */
+
+  --color-gray-900: #323334;
+
+  --color-blue-950: #242942;
+  --color-blue-100: #edf2f6;
+
+  --color-red-400: #ff5e5e;
+  --color-red-350: #ff8686;
+
+  /* Typography (font families) */
+  --font-barlow-condensed: var(--next-barlow-condensed);
+  --font-barlow: var(--next-barlow);
+}
+
+@layer utilities {
+  /* Typography Presets */
+
+  /* Text Preset 1 – Barlow Condensed Bold, 64px, 100%, 0px LS */
+  .preset-1 {
+    @apply text-[64px] leading-[100%] tracking-[0px] font-bold font-barlow-condensed;
+  }
+
+  /* Text Preset 2 – Barlow Condensed Bold, 40px, 100%, 0px LS */
+  .preset-2 {
+    @apply text-[40px] leading-[100%] tracking-[0px] font-bold font-barlow-condensed;
+  }
+
+  /* Text Preset 3 – Barlow Condensed Bold, 18px, 125%, 1.2px LS */
+  .preset-3 {
+    @apply text-[18px] leading-[125%] tracking-[1.2px] font-bold font-barlow-condensed;
+  }
+
+  /* Text Preset 4 (Bold) – Barlow Condensed Bold, 15px, 120%, 1px LS */
+  .preset-4-bold {
+    @apply text-[15px] leading-[120%] tracking-[1px] font-bold font-barlow-condensed;
+  }
+
+  /* Text Preset 4 (Regular) – Barlow Condensed Regular, 15px, 120%, 5px LS */
+  .preset-4-regular {
+    @apply text-[15px] leading-[120%] tracking-[5px] font-normal font-barlow-condensed;
+  }
+
+  /* Text Preset 5 – Barlow Regular, 18px, 145%, 0px LS */
+  .preset-5 {
+    @apply text-[18px] leading-[145%] tracking-[0px] font-normal font-barlow;
+  }
+
+  /* Text Preset 6 (Mobile) – Barlow Condensed Regular, 15px, 120%, 2.5px LS */
+  .preset-6 {
+    @apply text-[15px] leading-[120%] tracking-[2.5px] font-normal font-barlow-condensed;
+  }
+}
