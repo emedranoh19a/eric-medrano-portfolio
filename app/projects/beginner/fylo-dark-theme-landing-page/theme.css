@@ -1,0 +1,65 @@
+@import "tailwindcss";
+/*  */
+@theme inline {
+  /* Colors */
+  --color-navy-950: #0b1524;
+  --color-navy-900: #181f2b;
+  --color-navy-850: #1b2330;
+  --color-navy-800: #202a3c;
+  --color-navy-50: #dfe4f0;
+
+  --color-blue-300: #62e0d9;
+  --color-blue-250: #8adae3;
+
+  --color-red-500: #ff4242;
+
+  --color-gray-400: #c0c0c0;
+
+  --color-gradient-start: #63e1d9;
+  --color-gradient-end: #3440cd;
+
+  --font-raleway: var(--next-raleway);
+  --font-open-sans: var(--next-open-sans);
+}
+
+@layer utilities {
+  .preset-1 {
+    @apply text-[40px] leading-[120%] tracking-normal font-bold font-raleway;
+  }
+  .preset-2 {
+    @apply text-[20px] leading-[120%] tracking-normal font-raleway font-bold;
+  }
+  .preset-3-bold {
+    @apply text-[16px] leading-[120%] tracking-normal font-raleway font-normal;
+  }
+  .preset-3-regular {
+    @apply text-[16px] leading-[120%] tracking-normal font-raleway font-bold;
+  }
+  .preset-4 {
+    @apply text-[14px] leading-[120%] tracking-normal font-raleway font-bold;
+  }
+  .preset-5 {
+    @apply text-[12px] leading-[120%] tracking-normal font-raleway font-normal;
+  }
+  .preset-6 {
+    @apply text-[20px] leading-[150%] tracking-normal font-open-sans font-normal;
+  }
+  .preset-7-bold {
+    @apply text-[16px] leading-[150%] tracking-normal font-open-sans font-bold;
+  }
+  .preset-7-regular {
+    @apply text-[16px] leading-[150%] tracking-normal font-open-sans font-normal;
+  }
+  .preset-8 {
+    @apply text-[14px] leading-[150%] tracking-normal font-open-sans font-normal;
+  }
+  .preset-9-bold {
+    @apply text-[10px] leading-[150%] tracking-[0.5px] font-open-sans font-bold;
+  }
+  .preset-9-regular {
+    @apply text-[10px] leading-[180%] tracking-[0.5px] font-open-sans font-normal;
+  }
+  .preset-10 {
+    @apply text-[7px] leading-[150%] tracking-[0.5px] font-open-sans font-normal;
+  }
+}
