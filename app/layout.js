@@ -57,11 +57,11 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon/favicon.png" />
         </Head> */}
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth overflow-x-hidden overscroll-none relative z-0`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen h-fit w-screen scroll-smooth overscroll-none relative z-0`}
       >
         <Navbar />
         <SmoothCursor />
-        <main className="max-w-screen min-h-screen h-fit overflow-x-hidden z-10">
+        <main className="z-10">
 
 
 
