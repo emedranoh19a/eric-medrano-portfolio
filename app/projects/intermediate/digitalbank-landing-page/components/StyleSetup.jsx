@@ -1,5 +1,6 @@
 import { Public_Sans } from "next/font/google";
 import "../theme.css";
+import Navbar from "./Navbar";
 const publicSans = Public_Sans({
   subsets: ["latin"],
   weight: ["300", "400", "700"],
@@ -8,7 +9,7 @@ const publicSans = Public_Sans({
 export default function StyleSetup({ children }) {
   return (
     <div
-      className={`relative  z-0 overflow-visible w-full min-h-screen bg-gray-50 px-6 sm:px-10 lg:px-[162px] ${publicSans.className}`}
+      className={`w-full min-h-screen bg-gray-50 relative z-0 ${publicSans.className}`}
       style={{
         "--gradient-green-start": "#33d35e",
         "--gradient-green-end": "#2ab6d9",
@@ -16,7 +17,10 @@ export default function StyleSetup({ children }) {
         // "--gradient-gray-end": "#2d314d",
       }}
     >
-      {children}
+      <Navbar />
+      <div className="overflow-x-hidden relative z-0 px-6 sm:px-10 lg:px-[162px]">
+        {children}
+      </div>
     </div>
   );
 }

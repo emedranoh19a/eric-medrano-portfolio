@@ -5,7 +5,7 @@ import { bgIntroDesktop, bgIntroMobile, imageMockups } from "../imageIndex";
 
 export default function Hero() {
   return (
-    <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:h-[778px]">
+    <div className="relative w-full z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:h-[778px]">
       <DesktopMockups />
       <MobileMockups />
       <HeroContent />
