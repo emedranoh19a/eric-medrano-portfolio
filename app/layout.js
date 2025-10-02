@@ -49,7 +49,6 @@ export async function generateMetadata() {
 
   }
 }
-//TODO: On a single commit: Fix the overall layout. Even if it breaks all the other pages.
 //TODO: On the following commit, as a sub-branch, get the liquid styles from react bits.
 //TODO: On the next commits, gradually fix the rest of the pages.
 export default function RootLayout({ children }) {
