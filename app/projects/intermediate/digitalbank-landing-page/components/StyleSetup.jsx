@@ -8,7 +8,7 @@ const publicSans = Public_Sans({
 export default function StyleSetup({ children }) {
   return (
     <div
-      className={`w-full min-h-screen bg-gray-50 px-6 sm:px-10 lg:px-[162px] ${publicSans.className}`}
+      className={`relative  z-0 overflow-visible w-full min-h-screen bg-gray-50 px-6 sm:px-10 lg:px-[162px] ${publicSans.className}`}
       style={{
         "--gradient-green-start": "#33d35e",
         "--gradient-green-end": "#2ab6d9",
