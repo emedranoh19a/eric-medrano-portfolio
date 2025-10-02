@@ -49,7 +49,9 @@ export async function generateMetadata() {
 
   }
 }
-
+//TODO: On a single commit: Fix the overall layout. Even if it breaks all the other pages.
+//TODO: On the following commit, as a sub-branch, get the liquid styles from react bits.
+//TODO: On the next commits, gradually fix the rest of the pages.
 export default function RootLayout({ children }) {
   return (
     <html>
@@ -57,16 +59,13 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon/favicon.png" />
         </Head> */}
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth overflow-x-hidden overscroll-none relative z-0`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth w-screen max-w-screen min-h-screen h-fit z-0 overscroll-none relative z-0`}
       >
+
         <Navbar />
         <SmoothCursor />
-        <main className="max-w-screen min-h-screen h-fit overflow-x-hidden z-10">
-
-
-
+        <main className="h-fit w-full relative z-10">
           {children}
-
         </main>
         <Toaster />
       </body>
