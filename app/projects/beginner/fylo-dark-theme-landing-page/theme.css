@@ -16,7 +16,7 @@
   --color-gray-400: #c0c0c0;
 
   --color-gradient-start: #63e1d9;
-  --color-gradient-end: #3440cd;
+  --color-gradient-end: #34a0cd;
 
   --font-raleway: var(--next-raleway);
   --font-open-sans: var(--next-open-sans);
@@ -24,16 +24,16 @@
 
 @layer utilities {
   .preset-1 {
-    @apply text-[40px] leading-[120%] tracking-normal font-bold font-raleway;
+    @apply text-[40px] leading-[120%] tracking-normal font-raleway font-bold;
   }
   .preset-2 {
     @apply text-[20px] leading-[120%] tracking-normal font-raleway font-bold;
   }
   .preset-3-bold {
-    @apply text-[16px] leading-[120%] tracking-normal font-raleway font-normal;
+    @apply text-[16px] leading-[120%] tracking-normal font-raleway font-bold;
   }
   .preset-3-regular {
-    @apply text-[16px] leading-[120%] tracking-normal font-raleway font-bold;
+    @apply text-[16px] leading-[120%] tracking-normal font-raleway font-normal;
   }
   .preset-4 {
     @apply text-[14px] leading-[120%] tracking-normal font-raleway font-bold;
