@@ -22,7 +22,7 @@
   --font-open-sans: var(--next-open-sans);
 }
 
-@layer utilities {
+@layer components {
   .preset-1 {
     @apply text-[40px] leading-[120%] tracking-normal font-raleway font-bold;
   }

@@ -66,7 +66,8 @@ Note that the 1.5 rem inside cal should be the half of the rounded corner.
   --color-purple-500: #733fc8;
 }
 
-@layer utilities {
+@layer utilities { 
+  /*Instead of utilities, it might be better to use "components"*/
   /*WATCH OUT!!! If you add an unexistent class after @apply, all the work (tokens and utilities) will be trown away!*/
   .preset-1 {
     @apply text-[1.25rem] leading-[120%] tracking-normal font-semibold;

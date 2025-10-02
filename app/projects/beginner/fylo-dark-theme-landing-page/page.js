@@ -12,9 +12,6 @@ export default function Page() {
             <Productivity />
             <SocialProof />
             <Footer />
-
-
-
         </StyleSetup>
     )
 }
