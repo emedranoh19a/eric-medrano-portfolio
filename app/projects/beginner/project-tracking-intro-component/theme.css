@@ -16,7 +16,7 @@
   --font-barlow: var(--next-barlow);
 }
 
-@layer {
+@layer components {
   /* Typography Presets */
 
   /* Text Preset 1 – Barlow Condensed Bold, 64px, 100%, 0px LS */
