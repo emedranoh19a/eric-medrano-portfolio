@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@theme {
+  /* ===== COLORS ===== */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-gray-950: #151515;
+  --color-gray-500: #686868;
+  --color-gray-400: #adadad;
+  --color-gray-200: #d8d8d8;
+  --color-gray-50: #fafafa;
+
+  --color-blue-400: #4bb1da;
+  --color-violet-500: #726cee;
+  --color-yellow-300: #edd556;
+  --color-purple-600: #8e4cb6;
+}
+
+/* ============================= */
+/* TYPOGRAPHY PRESETS (utilities) */
+/* ============================= */
+
+/* TODO: Ask for help here: How to make layers and override the generated classes on tailwind? */
+@layer utilities {
+  .preset-1 {
+    @apply font-bold text-[80px] leading-[100%] tracking-[-0.0625rem];
+  }
+
+  .preset-2 {
+    @apply font-bold text-[64px] leading-[100%] tracking-[-0.0625rem];
+  }
+
+  .preset-3 {
+    @apply font-bold text-[36px] leading-[100%] tracking-[-0.0625rem];
+  }
+
+  .preset-4-bold {
+    @apply font-bold text-[18px] leading-[155%] tracking-[-0.015625rem];
+  }
+
+  .preset-4-medium {
+    @apply font-medium text-[18px] leading-[155%];
+  }
+
+  .preset-5-bold {
+    @apply font-bold text-[16px] leading-[155%] tracking-[-0.015625rem];
+  }
+
+  .preset-5-medium {
+    @apply font-medium text-[16px] leading-[155%];
+  }
+
+  .preset-6 {
+    @apply font-medium text-[14px] leading-[115%];
+  }
+}
