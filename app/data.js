@@ -594,7 +594,7 @@ export const projects = [
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
-        image: "/projects/beginner/clipboard/desktop-preview.png",
+        image: "/projects/front-end-mentor/beginner/beginner_clipboard.png",
         url: "/projects/beginner/clipboard",
         level: 1,
         techs: ["html", "tailwindcss"],
@@ -1267,6 +1267,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Get some animations on the navbar menu.
         title: "Digitalbank LP",
         titleJp: "デジタルバンクLP",
         titleEs: "Página de banco digital",
@@ -1283,9 +1284,9 @@ export const projects = [
         isExternalProject: false,
     },
     {
-        title: "Fylo",
-        titleJp: "Fylo",
-        titleEs: "Fylo",
+        title: "Fylo Dark Theme",
+        titleJp: "Fylo ダークモード",
+        titleEs: "Fylo Dark Mode",
         description: "Front End Mentor challenge",
         descriptionJp: "Front End Mentor のチャレンジ",
         descriptionEs: "Desafío de Front End Mentor",
@@ -1294,7 +1295,7 @@ export const projects = [
         level: 1,
         techs: ["html", "tailwindcss"],
         isImportant: false,
-        //TODO:
+        //TODO: Correct this project
         isComplete: false,
         isPublic: true,
         isExternalProject: false,
@@ -1309,12 +1310,67 @@ export const projects = [
         image: "/projects/front-end-mentor/beginner/beginner_project-tracking-intro-component.jpg",
         url: "/projects/beginner/project-tracking-intro-component",
         level: 1,
-        techs: ["html", "tailwindcss"],
+        techs: ["react", "tailwindcss"],
         isImportant: false,
         isComplete: true,
         isPublic: true,
         isExternalProject: false,
     },
+    {
+        //TODO: The whole project
+        title: "Manage Landing Page",
+        titleJp: "Manage LP",
+        titleEs: "Manage",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
+        image: "/projects/front-end-mentor/intermediate/intermediate_manage-landing-page.jpg",
+        url: "/projects/intermediate/manage-landing-page",
+        level: 2,
+        //Review
+        techs: ["react", "tailwindcss"],
+        isImportant: false,
+        isComplete: false,
+        isPublic: true,
+        isExternalProject: false,
+    },
+    {
+        //TODO: The whole project
+        title: "Blogr LP",
+        titleJp: "Blogr",
+        titleEs: "Blogr",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
+        image: "/projects/front-end-mentor/beginner/beginner_blogr-landing-page.jpg",
+        url: "/projects/beginner/blogr-landing-page",
+        level: 1,
+        //Review
+        techs: ["react", "tailwindcss"],
+        isImportant: true,
+        isComplete: false,
+        isPublic: true,
+        isExternalProject: false,
+    },
+    {
+        //TODO: The whole project
+        title: "Intro Section",
+        titleJp: "導入セクション",
+        titleEs: "Sección de introducción",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
+        image: "/projects/front-end-mentor/beginner/beginner_intro-section-with-dropdown-navigation.jpg",
+        url: "/projects/beginner/intro-section-with-dropdown-navigation",
+        level: 1,
+        //Review
+        techs: ["react", "tailwindcss"],
+        isImportant: false,
+        isComplete: false,
+        isPublic: true,
+        isExternalProject: false,
+    },
+
 ]
 
 //"typescript",

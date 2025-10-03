@@ -3,9 +3,10 @@ Doing:
 --Manager
 --Bookmark
 --Insure
---Filo
-To Do, priority:
+--Fylo
 
+To Do, priority:
+//TODO: Hacer una página de error.
 //TODO: Bajar de peso y tomarme unas fotos cool.
 //TODO: -Ver cómo puedo agregar y presumir que soy trilingue
 //TODO: Hacer el contact form, extraer de Maikagura o de plano traérselo de otro lugar.
@@ -22,23 +23,24 @@ To Do:
 //TODO: Natours Backend: API, and other stuff. 
 //TODO: Secrets from Angela Yu.
 
+---------About the form.
+//TODO Input/TextField components. 
 //TODO: Fusilarse los textFields de Maikagura para este Proyecto.
-//TODO: Manejar el Form submit en React Hook Form.
-//TODO: Verificar que form submission funcione en Netlify.
-//TODO: Verificar que form submission registre un API.
-//TODO: Hacer una clase de feedback que indique proceso de envío.
+//TODO: React Hook Form.
+//TODO: Netlify submission.
+//TODO: Sheety submission.
+//TODO: Think of a UI for loading, success and error state.
 
-//TODO: Maybe, a timeline is just not worth the certifications.
+//TODO: Certifications vs. Timeline components.
 //TODO: Consider making a different component for the certifications.
-//TODO: Quantify the TOEIC score with a ticker component.
-//TODO: Quantify the number of proyects from Front End Mentor with another ticker component.
-//TODO: What else can i quantify? Kanjis known? Kanken? JLPT? Hours dedicated to something?
-//TODO: Maybe some stats. TOEIC, languages. Number of projects. Minutes of udemy of Udemy courses?
-
+//TODO: Downloadable certifications.
+//TODO: Tidy my manifesto, in all languages. 
+//TODO: Creative "Skills" section.
+//TODO: Why a foreigner? section
+//TODO: Quantify: TOEIC, Front End Mentor projects.
 
 //TODO: Add languages functionality.
-//TODO: Mover los proyectos a otro lugar.
 
-//TODO: Hacer un Marquee que esté lleno con previews tipo Front End Mentor?
+//TODO: Hacer un Marquee que esté lleno con previews tipo Front End Mentor? (No la página completa)
 //TODO: Skeletton for the Marquees. 
 //TODO: A loading animation before the page loads, and the images load, and so on...

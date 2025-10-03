@@ -40,7 +40,8 @@ export default function Projects() {
 
   // Step 1: Tag the last 3 projects in the *original order* as isNew
   const projectsWithNewFlag = projects.map((project, index) => {
-    const isNew = index >= projects.length - 3 && project.isComplete;
+    // const isNew = index >= projects.length - 3 && project.isComplete;
+    const isNew = index >= projects.length - 6 && project.isComplete;
     return { ...project, isNew };
   });
 
