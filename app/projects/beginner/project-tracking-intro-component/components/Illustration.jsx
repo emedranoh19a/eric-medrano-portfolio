@@ -18,7 +18,7 @@ export default function Illustration() {
         src={illustrationDevices}
         alt="Devices"
         fill
-        classNeme="object-contain"
+        className="object-contain"
       />
     </div>
   );

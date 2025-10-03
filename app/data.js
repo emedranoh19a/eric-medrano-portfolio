@@ -1266,7 +1266,6 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO
     {
         title: "Digitalbank LP",
         titleJp: "デジタルバンクLP",
@@ -1279,7 +1278,7 @@ export const projects = [
         level: 2,
         techs: ["react", "tailwindcss"],
         isImportant: false,
-        isComplete: false,
+        isComplete: true,
         isPublic: true,
         isExternalProject: false,
     },
@@ -1295,11 +1294,11 @@ export const projects = [
         level: 1,
         techs: ["html", "tailwindcss"],
         isImportant: false,
+        //TODO:
         isComplete: false,
         isPublic: true,
         isExternalProject: false,
     },
-    //TODO
     {
         title: "Project Tracking Intro Component",
         titleJp: "PJ管理導入コンポーネント",
@@ -1312,7 +1311,7 @@ export const projects = [
         level: 1,
         techs: ["html", "tailwindcss"],
         isImportant: false,
-        isComplete: false,
+        isComplete: true,
         isPublic: true,
         isExternalProject: false,
     },
