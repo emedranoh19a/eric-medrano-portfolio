@@ -20,7 +20,6 @@
 /* TYPOGRAPHY PRESETS (utilities) */
 /* ============================= */
 
-/* TODO: Ask for help here: How to make layers and override the generated classes on tailwind? */
 @layer utilities {
   .preset-1 {
     @apply font-bold text-[80px] leading-[100%] tracking-[-0.0625rem];

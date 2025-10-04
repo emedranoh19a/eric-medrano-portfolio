@@ -8,7 +8,8 @@ const epilogue = Epilogue({
 export default function StyleSetup({ children }) {
   return (
     <div
-      className={`w-full pb-[94px] sm:pb-[52px] lg:pb-[122px] bg-white p-4 sm:pt-6 sm:px-10  min-h-screen h-fit ${epilogue.className}`}
+      className={` overflow-hidden w-full pb-[94px] sm:pb-[52px] lg:pb-[122px] bg-white p-4 sm:pt-6 sm:px-10  min-h-screen h-fit ${epilogue.className}`}
+      id="intro-section-with-dropdown-navigation"
     >
       {children}
     </div>

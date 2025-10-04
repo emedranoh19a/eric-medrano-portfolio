@@ -1,11 +1,14 @@
+"use client";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { navItems } from "../../data/data";
 import { iconMenu } from "../../imageIndex";
 import Button from "./Button";
+import Drawer from "./Drawer";
 import Logo from "./Logo";
 import NavbarMenu from "./NavbarMenu";
 
-const secondaryNav = { features: "", company: "" };
 export default function Navbar() {
   return (
     <nav className="flex justify-between relative mb-6 sm:mb-8 lg:mb-[75px]">
@@ -22,19 +25,44 @@ export default function Navbar() {
         />
         <Button text="Register" variant="secondary" size="sm" />
       </div>
-      <button className="lg:hidden w-8 h-[18px] relative cursor-pointer ">
-        <Image src={iconMenu} alt="menu" className="object-contain" fill />
-      </button>
+      <MobileNavigation />
     </nav>
   );
 }
 
 function Links() {
   return (
-    <ul className="hidden lg:flex justify-start gap-10 capitalize">
+    <ul className="hidden h-full lg:flex justify-start gap-10 capitalize">
       {navItems.map((navItem, i) => (
         <NavbarMenu key={i} {...navItem} />
       ))}
     </ul>
+  );
+}
+
+function MobileNavigation() {
+  // Ensure DOM is ready before accessing `document`
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [portalTarget, setPortalTarget] = useState(null);
+  useEffect(() => {
+    setPortalTarget(
+      document.getElementById("intro-section-with-dropdown-navigation")
+    );
+  }, []);
+  return (
+    <>
+      <button
+        className="lg:hidden w-8 h-[18px] relative cursor-pointer "
+        onClick={() => setDrawerOpen(true)}
+      >
+        <Image src={iconMenu} alt="menu" className="object-contain" fill />
+      </button>
+      {portalTarget &&
+        drawerOpen &&
+        createPortal(
+          <Drawer onClose={() => setDrawerOpen(false)} />,
+          portalTarget
+        )}
+    </>
   );
 }
