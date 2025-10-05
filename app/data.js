@@ -1335,7 +1335,6 @@ export const projects = [
         isExternalProject: false,
     },
     {
-        //TODO: The whole project
         title: "Blogr LP",
         titleJp: "Blogr",
         titleEs: "Blogr",
@@ -1345,15 +1344,13 @@ export const projects = [
         image: "/projects/front-end-mentor/beginner/beginner_blogr-landing-page.jpg",
         url: "/projects/beginner/blogr-landing-page",
         level: 1,
-        //Review
         techs: ["react", "tailwindcss"],
         isImportant: true,
-        isComplete: false,
+        isComplete: true,
         isPublic: true,
         isExternalProject: false,
     },
     {
-        //TODO: The whole project
         title: "Intro Section",
         titleJp: "導入セクション",
         titleEs: "Sección de introducción",
@@ -1363,7 +1360,42 @@ export const projects = [
         image: "/projects/front-end-mentor/beginner/beginner_intro-section-with-dropdown-navigation.jpg",
         url: "/projects/beginner/intro-section-with-dropdown-navigation",
         level: 1,
-        //Review
+        techs: ["react", "tailwindcss"],
+        isImportant: false,
+        isComplete: true,
+        isPublic: true,
+        isExternalProject: false,
+    },
+    {
+        //TODO: Beginner: The whole project
+        title: "Maker Pre-launch",
+        titleJp: "Maker近日公開",
+        titleEs: "Prelanzamiento de Maker",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
+        image: "/projects/front-end-mentor/beginner/beginner_maker-pre-launch-landing-page.jpg",
+        url: "/projects/beginner/maker-pre-launch-landing-page",
+        level: 1,
+        //Review:
+        techs: ["react", "tailwindcss"],
+        isImportant: false,
+        isComplete: false,
+        isPublic: true,
+        isExternalProject: false,
+    },
+    {
+        //TODO: Beginner: The whole project
+        title: "Pricing component with toggle",
+        titleJp: "価格設定コンポーネント",
+        titleEs: "Componente de precio con toggle",
+        description: "Front End Mentor challenge",
+        descriptionJp: "Front End Mentor のチャレンジ",
+        descriptionEs: "Desafío de Front End Mentor",
+        image: "/projects/front-end-mentor/beginner/beginner_pricing-component-with-toggle.jpg",
+        url: "/projects/beginner/pricing-component-with-toggle",
+        level: 1,
+        //Review:
         techs: ["react", "tailwindcss"],
         isImportant: false,
         isComplete: false,
