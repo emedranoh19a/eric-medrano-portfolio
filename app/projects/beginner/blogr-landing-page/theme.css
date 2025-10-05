@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@theme inline {
+  --font-overpass: var(--next-overpass);
+  --font-ubuntu: var(--next-ubuntu);
+
+  --color-gray-950: #24242c;
+  --color-gray-600: #4c5862;
+  --color-gray-550: #878d92;
+  --color-gray-100: #e7e7e7;
+
+  --color-purple-950: #2d2e40;
+  --color-purple-950: #3e4062;
+  --color-purple-950: #52526f;
+
+  --color-red-500: #ff505c;
+  --color-red-400: #ff7b86;
+  --color-red-50: #f9f6f6;
+
+  --color-blue-900: #1f3e5a;
+}
+
+@layer utilities {
+  /*Instead of utilities, it might be better to use "components"*/
+  /*WATCH OUT!!! If you add an unexistent class after @apply, all the work (tokens and utilities) will be trown away!*/
+  .preset-1 {
+    @apply text-[64px] leading-[100%] tracking-[-1px] font-overpass font-semibold;
+  }
+  .preset-2 {
+    @apply text-[40px] leading-[125%] tracking-[-1.2px] font-overpass font-semibold;
+  }
+  .preset-3 {
+    @apply text-[28px] leading-[100%] tracking-[0px] font-overpass font-semibold;
+  }
+  .preset-4 {
+    @apply text-[20px] leading-[125%] tracking-[0px] font-overpass font-light;
+  }
+  .preset-5 {
+    @apply text-[16px] leading-[175%] tracking-[0px] font-overpass font-light;
+  }
+  .preset-6-bold {
+    @apply text-[16px] leading-[115%] tracking-[0px] font-ubuntu font-bold;
+  }
+  .preset-6-regular {
+    @apply text-[16px] leading-[200%] tracking-[0px] font-ubuntu font-normal;
+  }
+}
