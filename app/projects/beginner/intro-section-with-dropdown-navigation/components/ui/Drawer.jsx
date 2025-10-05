@@ -80,10 +80,11 @@ function SubMenu({ label, hasChildren }) {
         {hasChildren && open && (
           <ul className="flex flex-col gap-4 ml-4">
             {hasChildren &&
-              secondaryNav[label].map((secondaryItem) => (
+              secondaryNav[label].map((secondaryItem, i) => (
                 <DropdownMenuItem
                   label={secondaryItem.label}
                   icon={secondaryItem.icon}
+                  key={i}
                 />
               ))}
           </ul>
