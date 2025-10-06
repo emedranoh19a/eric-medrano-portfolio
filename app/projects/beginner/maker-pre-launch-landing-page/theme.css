@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-manrope: var(--font-manrope);
+
+  --color-neutral-900: #080c20;
+  --color-neutral-400: #777f98;
+  --color-neutral-0: #ffffff;
+
+  --color-cyan-400: #3ee9e5;
+
+  --color-red-400: #ff2965;
+
+  --color-blue-800: #093f68;
+  --color-blue-gray-500: #6b8ca4;
+}
+body {
+  @apply bg-neutral-900;
+}
+
+@layer utilities {
+  /* ==============================
+     Text Presets
+     (based on Style Guide - Typography)
+  ============================== */
+
+  .preset-1 {
+    @apply font-extrabold text-[48px] leading-[120%] tracking-[0px] font-(--font-manrope);
+  }
+
+  .preset-1-mobile {
+    @apply font-extrabold text-[32px] leading-[120%] tracking-[0px] font-(--font-manrope);
+  }
+
+  .preset-2 {
+    @apply font-extrabold text-[40px] leading-[140%] tracking-[0px] font-(--font-manrope);
+  }
+
+  .preset-3 {
+    @apply font-extrabold text-[32px] leading-[140%] tracking-[0px] font-(--font-manrope);
+  }
+
+  .preset-4 {
+    @apply font-extrabold text-[18px] leading-[140%] tracking-[0px] font-(--font-manrope);
+  }
+
+  .preset-5 {
+    @apply font-medium text-[15px] leading-[160%] tracking-[0px] font-(--font-manrope);
+  }
+
+  .preset-6 {
+    @apply font-extrabold text-[15px] leading-[140%] tracking-[0px] font-(--font-manrope);
+  }
+
+  .preset-7 {
+    @apply font-medium text-[12px] leading-[160%] tracking-[0px] font-(--font-manrope);
+  }
+}

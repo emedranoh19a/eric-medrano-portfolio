@@ -1,0 +1,16 @@
+export { default as bgFooterSquiggle } from "./images/bg-footer-squiggle.svg"
+export { default as bgHeroSquiggle } from "./images/bg-hero-squiggle.svg"
+
+export { default as iconCheck } from "./images/icon-check.svg"
+export { default as iconFree } from "./images/icon-free.svg"
+export { default as iconPaid } from "./images/icon-paid.svg"
+export { default as iconScroll } from "./images/icon-scroll.svg"
+export { default as illustrationFinancialFreedom } from "./images/illustration-financial-freedom.svg"
+export { default as illustrationHeroLeft } from "./images/illustration-hero-left.svg"
+export { default as illustrationHeroMobile } from "./images/illustration-hero-mobile.png"
+export { default as illustrationHeroRight } from "./images/illustration-hero-right.svg"
+export { default as illustrationLifestyle } from "./images/illustration-lifestyle.svg"
+export { default as illustrationPassions } from "./images/illustration-passions.svg"
+export { default as illustrationWorkAnywhere } from "./images/illustration-work-anywhere.svg"
+export { default as logo } from "./images/logo.svg"
+
