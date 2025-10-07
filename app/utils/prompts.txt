@@ -1,0 +1,30 @@
+Hi chat! I want you to help me to create 2 files, a css and a javascript file:
+
+Firstly, the css file is a tailwindCSS theme, you have to set the color palette, and the typography, according to the attached files of this prompt. 
+Please leave the body class like that. Here is the format I want you to use. Please, don't comment the css with detail. Only the Color palette section (in the inline), and the typography section (before writing all the preset classes).
+
+@import "tailwindcss";
+@theme inline {
+  --font-{{fontName}}: var(--{{fontName}}-next);
+
+  --color-purple-300: #a775f1;
+  --color-purple-500: #733fc8;
+}
+
+@layer utilities { 
+  .preset-1 {
+    @apply text-[1.25rem] leading-[120%] tracking-normal font-semibold;
+  }
+... (other presets go here)
+}
+
+.body {
+ }
+
+---------------------
+
+Secondly, I want you to look at the other photo I attached (the directory), and write a javascript file that exports everyAsset as following:
+
+export {default as assetName} from "./images/asset-name.*extension*"
+
+*Please be careful when copying the name and the extension correctly. Convert and export it as camelCase, and assume that every asset is inside the    "images" folder. 

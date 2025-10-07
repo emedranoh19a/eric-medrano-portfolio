@@ -7,6 +7,7 @@ Doing:
 
 To Do, priority:
 //TODO: Hacer una página de error.
+//TODO: Transparent background only to be colocated on the main page. 
 //TODO: Bajar de peso y tomarme unas fotos cool.
 //TODO: -Ver cómo puedo agregar y presumir que soy trilingue
 //TODO: Hacer el contact form, extraer de Maikagura o de plano traérselo de otro lugar.

@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* === FONTS ===
+  Font unvariable → inyect className
+
+  /* === COLORS === */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Gray scale */
+  --color-gray-700: #4a4d60;
+  --color-gray-650: #6e728e;
+
+  /* Blue scale */
+  --color-blue-500: #6d72de;
+  --color-blue-200: #d0d5f6;
+  --color-blue-50: #f7f7fe;
+
+  /* Gradient */
+  --color-gradient-start: #a2a7f0;
+  --color-gradient-end: #696edd;
+}
+
+body {
+  @apply bg-blue-50;
+}
+
+@layer utilities {
+  /* === TYPOGRAPHY PRESETS === */
+
+  /* TextPreset 1 — 72px / 100% / -2px */
+  .preset-1 {
+    @apply text-[72px] leading-[100%] tracking-[-0.125rem] font-bold;
+  }
+
+  /* TextPreset 2 — 40px / 125% / 0px */
+  .preset-2 {
+    @apply text-[40px] leading-[125%] tracking-[0px] font-bold;
+  }
+
+  /* TextPreset 3 — 32px / 125% / 0px */
+  .preset-3 {
+    @apply text-[32px] leading-[125%] tracking-[0px] font-bold;
+  }
+
+  /* TextPreset 4 — 18px / 155% / 0px */
+  .preset-4 {
+    @apply text-[18px] leading-[155%] tracking-[0px] font-bold;
+  }
+
+  /* TextPreset 5 — 15px / 185% / 0px */
+  .preset-5 {
+    @apply text-[15px] leading-[185%] tracking-[0px] font-bold;
+  }
+
+  /* TextPreset 6 — 13px / 125% / 1.5px */
+  .preset-6 {
+    @apply text-[13px] leading-[125%] tracking-[0.094rem] font-bold;
+  }
+}
