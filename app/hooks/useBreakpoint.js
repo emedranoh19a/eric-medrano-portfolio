@@ -7,7 +7,6 @@ const breakpoints = {
     xl: 1280,
     '2xl': 1536,
 }
-
 function getCurrentBreakpoint(width) {
     if (width >= breakpoints['2xl']) return '2xl'
     if (width >= breakpoints.xl) return 'xl'

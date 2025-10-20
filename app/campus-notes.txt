@@ -1,7 +1,9 @@
+//Note: Fonts ----------------
 //Font from Google.
 import { Josefin_Sans } from "next/font/google"
 const josefinSans = Josefin_Sans({ subsets: ["latin"] }) 
 //Then interpolate in className as {josefinSans.className}
+//Alternatively, interpolate the CSS variable,
 
 //CSS variables in tailwind. (Version 4.0 changes the notation.)
 <div style={{'--primary-color': '#ff0000'}} className="bg-(--primary-color)" />
@@ -21,6 +23,8 @@ You want quick, minimal re-exports with no need to manipulate
 import ..., export {...}	
 You want more flexibility, possible grouping, processing, or clarity
 
+
+//Note: CSS Full-Bleed Layout inside a container.
 import data from './data.json' with { type: "json" }
 
  {/* The following snippet will full bleed the image, regadless of the container constraints */}
@@ -32,25 +36,59 @@ import data from './data.json' with { type: "json" }
   margin-left: -50vw;
   margin-right: -50vw;
 } */}
-----------------
 
-hover: → when hovered
 
-focus: → when focused
-focus-visible: → when focus is keyboard-triggered
-focus-within: → parent reacts when any child is focused
+//Note: TailwindCSS ----------------
+Visibility:
+🪄 hidden = gone
+👻 invisible = still there but unseen
+👀 visible = there and seen
+
+
+Pseudo variant classes
+・hover: → mouse is over
+・focus: → element focused
+・active: mouse clicked
+・(others) visited, focus-within, focus-visible.
+
+Style descendants based on the parent/structure
+First: Inyect "group" or "group/{name}" to the parent target. 
+・group-hover:*  targets group descendants (deeply or not)
+・group-hover/{name}:*  same, but with named groups
+・group-has-{*}: Conditional render, but with TailwindCSS.
+
+Style the parent based on descendant
+・has-{pseudo}: For example: label.has-checked:*>input.checked:*
+・focus-visible:* → when focus is keyboard-triggered
+・focus-within:*
+
+Style based on sibling:
+First: Inyect "peer" on sibling target.
+・peer-invalid, on the other sibling. etc.
+・peer-has-{pseudo (like checked)}: style based on a nephew of target.
+*Tip: "invisible peer-invalid:visible" for error messages, instead of conditional styling/rendering
+
+
+first:*, last:*, odd:*, even:*,
+
+INPUTS
+required:*, invalid:*, and disabled:*.
+checked:*  for the radio type.
+
+peer & focus-within: → Style the parent when a child input (peer) is focused
+
 
 placeholder-shown: → input is empty and showing placeholder
 not-placeholder-shown: → input has value
 
-peer-*: → reacts based on sibling input state 
+other goodies:
+placeholder, marker, file, selection
 
-active: → while being clicked
 
 disabled: → disabled state
 
 aria-[invalid=true]: → when input has aria-invalid="true"
-
+----------------
 
 //gradient borders: 
 Note that the 1.5 rem inside cal should be the half of the rounded corner.

@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Colors */
+  --color-yellow: #fcb72b;
+  --color-dark-navy: #495567;
+  --color-dim-grey: #939caa;
+  --color-light-grey: #e5ecf4;
+  --color-snow: #f2f5f9;
+  --color-light-yellow: #fff4df;
+
+  /* Typography */
+  --font-space-mono: var(--space-mono-next);
+  --font-lexend-deca: var(--lexend-deca-next);
+}
+
+@layer utilities {
+  .preset-1 {
+    @apply text-[40px] md:text-[56px] leading-[40px] md:leading-[56px] tracking-[-1.80px] md:tracking-[-2.5px] font-bold font-space-mono;
+  }
+
+  .preset-2 {
+    @apply text-[32px] md:text-[48px] leading-[120%] tracking-[1.43px] md:tracking-[-2.14px] font-bold font-space-mono;
+  }
+
+  .preset-3 {
+    @apply text-[24px] md:text-[40px] leading-[28px] md:leading-[48px] tracking-[-1.07px] md:tracking-[-1.79px] font-bold font-space-mono;
+  }
+
+  .preset-4 {
+    @apply text-[18px] md:text-[24px] leading-[24px] md:leading-[28px] leading-[-0.8px] md:tracking-[-1.07px] font-bold font-space-mono;
+  }
+
+  .preset-body {
+    @apply text-[15px] leading-[25px] font-normal font-lexend-deca;
+  }
+
+  .preset-button {
+    @apply text-[15px] leading-[25px] font-bold font-space-mono;
+  }
+}
