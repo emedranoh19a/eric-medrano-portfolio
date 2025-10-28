@@ -1367,6 +1367,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+
         //TODO: Beginner: The whole project
         title: "Maker Pre-launch",
         titleJp: "Maker近日公開",
@@ -1380,7 +1381,7 @@ export const projects = [
         //Review:
         techs: ["react", "tailwindcss"],
         isImportant: false,
-        isComplete: false,
+        isComplete: true,
         isPublic: true,
         isExternalProject: false,
     },
@@ -1398,7 +1399,7 @@ export const projects = [
         //Review:
         techs: ["react", "tailwindcss"],
         isImportant: false,
-        isComplete: false,
+        isComplete: true,
         isPublic: true,
         isExternalProject: false,
     },
