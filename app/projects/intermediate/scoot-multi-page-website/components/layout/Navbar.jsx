@@ -32,8 +32,8 @@ function MobileNavigation() {
 function NavigationLinks() {
   return (
     <ul className="hidden  text-dim-grey ml:[58px] gap-8 items-center md:flex justify-between font-space-mono text-[15px] font-bold leading-[25px] tracking-none">
-      {navigationLinks.map((navigationLink) => (
-        <li className="cursor-pointer">
+      {navigationLinks.map((navigationLink, i) => (
+        <li className="cursor-pointer" key={i}>
           <Link href={navigationLink.link}> {navigationLink.label}</Link>
         </li>
       ))}

@@ -14,8 +14,8 @@ export default function Features() {
         withButton
       >
         The Scoot app is available with riding telemetry. This means it can show
-        you your average speed, how long you've been using the scooter, your
-        traveling distance, and many more things all in an easy to use app.
+        you your average speed, how long you&apos;ve been using the scooter,
+        your traveling distance, and many more things all in an easy to use app.
       </SplitSection>
       <SplitSection
         title="Coming to a city near you"

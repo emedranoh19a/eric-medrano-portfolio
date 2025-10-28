@@ -33,7 +33,9 @@ function List() {
   return (
     <ul className="preset-4-regular text-white grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2">
       {links.map((link, i) => (
-        <li className={link.className}>{link.label}</li>
+        <li className={link.className} key={i}>
+          {link.label}
+        </li>
       ))}
     </ul>
   );
