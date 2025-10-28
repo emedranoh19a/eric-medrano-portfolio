@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+/* ---- Color Palette ---- */
+@theme inline {
+  /* Fonts */
+  /* --font-be-vietnam: var(--be-vietnam-next); */
+
+  /* White & Black */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Gray */
+  --color-gray-950: #1d1e25;
+  --color-gray-900: #343a40;
+  --color-gray-400: #8d8d8d;
+  --color-gray-50: #fafafa;
+
+  /* Orange */
+  --color-orange-400: #f3603c;
+  --color-orange-350: #f98f75;
+  --color-orange-50: #fff0ec;
+
+  /* Blue */
+  --color-blue-950: #242d52;
+  --color-blue-50: #e5e9ea;
+
+  /* Red */
+  --color-red-500: #f33c3c;
+
+  /* Gradient */
+  --color-gradient-1: linear-gradient(180deg, #00000000 0%, #00000099 100%);
+}
+
+/* ---- Typography Presets ---- */
+@layer utilities {
+  .preset-1 {
+    @apply text-[56px] leading-[115%] tracking-[-1px] font-bold;
+  }
+
+  .preset-2 {
+    @apply text-[40px] leading-[110%] tracking-[-0.75px] font-bold;
+  }
+
+  .preset-3 {
+    @apply text-[32px] leading-[140%] tracking-normal font-bold;
+  }
+
+  .preset-4-bold {
+    @apply text-[16px] leading-[145%] tracking-[0px] font-bold;
+  }
+
+  .preset-4-regular {
+    @apply text-[16px] leading-[162.5%] tracking-[0px] font-normal;
+  }
+
+  .preset-5-bold {
+    @apply text-[13px] leading-[145%] tracking-[0px] font-bold;
+  }
+
+  .preset-5-medium {
+    @apply text-[13px] leading-[145%] tracking-[0px] font-medium;
+  }
+
+  .preset-5-regular {
+    @apply text-[13px] leading-[200%] tracking-[0px] font-normal;
+  }
+
+  .preset-6 {
+    @apply text-[10px] leading-[150%] tracking-[0px] italic;
+  }
+}
+
+.body {
+  @apply bg-white;
+}
