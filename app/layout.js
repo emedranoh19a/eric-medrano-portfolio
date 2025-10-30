@@ -61,7 +61,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         <SmoothCursor />
-        <main className="z-10">
+        <main className="z-10 hide-scrollbar">
 
 
 

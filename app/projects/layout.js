@@ -22,7 +22,7 @@ const navItems = [
 ]
 export default function ProyectsLayout({ children }) {
     //TODO: Tackle different layout z-index. Mobile navbar is missing...
-    return <div className="w-full min-h-screen relative">
+    return <div className="w-full min-h-screen relative no-scrollbar">
         <FloatingNav className="hidden ">
             <ResizableNavbarDemo />
         </FloatingNav>

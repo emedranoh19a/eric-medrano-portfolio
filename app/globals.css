@@ -31,20 +31,20 @@
 /* * {
   margin: 0;
 } */
+@import "tailwindcss";
 
+html {
+  overflow-x: hidden;
+  scrollbar-width: none;
+  /* For Internet Explorer and Edge */
+  -ms-overflow-style: none;
+  /* For Chrome, Safari, and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
 body {
   /* background: var(--background); */
-  /* options for backgrounds: 
-  ag-square.png
-  natural-paper.png
-  redox-02.png
-  subtle-grey.png
-  swirl.png
-  textured-stripes.png
-  tiny-grid.png
-  transparent-square-tiles.png
-  white-tiles.png
-  */
   /* font-family: Arial, Helvetica, sans-serif;
   background-color: #ffffff; */
   /* background-image: url("/backgrounds/transparent-square-tiles.png");

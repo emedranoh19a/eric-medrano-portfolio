@@ -1,33 +1,35 @@
 "use client";
 import { cn } from "@/app/utils/utils";
+import Image from "next/image";
+import { worldMapDesktop, worldMapMobile } from "../imageIndex";
 
 export default function Map() {
-  //TODO: Maybe controlling the aspect ratio will do.
   return (
     <section id="locations" className=" mb-18 md:mb-16 md:mb-30">
-      <div className="relative bg-red-500 w-[311px] h-[152px] md:w-[689px] md:h-[337px] xl:w-[1110px] xl:h-[543px] mx-auto mb-10 md:mb-16 md:mb-30">
+      <div className="relative w-full h-fit mx-auto mb-10 md:mb-16 md:mb-30">
         <div className="z-10 absolute inset-0" />{" "}
-        {/* <Image
+        <Image
           src={worldMapMobile}
           width={1000}
           height={1000}
           style={{ width: "100%", height: "auto" }}
-          className="object-cover md:hidden"
-        />
-        <Image
+          className="object-cover md:hidden w-full aspect-auto"
+        /> 
+        {/* <Image
           src={worldMapTablet}
           width={1000}
           height={1000}
           style={{ width: "100%", height: "auto" }}
           className="object-cover hidden md:block lg:hidden"
-        />
+        /> */}
         <Image
           src={worldMapDesktop}
           width={1000}
           height={1000}
           style={{ width: "100%", height: "auto" }}
-          className="object-cover hidden lg:block"
-        /> */}
+          className="object-cover hidden md:block"
+          alt="World map"
+        /> 
         <CountriesDynamicList />
       </div>
       <CountriesList />
@@ -35,12 +37,10 @@ export default function Map() {
   );
 }
 const countries = [
-  //TODO:
-  { name: "New York", className: "" },
-  //TODO:
-  { name: "London", className: "" },
-  { name: "Jakarta", className: "left-[74%] top-[50%]" },
-  { name: "Yokohama", className: "left-[80%] top-[18%]" }, //Tried: x: y:
+  { name: "New York", className: "top-[29%] left-[22%]" },
+  { name: "London", className: "top-[19%] left-[44%]" },
+  { name: "Jakarta", className: "top-[60%] left-[80%]" },
+  { name: "Yokohama", className: "top-[29%] left-[86%]" }, //Tried: x: y:
 ];
 function CountriesList() {
   return (
@@ -66,7 +66,7 @@ function CountriesDynamicList() {
 
 function CountryTag({ name, className }) {
   const positionStyles = cn(
-    "bg-yellow text-dark-navy absolute",
+    "hidden sm:block bg-yellow text-dark-navy absolute -translate-y-[calc(100%+8px)] -translate-x-1/2",
     "text-[13px] leading-[28px] tracking-[-0.58px] lg:text-[24px] lg:leading-[28px] leading-[-0.8px] lg:tracking-[-1.07px] font-bold font-space-mono",
     // "py-[2px] px-[30px] lg:py-[22px] lg:px-[38px]",
     className
