@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@theme inline {
+  --color-green-500: #1eb589;
+
+  --color-red-500: #dc414c;
+  --color-red-700: #c4032b;
+
+  --color-blue-50: #f7f9ff;
+  --color-blue-500: #1da1f2;
+  --color-blue-600: #178ff5;
+
+  --color-navy-50: #f1f3fa;
+  --color-navy-900: #333a55;
+  --color-navy-950: #252b42;
+
+  --color-gray-200: #e1e4f0;
+  --color-gray-400: #aeb3cb;
+  --color-gray-600: #848bab;
+  --color-gray-650: #63687d;
+  --color-gray-900: #20222f;
+  --color-gray-950: #1d1f29;
+
+  --gradient-pink-start: #fdc366;
+  --gradient-pink-middle: #ee877e;
+  --gradient-pink-end: #696edd;
+
+  --gradient-green-start: #40db82;
+  --gradient-green-end: #388fe7;
+}
+
+@layer utilities {
+  /*Instead of utilities, it might be better to use "components"*/
+  /*WATCH OUT!!! If you add an unexistent class after @apply, all the work (tokens and utilities) will be trown away!*/
+  .preset-1 {
+    @apply text-[56px] leading-[85%] tracking-[-2px] font-bold;
+  }
+  .preset-2 {
+    @apply text-[32px] leading-[125%] tracking-normal font-bold;
+  }
+  .preset-3 {
+    @apply text-[28px] leading-[125%] tracking-normal font-bold;
+  }
+  .preset-4 {
+    @apply text-[24px] leading-[125%] tracking-normal font-bold;
+  }
+  .preset-5 {
+    @apply text-[14px] leading-[125%] tracking-normal font-bold;
+  }
+  .preset-6-bold {
+    @apply text-[12px] leading-[125%] tracking-normal font-bold;
+  }
+  .preset-6-regular {
+    @apply text-[12px] leading-[125%] tracking-[5px] font-normal;
+  }
+}
