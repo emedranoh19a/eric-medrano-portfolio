@@ -40,19 +40,24 @@ export function MarqueeDemoVertical() {
   );
   return (
     <div className={containerStyles}>
-      <Marquee vertical className={durationStyles}>
+      <Marquee vertical key={"first-marquee"} className={durationStyles}>
         {firstRow.map((review) => (
-          <DesignPreview key={review.title} {...review} />
+          <DesignPreview key={review.url} {...review} />
         ))}
       </Marquee>
-      <Marquee reverse vertical className={durationStyles}>
+      <Marquee
+        reverse
+        vertical
+        key={"second-marquee"}
+        className={durationStyles}
+      >
         {secondRow.map((review) => (
-          <DesignPreview key={review.title} {...review} />
+          <DesignPreview key={review.url} {...review} />
         ))}
       </Marquee>
-      <Marquee vertical className={durationStyles}>
+      <Marquee vertical key={"third-marquee"} className={durationStyles}>
         {thirdRow.map((review) => (
-          <DesignPreview key={review.title} {...review} />
+          <DesignPreview key={review.url} {...review} />
         ))}
       </Marquee>
       <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-linear-to-b from-white to-transparent"></div>
