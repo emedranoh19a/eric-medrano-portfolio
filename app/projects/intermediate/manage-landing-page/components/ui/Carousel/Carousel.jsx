@@ -25,13 +25,13 @@ export default function Carousel({ slides }) {
     }
   };
   //Style:
-  const carouselContainer = clsx("relative w-[70vmin] h-[70vmin] mx-auto", "");
+  const carouselContainer = clsx(
+    "relative w-[70vmin] h-80 mx-auto bg-lime-500 "
+  );
   const slidesContainer = clsx(
     "absolute flex mx-[-4vmin] transition-transform duration-1000 ease-in-out"
   );
-  const controlsContainer = clsx(
-    "absolute flex justify-center w-full top-[calc(100%+1rem)]"
-  );
+
   return (
     <div
       className={carouselContainer}
@@ -53,18 +53,29 @@ export default function Carousel({ slides }) {
           />
         ))}
       </ul>
-      <div className={controlsContainer}>
-        <CarouselControl
-          type="previous"
-          title="Go to previous slide"
-          handleClick={handlePreviousClick}
-        />
-        <CarouselControl
-          type="next"
-          title="Go to next slide"
-          handleClick={handleNextClick}
-        />
-      </div>
+      <CarouselControls
+        handlePreviousClick={handlePreviousClick}
+        handleNextClick={handleNextClick}
+      />
+    </div>
+  );
+}
+function CarouselControls({ handlePreviousClick, handleNextClick }) {
+  const controlsContainer = clsx(
+    "absolute flex justify-center w-full h-fit top-[calc(100%+1rem)]"
+  );
+  return (
+    <div className={controlsContainer}>
+      <CarouselControl
+        type="previous"
+        title="Go to previous slide"
+        handleClick={handlePreviousClick}
+      />
+      <CarouselControl
+        type="next"
+        title="Go to next slide"
+        handleClick={handleNextClick}
+      />
     </div>
   );
 }

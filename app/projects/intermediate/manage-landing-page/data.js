@@ -1,4 +1,5 @@
 import { IconFacebook, IconInstagram, IconPinterest, IconTwitter, IconYoutube } from "./components/ui/Icons"
+import { avatarAli, avatarAnisha, avatarRichard, avatarShanai } from "./imageIndex"
 
 export const navigationLinks = ["Pricing", "Product", "About Us", "Careers", "Community"]
 
@@ -30,4 +31,11 @@ export const links = [
     { label: "Careers", className: "" },
     { label: "Community", className: "" },
     { label: "Privacy Policy", className: "" },
+]
+
+export const testimonials = [
+    { name: "Anisha Li", avatar: avatarAnisha, quote: "Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated." },
+    { name: "Ali Bravo", avatar: avatarAli, quote: "We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused." },
+    { name: "Richard Wats", avatar: avatarRichard, quote: "Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!" },
+    { name: "Shai Walter", avatar: avatarShanai, quote: "Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated." }
 ]

@@ -1,6 +1,7 @@
+import Image from "next/image";
 import { useEffect, useRef } from "react";
 
-export default function Slide({ slide, index, current, handleSlideClick }) {
+function useCarousel() {
   const slideRef = useRef(null);
 
   const xRef = useRef(0);
@@ -28,45 +29,16 @@ export default function Slide({ slide, index, current, handleSlideClick }) {
       }
     };
   }, []);
-
-  // const handleMouseMove = (event) => {
-  //   const el = slideRef.current;
-  //   if (!el) return;
-
-  //   const r = el.getBoundingClientRect();
-  //   xRef.current = event.clientX - (r.left + Math.floor(r.width / 2));
-  //   yRef.current = event.clientY - (r.top + Math.floor(r.height / 2));
-  // };
-
-  // const handleMouseLeave = () => {
-  //   xRef.current = 0;
-  //   yRef.current = 0;
-  // };
-
-  const imageLoaded = (event) => {
-    event.currentTarget.style.opacity = "1";
-  };
-
-  const { src, button, title } = slide;
-
+  return { slideRef, xRef, yRef, frameRef };
+}
+export default function Slide({ slide, index, current, handleSlideClick }) {
+  const { slideRef } = useCarousel();
   return (
     <div className="[perspective:1200px] [transform-style:preserve-3d]">
       <li
         ref={slideRef}
-        className="flex flex-1 flex-col items-center justify-center relative text-center text-white opacity-100 transition-all duration-300 ease-in-out w-[70vmin] h-[70vmin] mx-[4vmin] z-10 "
+        className="flex flex-1 flex-col items-center justify-center relative text-center text-white opacity-100 transition-all duration-300 ease-in-out w-[70vmin] h-fit mx-[4vmin] z-10 "
         onClick={() => handleSlideClick(index)}
-        // onMouseMove={handleMouseMove}
-        // onMouseLeave={handleMouseLeave}
-        style={
-          {
-            // transform:
-            //   current !== index
-            //     ? "scale(0.98) rotateX(8deg)"
-            //     : "scale(1) rotateX(0deg)",
-            // transition: "transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
-            // transformOrigin: "bottom",
-          }
-        }
       >
         {/* background */}
         <div
@@ -77,43 +49,26 @@ export default function Slide({ slide, index, current, handleSlideClick }) {
                 ? "translate3d(calc(var(--x) / 30), calc(var(--y) / 30), 0)"
                 : "none",
           }}
-        >
-          {/* <img
-            className="absolute inset-0 w-[120%] h-[120%] object-cover opacity-100 transition-opacity duration-600 ease-in-out"
-            style={{
-              opacity: current === index ? 1 : 0.5,
-            }}
-            alt={title}
-            src={src}
-            onLoad={imageLoaded}
-            loading="eager"
-            decoding="sync"
-          />
-          {current === index && (
-            <div className="absolute inset-0 bg-black/30 transition-all duration-1000" />
-          )} */}
-        </div>
+        ></div>
 
-        <TestimonialCard />
+        <TestimonialCard {...slide} />
       </li>
     </div>
   );
 }
 
-function TestimonialCard() {
+function TestimonialCard({ name, quote, avatar }) {
   return (
     <article
-      className={`relative p-[4vmin] transition-opacity duration-1000 ease-in-out`}
+      className={`relative transition-opacity duration-1000 ease-in-out px-[50px] py-[43px]`}
     >
-      <div className="w-18 aspect-square relative rounded-full overflow-hidden bg-lime-500">
-        I
+      <div className="absolute top-0 left-1/2 -translate-y-1/2 -translate-x-1/2 w-fit h-fit">
+        <div className="w-18 aspect-square relative rounded-full overflow-hidden">
+          <Image src={avatar} alt={name} fill className="object-cover" />
+        </div>
       </div>
-      <h3 className="preset-4-bold text-blue-950">Ali Bravo</h3>
-      <p className="preset-5-regular text-blue-950/50">
-        “We have been able to cancel so many other subscriptions since using
-        Manage. There is no more cross-channel confusion and everyone is much
-        more focused.”
-      </p>
+      <h3 className="mt-6 mb-4 preset-4-bold text-blue-950">{name}</h3>
+      <p className="preset-5-regular text-blue-950/50 max-w-[460px]">{quote}</p>
     </article>
   );
 }
