@@ -91,7 +91,7 @@ aria-[invalid=true]: → when input has aria-invalid="true"
 ----------------
 
 //gradient borders: 
-Note that the 1.5 rem inside cal should be the half of the rounded corner.
+Note that the 1.5 rem inside calc should be the half of the rounded corner.
  <div class="max-w-md rounded-3xl p-px bg-linear-to-b from-blue-300 to-pink-300 dark:from-blue-800 dark:to-purple-800 ">
       <div class="rounded-[calc(1.5rem-1px)] p-10 bg-white"></div></div>
 
