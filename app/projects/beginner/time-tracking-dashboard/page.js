@@ -7,7 +7,6 @@ export default function Page() {
   return (
     <TimeProvider>
       <StyleSetup>
-
         <div className="w-full container grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-6 lg:gap-8">
           <ProfileCard />
           {data.map((card, i) => (
