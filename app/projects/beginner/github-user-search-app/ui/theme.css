@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@theme inline {
+  /*
+  Only one font, no need for:
+  --font-***: var(--font-setup-in-next); */
+  --color-neutral-900: #141d2f;
+  --color-neutral-800: #1e2a47;
+  --color-neutral-700: #2b3442;
+  --color-neutral-500: #4b6a9b;
+  --color-neutral-300: #697c9a;
+  --color-neutral-200: #90a4d4;
+  --color-neutral-100: #f6f8ff;
+  --color-neutral-0: #ffffff;
+
+  --color-blue-500: #0079ff;
+  --color-blue-300: #60abff;
+
+  --color-red-500: #f74646;
+}
+
+@layer utilities {
+  /*Instead of utilities, it might be better to use "components"*/
+  /*WATCH OUT!!! If you add an unexistent class after @apply, all the work (tokens and utilities) will be trown away!*/
+  .preset-1 {
+    @apply text-[26px] leading-[120%] tracking-normal font-bold;
+  }
+  .preset-2 {
+    @apply text-[22px] leading-[140%] tracking-normal font-bold;
+  }
+  .preset-3 {
+    /* TODO: verify the correct breakpoint */
+    @apply text-[13px] sm:text-[18px] leading-[140%] tracking-normal font-normal;
+  }
+
+  .preset-4 {
+    @apply text-[16px] leading-[150%] tracking-normal font-normal;
+  }
+  .preset-5 {
+    @apply text-[16px] leading-[150%] tracking-normal font-bold;
+  }
+  .preset-6 {
+    @apply text-[15px] leading-[150%] tracking-normal font-normal;
+  }
+  .preset-7 {
+    @apply text-[13px] leading-[150%] tracking-normal font-normal;
+  }
+  .preset-8 {
+    @apply text-[13px] leading-[140%] tracking-[2.5px] font-bold;
+  }
+}
