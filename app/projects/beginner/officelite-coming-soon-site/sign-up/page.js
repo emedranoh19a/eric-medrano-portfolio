@@ -14,10 +14,8 @@ export default function Page() {
                 <Background />
                 <Navbar />
                 <div className="flex flex-col pb-20 sm:pb-[119px] lg:pb-[285px] gap-20 justify-between lg:flex-row items-center">
-
                     <Content />
                     <Form />
-
                 </div>
             </div>
         </StyleSetup>

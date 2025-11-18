@@ -2,6 +2,20 @@
 import clsx from "clsx";
 import { useCountdown } from "../../hooks/usecountdown";
 
+const months = [
+  "JAN",
+  "FEB",
+  "MAR",
+  "APR",
+  "MAY",
+  "JUN",
+  "JUL",
+  "AUG",
+  "SEP",
+  "OCT",
+  "NOV",
+  "DEC",
+];
 export default function Counter({ formStyles, className = "" }) {
   const targetDate = new Date();
   targetDate.setDate(targetDate.getDate() + 30);
@@ -15,7 +29,12 @@ export default function Counter({ formStyles, className = "" }) {
   return (
     <div className={containerStyles}>
       <p className={paragraphStyles}>
-        Coming <span className="text-blue-500">4 Nov 2020</span>
+        Coming{" "}
+        <span className="text-blue-500">
+          {` ${targetDate.getDate()} ${
+            months[targetDate.getMonth()] || "-"
+          } ${targetDate.getFullYear()}`}{" "}
+        </span>
       </p>
       {/*  */}
       {/* <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above --> */}
