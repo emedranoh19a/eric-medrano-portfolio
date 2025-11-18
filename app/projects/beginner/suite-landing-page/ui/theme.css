@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@theme inline {
+  /* --font-***: var(--font-setup-in-next); */
+  --color-neutral-900: #172339;
+  --color-neutral-500: #49566d;
+  --color-neutral-200: #f3ede7;
+  --color-neutral-0: #faf8f6;
+
+  --color-eupatorium-purple-500: #cb30e3;
+
+  --color-gradient-start: #a060ff;
+  --color-gradient-middle: #cb30e3;
+  --color-gradient-end: #ffa84e;
+}
+
+@layer utilities {
+  /*Instead of utilities, it might be better to use "components"*/
+  /*WATCH OUT!!! If you add an unexistent class after @apply, all the work (tokens and utilities) will be trown away!*/
+  .preset-1 {
+    @apply text-[38px] sm:text-[56px] lg:text-[72px] leading-[110%] tracking-[-0.53px] sm:tracking-[-0.78px] lg:tracking-[1px] font-normal;
+  }
+  .preset-1-bold {
+    @apply text-[38px] sm:text-[72px] lg:text-[72px] leading-[110%] tracking-[-0.53px] sm:tracking-[-0.78px] lg:tracking-[1px]  font-bold;
+  }
+  .preset-2 {
+    @apply text-[48px] leading-[120%] tracking-[-0.5px] font-normal;
+  }
+  .preset-2-bold {
+    @apply text-[48px] leading-[120%] tracking-[-0.5px] font-bold;
+  }
+  .preset-3 {
+    @apply text-[20px] leading-[160%] tracking-[0.11px] font-normal;
+  }
+  .preset-4 {
+    @apply text-[18px] leading-[160%] tracking-[-0.18px] font-bold;
+  }
+  .preset-5 {
+    @apply text-[18px] leading-[160%] tracking-[0.1px] font-normal;
+  }
+  .preset-6 {
+    @apply text-[16px] leading-[150%] tracking-[-0.16px] font-bold;
+  }
+  .preset-7 {
+    @apply text-[16px] leading-[150%] tracking-[2.5px] font-normal;
+  }
+  .preset-8 {
+    @apply text-[15px] leading-[160%] tracking-normal font-normal;
+  }
+}
