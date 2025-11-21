@@ -5,7 +5,7 @@ export { default as iconTwitter } from "./assets/icon-twitter.svg";
 // export { default as } from "./assets/image-hero-landscape.png";
 // export { default as } from "./assets/image-hero-landscape.webp";
 // export { default as } from "./assets/image-hero-landscape@2x.png";
-export { default as imageHeroLanscape } from "./assets/image-hero-landscape@2x.webp";
+export { default as imageHeroLandscape } from "./assets/image-hero-landscape@2x.webp";
 
 // export { default as } from "./assets/image-hero-portrait.png";
 // export { default as } from "./assets/image-hero-portrait.webp";
@@ -27,3 +27,4 @@ export { default as logo } from "./assets/logo.svg";
 export { default as patternBlur } from "./assets/pattern-blur.svg";
 export { default as patternCurvedLine1 } from "./assets/pattern-curved-line-1.svg";
 export { default as patternCurvedLine2 } from "./assets/pattern-curved-line-2.svg";
+
