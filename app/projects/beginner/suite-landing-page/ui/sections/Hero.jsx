@@ -5,13 +5,16 @@ import Mockup from "../components/Mockup";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col lg:flex-row gap-16 sm:gap-20 lg:gap-24">
+    <section
+      id="hero"
+      className="flex flex-col lg:flex-row gap-16 sm:gap-20 lg:gap-24 mb-[82px] lg:mb-[135px]"
+    >
       <div className="relative z-0 flex flex-col flex-1 items-center sm:flex-row gap-16 sm:h-[480px] lg:h-[600px]">
         <HeroContent />
         <Mockup />
       </div>
       <Stats />
-    </div>
+    </section>
   );
 }
 function HeroContent() {

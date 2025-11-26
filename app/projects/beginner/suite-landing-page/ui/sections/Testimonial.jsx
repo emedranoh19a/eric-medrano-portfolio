@@ -1,8 +1,11 @@
+import Image from "next/image";
+import { imageJeremy, patternBlur, patternCurvedLine2 } from "../../assetIndex";
+
 export default function Testimonial() {
   return (
-    <div className="relative z-0 bg-neutral-900 text-center">
+    <div className="flex flex-col lg:flex-row items-center mb-18 sm:mb-20 lg:mb-[104px] relative z-0 px-6 sm:px-12 lg:px-[125px] pb-10 sm:pb-16 lg:pb-0 text-center">
       {/* dark backgound */}
-      <div className="absolute -z-10 w-full h-full bg-neutral-900" />
+      <div className="absolute -z-10 sm:w-full h-4/5 lg:h-8/9 bottom-0 sm:left-0 left-1/2 -translate-x-[50vw] sm:translate-x-0 w-screen bg-neutral-900 rounded-[15px]" />
       <Jeremy />
       <Line />
       <TextContent />
@@ -22,7 +25,7 @@ function TextContent() {
         This thing is a miracle worker.
       </p>
       {/*  */}
-      <p className="">
+      <p className="uppercase">
         <span className="preset-4 block text-neutral-0">Jeremy Robinson</span>
         <span className="preset-7 block text-neutral-200">CMO, Fylo</span>
       </p>
@@ -32,12 +35,28 @@ function TextContent() {
 
 function Jeremy() {
   return (
-    <div className="bg-red-500 w-[252px] h-[413px] lg:w-[360px] lg:h-[590px] relative">
-      <div></div>
+    <div className="mb-[41px] sm:mb-[29px] lg:mb-0 relative shrink-0 -z-10 w-[252px] h-[413px] lg:w-[360px] lg:h-[590px] ">
+      <Oval />
+      <Image
+        src={imageJeremy}
+        alt="Jeremy Robinson"
+        fill
+        className="object-contain"
+      />
     </div>
   );
 }
-
+function Oval() {
+  return (
+    <div className="absolute -bottom-10 sm:bottom-0 lg:bottom-[30px]  left-1/2 -translate-x-1/2 scale-200 rounded-full size-[246px] lg:size-[294px]">
+      <Image src={patternBlur} alt="" className="object-contain" fill />
+    </div>
+  );
+}
 function Line() {
-  return <div></div>;
+  return (
+    <div className="relative w-[64px] h-[52px] shrink-0 mb-[42px] sm:mb-[29px] lg:mb-0">
+      <Image src={patternCurvedLine2} alt="" className="object-contain" fill />
+    </div>
+  );
 }

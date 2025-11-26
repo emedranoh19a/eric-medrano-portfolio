@@ -2,7 +2,7 @@ import clsx from "clsx";
 import Image from "next/image";
 import { iconFacebook, iconInstagram, iconTwitter } from "../../assetIndex";
 
-export default function Icon({ variant = "" }) {
+export default function Icon({ variant = "", className }) {
   const iconContainerStyles = clsx(
     "relative",
     variant === "facebook" && "h-[20px] w-[20px]",
