@@ -1,6 +1,6 @@
-# Frontend Mentor - GitHub user search app
+# Frontend Mentor - Suite landing page
 
-![Design preview for the GitHub user search app coding challenge](./preview.jpg)
+![Design preview for the Suite landing page coding challenge](./preview.jpg)
 
 ## Welcome! 👋
 
@@ -8,43 +8,28 @@ Thanks for purchasing this premium Frontend Mentor coding challenge.
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects. These premium challenges are perfect portfolio pieces, so please feel free to use what you create in your portfolio to show others.
 
-**To do this challenge, you need a good understanding of HTML, CSS, and JavaScript.**
+**To do this challenge, you need a good understanding of HTML and CSS.**
 
 ## The challenge
 
-Your challenge is to build out this GitHub user search app using the [GitHub users API](https://docs.github.com/en/rest/reference/users#get-a-user) and get it looking as close to the design as possible.
+Your challenge is to build out this landing page and get it looking as close to the design as possible.
 
 You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
 Your users should be able to:
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Search for GitHub users by their username
-- See relevant user information based on their search
-- Switch between light and dark themes
-- **Bonus**: Have the correct color scheme chosen for them based on their computer preferences. _Hint_: Research `prefers-color-scheme` in CSS.
+- View the optimal layout depending on their device's screen size
+- See hover states for interactive elements
 
 Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
 
-The GitHub users API endpoint is `https://api.github.com/users/:username`. So, if you wanted to search for the Octocat profile, you'd be able to make a request to `https://api.github.com/users/octocat`.
-
-### Expected behaviour
-
-- On first load, show the profile information for Octocat.
-- Display an error message (as shown in the design) if no user is found when a new search is made.
-- If a GitHub user hasn't added their name, show their username where the name would be without the `@` symbol and again below with the `@` symbol.
-- If a GitHub user's bio is empty, show the text "This profile has no bio" with transparency added (as shown in the design). The lorem ipsum text in the designs shows how the bio should look when it is present.
-- If any of the location, website, twitter, or company properties are empty, show the text "Not Available" with transparency added (as shown in the design).
-- Website, twitter, and company information should all be links to those resaources. For the company link, it should remove the `@` symbol and link to the company page on GitHub. For Octocat, with `@github` being returned for the company, this would lead to a URL of `https://github.com/github`.
-
 ## Where to find everything
 
-Your task is to build out the project to the design file provided. You can download the Figma design file on the platform. **Please be sure not to share it with anyone else.** The design download comes with a `README.md` file as well to help you get set up.
+Your task is to build out the project to the design file provided. You can download the Figma design file on the platform. **Please be sure not to share them it anyone else.** The design download comes with a `README.md` file as well to help you get set up.
 
-All the required assets for this project are in the `/assets` folder. The assets are already exported for the correct screen size and optimized. Some images are reusable at multiple screen sizes. So if you don't see an image in a specific folder, it will typically be in another folder for that page.
+All the required assets for this project are in the `/assets` folder. The assets are already exported for the correct screen size and optimized. We've exported different versions, formats, and resolutions for some of the assets. If you like, you can use these to practice optimizing your images for different devices.
 
-The design system in the design file will give you more information about the various colors, fonts, and styles used in this project.
+The design system in the Figma  will give you more information about the various colors, fonts, and styles used in this project. Our fonts always come from [Google Fonts](https://fonts.google.com/).
 
 ## Building your project
 
@@ -87,17 +72,17 @@ Remember, if you're looking for feedback on your solution, be sure to ask questi
 
 There are multiple places you can share your solution:
 
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community).
+1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
 2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
 3. Share your solution on other social channels like LinkedIn.
 4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback.
+We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
 
 The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
 
 ## Got feedback for us?
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi@frontendmentor.io.
+We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
 
 **Have fun building!** 🚀
