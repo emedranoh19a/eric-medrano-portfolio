@@ -1,6 +1,6 @@
 "use client";
 import clsx from "clsx";
-import { useCountdown } from "../../hooks/usecountdown";
+import { useCountdown } from "../../hooks/useCountdown";
 
 const months = [
   "JAN",
