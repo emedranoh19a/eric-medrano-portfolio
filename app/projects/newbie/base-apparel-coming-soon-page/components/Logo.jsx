@@ -8,6 +8,7 @@ export default function Logo() {
         fill
         className="object-contain object-right sm:object-center lg:object-left"
         src={logo}
+        alt="Base Apparel logo"
       />
     </div>
   );

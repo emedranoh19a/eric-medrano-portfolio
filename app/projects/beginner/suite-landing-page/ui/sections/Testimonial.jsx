@@ -20,9 +20,9 @@ function TextContent() {
         It just <span className="preset-2-bold">works</span>
       </h1>
       <p className="preset-3 text-neutral-200 mb-6">
-        "I really like how it is an all-in-one solution that handle many of the
-        tasks that you would normally need separate tools to do the same job.
-        This thing is a miracle worker.
+        &ldquo;I really like how it is an all-in-one solution that handle many
+        of the tasks that you would normally need separate tools to do the same
+        job. This thing is a miracle worker.&rdquo;
       </p>
       {/*  */}
       <p className="uppercase">

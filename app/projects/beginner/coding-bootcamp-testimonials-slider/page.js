@@ -21,7 +21,7 @@ const testimonials = [
 export default function Page() {
     return <div className="relative bg-white grid place-items-center px-20 h-screen w-full">
         <div className="absolute bottom-0 left-0  h-20 w-full">
-            <Image fill className="object-fill" src={patternCurve} />
+            <Image fill className="object-fill" src={patternCurve} alt="" />
         </div>
         <Content testimonialData={testimonials[0]} />
     </div>

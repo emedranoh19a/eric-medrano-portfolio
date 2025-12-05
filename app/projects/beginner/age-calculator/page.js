@@ -63,7 +63,7 @@ function Form() {
             }
         }
 
-    }, [reactiveDay, reactiveMonth, reactiveYear])
+    }, [reactiveDay, reactiveMonth, reactiveYear, clearErrors, monthsWith30, setError])
 
     //Handlers:
     // we need it in the format of "yyyy-mm-dd"

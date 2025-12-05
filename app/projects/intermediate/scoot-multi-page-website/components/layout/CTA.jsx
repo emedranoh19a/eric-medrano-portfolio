@@ -49,6 +49,7 @@ function AppButton({ apple = false }) {
         src={apple ? appStore : googlePlay}
         fill
         className="object-contain"
+        alt={apple ? "Download on the App Store" : "Get it on Google Play"}
       />
     </div>
   );

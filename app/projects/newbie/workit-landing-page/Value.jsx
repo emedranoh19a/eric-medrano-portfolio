@@ -41,7 +41,7 @@ export default function Value() {
       </div>
       <div className="absolute w-full h-6 md:h-14 xl:h-20  bottom-0 left-0">
         <div className="relative w-full h-full">
-          <Image src={ornamental2} fill className="object-fill" />
+          <Image src={ornamental2} fill className="object-fill" alt="" />
         </div>
       </div>
       {/* <Ornamental

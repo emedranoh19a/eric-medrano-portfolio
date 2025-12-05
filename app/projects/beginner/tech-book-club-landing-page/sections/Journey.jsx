@@ -86,7 +86,7 @@ function Arrow({ className }) {
   return (
     <div className={positionStyles}>
       <div className="relative w-full h-full">
-        <Image fill className="object-contain" src={patternArrow} />
+        <Image fill className="object-contain" src={patternArrow} alt="" />
       </div>
     </div>
   );

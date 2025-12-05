@@ -7,7 +7,7 @@ export default function Glow({ className }) {
   return (
     <div className={containerStyles}>
       <div className="w-full h-full relative">
-        <Image src={patternGlow} fill className="object-contain" />
+        <Image src={patternGlow} fill className="object-contain" alt="" />
       </div>
     </div>
   );

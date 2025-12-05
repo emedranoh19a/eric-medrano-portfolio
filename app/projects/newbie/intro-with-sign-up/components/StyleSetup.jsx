@@ -25,11 +25,17 @@ export default function StyleSetup({ children }) {
     >
       <div className="absolute -z-10 w-full h-full left-0 top-0">
         <div className="relative h-full w-full">
-          <Image fill className="object-cover lg:hidden" src={bgIntroMobile} />
+          <Image
+            fill
+            className="object-cover lg:hidden"
+            src={bgIntroMobile}
+            alt=""
+          />
           <Image
             fill
             className="object-cover hidden lg:block"
             src={bgIntroDesktop}
+            alt=""
           />
         </div>
       </div>

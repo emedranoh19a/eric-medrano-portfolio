@@ -10,11 +10,12 @@ export default function Map() {
         <div className="z-10 absolute inset-0" />{" "}
         <Image
           src={worldMapMobile}
+          alt="World map"
           width={1000}
           height={1000}
           style={{ width: "100%", height: "auto" }}
           className="object-cover md:hidden w-full aspect-auto"
-        /> 
+        />
         {/* <Image
           src={worldMapTablet}
           width={1000}
@@ -29,7 +30,7 @@ export default function Map() {
           style={{ width: "100%", height: "auto" }}
           className="object-cover hidden md:block"
           alt="World map"
-        /> 
+        />
         <CountriesDynamicList />
       </div>
       <CountriesList />
