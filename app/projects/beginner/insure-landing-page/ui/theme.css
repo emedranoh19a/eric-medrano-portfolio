@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@theme inline {
+  /* Fonts from Next.js */
+  --font-dm-serif-display: var(--next-dm-serif-display);
+  --font-karla: var(--next-karla);
+
+  /* Palette */
+  --color-gray-950: #2c2830;
+  --color-gray-700: #837d88;
+  --color-gray-200: #dadada;
+  --color-gray-50: #fafafa;
+
+  --color-blue-950: #2d2641;
+  --color-blue-500: #96a9c6;
+
+  --color-pink-400: #c396c6;
+
+  --color-purple-500: #9e96c6;
+}
+
+@layer utilities {
+  /*Instead of utilities, it might be better to use "components"*/
+  /*WATCH OUT!!! If you add an unexistent class after @apply, all the work (tokens and utilities) will be trown away!*/
+  .preset-1 {
+    @apply text-[72px] leading-[90%] tracking-[-1px] font-normal font-dm-serif-display;
+  }
+  .preset-2 {
+    @apply text-[56px] leading-[100%] tracking-[-0.8px] font-normal font-dm-serif-display;
+  }
+  .preset-3 {
+    @apply text-[48px] leading-[100%] tracking-[-0.5px] font-normal font-dm-serif-display;
+  }
+  .preset-4 {
+    @apply text-[40px] leading-[100%] tracking-[-0.5px] font-normal font-dm-serif-display;
+  }
+  .preset-5 {
+    @apply text-[28px] leading-[135%] tracking-[-0.5px] font-normal font-dm-serif-display;
+  }
+  .preset-6 {
+    @apply text-[20px] leading-[200%] tracking-[1.5px] font-bold font-karla;
+  }
+  .preset-7 {
+    @apply text-[16px] leading-[165%] tracking-normal font-normal font-karla;
+  }
+  .preset-8 {
+    @apply text-[13px] leading-[115%] tracking-[1.5px] font-bold font-karla;
+  }
+}

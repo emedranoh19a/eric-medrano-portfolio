@@ -47,8 +47,12 @@ export default function Card({ title, timeframes }) {
   return (
     <div className={backgroundStyles}>
       {/* Ornamental */}
-      <div className=" w-[78px] aspect-square -top-[11px] right-[17px] absolute -z-10">
-        <div className="relative w-full h-full">
+      <div className=" w-[78px] aspect-square -top-[11px] right-[17px] absolute -z-10 ">
+        <div
+          className={`relative w-full h-full ${
+            title === "Social" && "opacity-30"
+          }`}
+        >
           <Image src={imgSrc} className="object-contain" alt="" fill />
         </div>
       </div>

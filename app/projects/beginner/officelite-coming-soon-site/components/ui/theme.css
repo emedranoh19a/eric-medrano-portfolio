@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@theme inline {
+  /* --font-***: var(--font-setup-in-next); */
+  --color-neutral-900: #25293a;
+  --color-neutral-800: #333950;
+  --color-neutral-500: #747b95;
+  --color-neutral-50: #fafafa;
+  --color-neutral-0: #ffffff;
+
+  --color-blue-500: #5175ff;
+  --color-blue-300: #829cff;
+  --color-blue-100: #e4eaff;
+
+  --color-red-400: #f05b5b;
+}
+
+@layer utilities {
+  /*Instead of utilities, it might be better to use "components"*/
+  /*WATCH OUT!!! If you add an unexistent class after @apply, all the work (tokens and utilities) will be trown away!*/
+  .preset-1 {
+    @apply text-[40px] lg:text-[56px] leading-[120%] tracking-normal font-bold;
+  }
+  .preset-2 {
+    @apply text-[20px] leading-[140%] tracking-normal font-bold;
+  }
+  .preset-3 {
+    @apply text-[18px] leading-[150%] tracking-normal font-normal;
+  }
+  .preset-4 {
+    @apply text-[16px] leading-[160%] tracking-normal font-normal;
+  }
+  .preset-5 {
+    @apply text-[16px] leading-[160%] tracking-normal font-bold;
+  }
+  .preset-6 {
+    @apply text-[16px] leading-[160%] tracking-[5px] font-bold uppercase;
+  }
+}
