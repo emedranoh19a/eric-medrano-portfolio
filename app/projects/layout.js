@@ -29,7 +29,5 @@ export default function ProyectsLayout({ children }) {
         {children}
     </div>
 
-
-
 }
 

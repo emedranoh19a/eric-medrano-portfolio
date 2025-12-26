@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@theme inline {
+  /* --font-***: var(--font-setup-in-next); */
+  --color-blue-950: #242a45;
+  --color-blue-600: #5267df;
+
+  --color-grey-600: #5b6074;
+  --color-grey-50: #f7f7f7;
+
+  --color-red-400: #fa5959;
+}
+
+@layer utilities {
+  /*Instead of utilities, it might be better to use "components"*/
+  /*WATCH OUT!!! If you add an unexistent class after @apply, all the work (tokens and utilities) will be trown away!*/
+  .preset-1-mobile {
+    @apply text-[30px] leading-[135%] tracking-normal font-medium;
+  }
+  .preset-2-mobile-medium {
+    @apply text-[15px] leading-[200%] tracking-normal font-medium;
+  }
+  .preset-2-mobile-regular {
+    @apply text-[15px] leading-[165%] tracking-normal font-normal;
+  }
+  .preset-2-mobile-light {
+    @apply text-[15px] leading-[200%] tracking-normal font-light;
+  }
+  .preset-3-mobile {
+    @apply text-[12px] leading-[300%] tracking-[5px] font-medium;
+  }
+  .preset-4-mobile {
+    @apply text-[10px] leading-[120%] tracking-[0.25px] font-medium italic;
+  }
+  .preset-1 {
+    @apply text-[48px] leading-[110%] tracking-normal font-medium;
+  }
+  .preset-2 {
+    @apply text-[32px] leading-[125%] tracking-[-0.1px] font-medium;
+  }
+  .preset-3 {
+    @apply text-[20px] leading-[120%] tracking-[0.25px] font-medium;
+  }
+  .preset-4 {
+    @apply text-[18px] leading-[155%] tracking-normal font-normal;
+  }
+  .preset-5-light {
+    @apply text-[16px] leading-[225%] tracking-[0.5px] font-light;
+  }
+  .preset-5-regular {
+    @apply text-[16px] leading-[110%] tracking-[0.5px] font-normal;
+  }
+  .preset-6-medium {
+    @apply text-[14px] leading-[200%] tracking-[0.25px] font-medium;
+  }
+  .preset-6-regular {
+    @apply text-[14px] leading-[200%] tracking-[0.25px] font-normal;
+  }
+  .preset-6-semibold {
+    @apply text-[14px] leading-[300%] tracking-[5px] font-semibold;
+  }
+  .preset-7 {
+    @apply text-[10px] leading-[120%] tracking-[0.25px] font-medium italic;
+  }
+}
