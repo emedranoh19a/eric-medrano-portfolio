@@ -1,9 +1,9 @@
 import Image from "next/image";
 import gregHooper from "../images/image-avatar.webp";
-import Text from "./Text";
-export default function Author() {
+import { Text } from "./Text";
+export function Author() {
   return (
-    <div className="inline-flex justify-start items-center gap-3">
+    <div className="flex justify-start items-center gap-3">
       <div className="relative w-8 h-8 rounded-ful overflow-hidden">
         <Image
           fill
@@ -12,7 +12,7 @@ export default function Author() {
           alt="avatar of Greg Hooper"
         />
       </div>
-      <Text preset={4}>Greg Hooper</Text>
+      <Text as="span" preset={4}>Greg Hooper</Text>
     </div>
   );
 }

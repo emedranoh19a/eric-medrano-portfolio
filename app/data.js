@@ -219,6 +219,7 @@ export const sidebarLinks = [
 //4. guru.
 
 export const projects = [
+    //TODO: Review TypeScript and fix CSS
     {
         title: "Keeper",
         titleJp: "Keeper",//1
@@ -235,6 +236,7 @@ export const projects = [
         isPublic: true,
         isExternalProject: true,
     },
+    //TODO: Review TypeScript and fix CSS
     {
         title: "The Wild Oasis",
         titleJp: "The Wild Oasis",//1
@@ -251,6 +253,7 @@ export const projects = [
         isPublic: true,
         isExternalProject: true,
     },
+    //TODO: Review TypeScript and fix CSS
     // {
 
     //     title: "REDA舞神楽 website",
@@ -264,6 +267,7 @@ export const projects = [
     //     isPublic: true,
     //     isExternalProject: true,
     // },
+    //TODO: Review TypeScript and fix CSS
     {
         title: "The React Quiz",
         titleJp: "Reactのクイズ",//1
@@ -298,6 +302,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Omnifood",
         titleJp: "Omnifood",
         titleEs: "Omnifood",
@@ -314,6 +319,7 @@ export const projects = [
         isExternalProject: true,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Natours",
         titleJp: "Natours",
         titleEs: "Natours",
@@ -346,6 +352,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "FAQ accordion",
         titleJp: "FAQアコーディオン",//1
         titleEs: "Acordeón de preguntas",//2
@@ -362,6 +369,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Product Preview Card",
         titleJp: "商品PVカード",//1
         titleEs: "Previsualización de producto",//2
@@ -378,6 +386,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Interactive Rating",
         titleJp: "インタラクティブ評価",//1
         titleEs: "Evaluación interactiva",//2
@@ -394,6 +403,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "QR Code",
         titleJp: "QR コード",//1
         titleEs: "Código QR",//2
@@ -410,6 +420,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "NFT Preview Card",
         titleJp: "NFTプレビューカード",//1
         titleEs: "Previsualización de NFT",//2
@@ -425,7 +436,9 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     },
+    //TODO: Review TypeScript and fix CSS
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Base Apparel Coming Soon Page",
         titleJp: "Base Apparel 近日公開ページ",
         titleEs: "Base Apparel próximamente",
@@ -442,6 +455,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Order Summary",
         titleJp: "注文概要",
         titleEs: "Resumen de pedido",
@@ -458,6 +472,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Stats Preview Card",
         titleJp: "実績PVカード",
         titleEs: "Previsualización de Stats",
@@ -475,6 +490,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Profile Card",
         titleJp: "プロファイルカード",
         titleEs: "Tarjeta de Perfil",
@@ -491,6 +507,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Social Proof",
         titleJp: "ソーシャル プルーフ",
         titleEs: "Evidencia social",
@@ -507,6 +524,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Article Preview",
         titleJp: "記事PV",
         titleEs: "Previsualización de artículo",
@@ -523,6 +541,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Trillo",
         titleJp: "Trillo",
         titleEs: "Trillo",
@@ -539,6 +558,7 @@ export const projects = [
         isExternalProject: true,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Nexter",
         titleJp: "Nexter",
         titleEs: "Nexter",
@@ -555,6 +575,7 @@ export const projects = [
         isExternalProject: true,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Four Card Feature Section",
         titleJp: "特徴カードの４枚",
         titleEs: "Cuatro cartas de cualidades",
@@ -571,6 +592,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Results Summary",
         titleJp: "結果一覧",
         titleEs: "Resultados",
@@ -588,6 +610,7 @@ export const projects = [
     },
     //TODO: get the full image, maybe
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Clipboard",
         titleJp: "Clipboard",
         titleEs: "Clipboard",
@@ -605,6 +628,7 @@ export const projects = [
     },
     //TODO: retrieve the full design.
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Loopstudios",
         titleJp: "Loopstudios",
         titleEs: "Loopstudios",
@@ -622,6 +646,7 @@ export const projects = [
     },
     //TODO:Get the full design 
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Shortly",
         titleJp: "Shortly",
         titleEs: "Shortly",
@@ -638,6 +663,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         description: "Custom hooks project from the ReactJS course by Jonas Schmedtmann.",
         descriptionJp: "ReactJSのコース(Jonas Schmedtmann)-カスタムフック",
         descriptionEs: "Proyecto de hooks personalizados del curso de ReactJS, por Jonas Schmedtmann.",
@@ -654,6 +680,7 @@ export const projects = [
         isExternalProject: true,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Bento Grid",
         titleJp: "弁当グリッド",
         titleEs: "Grid de Bento",
@@ -669,6 +696,7 @@ export const projects = [
         isPublic: true,
         isExternalProject: false,
     }, {
+        //TODO: Review TypeScript and fix CSS
         title: "Advice generator",
         titleJp: "アドバイスジェネレーター",
         titleEs: "Generador de consejos",
@@ -686,6 +714,7 @@ export const projects = [
     },
 
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Age Calculator",
         titleJp: "年齢計算機",
         titleEs: "Calculadora de la edad",
@@ -702,6 +731,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Mortgage Repayment Calculator",
         titleJp: "住宅ローン返済計算機",
         titleEs: "Calculadora de pago hipotecario",
@@ -718,6 +748,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Product List with Cart",
         titleJp: "商品リストとショッピングカート",
         titleEs: "Lista de productos con carrito de compra",
@@ -734,6 +765,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Notifications Page",
         titleJp: "通知ページ",
         titleEs: "Página de notificaciones",
@@ -750,6 +782,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Expenses Chart",
         titleJp: "支出チャート",
         titleEs: "Gráfica de gastos",
@@ -766,6 +799,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Recipe",
         titleJp: "レシピ",
         titleEs: "Receta",
@@ -784,6 +818,7 @@ export const projects = [
 
 
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Workit",
         titleJp: "Workit",
         titleEs: "Workit",
@@ -800,6 +835,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Coding Bootcamp Testimonials",
         titleJp: "コーディングブートキャンプのテスティモニアル",
         titleEs: "Testimoniales del Coding Bootcamp",
@@ -817,6 +853,7 @@ export const projects = [
     },
     //TODO: replace preview image
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Skilled E-learning Landing Page",
         titleJp: "EラーニングLP",
         titleEs: "Página de e-learning",
@@ -833,6 +870,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Pod Request Access LP",
         titleJp: "PODアクセスリクエストLP",
         titleEs: "Página de acceso a POD",
@@ -849,6 +887,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Browser Extensions Manager",
         titleJp: "ブラウザー拡張管理",
         titleEs: "Gestión de extensiones",
@@ -865,6 +904,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Dictionary",
         titleJp: "辞書",
         titleEs: "Diccionario",
@@ -881,6 +921,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Typemaster Pre-launch Website",
         titleJp: "Typemaster近日公開wEBサイト",
         titleEs: "Prelanzamiento de Typemaster",
@@ -898,6 +939,7 @@ export const projects = [
     },
     //TODO: get the full page design
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Modern Art Gallery website",
         titleJp: "美術ギャラリーWebサイト",
         titleEs: "Galería de arte moderno",
@@ -914,6 +956,7 @@ export const projects = [
         isExternalProject: true,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Tip Calculator",
         titleJp: "チップ計算機",
         titleEs: "Calculadora de Propina",
@@ -930,6 +973,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Equalizer LP",
         titleJp: "イコライザ LP",
         titleEs: "Ecualizador ",
@@ -946,6 +990,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "3-Column Cards",
         titleJp: "3つのカードPV",
         titleEs: "Cartas en 3 columnas",
@@ -962,6 +1007,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Meet LP",
         titleJp: "Meet LP",
         titleEs: "Meet",
@@ -978,6 +1024,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Single Price Grid",
         titleJp: "単価グリッド",
         titleEs: "Grid de Precio Único",
@@ -994,6 +1041,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Huddle LP",
         titleJp: "Huddle LP",
         titleEs: "LP de Huddle",
@@ -1010,6 +1058,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Sign Up Intro",
         titleJp: "アカウント登録",
         titleEs: "Registro",
@@ -1026,6 +1075,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Ping Coming Soon Page",
         titleJp: "Ping 近日公開ページ",
         titleEs: "Ping próximamente",
@@ -1043,6 +1093,7 @@ export const projects = [
     },
 
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Text Analyzer",
         titleJp: "テキスト分析",
         titleEs: "Analizador de texto",
@@ -1059,6 +1110,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Contact Form",
         titleJp: "お問い合わせフォーム",
         titleEs: "Formulario de contacto",
@@ -1075,6 +1127,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Tech Book Club LP",
         titleJp: "TechBook部 LP",
         titleEs: "Club TechBook",
@@ -1091,6 +1144,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "BMI Calculator",
         titleJp: "BMI計算機",
         titleEs: "Calculadora de IMC",
@@ -1107,6 +1161,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "SP Developer Portfolio",
         titleJp: "開発者SPポートフォリオ",
         titleEs: "Portafolio SP de desarrollador",
@@ -1123,6 +1178,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Space Tourism",
         titleJp: "宇宙観光",
         titleEs: "Turismo espacial",
@@ -1139,6 +1195,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Newsletter Sign Up",
         titleJp: "ニュースレター登録",
         titleEs: "Registro al boletín",
@@ -1155,6 +1212,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "News Homepage",
         titleJp: "ニュースHP",
         titleEs: "Portada de noticias",
@@ -1171,6 +1229,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Conference Ticket Generator",
         titleJp: "会議チケット生成機",
         titleEs: "Generador de boletos de conferencia",
@@ -1187,6 +1246,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Interactive Card Details",
         titleJp: "インタラクティブカードの詳細",
         titleEs: "Detalles de tarjeta interactiva",
@@ -1203,6 +1263,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Single Page Design Portfolio",
         titleJp: "デザインポートフォリオSP",
         titleEs: "Portafolio de diseño",
@@ -1219,6 +1280,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Testimonials Grid",
         titleJp: "テストモニタルグリッド",
         titleEs: "Grid de testimonios",
@@ -1235,6 +1297,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Fylo Data Storage Component",
         titleJp: "Fyloデータストレージコンポーネント",
         titleEs: "Componente de almacenamiento de datos de Fylo",
@@ -1251,6 +1314,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Sunnyside Agency Landing Page",
         titleJp: "Sunnyside 代理店 LP",
         titleEs: "Página de Agencia Sunnyside",
@@ -1267,6 +1331,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         //TODO: Get some animations on the navbar menu.
         title: "Digitalbank LP",
         titleJp: "デジタルバンクLP",
@@ -1284,6 +1349,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Fylo Dark Theme",
         titleJp: "Fylo ダークモード",
         titleEs: "Fylo Dark Mode",
@@ -1301,6 +1367,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Project Tracking Intro Component",
         titleJp: "PJ管理導入コンポーネント",
         titleEs: "Introducción de gestión de proyectos",
@@ -1317,6 +1384,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         //TODO: The whole project
         title: "Manage Landing Page",
         titleJp: "Manage LP",
@@ -1335,6 +1403,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Blogr LP",
         titleJp: "Blogr",
         titleEs: "Blogr",
@@ -1351,6 +1420,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Intro Section",
         titleJp: "導入セクション",
         titleEs: "Sección de introducción",
@@ -1367,6 +1437,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
 
         //TODO: Beginner: The whole project
         title: "Maker Pre-launch",
@@ -1386,6 +1457,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         //TODO: Beginner: The whole project
         title: "Pricing component with toggle",
         titleJp: "価格設定コンポーネント",
@@ -1404,6 +1476,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Social Media Dashboard",
         titleJp: "SNSダッシュボード",
         titleEs: "Panel de redes sociales",
@@ -1420,6 +1493,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Time Tracking Dashboard",
         titleJp: "時間追跡ダッシュボード",
         titleEs: "Panel de seguimiento del tiempo",
@@ -1436,6 +1510,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "GitHub User Search App",
         titleJp: "GitHubユーザー検索アプリ",
         titleEs: "Aplicación de búsqueda de usuarios de GitHub",
@@ -1452,6 +1527,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Scoot Multi Page Website",
         titleJp: "Scoot マルチページWebサイト",
         titleEs: "Sitio multipágina de Scoot",
@@ -1468,6 +1544,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Insure Landing Page",
         titleJp: "",
         titleEs: "",
@@ -1484,6 +1561,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Officelite Coming Soon Site",
         titleJp: "",
         titleEs: "",
@@ -1500,6 +1578,7 @@ export const projects = [
         isExternalProject: false,
     },
     {
+        //TODO: Review TypeScript and fix CSS
         title: "Suite Landing Page",
         titleJp: "",
         titleEs: "",
@@ -1564,7 +1643,6 @@ export const projects = [
 // "c",
 
 export const skillTabs = [
-    { title: "All", value: 0, tech: "all" },
     { title: <TechIcon tech="html" />, value: 1, tech: "html" },
     { title: <TechIcon tech="css" />, value: 2, tech: "css" },
     { title: <TechIcon tech="sass" />, value: 3, tech: "sass" },

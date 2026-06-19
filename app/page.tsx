@@ -17,7 +17,7 @@ export default function Home() {
         <title>Eric Medrano</title>
         {/* <link rel="icon" href="/favicon.ico" /> 
         </Head> */}
-      <ScrollProgress className="" />
+      <ScrollProgress />
       <Header />
       <About />
       {/* <Languages /> */}
