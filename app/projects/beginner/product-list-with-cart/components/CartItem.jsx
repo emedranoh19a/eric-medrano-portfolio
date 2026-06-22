@@ -1,9 +1,8 @@
-import { useContext } from "react";
 import { dessertsCatalogue } from "../dessertsCatalogue";
-import { CartContext } from "../page";
+import { useCart } from "../hooks/CartContextProvider";
 
 export default function CartItem({ id, quantity }) {
-  const { handleDeleteKind } = useContext(CartContext);
+  const { handleDeleteKind } = useCart();
   //Dataflow:
   //Find the item in the catalogue
   const dessertInfo = dessertsCatalogue.find((item) => item.id === id);
@@ -16,9 +15,7 @@ export default function CartItem({ id, quantity }) {
         <div className="col-span-4 font-bold">{title}</div>
         <div className="text-(--red) font-bold">{quantity}x</div>
         <div className="text-(--rose-400) mr-2">@ ${price.toFixed(2)}</div>
-        <div className="font-bold text-(--rose-500)">
-          ${dessertSubtotal}
-        </div>
+        <div className="font-bold text-(--rose-500)">${dessertSubtotal}</div>
       </div>
       <button
         onClick={() => handleDeleteKind(id)}

@@ -1,11 +1,11 @@
 "use client"
 import { Red_Hat_Text } from "next/font/google"
-import { createContext, useState } from "react"
 import Cart from "./components/Cart"
 import DessertCatalogue from "./components/DessertCatalogue"
+import CartContextProvider from "./hooks/CartContextProvider"
 const redHatText = Red_Hat_Text({ subsets: ["latin"] })
 
-export const CartContext = createContext(null)
+
 // Users should be able to:
 
 // - Add items to the cart and remove them
@@ -16,37 +16,10 @@ export const CartContext = createContext(null)
 // - See hover and focus states for all interactive elements on the page
 
 export default function Page() {
-    //State:
-    const [cartItems, setCartItems] = useState([])
 
-    //Handlers:
-    const handleAdd = (dessertId) => {
-        const isInCart = cartItems.find((item) => item.id === dessertId)
-        if (!isInCart) {
-            setCartItems((prevItems) => [...prevItems, { id: dessertId, quantity: 1 }])
-        } else {
-            const newItems = cartItems.map((cartItem) => (cartItem.id === dessertId ? { ...cartItem, quantity: cartItem.quantity + 1 } : cartItem))
-            setCartItems(newItems)
-        }
-    }
-    const handleDelete = (dessertId) => {
-
-        const isLastDessert = cartItems.find((item) => item.id === dessertId && item.quantity === 1)
-
-        if (isLastDessert) {
-            handleDeleteKind(dessertId)
-        } else {
-            const newItems = cartItems.map((cartItem) => (cartItem.id === dessertId ? { ...cartItem, quantity: cartItem.quantity - 1 } : cartItem))
-            setCartItems(newItems)
-        }
-    }
-    const handleDeleteKind = (dessertId) => {
-        const newItems = cartItems.filter((item) => item.id !== dessertId)
-        setCartItems(newItems)
-    }
 
     return <StyleTokensSetup>
-        <CartContext value={{ cartItems, setCartItems, handleAdd, handleDelete, handleDeleteKind }}>
+        <CartContextProvider>
 
             <div className="p-10 w-full h-fit max-w-md lg:max-w-6xl">
                 <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-6 h-full">
@@ -55,7 +28,7 @@ export default function Page() {
 
                 </div>
             </div>
-        </CartContext>
+        </CartContextProvider>
         {/* <div className="bg-red-500 h-20 w-full block" /> */}
     </StyleTokensSetup>
 }

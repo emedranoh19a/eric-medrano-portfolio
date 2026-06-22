@@ -1,8 +1,7 @@
-import { useContext } from "react";
-import { CartContext } from "../page";
+import { useCart } from "../hooks/CartContextProvider";
 
 export default function ItemOperator({ decrements, dessertId }) {
-  const { handleDelete, handleAdd } = useContext(CartContext);
+  const { handleDelete, handleAdd } = useCart();
   //Handlers:
   //Note: At this point, the item is already in the cart
   return (

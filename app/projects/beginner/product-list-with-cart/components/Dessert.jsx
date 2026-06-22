@@ -1,13 +1,12 @@
 import { cn } from "@/app/utils/utils";
 import Image from "next/image";
-import { useContext } from "react";
+import { useCart } from "../hooks/CartContextProvider";
 import { iconAddToCart } from "../imageIndex";
-import { CartContext } from "../page";
 import ItemOperator from "./ItemOperator";
 
 export default function Dessert({ id, type, imageSet, title, price }) {
   //State:
-  const { cartItems, handleAdd } = useContext(CartContext);
+  const { cartItems, handleAdd } = useCart();
   //Dataflow:
   const isInCart = cartItems.find((item) => item.id === id);
   const cartQuantity = isInCart?.quantity || 0;
@@ -21,13 +20,12 @@ export default function Dessert({ id, type, imageSet, title, price }) {
     "absolute bottom-0 left-1/2 translate-y-1/2 -translate-x-1/2",
     "border border-(--rose-400) bg-white rounded-full transition-colors",
     "",
-    isInCart &&
-      "bg-(--red) border-(--red) justify-between text-white",
-    !isInCart && "hover:text-(--red)"
+    isInCart && "bg-(--red) border-(--red) justify-between text-white",
+    !isInCart && "hover:text-(--red)",
   );
   const imgContainerStyles = cn(
     "relative aspect-video lg:aspect-square w-full bg-gray-200 rounded-lg overflow-hidden",
-    isInCart && "border-2 border-(--red)"
+    isInCart && "border-2 border-(--red)",
   );
 
   return (

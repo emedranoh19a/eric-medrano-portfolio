@@ -1,21 +1,20 @@
 "use client";
 import { Red_Hat_Text } from "next/font/google";
 import Image from "next/image";
-import { useContext } from "react";
 import { dessertsCatalogue } from "../dessertsCatalogue";
+import { useCart } from "../hooks/CartContextProvider";
 import { iconOrderConfirmed } from "../imageIndex";
-import { CartContext } from "../page";
 const redHatText = Red_Hat_Text({ subsets: ["latin"] });
 
 export default function OrderConfirmation({ onCloseModal }) {
   //State:
-  const { cartItems, setCartItems } = useContext(CartContext);
+  const { cartItems, setCartItems } = useCart();
 
   //Dataflow:
   //For each item in the cart, find the item's price and operate.
   const totalAmount = cartItems.reduce((ac, cartItem) => {
     const dessertInfo = dessertsCatalogue.find(
-      (dessert) => dessert.id === cartItem.id
+      (dessert) => dessert.id === cartItem.id,
     );
     return ac + dessertInfo.price * cartItem.quantity;
   }, 0);

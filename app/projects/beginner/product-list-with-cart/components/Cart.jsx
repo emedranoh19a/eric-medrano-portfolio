@@ -1,20 +1,19 @@
 import Modal, { ModalOpen, ModalWindow } from "@/app/components/ui/Modal";
 import Image from "next/image";
-import { useContext } from "react";
 import { dessertsCatalogue } from "../dessertsCatalogue";
+import { useCart } from "../hooks/CartContextProvider";
 import { iconCarbonNeutral, illustrationEmptyCart } from "../imageIndex";
-import { CartContext } from "../page";
 import CartItem from "./CartItem";
 import OrderConfirmation from "./OrderConfirmation";
 
 export default function Cart() {
-  const { cartItems } = useContext(CartContext);
+  const { cartItems } = useCart();
   const itemsNumber = cartItems.reduce((acum, item) => item.quantity + acum, 0);
 
   const totalAmount = cartItems.reduce((acum, item) => {
     //find the item
     const dessertItem = dessertsCatalogue.find(
-      (dessert) => dessert.id === item.id
+      (dessert) => dessert.id === item.id,
     );
     return acum + item.quantity * dessertItem.price;
   }, 0);
