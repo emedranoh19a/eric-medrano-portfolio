@@ -69,8 +69,8 @@ function Form() {
     // we need it in the format of "yyyy-mm-dd"
     function calculateDateDifference(date1, date2) {
         // Parse the input dates
-        const startDate = new Date(date1)
-        const endDate = new Date(date2)
+        let startDate = new Date(date1)
+        let endDate = new Date(date2)
 
         // Ensure startDate is always earlier
         if (startDate > endDate) {
