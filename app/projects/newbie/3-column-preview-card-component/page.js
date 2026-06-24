@@ -1,13 +1,15 @@
 import { cn } from "@/app/utils/utils"
-import { Big_Shoulders_Display, Lexend_Deca } from "next/font/google"
+import { Big_Shoulders, Lexend_Deca } from "next/font/google"
 import Image from "next/image"
 import LuxuryIcon from "./images/icon-luxury.svg"
 import SedansIcon from "./images/icon-sedans.svg"
 import SuvsIcon from "./images/icon-suvs.svg"
 //normal
-const lexendDeca = Lexend_Deca({ subsets: ["latin"], weight: ["400"] })
+// const lexendDeca = Lexend_Deca({ subsets: ["latin"], weight: ["400"] })
+const lexendDeca = Lexend_Deca({ subsets: ["latin"], })
 //semibold
-const bigShouldersDisplay = Big_Shoulders_Display({ subsets: ["latin"], weight: ["700"] })
+// const bigShouldersDisplay = Big_Shoulders_Display({ subsets: ["latin"], weight: ["700"] })
+const bigShouldersDisplay = Big_Shoulders({ subsets: ["latin"] })
 
 const items = [
     {
