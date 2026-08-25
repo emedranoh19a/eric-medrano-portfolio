@@ -1,12 +1,8 @@
 "use client"
-import About from "./components/sections/About"
 import Header from "./components/sections/Header"
 import Projects from "./components/sections/Projects"
-import Skills from "./components/sections/Skills"
-import Thanks from "./components/sections/Thanks"
 
 import { Bai_Jamjuree } from "next/font/google"
-import History from "./components/sections/History"
 import ScrollProgress from "./components/ui/ScrollProgress"
 const baiJamjuree = Bai_Jamjuree({ subsets: ["latin"], weight: ["400", "600"] })
 
@@ -19,14 +15,14 @@ export default function Home() {
         </Head> */}
       <ScrollProgress />
       <Header />
-      <About />
+      {/* <About /> */}
       {/* <Languages /> */}
-      <Skills />
+      {/* <Skills /> */}
 
       <Projects />
-      <History />
+      {/* <History /> */}
       {/* <Contact /> */}
-      <Thanks />
+      {/* <Thanks /> */}
 
     </div >
 

@@ -7,8 +7,10 @@ import {
   FaSortAlphaDownAlt,
 } from "react-icons/fa";
 import { GiWeightLiftingUp } from "react-icons/gi";
-import { projects, skillTabs } from "../../data";
+import { skillTabs } from "../../data";
 import { BentoGrid } from "../BentoGrid";
+// import { projects } from "../data/projects.js";
+import { projects } from "@/app/data/projects/projects";
 import BoxReveal from "../effects/BoxReveal";
 import GoToProjects from "../ui/GoToProjects";
 import Heading from "../ui/Heading";
@@ -37,7 +39,6 @@ export default function Projects() {
   const [hovering, setHovering] = useState(false);
   const [hoveredSkill, setHoveredSkill] = useState("");
   //Dataflow:
-
   // Step 1: Tag the last 3 projects in the *original order* as isNew
   const projectsWithNewFlag = projects.map((project, index) => {
     // const isNew = index >= projects.length - 3 && project.isComplete;
@@ -107,7 +108,7 @@ export default function Projects() {
         />
       </div>
       <BentoGrid className="max-w-4xl mx-auto mb-20 min-h-96">
-        {sortedProjects.map((project, i) => (
+        {projects.map((project, i) => (
           <ProjectCard
             key={i}
             index={i}

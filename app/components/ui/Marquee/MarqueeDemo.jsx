@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
-import { projects } from "@/app/data";
+import { projects } from "@/app/data/projects/projects";
 import { cn, shuffleArray } from "@/app/utils/utils";
 import Image from "next/image";
 import { Marquee } from "./Marquee";
@@ -36,7 +36,7 @@ export function MarqueeDemoVertical() {
   const containerStyles = cn(
     "absolute -z-10 flex flex-row gap-2 md:gap-4 items-center justify-between",
     "h-full w-full",
-    "opacity-60 top-0 overflow-hidden"
+    "opacity-60 top-0 overflow-hidden",
   );
   return (
     <div className={containerStyles}>

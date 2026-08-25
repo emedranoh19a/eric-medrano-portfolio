@@ -31,17 +31,17 @@ export default function Header() {
     "-mt-[20vw] ",
     // "bg-red-500/50 sm:bg-sky-500/50 md:bg-lime-500/50 lg:bg-yellow-500/50 xl:bg-fuchsia-500/50 2xl:bg-orange-500/50",
     //This styles will block the cat interacction on touch screens.
-    "no-hover:before:bg-transparent no-hover:before:absolute no-hover:before:w-full no-hover:before:h-full no-hover:before:z-20 "
+    "no-hover:before:bg-transparent no-hover:before:absolute no-hover:before:w-full no-hover:before:h-full no-hover:before:z-20 ",
   );
   const catStyles = cn("absolute top-0 w-full h-full");
 
   return (
     <section
-      className="relative z-0 w-full min-h-screen h-fit overflow-x-hidden z-0 py-40 xl:-mt-28"
+      className="relative w-full min-h-screen h-fit overflow-x-hidden z-0 py-40 xl:-mt-28"
       id="home"
     >
       <MarqueeDemoVertical />
-      <Content />
+      {/* <Content /> */}
       <div className={catContainerStyles}>
         <Cat className={catStyles} />
       </div>
@@ -90,7 +90,7 @@ function Content({ language = "en" }) {
         animateBy="letters"
         direction="bottom"
         // onAnimationComplete={handleAnimationComplete}
-        className={`${hamiltone.className} mx-auto justify-center text-center text-6xl md:text-8xl lg:text-9xl font-semibold -tracking-widest font-bold text-black   md:leading-24 md:tracking-wide`}
+        className={`${hamiltone.className} mx-auto justify-center text-center text-6xl md:text-8xl lg:text-9xl -tracking-widest font-bold text-black   md:leading-24 md:tracking-wide`}
       />
       <div className="h-40 flex justify-center items-center px-4">
         <div className="relative text-xl md:text-2xl lg:text-4xl mx-auto text-neutral-800 -translate-x-8 md:-translate-x-14">
