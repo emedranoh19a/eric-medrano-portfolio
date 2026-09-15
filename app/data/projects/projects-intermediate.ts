@@ -109,4 +109,21 @@ export const projectsIntermediate = [
     isPublic: true,
     isExternalProject: false,
   },
+  {
+    title: "To Do App",
+    titleJp: "To Do アプリ",
+    titleEs: "App de To Do",
+    description: "Front End Mentor challenge",
+    descriptionJp: "Front End Mentor のチャレンジ",
+    descriptionEs: "Desafío de Front End Mentor",
+    image: "/projects/front-end-mentor/intermediate/desktop-design-dark.jpg",
+    url: "/projects/intermediate/todo-app",
+    level: 2,
+    //TODO: add dark mode
+    techs: ["react", "tailwindcss", "dnd-kit"],
+    isImportant: true,
+    isComplete: true,
+    isPublic: true,
+    isExternalProject: false,
+  },
 ];

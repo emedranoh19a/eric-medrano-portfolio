@@ -7,6 +7,8 @@ import {
   SiStyledcomponents,
   SiSupabase,
 } from "react-icons/si";
+
+import Image from "next/image";
 import { TbApi, TbBrandFramerMotion } from "react-icons/tb";
 import { cn } from "../utils/utils";
 
@@ -114,6 +116,17 @@ export function TechIcon({ tech }) {
           className={cn(commonStyles, "fill-[#ec5990]")}
           style={{ filter: "drop-shadow(0 0 0.75rem #ec5990 )" }}
         />
+      );
+    case "dnd-kit":
+      return (
+        <div className="w-2.5 aspect-square relative">
+          <Image
+            className={cn(commonStyles, "fill-[#ec5990]")}
+            src="/skills/dnd-kit.svg"
+            fill
+            style={{ filter: "drop-shadow(0 0 0.75rem #ec5990 )" }}
+          />
+        </div>
       );
     //#3dc88b
 
