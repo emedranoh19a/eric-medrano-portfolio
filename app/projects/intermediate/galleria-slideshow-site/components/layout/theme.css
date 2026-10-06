@@ -1,0 +1,49 @@
+/* Style */
+@import "tailwindcss";
+
+@theme {
+  /* display: 100px en móvil, 200px en pantallas grandes */
+  --text-display: 100px;
+  --text-display--line-height: 1;
+  --text-display--letter-spacing: normal;
+  --text-display--font-weight: 700;
+
+  --text-display-lg: 200px;
+  --text-display-lg--line-height: 1.5;
+  --text-display-lg--letter-spacing: normal;
+  --text-display-lg--font-weight: 700;
+
+  --text-heading-1: 56px;
+  --text-heading-1--line-height: 64px;
+  --text-heading-1--font-weight: 700;
+
+  --text-heading-2: 24px;
+  --text-heading-2--line-height: 29px;
+  --text-heading-2--font-weight: 700;
+
+  --text-heading-3: 18px;
+  --text-heading-3--line-height: 22px;
+  --text-heading-3--font-weight: 700;
+
+  --text-subhead-1: 15px;
+  --text-subhead-1--line-height: 19px;
+  --text-subhead-1--font-weight: 400;
+
+  --text-subhead-2: 18px;
+  --text-subhead-2--line-height: 19px;
+  --text-subhead-2--font-weight: 700;
+
+  --text-link-1: 12px;
+  --text-link-1--line-height: 15px;
+  --text-link-1--letter-spacing: 2px;
+  --text-link-1--font-weight: 700;
+
+  --text-link-2: 9px;
+  --text-link-2--line-height: 11px;
+  --text-link-2--letter-spacing: 2px;
+  --text-link-2--font-weight: 700;
+
+  --text-body: 14px;
+  --text-body--line-height: 28px;
+  --text-body--font-weight: 700;
+}
