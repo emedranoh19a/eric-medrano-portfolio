@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/* Style */
+@theme inline {
+    /*
+    insert nextJS variables as --next-font-fraunces
+    then, inyect the variables (or className) in the Layout component
+    */
+
+  --color-dark-cyan: #0e8784;
+    /*
+    ...other colors
+    */
+}
+
+/* These typography utilities can be swapped with Tailwind breakpoints
+example: heading-2 lg:heading-1
+ */
+@utility heading-1 {
+  font-family: var(--next-font-fraunces);
+  font-size: 150px;
+  line-height: 100%;
+  /* line-height: 72px; */
+  font-weight: 900;
+  /* //TODO: letter spacing; */
+}
+@utility heading-2 {
+    /*
+    ...
+    */
+}

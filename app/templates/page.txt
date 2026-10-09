@@ -1,0 +1,18 @@
+export default function Page() {
+    return <div>Hello! I'm the page</div>
+}
+//TODO: Palette
+//TODO: Typography
+//TODO: AssetIndex + PowerShell
+//TODO: Pages
+//TODO: Layout
+//TODO: Components empty.
+//TODO: Components Markup.
+//TODO: Sections.
+//TODO: Functionality
+//TODO: What did I learn?
+//TODO: What do  want to learn or polish?
+//TODO: README Markup.
+//TODO: Register date.
+//TODO: Proyect into array.
+//TODO: The next prouyect in a "coming soon" state.

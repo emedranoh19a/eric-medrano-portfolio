@@ -45,3 +45,6 @@ To Do:
 //TODO: Hacer un Marquee que esté lleno con previews tipo Front End Mentor? (No la página completa)
 //TODO: Skeletton for the Marquees. 
 //TODO: A loading animation before the page loads, and the images load, and so on...
+
+//TODO: hacer el input mas largo en el TODO app-ñ
+//TODO: Corregir el TODO app. Todos los checkboxes se palomean cuando se hace click en solo uno. 

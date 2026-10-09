@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+/* Style */
+@theme inline {
+  --font-display: var(--next-font-fraunces), Georgia, serif;
+  --font-body: var(--next-font-barlow), Arial, sans-serif;
+
+  --color-dark-cyan: #0e8784;
+  --color-dark-grey-blue: #333d4b;
+  --color-pale-orange: #fdd6ba;
+  --color-light-cream: #fefcf7;
+  --color-grey: #83888f;
+}
+
+/* Logic */
+@utility title-alternate {
+  font-family: var(--next-font-fraunces);
+  font-size: 150px;
+  line-height: 100%;
+  /* line-height: 72px; */
+  font-weight: 900;
+  /* //TODO: letter spacing; */
+}
+@utility heading-1 {
+  font-family: var(--next-font-fraunces);
+  font-size: 72px;
+  line-height: 100%;
+  /* line-height: 72px; */
+  font-weight: 900;
+  /* //TODO: letter spacing; */
+}
+@utility heading-2 {
+  font-family: var(--next-font-fraunces);
+  font-size: 40px;
+  /* line-height: 48px; */
+  line-height: 100%;
+  font-weight: 900;
+  /* //TODO: letter spacing; */
+}
+@utility heading-3 {
+  font-family: var(--next-font-fraunces);
+  font-size: 32px;
+  /* line-height: 36px; */
+  line-height: 100%;
+  font-weight: 900;
+  /* //TODO: letter spacing; */
+}
+@utility heading-4 {
+  font-family: var(--next-font-fraunces);
+  font-size: 24px;
+  /* line-height: 32px; */
+  line-height: 100%;
+  font-weight: 900;
+  /* //TODO: letter spacing; */
+}
+@utility body {
+  font-family: var(--next-font-barlow);
+  font-size: 15px;
+  /* line-height: 26px; */
+  line-height: 100%;
+  font-weight: 400;
+  /* //TODO: letter spacing; */
+}
+@utility text-navigation {
+  font-family: var(--next-font-barlow);
+  font-size: 12px;
+  line-height: 15px;
+  /* line-height: 100%; */
+  font-weight: 700;
+  letter-spacing: 0.92px;
+}

@@ -99,18 +99,32 @@ Note that the 1.5 rem inside calc should be the half of the rounded corner.
 //Typography layers can be used with tailwind responsivenes!
 
 @import "tailwindcss";
+
+/* Style */
 @theme inline {
-  --font-***: var(--font-setup-in-next);
-  --color-purple-300: #a775f1;
-  --color-purple-500: #733fc8;
+  --font-display: var(--next-font-fraunces), Georgia, serif;
+  --font-body: var(--next-font-barlow), Arial, sans-serif;
+
+  --color-dark-cyan: #0e8784;
+  --color-dark-grey-blue: #333d4b;
+  --color-pale-orange: #fdd6ba;
+  --color-light-cream: #fefcf7;
+  --color-grey: #83888f;
 }
 
-@layer utilities { 
-  /*Instead of utilities, it might be better to use "components"*/
-  /*WATCH OUT!!! If you add an unexistent class after @apply, all the work (tokens and utilities) will be trown away!*/
-  .preset-1 {
-    @apply text-[1.25rem] leading-[120%] tracking-normal font-semibold;
-  }
+@utility title-alternate {
+  font-family: var(--next-font-fraunces);
+  font-size: 150px;
+  /* line-height: 100%; */
+  line-height: 72px;
+  font-weight: 900;
+}
+@utility heading-1 {
+  font-family: var(--next-font-fraunces);
+  font-size: 72px;
+  line-height: 100%;
+  /* line-height: 72px; */
+  font-weight: 900;
 }
 
 Overflow hidden on a parent causes problems on sticky children!

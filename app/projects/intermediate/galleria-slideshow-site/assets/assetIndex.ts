@@ -52,11 +52,11 @@ export { default as theBoyInTheRedVestHeroLarge } from "./the-boy-in-the-red-ves
 export { default as theBoyInTheRedVestHeroSmall } from "./the-boy-in-the-red-vest/hero-small.jpg";
 export { default as theBoyInTheRedVestThumbnail } from "./the-boy-in-the-red-vest/thumbnail.jpg";
 //the-great-wave-off-Kanagawa
-export { default as theGreatWaveOfKanagawaArtist } from "./the-great-wave-off-Kanagawa/artist.jpg";
-export { default as theGreatWaveOfKanagawaGallery } from "./the-great-wave-off-Kanagawa/gallery.jpg";
-export { default as theGreatWaveOfKanagawaHeroLarge } from "./the-great-wave-off-Kanagawa/hero-large.jpg";
-export { default as theGreatWaveOfKanagawaHeroSmall } from "./the-great-wave-off-Kanagawa/hero-small.jpg";
-export { default as theGreatWaveOfKanagawaThumbnail } from "./the-great-wave-off-Kanagawa/thumbnail.jpg";
+export { default as theGreatWaveOfKanagawaArtist } from "./the-great-wave-off-kanagawa/artist.jpg";
+export { default as theGreatWaveOfKanagawaGallery } from "./the-great-wave-off-kanagawa/gallery.jpg";
+export { default as theGreatWaveOfKanagawaHeroLarge } from "./the-great-wave-off-kanagawa/hero-large.jpg";
+export { default as theGreatWaveOfKanagawaHeroSmall } from "./the-great-wave-off-kanagawa/hero-small.jpg";
+export { default as theGreatWaveOfKanagawaThumbnail } from "./the-great-wave-off-kanagawa/thumbnail.jpg";
 //the-night-cafe
 export { default as theNightCafeArtist } from "./the-night-cafe/artist.jpg";
 export { default as theNightCafeGallery } from "./the-night-cafe/gallery.jpg";

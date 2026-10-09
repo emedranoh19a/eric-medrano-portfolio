@@ -143,6 +143,7 @@ export const projectsIntermediate = [
     isPublic: true,
     isExternalProject: false,
   },
+  //TODO:
   {
     title: "Coffee Roasters",
     titleJp: "",
