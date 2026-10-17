@@ -13,7 +13,7 @@ export default function Footer() {
     return <footer className={footerStyles}>
         <div className="flex flex-col items-center lg:flex-row gap-12 sm:gap-8 lg:gap-25.75">
             <Logo variant="white" />
-            <Menu />
+            <Menu variant="Footer" />
         </div>
         <FooterSocialList />
     </footer>

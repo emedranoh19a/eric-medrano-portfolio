@@ -1,3 +1,11 @@
+import { Commitment, Header, Headquarters, Quality } from "./components";
+
 export default function Page() {
-    return <div>This is the About Page!</div>
+    return <main className="w-full text-dark-grey-blue">
+        <Header />
+        <Commitment />
+        <Quality />
+        <Headquarters />
+    </main>
 }
+

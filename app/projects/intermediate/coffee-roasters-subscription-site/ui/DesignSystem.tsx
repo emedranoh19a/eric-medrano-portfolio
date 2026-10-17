@@ -7,10 +7,9 @@ const barlow = Barlow({ subsets: ["latin"], variable: "--next-font-barlow", weig
 const fraunces = Fraunces({ subsets: ["latin"], variable: "--next-font-fraunces", weight: ["900"] });
 
 export default function DesignSystem({ children }: { children: ReactNode }) {
-    const themeStyles = clsx("bg-light-cream min-h-screen px-6 relative z-0 max-w-screen flex", barlow.variable, fraunces.variable);
-    return <div className={themeStyles}>
+    const themeStyles = clsx("bg-light-cream min-h-screen px-6 relative z-0 max-w-screen flex pb-18 lg:pb-21", barlow.variable, fraunces.variable);
+    return <div className={themeStyles} id="coffee-roasters">
         <div className="container mx-auto relative-0 flex flex-col">
-
             {children}
         </div>
     </div>

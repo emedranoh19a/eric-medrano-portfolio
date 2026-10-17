@@ -7,8 +7,6 @@ import "./ui/theme.css";
 
 export default function Layout({ children }: { children: ReactNode }) {
     return <DesignSystem>
-
-
         <Navbar />
         <div className="flex flex-1">
 
