@@ -14,4 +14,7 @@ export type Technology =
   | "zustand"
   | "tanstack-query";
 // | "redux"
-// | "orval";
+// | "orval"
+// | "supabase"
+// | "testing-library"
+// | "";

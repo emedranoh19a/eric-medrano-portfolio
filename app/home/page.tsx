@@ -1,6 +1,8 @@
+"use client"
+import { useTheme } from "next-themes";
+
 import DesignSystem from "./components/ui/DesignSystem";
-import TechnologyIcon from "./components/ui/TechnologyIcon/TechnologyIcon";
-import Backlight from "./components/vendors/Backlight";
+import { AnimatedThemeToggler } from "./components/vendors/AnimatedThemeToggler";
 import { Technology } from "./data/types/Technology.types";
 
 const technologies: Technology[] = [
@@ -19,9 +21,19 @@ const technologies: Technology[] = [
     "zustand",
 ]
 export default function Page() {
-    return <DesignSystem className="min-h-screen">
+    const { resolvedTheme, setTheme } = useTheme()
+    console.log(resolvedTheme)
+    console.log(setTheme)
+
+    return <DesignSystem className="min-h-screen  dark:bg-black">
         <h1> Organizing the TechnologyIcon component, one by one.</h1>
-        <div className="grid grid-cols-6 place-items-center">
+        <div className="flex justify-end">
+            <AnimatedThemeToggler
+                theme={resolvedTheme === "dark" ? "dark" : "light"}
+                onThemeChange={setTheme}
+            />
+        </div>
+        {/* <div className="grid grid-cols-6 place-items-center">
             {technologies.map((tech) => (
                 <div key={tech} className="relative group/item">
                     <Backlight
@@ -36,18 +48,18 @@ export default function Page() {
                         className="absolute top-0 left-0 opacity-50 grayscale-100 group-hover/item:opacity-0 transition"
                     />
                 </div>
-            ))}
+            ))} */}
 
-            {/* <TechnologyIcon technology="react-hook-form" /> */}
-            {/* <TechnologyIcon technology="react-hot-toast" /> */}
+        {/* <TechnologyIcon technology="react-hook-form" /> */}
+        {/* <TechnologyIcon technology="react-hot-toast" /> */}
 
-            {/* <div className="bg-neutral-500 relative"></div> */}
+        {/* <div className="bg-neutral-500 relative"></div> */}
 
-        </div>
+        {/* </div> */}
         {/* <p>There are more things in heaven and earth than those dreamt of in your philosofy.</p>
         <p>There are more thamt of in your philosofy.</p> */}
         {/* <ProjectPreview /> */}
-    </DesignSystem>
+    </DesignSystem >
 }
 //TODO: Add the preview.
 //TODO: Add the dummy title
