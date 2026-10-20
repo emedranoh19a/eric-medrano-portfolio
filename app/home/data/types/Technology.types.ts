@@ -1,0 +1,17 @@
+export type Technology =
+  | "html"
+  | "css"
+  | "javascript"
+  | "typescript"
+  | "react"
+  | "next-js"
+  | "sass"
+  | "dnd-kit"
+  | "tailwind-css"
+  | "react-hook-form"
+  | "motion"
+  | "react-hot-toast"
+  | "zustand"
+  | "tanstack-query";
+// | "redux"
+// | "orval";

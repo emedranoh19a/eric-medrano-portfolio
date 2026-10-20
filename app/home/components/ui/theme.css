@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/* Style */
+@theme inline {
+  /*
+    insert nextJS variables as --next-font-fraunces
+    then, inyect the variables (or className) in the Layout component
+    */
+
+  /* --color-dark-cyan: #0e8784; */
+  /*
+    ...other colors
+    */
+}
+
+/* These typography utilities can be swapped with Tailwind breakpoints
+example: preset-2 lg:preset-1
+ */
+@utility preset-1 {
+  font-family: var(--next-font-petrona);
+  font-size: 3.75rem; /* (60px) */
+  line-height: 1;
+  font-weight: 500;
+}
+
+@utility preset-2 {
+  font-family: var(--next-font-petrona);
+  font-size: 2.25rem; /* (36px) */
+  line-height: calc(2.5 / 2.25);
+  font-weight: 400;
+}
+
+@utility preset-3 {
+  font-family: var(--next-font-petrona);
+  font-size: 1.875rem; /* (30px) */
+  line-height: calc(2.25 / 1.875);
+  font-weight: 400;
+}
+
+@utility preset-body {
+  font-family: var(--next-font-petrona);
+  font-size: 1.25rem; /* (20px) */
+  line-height: calc(1.75 / 1.25);
+  font-weight: 400;
+}
