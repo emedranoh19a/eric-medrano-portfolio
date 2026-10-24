@@ -3,15 +3,15 @@ import clsx from "clsx";
 import { useFormContext } from "react-hook-form";
 import Text from "./Text";
 
-export default function TipCard() {
+export default function TipCard({ results, setResults }) {
   //State:
-  const { results } = useFormContext();
+  // const { results } = useFormContext();
   //Style:
   const containerClasses = clsx(
     "bg-(--green-900)",
     "p-6 sm:px-9",
     "rounded-2xl w-full",
-    "flex flex-col justify-between"
+    "flex flex-col justify-between",
   );
   return (
     <div className={containerClasses}>
@@ -19,7 +19,7 @@ export default function TipCard() {
         <TipCardDetail text="Tip Amount" value={results.tipAmount} />
         <TipCardDetail text="Total" value={results.total} />
       </div>
-      <ResetButton />
+      <ResetButton setResults={setResults} />
     </div>
   );
 }
@@ -45,8 +45,8 @@ function TipCardDetail({ text, value }) {
   );
 }
 
-function ResetButton() {
-  const { reset, setResults } = useFormContext();
+function ResetButton({ setResults }) {
+  const { reset } = useFormContext();
   return (
     <button
       onClick={() => {
