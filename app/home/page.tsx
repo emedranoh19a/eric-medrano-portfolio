@@ -5,7 +5,7 @@ import DesignSystem from "./components/ui/DesignSystem";
 import { AnimatedThemeToggler } from "./components/vendors/AnimatedThemeToggler";
 import { Technology } from "./data/types/Technology.types";
 
-const technologies: Technology[] = [
+const technologies = [
     "css",
     "sass",
     "dnd-kit",
@@ -19,15 +19,16 @@ const technologies: Technology[] = [
     "tanstack-query",
     "react",
     "zustand",
-]
+] satisfies Technology[];
+
 export default function Page() {
     const { resolvedTheme, setTheme } = useTheme()
     console.log(resolvedTheme)
     console.log(setTheme)
 
-    return <DesignSystem className="min-h-screen  dark:bg-black">
-        <h1> Organizing the TechnologyIcon component, one by one.</h1>
-        <div className="flex justify-end">
+    return <DesignSystem className="min-h-screen bg-white dark:bg-red-200">
+        <h1 className="dark:text-red-500 text-blue-500"> Organizing the TechnologyIcon component, one by one.</h1>
+        <div className="bg-red-500 dark:bg-blue-500 flex justify-end">
             <AnimatedThemeToggler
                 theme={resolvedTheme === "dark" ? "dark" : "light"}
                 onThemeChange={setTheme}
@@ -48,8 +49,8 @@ export default function Page() {
                         className="absolute top-0 left-0 opacity-50 grayscale-100 group-hover/item:opacity-0 transition"
                     />
                 </div>
-            ))} */}
-
+            ))}
+        </div> */}
         {/* <TechnologyIcon technology="react-hook-form" /> */}
         {/* <TechnologyIcon technology="react-hot-toast" /> */}
 
