@@ -1,4 +1,4 @@
-import { DotPattern } from "@/app/home/components/vendors/DotPattern";
+import { DotPattern } from "@/app/(home)/components/vendors/DotPattern";
 import { cn } from "@/app/utils/utils";
 import { Petrona } from "next/font/google";
 import { ReactNode } from "react";

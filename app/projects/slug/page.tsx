@@ -1,8 +1,6 @@
 "use client"
-import { CodeBlock } from "@/app/home/components/vendors/CodeBlock"
+import { CodeBlock } from "@/app/(home)/components/vendors/CodeBlock"
 import { useState } from "react"
-import { DesignSystem } from "./components"
-import { ProjectHeader } from "./sections"
 //TODO: Typography: text-base/6
 //TODO: Typography size hierarchy
 //TODO: Typography spacing hierarchy
@@ -150,17 +148,18 @@ function Section() {
 
 export default function Page() {
     const [isOpen, setOpen] = useState(true)
-    return <DesignSystem className="">
-        <ProjectHeader />
-        <Section />
-        <Section />
-        <Section />
-        <Section />
-        <Section />
-        <Section />
-        {/* <MainTitle />
+    return <div>Hello!</div>
+    // return <DesignSystem className="">
+    //     <ProjectHeader />
+    //     <Section />
+    //     <Section />
+    //     <Section />
+    //     <Section />
+    //     <Section />
+    //     <Section />
+    {/* <MainTitle />
         <Overview /> */}
-        {/* <MainTitle />
+    {/* <MainTitle />
         <ContentsTable />
         <Overview />
         <ChallengeDescription />
@@ -172,7 +171,7 @@ export default function Page() {
         <ContinuedDevelopment />
         <Author />
         <Acknowledgements /> */}
-        {/* <div>
+    {/* <div>
             <button onClick={() => setOpen((s) => !s)}>
 
                 Hello
@@ -193,11 +192,11 @@ export default function Page() {
                 </div>
             </div>
         </div> */}
-        {/* <PagePreviews />
+    {/* <PagePreviews />
         <PagePreviews />
         <PagePreviews />
         <PagePreviews /> */}
-        {/* <MainTitle />
+    {/* <MainTitle />
         <ContentsTable />
         <Overview />
         <ChallengeDescription />
@@ -209,7 +208,7 @@ export default function Page() {
         <ContinuedDevelopment />
         <Author />
         <Acknowledgements /> */}
-    </DesignSystem >
+    // </DesignSystem >
 }
 
 function Contents() {

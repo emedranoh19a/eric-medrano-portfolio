@@ -104,12 +104,12 @@
 //   | "game";
 // //   | "browser-extension"
 // //   | "data-visualisation";
-// type ProjectLevel =
-//   | "newbie"
-//   | "beginner"
-//   | "intermediate"
-//   | "advanced"
-//   | "guru";
+export type ProjectLevel =
+  | "newbie"
+  | "beginner"
+  | "intermediate"
+  | "advanced"
+  | "guru";
 
 // type Acknowledgement = {
 //   name: string;

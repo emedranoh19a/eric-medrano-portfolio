@@ -1,4 +1,4 @@
-import { Scales } from "@/app/home/components/vendors/Scales";
+import { Scales } from "@/app/(home)/components/vendors/Scales";
 import Image from "next/image";
 import { Subtitle } from "../components";
 import preview from "./3-devices-black-cropped.png";

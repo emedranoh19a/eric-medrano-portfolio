@@ -1,40 +1,37 @@
 "use client"
 import { useTheme } from "next-themes";
 
-import DesignSystem from "./components/ui/DesignSystem";
-import { AnimatedThemeToggler } from "./components/vendors/AnimatedThemeToggler";
-import { Technology } from "./data/types/Technology.types";
 
-const technologies = [
-    "css",
-    "sass",
-    "dnd-kit",
-    "html",
-    "javascript",
-    "typescript",
-    "tailwind-css",
-    "next-js",
-    "motion",
-    "react-hook-form",
-    "tanstack-query",
-    "react",
-    "zustand",
-] satisfies Technology[];
+// const technologies = [
+//     "css",
+//     "sass",
+//     "dnd-kit",
+//     "html",
+//     "javascript",
+//     "typescript",
+//     "tailwind-css",
+//     "next-js",
+//     "motion",
+//     "react-hook-form",
+//     "tanstack-query",
+//     "react",
+//     "zustand",
+// ] satisfies Technology[];
 
 export default function Page() {
     const { resolvedTheme, setTheme } = useTheme()
     console.log(resolvedTheme)
     console.log(setTheme)
-
-    return <DesignSystem className="min-h-screen bg-white dark:bg-red-200">
-        <h1 className="dark:text-red-500 text-blue-500"> Organizing the TechnologyIcon component, one by one.</h1>
+    return <div>page</div>
+    // return <DesignSystem className="min-h-screen bg-white dark:bg-red-200">
+    {/* <h1 className="dark:text-red-500 text-blue-500"> Organizing the TechnologyIcon component, one by one.</h1>
         <div className="bg-red-500 dark:bg-blue-500 flex justify-end">
             <AnimatedThemeToggler
                 theme={resolvedTheme === "dark" ? "dark" : "light"}
                 onThemeChange={setTheme}
             />
-        </div>
-        {/* <div className="grid grid-cols-6 place-items-center">
+        </div> */}
+    {/* <div className="grid grid-cols-6 place-items-center">
             {technologies.map((tech) => (
                 <div key={tech} className="relative group/item">
                     <Backlight
@@ -51,16 +48,16 @@ export default function Page() {
                 </div>
             ))}
         </div> */}
-        {/* <TechnologyIcon technology="react-hook-form" /> */}
-        {/* <TechnologyIcon technology="react-hot-toast" /> */}
+    {/* <TechnologyIcon technology="react-hook-form" /> */ }
+    {/* <TechnologyIcon technology="react-hot-toast" /> */ }
 
-        {/* <div className="bg-neutral-500 relative"></div> */}
+    {/* <div className="bg-neutral-500 relative"></div> */ }
 
-        {/* </div> */}
-        {/* <p>There are more things in heaven and earth than those dreamt of in your philosofy.</p>
+    {/* </div> */ }
+    {/* <p>There are more things in heaven and earth than those dreamt of in your philosofy.</p>
         <p>There are more thamt of in your philosofy.</p> */}
-        {/* <ProjectPreview /> */}
-    </DesignSystem >
+    {/* <ProjectPreview /> */ }
+    // </DesignSystem >
 }
 //TODO: Add the preview.
 //TODO: Add the dummy title

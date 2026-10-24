@@ -1,6 +1,7 @@
-export { default as DesignSystem } from "./DesignSystem";
-export { default as List } from "./List";
-export { default as MainTitle } from "./MainTitle";
-export { default as Subtitle } from "./Subtitle";
-export { default as Title } from "./Title";
+// export * from "./DesignSystem";
+export * from "./List";
+export * from "./MainTitle";
+export * from "./ProjectLevelBadge";
+export * from "./Subtitle";
+export * from "./Title";
 
