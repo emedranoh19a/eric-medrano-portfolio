@@ -1,10 +1,9 @@
 import { Scales } from "@/app/(home)/components/vendors/Scales";
 import Image from "next/image";
-import { Subtitle } from "../components";
 import preview from "./3-devices-black-cropped.png";
 export default function PagePreviews() {
     return <section id="page-previews" className="bg-white mb-10 border-y-2 border-dashed border-neutral-200">
-        <Subtitle text="Screenshots" />
+        {/* <Subtitle text="Screenshots" /> */}
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 border-y-2 border-dashed border-neutral-200/80 divide-y-2 divide-x-2 divide-neutral-200/80 relative z-0">
             <Scales className="-z-10 opacity-30" />
             <PagePreview />
@@ -16,7 +15,7 @@ export default function PagePreviews() {
             {/* <PagePreview /> */}
             {/* <PagePreview /> */}
         </ul>
-        <Subtitle text="Links" />
+        {/* <Subtitle text="Links" /> */}
         <p>description</p>
     </section>
 }

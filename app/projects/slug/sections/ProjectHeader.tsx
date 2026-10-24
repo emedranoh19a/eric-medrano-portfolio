@@ -5,7 +5,8 @@ import { FaUserAlt } from "react-icons/fa";
 import { GiGraduateCap } from "react-icons/gi";
 import { MdWork } from "react-icons/md";
 import { RiSwordFill } from "react-icons/ri";
-import { MainTitle } from "../components";
+import MainTitle from "../components/MainTitle";
+import ProjectLevelBadge from "../components/ProjectLevelBadge";
 import img from "./preview.jpg";
 
 export default function ProjectHeader() {

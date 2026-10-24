@@ -1,8 +1,7 @@
-import { Title } from "../components";
 
 export default function Overview() {
     return <div>
-        <Title text="Overview" />
+        {/* <Title text="Overview" /> */}
 
         Frontend Mentor - Body Mass Index Calculator solution
         This is a solution to the Body Mass Index Calculator challenge on Frontend Mentor.

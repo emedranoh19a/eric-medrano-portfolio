@@ -1,8 +1,7 @@
 "use client"
 import { useElementSize } from "@/app/hooks/useElementSize";
 import { ReactNode } from "react";
-import { OrbitingCircles } from "../../vendors/OrbitingCircles";
-import TechnologyIcon from "../TechnologyIcon/TechnologyIcon";
+// import TechnologyIcon from "../TechnologyIcon/TechnologyIcon";
 
 export default function ParticlesOverlay({ children, level }: { children: ReactNode, level }) {
     const { ref, width, height } = useElementSize<HTMLDivElement>();
@@ -15,7 +14,7 @@ export default function ParticlesOverlay({ children, level }: { children: ReactN
 
         </div> */}
         <div className="absolute h-screen w-screen overflow-hidden z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <OrbitingCircles radius={radius} className="bg-red-500 left-1/2 top-1/2">
+            {/* <OrbitingCircles radius={radius} className="bg-red-500 left-1/2 top-1/2">
                 <TechnologyIcon />
                 <TechnologyIcon />
                 <TechnologyIcon />
@@ -26,7 +25,7 @@ export default function ParticlesOverlay({ children, level }: { children: ReactN
                 <TechnologyIcon />
 
 
-            </OrbitingCircles>
+            </OrbitingCircles> */}
         </div>
         {children}
     </div >

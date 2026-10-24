@@ -1,8 +1,7 @@
-import { Subtitle } from "../components";
 
 export default function ChallengeDescription() {
     return <div>
-        <Subtitle text="The Challenge" />
+        {/* <Subtitle text="The Challenge" /> */}
         <p className="">
             Your challenge is to build out this
             body mass index calculator page and
@@ -14,13 +13,13 @@ export default function ChallengeDescription() {
         <p>
 
             Your users should be able to:
-            <List>
+            <ul>
                 <li>Select whether they want to use metric or imperial units</li>
                 <li>Enter their height and weight</li>
                 <li>See their BMI result, with their weight classification and healthy weight range</li>
                 <li>View the optimal layout for the interface depending on their device's screen size</li>
                 <li>See hover and focus states for all interactive elements on the page</li>
-            </List>
+            </ul>
 
         </p>
     </div>

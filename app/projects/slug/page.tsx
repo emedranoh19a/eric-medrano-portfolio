@@ -1,6 +1,8 @@
 "use client"
 import { CodeBlock } from "@/app/(home)/components/vendors/CodeBlock"
 import { useState } from "react"
+import Subtitle from "./components/Subtitle"
+import Title from "./components/Title"
 //TODO: Typography: text-base/6
 //TODO: Typography size hierarchy
 //TODO: Typography spacing hierarchy
@@ -27,7 +29,7 @@ function BuiltWith() {
 function ContentsTable() {
     return <div>
         <Subtitle text="Table of contents" />
-        <List>
+        <li>
 
             Overview
             The challenge
@@ -40,7 +42,7 @@ function ContentsTable() {
             Useful resources
             Author
             Acknowledgments
-        </List>
+        </li>
     </div>
 }
 
@@ -219,7 +221,7 @@ function Contents() {
 }
 
 //Rearrangement proposal
-// <MainTitle /> The name of the project. 
+// <MainTitle /> The name of the project.
 // <ContentsTable />
 // <Overview />
 // <ChallengeDescription />

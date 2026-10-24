@@ -1,6 +1,7 @@
-import { Technology } from "@/app/home/data/types/Technology.types";
+import type { Technology } from "@/app/(home)/data/types/Proyect.types";
+import type { ComponentType, SVGProps } from "react";
+
 import { cn } from "@/app/utils/utils";
-import { ComponentType, SVGProps } from "react";
 import { CssIcon, DndKitIcon, HtmlIcon, JavaScriptIcon, MotionIcon, NextJSIcon, ReactHookFormIcon, ReactHotToastIcon, ReactIcon, SassIcon, TailwindCSSIcon, TanStackQueryIcon, TypeScriptIcon, ZustandIcon } from "./icons";
 //Source: https://thesvg.org/icon/sass ... and so on
 //Note: The icons already have their own colors, filter should be applied from outside.
