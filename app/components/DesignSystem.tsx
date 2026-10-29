@@ -2,7 +2,6 @@ import { DotPattern } from "@/app/(home)/components/vendors/DotPattern";
 import { cn } from "@/app/utils/utils";
 import { Petrona } from "next/font/google";
 import { ReactNode } from "react";
-import "../theme.css";
 //English and Spanish
 const petrona = Petrona({
     subsets: ["latin"],

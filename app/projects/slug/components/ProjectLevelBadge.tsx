@@ -1,16 +1,15 @@
-import type { ProjectLevel } from "@/app/(home)/data/types/Proyect.types";
 import { cn } from "@/app/utils/utils";
 import { LuCircleGauge } from "react-icons/lu";
 
-type Props = { level: ProjectLevel }
+// type Props = { level: ProjectLevel }
 
-export default function ProjectLevelBadge({ level }: Props) {
+export default function ProjectLevelBadge({ level }) {
     const badgeStyles = cn(
         "capitalize font-medium tracking-wide text-sm text-white",
         "rounded-full py-1.5 px-3.5",
         "bg-linear-to-br shadow-lg",
         "flex gap-1.5 items-center",
-        level === "newbie" && "from-sky-400/80 to-sky-500/80 shadow-sky-500/40", //500 #0ea5e9
+        level === "newbie" && "from-sky-400/80 to-sky-500/80 shadow-sky-500/40",
         level === "beginner" && "from-lime-400/90 to-lime-600/90 shadow-lime-500/40",
         level === "intermediate" && "from-yellow-300/90 to-yellow-500/90 shadow-yellow-500/40",
         level === "advanced" && "from-red-500/70 to-red-700/80 shadow-red-500/30",

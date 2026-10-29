@@ -1,4 +1,4 @@
-import type { Technology } from "@/app/(home)/data/types/Proyect.types";
+import type { Technology } from "@/app/types/Proyect.types";
 import type { ComponentType, SVGProps } from "react";
 
 import { cn } from "@/app/utils/utils";

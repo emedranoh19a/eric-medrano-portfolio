@@ -1,23 +1,8 @@
-export type Technology =
-  | "html"
-  | "css"
-  | "javascript"
-  | "typescript"
-  | "react"
-  | "next-js"
-  | "sass"
-  | "dnd-kit"
-  | "tailwind-css"
-  | "react-hook-form"
-  | "motion"
-  | "react-hot-toast"
-  | "zustand"
-  | "tanstack-query";
-// | "redux"
-// | "orval"
-// | "supabase"
-// | "testing-library"
-// | "";
+// import { StaticImageData } from "next/image";
+
+import { StaticImageData } from "next/image";
+import { Technology } from "./Technology.types";
+import { Translation } from "./Translation.types";
 
 // type ProjectPageMockup = {
 //   slug: string; //identifier
@@ -90,7 +75,6 @@ export type Technology =
 //   live: string;
 //   github: string;
 // };
-// type Status = "done" | "ongoing" | "maintaining";
 
 // type ProjectType =
 //   | "component"
@@ -102,53 +86,52 @@ export type Technology =
 //   | "portfolio"
 //   | "blog"
 //   | "game";
-// //   | "browser-extension"
-// //   | "data-visualisation";
-export type ProjectLevel =
-  | "newbie"
-  | "beginner"
-  | "intermediate"
-  | "advanced"
-  | "guru";
+//   | "browser-extension"
+//   | "data-visualisation";
 
-// type Acknowledgement = {
-//   name: string;
-//   url?: string;
-//   contribution: Translation;
-// };
-// type ProjectCategory = "tutorial" | "challenge" | "personal" | "professional";
+type ProjectLevel = "newbie" | "junior" | "intermediate" | "advanced" | "guru";
+type ProjectCategory = "tutorial" | "challenge" | "professional" | "personal";
+type ProjectStatus = "ongoing" | "completed" | "maintained"; // Confirm with chat, but maintain is kind of "finished"
+type PageLinks = {
+  github: string | null;
+  live: string | null;
+}; //consider adding an external link
+type ProjectPage = {
+  title: Translation; //title: home, about, suybscribe, gallery, etc
+  description: Translation;
+  preview: StaticImageData; // At the page level, preview image connotes the deviceMockups
+  links: PageLinks; // can be external.
+};
 
-// type Author = {
-//   name: string;
-//   avatar: string;
-//   url?: string;
-//   role?: Translation;
-// };
+export type Project = {
+  title: Translation;
+  description: Translation;
+  level: ProjectLevel;
+  category: ProjectCategory;
+  status: ProjectStatus;
+  stack: Technology[];
+  previews: {
+    mockup: StaticImageData; //Front End Mentor style
+    design: StaticImageData; //Full Website Design extracted.
+  };
+  links: PageLinks; //Must be the same as the first link of the pages array.
+  pages: ProjectPage[];
+  //TODO: have a better understanding of what is changing
+  process: {
+    challenges?: Translation[];
+    learned?: Translation[];
+    continuedDevelopment?: Translation[];
+  };
+  //Establecer un layout de Pinterest
+  //Features:
 
-// type Resource = {
-//   title: Translation;
-//   url: string;
-//   type: "article" | "tutorial" | "documentation" | "video" | "other";
-//   author?: string;
-//   description?: Translation;
-//   image?: string;
-// };
-// type Project = {
-//   title: Translation;
-//   pages: PageType[];
-//   status: Status;
-//   description: Translation;
-//   images: {
-//     preview: string; //This preview can show multiple pages inside one single image
-//     design: string; //This is the full screen of a single project
-//   };
-//   level: Level;
-//   technologies: Technology[];
+  //Links of the main folder for the proyect.
+
+  //Each project (not project page) should have a README.md
+  //how to define at least one Page?
+  //Define metadata.
+};
 //   features: Feature[];
-//   category: Category;
-//   challenges: Translation[];
-//   learned: Translation[];
-//   continuedDevelopment: Translation[];
 //   usefulResources: Resource[]; //What can I do here? to add articles... maybe some images of people of articles, tutorials, urls that go in there, etc
 //   authors: Author[];
 //   acknowledgements: {
@@ -157,4 +140,12 @@ export type ProjectLevel =
 //     //Why am I grateful for?
 //     //What else
 //   };
-// };
+
+// Establecer las prioridades para reorganizar mi portafolio.
+// Probablemente sea más accesible definir unas cuantas cosas, antes de empezar con los detalles. Por ejemplo, empezar primero con:
+// El título en los 3 idiomas
+// La descripción en los 3 idiomas
+// El stack de tecnologías.
+// La categoría del proyecto (tutorial, challenge, etc)
+// El URL.
+// El indicador de si el proyecto es externo o no.

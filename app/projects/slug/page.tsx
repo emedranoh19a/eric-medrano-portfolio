@@ -1,126 +1,32 @@
 "use client"
-import { CodeBlock } from "@/app/(home)/components/vendors/CodeBlock"
+import DesignSystem from "@/app/components/DesignSystem"
 import { useState } from "react"
-import Subtitle from "./components/Subtitle"
-import Title from "./components/Title"
+import { galleriaSlideshowSite } from "../intermediate/galleria-slideshow-site/project"
+import Subtitle from "./components/Typography/Subtitle"
+import ProjectHeader from "./sections/ProjectHeader/ProjectHeader"
 //TODO: Typography: text-base/6
 //TODO: Typography size hierarchy
 //TODO: Typography spacing hierarchy
 //TODO: Section Spacing hierarchy
+// function ContentsTable() {
+//     return <div>
+//         <Subtitle text="Table of contents" />
+//         <li>
 
-
-
-
-
-
-function BuiltWith() {
-    return <div>
-        <Subtitle text="Built with" />
-        Semantic HTML5 markup
-        CSS custom properties
-        Flexbox
-        CSS Grid
-        Mobile-first workflow
-        React - JS library
-        Next.js - React framework
-        Styled Components - For styles
-    </div>
-}
-function ContentsTable() {
-    return <div>
-        <Subtitle text="Table of contents" />
-        <li>
-
-            Overview
-            The challenge
-            Screenshot
-            Links
-            My process
-            Built with
-            What I learned
-            Continued development
-            Useful resources
-            Author
-            Acknowledgments
-        </li>
-    </div>
-}
-
-function CodeBlockDemo() {
-    const code = `const DummyComponent = () => {
-  const [count, setCount] = React.useState(0);
-  
-  const handleClick = () => {
-    setCount(prev => prev + 1);
-  };
- 
-  return (
-    <div className="p-4 border rounded-lg">
-      <h2 className="text-xl font-bold mb-4">Fights Counter</h2>
-      <p className="mb-2">Fight Club Fights Count: {count}</p>
-      <button 
-        onClick={handleClick}
-        className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-      >
-        Increment
-      </button>
-    </div>
-  );
-};
-`;
-
-    return (
-        <div className="max-w-3xl mx-auto w-full">
-            <CodeBlock
-                language="jsx"
-                filename="DummyComponent.jsx"
-                highlightLines={[9, 13, 14, 18]}
-                code={code}
-            />
-        </div>
-    );
-}
-function LearnedThings() {
-
-    // What I learned
-    // Use this section to recap over some of your major learnings while 
-    // working through this project. Writing these out and providing code 
-    // samples of areas you want to highlight is a great way to reinforce 
-    // your own knowledge.
-    return <div>
-        <Subtitle text="What I learned" />
-        <h1>Some HTML code I'm proud of</h1>
-        <CodeBlockDemo />
-        {/* .proud-of-this-css {
-                         color: papayawhip;
- } */}
-        {/* const proudOfThisFunc = () => {
-                         console.log('🎉')
-                     } */}
-        <h1>Some HTML code I'm proud of</h1>
-        {/* .proud-of-this-css {
-                         color: papayawhip;
- } */}
-        {/* const proudOfThisFunc = () => {
-                         console.log('🎉')
-                     } */}
-        <h1>Some HTML code I'm proud of</h1>
-        {/* .proud-of-this-css {
-                         color: papayawhip;
- } */}
-        {/* const proudOfThisFunc = () => {
-                         console.log('🎉')
-                     } */}
-    </div>
-}
-function ContinuedDevelopment() {
-    return <div>
-        <Subtitle text="Continued Development" />
-        <h3>
-            Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-        </h3>
-    </div>
-}
+//             Overview
+//             The challenge
+//             Screenshot
+//             Links
+//             My process
+//             Built with
+//             What I learned
+//             Continued development
+//             Useful resources
+//             Author
+//             Acknowledgments
+//         </li>
+//     </div>
+// }
 function Resources() {
     return <div>
         <Subtitle text="Useful Resources" />
@@ -129,28 +35,15 @@ function Resources() {
 
     </div>
 }
-function Author() {
-    return <div>
-        <Title text="Author" />
-        Website - Add your name here
-        Frontend Mentor - @yourusername
-        Twitter - @yourusername
-    </div>
-}
-function Acknowledgements() {
-    return <div>
-        <Title text="Acknowledments" />
-        This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
-    </div>
-}
-function Section() {
-    return <section className="bg-blue-300 mb-20">This is a section</section>
-}
+
 
 export default function Page() {
     const [isOpen, setOpen] = useState(true)
-    return <div>Hello!</div>
+    const { title, category, description, level, previewImage, } = galleriaSlideshowSite
+    return <DesignSystem>
+        <ProjectHeader preview={previewImage} title={title} />
+    </DesignSystem>
     // return <DesignSystem className="">
     //     <ProjectHeader />
     //     <Section />

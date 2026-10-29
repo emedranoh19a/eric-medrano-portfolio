@@ -1,7 +1,6 @@
 // export * from "./DesignSystem";
-export * from "./List";
-export * from "./MainTitle";
 export * from "./ProjectLevelBadge";
-export * from "./Subtitle";
-export * from "./Title";
+export * from "./Typography/MainTitle";
+export * from "./Typography/Subtitle";
+export * from "./Typography/Title";
 
