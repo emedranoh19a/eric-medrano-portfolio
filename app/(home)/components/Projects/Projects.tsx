@@ -10,112 +10,52 @@ import {
     trilloImage,
     usePopcornImage
 } from "@/app/projects/tutorials";
+import DesignSystem from "../ui/DesignSystem";
+import Pin from "./components/Pin";
 
-import Image, { type StaticImageData } from "next/image";
-
-type MasonryVariant =
-    | "standard"
-    | "square"
-    | "giraffe"
-    | "video"
-    | "landscape"
-    | "wide";
-
-type MasonryItem = {
-    image: StaticImageData;
-    // ratio: number; // width / height
-    variant: MasonryVariant;
-};
-
-const COLUMN_WIDTH = 240;
-const ROW_HEIGHT = 4;
-const GAP = 16;
 //TODO: Create a development helper that shows the same project previews in all the formats (To select one)
-const masonryItems: MasonryItem[] = [
-    { image: reactQuizImage, variant: "wide" },
-    { image: reactQuizImage, variant: "landscape" },
-    { image: reactQuizImage, variant: "square" },
-    { image: reactQuizImage, variant: "standard" },
-    { image: reactQuizImage, variant: "video" },
-    { image: reactQuizImage, variant: "giraffe" },
-    { image: theWildOasisImage, variant: "wide" },
-    { image: omnifoodImage, variant: "landscape" },
-    { image: nexterImage, variant: "square" },
-    { image: usePopcornImage, variant: "standard" },
-    { image: natoursImage, variant: "video" },
-    // { image: keeperImage, variant: "video" },
-    { image: reactQuizImage, variant: "landscape" },
-    { image: reactQuizImage, variant: "square" },
-    { image: trilloImage, variant: "square" },
-
+//A pin is esentially, a project. It might be good to reduce the information for the masonry, and expand it on the details page.
+const pins = [
+    { image: natoursImage, variant: "wide", title: "Natours", description: "A modern banking app interface with balance overview, recent transactions and a clean, responsive design." },
+    { image: natoursImage, variant: "landscape", title: "Natours", description: "A modern banking app interface with balance overview, recent transactions and a clean, responsive design." },
+    { image: natoursImage, variant: "square", title: "Natours", description: "A modern banking app interface with balance overview, recent transactions and a clean, responsive design." },
+    { image: natoursImage, variant: "video", title: "Natours", description: "A modern banking app interface with balance overview, recent transactions and a clean, responsive design." },
+    { image: natoursImage, variant: "standard", title: "Natours", description: "A modern banking app interface with balance overview, recent transactions and a clean, responsive design." },
+    { image: natoursImage, variant: "giraffe", title: "Natours", description: "A modern banking app interface with balance overview, recent transactions and a clean, responsive design." },
+    { image: nexterImage, variant: "landscape", title: "Nexter", description: "A simple profile card with social links and a clean, centered layout." },
+    { image: omnifoodImage, variant: "square", title: "Omnifood", description: "A product preview card with image carousel and a clean design." },
+    { image: reactQuizImage, variant: "standard", title: "The React Quiz", description: "A fully functional todo app with add, remove and filter options, built with modern JavaScript." },
+    { image: theWildOasisImage, variant: "video", title: "The Wild Oasis", description: "A landing page for a gaming brand with a bold design and smooth interactions" },
+    { image: trilloImage, variant: "landscape", title: "Trillo", description: "A testimonials section with a slider and clean, minimal design." },
+    { image: usePopcornImage, variant: "square", title: "usePopcorn", description: "A landing page for an interior design consultant with a modern and elegant layout" },
+    { image: usePopcornImage, variant: "square", title: "Galleria Slidehow Site with Accordion component", description: "A landing page for an interior design consultant with a modern and elegant layout" },
 ];
 
-const ratios = {
-    wide: 16 / 9,
-    landscape: 3 / 2,
-    square: 1,
-    standard: 2 / 3,
-    video: 9 / 16, //doesnt
-    giraffe: 1 / 2.1,
-} satisfies Record<MasonryVariant, number>
-
-function getRowSpan(variant) {
-    const ratio = ratios[variant]
-    const height = COLUMN_WIDTH / ratio;
-
-    return Math.ceil(
-        (height + GAP) / (ROW_HEIGHT + GAP)
-    );
-}
+//Note: Change the value along side with the grid-columns. The Pin component uses this constant as well.
+export const COLUMN_WIDTH = 260;
 
 export default function Projects() {
     return (
-        <section className="container mx-auto px-4">
+        <DesignSystem className="container mx-auto px-4">
             <div
-                className="grid grid-cols-[repeat(auto-fill,250px)] auto-rows-1 gap-4 justify-center
-        "
+                className="grid auto-rows-1 gap-4 justify-center"
+                style={{ gridTemplateColumns: `repeat(auto-fill,${COLUMN_WIDTH}px)` }}
             >
-                {masonryItems.map((item, i) => (
+                {/* a pin, is essentially a project */}
+                {pins.map((pin, i) => (
                     <Pin
                         key={i}
-                        image={item.image}
-                        // ratio={item.ratio}
-                        variant={item.variant}
+                        image={pin.image}
+                        // ratio={pin.ratio}
+                        variant={pin.variant}
                         text={i + 1}
+                        title={pin.title}
+                        description={pin.description}
+                        level="intermediate"
                     />
                 ))}
             </div>
-        </section>
+        </DesignSystem>
     );
 }
 
-type PinProps = {
-    image: StaticImageData;
-    ratio: number;
-    text: number;
-    variant: "standard" | "square" | "giraffe" | "video"
-
-};
-
-function Pin({ image, variant, text }: PinProps) {
-    return (
-        <article
-            className="relative min-w-0 overflow-hidden rounded-lg bg-neutral-100"
-            style={{
-                gridRowEnd: `span ${getRowSpan(variant)}`,
-            }}
-        >
-            <Image
-                src={image}
-                alt={`Project ${text}`}
-                fill
-                // sizes="240px"
-                className="object-cover object-top"
-            />
-
-            <span className="absolute left-2 top-2 z-10 rounded bg-white/80 px-2 py-1 text-sm text-black">
-                {text}
-            </span>
-        </article>
-    );
-}

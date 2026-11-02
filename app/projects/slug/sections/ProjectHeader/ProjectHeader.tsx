@@ -1,23 +1,45 @@
-import type { ProjectLevel } from "@/app/types/Proyect.types";
-import type { StaticImageData } from "next/image";
-import ProjectDescription from "./ProjectDescription";
-import ProjectPreview from "./ProjectPreview";
+"use client"
+import { ProjectCategory, ProjectLevel, ProjectStatus, Translation } from "@/app/data/projects/Proyect.types"
+import { useLanguage } from "@/app/hooks/LanguageProvider"
+import Image, { StaticImageData } from "next/image"
+import Section from "../../components/Section"
+import MainTitle from "../../components/Typography/MainTitle"
 
 type ProjectHeaderProps = {
-    preview: StaticImageData,
-    title: string;
-    level: ProjectLevel
+    title: Translation
+    description: Translation,
+    level: ProjectLevel,
+    category: ProjectCategory,
+    status: ProjectStatus,
+    preview: StaticImageData
 }
-export default function ProjectHeader({ preview }: ProjectHeaderProps) {
+export default function ProjectHeader({ title, description, level, category, status, preview }: ProjectHeaderProps) {
     //TODO: Main title
     //TODO: Project Description
     //TODO:  Project Preview Image
     //TODO: Optiona: Difficulty, project type, status, key technologies. 
     //TODO: 
-    return <header className="grid grid-cols-1 md:grid-cols-5 pl-10 py-16">
-        <ProjectDescription className="md:col-span-2" />
-        <ProjectPreview preview={preview} className="md:col-span-3" />
-    </header>
+    const { language } = useLanguage();
+    return <Section id="header" as="header" className="pt-16">
+        <div className=""></div>
+        <MainTitle text={title[language]} level={level} />
+        <p>
+
+            {description[language]}
+        </p>
+        <p>
+            {level}
+        </p>
+        <p>
+            {category}
+        </p>
+        <p>
+            {status}
+        </p>
+        <Image height={1000} alt="" className="" src={preview} />
+        {/* <ProjectDescription className="md:col-span-2" /> */}
+        {/* <ProjectPreview preview={preview} className="md:col-span-3" /> */}
+    </Section>
 }
 
 

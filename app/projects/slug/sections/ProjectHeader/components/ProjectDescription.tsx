@@ -3,13 +3,11 @@ import { FaUserAlt } from "react-icons/fa"
 import { GiGraduateCap } from "react-icons/gi"
 import { MdWork } from "react-icons/md"
 import { RiSwordFill } from "react-icons/ri"
-import ProjectLevelBadge from "../../components/ProjectLevelBadge"
-import MainTitle from "../../components/Typography/MainTitle"
 
-export default function ProjectDescription({ className }: { className?: string }) {
-    const containerStyles = cn("", className)
-    return <div className={containerStyles}>
-        <MainTitle />
+export default function ProjectDescription() {
+    // const containerStyles = cn("", className)
+    return <div>
+        {/* <MainTitle />
         <div className="flex gap-4 flex-wrap mb-4">
 
             <ProjectLevelBadge level="newbie" />
@@ -28,7 +26,7 @@ export default function ProjectDescription({ className }: { className?: string }
             <ProjectCategory category="challenge" />
             <ProjectCategory category="personal" />
             <ProjectCategory category="proffessional" />
-        </div>
+        </div> */}
 
         <p className="lg:max-w-80"> A modern subcription site for a coffee brand, built with Next.js and TailwindCSS</p>
     </div>

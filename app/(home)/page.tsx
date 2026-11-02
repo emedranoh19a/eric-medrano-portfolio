@@ -1,14 +1,15 @@
 "use client"
 import { useTheme } from "next-themes";
+import DesignSystem from "../components/DesignSystem";
 import Projects from "./components/Projects/Projects";
 
 export default function Page() {
     const { resolvedTheme, setTheme } = useTheme()
     console.log(resolvedTheme)
     console.log(setTheme)
-    return <main className="container mx-auto">
+    return <DesignSystem className="container mx-auto">
         <Projects />
-    </main>
+    </DesignSystem>
     // return <DesignSystem className="min-h-screen bg-white dark:bg-red-200">
     {/* <h1 className="dark:text-red-500 text-blue-500"> Organizing the TechnologyIcon component, one by one.</h1>
         <div className="bg-red-500 dark:bg-blue-500 flex justify-end">

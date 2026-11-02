@@ -1,19 +1,41 @@
-export default function ProjectCredits() {
-    return <div>Credits</div>
+"use client"
+import { Author, Credit, ProjectLevel } from "@/app/data/projects/Proyect.types"
+import { useLanguage } from "@/app/hooks/LanguageProvider"
+import Section from "../../components/Section"
+import Title from "../../components/Typography/Title"
+
+type ProjectCreditsProps = {
+    level: ProjectLevel,
+    credits: Credit[]
+}
+export default function ProjectCredits({ level, credits }: ProjectCreditsProps) {
+    return <Section id="credits">
+        <Title text="Special Thanks" />
+        {credits.map((credit, i) => <ProjectCredit key={i} {...credit} />)}
+    </Section>
 }
 
-// function Author() {
-//     return <div>
-//         <Title text="Author" />
-//         Website - Add your name here
-//         Frontend Mentor - @yourusername
-//         Twitter - @yourusername
-//     </div>
-// }
-// function Acknowledgements() {
-//     return <div>
-//         <Title text="Acknowledments" />
-//         This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+// // Note: one person or team, written once
+// export type Author = {
+//   name: string;
+//   url?: string;
+//   photo?: StaticImageData; // optional, some have no face
+// };
+function ProjectCredit({ author, work, url, thanks }: Credit) {
+    const { language } = useLanguage();
+    return <div>
+        <p>
+            {work}
+        </p>
+        <p>
+            {url}
+        </p>
+        <p>
+            {thanks[language]}
+        </p>
+    </div>
+}
 
-//     </div>
-// }
+function CreditAuthor({ name, url, photo }: Author) {
+    return <div>CreditAuthor</div>
+}

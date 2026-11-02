@@ -1,7 +1,5 @@
-import { articlePreviewComponent } from "@/app/projects/newbie/article-preview-component/article-preview-component";
-
 export const projectsNewbie = [
-  articlePreviewComponent,
+  // articlePreviewComponent,
   // {
   //   //TODO: Review TypeScript and fix CSS
   //   title: "Article Preview",

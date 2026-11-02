@@ -2,6 +2,7 @@ import localFont from "next/font/local"
 import { Toaster } from "react-hot-toast"
 import { SmoothCursor } from "./components/layout/SmoothCursor"
 import "./globals.css"
+import LanguageProvider from "./hooks/LanguageProvider"
 import ThemeProvider from "./hooks/ThemeProvider"
 
 const geistSans = localFont({
@@ -60,18 +61,21 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen h-fit w-screen scroll-smooth overscroll-none relative z-0`}
       >
         {/* <Navbar /> */}
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <LanguageProvider>
 
-          <SmoothCursor />
-          <main className="z-10 hide-scrollbar">
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+
+            <SmoothCursor />
+            <main className="z-10 hide-scrollbar">
 
 
 
-            {children}
+              {children}
 
-          </main>
-        </ThemeProvider>
-        <Toaster />
+            </main>
+          </ThemeProvider>
+          <Toaster />
+        </LanguageProvider>
       </body>
     </html >
   )
