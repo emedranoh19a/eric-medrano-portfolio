@@ -29,12 +29,12 @@
     @apply text-[16px] leading-[120%] tracking-[-0.25px] font-light;
   }
   .preset-7-bold {
-    @apply text-[14px] leading-[200%] tracking-[0px] font-bold;
+    @apply text-[14px] leading-[200%] tracking-normal font-bold;
   }
   .preset-7-regular {
-    @apply text-[14px] leading-[115%] tracking-[0px] font-normal;
+    @apply text-[14px] leading-[115%] tracking-normal font-normal;
   }
   .preset-8 {
-    @apply text-[10px] leading-[115%] tracking-[0px] font-normal;
+    @apply text-[10px] leading-[115%] tracking-normal font-normal;
   }
 }

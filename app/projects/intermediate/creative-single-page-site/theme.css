@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Since we have only one font, we inyect not the variable, but the classNamein StyleSetup */
+  /* otherwise: --font-***: var(--font-setup-in-next); */
+  --color-red: #f94f4f;
+  --color-light-red: #ff9393;
+  --color-bg-black: #191921;
+}
+
+@layer utilities {
+  .h1 {
+    @apply font-extrabold text-[40px] sm:text-[56px] lg:text-[80px] leading-10 sm:leading-14 lg:leading-20;
+  }
+  .h2 {
+    @apply font-extrabold text-[32px] lg:text-[56px] leading-[120%] lg:leading-[115%];
+  }
+  .h3 {
+    @apply font-extrabold text-[15px] lg:text-[20px] leading-normal;
+  }
+  .body {
+    @apply font-normal text-[15px] lg:text-[18px] leading-[166%] lg:leading-[177%];
+  }
+}
