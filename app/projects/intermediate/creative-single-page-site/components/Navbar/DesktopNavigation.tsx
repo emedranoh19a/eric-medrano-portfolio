@@ -14,11 +14,10 @@ function NavbarItem({ label, link }) {
 
 export default function DesktopNavigation() {
     const router = useRouter()
-    return <div className="hidden sm:flex gap-7 lg:gap-9.5 items-center ">
-        <ul className="flex gap-5 lg:gap-8 bg-red">
+    return <div className="hidden lg:flex gap-5 lg:gap-9.5 items-center ">
+        <ul className="flex gap-5 lg:gap-6">
             {navbarItems.map((navbarItem, i) => <NavbarItem key={i} {...navbarItem} />)}
         </ul>
-
         <Button
             text="Schedule a call"
             color="black"
@@ -26,6 +25,5 @@ export default function DesktopNavigation() {
             className="py-5.75 px-11"
             onClick={() => router.push("#cta")}
         />
-
     </div>
 }

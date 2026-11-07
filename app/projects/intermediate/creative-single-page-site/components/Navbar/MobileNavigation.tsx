@@ -1,9 +1,11 @@
 "use client"
 
+import { useClickOutside } from "@/app/hooks/useClickOutside";
 import { cn } from "@/app/utils/utils";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { useRef, useState } from "react";
 import { iconCross, iconHamburger } from "../../assets/assetIndex";
 import Button from "../Button";
 
@@ -22,7 +24,7 @@ export default function MobileNavigation() {
     }
 
 
-    return <div className="sm:hidden">
+    return <div className="lg:hidden">
         <button onClick={handleToggle} className={buttonStyles} style={{ anchorName: "--mobile-menu" }}>
             <Image
                 src={open ? iconCross : iconHamburger}
@@ -31,40 +33,31 @@ export default function MobileNavigation() {
                 alt={open ? "close menu" : "open menu"}
             />
         </button>
-        {/* //TODO: */}
         {
-            open && <Menu />
+            open && <Menu onToggle={handleToggle} />
         }
     </div>
 }
 
-// .anchor {
-//     anchor-name: --example-anchor;
-//   }
-// .target {
-//   position: fixed;
-//   position-anchor: --example-anchor;
-//   position-area: top;
-//   position-try-fallbacks: flip-block;
-//   /*
-//     Will automatically switch to top margin when the
-//     target is under the anchor:
-//   */
-//   margin-bottom: 8px;
-// }
-
-function Menu() {
+function Menu({ onToggle }: { onToggle: () => void }) {
     //Continued development: This margin should be 10
+    const router = useRouter();
+    const ref = useRef(null);
+    useClickOutside(ref, onToggle);
     return <menu
-        className="fixed mt-12.5 bg-bg-black text-white flex flex-col gap-6 items-center pt-8 pb-7 px-6.5"
+        ref={ref}
+        className="fixed mt-16 bg-bg-black text-white flex flex-col gap-6 items-center pt-8 pb-7 px-6.5"
         style={{
             positionAnchor: "--mobile-menu",
             positionArea: "bottom span-left"
         }}
     >
-        <Link href="#about"> About</Link>
-        <Link href="#services"> Service</Link>
-        <Link href="#projects"> Project</Link>
-        <Button text="Schedule a Call" color="red" variant="filled" />
+        <Link href="#about" onClick={onToggle}> About</Link>
+        <Link href="#services" onClick={onToggle}> Service</Link>
+        <Link href="#projects" onClick={onToggle}> Project</Link>
+        <Button text="Schedule a Call" color="red" variant="filled" onClick={() => {
+            router.push("#cta");
+            onToggle();
+        }} />
     </menu>
 }
