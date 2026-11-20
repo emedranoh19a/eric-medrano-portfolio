@@ -25,4 +25,14 @@ export const authors = {
     url: "https://www.frontendmentor.io/",
     photo: frontEndMentorPhoto,
   },
+  //TODO: Add the Logo
+  tailwindCSSDocs: {
+    name: "Tailwind CSS Docs",
+    url: "https://tailwindcss.com/",
+  },
+  //TODO: Add the Logo
+  claude: {
+    name: "Claude (Anthropic)",
+    url: "https://claude.ai/",
+  },
 } satisfies Record<string, Author>;
